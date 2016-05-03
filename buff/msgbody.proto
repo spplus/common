@@ -33,3 +33,22 @@ message UserListMsg
   
 }
 
+// 元件状态消息
+message DevStateMsg
+{ 
+	//请求体定义
+	message Request {
+		optional uint32	saveId		= 1;		// 存档ID
+		optional uint32	stationId	= 2;		// 站点ID
+						
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32		rescode		= 1;	// 0 成功，其他失败
+		repeated StateBean	devState	= 2;	// 元件状态列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}

@@ -36,6 +36,7 @@ void protobuf_AssignDesc_msgbean_2eproto();
 void protobuf_ShutdownFile_msgbean_2eproto();
 
 class UserBean;
+class StateBean;
 
 // ===================================================================
 
@@ -153,6 +154,123 @@ class UserBean : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static UserBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class StateBean : public ::google::protobuf::Message {
+ public:
+  StateBean();
+  virtual ~StateBean();
+
+  StateBean(const StateBean& from);
+
+  inline StateBean& operator=(const StateBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const StateBean& default_instance();
+
+  void Swap(StateBean* other);
+
+  // implements Message ----------------------------------------------
+
+  StateBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const StateBean& from);
+  void MergeFrom(const StateBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes cimId = 1;
+  inline bool has_cimid() const;
+  inline void clear_cimid();
+  static const int kCimIdFieldNumber = 1;
+  inline const ::std::string& cimid() const;
+  inline void set_cimid(const ::std::string& value);
+  inline void set_cimid(const char* value);
+  inline void set_cimid(const void* value, size_t size);
+  inline ::std::string* mutable_cimid();
+  inline ::std::string* release_cimid();
+  inline void set_allocated_cimid(::std::string* cimid);
+
+  // optional uint32 state = 2;
+  inline bool has_state() const;
+  inline void clear_state();
+  static const int kStateFieldNumber = 2;
+  inline ::google::protobuf::uint32 state() const;
+  inline void set_state(::google::protobuf::uint32 value);
+
+  // optional uint32 isBoard = 3;
+  inline bool has_isboard() const;
+  inline void clear_isboard();
+  static const int kIsBoardFieldNumber = 3;
+  inline ::google::protobuf::uint32 isboard() const;
+  inline void set_isboard(::google::protobuf::uint32 value);
+
+  // optional uint32 isElectric = 4;
+  inline bool has_iselectric() const;
+  inline void clear_iselectric();
+  static const int kIsElectricFieldNumber = 4;
+  inline ::google::protobuf::uint32 iselectric() const;
+  inline void set_iselectric(::google::protobuf::uint32 value);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.StateBean)
+ private:
+  inline void set_has_cimid();
+  inline void clear_has_cimid();
+  inline void set_has_state();
+  inline void clear_has_state();
+  inline void set_has_isboard();
+  inline void clear_has_isboard();
+  inline void set_has_iselectric();
+  inline void clear_has_iselectric();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* cimid_;
+  ::google::protobuf::uint32 state_;
+  ::google::protobuf::uint32 isboard_;
+  ::google::protobuf::uint32 iselectric_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static StateBean* default_instance_;
 };
 // ===================================================================
 
@@ -369,6 +487,146 @@ inline void UserBean::set_allocated_userrole(::std::string* userrole) {
     clear_has_userrole();
     userrole_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
+}
+
+// -------------------------------------------------------------------
+
+// StateBean
+
+// optional bytes cimId = 1;
+inline bool StateBean::has_cimid() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void StateBean::set_has_cimid() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void StateBean::clear_has_cimid() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void StateBean::clear_cimid() {
+  if (cimid_ != &::google::protobuf::internal::kEmptyString) {
+    cimid_->clear();
+  }
+  clear_has_cimid();
+}
+inline const ::std::string& StateBean::cimid() const {
+  return *cimid_;
+}
+inline void StateBean::set_cimid(const ::std::string& value) {
+  set_has_cimid();
+  if (cimid_ == &::google::protobuf::internal::kEmptyString) {
+    cimid_ = new ::std::string;
+  }
+  cimid_->assign(value);
+}
+inline void StateBean::set_cimid(const char* value) {
+  set_has_cimid();
+  if (cimid_ == &::google::protobuf::internal::kEmptyString) {
+    cimid_ = new ::std::string;
+  }
+  cimid_->assign(value);
+}
+inline void StateBean::set_cimid(const void* value, size_t size) {
+  set_has_cimid();
+  if (cimid_ == &::google::protobuf::internal::kEmptyString) {
+    cimid_ = new ::std::string;
+  }
+  cimid_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StateBean::mutable_cimid() {
+  set_has_cimid();
+  if (cimid_ == &::google::protobuf::internal::kEmptyString) {
+    cimid_ = new ::std::string;
+  }
+  return cimid_;
+}
+inline ::std::string* StateBean::release_cimid() {
+  clear_has_cimid();
+  if (cimid_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = cimid_;
+    cimid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StateBean::set_allocated_cimid(::std::string* cimid) {
+  if (cimid_ != &::google::protobuf::internal::kEmptyString) {
+    delete cimid_;
+  }
+  if (cimid) {
+    set_has_cimid();
+    cimid_ = cimid;
+  } else {
+    clear_has_cimid();
+    cimid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional uint32 state = 2;
+inline bool StateBean::has_state() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void StateBean::set_has_state() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void StateBean::clear_has_state() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void StateBean::clear_state() {
+  state_ = 0u;
+  clear_has_state();
+}
+inline ::google::protobuf::uint32 StateBean::state() const {
+  return state_;
+}
+inline void StateBean::set_state(::google::protobuf::uint32 value) {
+  set_has_state();
+  state_ = value;
+}
+
+// optional uint32 isBoard = 3;
+inline bool StateBean::has_isboard() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void StateBean::set_has_isboard() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void StateBean::clear_has_isboard() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void StateBean::clear_isboard() {
+  isboard_ = 0u;
+  clear_has_isboard();
+}
+inline ::google::protobuf::uint32 StateBean::isboard() const {
+  return isboard_;
+}
+inline void StateBean::set_isboard(::google::protobuf::uint32 value) {
+  set_has_isboard();
+  isboard_ = value;
+}
+
+// optional uint32 isElectric = 4;
+inline bool StateBean::has_iselectric() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void StateBean::set_has_iselectric() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void StateBean::clear_has_iselectric() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void StateBean::clear_iselectric() {
+  iselectric_ = 0u;
+  clear_has_iselectric();
+}
+inline ::google::protobuf::uint32 StateBean::iselectric() const {
+  return iselectric_;
+}
+inline void StateBean::set_iselectric(::google::protobuf::uint32 value) {
+  set_has_iselectric();
+  iselectric_ = value;
 }
 
 

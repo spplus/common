@@ -7,3 +7,14 @@ message UserBean
     optional bytes userrole= 3;  
 
 }
+
+// 元件状态信息
+message StateBean
+{ 
+
+    optional bytes 	cimId  = 1;
+    optional uint32 	state= 2;
+    optional uint32	isBoard = 3;
+    optional uint32	isElectric = 4;	  
+
+}
