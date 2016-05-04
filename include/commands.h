@@ -14,5 +14,8 @@
 // 用户登录
 #define				CMD_USER_LONGIN				1000
 
+// 获取设备状态
+#define				CMD_DEV_STATE					2000
+
 #endif
 
