@@ -18,3 +18,23 @@ message StateBean
     optional uint32	isElectric = 4;	  
 
 }
+
+// 站点分类
+message StationTypeBean
+{ 
+
+    optional uint32 	Id  = 1;
+    optional bytes 	Name= 2;
+}
+
+// 站点信息
+message StationBean
+{ 
+
+    optional 	uint32 	Id  		= 1;
+    optional 	uint32  CategoryId 	= 2; 
+    optional 	bytes 	Name		= 3;
+    optional 	bytes 	CimId		= 4;
+    optional 	bytes 	CurrentName	= 5;
+    optional 	bytes 	Path		= 6;
+}

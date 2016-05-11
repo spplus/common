@@ -22,5 +22,14 @@
 // 获取设备状态
 #define				CMD_DEV_STATE					2001
 
+// 加载站点类别
+#define				CMD_STATION_TYPE				2002
+
+// 加载站点列表
+#define				CMD_STATION_LIST				2003
+
+
+
+
 #endif
 

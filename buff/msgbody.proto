@@ -52,3 +52,42 @@ message DevStateMsg
   	optional Response 	response 	= 2;
   
 }
+
+
+// 站点类别消息
+message StationTypeMsg
+{ 
+	//请求体定义
+	message Request {
+		optional uint32	saveId		= 1;		// 
+						
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		repeated StationTypeBean	typeList	= 2;	// 站点分类列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}
+
+// 站点列表消息
+message StationListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional uint32	stationId		= 1;		// 站点ID
+						
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		repeated StationBean		stationList	= 2;	// 站点分类列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}

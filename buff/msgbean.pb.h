@@ -37,6 +37,8 @@ void protobuf_ShutdownFile_msgbean_2eproto();
 
 class UserBean;
 class StateBean;
+class StationTypeBean;
+class StationBean;
 
 // ===================================================================
 
@@ -271,6 +273,255 @@ class StateBean : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static StateBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class StationTypeBean : public ::google::protobuf::Message {
+ public:
+  StationTypeBean();
+  virtual ~StationTypeBean();
+
+  StationTypeBean(const StationTypeBean& from);
+
+  inline StationTypeBean& operator=(const StationTypeBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const StationTypeBean& default_instance();
+
+  void Swap(StationTypeBean* other);
+
+  // implements Message ----------------------------------------------
+
+  StationTypeBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const StationTypeBean& from);
+  void MergeFrom(const StationTypeBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 Id = 1;
+  inline bool has_id() const;
+  inline void clear_id();
+  static const int kIdFieldNumber = 1;
+  inline ::google::protobuf::uint32 id() const;
+  inline void set_id(::google::protobuf::uint32 value);
+
+  // optional bytes Name = 2;
+  inline bool has_name() const;
+  inline void clear_name();
+  static const int kNameFieldNumber = 2;
+  inline const ::std::string& name() const;
+  inline void set_name(const ::std::string& value);
+  inline void set_name(const char* value);
+  inline void set_name(const void* value, size_t size);
+  inline ::std::string* mutable_name();
+  inline ::std::string* release_name();
+  inline void set_allocated_name(::std::string* name);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.StationTypeBean)
+ private:
+  inline void set_has_id();
+  inline void clear_has_id();
+  inline void set_has_name();
+  inline void clear_has_name();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* name_;
+  ::google::protobuf::uint32 id_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static StationTypeBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class StationBean : public ::google::protobuf::Message {
+ public:
+  StationBean();
+  virtual ~StationBean();
+
+  StationBean(const StationBean& from);
+
+  inline StationBean& operator=(const StationBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const StationBean& default_instance();
+
+  void Swap(StationBean* other);
+
+  // implements Message ----------------------------------------------
+
+  StationBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const StationBean& from);
+  void MergeFrom(const StationBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 Id = 1;
+  inline bool has_id() const;
+  inline void clear_id();
+  static const int kIdFieldNumber = 1;
+  inline ::google::protobuf::uint32 id() const;
+  inline void set_id(::google::protobuf::uint32 value);
+
+  // optional uint32 CategoryId = 2;
+  inline bool has_categoryid() const;
+  inline void clear_categoryid();
+  static const int kCategoryIdFieldNumber = 2;
+  inline ::google::protobuf::uint32 categoryid() const;
+  inline void set_categoryid(::google::protobuf::uint32 value);
+
+  // optional bytes Name = 3;
+  inline bool has_name() const;
+  inline void clear_name();
+  static const int kNameFieldNumber = 3;
+  inline const ::std::string& name() const;
+  inline void set_name(const ::std::string& value);
+  inline void set_name(const char* value);
+  inline void set_name(const void* value, size_t size);
+  inline ::std::string* mutable_name();
+  inline ::std::string* release_name();
+  inline void set_allocated_name(::std::string* name);
+
+  // optional bytes CimId = 4;
+  inline bool has_cimid() const;
+  inline void clear_cimid();
+  static const int kCimIdFieldNumber = 4;
+  inline const ::std::string& cimid() const;
+  inline void set_cimid(const ::std::string& value);
+  inline void set_cimid(const char* value);
+  inline void set_cimid(const void* value, size_t size);
+  inline ::std::string* mutable_cimid();
+  inline ::std::string* release_cimid();
+  inline void set_allocated_cimid(::std::string* cimid);
+
+  // optional bytes CurrentName = 5;
+  inline bool has_currentname() const;
+  inline void clear_currentname();
+  static const int kCurrentNameFieldNumber = 5;
+  inline const ::std::string& currentname() const;
+  inline void set_currentname(const ::std::string& value);
+  inline void set_currentname(const char* value);
+  inline void set_currentname(const void* value, size_t size);
+  inline ::std::string* mutable_currentname();
+  inline ::std::string* release_currentname();
+  inline void set_allocated_currentname(::std::string* currentname);
+
+  // optional bytes Path = 6;
+  inline bool has_path() const;
+  inline void clear_path();
+  static const int kPathFieldNumber = 6;
+  inline const ::std::string& path() const;
+  inline void set_path(const ::std::string& value);
+  inline void set_path(const char* value);
+  inline void set_path(const void* value, size_t size);
+  inline ::std::string* mutable_path();
+  inline ::std::string* release_path();
+  inline void set_allocated_path(::std::string* path);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.StationBean)
+ private:
+  inline void set_has_id();
+  inline void clear_has_id();
+  inline void set_has_categoryid();
+  inline void clear_has_categoryid();
+  inline void set_has_name();
+  inline void clear_has_name();
+  inline void set_has_cimid();
+  inline void clear_has_cimid();
+  inline void set_has_currentname();
+  inline void clear_has_currentname();
+  inline void set_has_path();
+  inline void clear_has_path();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 id_;
+  ::google::protobuf::uint32 categoryid_;
+  ::std::string* name_;
+  ::std::string* cimid_;
+  ::std::string* currentname_;
+  ::std::string* path_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static StationBean* default_instance_;
 };
 // ===================================================================
 
@@ -627,6 +878,430 @@ inline ::google::protobuf::uint32 StateBean::iselectric() const {
 inline void StateBean::set_iselectric(::google::protobuf::uint32 value) {
   set_has_iselectric();
   iselectric_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// StationTypeBean
+
+// optional uint32 Id = 1;
+inline bool StationTypeBean::has_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void StationTypeBean::set_has_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void StationTypeBean::clear_has_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void StationTypeBean::clear_id() {
+  id_ = 0u;
+  clear_has_id();
+}
+inline ::google::protobuf::uint32 StationTypeBean::id() const {
+  return id_;
+}
+inline void StationTypeBean::set_id(::google::protobuf::uint32 value) {
+  set_has_id();
+  id_ = value;
+}
+
+// optional bytes Name = 2;
+inline bool StationTypeBean::has_name() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void StationTypeBean::set_has_name() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void StationTypeBean::clear_has_name() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void StationTypeBean::clear_name() {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    name_->clear();
+  }
+  clear_has_name();
+}
+inline const ::std::string& StationTypeBean::name() const {
+  return *name_;
+}
+inline void StationTypeBean::set_name(const ::std::string& value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void StationTypeBean::set_name(const char* value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void StationTypeBean::set_name(const void* value, size_t size) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StationTypeBean::mutable_name() {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  return name_;
+}
+inline ::std::string* StationTypeBean::release_name() {
+  clear_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = name_;
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StationTypeBean::set_allocated_name(::std::string* name) {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    delete name_;
+  }
+  if (name) {
+    set_has_name();
+    name_ = name;
+  } else {
+    clear_has_name();
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// StationBean
+
+// optional uint32 Id = 1;
+inline bool StationBean::has_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void StationBean::set_has_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void StationBean::clear_has_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void StationBean::clear_id() {
+  id_ = 0u;
+  clear_has_id();
+}
+inline ::google::protobuf::uint32 StationBean::id() const {
+  return id_;
+}
+inline void StationBean::set_id(::google::protobuf::uint32 value) {
+  set_has_id();
+  id_ = value;
+}
+
+// optional uint32 CategoryId = 2;
+inline bool StationBean::has_categoryid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void StationBean::set_has_categoryid() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void StationBean::clear_has_categoryid() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void StationBean::clear_categoryid() {
+  categoryid_ = 0u;
+  clear_has_categoryid();
+}
+inline ::google::protobuf::uint32 StationBean::categoryid() const {
+  return categoryid_;
+}
+inline void StationBean::set_categoryid(::google::protobuf::uint32 value) {
+  set_has_categoryid();
+  categoryid_ = value;
+}
+
+// optional bytes Name = 3;
+inline bool StationBean::has_name() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void StationBean::set_has_name() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void StationBean::clear_has_name() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void StationBean::clear_name() {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    name_->clear();
+  }
+  clear_has_name();
+}
+inline const ::std::string& StationBean::name() const {
+  return *name_;
+}
+inline void StationBean::set_name(const ::std::string& value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void StationBean::set_name(const char* value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void StationBean::set_name(const void* value, size_t size) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StationBean::mutable_name() {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  return name_;
+}
+inline ::std::string* StationBean::release_name() {
+  clear_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = name_;
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StationBean::set_allocated_name(::std::string* name) {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    delete name_;
+  }
+  if (name) {
+    set_has_name();
+    name_ = name;
+  } else {
+    clear_has_name();
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes CimId = 4;
+inline bool StationBean::has_cimid() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void StationBean::set_has_cimid() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void StationBean::clear_has_cimid() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void StationBean::clear_cimid() {
+  if (cimid_ != &::google::protobuf::internal::kEmptyString) {
+    cimid_->clear();
+  }
+  clear_has_cimid();
+}
+inline const ::std::string& StationBean::cimid() const {
+  return *cimid_;
+}
+inline void StationBean::set_cimid(const ::std::string& value) {
+  set_has_cimid();
+  if (cimid_ == &::google::protobuf::internal::kEmptyString) {
+    cimid_ = new ::std::string;
+  }
+  cimid_->assign(value);
+}
+inline void StationBean::set_cimid(const char* value) {
+  set_has_cimid();
+  if (cimid_ == &::google::protobuf::internal::kEmptyString) {
+    cimid_ = new ::std::string;
+  }
+  cimid_->assign(value);
+}
+inline void StationBean::set_cimid(const void* value, size_t size) {
+  set_has_cimid();
+  if (cimid_ == &::google::protobuf::internal::kEmptyString) {
+    cimid_ = new ::std::string;
+  }
+  cimid_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StationBean::mutable_cimid() {
+  set_has_cimid();
+  if (cimid_ == &::google::protobuf::internal::kEmptyString) {
+    cimid_ = new ::std::string;
+  }
+  return cimid_;
+}
+inline ::std::string* StationBean::release_cimid() {
+  clear_has_cimid();
+  if (cimid_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = cimid_;
+    cimid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StationBean::set_allocated_cimid(::std::string* cimid) {
+  if (cimid_ != &::google::protobuf::internal::kEmptyString) {
+    delete cimid_;
+  }
+  if (cimid) {
+    set_has_cimid();
+    cimid_ = cimid;
+  } else {
+    clear_has_cimid();
+    cimid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes CurrentName = 5;
+inline bool StationBean::has_currentname() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void StationBean::set_has_currentname() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void StationBean::clear_has_currentname() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void StationBean::clear_currentname() {
+  if (currentname_ != &::google::protobuf::internal::kEmptyString) {
+    currentname_->clear();
+  }
+  clear_has_currentname();
+}
+inline const ::std::string& StationBean::currentname() const {
+  return *currentname_;
+}
+inline void StationBean::set_currentname(const ::std::string& value) {
+  set_has_currentname();
+  if (currentname_ == &::google::protobuf::internal::kEmptyString) {
+    currentname_ = new ::std::string;
+  }
+  currentname_->assign(value);
+}
+inline void StationBean::set_currentname(const char* value) {
+  set_has_currentname();
+  if (currentname_ == &::google::protobuf::internal::kEmptyString) {
+    currentname_ = new ::std::string;
+  }
+  currentname_->assign(value);
+}
+inline void StationBean::set_currentname(const void* value, size_t size) {
+  set_has_currentname();
+  if (currentname_ == &::google::protobuf::internal::kEmptyString) {
+    currentname_ = new ::std::string;
+  }
+  currentname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StationBean::mutable_currentname() {
+  set_has_currentname();
+  if (currentname_ == &::google::protobuf::internal::kEmptyString) {
+    currentname_ = new ::std::string;
+  }
+  return currentname_;
+}
+inline ::std::string* StationBean::release_currentname() {
+  clear_has_currentname();
+  if (currentname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = currentname_;
+    currentname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StationBean::set_allocated_currentname(::std::string* currentname) {
+  if (currentname_ != &::google::protobuf::internal::kEmptyString) {
+    delete currentname_;
+  }
+  if (currentname) {
+    set_has_currentname();
+    currentname_ = currentname;
+  } else {
+    clear_has_currentname();
+    currentname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes Path = 6;
+inline bool StationBean::has_path() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void StationBean::set_has_path() {
+  _has_bits_[0] |= 0x00000020u;
+}
+inline void StationBean::clear_has_path() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline void StationBean::clear_path() {
+  if (path_ != &::google::protobuf::internal::kEmptyString) {
+    path_->clear();
+  }
+  clear_has_path();
+}
+inline const ::std::string& StationBean::path() const {
+  return *path_;
+}
+inline void StationBean::set_path(const ::std::string& value) {
+  set_has_path();
+  if (path_ == &::google::protobuf::internal::kEmptyString) {
+    path_ = new ::std::string;
+  }
+  path_->assign(value);
+}
+inline void StationBean::set_path(const char* value) {
+  set_has_path();
+  if (path_ == &::google::protobuf::internal::kEmptyString) {
+    path_ = new ::std::string;
+  }
+  path_->assign(value);
+}
+inline void StationBean::set_path(const void* value, size_t size) {
+  set_has_path();
+  if (path_ == &::google::protobuf::internal::kEmptyString) {
+    path_ = new ::std::string;
+  }
+  path_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StationBean::mutable_path() {
+  set_has_path();
+  if (path_ == &::google::protobuf::internal::kEmptyString) {
+    path_ = new ::std::string;
+  }
+  return path_;
+}
+inline ::std::string* StationBean::release_path() {
+  clear_has_path();
+  if (path_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = path_;
+    path_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StationBean::set_allocated_path(::std::string* path) {
+  if (path_ != &::google::protobuf::internal::kEmptyString) {
+    delete path_;
+  }
+  if (path) {
+    set_has_path();
+    path_ = path;
+  } else {
+    clear_has_path();
+    path_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
 }
 
 
