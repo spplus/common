@@ -23,8 +23,9 @@ message StateBean
 message StationTypeBean
 { 
 
-    optional uint32 	Id  = 1;
-    optional bytes 	Name= 2;
+    optional uint32 		Id  = 1;
+    optional bytes 		Name= 2;
+    repeated StationBean	StationList = 3;
 }
 
 // ’æµ„–≈œ¢

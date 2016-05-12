@@ -349,6 +349,18 @@ class StationTypeBean : public ::google::protobuf::Message {
   inline ::std::string* release_name();
   inline void set_allocated_name(::std::string* name);
 
+  // repeated .com.spplus.buff.StationBean StationList = 3;
+  inline int stationlist_size() const;
+  inline void clear_stationlist();
+  static const int kStationListFieldNumber = 3;
+  inline const ::com::spplus::buff::StationBean& stationlist(int index) const;
+  inline ::com::spplus::buff::StationBean* mutable_stationlist(int index);
+  inline ::com::spplus::buff::StationBean* add_stationlist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StationBean >&
+      stationlist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StationBean >*
+      mutable_stationlist();
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.StationTypeBean)
  private:
   inline void set_has_id();
@@ -359,10 +371,11 @@ class StationTypeBean : public ::google::protobuf::Message {
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
   ::std::string* name_;
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StationBean > stationlist_;
   ::google::protobuf::uint32 id_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbean_2eproto();
   friend void protobuf_AssignDesc_msgbean_2eproto();
@@ -974,6 +987,31 @@ inline void StationTypeBean::set_allocated_name(::std::string* name) {
     clear_has_name();
     name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
+}
+
+// repeated .com.spplus.buff.StationBean StationList = 3;
+inline int StationTypeBean::stationlist_size() const {
+  return stationlist_.size();
+}
+inline void StationTypeBean::clear_stationlist() {
+  stationlist_.Clear();
+}
+inline const ::com::spplus::buff::StationBean& StationTypeBean::stationlist(int index) const {
+  return stationlist_.Get(index);
+}
+inline ::com::spplus::buff::StationBean* StationTypeBean::mutable_stationlist(int index) {
+  return stationlist_.Mutable(index);
+}
+inline ::com::spplus::buff::StationBean* StationTypeBean::add_stationlist() {
+  return stationlist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StationBean >&
+StationTypeBean::stationlist() const {
+  return stationlist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StationBean >*
+StationTypeBean::mutable_stationlist() {
+  return &stationlist_;
 }
 
 // -------------------------------------------------------------------
