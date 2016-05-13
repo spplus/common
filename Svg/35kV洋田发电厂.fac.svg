@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="(0,0,1500,1200)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cge="http://www.cim.com" >
+<defs>
+<style type="text/css"><![CDATA[
+.kv0{stroke:rgb(170,255,0);fill:none}
+.kv10{stroke:rgb(185,72,66);fill:none}
+.kv110{stroke:rgb(240,65,85);fill:none}
+.kv220{stroke:rgb(128,0,128);fill:none}
+.kv35{stroke:rgb(255,255,0);fill:none}
+.kv500{stroke:rgb(85,85,255);fill:none}
+.kv6{stroke:rgb(0,170,255);fill:none}
+.kv-1{stroke:rgb(93,92,88);fill:none}
+]]></style>
+<symbol id="terminal" preserveAspectRatio="xMidYMid meet">
+ <circle cx="0" cy="0" r="1" stroke="yellow" fill="yellow" stroke-width="1"/>
+</symbol>
+<symbol id="Breaker:hg断路器竖_0" viewBox="0,0,16,38" >
+ <use x="8" y="35" xlink:href="#terminal" Plane="0"/>
+ <use x="8" y="4" xlink:href="#terminal" Plane="0"/>
+ <rect x="2" y="5" width="12" height="29" transform="rotate(0,8,19)" stroke-width="1" stroke="rgb(255,255,255)" fill="none" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Breaker:hg断路器竖_1" viewBox="0,0,16,38" >
+ <use x="8" y="35" xlink:href="#terminal" Plane="0"/>
+ <use x="8" y="4" xlink:href="#terminal" Plane="0"/>
+ <rect x="2" y="5" width="12" height="29" transform="rotate(0,8,19)" stroke-width="1" stroke="rgb(255,0,0)" fill="rgb(255,0,0)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="PT:JA电压互感期_0" viewBox="0,0,90,100" >
+ <use x="52" y="8" xlink:href="#terminal" Plane="0"/>
+ <rect x="71" y="48" width="9" height="16" transform="rotate(360,75,56)" stroke-width="1" stroke="rgb(255,255,255)" fill="none" Plane="0" AFMask="32769"/>
+ <rect x="22" y="34" width="9" height="16" transform="rotate(360,26,42)" stroke-width="1" stroke="rgb(255,255,255)" fill="none" Plane="0" AFMask="32769"/>
+ <rect x="27" y="59" width="0" height="0" transform="rotate(360,27,59)" stroke-width="1" stroke="rgb(0,0,255)" fill="none" Plane="0" AFMask="32769"/>
+ <line x1="80" y1="71" x2="71" y2="71" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="74" y1="76" x2="77" y2="76" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="73" y1="74" x2="78" y2="74" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="75" y1="52" x2="75" y2="70" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="75" y1="42" x2="75" y2="42" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="75" y1="42" x2="75" y2="42" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="58" y1="41" x2="58" y2="41" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="58" y1="44" x2="58" y2="44" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="52" y1="7" x2="52" y2="27" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="27" y1="53" x2="27" y2="53" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="27" y1="27" x2="27" y2="55" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="76" y1="27" x2="26" y2="27" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="75" y1="27" x2="75" y2="48" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="39" y1="81" x2="39" y2="81" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="26" y1="59" x2="26" y2="66" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="15" y1="89" x2="15" y2="79" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="10" y1="86" x2="16" y2="88" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="32" y1="70" x2="26" y2="65" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="21" y1="70" x2="27" y2="65" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="10" y1="82" x2="16" y2="79" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="37" y1="78" x2="37" y2="85" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="32" y1="89" x2="37" y2="84" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="43" y1="89" x2="37" y2="84" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="78" y1="60" x2="75" y2="52" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="73" y1="60" x2="76" y2="52" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <circle cx="27" cy="67" r="12" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <circle cx="15" cy="84" r="12" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <circle cx="37" cy="84" r="12" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <path d="M 60 51 L 60 51 " stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <path d="M 77 59 L 77 59 " stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Transformer2:nc_两卷变压器_0" viewBox="0,0,54,72" >
+ <use x="21" y="4" xlink:href="#terminal" Plane="0"/>
+ <circle cx="21" cy="21" r="17" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32783"/>
+ <line x1="21" y1="20" x2="21" y2="8" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32799"/>
+ <line x1="21" y1="21" x2="21" y2="21" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32799"/>
+ <line x1="21" y1="20" x2="11" y2="29" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32799"/>
+ <line x1="21" y1="20" x2="31" y2="29" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32799"/>
+</symbol>
+<symbol id="Transformer2:nc_两卷变压器_1" viewBox="0,0,54,72" >
+ <use x="21" y="67" xlink:href="#terminal" Plane="0"/>
+ <circle cx="21" cy="50" r="17" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="1" AFMask="32783"/>
+ <polygon points="11,59 21,41 32,59" stroke-width ="1" stroke="rgb(255,255,255)" fill="none" Plane="1" AFMask="32799"/>
+</symbol>
+<symbol id="Disconnector:nc_刀闸（上）_0" viewBox="0,0,20,34" >
+ <use x="6" y="29" xlink:href="#terminal" Plane="0"/>
+ <use x="6" y="4" xlink:href="#terminal" Plane="0"/>
+ <line x1="6" y1="2" x2="6" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="16" y1="8" x2="6" y2="26" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="6" y1="26" x2="6" y2="31" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="2" y1="7" x2="10" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="2" y1="25" x2="10" y2="25" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Disconnector:nc_刀闸（上）_1" viewBox="0,0,20,34" >
+ <use x="6" y="29" xlink:href="#terminal" Plane="0"/>
+ <use x="6" y="4" xlink:href="#terminal" Plane="0"/>
+ <line x1="2" y1="7" x2="10" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="6" y1="2" x2="6" y2="31" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="2" y1="26" x2="10" y2="26" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="SynchronousMachine:ah发电机0_0" viewBox="0,0,28,30" >
+ <use x="14" y="3" xlink:href="#terminal" Plane="0"/>
+ <circle cx="14" cy="14" r="12" stroke-width="2" fill="none" stroke="rgb(85,170,127)" Plane="0" AFMask="32769"/>
+ <path d="M 13 14 A 5 5 0 1 0 3 14" stroke-width="2" fill="none" stroke="rgb(93,92,88)" Plane="0" AFMask="32769"/>
+ <path d="M 14 13 A 5 5 360 1 0 24 13" stroke-width="2" fill="none" stroke="rgb(93,92,88)" Plane="0" AFMask="32769"/>
+</symbol>
+</defs>
+<g id="Head_Layer">
+ <rect x="0" y="0" height="1080" width="1900" fill="rgb(0,0,0)" FacName="洋田电厂" InitShowingPlane="0," VerNo="64" />
+</g>
+<g id="Other_Layer">
+ <image x="358" y="7" width="368" height="101" xlink:href="botton3.jpg" ShowStyle="0" Plane="0" AFMaske="32895"/>
+ <a xlink:href="ja_安福县35kV并网水电站一次接线图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0,1,2," >
+  <rect x="424" y="30" width="266" height="55" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <rect x="1640" y="12" width="30" height="12" transform="rotate(0,1655,18)" stroke-width="2" stroke="rgb(255,255,0)" fill="rgb(255,255,0)" Plane="0" AFMask="32895"/>
+ <rect x="1640" y="30" width="30" height="12" transform="rotate(0,1655,36)" stroke-width="2" stroke="rgb(0,85,0)" fill="rgb(0,85,0)" Plane="0" AFMask="32895"/>
+ <rect x="1640" y="48" width="30" height="12" transform="rotate(0,1655,54)" stroke-width="2" stroke="rgb(170,0,0)" fill="rgb(170,0,0)" Plane="0" AFMask="32895"/>
+</g>
+<g id="Bus_Layer">
+ <g id="30002088">
+  <path d="M 948 726 L 1493 726" stroke-width="4" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="230000299" ObjectName="洋田电厂\0.40千伏\BS_0.4kVII段母线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="30002131">
+  <path d="M 461 369 L 1430 369" stroke-width="4" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="230000297" ObjectName="洋田电厂\35.00千伏\BS_35kV母线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="30002146">
+  <path d="M 287 728 L 832 728" stroke-width="4" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="230000298" ObjectName="洋田电厂\0.40千伏\BS_0.4kVI段母线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="Breaker_Layer">
+ <g id="100002101">
+  <use x="1056" y="796" width="16" height="38" transform="rotate(0,1056,796) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002222" ObjectName="洋田电厂\0.40千伏\CB_＃3发电机930" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200022220020"/>
+  </metadata>
+ </g>
+ <g id="100002119">
+  <use x="1339" y="796" width="16" height="38" transform="rotate(0,1339,796) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002223" ObjectName="洋田电厂\0.40千伏\CB_＃4发电机940" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200022230020"/>
+  </metadata>
+ </g>
+ <g id="100002127">
+  <use x="1274" y="483" width="16" height="38" transform="rotate(0,1274,483) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002219" ObjectName="洋田电厂\35.00千伏\CB_＃2主变302" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200022190020"/>
+  </metadata>
+ </g>
+ <g id="100002174">
+  <use x="613" y="485" width="16" height="38" transform="rotate(0,613,485) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002218" ObjectName="洋田电厂\35.00千伏\CB_＃1主变301" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200022180020"/>
+  </metadata>
+ </g>
+ <g id="100002173">
+  <use x="678" y="798" width="16" height="38" transform="rotate(0,678,798) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002221" ObjectName="洋田电厂\0.40千伏\CB_＃2发电机920" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200022210020"/>
+  </metadata>
+ </g>
+ <g id="100002172">
+  <use x="395" y="798" width="16" height="38" transform="rotate(0,395,798) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002220" ObjectName="洋田电厂\0.40千伏\CB_＃1发电机910" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200022200020"/>
+  </metadata>
+ </g>
+ <g id="100002183">
+  <use x="1065" y="281" width="16" height="38" transform="rotate(0,1065,281) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002217" ObjectName="洋田电厂\35.00千伏\CB_大洋线311" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200022170020"/>
+  </metadata>
+ </g>
+</g>
+<g id="Disconnector_Layer">
+ <g id="101001672">
+  <use x="1065" y="230" width="20" height="34" transform="rotate(0,1065,230) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221003696" ObjectName="洋田电厂\35.00千伏\SW_大洋线3113" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210036960020"/>
+  </metadata>
+ </g>
+ <g id="101002128">
+  <use x="1274" y="419" width="20" height="34" transform="rotate(0,1274,419) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221003698" ObjectName="洋田电厂\35.00千伏\SW_2＃主变3021" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210036980020"/>
+  </metadata>
+ </g>
+ <g id="101002135">
+  <use x="916" y="413" width="20" height="34" transform="rotate(0,916,413) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221003694" ObjectName="洋田电厂\35.00千伏\SW_35kV母线PT3511" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210036940020"/>
+  </metadata>
+ </g>
+ <g id="101002177">
+  <use x="613" y="421" width="20" height="34" transform="rotate(0,613,421) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221003697" ObjectName="洋田电厂\35.00千伏\SW_1＃主变3011" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210036970020"/>
+  </metadata>
+ </g>
+ <g id="101002185">
+  <use x="1065" y="334" width="20" height="34" transform="rotate(0,1065,334) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221003695" ObjectName="洋田电厂\35.00千伏\SW_大洋线3111" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210036950020"/>
+  </metadata>
+ </g>
+</g>
+<g id="Generator_Layer">
+ <g id="104002106">
+  <use x="1056" y="883" width="28" height="30" transform="rotate(0,1056,883) scale(1,1) translate(-14,-3)" xlink:href="#SynchronousMachine:ah发电机0_0" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="260000061" ObjectName="洋田电厂\0.40千伏\UN_＃3发电机" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="104002121">
+  <use x="1339" y="883" width="28" height="30" transform="rotate(0,1339,883) scale(1,1) translate(-14,-3)" xlink:href="#SynchronousMachine:ah发电机0_0" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="260000062" ObjectName="洋田电厂\0.40千伏\UN_＃4发电机" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="104002180">
+  <use x="678" y="885" width="28" height="30" transform="rotate(0,678,885) scale(1,1) translate(-14,-3)" xlink:href="#SynchronousMachine:ah发电机0_0" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="260000060" ObjectName="洋田电厂\0.40千伏\UN_＃2发电机" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="104002179">
+  <use x="395" y="885" width="28" height="30" transform="rotate(0,395,885) scale(1,1) translate(-14,-3)" xlink:href="#SynchronousMachine:ah发电机0_0" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="260000059" ObjectName="洋田电厂\0.40千伏\UN_＃1发电机" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="Transformer2_Layer">
+<g id="102002079">
+ <g id="1020020790">
+  <use x="1275" y="577" width="54" height="72" transform="rotate(0,1275,577) scale(1,1) translate(-21,-36)" xlink:href="#Transformer2:nc_两卷变压器_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="251000335" ObjectName="洋田电厂\35.00千伏\XF_洋田电厂＃2主变-高" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="1020020791">
+  <use x="1275" y="577" width="54" height="72" transform="rotate(0,1275,577) scale(1,1) translate(-21,-36)" xlink:href="#Transformer2:nc_两卷变压器_1" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="251000336" ObjectName="洋田电厂\0.40千伏\XF_洋田电厂＃2主变-低" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <metadata>
+  <cge:PSR_Ref ObjectID="250000137" ObjectName="洋田电厂\XFMR_洋田电厂＃2主变" Plane="0"/>
+ </metadata>
+</g>
+<g id="102002178">
+ <g id="1020021780">
+  <use x="614" y="579" width="54" height="72" transform="rotate(0,614,579) scale(1,1) translate(-21,-36)" xlink:href="#Transformer2:nc_两卷变压器_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="251000333" ObjectName="洋田电厂\35.00千伏\XF_洋田电厂＃1主变-高" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="1020021781">
+  <use x="614" y="579" width="54" height="72" transform="rotate(0,614,579) scale(1,1) translate(-21,-36)" xlink:href="#Transformer2:nc_两卷变压器_1" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="251000334" ObjectName="洋田电厂\0.40千伏\XF_洋田电厂＃1主变-低" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <metadata>
+  <cge:PSR_Ref ObjectID="250000136" ObjectName="洋田电厂\XFMR_洋田电厂＃1主变" Plane="0"/>
+ </metadata>
+</g>
+</g>
+<g id="ACLineSegment_Layer">
+ <g id="36001666">
+ <path d="M 1065 173 L 1065 100" stroke-width="2" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="ST=210000109/LN=240000135" ObjectName="ST=洋田电厂/LN=ACLN_大洋线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="PT_Layer">
+ <g id="107002107">
+  <use x="1214" y="769" width="90" height="100" transform="rotate(360,1214,769) scale(-1,1) translate(-2480,-8)" xlink:href="#PT:JA电压互感期_0" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001004" ObjectName="洋田电厂\0.40千伏\TERM_0.38kVII段PT" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="107002136">
+  <use x="916" y="462" width="90" height="100" transform="rotate(360,916,462) scale(-1,1) translate(-1884,-8)" xlink:href="#PT:JA电压互感期_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001002" ObjectName="洋田电厂\35.00千伏\TERM_35kVPT" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="107002181">
+  <use x="553" y="771" width="90" height="100" transform="rotate(360,553,771) scale(-1,1) translate(-1158,-8)" xlink:href="#PT:JA电压互感期_0" class="kv0"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001003" ObjectName="洋田电厂\0.40千伏\TERM_0.38kVI段PT" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="Link_Layer">
+ <g id="34001673">
+ <path d="M 1065 173 L 1065 217" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="36001666_0" Pin1InfoVect0LinkObjId="101001672_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002097">
+ <path d="M 1056 780 L 1056 726" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100002101_1" Pin1InfoVect0LinkObjId="30002088_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002094">
+ <path d="M 1214 769 L 1214 726" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="107002107_0" Pin1InfoVect0LinkObjId="30002088_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002092">
+ <path d="M 1056 883 L 1056 811" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="104002106_0" Pin1InfoVect0LinkObjId="100002101_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002115">
+ <path d="M 1339 883 L 1339 811" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="104002121_0" Pin1InfoVect0LinkObjId="100002119_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002116">
+ <path d="M 1339 780 L 1339 726" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100002119_1" Pin1InfoVect0LinkObjId="30002088_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002122">
+ <path d="M 1275 608 L 1275 726" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="102002079_1" Pin1InfoVect0LinkObjId="30002088_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002126">
+ <path d="M 1274 369 L 1274 406" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="30002131_0" Pin1InfoVect0LinkObjId="101002128_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002125">
+ <path d="M 1274 467 L 1274 431" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100002127_1" Pin1InfoVect0LinkObjId="101002128_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002129">
+ <path d="M 1274 498 L 1274 545" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100002127_0" Pin1InfoVect0LinkObjId="102002079_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002133">
+ <path d="M 916 462 L 916 425" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="107002136_0" Pin1InfoVect0LinkObjId="101002135_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002134">
+ <path d="M 916 400 L 916 369" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101002135_1" Pin1InfoVect0LinkObjId="30002131_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002170">
+ <path d="M 613 369 L 613 408" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="30002131_0" Pin1InfoVect0LinkObjId="101002177_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002171">
+ <path d="M 613 500 L 613 547" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100002174_0" Pin1InfoVect0LinkObjId="102002178_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002169">
+ <path d="M 613 469 L 613 433" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100002174_1" Pin1InfoVect0LinkObjId="101002177_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002168">
+ <path d="M 614 610 L 614 728" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="102002178_1" Pin1InfoVect0LinkObjId="30002146_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002165">
+ <path d="M 678 782 L 678 728" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100002173_1" Pin1InfoVect0LinkObjId="30002146_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002164">
+ <path d="M 678 885 L 678 813" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="104002180_0" Pin1InfoVect0LinkObjId="100002173_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002159">
+ <path d="M 395 885 L 395 813" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="104002179_0" Pin1InfoVect0LinkObjId="100002172_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002160">
+ <path d="M 395 782 L 395 778" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100002172_1" Pin1InfoVect0LinkObjId="34002162_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002161">
+ <path d="M 553 771 L 553 728" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="107002181_0" Pin1InfoVect0LinkObjId="30002146_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002162">
+ <path d="M 395 778 L 395 728" stroke-width="2"  class="kv0"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34002160_1" Pin1InfoVect0LinkObjId="30002146_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002186">
+ <path d="M 1065 265 L 1065 242" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100002183_1" Pin1InfoVect0LinkObjId="101001672_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002187">
+ <path d="M 1065 296 L 1065 321" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100002183_0" Pin1InfoVect0LinkObjId="101002185_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002188">
+ <path d="M 1065 346 L 1065 369" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101002185_0" Pin1InfoVect0LinkObjId="30002131_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="MeasurementValue_Layer">
+ <g id="33001668">
+ <text x="1091" y="117" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420002690020" ObjectName="ST=洋田电厂/LN=ACLN_大洋线:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001669">
+ <text x="1091" y="140" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420002690030" ObjectName="ST=洋田电厂/LN=ACLN_大洋线:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001670">
+ <text x="1091" y="161" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420002690040" ObjectName="ST=洋田电厂/LN=ACLN_大洋线:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002073">
+ <text x="1332" y="495" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510003350050" ObjectName="洋田电厂\35.00千伏\XF_洋田电厂＃2主变-高:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002074">
+ <text x="1332" y="515" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510003350060" ObjectName="洋田电厂\35.00千伏\XF_洋田电厂＃2主变-高:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002075">
+ <text x="1332" y="536" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510003350070" ObjectName="洋田电厂\35.00千伏\XF_洋田电厂＃2主变-高:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002089">
+ <text x="1036" y="931" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02600000610080" ObjectName="洋田电厂\0.40千伏\UN_＃3发电机:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002090">
+ <text x="1036" y="948" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02600000610090" ObjectName="洋田电厂\0.40千伏\UN_＃3发电机:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002091">
+ <text x="1036" y="967" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="026000006100100" ObjectName="洋田电厂\0.40千伏\UN_＃3发电机:other" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002112">
+ <text x="1319" y="931" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02600000620080" ObjectName="洋田电厂\0.40千伏\UN_＃4发电机:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002113">
+ <text x="1319" y="948" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02600000620090" ObjectName="洋田电厂\0.40千伏\UN_＃4发电机:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002114">
+ <text x="1319" y="967" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="026000006200100" ObjectName="洋田电厂\0.40千伏\UN_＃4发电机:other" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002156">
+ <text x="658" y="933" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02600000600080" ObjectName="洋田电厂\0.40千伏\UN_＃2发电机:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002157">
+ <text x="658" y="950" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02600000600090" ObjectName="洋田电厂\0.40千伏\UN_＃2发电机:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002158">
+ <text x="658" y="969" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="026000006000100" ObjectName="洋田电厂\0.40千伏\UN_＃2发电机:other" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002153">
+ <text x="375" y="933" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02600000590080" ObjectName="洋田电厂\0.40千伏\UN_＃1发电机:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002154">
+ <text x="375" y="950" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02600000590090" ObjectName="洋田电厂\0.40千伏\UN_＃1发电机:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002155">
+ <text x="375" y="969" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="026000005900100" ObjectName="洋田电厂\0.40千伏\UN_＃1发电机:other" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002147">
+ <text x="675" y="497" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510003330050" ObjectName="洋田电厂\35.00千伏\XF_洋田电厂＃1主变-高:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002148">
+ <text x="675" y="517" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510003330060" ObjectName="洋田电厂\35.00千伏\XF_洋田电厂＃1主变-高:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002149">
+ <text x="675" y="538" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510003330070" ObjectName="洋田电厂\35.00千伏\XF_洋田电厂＃1主变-高:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002195">
+ <text x="1413" y="355" font-size="18" font-width="18" font-height="18" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32895">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300002970020" ObjectName="洋田电厂\35.00千伏\BS_35kV母线:V" Plane="0" AFMask="32895" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002198">
+ <text x="1412" y="331" font-size="18" font-width="18" font-height="18" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,0,255)" writing-mode="lr" Plane="0" AFMask="32895">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300002970060" ObjectName="洋田电厂\35.00千伏\BS_35kV母线:V_C" Plane="0" AFMask="32895" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002197">
+ <text x="1412" y="311" font-size="18" font-width="18" font-height="18" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,0,255)" writing-mode="lr" Plane="0" AFMask="32895">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300002970050" ObjectName="洋田电厂\35.00千伏\BS_35kV母线:V_B" Plane="0" AFMask="32895" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002196">
+ <text x="1412" y="290" font-size="18" font-width="18" font-height="18" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,0,255)" writing-mode="lr" Plane="0" AFMask="32895">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300002970040" ObjectName="洋田电厂\35.00千伏\BS_35kV母线:V_A" Plane="0" AFMask="32895" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+</g>
+<g id="Text_Layer">
+ <text x="1045" y="86" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">大洋线</text>
+ <text x="1075" y="240" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3113</text>
+ <text x="516" y="68" font-size="23" font-width="23" font-height="23" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(24,100,70)" writing-mode="lr" Plane="0" AFMask="32783">洋田电厂</text>
+ <text x="1680" y="25" font-size="14" font-width="14" font-height="14" font-family="SimSun" fill="rgb(85,170,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">P</text>
+ <text x="1678" y="44" font-size="14" font-width="14" font-height="14" font-family="SimSun" fill="rgb(85,170,0)" stroke="rgb(0,85,0)" writing-mode="lr" Plane="0" AFMask="32783">Q</text>
+ <text x="1680" y="63" font-size="14" font-width="14" font-height="14" font-family="SimSun" fill="rgb(85,170,0)" stroke="rgb(170,0,0)" writing-mode="lr" Plane="0" AFMask="32783">I</text>
+ <text x="1076" y="903" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">＃3发电机</text>
+ <text x="1066" y="806" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">430</text>
+ <text x="1487" y="753" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">0.4kVII段母线</text>
+ <text x="1349" y="806" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">440</text>
+ <text x="1359" y="903" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">＃4发电机</text>
+ <text x="1284" y="429" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3021</text>
+ <text x="1284" y="493" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">302</text>
+ <text x="1424" y="396" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">35kV母线</text>
+ <text x="926" y="423" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
+ <text x="623" y="495" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">301</text>
+ <text x="623" y="431" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3011</text>
+ <text x="698" y="905" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">＃2发电机</text>
+ <text x="688" y="808" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">420</text>
+ <text x="768" y="755" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">0.4kVI段母线</text>
+ <text x="405" y="808" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">410</text>
+ <text x="415" y="905" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">＃1发电机</text>
+ <text x="1075" y="291" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">311</text>
+ <text x="1075" y="344" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3111</text>
+ <text x="479" y="601" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,255)" writing-mode="lr" Plane="0" AFMask="32783">#1主变</text>
+ <text x="1142" y="601" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,255)" writing-mode="lr" Plane="0" AFMask="32783">#2主变</text>
+ <text x="1381" y="291" font-size="17" font-width="17" font-height="17" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Ua</text>
+ <text x="1381" y="312" font-size="17" font-width="17" font-height="17" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Ub</text>
+ <text x="1381" y="329" font-size="17" font-width="17" font-height="17" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Uc</text>
+ <text x="1373" y="350" font-size="17" font-width="17" font-height="17" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Uab</text>
+</g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="(0,0,1500,1200)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cge="http://www.cim.com" >
+<defs>
+<style type="text/css"><![CDATA[
+.kv0{stroke:rgb(170,255,0);fill:none}
+.kv10{stroke:rgb(185,72,66);fill:none}
+.kv110{stroke:rgb(240,65,85);fill:none}
+.kv220{stroke:rgb(128,0,128);fill:none}
+.kv35{stroke:rgb(255,255,0);fill:none}
+.kv500{stroke:rgb(85,85,255);fill:none}
+.kv6{stroke:rgb(0,170,255);fill:none}
+.kv-1{stroke:rgb(93,92,88);fill:none}
+]]></style>
+<symbol id="terminal" preserveAspectRatio="xMidYMid meet">
+ <circle cx="0" cy="0" r="1" stroke="yellow" fill="yellow" stroke-width="1"/>
+</symbol>
+</defs>
+<g id="Head_Layer">
+ <rect x="0" y="0" height="999" width="1680" fill="rgb(0,0,0)" FacName="吉安县天矿变" InitShowingPlane="0," VerNo="20" />
+</g>
+</svg>

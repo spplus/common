@@ -1,0 +1,2055 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="(0,0,1500,1200)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cge="http://www.cim.com" >
+<defs>
+<style type="text/css"><![CDATA[
+.kv0{stroke:rgb(170,255,0);fill:none}
+.kv10{stroke:rgb(185,72,66);fill:none}
+.kv110{stroke:rgb(240,65,85);fill:none}
+.kv220{stroke:rgb(128,0,128);fill:none}
+.kv35{stroke:rgb(255,255,0);fill:none}
+.kv500{stroke:rgb(85,85,255);fill:none}
+.kv6{stroke:rgb(0,170,255);fill:none}
+.kv-1{stroke:rgb(93,92,88);fill:none}
+]]></style>
+<symbol id="terminal" preserveAspectRatio="xMidYMid meet">
+ <circle cx="0" cy="0" r="1" stroke="yellow" fill="yellow" stroke-width="1"/>
+</symbol>
+<symbol id="GroundDisconnector:hg接地刀闸_0" viewBox="0,0,14,36" >
+ <use x="6" y="4" xlink:href="#terminal" Plane="0"/>
+ <line x1="3" y1="29" x2="8" y2="29" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="4" y1="31" x2="7" y2="31" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="1" y1="26" x2="10" y2="26" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="5" y1="22" x2="5" y2="26" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="13" y1="5" x2="6" y2="18" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <circle cx="5" cy="4" r="2" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <circle cx="5" cy="20" r="2" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="GroundDisconnector:hg接地刀闸_1" viewBox="0,0,14,36" >
+ <use x="6" y="4" xlink:href="#terminal" Plane="0"/>
+ <line x1="5" y1="6" x2="5" y2="20" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="1" y1="28" x2="10" y2="28" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="4" y1="33" x2="7" y2="33" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="3" y1="30" x2="8" y2="30" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="5" y1="24" x2="5" y2="28" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <circle cx="5" cy="4" r="2" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <circle cx="5" cy="22" r="2" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Breaker:nc_断路器（竖）_0" viewBox="0,0,20,36" >
+ <use x="8" y="4" xlink:href="#terminal" Plane="0"/>
+ <use x="8" y="29" xlink:href="#terminal" Plane="0"/>
+ <rect x="3" y="5" width="10" height="22" transform="rotate(0,8,16)" stroke-width="1" stroke="rgb(255,255,255)" fill="none" Plane="0" AFMask="32769"/>
+ <line x1="8" y1="4" x2="8" y2="2" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="8" y1="29" x2="8" y2="27" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Breaker:nc_断路器（竖）_1" viewBox="0,0,20,36" >
+ <use x="8" y="4" xlink:href="#terminal" Plane="0"/>
+ <use x="8" y="29" xlink:href="#terminal" Plane="0"/>
+ <rect x="3" y="5" width="10" height="22" transform="rotate(0,8,16)" stroke-width="1" stroke="rgb(255,0,0)" fill="rgb(255,0,0)" Plane="0" AFMask="32769"/>
+ <line x1="8" y1="29" x2="8" y2="27" stroke-width="1" fill="none" stroke="rgb(255,0,0)" Plane="0" AFMask="32769"/>
+ <line x1="8" y1="4" x2="8" y2="2" stroke-width="1" fill="none" stroke="rgb(255,0,0)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Arrester:避雷器2_0" viewBox="0,0,18,42" >
+ <use x="8" y="5" xlink:href="#terminal" Plane="0"/>
+ <rect x="4" y="13" width="9" height="16" transform="rotate(0,8,21)" stroke-width="1" stroke="rgb(255,255,255)" fill="none" Plane="0" AFMask="32799"/>
+ <line x1="8" y1="3" x2="8" y2="13" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32799"/>
+ <line x1="8" y1="14" x2="8" y2="24" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32799"/>
+ <line x1="11" y1="37" x2="6" y2="37" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32863"/>
+ <line x1="10" y1="39" x2="7" y2="39" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32863"/>
+ <path d="M 6 19 L 8 24 L 10 19 " stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32783"/>
+ <path d="M 10 24 L 10 24 " stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32783"/>
+ <line x1="5" y1="35" x2="12" y2="35" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32799"/>
+ <line x1="8" y1="35" x2="8" y2="29" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32783"/>
+</symbol>
+<symbol id="GZP:nc_光字牌_0" viewBox="0,0,36,36" >
+ <rect x="5" y="6" width="24" height="24" transform="rotate(0,17,18)" stroke-width="1" stroke="rgb(0,255,255)" fill="rgb(0,0,0)" Plane="0" AFMask="32769"/>
+ <path d="M 2 18 L 18 2 L 33 18 L 18 33 Z" stroke-width="1" fill="rgb(0,255,255)" stroke="rgb(43,191,255)" Plane="0" AFMask="32769"/>
+ <circle cx="18" cy="18" r="11" stroke-width="1" fill="rgb(0,255,0)" stroke="rgb(0,170,0)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="GZP:nc_光字牌_1" viewBox="0,0,36,36" >
+ <rect x="5" y="6" width="24" height="24" transform="rotate(0,17,18)" stroke-width="1" stroke="rgb(0,255,255)" fill="rgb(0,0,0)" Plane="0" AFMask="32769"/>
+ <path d="M 2 17 L 17 2 L 33 17 L 17 33 Z" stroke-width="1" fill="rgb(0,255,255)" stroke="rgb(43,191,255)" Plane="0" AFMask="32769"/>
+ <circle cx="18" cy="18" r="11" stroke-width="1" fill="rgb(255,0,0)" stroke="rgb(0,170,0)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Compensator:nc_单端电容器_0" viewBox="0,0,28,28" >
+ <use x="14" y="4" xlink:href="#terminal" Plane="0"/>
+ <line x1="3" y1="12" x2="24" y2="12" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="14" y1="11" x2="14" y2="2" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="14" y1="20" x2="14" y2="20" stroke-width="2" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="3" y1="22" x2="24" y2="22" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Transformer2:nc_两卷有载变压器_0" viewBox="0,0,100,110" >
+ <use x="33" y="9" xlink:href="#terminal" Plane="0"/>
+ <circle cx="32.5" cy="33.5" r="25.5" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32783"/>
+ <line x1="33" y1="18" x2="33" y2="34" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32783"/>
+ <line x1="33" y1="34" x2="19" y2="42" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32783"/>
+ <line x1="47" y1="42" x2="33" y2="34" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32783"/>
+ <line x1="0" y1="47" x2="76" y2="15" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32799"/>
+ <path d="M 59 29 A 7 22 0 0 0 60 14" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32799"/>
+ <path d="M 62 42 A 1 8 0 0 0 62 42" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32799"/>
+ <path d="M 66 44 A 2 8 0 0 0 65 49" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32799"/>
+</symbol>
+<symbol id="Transformer2:nc_两卷有载变压器_1" viewBox="0,0,100,110" >
+ <use x="33" y="102" xlink:href="#terminal" Plane="0"/>
+ <polygon points="20,85 33,61 46,85" stroke-width ="1" stroke="rgb(255,255,255)" fill="none" Plane="1" AFMask="32799"/>
+ <circle cx="32.5" cy="75.5" r="25.5" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="1" AFMask="32783"/>
+</symbol>
+<symbol id="Transformer2:nc_两卷有载变压器_2" viewBox="0,0,100,110" >
+ <use x="33" y="34" xlink:href="#terminal" Plane="0"/>
+</symbol>
+<symbol id="Disconnector:nc_刀闸（上）_0" viewBox="0,0,20,34" >
+ <use x="6" y="29" xlink:href="#terminal" Plane="0"/>
+ <use x="6" y="4" xlink:href="#terminal" Plane="0"/>
+ <line x1="6" y1="2" x2="6" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="16" y1="8" x2="6" y2="26" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="6" y1="26" x2="6" y2="31" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="2" y1="7" x2="10" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="2" y1="25" x2="10" y2="25" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Disconnector:nc_刀闸（上）_1" viewBox="0,0,20,34" >
+ <use x="6" y="29" xlink:href="#terminal" Plane="0"/>
+ <use x="6" y="4" xlink:href="#terminal" Plane="0"/>
+ <line x1="2" y1="7" x2="10" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="6" y1="2" x2="6" y2="31" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="2" y1="26" x2="10" y2="26" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Disconnector:nc_刀闸（竖下）_0" viewBox="0,0,26,38" >
+ <use x="12" y="33" xlink:href="#terminal" Plane="0"/>
+ <use x="12" y="5" xlink:href="#terminal" Plane="0"/>
+ <line x1="8" y1="8" x2="16" y2="8" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="8" y1="30" x2="16" y2="30" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="13" y1="7" x2="3" y2="27" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="12" y1="3" x2="12" y2="8" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="12" y1="4" x2="12" y2="4" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="12" y1="29" x2="12" y2="35" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Disconnector:nc_刀闸（竖下）_1" viewBox="0,0,26,38" >
+ <use x="12" y="33" xlink:href="#terminal" Plane="0"/>
+ <use x="12" y="5" xlink:href="#terminal" Plane="0"/>
+ <line x1="12" y1="3" x2="12" y2="34" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="9" y1="30" x2="17" y2="30" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="8" y1="9" x2="16" y2="9" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Terminal:nc_站用变_0" viewBox="0,0,50,80" >
+ <use x="23" y="69" xlink:href="#terminal" Plane="0"/>
+ <rect x="18" y="48" width="9" height="16" transform="rotate(360,22,56)" stroke-width="1" stroke="rgb(255,255,255)" fill="none" Plane="0" AFMask="32769"/>
+ <rect x="24" y="39" width="0" height="0" transform="rotate(0,24,39)" stroke-width="1" stroke="rgb(0,0,255)" fill="none" Plane="0" AFMask="32769"/>
+ <line x1="55" y1="57" x2="55" y2="57" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="55" y1="54" x2="55" y2="54" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="24" y1="45" x2="24" y2="45" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="23" y1="43" x2="23" y2="70" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="25" y1="17" x2="25" y2="17" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="23" y1="32" x2="23" y2="39" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="23" y1="33" x2="29" y2="28" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="23" y1="33" x2="17" y2="28" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="23" y1="13" x2="23" y2="20" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="23" y1="13" x2="17" y2="9" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="23" y1="13" x2="29" y2="9" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <circle cx="23" cy="31" r="12" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <circle cx="23" cy="14" r="12" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <path d="M 57 46 L 57 46 " stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+</symbol>
+</defs>
+<g id="Head_Layer">
+ <rect x="0" y="0" height="999" width="1680" fill="rgb(0,0,0)" FacName="吉安县永阳变" InitShowingPlane="0," VerNo="89" />
+</g>
+<g id="Other_Layer">
+ <rect x="1494" y="439" width="97" height="61" transform="rotate(0,1542,469)" stroke-width="2" stroke="rgb(128,128,128)" fill="rgb(190,193,197)" Plane="0" AFMask="32895"/>
+ <image x="1481" y="20" width="123" height="420" xlink:href="botton2.png" ShowStyle="1" Plane="0" AFMaske="32895"/>
+ <a xlink:href="ja_吉安县厂站一次接线图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0,1," >
+  <rect x="1487" y="122" width="116" height="320" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_35KV永阳变官田线911间隔图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="325" y="689" width="44" height="66" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_110KV君山变2#电容器933间隔图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="408" y="689" width="45" height="65" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_35KV永阳变永阳线913间隔图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="492" y="687" width="45" height="65" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_35KV永阳变田心线914间隔图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="580" y="687" width="45" height="65" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_35KV永阳变685厂线915间隔图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="670" y="684" width="45" height="65" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_35KV永阳变安塘线925间隔图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="1146" y="681" width="45" height="65" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_35KV永阳变煤矿线926间隔图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="1228" y="680" width="45" height="65" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_110KV君山变2#电容器933间隔图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="1309" y="682" width="45" height="65" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_35KV永阳变吉莲永线927间隔图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="1373" y="684" width="45" height="65" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_吉安县永阳变永早线311间隔接线图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="652" y="140" width="45" height="65" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_吉安县永阳变永敖线312间隔接线图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="880" y="157" width="45" height="65" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_吉安县永阳变永高线313间隔接线图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="1122" y="151" width="45" height="65" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_吉安县永阳变＃1主变间隔接线图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="505" y="416" width="102" height="94" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <a xlink:href="ja_吉安县永阳变＃2主变间隔接线图.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0," >
+  <rect x="1149" y="412" width="102" height="94" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+</g>
+<g id="Bus_Layer">
+ <g id="30000020">
+  <path d="M 426 262 L 1267 262" stroke-width="2" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="230000362" ObjectName="吉安县永阳变\35.00千伏\BS_35KV母线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="30000026">
+  <path d="M 1099 650 L 1482 650" stroke-width="2" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="230000371" ObjectName="吉安县永阳变\10.00千伏\BS_10KV母线3#" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="30000906">
+  <path d="M 806 649 L 1064 649" stroke-width="2" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="230000370" ObjectName="吉安县永阳变\10.00千伏\BS_10KV母线2#" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="30000992">
+  <path d="M 327 650 L 749 649" stroke-width="2" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="230000363" ObjectName="吉安县永阳变\10.00千伏\BS_10KV母线1#" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="Breaker_Layer">
+ <g id="100000209">
+  <use x="603" y="720" width="20" height="36" transform="rotate(0,603,720) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002576" ObjectName="吉安县永阳变\10.00千伏\CB_10KV田心线914" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025760020"/>
+  </metadata>
+ </g>
+ <g id="100000228">
+  <use x="692" y="718" width="20" height="36" transform="rotate(0,692,718) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002577" ObjectName="吉安县永阳变\10.00千伏\CB_10KV658厂线915" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025770020"/>
+  </metadata>
+ </g>
+ <g id="100000048">
+  <use x="679" y="182" width="20" height="36" transform="rotate(0,679,182) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002565" ObjectName="吉安县永阳变\35.00千伏\CB_35KV永早线311" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025650020"/>
+  </metadata>
+ </g>
+ <g id="100000100">
+  <use x="556" y="578" width="20" height="36" transform="rotate(0,556,578) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002570" ObjectName="吉安县永阳变\10.00千伏\CB_1＃主变901" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025700020"/>
+  </metadata>
+ </g>
+ <g id="100000101">
+  <use x="555" y="344" width="20" height="36" transform="rotate(0,555,344) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002568" ObjectName="吉安县永阳变\35.00千伏\CB_1＃主变301" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025680020"/>
+  </metadata>
+ </g>
+ <g id="100000060">
+  <use x="1148" y="189" width="20" height="36" transform="rotate(0,1148,189) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002567" ObjectName="吉安县永阳变\35.00千伏\CB_35KV永高线313" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025670020"/>
+  </metadata>
+ </g>
+ <g id="100000528">
+  <use x="1203" y="577" width="20" height="36" transform="rotate(0,1203,577) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002571" ObjectName="吉安县永阳变\10.00千伏\CB_2＃主变902" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025710020"/>
+  </metadata>
+ </g>
+ <g id="100000529">
+  <use x="1202" y="343" width="20" height="36" transform="rotate(0,1202,343) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002569" ObjectName="吉安县永阳变\35.00千伏\CB_2＃主变302" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025690020"/>
+  </metadata>
+ </g>
+ <g id="100000715">
+  <use x="433" y="728" width="20" height="36" transform="rotate(0,433,728) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002573" ObjectName="吉安县永阳变\10.00千伏\CB_1＃电容器991" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025730020"/>
+  </metadata>
+ </g>
+ <g id="100000769">
+  <use x="905" y="196" width="20" height="36" transform="rotate(0,905,196) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002566" ObjectName="吉安县永阳变\35.00千伏\CB_35KV永敖线312" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025660020"/>
+  </metadata>
+ </g>
+ <g id="100000837">
+  <use x="1170" y="714" width="20" height="36" transform="rotate(0,1170,714) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002578" ObjectName="吉安县永阳变\10.00千伏\CB_10KV安塘线925" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025780020"/>
+  </metadata>
+ </g>
+ <g id="100000861">
+  <use x="1253" y="714" width="20" height="36" transform="rotate(0,1253,714) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002579" ObjectName="吉安县永阳变\10.00千伏\CB_10KV煤矿线926" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025790020"/>
+  </metadata>
+ </g>
+ <g id="100000876">
+  <use x="1332" y="718" width="20" height="36" transform="rotate(0,1332,718) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002574" ObjectName="吉安县永阳变\10.00千伏\CB_2＃电容器992" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025740020"/>
+  </metadata>
+ </g>
+ <g id="100000893">
+  <use x="1400" y="725" width="20" height="36" transform="rotate(0,1400,725) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002580" ObjectName="吉安县永阳变\10.00千伏\CB_10KV吉莲永线927" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025800020"/>
+  </metadata>
+ </g>
+ <g id="100000967">
+  <use x="518" y="718" width="20" height="36" transform="rotate(0,518,718) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002575" ObjectName="吉安县永阳变\10.00千伏\CB_10KV永阳线913" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025750020"/>
+  </metadata>
+ </g>
+ <g id="100000983">
+  <use x="350" y="727" width="20" height="36" transform="rotate(0,350,727) scale(1,1) translate(-8,-17)" xlink:href="#Breaker:nc_断路器（竖）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002572" ObjectName="吉安县永阳变\10.00千伏\CB_10KV官田线911" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200025720020"/>
+  </metadata>
+ </g>
+</g>
+<g id="Disconnector_Layer">
+ <g id="101000210">
+  <use x="603" y="677" width="20" height="34" transform="rotate(0,603,677) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004456" ObjectName="吉安县永阳变\10.00千伏\SW_田心线9141" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044560020"/>
+  </metadata>
+ </g>
+ <g id="101000211">
+  <use x="603" y="764" width="26" height="38" transform="rotate(0,603,764) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004457" ObjectName="吉安县永阳变\10.00千伏\SW_田心线9143" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044570020"/>
+  </metadata>
+ </g>
+ <g id="101000229">
+  <use x="692" y="675" width="20" height="34" transform="rotate(0,692,675) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004458" ObjectName="吉安县永阳变\10.00千伏\SW_658厂线9151" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044580020"/>
+  </metadata>
+ </g>
+ <g id="101000230">
+  <use x="692" y="762" width="26" height="38" transform="rotate(0,692,762) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004459" ObjectName="吉安县永阳变\10.00千伏\SW_658厂线9153" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044590020"/>
+  </metadata>
+ </g>
+ <g id="101000085">
+  <use x="555" y="292" width="20" height="34" transform="rotate(0,555,292) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004440" ObjectName="吉安县永阳变\35.00千伏\SW_1＃主变3011" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044400020"/>
+  </metadata>
+ </g>
+ <g id="101000090">
+  <use x="557" y="620" width="26" height="38" transform="rotate(0,557,620) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004445" ObjectName="吉安县永阳变\10.00千伏\SW_1＃主变9011" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044450020"/>
+  </metadata>
+ </g>
+ <g id="101000493">
+  <use x="555" y="539" width="20" height="34" transform="rotate(0,555,539) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004444" ObjectName="吉安县永阳变\10.00千伏\SW_1＃主变9013" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044440020"/>
+  </metadata>
+ </g>
+ <g id="101000530">
+  <use x="1202" y="291" width="20" height="34" transform="rotate(0,1202,291) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004442" ObjectName="吉安县永阳变\35.00千伏\SW_2＃主变3021" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044420020"/>
+  </metadata>
+ </g>
+ <g id="101000531">
+  <use x="1204" y="619" width="26" height="38" transform="rotate(0,1204,619) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004447" ObjectName="吉安县永阳变\10.00千伏\SW_2＃主变9021" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044470020"/>
+  </metadata>
+ </g>
+ <g id="101000533">
+  <use x="1202" y="538" width="20" height="34" transform="rotate(0,1202,538) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004446" ObjectName="吉安县永阳变\10.00千伏\SW_2＃主变9023" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044460020"/>
+  </metadata>
+ </g>
+ <g id="101000620">
+  <use x="904" y="305" width="20" height="34" transform="rotate(0,904,305) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004468" ObjectName="吉安县永阳变\35.00千伏\SW_PT3511" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044680020"/>
+  </metadata>
+ </g>
+ <g id="101000622">
+  <use x="678" y="135" width="20" height="34" transform="rotate(0,678,135) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004434" ObjectName="吉安县永阳变\35.00千伏\SW_永早线3113" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044340020"/>
+  </metadata>
+ </g>
+ <g id="101000624">
+  <use x="1149" y="145" width="20" height="34" transform="rotate(0,1149,145) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004438" ObjectName="吉安县永阳变\35.00千伏\SW_永高线3133" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044380020"/>
+  </metadata>
+ </g>
+ <g id="101000628">
+  <use x="679" y="222" width="26" height="38" transform="rotate(0,679,222) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004435" ObjectName="吉安县永阳变\35.00千伏\SW_永早线3111" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044350020"/>
+  </metadata>
+ </g>
+ <g id="101000630">
+  <use x="1148" y="234" width="26" height="38" transform="rotate(0,1148,234) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004439" ObjectName="吉安县永阳变\35.00千伏\SW_永高线3131" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044390020"/>
+  </metadata>
+ </g>
+ <g id="101000716">
+  <use x="433" y="685" width="20" height="34" transform="rotate(0,433,685) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004450" ObjectName="吉安县永阳变\10.00千伏\SW_1＃电容器9911" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044500020"/>
+  </metadata>
+ </g>
+ <g id="101000717">
+  <use x="433" y="772" width="26" height="38" transform="rotate(0,433,772) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004451" ObjectName="吉安县永阳变\10.00千伏\SW_1＃电容器9913" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044510020"/>
+  </metadata>
+ </g>
+ <g id="101000770">
+  <use x="904" y="149" width="20" height="34" transform="rotate(0,904,149) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004436" ObjectName="吉安县永阳变\35.00千伏\SW_永敖线3123" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044360020"/>
+  </metadata>
+ </g>
+ <g id="101000771">
+  <use x="905" y="236" width="26" height="38" transform="rotate(0,905,236) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004437" ObjectName="吉安县永阳变\35.00千伏\SW_永敖线3121" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044370020"/>
+  </metadata>
+ </g>
+ <g id="101000778">
+  <use x="555" y="390" width="26" height="38" transform="rotate(0,555,390) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004441" ObjectName="吉安县永阳变\35.00千伏\SW_1＃主变3013" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044410020"/>
+  </metadata>
+ </g>
+ <g id="101000785">
+  <use x="1202" y="384" width="26" height="38" transform="rotate(0,1202,384) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004443" ObjectName="吉安县永阳变\35.00千伏\SW_2＃主变3023" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044430020"/>
+  </metadata>
+ </g>
+ <g id="101000838">
+  <use x="1170" y="671" width="20" height="34" transform="rotate(0,1170,671) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004462" ObjectName="吉安县永阳变\10.00千伏\SW_安塘线9251" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044620020"/>
+  </metadata>
+ </g>
+ <g id="101000839">
+  <use x="1170" y="758" width="26" height="38" transform="rotate(0,1170,758) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004463" ObjectName="吉安县永阳变\10.00千伏\SW_安塘线9253" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044630020"/>
+  </metadata>
+ </g>
+ <g id="101000862">
+  <use x="1253" y="671" width="20" height="34" transform="rotate(0,1253,671) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004464" ObjectName="吉安县永阳变\10.00千伏\SW_煤矿线9261" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044640020"/>
+  </metadata>
+ </g>
+ <g id="101000863">
+  <use x="1253" y="758" width="26" height="38" transform="rotate(0,1253,758) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004465" ObjectName="吉安县永阳变\10.00千伏\SW_煤矿线9263" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044650020"/>
+  </metadata>
+ </g>
+ <g id="101000877">
+  <use x="1332" y="675" width="20" height="34" transform="rotate(0,1332,675) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004452" ObjectName="吉安县永阳变\10.00千伏\SW_2＃电容器9921" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044520020"/>
+  </metadata>
+ </g>
+ <g id="101000878">
+  <use x="1332" y="762" width="26" height="38" transform="rotate(0,1332,762) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004453" ObjectName="吉安县永阳变\10.00千伏\SW_2＃电容器9923" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044530020"/>
+  </metadata>
+ </g>
+ <g id="101000894">
+  <use x="1400" y="682" width="20" height="34" transform="rotate(0,1400,682) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004466" ObjectName="吉安县永阳变\10.00千伏\SW_吉莲永线9271" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044660020"/>
+  </metadata>
+ </g>
+ <g id="101000895">
+  <use x="1400" y="769" width="26" height="38" transform="rotate(0,1400,769) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004467" ObjectName="吉安县永阳变\10.00千伏\SW_吉莲永线9273" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044670020"/>
+  </metadata>
+ </g>
+ <g id="101000915">
+  <use x="1110" y="696" width="20" height="34" transform="rotate(0,1110,696) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004461" ObjectName="吉安县永阳变\10.00千伏\SW_母联9322" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044610020"/>
+  </metadata>
+ </g>
+ <g id="101000923">
+  <use x="977" y="702" width="20" height="34" transform="rotate(0,977,702) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004469" ObjectName="吉安县永阳变\10.00千伏\SW_PT9533" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044690020"/>
+  </metadata>
+ </g>
+ <g id="101000932">
+  <use x="883" y="695" width="20" height="34" transform="rotate(0,883,695) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004470" ObjectName="吉安县永阳变\10.00千伏\SW_所用变9711" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044700020"/>
+  </metadata>
+ </g>
+ <g id="101000936">
+  <use x="833" y="684" width="20" height="34" transform="rotate(0,833,684) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004460" ObjectName="吉安县永阳变\10.00千伏\SW_母联9311" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044600020"/>
+  </metadata>
+ </g>
+ <g id="101000968">
+  <use x="518" y="675" width="20" height="34" transform="rotate(0,518,675) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004454" ObjectName="吉安县永阳变\10.00千伏\SW_永阳线9131" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044540020"/>
+  </metadata>
+ </g>
+ <g id="101000969">
+  <use x="518" y="762" width="26" height="38" transform="rotate(0,518,762) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004455" ObjectName="吉安县永阳变\10.00千伏\SW_永阳线9133" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044550020"/>
+  </metadata>
+ </g>
+ <g id="101000984">
+  <use x="350" y="684" width="20" height="34" transform="rotate(0,350,684) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004448" ObjectName="吉安县永阳变\10.00千伏\SW_官田线9111" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044480020"/>
+  </metadata>
+ </g>
+ <g id="101000985">
+  <use x="350" y="771" width="26" height="38" transform="rotate(0,350,771) scale(1,1) translate(-12,-19)" xlink:href="#Disconnector:nc_刀闸（竖下）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221004449" ObjectName="吉安县永阳变\10.00千伏\SW_官田线9113" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210044490020"/>
+  </metadata>
+ </g>
+</g>
+<g id="GroundDisconnector_Layer">
+ <g id="111000365">
+  <use x="644" y="109" width="14" height="36" transform="rotate(0,644,109) scale(1,1) translate(-6,-4)" xlink:href="#GroundDisconnector:hg接地刀闸_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="222003108" ObjectName="吉安县永阳变\35.00千伏\GRNDSW_35KV永早线31103" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="02220031080020"/>
+  </metadata>
+ </g>
+ <g id="111000392">
+  <use x="1113" y="118" width="14" height="36" transform="rotate(0,1113,118) scale(1,1) translate(-6,-4)" xlink:href="#GroundDisconnector:hg接地刀闸_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="222003110" ObjectName="吉安县永阳变\35.00千伏\GRNDSW_35KV永高线31303" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="02220031100020"/>
+  </metadata>
+ </g>
+ <g id="111000411">
+  <use x="963" y="282" width="14" height="36" transform="rotate(0,963,282) scale(1,1) translate(-6,-4)" xlink:href="#GroundDisconnector:hg接地刀闸_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="222003115" ObjectName="吉安县永阳变\35.00千伏\GRNDSW_35KVPT35101" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="02220031150020"/>
+  </metadata>
+ </g>
+ <g id="111000423">
+  <use x="516" y="366" width="14" height="36" transform="rotate(0,516,366) scale(1,1) translate(-6,-4)" xlink:href="#GroundDisconnector:hg接地刀闸_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="222003111" ObjectName="吉安县永阳变\35.00千伏\GRNDSW_1＃主变30102" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="02220031110020"/>
+  </metadata>
+ </g>
+ <g id="111000535">
+  <use x="1163" y="319" width="14" height="36" transform="rotate(0,1163,319) scale(1,1) translate(-6,-4)" xlink:href="#GroundDisconnector:hg接地刀闸_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="222003112" ObjectName="吉安县永阳变\35.00千伏\GRNDSW_2＃主变30201" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="02220031120020"/>
+  </metadata>
+ </g>
+ <g id="111000772">
+  <use x="870" y="123" width="14" height="36" transform="rotate(0,870,123) scale(1,1) translate(-6,-4)" xlink:href="#GroundDisconnector:hg接地刀闸_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="222003109" ObjectName="吉安县永阳变\35.00千伏\GRNDSW_35KV永敖线31203" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="02220031090020"/>
+  </metadata>
+ </g>
+ <g id="111000783">
+  <use x="1164" y="360" width="14" height="36" transform="rotate(0,1164,360) scale(1,1) translate(-6,-4)" xlink:href="#GroundDisconnector:hg接地刀闸_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="222003113" ObjectName="吉安县永阳变\35.00千伏\GRNDSW_2＃主变30202" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="02220031130020"/>
+  </metadata>
+ </g>
+ <g id="111000793">
+  <use x="1262" y="401" width="14" height="36" transform="rotate(0,1262,401) scale(1,1) translate(-6,-4)" xlink:href="#GroundDisconnector:hg接地刀闸_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="222003114" ObjectName="吉安县永阳变\35.00千伏\GRNDSW_2＃主变30203" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="02220031140020"/>
+  </metadata>
+ </g>
+</g>
+<g id="Transformer2_Layer">
+<g id="102000109">
+ <g id="1020001090">
+  <use x="556" y="454" width="100" height="110" transform="rotate(0,556,454) scale(1,1) translate(-33,-48)" xlink:href="#Transformer2:nc_两卷有载变压器_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="251000433" ObjectName="吉安县永阳变\35.00千伏\XF_永阳变＃1主变-高" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="1020001091">
+  <use x="556" y="454" width="100" height="110" transform="rotate(0,556,454) scale(1,1) translate(-33,-48)" xlink:href="#Transformer2:nc_两卷有载变压器_1" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="251000434" ObjectName="吉安县永阳变\10.00千伏\XF_永阳变＃1主变-低" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <metadata>
+  <cge:PSR_Ref ObjectID="250000186" ObjectName="吉安县永阳变\XFMR_永阳变＃1主变" Plane="0"/>
+ </metadata>
+</g>
+<g id="102000534">
+ <g id="1020005340">
+  <use x="1203" y="453" width="100" height="110" transform="rotate(0,1203,453) scale(1,1) translate(-33,-48)" xlink:href="#Transformer2:nc_两卷有载变压器_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="251000435" ObjectName="吉安县永阳变\35.00千伏\XF_永阳变＃2主变-高" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="1020005341">
+  <use x="1203" y="453" width="100" height="110" transform="rotate(0,1203,453) scale(1,1) translate(-33,-48)" xlink:href="#Transformer2:nc_两卷有载变压器_1" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="251000436" ObjectName="吉安县永阳变\10.00千伏\XF_永阳变＃2主变-低" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <metadata>
+  <cge:PSR_Ref ObjectID="250000187" ObjectName="吉安县永阳变\XFMR_永阳变＃2主变" Plane="0"/>
+ </metadata>
+</g>
+</g>
+<g id="Compensator_Layer">
+ <g id="113000718">
+  <use x="433" y="892" width="28" height="28" transform="rotate(0,433,892) scale(1,1) translate(-14,-4)" xlink:href="#Compensator:nc_单端电容器_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="275000164" ObjectName="吉安县永阳变\10.00千伏\CP_＃1电容器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="113000879">
+  <use x="1332" y="896" width="28" height="28" transform="rotate(0,1332,896) scale(1,1) translate(-14,-4)" xlink:href="#Compensator:nc_单端电容器_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="275000165" ObjectName="吉安县永阳变\10.00千伏\CP_＃2电容器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="Load_Layer">
+ <g id="32000584">
+ <path d="M 603 813 L 603 890" stroke-width="2" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="270000977" ObjectName="吉安县永阳变\10.00千伏\LD_田心线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="32000589">
+ <path d="M 692 811 L 692 896" stroke-width="2" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="270000978" ObjectName="吉安县永阳变\10.00千伏\LD_658厂线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="32000827">
+ <path d="M 1170 831 L 1170 899" stroke-width="2" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="270000979" ObjectName="吉安县永阳变\10.00千伏\LD_安塘线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="32000851">
+ <path d="M 1253 831 L 1253 899" stroke-width="2" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="270000980" ObjectName="吉安县永阳变\10.00千伏\LD_煤矿线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="32000885">
+ <path d="M 1400 818 L 1400 895" stroke-width="2" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="270000981" ObjectName="吉安县永阳变\10.00千伏\LD_吉莲永线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="32000959">
+ <path d="M 518 811 L 518 888" stroke-width="2" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="270000976" ObjectName="吉安县永阳变\10.00千伏\LD_永阳线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="32000975">
+ <path d="M 350 820 L 350 897" stroke-width="2" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="270000975" ObjectName="吉安县永阳变\10.00千伏\LD_官田线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="ACLineSegment_Layer">
+ <g id="36000640">
+ <path d="M 679 109 L 679 61 L 682 64" stroke-width="2" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="ST=210000110/LN=240000281" ObjectName="ST=吉安县永阳变/LN=ACLN_永早线311yy" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="36000768">
+ <path d="M 904 124 L 904 73 L 904 95" stroke-width="2" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="ST=210000110/LN=240000322" ObjectName="ST=吉安县永阳变/LN=ACLN_永敖线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="36001036">
+ <path d="M 1150 117 L 1150 57 L 1150 79" stroke-width="2" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="ST=210000110/LN=240000324" ObjectName="ST=吉安县永阳变/LN=ACLN_永高线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="PT_Layer">
+ <g id="107000084">
+  <use x="904" y="333" width="394" height="135129780" transform="rotate(360,904,333) scale(1,-1) translate(-0,-666)" xlink:href="#PT:nc_母线三卷PT（熔断器）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001230" ObjectName="吉安县永阳变\35.00千伏\TERM_35KVPT" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="107000924">
+  <use x="949" y="788" width="394" height="135129780" transform="rotate(360,949,788) scale(1,-1) translate(-0,-1576)" xlink:href="#PT:nc_母线三卷PT（熔断器）_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001231" ObjectName="吉安县永阳变\10.00千伏\TERM_10KVPT" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="GZP_Layer">
+ <g id="135001040">
+  <use x="1448" y="521" width="36" height="36" transform="rotate(0,1448,521) scale(1,1) translate(-17,-17)" xlink:href="#GZP:nc_光字牌_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="306070575" ObjectName="吉安县永阳变\null\RLY_火灾报警装置告警" Plane="0" AFMask="32895"/>
+  </metadata>
+ </g>
+</g>
+<g id="Arrester_Layer">
+ <g id="133000078">
+  <use x="1208" y="117" width="18" height="42" transform="rotate(92,1208,117) scale(1,-1) translate(-8,-239)" xlink:href="#Arrester:避雷器2_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001237" ObjectName="吉安县永阳变\35.00千伏\TERM_35KV永高线避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000212">
+  <use x="651" y="840" width="18" height="42" transform="rotate(0,651,840) scale(1,1) translate(-8,-5)" xlink:href="#Arrester:避雷器2_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001242" ObjectName="吉安县永阳变\10.00千伏\TERM_10KV田心线避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000231">
+  <use x="740" y="838" width="18" height="42" transform="rotate(0,740,838) scale(1,1) translate(-8,-5)" xlink:href="#Arrester:避雷器2_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001243" ObjectName="吉安县永阳变\10.00千伏\TERM_10KV658厂线避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000353">
+  <use x="736" y="109" width="18" height="42" transform="rotate(92,736,109) scale(1,-1) translate(-8,-223)" xlink:href="#Arrester:避雷器2_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001235" ObjectName="吉安县永阳变\35.00千伏\TERM_35KV永早线避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000719">
+  <use x="481" y="848" width="18" height="42" transform="rotate(0,481,848) scale(1,1) translate(-8,-5)" xlink:href="#Arrester:避雷器2_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001239" ObjectName="吉安县永阳变\10.00千伏\TERM_1＃电容器避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000748">
+  <use x="871" y="282" width="18" height="42" transform="rotate(0,871,282) scale(1,1) translate(-8,-5)" xlink:href="#Arrester:避雷器2_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001233" ObjectName="吉安县永阳变\35.00千伏\TERM_35KVPT避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000775">
+  <use x="962" y="123" width="18" height="42" transform="rotate(92,962,123) scale(1,-1) translate(-8,-251)" xlink:href="#Arrester:避雷器2_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001236" ObjectName="吉安县永阳变\35.00千伏\TERM_35KV永敖线避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000841">
+  <use x="1218" y="834" width="18" height="42" transform="rotate(0,1218,834) scale(1,1) translate(-8,-5)" xlink:href="#Arrester:避雷器2_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001244" ObjectName="吉安县永阳变\10.00千伏\TERM_10KV安塘线避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000865">
+  <use x="1301" y="834" width="18" height="42" transform="rotate(0,1301,834) scale(1,1) translate(-8,-5)" xlink:href="#Arrester:避雷器2_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001245" ObjectName="吉安县永阳变\10.00千伏\TERM_10KV煤矿线避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000880">
+  <use x="1380" y="838" width="18" height="42" transform="rotate(0,1380,838) scale(1,1) translate(-8,-5)" xlink:href="#Arrester:避雷器2_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001240" ObjectName="吉安县永阳变\10.00千伏\TERM_2＃电容器避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000896">
+  <use x="1448" y="845" width="18" height="42" transform="rotate(0,1448,845) scale(1,1) translate(-8,-5)" xlink:href="#Arrester:避雷器2_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001246" ObjectName="吉安县永阳变\10.00千伏\TERM_10KV吉莲永线避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000925">
+  <use x="1013" y="779" width="18" height="42" transform="rotate(0,1013,779) scale(1,1) translate(-8,-5)" xlink:href="#Arrester:避雷器2_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001234" ObjectName="吉安县永阳变\10.00千伏\TERM_10KVPT避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000970">
+  <use x="566" y="838" width="18" height="42" transform="rotate(0,566,838) scale(1,1) translate(-8,-5)" xlink:href="#Arrester:避雷器2_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001241" ObjectName="吉安县永阳变\10.00千伏\TERM_10KV永阳线避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="133000986">
+  <use x="398" y="847" width="18" height="42" transform="rotate(0,398,847) scale(1,1) translate(-8,-5)" xlink:href="#Arrester:避雷器2_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001238" ObjectName="吉安县永阳变\10.00千伏\TERM_10KV官田线避雷器" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="Term_Layer">
+ <g id="112000930">
+  <use x="882" y="719" width="50" height="80" transform="rotate(360,882,719) scale(1,-1) translate(-23,-1507)" xlink:href="#Terminal:nc_站用变_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001232" ObjectName="吉安县永阳变\10.00千伏\TERM_所用变" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="Link_Layer">
+ <g id="34000082">
+ <path d="M 904 262 L 904 292" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="30000020_0" Pin1InfoVect0LinkObjId="101000620_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000204">
+ <path d="M 603 689 L 603 707" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000210_0" Pin1InfoVect0LinkObjId="100000209_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000205">
+ <path d="M 603 732 L 603 750" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000209_1" Pin1InfoVect0LinkObjId="101000211_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000206">
+ <path d="M 603 813 L 651 813 L 651 840" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000207_1" Pin0InfoVect1LinkObjId="32000584_0" Pin1InfoVect0LinkObjId="133000212_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000207">
+ <path d="M 603 778 L 603 813" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000211_0" Pin1InfoVect0LinkObjId="34000206_0" Pin1InfoVect1LinkObjId="32000584_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000223">
+ <path d="M 692 687 L 692 705" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000229_0" Pin1InfoVect0LinkObjId="100000228_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000224">
+ <path d="M 692 730 L 692 748" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000228_1" Pin1InfoVect0LinkObjId="101000230_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000225">
+ <path d="M 692 811 L 740 811 L 740 838" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000226_1" Pin0InfoVect1LinkObjId="32000589_0" Pin1InfoVect0LinkObjId="133000231_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000226">
+ <path d="M 692 776 L 692 811" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000230_0" Pin1InfoVect0LinkObjId="34000225_0" Pin1InfoVect1LinkObjId="32000589_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000319">
+ <path d="M 679 109 L 678 122" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000366_1" Pin0InfoVect1LinkObjId="34000363_1" Pin0InfoVect2LinkObjId="36000640_0" Pin1InfoVect0LinkObjId="101000622_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000051">
+ <path d="M 679 208 L 679 194" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000628_1" Pin1InfoVect0LinkObjId="100000048_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000063">
+ <path d="M 1148 262 L 1148 248" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="30000020_0" Pin1InfoVect0LinkObjId="101000630_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000065">
+ <path d="M 1148 220 L 1148 201" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000630_1" Pin1InfoVect0LinkObjId="100000060_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000083">
+ <path d="M 904 317 L 904 333" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000620_0" Pin1InfoVect0LinkObjId="107000084_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000323">
+ <path d="M 555 279 L 555 262" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000085_1" Pin1InfoVect0LinkObjId="30000020_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000363">
+ <path d="M 736 109 L 679 109" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="133000353_0" Pin1InfoVect0LinkObjId="34000319_0" Pin1InfoVect1LinkObjId="34000366_1" Pin1InfoVect2LinkObjId="36000640_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000366">
+ <path d="M 644 109 L 679 109" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111000365_0" Pin1InfoVect0LinkObjId="34000319_0" Pin1InfoVect1LinkObjId="34000363_1" Pin1InfoVect2LinkObjId="36000640_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000370">
+ <path d="M 678 147 L 679 161" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000622_0" Pin1InfoVect0LinkObjId="34000371_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000371">
+ <path d="M 679 161 L 679 169" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000370_1" Pin1InfoVect0LinkObjId="100000048_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000398">
+ <path d="M 1148 176 L 1149 157" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000060_0" Pin1InfoVect0LinkObjId="101000624_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000412">
+ <path d="M 963 282 L 903 282" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111000411_0" Pin1InfoVect0LinkObjId="34000749_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000424">
+ <path d="M 516 366 L 554 366" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111000423_0" Pin1InfoVect0LinkObjId="34000779_1" Pin1InfoVect1LinkObjId="34000789_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000488">
+ <path d="M 679 251 L 679 236" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000489_0" Pin1InfoVect0LinkObjId="101000628_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000489">
+ <path d="M 679 251 L 679 262" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000488_0" Pin1InfoVect0LinkObjId="30000020_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000494">
+ <path d="M 556 415 L 556 403" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="102000109_0" Pin1InfoVect0LinkObjId="34000677_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000496">
+ <path d="M 555 526 L 556 508" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000493_1" Pin1InfoVect0LinkObjId="102000109_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000497">
+ <path d="M 556 565 L 556 551" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000100_0" Pin1InfoVect0LinkObjId="101000493_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000498">
+ <path d="M 557 606 L 557 590" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000090_1" Pin1InfoVect0LinkObjId="100000100_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000499">
+ <path d="M 557 634 L 557 649" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000090_0" Pin1InfoVect0LinkObjId="30000992_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000519">
+ <path d="M 1163 319 L 1202 319" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111000535_0" Pin1InfoVect0LinkObjId="34000520_1" Pin1InfoVect1LinkObjId="34000521_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000520">
+ <path d="M 1202 303 L 1202 319" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000530_0" Pin1InfoVect0LinkObjId="34000521_0" Pin1InfoVect1LinkObjId="34000519_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000521">
+ <path d="M 1202 319 L 1202 330" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000520_1" Pin0InfoVect1LinkObjId="34000519_1" Pin1InfoVect0LinkObjId="100000529_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000522">
+ <path d="M 1203 414 L 1203 402" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="102000534_0" Pin1InfoVect0LinkObjId="34000788_1" Pin1InfoVect1LinkObjId="34000794_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000524">
+ <path d="M 1202 525 L 1203 507" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000533_1" Pin1InfoVect0LinkObjId="102000534_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000525">
+ <path d="M 1203 564 L 1202 550" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000528_0" Pin1InfoVect0LinkObjId="101000533_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000526">
+ <path d="M 1204 605 L 1203 589" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000531_1" Pin1InfoVect0LinkObjId="100000528_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000537">
+ <path d="M 1202 278 L 1202 262" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000530_1" Pin1InfoVect0LinkObjId="30000020_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000538">
+ <path d="M 1204 633 L 1204 650" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000531_0" Pin1InfoVect0LinkObjId="30000026_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000677">
+ <path d="M 556 403 L 555 404" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000494_1" Pin1InfoVect0LinkObjId="101000778_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000709">
+ <path d="M 433 697 L 433 715" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000716_0" Pin1InfoVect0LinkObjId="100000715_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000710">
+ <path d="M 433 740 L 433 758" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000715_1" Pin1InfoVect0LinkObjId="101000717_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000711">
+ <path d="M 433 821 L 481 821 L 481 848" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000712_1" Pin0InfoVect1LinkObjId="34000713_0" Pin1InfoVect0LinkObjId="133000719_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000712">
+ <path d="M 433 786 L 433 821" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000717_0" Pin1InfoVect0LinkObjId="34000713_0" Pin1InfoVect1LinkObjId="34000711_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000713">
+ <path d="M 433 821 L 433 892" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000712_1" Pin0InfoVect1LinkObjId="34000711_0" Pin1InfoVect0LinkObjId="113000718_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000749">
+ <path d="M 871 282 L 903 282" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="133000748_0" Pin1InfoVect0LinkObjId="34000412_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000761">
+ <path d="M 904 124 L 904 136" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000763_1" Pin0InfoVect1LinkObjId="34000762_1" Pin0InfoVect2LinkObjId="36000768_0" Pin1InfoVect0LinkObjId="101000770_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000760">
+ <path d="M 905 222 L 905 208" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000771_1" Pin1InfoVect0LinkObjId="100000769_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000762">
+ <path d="M 962 123 L 904 124" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="133000775_0" Pin1InfoVect0LinkObjId="34000761_0" Pin1InfoVect1LinkObjId="34000763_1" Pin1InfoVect2LinkObjId="36000768_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000763">
+ <path d="M 870 123 L 904 124" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111000772_0" Pin1InfoVect0LinkObjId="34000761_0" Pin1InfoVect1LinkObjId="34000762_1" Pin1InfoVect2LinkObjId="36000768_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000764">
+ <path d="M 904 161 L 905 175" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000770_0" Pin1InfoVect0LinkObjId="34000765_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000765">
+ <path d="M 905 175 L 905 183" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000764_1" Pin1InfoVect0LinkObjId="100000769_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000776">
+ <path d="M 904 262 L 905 250" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="30000020_0" Pin1InfoVect0LinkObjId="101000771_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000779">
+ <path d="M 555 376 L 554 366" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000778_1" Pin1InfoVect0LinkObjId="34000424_1" Pin1InfoVect1LinkObjId="34000789_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000782">
+ <path d="M 1164 360 L 1202 360" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111000783_0" Pin1InfoVect0LinkObjId="34000787_1" Pin1InfoVect1LinkObjId="34001020_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000787">
+ <path d="M 1202 370 L 1202 360" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000785_1" Pin1InfoVect0LinkObjId="34000782_1" Pin1InfoVect1LinkObjId="34001020_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000788">
+ <path d="M 1202 398 L 1203 402" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000785_0" Pin1InfoVect0LinkObjId="34000794_1" Pin1InfoVect1LinkObjId="34000522_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000789">
+ <path d="M 554 366 L 555 356" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000424_1" Pin0InfoVect1LinkObjId="34000779_1" Pin1InfoVect0LinkObjId="100000101_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000790">
+ <path d="M 555 331 L 555 304" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000101_0" Pin1InfoVect0LinkObjId="101000085_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000794">
+ <path d="M 1262 401 L 1203 402" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111000793_0" Pin1InfoVect0LinkObjId="34000788_1" Pin1InfoVect1LinkObjId="34000522_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000831">
+ <path d="M 1170 683 L 1170 701" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000838_0" Pin1InfoVect0LinkObjId="100000837_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000832">
+ <path d="M 1170 726 L 1170 744" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000837_1" Pin1InfoVect0LinkObjId="101000839_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000833">
+ <path d="M 1170 807 L 1218 807 L 1218 834" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000834_1" Pin0InfoVect1LinkObjId="34000835_0" Pin1InfoVect0LinkObjId="133000841_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000834">
+ <path d="M 1170 772 L 1170 807" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000839_0" Pin1InfoVect0LinkObjId="34000835_0" Pin1InfoVect1LinkObjId="34000833_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000835">
+ <path d="M 1170 807 L 1170 831" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000834_1" Pin0InfoVect1LinkObjId="34000833_0" Pin1InfoVect0LinkObjId="32000827_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000855">
+ <path d="M 1253 683 L 1253 701" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000862_0" Pin1InfoVect0LinkObjId="100000861_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000856">
+ <path d="M 1253 726 L 1253 744" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000861_1" Pin1InfoVect0LinkObjId="101000863_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000857">
+ <path d="M 1253 807 L 1301 807 L 1301 834" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000858_1" Pin0InfoVect1LinkObjId="34000859_0" Pin1InfoVect0LinkObjId="133000865_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000858">
+ <path d="M 1253 772 L 1253 807" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000863_0" Pin1InfoVect0LinkObjId="34000859_0" Pin1InfoVect1LinkObjId="34000857_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000859">
+ <path d="M 1253 807 L 1253 831" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000858_1" Pin0InfoVect1LinkObjId="34000857_0" Pin1InfoVect0LinkObjId="32000851_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000871">
+ <path d="M 1332 687 L 1332 705" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000877_0" Pin1InfoVect0LinkObjId="100000876_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000872">
+ <path d="M 1332 730 L 1332 748" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000876_1" Pin1InfoVect0LinkObjId="101000878_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000873">
+ <path d="M 1332 811 L 1380 811 L 1380 838" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000874_1" Pin0InfoVect1LinkObjId="34000875_0" Pin1InfoVect0LinkObjId="133000880_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000874">
+ <path d="M 1332 776 L 1332 811" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000878_0" Pin1InfoVect0LinkObjId="34000875_0" Pin1InfoVect1LinkObjId="34000873_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000875">
+ <path d="M 1332 811 L 1332 896" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000874_1" Pin0InfoVect1LinkObjId="34000873_0" Pin1InfoVect0LinkObjId="113000879_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000889">
+ <path d="M 1400 694 L 1400 712" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000894_0" Pin1InfoVect0LinkObjId="100000893_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000890">
+ <path d="M 1400 737 L 1400 755" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000893_1" Pin1InfoVect0LinkObjId="101000895_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000891">
+ <path d="M 1400 818 L 1448 818 L 1448 845" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000892_1" Pin0InfoVect1LinkObjId="32000885_0" Pin1InfoVect0LinkObjId="133000896_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000892">
+ <path d="M 1400 783 L 1400 818" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000895_0" Pin1InfoVect0LinkObjId="34000891_0" Pin1InfoVect1LinkObjId="32000885_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000902">
+ <path d="M 1400 669 L 1400 650" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000894_1" Pin1InfoVect0LinkObjId="30000026_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000903">
+ <path d="M 1332 662 L 1332 650" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000877_1" Pin1InfoVect0LinkObjId="30000026_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000904">
+ <path d="M 1253 658 L 1253 650" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000862_1" Pin1InfoVect0LinkObjId="30000026_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000905">
+ <path d="M 1170 658 L 1170 650" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000838_1" Pin1InfoVect0LinkObjId="30000026_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000913">
+ <path d="M 1110 650 L 1110 668" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="30000026_0" Pin1InfoVect0LinkObjId="34000916_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000916">
+ <path d="M 1110 683 L 1110 668" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000915_1" Pin1InfoVect0LinkObjId="34000913_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000920">
+ <path d="M 977 714 L 977 754" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000923_0" Pin1InfoVect0LinkObjId="34000921_0" Pin1InfoVect1LinkObjId="34000922_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000921">
+ <path d="M 977 754 L 1012 754 L 1013 779" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000920_1" Pin0InfoVect1LinkObjId="34000922_0" Pin1InfoVect0LinkObjId="133000925_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000922">
+ <path d="M 977 754 L 949 754 L 949 788" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000920_1" Pin0InfoVect1LinkObjId="34000921_0" Pin1InfoVect0LinkObjId="107000924_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000926">
+ <path d="M 977 689 L 977 649" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000923_1" Pin1InfoVect0LinkObjId="30000906_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000927">
+ <path d="M 1110 708 L 1110 722 L 1044 723 L 1044 649" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000915_0" Pin1InfoVect0LinkObjId="30000906_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000929">
+ <path d="M 882 719 L 883 707" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="112000930_0" Pin1InfoVect0LinkObjId="101000932_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000933">
+ <path d="M 883 682 L 884 649" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000932_1" Pin1InfoVect0LinkObjId="30000906_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000934">
+ <path d="M 834 649 L 833 671" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="30000906_0" Pin1InfoVect0LinkObjId="101000936_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000939">
+ <path d="M 833 696 L 834 713 L 747 713 L 747 649" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000936_0" Pin1InfoVect0LinkObjId="30000992_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000963">
+ <path d="M 518 687 L 518 705" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000968_0" Pin1InfoVect0LinkObjId="100000967_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000964">
+ <path d="M 518 730 L 518 748" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000967_1" Pin1InfoVect0LinkObjId="101000969_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000965">
+ <path d="M 518 811 L 566 811 L 566 838" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000966_1" Pin0InfoVect1LinkObjId="32000959_0" Pin1InfoVect0LinkObjId="133000970_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000966">
+ <path d="M 518 776 L 518 811" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000969_0" Pin1InfoVect0LinkObjId="34000965_0" Pin1InfoVect1LinkObjId="32000959_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000979">
+ <path d="M 350 696 L 350 714" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000984_0" Pin1InfoVect0LinkObjId="100000983_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000980">
+ <path d="M 350 739 L 350 757" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100000983_1" Pin1InfoVect0LinkObjId="101000985_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000981">
+ <path d="M 350 820 L 398 820 L 398 847" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000982_1" Pin0InfoVect1LinkObjId="32000975_0" Pin1InfoVect0LinkObjId="133000986_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000982">
+ <path d="M 350 785 L 350 820" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000985_0" Pin1InfoVect0LinkObjId="34000981_0" Pin1InfoVect1LinkObjId="32000975_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000987">
+ <path d="M 692 662 L 691 649" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000229_1" Pin1InfoVect0LinkObjId="30000992_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000988">
+ <path d="M 603 664 L 602 649" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000210_1" Pin1InfoVect0LinkObjId="30000992_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000989">
+ <path d="M 518 662 L 518 650" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000968_1" Pin1InfoVect0LinkObjId="30000992_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000990">
+ <path d="M 433 672 L 433 650" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000716_1" Pin1InfoVect0LinkObjId="30000992_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34000991">
+ <path d="M 350 671 L 350 650" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000984_1" Pin1InfoVect0LinkObjId="30000992_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001020">
+ <path d="M 1202 360 L 1202 355" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34000782_1" Pin0InfoVect1LinkObjId="34000787_1" Pin1InfoVect0LinkObjId="100000529_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001026">
+ <path d="M 1149 132 L 1150 117" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101000624_1" Pin1InfoVect0LinkObjId="34001037_1" Pin1InfoVect1LinkObjId="34001038_1" Pin1InfoVect2LinkObjId="36001036_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001037">
+ <path d="M 1113 118 L 1150 117" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111000392_0" Pin1InfoVect0LinkObjId="34001026_1" Pin1InfoVect1LinkObjId="34001038_1" Pin1InfoVect2LinkObjId="36001036_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001038">
+ <path d="M 1208 117 L 1150 117" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="133000078_0" Pin1InfoVect0LinkObjId="34001026_1" Pin1InfoVect1LinkObjId="34001037_1" Pin1InfoVect2LinkObjId="36001036_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="MeasurementValue_Layer">
+ <g id="33000021">
+ <text x="1267" y="262" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.0</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003620020" ObjectName="吉安县永阳变\35.00千伏\BS_35KV母线:V" Plane="0" AFMask="32783" DataType="6" ShowStrLen="4" ShowDotNum="1" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000023">
+ <text x="1267" y="243" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.0</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003620040" ObjectName="吉安县永阳变\35.00千伏\BS_35KV母线:V_A" Plane="0" AFMask="32783" DataType="6" ShowStrLen="4" ShowDotNum="1" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000024">
+ <text x="1267" y="223" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.0</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003620050" ObjectName="吉安县永阳变\35.00千伏\BS_35KV母线:V_B" Plane="0" AFMask="32783" DataType="6" ShowStrLen="4" ShowDotNum="1" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000025">
+ <text x="1267" y="201" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.0</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003620060" ObjectName="吉安县永阳变\35.00千伏\BS_35KV母线:V_C" Plane="0" AFMask="32783" DataType="6" ShowStrLen="4" ShowDotNum="1" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000027">
+ <text x="1482" y="652" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003710020" ObjectName="吉安县永阳变\10.00千伏\BS_10KV母线3#:V" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000029">
+ <text x="1482" y="633" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003710040" ObjectName="吉安县永阳变\10.00千伏\BS_10KV母线3#:V_A" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000030">
+ <text x="1482" y="614" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003710050" ObjectName="吉安县永阳变\10.00千伏\BS_10KV母线3#:V_B" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000031">
+ <text x="1482" y="593" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003710060" ObjectName="吉安县永阳变\10.00千伏\BS_10KV母线3#:V_C" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000111">
+ <text x="453" y="432" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004330050" ObjectName="吉安县永阳变\35.00千伏\XF_永阳变＃1主变-高:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000112">
+ <text x="453" y="447" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004330060" ObjectName="吉安县永阳变\35.00千伏\XF_永阳变＃1主变-高:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000113">
+ <text x="453" y="462" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004330070" ObjectName="吉安县永阳变\35.00千伏\XF_永阳变＃1主变-高:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000115">
+ <text x="456" y="574" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004340050" ObjectName="吉安县永阳变\10.00千伏\XF_永阳变＃1主变-低:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000116">
+ <text x="456" y="589" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004340060" ObjectName="吉安县永阳变\10.00千伏\XF_永阳变＃1主变-低:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000117">
+ <text x="456" y="604" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004340070" ObjectName="吉安县永阳变\10.00千伏\XF_永阳变＃1主变-低:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000511">
+ <text x="1100" y="431" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004350050" ObjectName="吉安县永阳变\35.00千伏\XF_永阳变＃2主变-高:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000512">
+ <text x="1100" y="446" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004350060" ObjectName="吉安县永阳变\35.00千伏\XF_永阳变＃2主变-高:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000513">
+ <text x="1100" y="461" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004350070" ObjectName="吉安县永阳变\35.00千伏\XF_永阳变＃2主变-高:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000515">
+ <text x="1102" y="576" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004360050" ObjectName="吉安县永阳变\10.00千伏\XF_永阳变＃2主变-低:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000516">
+ <text x="1102" y="591" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004360060" ObjectName="吉安县永阳变\10.00千伏\XF_永阳变＃2主变-低:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000517">
+ <text x="1102" y="606" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004360070" ObjectName="吉安县永阳变\10.00千伏\XF_永阳变＃2主变-低:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000586">
+ <text x="583" y="928" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009770030" ObjectName="吉安县永阳变\10.00千伏\LD_田心线:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000587">
+ <text x="583" y="943" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009770040" ObjectName="吉安县永阳变\10.00千伏\LD_田心线:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000588">
+ <text x="583" y="961" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009770050" ObjectName="吉安县永阳变\10.00千伏\LD_田心线:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000591">
+ <text x="672" y="926" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009780030" ObjectName="吉安县永阳变\10.00千伏\LD_658厂线:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000592">
+ <text x="672" y="941" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009780040" ObjectName="吉安县永阳变\10.00千伏\LD_658厂线:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000593">
+ <text x="672" y="959" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009780050" ObjectName="吉安县永阳变\10.00千伏\LD_658厂线:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000642">
+ <text x="649" y="20" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420005610020" ObjectName="ST=吉安县永阳变/LN=ACLN_永早线311yy:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000643">
+ <text x="649" y="39" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420005610030" ObjectName="ST=吉安县永阳变/LN=ACLN_永早线311yy:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000644">
+ <text x="649" y="59" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420005610040" ObjectName="ST=吉安县永阳变/LN=ACLN_永早线311yy:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000658">
+ <text x="757" y="470" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,0,255)" writing-mode="lr" Plane="0" AFMask="32783">-000</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004330080" ObjectName="吉安县永阳变\35.00千伏\XF_永阳变＃1主变-高:DW" Plane="0" AFMask="32783" DataType="6" ShowStrLen="4" ShowDotNum="0" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000659">
+ <text x="752" y="497" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,0,255)" writing-mode="lr" Plane="0" AFMask="32783">-0.0</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="03070010620010" ObjectName="307001062:M" Plane="0" AFMask="32783" DataType="6" ShowStrLen="4" ShowDotNum="1" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000660">
+ <text x="1409" y="458" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,0,255)" writing-mode="lr" Plane="0" AFMask="32783">-000</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02510004350080" ObjectName="吉安县永阳变\35.00千伏\XF_永阳变＃2主变-高:DW" Plane="0" AFMask="32783" DataType="6" ShowStrLen="4" ShowDotNum="0" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000661">
+ <text x="1412" y="483" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,0,255)" writing-mode="lr" Plane="0" AFMask="32783">-0.0</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="03070010630010" ObjectName="307001063:M" Plane="0" AFMask="32783" DataType="6" ShowStrLen="4" ShowDotNum="1" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000663">
+ <text x="1481" y="570" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="03070010650010" ObjectName="307001065:M" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000708">
+ <text x="400" y="958" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02750001640040" ObjectName="吉安县永阳变\10.00千伏\CP_＃1电容器:I_A" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000757">
+ <text x="917" y="63" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420006460020" ObjectName="ST=吉安县永阳变/LN=ACLN_永敖线:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000758">
+ <text x="917" y="82" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420006460030" ObjectName="ST=吉安县永阳变/LN=ACLN_永敖线:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000759">
+ <text x="917" y="103" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420006460040" ObjectName="ST=吉安县永阳变/LN=ACLN_永敖线:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000828">
+ <text x="1150" y="929" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009790030" ObjectName="吉安县永阳变\10.00千伏\LD_安塘线:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000829">
+ <text x="1150" y="944" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009790040" ObjectName="吉安县永阳变\10.00千伏\LD_安塘线:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000830">
+ <text x="1150" y="959" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009790050" ObjectName="吉安县永阳变\10.00千伏\LD_安塘线:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000852">
+ <text x="1233" y="929" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009800030" ObjectName="吉安县永阳变\10.00千伏\LD_煤矿线:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000853">
+ <text x="1233" y="944" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009800040" ObjectName="吉安县永阳变\10.00千伏\LD_煤矿线:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000854">
+ <text x="1233" y="959" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009800050" ObjectName="吉安县永阳变\10.00千伏\LD_煤矿线:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000870">
+ <text x="1305" y="962" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02750001650040" ObjectName="吉安县永阳变\10.00千伏\CP_＃2电容器:I_A" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000886">
+ <text x="1380" y="925" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009810030" ObjectName="吉安县永阳变\10.00千伏\LD_吉莲永线:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000887">
+ <text x="1380" y="940" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009810040" ObjectName="吉安县永阳变\10.00千伏\LD_吉莲永线:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000888">
+ <text x="1380" y="955" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009810050" ObjectName="吉安县永阳变\10.00千伏\LD_吉莲永线:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000960">
+ <text x="498" y="929" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009760030" ObjectName="吉安县永阳变\10.00千伏\LD_永阳线:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000961">
+ <text x="498" y="944" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009760040" ObjectName="吉安县永阳变\10.00千伏\LD_永阳线:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000962">
+ <text x="498" y="961" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009760050" ObjectName="吉安县永阳变\10.00千伏\LD_永阳线:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000976">
+ <text x="330" y="927" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009750030" ObjectName="吉安县永阳变\10.00千伏\LD_官田线:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000977">
+ <text x="330" y="942" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009750040" ObjectName="吉安县永阳变\10.00千伏\LD_官田线:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000978">
+ <text x="330" y="959" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02700009750050" ObjectName="吉安县永阳变\10.00千伏\LD_官田线:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000995">
+ <text x="271" y="614" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003630050" ObjectName="吉安县永阳变\10.00千伏\BS_10KV母线1#:V_B" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000997">
+ <text x="270" y="571" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="03070010650010" ObjectName="307001065:M" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000996">
+ <text x="271" y="594" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003630060" ObjectName="吉安县永阳变\10.00千伏\BS_10KV母线1#:V_C" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000994">
+ <text x="271" y="633" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003630040" ObjectName="吉安县永阳变\10.00千伏\BS_10KV母线1#:V_A" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33000993">
+ <text x="271" y="653" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02300003630020" ObjectName="吉安县永阳变\10.00千伏\BS_10KV母线1#:V" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001001">
+ <text x="1267" y="180" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.0</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="03070010640010" ObjectName="307001064:M" Plane="0" AFMask="32783" DataType="6" ShowStrLen="4" ShowDotNum="1" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001018">
+ <text x="400" y="940" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02750001640030" ObjectName="吉安县永阳变\10.00千伏\CP_＃1电容器:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001019">
+ <text x="1305" y="944" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02750001650030" ObjectName="吉安县永阳变\10.00千伏\CP_＃2电容器:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001033">
+ <text x="1163" y="47" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420006490020" ObjectName="ST=吉安县永阳变/LN=ACLN_永高线:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001034">
+ <text x="1163" y="66" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420006490030" ObjectName="ST=吉安县永阳变/LN=ACLN_永高线:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001035">
+ <text x="1163" y="87" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420006490040" ObjectName="ST=吉安县永阳变/LN=ACLN_永高线:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+</g>
+<g id="Text_Layer">
+ <text x="787" y="36" font-size="36" font-width="41" font-height="36" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">35kV永阳变电站</text>
+ <text x="1267" y="282" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">35KV母线</text>
+ <text x="610" y="688" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9141</text>
+ <text x="614" y="777" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9143</text>
+ <text x="613" y="732" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">914</text>
+ <text x="699" y="686" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9151</text>
+ <text x="703" y="775" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9153</text>
+ <text x="702" y="730" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">915</text>
+ <text x="588" y="312" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3011</text>
+ <text x="588" y="634" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9011</text>
+ <text x="588" y="588" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">901</text>
+ <text x="588" y="352" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">301</text>
+ <text x="1540" y="215" font-size="36" font-width="40" font-height="36" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(24,100,70)" writing-mode="tb" Plane="0" AFMask="32783">永阳变电站</text>
+ <text x="1495" y="491" font-size="30" font-width="30" font-height="40" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(24,100,70)" writing-mode="lr" Plane="0" AFMask="32783">光字牌</text>
+ <text x="1511" y="208" font-size="35" font-width="35" font-height="40" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(24,100,70)" writing-mode="lr" Plane="0" AFMask="32783">35kV</text>
+ <text x="580" y="130" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31103</text>
+ <text x="1046" y="139" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31303</text>
+ <text x="451" y="387" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">30102</text>
+ <text x="588" y="559" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9013</text>
+ <text x="1229" y="311" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3021</text>
+ <text x="1237" y="633" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9021</text>
+ <text x="1236" y="587" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">902</text>
+ <text x="1229" y="351" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">302</text>
+ <text x="1099" y="340" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">30201</text>
+ <text x="1235" y="558" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9023</text>
+ <text x="580" y="986" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">田心线</text>
+ <text x="670" y="987" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">658厂线</text>
+ <text x="914" y="318" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
+ <text x="694" y="152" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3113</text>
+ <text x="1160" y="158" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3133</text>
+ <text x="695" y="236" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3111</text>
+ <text x="1160" y="245" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3131</text>
+ <text x="590" y="94" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">永早线</text>
+ <text x="872" y="432" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">35KV PT</text>
+ <text x="1241" y="472" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">2#主变</text>
+ <text x="596" y="480" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">1#主变</text>
+ <text x="440" y="696" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9911</text>
+ <text x="444" y="785" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9913</text>
+ <text x="443" y="740" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">991</text>
+ <text x="698" y="195" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">311</text>
+ <text x="1160" y="192" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">313</text>
+ <text x="977" y="308" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">35101</text>
+ <text x="390" y="986" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">1＃电容器</text>
+ <text x="924" y="209" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">312</text>
+ <text x="806" y="144" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31203</text>
+ <text x="920" y="166" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3123</text>
+ <text x="921" y="250" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3121</text>
+ <text x="827" y="111" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">永敖线</text>
+ <text x="588" y="404" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3013</text>
+ <text x="1099" y="381" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">30202</text>
+ <text x="1229" y="386" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3023</text>
+ <text x="1275" y="428" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">30203</text>
+ <text x="1177" y="682" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9251</text>
+ <text x="1181" y="771" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9253</text>
+ <text x="1180" y="726" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">925</text>
+ <text x="1153" y="985" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">安塘线</text>
+ <text x="1260" y="682" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9261</text>
+ <text x="1264" y="771" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9263</text>
+ <text x="1263" y="726" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">926</text>
+ <text x="1225" y="984" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">煤矿线</text>
+ <text x="697" y="466" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">档位：</text>
+ <text x="694" y="495" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">油温：</text>
+ <text x="1338" y="457" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">档位：</text>
+ <text x="1342" y="483" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">油温：</text>
+ <text x="1339" y="686" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9921</text>
+ <text x="1343" y="775" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9923</text>
+ <text x="1342" y="730" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">992</text>
+ <text x="1294" y="985" font-size="17" font-width="17" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">2＃电容器</text>
+ <text x="1407" y="693" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9271</text>
+ <text x="1411" y="782" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9273</text>
+ <text x="1410" y="737" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">927</text>
+ <text x="1379" y="986" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">吉莲永线</text>
+ <text x="1117" y="707" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9322</text>
+ <text x="989" y="720" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9533</text>
+ <text x="928" y="889" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">10KV PT</text>
+ <text x="842" y="811" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">所用变</text>
+ <text x="895" y="713" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9063</text>
+ <text x="840" y="695" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9711</text>
+ <text x="525" y="686" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9131</text>
+ <text x="529" y="775" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9133</text>
+ <text x="528" y="730" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">913</text>
+ <text x="500" y="985" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">永阳线</text>
+ <text x="357" y="695" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9111</text>
+ <text x="361" y="784" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">9113</text>
+ <text x="360" y="739" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">911</text>
+ <text x="320" y="985" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">官田线</text>
+ <text x="374" y="641" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">母线1#</text>
+ <text x="912" y="639" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">母线2#</text>
+ <text x="1349" y="640" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">母线3#</text>
+ <text x="1224" y="182" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3U0</text>
+ <text x="1224" y="202" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Uc</text>
+ <text x="1224" y="223" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Ub</text>
+ <text x="1224" y="241" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Ua</text>
+ <text x="1224" y="259" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Uab</text>
+ <text x="223" y="571" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3U0</text>
+ <text x="223" y="591" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Uc</text>
+ <text x="223" y="612" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Ub</text>
+ <text x="223" y="631" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Ua</text>
+ <text x="223" y="650" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Uab</text>
+ <text x="1434" y="573" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(255,255,255)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3U0</text>
+ <text x="1434" y="593" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Uc</text>
+ <text x="1434" y="614" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Ub</text>
+ <text x="1434" y="632" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Ua</text>
+ <text x="1434" y="650" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">Uab</text>
+ <text x="1073" y="95" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">永高线</text>
+ <text x="1479" y="530" font-size="18" font-width="18" font-height="18" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,255)" writing-mode="lr" Plane="0" AFMask="32783">火灾报警装置告警</text>
+</g>
+</svg>

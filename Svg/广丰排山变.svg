@@ -1,0 +1,2280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:cge="http://iec.ch/TC57/2005/SVG-schema#" xmlns:xlink="http://www.w3.org/1999/xlink" onload="try{initialize(evt);} catch(e){}" xmlns="http://www.w3.org/2000/svg" xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:DF8003="http://DF8003.com/SVGEX-schema#" viewBox="95 -961 1538 972" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+ <defs>
+  <symbol id="terminal" viewBox="-2 -2 4 4" >
+   <circle cx="0" cy="0" stroke="red" r="2" />
+  </symbol>
+  <symbol id="Breaker:shape0_0" viewBox="1 2 11 34" >
+   <use width="4" x="4" xlink:href="#terminal" y="4" terminal_seq="0" height="4" />
+   <use width="4" x="4" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+   <rect width="11" x="1" y="6" height="26" stroke-width="2.625" />
+  </symbol>
+  <symbol id="Breaker:shape0_1" viewBox="1 2 11 34" >
+   <use width="4" x="4" xlink:href="#terminal" y="30" terminal_seq="0" height="4" />
+   <rect width="11" x="1" y="6" height="26" />
+   <use width="4" x="4" xlink:href="#terminal" y="4" terminal_seq="1" height="4" />
+  </symbol>
+  <symbol id="Breaker:shape0_2" viewBox="1 2 11 34" >
+   <rect width="11" x="1" y="6" height="26" stroke-width="2.625" />
+   <line y1="28" stroke-width="1.61111" y2="10" x1="10" x2="3" />
+   <line y1="28" stroke-width="1.31519" y2="10" x1="3" x2="10" />
+   <line y1="29" stroke-width="1.61111" y2="29" x1="3" x2="3" />
+   <use width="4" x="4" xlink:href="#terminal" y="4" terminal_seq="0" height="4" />
+   <use width="4" x="4" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+  </symbol>
+  <symbol id="Breaker:shape0_3" viewBox="1 2 11 34" >
+   <use width="4" x="4" xlink:href="#terminal" y="30" terminal_seq="0" height="4" />
+   <rect width="11" x="1" y="6" height="26" stroke-width="2.625" />
+   <line y1="28" stroke-width="1.61111" y2="10" x1="10" x2="3" />
+   <line y1="28" stroke-width="1.31519" y2="10" x1="3" x2="10" />
+   <line y1="29" stroke-width="1.61111" y2="29" x1="3" x2="3" />
+   <use width="4" x="4" xlink:href="#terminal" y="4" terminal_seq="1" height="4" />
+  </symbol>
+  <symbol id="capacitor:shape2" viewBox="2 2 46 67" >
+   <line y1="2" stroke-width="2.1" y2="19" x1="20" x2="20" />
+   <line y1="2" stroke-width="2.1" y2="19" x1="29" x2="29" />
+   <line y1="10" stroke-width="1.59" y2="10" x1="20" x2="2" />
+   <line y1="10" stroke-width="1.59" y2="10" x1="29" x2="48" />
+   <line y1="30" stroke-width="1.73163" y2="22" x1="46" x2="31" />
+   <line y1="38" stroke-width="1.73163" y2="30" x1="41" x2="26" />
+   <line y1="26" stroke-width="1.58999" y2="10" x1="38" x2="48" />
+   <line y1="34" stroke-width="1.58999" y2="50" x1="34" x2="25" />
+   <line y1="22" stroke-width="1.73163" y2="31" x1="19" x2="4" />
+   <line y1="30" stroke-width="1.73163" y2="39" x1="23" x2="8" />
+   <line y1="27" stroke-width="1.58999" y2="11" x1="11" x2="2" />
+   <line y1="35" stroke-width="1.58999" y2="51" x1="16" x2="25" />
+   <use width="4" x="23" xlink:href="#terminal" y="63" terminal_seq="0" height="4" />
+   <line y1="65" stroke-width="1.51427" y2="49" x1="25" x2="25" />
+  </symbol>
+  <symbol id="dynamicPoint:shape8" viewBox="1 1 26 25" >
+   <rect width="26" x="1" y="1" fill="rgb(0,255,0)" height="25" />
+  </symbol>
+  <symbol id="dynamicPoint:shape9" viewBox="0 0 27 26" >
+   <rect width="27" x="0" y="0" fill="rgb(255,0,0)" height="26" />
+  </symbol>
+  <symbol id="dynamicPoint:shape10" viewBox="1 1 26 25" >
+   <rect width="26" x="1" y="1" fill="rgb(0,255,0)" height="25" />
+  </symbol>
+  <symbol id="dynamicPoint:shape11" viewBox="1 1 26 25" >
+   <rect width="26" x="1" y="1" fill="rgb(0,255,0)" height="25" />
+  </symbol>
+  <symbol id="dynamicPoint:shape28" viewBox="1 1 20 22" >
+   <rect width="20" x="1" y="1" fill="rgb(0,255,0)" height="22" />
+   <rect width="20" x="1" y="1" fill="none" height="22" stroke="rgb(0,238,0)" stroke-width="1.71131" />
+   <line stroke="rgb(0,238,0)" y1="8" stroke-width="2.56696" y2="4" x1="3" x2="7" />
+   <line stroke="rgb(0,238,0)" y1="4" stroke-width="2.56696" y2="18" x1="6" x2="20" />
+  </symbol>
+  <symbol id="dynamicPoint:shape29" viewBox="1 1 21 22" >
+   <rect width="20" x="2" y="1" fill="rgb(0,255,0)" height="22" />
+   <line stroke="rgb(255,69,0)" y1="3" stroke-width="2.56696" y2="19" x1="2" x2="18" />
+   <line stroke="rgb(255,69,0)" y1="19" stroke-width="2.56696" y2="3" x1="4" x2="20" />
+   <rect width="20" x="1" y="1" fill="none" height="22" stroke="rgb(255,69,0)" stroke-width="1.71131" />
+  </symbol>
+  <symbol id="dynamicPoint:shape30" viewBox="1 1 20 22" >
+   <rect width="20" x="1" y="1" fill="rgb(0,255,0)" height="22" />
+   <rect width="20" x="1" y="1" fill="none" height="22" stroke="rgb(0,238,0)" stroke-width="1.71131" />
+   <line stroke="rgb(0,238,0)" y1="8" stroke-width="2.56696" y2="4" x1="3" x2="7" />
+   <line stroke="rgb(0,238,0)" y1="4" stroke-width="2.56696" y2="18" x1="6" x2="20" />
+  </symbol>
+  <symbol id="dynamicPoint:shape31" viewBox="1 1 21 22" >
+   <rect width="20" x="2" y="1" fill="rgb(0,255,0)" height="22" />
+   <rect width="20" x="1" y="1" fill="none" height="22" stroke="rgb(0,238,0)" stroke-width="1.71131" />
+   <line stroke="rgb(0,255,0)" y1="19" stroke-width="2.56696" y2="3" x1="4" x2="20" />
+   <line stroke="rgb(0,238,0)" y1="4" stroke-width="2.56696" y2="20" x1="3" x2="19" />
+  </symbol>
+  <symbol id="earth:shape0" viewBox="0 1 16 19" >
+   <use width="4" x="7" xlink:href="#terminal" y="16" terminal_seq="0" height="4" />
+   <line y1="1" stroke-width="1.99999" y2="1" x1="6" x2="10" />
+   <line y1="9" stroke-width="2" y2="15" x1="8" x2="8" />
+   <line y1="5" stroke-width="1.99999" y2="5" x1="4" x2="12" />
+   <line y1="9" stroke-width="1.99999" y2="9" x1="0" x2="16" />
+  </symbol>
+  <symbol id="lightningRod:shape47" viewBox="1 1 27 51" >
+   <ellipse cx="14" cy="35" rx="13.5" ry="15" stroke-width="1.45559" />
+   <use width="4" x="13" xlink:href="#terminal" y="46" terminal_seq="0" height="4" />
+   <ellipse cx="14" cy="16" rx="13.5" ry="15" stroke-width="1.45559" />
+  </symbol>
+  <symbol id="lightningRod:shape21" viewBox="2 1 11 52" >
+   <rect width="11" x="2" y="14" height="26" stroke-width="1.99997" />
+   <line y1="50" stroke-width="2" y2="5" x1="7" x2="7" />
+   <use width="4" x="5" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <use width="4" x="5" xlink:href="#terminal" y="47" terminal_seq="1" height="4" />
+  </symbol>
+  <symbol id="lightningRod:shape4" viewBox="1 1 16 40" >
+   <use width="4" x="7" xlink:href="#terminal" y="35" terminal_seq="0" height="4" />
+   <use width="4" x="7" xlink:href="#terminal" y="3" terminal_seq="1" height="4" />
+   <rect width="16" x="1" y="5" height="31" stroke-width="1.33333" />
+   <line y1="35" stroke-width="1" y2="35" x1="9" x2="9" />
+   <line y1="35" stroke-width="1.33333" y2="6" x1="9" x2="9" />
+  </symbol>
+  <symbol id="lightningRod:shape17" viewBox="1 1 15 53" >
+   <rect width="15" x="1" y="14" height="29" stroke-width="1.41176" />
+   <line y1="23" stroke-width="1.42362" y2="30" x1="8" x2="11" />
+   <line y1="23" stroke-width="1.42362" y2="30" x1="9" x2="6" />
+   <line y1="8" stroke-width="1.99304" y2="14" x1="8" x2="8" />
+   <use width="4" x="7" xlink:href="#terminal" y="50" terminal_seq="0" height="4" />
+   <line y1="1" stroke-width="1.41176" y2="1" x1="6" x2="11" />
+   <line y1="9" stroke-width="1.42359" y2="9" x1="1" x2="16" />
+   <line y1="5" stroke-width="1.42359" y2="5" x1="4" x2="13" />
+   <line y1="51" stroke-width="1.41176" y2="23" x1="8" x2="8" />
+  </symbol>
+  <symbol id="load:shape1" viewBox="1 1 16 34" >
+   <line y1="29" stroke-width="2" y2="3" x1="9" x2="9" />
+   <use width="4" x="5" xlink:href="#terminal" y="25" terminal_seq="0" height="4" />
+   <polyline fill="none" points="1,13 9,1 17,13 " stroke-width="2" />
+  </symbol>
+  <symbol id="Disconnector:shape1_0" viewBox="1 1 15 35" >
+   <line y1="25" stroke-width="1.99449" y2="7" x1="16" x2="7" />
+   <use width="4" x="3" xlink:href="#terminal" y="30" terminal_seq="0" height="4" />
+   <circle cx="5" cy="8" r="3" stroke-width="1.56758" />
+   <circle cx="5" cy="29" r="3" stroke-width="1.56758" />
+   <use width="4" x="3" xlink:href="#terminal" y="3" terminal_seq="1" height="4" />
+  </symbol>
+  <symbol id="Disconnector:shape1_1" viewBox="1 1 8 34" >
+   <circle cx="5" cy="29" r="3" stroke-width="1.56758" />
+   <use width="4" x="3" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <line y1="26" stroke-width="1.66554" y2="11" x1="5" x2="5" />
+   <use width="4" x="3" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+   <circle cx="5" cy="8" r="3" stroke-width="1.56758" />
+  </symbol>
+  <symbol id="Disconnector:shape1_2" viewBox="-1 1 12 34" >
+   <use width="4" x="3" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <line y1="30" stroke-width="1.56757" y2="6" x1="11" x2="-1" />
+   <line y1="31" stroke-width="1.56757" y2="7" x1="-1" x2="11" />
+   <use width="4" x="3" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+   <circle cx="5" cy="8" r="3" stroke-width="1.56758" />
+   <circle cx="5" cy="29" r="3" stroke-width="1.56758" />
+  </symbol>
+  <symbol id="Disconnector:shape1_3" viewBox="-1 1 12 34" >
+   <use width="4" x="3" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <line y1="30" stroke-width="1.56757" y2="6" x1="11" x2="-1" />
+   <line y1="31" stroke-width="1.56757" y2="7" x1="-1" x2="11" />
+   <use width="4" x="3" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+   <circle cx="5" cy="8" r="3" stroke-width="1.56758" />
+   <circle cx="5" cy="29" r="3" stroke-width="1.56758" />
+  </symbol>
+  <symbol id="Disconnector:shape0_0" viewBox="2 1 15 35" >
+   <line y1="25" stroke-width="1.8841" y2="7" x1="2" x2="11" />
+   <use width="4" x="11" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <circle cx="13" cy="29" r="3" stroke-width="1.51701" />
+   <circle cx="13" cy="8" r="3" stroke-width="1.51701" />
+   <use width="4" x="11" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+  </symbol>
+  <symbol id="Disconnector:shape0_1" viewBox="9 1 8 34" >
+   <use width="4" x="11" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <line y1="26" stroke-width="1.61181" y2="11" x1="13" x2="13" />
+   <use width="4" x="11" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+   <circle cx="13" cy="8" r="3" stroke-width="1.51701" />
+   <circle cx="13" cy="29" r="3" stroke-width="1.51701" />
+  </symbol>
+  <symbol id="Disconnector:shape0_2" viewBox="7 1 12 34" >
+   <use width="4" x="11" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <line y1="30" stroke-width="1.517" y2="6" x1="19" x2="7" />
+   <line y1="31" stroke-width="1.517" y2="7" x1="7" x2="19" />
+   <use width="4" x="11" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+   <circle cx="13" cy="8" r="3" stroke-width="1.51701" />
+   <circle cx="13" cy="29" r="3" stroke-width="1.51701" />
+  </symbol>
+  <symbol id="Disconnector:shape0_3" viewBox="7 1 12 34" >
+   <use width="4" x="11" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <line y1="30" stroke-width="1.517" y2="6" x1="19" x2="7" />
+   <line y1="31" stroke-width="1.517" y2="7" x1="7" x2="19" />
+   <use width="4" x="11" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+   <circle cx="13" cy="8" r="3" stroke-width="1.51701" />
+   <circle cx="13" cy="29" r="3" stroke-width="1.51701" />
+  </symbol>
+  <symbol id="Disconnector:shape3_0" viewBox="1 1 15 35" >
+   <line y1="12" stroke-width="1.99449" y2="30" x1="16" x2="7" />
+   <use width="4" x="3" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <circle cx="5" cy="29" r="3" stroke-width="1.56758" />
+   <circle cx="5" cy="8" r="3" stroke-width="1.56758" />
+   <use width="4" x="3" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+  </symbol>
+  <symbol id="Disconnector:shape3_1" viewBox="1 1 8 34" >
+   <circle cx="5" cy="29" r="3" stroke-width="1.56758" />
+   <use width="4" x="3" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <line y1="26" stroke-width="1.66554" y2="11" x1="5" x2="5" />
+   <use width="4" x="3" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+   <circle cx="5" cy="8" r="3" stroke-width="1.56758" />
+  </symbol>
+  <symbol id="Disconnector:shape3_2" viewBox="-1 1 12 34" >
+   <use width="4" x="3" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <line y1="30" stroke-width="1.56757" y2="6" x1="11" x2="-1" />
+   <line y1="31" stroke-width="1.56757" y2="7" x1="-1" x2="11" />
+   <use width="4" x="3" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+   <circle cx="5" cy="8" r="3" stroke-width="1.56758" />
+   <circle cx="5" cy="29" r="3" stroke-width="1.56758" />
+  </symbol>
+  <symbol id="Disconnector:shape3_3" viewBox="-1 1 12 34" >
+   <use width="4" x="3" xlink:href="#terminal" y="3" terminal_seq="0" height="4" />
+   <line y1="30" stroke-width="1.56757" y2="6" x1="11" x2="-1" />
+   <line y1="31" stroke-width="1.56757" y2="7" x1="-1" x2="11" />
+   <use width="4" x="3" xlink:href="#terminal" y="30" terminal_seq="1" height="4" />
+   <circle cx="5" cy="8" r="3" stroke-width="1.56758" />
+   <circle cx="5" cy="29" r="3" stroke-width="1.56758" />
+  </symbol>
+  <symbol id="Disconnector:shape4_0" viewBox="1 3 34 15" >
+   <line y1="18" stroke-width="1.85371" y2="9" x1="12" x2="29" />
+   <use width="4" x="3" xlink:href="#terminal" y="5" terminal_seq="0" height="4" />
+   <ellipse cx="29" cy="6" rx="3" ry="3.5" stroke-width="1.42106" />
+   <ellipse cx="8" cy="6" rx="3" ry="3.5" stroke-width="1.42106" />
+   <use width="4" x="30" xlink:href="#terminal" y="5" terminal_seq="1" height="4" />
+  </symbol>
+  <symbol id="Disconnector:shape4_1" viewBox="1 3 34 7" >
+   <use width="4" x="30" xlink:href="#terminal" y="5" terminal_seq="0" height="4" />
+   <line y1="7" stroke-width="1.50987" y2="7" x1="11" x2="25" />
+   <use width="4" x="3" xlink:href="#terminal" y="5" terminal_seq="1" height="4" />
+   <ellipse cx="29" cy="6" rx="3" ry="3.5" stroke-width="1.42106" />
+   <ellipse cx="8" cy="6" rx="3" ry="3.5" stroke-width="1.42106" />
+  </symbol>
+  <symbol id="Disconnector:shape4_2" viewBox="2 0 34 12" >
+   <use width="4" x="30" xlink:href="#terminal" y="4" terminal_seq="0" height="4" />
+   <line y1="12" stroke-width="1.42105" y2="0" x1="7" x2="31" />
+   <line y1="0" stroke-width="1.42105" y2="12" x1="6" x2="30" />
+   <use width="4" x="4" xlink:href="#terminal" y="4" terminal_seq="1" height="4" />
+   <circle cx="29" cy="6" r="3" stroke-width="1.42106" />
+   <circle cx="8" cy="6" r="3" stroke-width="1.42106" />
+  </symbol>
+  <symbol id="Disconnector:shape4_3" viewBox="2 0 34 12" >
+   <use width="4" x="30" xlink:href="#terminal" y="4" terminal_seq="0" height="4" />
+   <line y1="12" stroke-width="1.42105" y2="0" x1="7" x2="31" />
+   <line y1="0" stroke-width="1.42105" y2="12" x1="6" x2="30" />
+   <use width="4" x="4" xlink:href="#terminal" y="4" terminal_seq="1" height="4" />
+   <circle cx="29" cy="6" r="3" stroke-width="1.42106" />
+   <circle cx="8" cy="6" r="3" stroke-width="1.42106" />
+  </symbol>
+  <symbol id="Transformer2:shape0-0" viewBox="0 0 36 79" >
+   <use width="4" x="30" xlink:href="#terminal" y="73" terminal_seq="0" height="4" />
+   <line y1="50" stroke-width="2.00001" y2="56" x1="25" x2="32" />
+   <line y1="56" stroke-width="1.99999" y2="62" x1="32" x2="32" />
+   <line y1="50" stroke-width="2.00001" y2="56" x1="40" x2="33" />
+   <line y1="73" stroke-width="1.99998" y2="64" x1="68" x2="62" />
+   <line y1="74" stroke-width="1.99998" y2="74" x1="67" x2="56" />
+   <ellipse cx="32" cy="55" rx="20" ry="19.5" stroke-width="2.00007" />
+   <line y1="40" stroke-width="1.99999" y2="74" x1="2" x2="68" />
+  </symbol>
+  <symbol id="Transformer2:shape0-1" viewBox="0 0 36 79" >
+   <use width="4" x="30" xlink:href="#terminal" y="3" terminal_seq="1" height="4" />
+   <line y1="33" stroke-width="1.99999" y2="17" x1="27" x2="27" />
+   <line y1="24" stroke-width="1.99999" y2="33" x1="37" x2="27" />
+   <line y1="24" stroke-width="1.99999" y2="17" x1="37" x2="27" />
+   <ellipse cx="32" cy="24" rx="20" ry="19.5" stroke-width="2.00007" />
+  </symbol>
+  <symbol id="voltageTransformer:shape36" viewBox="0 2 59 85" >
+   <line y1="74" stroke-width="1" y2="84" x1="23" x2="23" />
+   <line y1="64" stroke-width="1.28703" y2="45" x1="40" x2="40" />
+   <line y1="64" stroke-width="1" y2="64" x1="40" x2="40" />
+   <rect width="8" x="36" y="45" height="19" stroke-width="1.28703" />
+   <line y1="13" stroke-width="1" y2="20" x1="39" x2="39" />
+   <line y1="14" stroke-width="1" y2="11" x1="39" x2="43" />
+   <line y1="14" stroke-width="1" y2="11" x1="40" x2="34" />
+   <line y1="18" stroke-width="1" y2="26" x1="24" x2="24" />
+   <line y1="18" stroke-width="1" y2="22" x1="24" x2="29" />
+   <line y1="27" stroke-width="1" y2="24" x1="24" x2="29" />
+   <line y1="29" stroke-width="1" y2="29" x1="54" x2="47" />
+   <line y1="2" stroke-width="1" y2="2" x1="53" x2="56" />
+   <line y1="4" stroke-width="1" y2="4" x1="52" x2="57" />
+   <line y1="6" stroke-width="1" y2="6" x1="51" x2="59" />
+   <line y1="29" stroke-width="1" y2="6" x1="54" x2="54" />
+   <line y1="9" stroke-width="1" y2="9" x1="2" x2="6" />
+   <line y1="11" stroke-width="1" y2="11" x1="1" x2="7" />
+   <line y1="14" stroke-width="1" y2="14" x1="0" x2="8" />
+   <line y1="24" stroke-width="1" y2="14" x1="4" x2="4" />
+   <line y1="29" stroke-width="1" y2="36" x1="4" x2="7" />
+   <line y1="35" stroke-width="1" y2="35" x1="1" x2="6" />
+   <line y1="29" stroke-width="1" y2="35" x1="4" x2="0" />
+   <rect width="8" x="0" y="25" height="15" stroke-width="0.5" />
+   <line y1="74" stroke-width="1" y2="29" x1="4" x2="4" />
+   <line y1="74" stroke-width="1" y2="74" x1="40" x2="4" />
+   <line y1="40" stroke-width="1" y2="74" x1="40" x2="40" />
+   <line y1="31" stroke-width="1" y2="28" x1="39" x2="44" />
+   <line y1="31" stroke-width="1" y2="28" x1="40" x2="35" />
+   <line y1="30" stroke-width="1" y2="37" x1="40" x2="40" />
+   <ellipse cx="26" cy="23" rx="8.5" ry="9" stroke-width="1" />
+   <ellipse cx="39" cy="30" rx="8" ry="9.5" stroke-width="1" />
+   <ellipse cx="38" cy="14" rx="8.5" ry="9.5" stroke-width="1" />
+   <use width="4" x="22" xlink:href="#terminal" y="83" terminal_seq="0" height="4" />
+  </symbol>
+  <style type="text/css" ><![CDATA[
+.kv0 { stroke:rgb(127,127,127);fill:none}
+.BKBV-0KV { stroke:rgb(127,127,127);fill:rgb(127,127,127)}
+.kv3 { stroke:rgb(154,205,50);fill:none}
+.BKBV-3KV { stroke:rgb(154,205,50);fill:rgb(154,205,50)}
+.kv6 { stroke:rgb(139,139,0);fill:none}
+.BKBV-6KV { stroke:rgb(139,139,0);fill:rgb(139,139,0)}
+.kv10 { stroke:rgb(0,81,151);fill:none}
+.BKBV-10KV { stroke:rgb(0,81,151);fill:rgb(0,81,151)}
+.kv15 { stroke:rgb(0,255,0);fill:none}
+.BKBV-15KV { stroke:rgb(0,255,0);fill:rgb(0,255,0)}
+.kv20 { stroke:rgb(0,255,0);fill:none}
+.BKBV-20KV { stroke:rgb(0,255,0);fill:rgb(0,255,0)}
+.kv35 { stroke:rgb(255,245,0);fill:none}
+.BKBV-35KV { stroke:rgb(255,245,0);fill:rgb(255,245,0)}
+.kv66 { stroke:rgb(255,255,0);fill:none}
+.BKBV-66KV { stroke:rgb(255,255,0);fill:rgb(255,255,0)}
+.kv110 { stroke:rgb(218,37,29);fill:none}
+.BKBV-110KV { stroke:rgb(218,37,29);fill:rgb(218,37,29)}
+.kv220 { stroke:rgb(255,255,255);fill:none}
+.BKBV-220KV { stroke:rgb(255,255,255);fill:rgb(255,255,255)}
+.kv330 { stroke:rgb(160,32,240);fill:none}
+.BKBV-330KV { stroke:rgb(160,32,240);fill:rgb(160,32,240)}
+.kv500 { stroke:rgb(111,39,41);fill:none}
+.BKBV-500KV { stroke:rgb(111,39,41);fill:rgb(111,39,41)}
+.kv750 { stroke:rgb(255,0,0);fill:none}
+.BKBV-750KV { stroke:rgb(255,0,0);fill:rgb(255,0,0)}
+.kv22 { stroke:rgb(255,255,255);fill:none}
+.BKBV-22KV { stroke:rgb(255,255,255);fill:rgb(255,255,255)}
+.kv38 { stroke:rgb(255,255,255);fill:none}
+.BKBV-38KV { stroke:rgb(255,255,255);fill:rgb(255,255,255)}
+.nopower {stroke:grey;fill:none}
+.choice {stroke:rgb(255,0,0);fill:none}
+.bknopower {stroke:grey;fill:grey}
+.bkchoice {stroke:rgb(255,0,0);fill:rgb(255,0,0)}
+.busnopower {stroke:grey;fill:grey}
+.buschoice {stroke:rgb(255,0,0);fill:rgb(255,0,0)}]]></style>
+ </defs>
+ <script xlink:href="xl.js" language="JavaScript" />
+ <g id="Head_Layer" >
+  <rect width="1548" x="90" y="-966" fill="rgb(0,0,0)" height="982" />
+ </g>
+ <g id="Bus_Layer" >
+  <g class="kv35" id="19481" >
+   <polyline class="kv35" fill="none" points="206,-619 1431,-619 " stroke-width="8" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_3I" ObjectName="BS-DE:gfps.SR_gfps_3I" />
+   </metadata>
+  </g>
+  <g class="kv10" id="19484" >
+   <polyline class="kv10" fill="none" points="96,-300 720,-300 " stroke-width="8" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9II" ObjectName="BS-DE:gfps.SR_gfps_9II" />
+   </metadata>
+  </g>
+  <g class="kv10" id="19483" >
+   <polyline class="kv10" fill="none" points="826,-299 1562,-299 " stroke-width="8" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9I" ObjectName="BS-DE:gfps.SR_gfps_9I" />
+   </metadata>
+  </g>
+ </g>
+ <g id="Load_Layer" >
+  <g id="19472" >
+   <use width="16" x="1" y="1" xlink:href="#load:shape1" class="kv10" height="34" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 388.833333 -97.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_923" ObjectName="DE:gfps.SR_gfps_923" />
+   </metadata>
+  </g>
+  <g id="19471" >
+   <use width="16" x="1" y="1" xlink:href="#load:shape1" class="kv10" height="34" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 495.166667 -97.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_922" ObjectName="DE:gfps.SR_gfps_922" />
+   </metadata>
+  </g>
+  <g id="19470" >
+   <use width="16" x="1" y="1" xlink:href="#load:shape1" class="kv10" height="34" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 599.500000 -97.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_921" ObjectName="DE:gfps.SR_gfps_921" />
+   </metadata>
+  </g>
+  <g id="19469" >
+   <use width="16" x="1" y="1" xlink:href="#load:shape1" class="kv10" height="34" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 1032.500000 -96.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_914" ObjectName="DE:gfps.SR_gfps_914" />
+   </metadata>
+  </g>
+  <g id="19468" >
+   <use width="16" x="1" y="1" xlink:href="#load:shape1" class="kv10" height="34" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 1140.833333 -96.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_913" ObjectName="DE:gfps.SR_gfps_913" />
+   </metadata>
+  </g>
+  <g id="19467" >
+   <use width="16" x="1" y="1" xlink:href="#load:shape1" class="kv10" height="34" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 1247.166667 -96.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_912" ObjectName="DE:gfps.SR_gfps_912" />
+   </metadata>
+  </g>
+  <g id="19466" >
+   <use width="16" x="1" y="1" xlink:href="#load:shape1" class="kv10" height="34" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 1350.500000 -96.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_911" ObjectName="DE:gfps.SR_gfps_911" />
+   </metadata>
+  </g>
+  <g id="19473" >
+   <use width="16" x="1" y="1" xlink:href="#load:shape1" class="kv10" height="34" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 280.500000 -97.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_924" ObjectName="DE:gfps.SR_gfps_924" />
+   </metadata>
+  </g>
+ </g>
+ <g id="ACLine_Layer" >
+  <g class="kv35" id="19083" >
+   <polyline class="kv35" fill="none" points="504,-841 504,-915 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="35kV.35kVspx" ObjectName="AC-35kV.35kVspx" />
+   </metadata>
+  </g>
+  <g class="kv35" id="23361" >
+   <polyline class="kv35" fill="none" points="1039,-836 1039,-913 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="35kV.dpT_ps" ObjectName="AC-35kV.dpT_ps" />
+   </metadata>
+  </g>
+  <g class="kv35" id="17898" >
+   <polyline class="kv35" fill="none" points="771,-838 771,-887 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="35kV.35kVypx" ObjectName="AC-35kV.35kVypx" />
+   </metadata>
+  </g>
+ </g>
+ <g id="Breaker_Layer" >
+  <g id="19366" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv35" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 415.933333 -522.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_302BK" ObjectName="DE:gfps.SR_gfps_302BK" />
+    <cge:Meas_Ref ObjectID="ME-133573" />
+   </metadata>
+  </g>
+  <g id="19372" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 415.933333 -363.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_902BK" ObjectName="DE:gfps.SR_gfps_902BK" />
+    <cge:Meas_Ref ObjectID="ME-133594" />
+   </metadata>
+  </g>
+  <g id="19361" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 1089.933333 -362.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_901BK" ObjectName="DE:gfps.SR_gfps_901BK" />
+    <cge:Meas_Ref ObjectID="ME-133513" />
+   </metadata>
+  </g>
+  <g id="19383" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv35" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 765.433333 -681.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_312BK" ObjectName="DE:gfps.SR_gfps_312BK" />
+    <cge:Meas_Ref ObjectID="ME-133682" />
+   </metadata>
+  </g>
+  <g id="19389" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv35" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 497.933333 -682.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_313BK" ObjectName="DE:gfps.SR_gfps_313BK" />
+    <cge:Meas_Ref ObjectID="ME-133710" />
+   </metadata>
+  </g>
+  <g id="19377" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv35" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 1032.933333 -683.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_311BK" ObjectName="DE:gfps.SR_gfps_311BK" />
+    <cge:Meas_Ref ObjectID="ME-133654" />
+   </metadata>
+  </g>
+  <g id="19437" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 939.620833 -195.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_915BK" ObjectName="DE:gfps.SR_gfps_915BK" />
+    <cge:Meas_Ref ObjectID="ME-133991" />
+   </metadata>
+  </g>
+  <g id="19443" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 185.620833 -196.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_925BK" ObjectName="DE:gfps.SR_gfps_925BK" />
+    <cge:Meas_Ref ObjectID="ME-134014" />
+   </metadata>
+  </g>
+  <g id="19425" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 390.204167 -197.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_923BK" ObjectName="DE:gfps.SR_gfps_923BK" />
+    <cge:Meas_Ref ObjectID="ME-133916" />
+   </metadata>
+  </g>
+  <g id="19421" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 498.537500 -197.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_922BK" ObjectName="DE:gfps.SR_gfps_922BK" />
+    <cge:Meas_Ref ObjectID="ME-133891" />
+   </metadata>
+  </g>
+  <g id="19417" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 601.870833 -197.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_921BK" ObjectName="DE:gfps.SR_gfps_921BK" />
+    <cge:Meas_Ref ObjectID="ME-133866" />
+   </metadata>
+  </g>
+  <g id="19413" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 1034.870833 -196.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_914BK" ObjectName="DE:gfps.SR_gfps_914BK" />
+    <cge:Meas_Ref ObjectID="ME-133841" />
+   </metadata>
+  </g>
+  <g id="19409" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 1142.204167 -196.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_913BK" ObjectName="DE:gfps.SR_gfps_913BK" />
+    <cge:Meas_Ref ObjectID="ME-133816" />
+   </metadata>
+  </g>
+  <g id="19405" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 1250.537500 -196.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_912BK" ObjectName="DE:gfps.SR_gfps_912BK" />
+    <cge:Meas_Ref ObjectID="ME-133791" />
+   </metadata>
+  </g>
+  <g id="19401" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 1352.870833 -196.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_911BK" ObjectName="DE:gfps.SR_gfps_911BK" />
+    <cge:Meas_Ref ObjectID="ME-133766" />
+   </metadata>
+  </g>
+  <g id="19429" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv10" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 282.870833 -197.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_924BK" ObjectName="DE:gfps.SR_gfps_924BK" />
+    <cge:Meas_Ref ObjectID="ME-133941" />
+   </metadata>
+  </g>
+  <g id="19355" >
+   <use width="11" x="1" y="2" xlink:href="#Breaker:shape0_0" class="kv35" height="34" transform="matrix(0.933333 -0.000000 0.000000 -0.805556 1089.933333 -521.194444)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_301BK" ObjectName="DE:gfps.SR_gfps_301BK" />
+    <cge:Meas_Ref ObjectID="ME-133492" />
+   </metadata>
+  </g>
+ </g>
+ <g id="Disconnector_Layer" >
+  <g id="19453" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape1_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 1466.000000 -358.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9511SW" ObjectName="DE:gfps.SR_gfps_9511SW" />
+    <cge:Meas_Ref ObjectID="ME-134049" />
+   </metadata>
+  </g>
+  <g id="19367" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv35" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 434.062500 -566.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_3021SW" ObjectName="DE:gfps.SR_gfps_3021SW" />
+    <cge:Meas_Ref ObjectID="ME-133574" />
+   </metadata>
+  </g>
+  <g id="19356" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv35" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 1108.062500 -567.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_3011SW" ObjectName="DE:gfps.SR_gfps_3011SW" />
+    <cge:Meas_Ref ObjectID="ME-133493" />
+   </metadata>
+  </g>
+  <g id="19373" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 417.500000 -321.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9021SW" ObjectName="DE:gfps.SR_gfps_9021SW" />
+    <cge:Meas_Ref ObjectID="ME-133595" />
+   </metadata>
+  </g>
+  <g id="19362" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 1091.500000 -323.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9011SW" ObjectName="DE:gfps.SR_gfps_9011SW" />
+    <cge:Meas_Ref ObjectID="ME-133514" />
+   </metadata>
+  </g>
+  <g id="19384" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv35" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 766.500000 -639.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_3121SW" ObjectName="DE:gfps.SR_gfps_3121SW" />
+    <cge:Meas_Ref ObjectID="ME-133683" />
+   </metadata>
+  </g>
+  <g id="19385" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv35" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 783.562500 -720.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_3123SW" ObjectName="DE:gfps.SR_gfps_3123SW" />
+    <cge:Meas_Ref ObjectID="ME-133684" />
+   </metadata>
+  </g>
+  <g id="19386" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv35" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 732.562500 -743.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_31230SW" ObjectName="DE:gfps.SR_gfps_31230SW" />
+    <cge:Meas_Ref ObjectID="ME-133685" />
+   </metadata>
+  </g>
+  <g id="19390" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv35" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 499.000000 -640.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_3131SW" ObjectName="DE:gfps.SR_gfps_3131SW" />
+    <cge:Meas_Ref ObjectID="ME-133711" />
+   </metadata>
+  </g>
+  <g id="19391" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv35" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 516.062500 -721.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_3133SW" ObjectName="DE:gfps.SR_gfps_3133SW" />
+    <cge:Meas_Ref ObjectID="ME-133712" />
+   </metadata>
+  </g>
+  <g id="19392" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv35" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 465.062500 -744.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_31330SW" ObjectName="DE:gfps.SR_gfps_31330SW" />
+    <cge:Meas_Ref ObjectID="ME-133713" />
+   </metadata>
+  </g>
+  <g id="19378" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv35" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 1034.000000 -641.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_3111SW" ObjectName="DE:gfps.SR_gfps_3111SW" />
+    <cge:Meas_Ref ObjectID="ME-133655" />
+   </metadata>
+  </g>
+  <g id="19379" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv35" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 1051.062500 -722.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_3113SW" ObjectName="DE:gfps.SR_gfps_3113SW" />
+    <cge:Meas_Ref ObjectID="ME-133656" />
+   </metadata>
+  </g>
+  <g id="19380" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv35" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 1000.062500 -745.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_31130SW" ObjectName="DE:gfps.SR_gfps_31130SW" />
+    <cge:Meas_Ref ObjectID="ME-133657" />
+   </metadata>
+  </g>
+  <g id="19457" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv35" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 1241.000000 -646.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_3141SW" ObjectName="DE:gfps.SR_gfps_3141SW" />
+    <cge:Meas_Ref ObjectID="ME-134065" />
+   </metadata>
+  </g>
+  <g id="19438" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv10" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 957.312500 -241.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9151SW" ObjectName="DE:gfps.SR_gfps_9151SW" />
+    <cge:Meas_Ref ObjectID="ME-133992" />
+   </metadata>
+  </g>
+  <g id="19434" >
+   <use width="34" x="1" y="3" xlink:href="#Disconnector:shape4_0" class="kv10" height="15" transform="matrix(0.710526 -0.000000 0.000000 -1.000000 766.710526 -336.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9341SW" ObjectName="DE:gfps.SR_gfps_9341SW" />
+    <cge:Meas_Ref ObjectID="ME-133967" />
+   </metadata>
+  </g>
+  <g id="19444" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv10" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 203.312500 -242.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9251SW" ObjectName="DE:gfps.SR_gfps_9251SW" />
+    <cge:Meas_Ref ObjectID="ME-134015" />
+   </metadata>
+  </g>
+  <g id="19426" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv10" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 408.895833 -243.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9231SW" ObjectName="DE:gfps.SR_gfps_9231SW" />
+    <cge:Meas_Ref ObjectID="ME-133917" />
+   </metadata>
+  </g>
+  <g id="19427" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 391.833333 -151.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9233SW" ObjectName="DE:gfps.SR_gfps_9233SW" />
+    <cge:Meas_Ref ObjectID="ME-133918" />
+   </metadata>
+  </g>
+  <g id="19422" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv10" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 516.229167 -243.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9221SW" ObjectName="DE:gfps.SR_gfps_9221SW" />
+    <cge:Meas_Ref ObjectID="ME-133892" />
+   </metadata>
+  </g>
+  <g id="19423" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 499.166667 -151.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9223SW" ObjectName="DE:gfps.SR_gfps_9223SW" />
+    <cge:Meas_Ref ObjectID="ME-133893" />
+   </metadata>
+  </g>
+  <g id="19418" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv10" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 620.562500 -243.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9211SW" ObjectName="DE:gfps.SR_gfps_9211SW" />
+    <cge:Meas_Ref ObjectID="ME-133867" />
+   </metadata>
+  </g>
+  <g id="19419" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 603.500000 -151.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9213SW" ObjectName="DE:gfps.SR_gfps_9213SW" />
+    <cge:Meas_Ref ObjectID="ME-133868" />
+   </metadata>
+  </g>
+  <g id="19414" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv10" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 1053.562500 -242.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9141SW" ObjectName="DE:gfps.SR_gfps_9141SW" />
+    <cge:Meas_Ref ObjectID="ME-133842" />
+   </metadata>
+  </g>
+  <g id="19415" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 1036.500000 -150.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9143SW" ObjectName="DE:gfps.SR_gfps_9143SW" />
+    <cge:Meas_Ref ObjectID="ME-133843" />
+   </metadata>
+  </g>
+  <g id="19410" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv10" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 1160.895833 -242.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9131SW" ObjectName="DE:gfps.SR_gfps_9131SW" />
+    <cge:Meas_Ref ObjectID="ME-133817" />
+   </metadata>
+  </g>
+  <g id="19411" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 1143.833333 -150.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9133SW" ObjectName="DE:gfps.SR_gfps_9133SW" />
+    <cge:Meas_Ref ObjectID="ME-133818" />
+   </metadata>
+  </g>
+  <g id="19406" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv10" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 1268.229167 -242.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9121SW" ObjectName="DE:gfps.SR_gfps_9121SW" />
+    <cge:Meas_Ref ObjectID="ME-133792" />
+   </metadata>
+  </g>
+  <g id="19407" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 1251.166667 -150.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9123SW" ObjectName="DE:gfps.SR_gfps_9123SW" />
+    <cge:Meas_Ref ObjectID="ME-133793" />
+   </metadata>
+  </g>
+  <g id="19402" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv10" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 1371.562500 -242.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9111SW" ObjectName="DE:gfps.SR_gfps_9111SW" />
+    <cge:Meas_Ref ObjectID="ME-133767" />
+   </metadata>
+  </g>
+  <g id="19403" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 1354.500000 -150.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9113SW" ObjectName="DE:gfps.SR_gfps_9113SW" />
+    <cge:Meas_Ref ObjectID="ME-133768" />
+   </metadata>
+  </g>
+  <g id="19430" >
+   <use width="15" x="2" y="1" xlink:href="#Disconnector:shape0_0" class="kv10" height="35" transform="matrix(-0.944444 -0.000000 0.000000 -0.758500 301.562500 -243.935484)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9241SW" ObjectName="DE:gfps.SR_gfps_9241SW" />
+    <cge:Meas_Ref ObjectID="ME-133942" />
+   </metadata>
+  </g>
+  <g id="19431" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape3_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 284.500000 -151.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9243SW" ObjectName="DE:gfps.SR_gfps_9243SW" />
+    <cge:Meas_Ref ObjectID="ME-133943" />
+   </metadata>
+  </g>
+  <g id="19449" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape1_0" class="kv35" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 1335.000000 -569.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_3511SW" ObjectName="DE:gfps.SR_gfps_3511SW" />
+    <cge:Meas_Ref ObjectID="ME-134037" />
+   </metadata>
+  </g>
+  <g id="19459" >
+   <use width="15" x="1" y="1" xlink:href="#Disconnector:shape1_0" class="kv10" height="35" transform="matrix(1.000000 -0.000000 0.000000 -0.783784 1506.000000 -262.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_9161SW" ObjectName="DE:gfps.SR_gfps_9161SW" />
+    <cge:Meas_Ref ObjectID="ME-134067" />
+   </metadata>
+  </g>
+ </g>
+ <g id="Transformer2_Layer" >
+  <g id="19476" >
+   <g id="WD-0" >
+    <metadata>
+     <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_T2-H" ObjectName="DE:gfps.SR_gfps_T2-H" />
+    </metadata>
+    <use width="36" x="0" y="0" xlink:href="#Transformer2:shape0-0" class="kv35" height="79" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 390.000000 -421.000000)" />
+   </g>
+   <g id="WD-1" >
+    <metadata>
+     <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_T2-L" ObjectName="DE:gfps.SR_gfps_T2-L" />
+    </metadata>
+    <use width="36" x="0" y="0" xlink:href="#Transformer2:shape0-1" class="kv10" height="79" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 390.000000 -421.000000)" />
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_T2" ObjectName="DE:gfps.SR_gfps_T2" />
+   </metadata>
+  </g>
+  <g id="19475" >
+   <g id="WD-0" >
+    <metadata>
+     <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_T1-H" ObjectName="DE:gfps.SR_gfps_T1-H" />
+    </metadata>
+    <use width="36" x="0" y="0" xlink:href="#Transformer2:shape0-0" class="kv35" height="79" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 1064.000000 -420.000000)" />
+   </g>
+   <g id="WD-1" >
+    <metadata>
+     <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_T1-L" ObjectName="DE:gfps.SR_gfps_T1-L" />
+    </metadata>
+    <use width="36" x="0" y="0" xlink:href="#Transformer2:shape0-1" class="kv10" height="79" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 1064.000000 -420.000000)" />
+   </g>
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_T1" ObjectName="DE:gfps.SR_gfps_T1" />
+   </metadata>
+  </g>
+ </g>
+ <g id="Transformer3_Layer" />
+ <g id="Generator_Layer" />
+ <g id="Compensator_Layer" >
+  <g id="19463" >
+   <use width="46" x="2" y="2" xlink:href="#capacitor:shape2" class="kv10" height="67" transform="matrix(1.000000 -0.000000 0.000000 -0.757143 166.000000 -82.242857)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_C2" ObjectName="DE:gfps.SR_gfps_C2" />
+   </metadata>
+  </g>
+  <g id="19462" >
+   <use width="46" x="2" y="2" xlink:href="#capacitor:shape2" class="kv10" height="67" transform="matrix(1.000000 -0.000000 0.000000 -0.757143 920.000000 -82.242857)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="DE:gfps.SR_gfps_C1" ObjectName="DE:gfps.SR_gfps_C1" />
+   </metadata>
+  </g>
+ </g>
+ <g id="Reactor_Layer" />
+ <g id="PT_Layer" >
+  <g id="adc0950" >
+   <use width="59" x="0" y="2" xlink:href="#voltageTransformer:shape36" class="kv35" height="85" transform="matrix(-1.305085 -0.000000 0.000000 -1.011236 1371.000000 -469.000000)" />
+   <metadata>
+    <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+   </metadata>
+  </g>
+ </g>
+ <g id="CT_Layer" />
+ <g id="Link_Layer" >
+  <g class="kv35" id="aa3dad0" >
+   <polyline class="kv35" fill="none" points="422,-527 422,-496 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19476_0" Pin0InfoVect0LinkObjId="19366_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="aa5d8c0" >
+   <polyline class="kv10" fill="none" points="422,-426 422,-389 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19372_1" Pin0InfoVect0LinkObjId="19476_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="b036b18" >
+   <polyline class="kv35" fill="none" points="1096,-526 1096,-495 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19475_0" Pin0InfoVect0LinkObjId="19355_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a235918" >
+   <polyline class="kv10" fill="none" points="1096,-425 1096,-388 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19361_1" Pin0InfoVect0LinkObjId="19475_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="ac09788" >
+   <polyline class="kv35" fill="none" points="422,-548 422,-570 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19367_0" Pin0InfoVect0LinkObjId="19366_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="b20c4b8" >
+   <polyline class="kv35" fill="none" points="422,-591 422,-619 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19481_0" Pin0InfoVect0LinkObjId="19367_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="ab783e8" >
+   <polyline class="kv35" fill="none" points="1096,-547 1096,-571 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19356_0" Pin0InfoVect0LinkObjId="19355_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a917948" >
+   <polyline class="kv35" fill="none" points="1096,-592 1096,-619 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19481_0" Pin0InfoVect0LinkObjId="19356_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a7def10" >
+   <polyline class="kv10" fill="none" points="422,-368 422,-346 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19373_1" Pin0InfoVect0LinkObjId="19372_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b1f8130" >
+   <polyline class="kv10" fill="none" points="422,-325 422,-300 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19484_0" Pin0InfoVect0LinkObjId="19373_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a0e57a0" >
+   <polyline class="kv10" fill="none" points="1096,-367 1096,-348 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19362_1" Pin0InfoVect0LinkObjId="19361_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a395470" >
+   <polyline class="kv10" fill="none" points="1096,-327 1096,-299 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19483_0" Pin0InfoVect0LinkObjId="19362_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="abf5f50" >
+   <polyline class="kv35" fill="none" points="771,-686 771,-664 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19384_1" Pin0InfoVect0LinkObjId="19383_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a9b40d8" >
+   <polyline class="kv35" fill="none" points="771,-745 771,-785 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="aad29d0_0" Pin1InfoVect0LinkObjId="aa50fb8_1" Pin0InfoVect0LinkObjId="19385_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a7e5dd0" >
+   <polyline class="kv35" fill="none" points="771,-724 771,-707 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19383_1" Pin0InfoVect0LinkObjId="19385_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="aa50fb8" >
+   <polyline class="kv35" fill="none" points="720,-768 720,-785 771,-785 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="aad29d0_0" Pin1InfoVect0LinkObjId="a9b40d8_1" Pin0InfoVect0LinkObjId="19386_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="ada3b10" >
+   <polyline class="kv35" fill="none" points="720,-747 720,-725 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="b1a6280_0" Pin0InfoVect0LinkObjId="19386_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="aa57d08" >
+   <polyline class="kv35" fill="none" points="771,-643 771,-619 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19481_0" Pin0InfoVect0LinkObjId="19384_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a163598" >
+   <polyline class="kv35" fill="none" points="504,-687 504,-665 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19390_1" Pin0InfoVect0LinkObjId="19389_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a55e100" >
+   <polyline class="kv35" fill="none" points="504,-746 504,-786 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a41be50_0" Pin1InfoVect0LinkObjId="a3fe638_1" Pin0InfoVect0LinkObjId="19391_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a163cc0" >
+   <polyline class="kv35" fill="none" points="504,-725 504,-708 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19389_1" Pin0InfoVect0LinkObjId="19391_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a3fe638" >
+   <polyline class="kv35" fill="none" points="453,-769 453,-786 504,-786 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a41be50_0" Pin1InfoVect0LinkObjId="a55e100_1" Pin0InfoVect0LinkObjId="19392_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a162298" >
+   <polyline class="kv35" fill="none" points="453,-748 453,-726 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="b1cda30_0" Pin0InfoVect0LinkObjId="19392_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a5441d8" >
+   <polyline class="kv35" fill="none" points="504,-644 504,-619 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19481_0" Pin0InfoVect0LinkObjId="19390_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="afb1968" >
+   <polyline class="kv35" fill="none" points="1039,-688 1039,-666 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19378_1" Pin0InfoVect0LinkObjId="19377_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a52c440" >
+   <polyline class="kv35" fill="none" points="1039,-726 1039,-709 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19377_1" Pin0InfoVect0LinkObjId="19379_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="b263640" >
+   <polyline class="kv35" fill="none" points="988,-749 988,-727 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="b0ecb90_0" Pin0InfoVect0LinkObjId="19380_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="abf9988" >
+   <polyline class="kv35" fill="none" points="1039,-645 1039,-619 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19481_0" Pin0InfoVect0LinkObjId="19378_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b200fd8" >
+   <polyline class="kv10" fill="none" points="945,-245 945,-221 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19437_1" Pin0InfoVect0LinkObjId="19438_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b074658" >
+   <polyline class="kv10" fill="none" points="945,-299 945,-266 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19438_1" Pin0InfoVect0LinkObjId="19483_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a4026c8" >
+   <polyline class="kv10" fill="none" points="191,-246 191,-222 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19443_1" Pin0InfoVect0LinkObjId="19444_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a1ec338" >
+   <polyline class="kv10" fill="none" points="396,-176 396,-202 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19425_0" Pin0InfoVect0LinkObjId="19427_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b1ae138" >
+   <polyline class="kv10" fill="none" points="396,-223 396,-247 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19426_0" Pin0InfoVect0LinkObjId="19425_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="ab5f758" >
+   <polyline class="kv10" fill="none" points="397,-268 397,-300 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19484_0" Pin0InfoVect0LinkObjId="19426_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a050a78" >
+   <polyline class="kv10" fill="none" points="504,-176 504,-202 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19421_0" Pin0InfoVect0LinkObjId="19423_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a927b98" >
+   <polyline class="kv10" fill="none" points="504,-223 504,-247 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19422_0" Pin0InfoVect0LinkObjId="19421_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a51bcb0" >
+   <polyline class="kv10" fill="none" points="504,-268 504,-300 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19484_0" Pin0InfoVect0LinkObjId="19422_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="aa421f8" >
+   <polyline class="kv10" fill="none" points="608,-176 608,-202 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19417_0" Pin0InfoVect0LinkObjId="19419_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="ad6e618" >
+   <polyline class="kv10" fill="none" points="608,-223 608,-247 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19418_0" Pin0InfoVect0LinkObjId="19417_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a113268" >
+   <polyline class="kv10" fill="none" points="608,-268 608,-300 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19484_0" Pin0InfoVect0LinkObjId="19418_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b06a2e0" >
+   <polyline class="kv10" fill="none" points="1041,-175 1041,-201 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19413_0" Pin0InfoVect0LinkObjId="19415_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="abe93f0" >
+   <polyline class="kv10" fill="none" points="1041,-222 1041,-246 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19414_0" Pin0InfoVect0LinkObjId="19413_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="aaabde0" >
+   <polyline class="kv10" fill="none" points="1041,-267 1041,-299 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19483_0" Pin0InfoVect0LinkObjId="19414_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="abcd070" >
+   <polyline class="kv10" fill="none" points="1148,-175 1148,-201 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19409_0" Pin0InfoVect0LinkObjId="19411_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a7e6498" >
+   <polyline class="kv10" fill="none" points="1148,-222 1148,-246 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19410_0" Pin0InfoVect0LinkObjId="19409_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a742930" >
+   <polyline class="kv10" fill="none" points="1149,-267 1149,-299 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19483_0" Pin0InfoVect0LinkObjId="19410_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="af1b898" >
+   <polyline class="kv10" fill="none" points="1256,-175 1256,-201 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19405_0" Pin0InfoVect0LinkObjId="19407_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="af7c668" >
+   <polyline class="kv10" fill="none" points="1256,-222 1256,-246 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19406_0" Pin0InfoVect0LinkObjId="19405_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a773e58" >
+   <polyline class="kv10" fill="none" points="1256,-267 1256,-299 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19483_0" Pin0InfoVect0LinkObjId="19406_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a4da440" >
+   <polyline class="kv10" fill="none" points="1359,-175 1359,-201 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19401_0" Pin0InfoVect0LinkObjId="19403_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b1ec668" >
+   <polyline class="kv10" fill="none" points="1359,-222 1359,-246 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19402_0" Pin0InfoVect0LinkObjId="19401_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a4006c0" >
+   <polyline class="kv10" fill="none" points="1359,-267 1359,-299 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19483_0" Pin0InfoVect0LinkObjId="19402_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a4cc5d8" >
+   <polyline class="kv10" fill="none" points="289,-176 289,-202 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19429_0" Pin0InfoVect0LinkObjId="19431_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="aaab8d0" >
+   <polyline class="kv10" fill="none" points="289,-223 289,-247 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19430_0" Pin0InfoVect0LinkObjId="19429_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b10f1c0" >
+   <polyline class="kv10" fill="none" points="289,-268 289,-300 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19484_0" Pin0InfoVect0LinkObjId="19430_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a242d08" >
+   <polyline class="kv35" fill="none" points="1340,-619 1340,-594 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19449_0" Pin0InfoVect0LinkObjId="19481_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="b20a900" >
+   <polyline class="kv35" fill="none" points="1246,-650 1246,-619 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19481_0" Pin0InfoVect0LinkObjId="19457_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a8718d0" >
+   <polyline class="kv10" fill="none" points="694,-300 694,-342 770,-342 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19434_0" Pin0InfoVect0LinkObjId="19484_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="af59b60" >
+   <polyline class="kv10" fill="none" points="789,-342 856,-342 856,-299 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19483_0" Pin0InfoVect0LinkObjId="19434_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b119f50" >
+   <polyline class="kv10" fill="none" points="1471,-383 1473,-384 1473,-403 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin0InfoVect0LinkObjId="19453_0" MaxPinNum="1" />
+   </metadata>
+  </g>
+  <g class="kv35" id="adc0e60" >
+   <polyline class="kv35" fill="none" points="1340,-554 1340,-572 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19449_1" Pin0InfoVect0LinkObjId="adc0950_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b2327f0" >
+   <polyline class="kv10" fill="none" points="1511,-177 1511,-208 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="a1d83b8_0" Pin0InfoVect0LinkObjId="a0f8cb8_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a9095e8" >
+   <polyline class="kv35" fill="none" points="1039,-747 1039,-787 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a9cc598_0" Pin1InfoVect0LinkObjId="a7c1770_0" Pin0InfoVect0LinkObjId="19379_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a7c1770" >
+   <polyline class="kv35" fill="none" points="1039,-787 988,-787 988,-770 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19380_1" Pin0InfoVect1LinkObjId="a9cc598_0" Pin0InfoVect0LinkObjId="a9095e8_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a52bbe0" >
+   <polyline class="kv35" fill="none" points="1246,-736 1246,-714 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="a42f510_0" Pin0InfoVect0LinkObjId="aa572f8_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a420858" >
+   <polyline class="kv35" fill="none" points="1211,-672 1211,-685 1246,-685 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a1cb3f8_0" Pin1InfoVect0LinkObjId="a461070_1" Pin0InfoVect0LinkObjId="ab84d50_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a461070" >
+   <polyline class="kv35" fill="none" points="1246,-692 1246,-685 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a420858_1" Pin1InfoVect0LinkObjId="a1cb3f8_0" Pin0InfoVect0LinkObjId="a42f510_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a1cb3f8" >
+   <polyline class="kv35" fill="none" points="1246,-685 1246,-671 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19457_1" Pin0InfoVect1LinkObjId="a420858_1" Pin0InfoVect0LinkObjId="a461070_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a52b700" >
+   <polyline class="kv10" fill="none" points="157,-167 157,-177 191,-177 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a9c3a58_0" Pin1InfoVect0LinkObjId="a111248_1" Pin0InfoVect0LinkObjId="a420db0_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a111248" >
+   <polyline class="kv10" fill="none" points="191,-131 191,-177 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a9c3a58_0" Pin1InfoVect0LinkObjId="a52b700_1" Pin0InfoVect0LinkObjId="19463_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a9c3a58" >
+   <polyline class="kv10" fill="none" points="191,-177 191,-201 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19443_0" Pin0InfoVect1LinkObjId="a111248_1" Pin0InfoVect0LinkObjId="a52b700_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a73e728" >
+   <polyline class="kv10" fill="none" points="255,-134 255,-144 289,-144 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a019080_0" Pin1InfoVect0LinkObjId="a05dcc0_1" Pin0InfoVect0LinkObjId="a194650_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a05dcc0" >
+   <polyline class="kv10" fill="none" points="289,-126 289,-144 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a019080_0" Pin1InfoVect0LinkObjId="a73e728_1" Pin0InfoVect0LinkObjId="19473_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a019080" >
+   <polyline class="kv10" fill="none" points="289,-144 289,-155 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19431_0" Pin0InfoVect1LinkObjId="a05dcc0_1" Pin0InfoVect0LinkObjId="a73e728_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a010558" >
+   <polyline class="kv10" fill="none" points="372,-133 372,-143 397,-143 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a680010_0" Pin1InfoVect0LinkObjId="b04def8_1" Pin0InfoVect0LinkObjId="a46c868_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b04def8" >
+   <polyline class="kv10" fill="none" points="397,-126 397,-143 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a680010_0" Pin1InfoVect0LinkObjId="a010558_1" Pin0InfoVect0LinkObjId="19472_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a680010" >
+   <polyline class="kv10" fill="none" points="397,-143 397,-155 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19427_0" Pin0InfoVect1LinkObjId="b04def8_1" Pin0InfoVect0LinkObjId="a010558_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a24a938" >
+   <polyline class="kv10" fill="none" points="479,-131 479,-141 504,-141 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="ab52de0_0" Pin1InfoVect0LinkObjId="a18fb68_1" Pin0InfoVect0LinkObjId="adf5ff0_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a18fb68" >
+   <polyline class="kv10" fill="none" points="504,-126 504,-141 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="ab52de0_0" Pin1InfoVect0LinkObjId="a24a938_1" Pin0InfoVect0LinkObjId="19471_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="ab52de0" >
+   <polyline class="kv10" fill="none" points="504,-141 504,-155 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19423_0" Pin0InfoVect1LinkObjId="a18fb68_1" Pin0InfoVect0LinkObjId="a24a938_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a424398" >
+   <polyline class="kv10" fill="none" points="583,-135 583,-145 608,-145 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a420c00_0" Pin1InfoVect0LinkObjId="b1be800_1" Pin0InfoVect0LinkObjId="a9005a0_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b1be800" >
+   <polyline class="kv10" fill="none" points="608,-126 608,-145 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a420c00_0" Pin1InfoVect0LinkObjId="a424398_1" Pin0InfoVect0LinkObjId="19470_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a420c00" >
+   <polyline class="kv10" fill="none" points="608,-145 608,-155 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19419_0" Pin0InfoVect1LinkObjId="b1be800_1" Pin0InfoVect0LinkObjId="a424398_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="aab17e0" >
+   <polyline class="kv10" fill="none" points="920,-163 920,-173 945,-173 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="abe5350_0" Pin1InfoVect0LinkObjId="a1638d8_1" Pin0InfoVect0LinkObjId="adbf600_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a1638d8" >
+   <polyline class="kv10" fill="none" points="945,-131 945,-173 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="abe5350_0" Pin1InfoVect0LinkObjId="aab17e0_1" Pin0InfoVect0LinkObjId="19462_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="abe5350" >
+   <polyline class="kv10" fill="none" points="945,-173 945,-200 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19437_0" Pin0InfoVect1LinkObjId="a1638d8_1" Pin0InfoVect0LinkObjId="aab17e0_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a6cecc0" >
+   <polyline class="kv10" fill="none" points="1016,-131 1016,-141 1041,-141 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="b233ac8_0" Pin1InfoVect0LinkObjId="adf5420_1" Pin0InfoVect0LinkObjId="adffb28_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="adf5420" >
+   <polyline class="kv10" fill="none" points="1041,-125 1041,-141 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="b233ac8_0" Pin1InfoVect0LinkObjId="a6cecc0_1" Pin0InfoVect0LinkObjId="19469_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b233ac8" >
+   <polyline class="kv10" fill="none" points="1041,-141 1041,-154 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19415_0" Pin0InfoVect1LinkObjId="adf5420_1" Pin0InfoVect0LinkObjId="a6cecc0_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a46ee00" >
+   <polyline class="kv10" fill="none" points="1124,-131 1124,-141 1149,-141 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a9c9678_0" Pin1InfoVect0LinkObjId="a400bd0_1" Pin0InfoVect0LinkObjId="a2169d0_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a400bd0" >
+   <polyline class="kv10" fill="none" points="1149,-125 1149,-141 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a9c9678_0" Pin1InfoVect0LinkObjId="a46ee00_1" Pin0InfoVect0LinkObjId="19468_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a9c9678" >
+   <polyline class="kv10" fill="none" points="1149,-141 1149,-154 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19411_0" Pin0InfoVect1LinkObjId="a400bd0_1" Pin0InfoVect0LinkObjId="a46ee00_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b36eed0" >
+   <polyline class="kv10" fill="none" points="1231,-128 1231,-138 1256,-138 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a721c28_0" Pin1InfoVect0LinkObjId="b233c78_1" Pin0InfoVect0LinkObjId="a1b0e78_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b233c78" >
+   <polyline class="kv10" fill="none" points="1256,-125 1256,-138 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a721c28_0" Pin1InfoVect0LinkObjId="b36eed0_1" Pin0InfoVect0LinkObjId="19467_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a721c28" >
+   <polyline class="kv10" fill="none" points="1256,-138 1256,-154 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19407_0" Pin0InfoVect1LinkObjId="b233c78_1" Pin0InfoVect0LinkObjId="b36eed0_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a38be80" >
+   <polyline class="kv10" fill="none" points="1334,-129 1334,-139 1359,-139 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="b985fc0_1" Pin1InfoVect0LinkObjId="a9b9030_1" Pin0InfoVect0LinkObjId="b234188_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a9b9030" >
+   <polyline class="kv10" fill="none" points="1359,-125 1359,-139 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="b985fc0_1" Pin1InfoVect0LinkObjId="a38be80_1" Pin0InfoVect0LinkObjId="19466_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b985fc0" >
+   <polyline class="kv10" fill="none" points="1359,-154 1359,-139 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="a9b9030_1" Pin1InfoVect0LinkObjId="a38be80_1" Pin0InfoVect0LinkObjId="19403_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="af25d58" >
+   <polyline class="kv10" fill="none" points="1511,-251 1511,-265 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19459_1" Pin0InfoVect0LinkObjId="a1d83b8_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a1113e8" >
+   <polyline class="kv10" fill="none" points="1511,-287 1511,-299 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19483_0" Pin0InfoVect0LinkObjId="19459_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b202e38" >
+   <polyline class="kv10" fill="none" points="1446,-339 1446,-351 1471,-351 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="b378178_0" Pin1InfoVect0LinkObjId="ad75390_1" Pin0InfoVect0LinkObjId="aa36588_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="ad75390" >
+   <polyline class="kv10" fill="none" points="1471,-361 1471,-351 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect1LinkObjId="b202e38_1" Pin1InfoVect0LinkObjId="b378178_0" Pin0InfoVect0LinkObjId="19453_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="b378178" >
+   <polyline class="kv10" fill="none" points="1471,-351 1471,-299 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19483_0" Pin0InfoVect1LinkObjId="b202e38_1" Pin0InfoVect0LinkObjId="ad75390_1" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv10" id="a4201d0" >
+   <polyline class="kv10" fill="none" points="191,-300 191,-267 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin1InfoVect0LinkObjId="19444_1" Pin0InfoVect0LinkObjId="19484_0" MaxPinNum="2" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a41be50" >
+   <polyline class="kv35" fill="none" points="504,-786 504,-841 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin0InfoVect1LinkObjId="a3fe638_1" Pin0InfoVect0LinkObjId="a55e100_1" MaxPinNum="1" />
+   </metadata>
+  </g>
+  <g class="kv35" id="aad29d0" >
+   <polyline class="kv35" fill="none" points="771,-785 771,-838 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin0InfoVect1LinkObjId="aa50fb8_1" Pin0InfoVect0LinkObjId="a9b40d8_1" MaxPinNum="1" />
+   </metadata>
+  </g>
+  <g class="kv35" id="a9cc598" >
+   <polyline class="kv35" fill="none" points="1039,-787 1039,-836 " stroke-width="2" />
+   <metadata>
+    <cge:PSR_Link Pin0InfoVect1LinkObjId="a7c1770_0" Pin0InfoVect0LinkObjId="a9095e8_1" MaxPinNum="1" />
+   </metadata>
+  </g>
+ </g>
+ <g id="MeasurementValue_Layer" >
+  <g decimal="1" PreSymbol="0" dataTimeFlag="0" PointClass="PointAiTel" id="ME-134146" AccType="0" >
+   <text x="1210" y="-425" fill="rgb(255,255,255)" font-size="16" >9.90</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134146" ObjectName="gfps:SR_gfps_T1_T1" />
+   </metadata>
+  </g>
+  <g decimal="1" PreSymbol="0" dataTimeFlag="0" PointClass="PointAiTel" id="ME-134161" AccType="0" >
+   <text x="535" y="-421" fill="rgb(255,250,250)" font-size="18" >9.90</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134161" ObjectName="gfps:SR_gfps_T2_T1" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134148" >
+   <text x="1201" y="-394" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134148" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134163" >
+   <text x="521" y="-392" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134163" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134158" >
+   <text x="311" y="-383" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134158" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134159" >
+   <text x="311" y="-365" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134159" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134155" >
+   <text x="311" y="-347" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134155" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134152" >
+   <text x="335" y="-545" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134152" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134153" >
+   <text x="335" y="-527" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134153" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134149" >
+   <text x="335" y="-509" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134149" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134181" >
+   <text x="454" y="-943" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134181" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134182" >
+   <text x="454" y="-925" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134182" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134178" >
+   <text x="454" y="-907" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134178" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134174" >
+   <text x="721" y="-934" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134174" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134175" >
+   <text x="721" y="-916" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134175" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134171" >
+   <text x="721" y="-898" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134171" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134167" >
+   <text x="974" y="-934" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134167" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134168" >
+   <text x="974" y="-916" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134168" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134164" >
+   <text x="974" y="-898" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134164" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134137" >
+   <text x="1000" y="-547" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134137" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134138" >
+   <text x="1000" y="-529" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134138" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134134" >
+   <text x="1000" y="-511" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134134" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134143" >
+   <text x="1005" y="-383" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134143" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134144" >
+   <text x="1005" y="-365" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134144" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134140" >
+   <text x="1005" y="-347" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134140" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134195" >
+   <text x="1333" y="-25" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134195" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134196" >
+   <text x="1333" y="-7" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134196" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134192" >
+   <text x="1333" y="11" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134192" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134201" >
+   <text x="1231" y="-25" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134201" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134202" >
+   <text x="1231" y="-7" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134202" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134198" >
+   <text x="1231" y="11" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134198" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134207" >
+   <text x="1122" y="-25" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134207" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134208" >
+   <text x="1122" y="-7" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134208" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134204" >
+   <text x="1122" y="11" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134204" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134213" >
+   <text x="1015" y="-25" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134213" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134214" >
+   <text x="1015" y="-7" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134214" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134210" >
+   <text x="1015" y="11" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134210" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134249" >
+   <text x="920" y="-24" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134249" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134246" >
+   <text x="920" y="-6" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134246" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134219" >
+   <text x="582" y="-26" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134219" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134220" >
+   <text x="582" y="-8" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134220" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134216" >
+   <text x="582" y="10" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134216" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134225" >
+   <text x="479" y="-26" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134225" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134226" >
+   <text x="479" y="-8" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134226" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134222" >
+   <text x="479" y="10" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134222" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134231" >
+   <text x="370" y="-26" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134231" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134232" >
+   <text x="370" y="-8" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134232" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134228" >
+   <text x="370" y="10" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134228" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134237" >
+   <text x="263" y="-26" fill="rgb(0,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134237" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134238" >
+   <text x="263" y="-8" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134238" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134234" >
+   <text x="263" y="10" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134234" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134253" >
+   <text x="166" y="-25" fill="rgb(255,0,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134253" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="" appendix="" decimal="1" PreSymbol="0" id="ME-134250" >
+   <text x="166" y="-7" fill="rgb(255,255,0)" font-size="18" >0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134250" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Ua  " appendix="" decimal="1" PreSymbol="0" id="ME-134302" >
+   <text x="95" y="-380" fill="rgb(255,255,255)" font-size="18" >Ua   0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134302" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Ub " appendix="" decimal="1" PreSymbol="0" id="ME-134303" >
+   <text x="95" y="-362" fill="rgb(255,255,255)" font-size="18" >Ub  0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134303" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Uc " appendix="" decimal="1" PreSymbol="0" id="ME-134304" >
+   <text x="95" y="-344" fill="rgb(255,255,255)" font-size="18" >Uc  0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134304" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Uab " appendix="" decimal="1" PreSymbol="0" id="ME-134305" >
+   <text x="95" y="-326" fill="rgb(255,255,255)" font-size="18" >Uab  0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134305" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Ua  " appendix="" decimal="1" PreSymbol="0" id="ME-134294" >
+   <text x="1305" y="-376" fill="rgb(255,255,255)" font-size="18" >Ua   0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134294" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Ub " appendix="" decimal="1" PreSymbol="0" id="ME-134295" >
+   <text x="1305" y="-358" fill="rgb(255,255,255)" font-size="18" >Ub  0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134295" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Uc " appendix="" decimal="1" PreSymbol="0" id="ME-134296" >
+   <text x="1305" y="-340" fill="rgb(255,255,255)" font-size="18" >Uc  0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134296" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Uab " appendix="" decimal="1" PreSymbol="0" id="ME-134297" >
+   <text x="1305" y="-322" fill="rgb(255,255,255)" font-size="18" >Uab  0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134297" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Ua  " appendix="" decimal="1" PreSymbol="0" id="ME-134254" >
+   <text x="201" y="-698" fill="rgb(255,255,255)" font-size="18" >Ua   0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134254" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Ub " appendix="" decimal="1" PreSymbol="0" id="ME-134255" >
+   <text x="201" y="-680" fill="rgb(255,255,255)" font-size="18" >Ub  0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134255" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Uc " appendix="" decimal="1" PreSymbol="0" id="ME-134256" >
+   <text x="201" y="-662" fill="rgb(255,255,255)" font-size="18" >Uc  0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134256" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+  <g prefix="Uab " appendix="" decimal="1" PreSymbol="0" id="ME-134257" >
+   <text x="201" y="-644" fill="rgb(255,255,255)" font-size="18" >Uab  0.00</text>
+   <metadata>
+    <cge:Meas_Ref ObjectID="134257" ObjectName="NULL:NULL" />
+   </metadata>
+  </g>
+ </g>
+ <g id="Text_Layer" >
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 971.000000 -126.000000) translate(0,15)" font-family="SimSun" font-size="18" >＃1</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 971.000000 -126.000000) translate(0,33)" font-family="SimSun" font-size="18" >电</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 971.000000 -126.000000) translate(0,51)" font-family="SimSun" font-size="18" >容</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 971.000000 -126.000000) translate(0,69)" font-family="SimSun" font-size="18" >器</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 202.000000 -646.000000) translate(0,13)" font-family="SimSun" font-size="16" >35kV母线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 96.000000 -318.000000) translate(0,13)" font-family="SimSun" font-size="16" >10kVII母线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1337.000000 -320.000000) translate(0,13)" font-family="SimSun" font-size="16" >10kVI母线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1169.000000 -466.000000) translate(0,13)" font-family="SimSun" font-size="16" >#1主变</text>
+  <text fill="rgb(255,255,255)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1158.000000 -436.000000) translate(0,13)" font-family="SimSun" font-size="16" >油温1:</text>
+  <text fill="rgb(255,255,255)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1160.000000 -411.000000) translate(0,13)" font-family="SimSun" font-size="16" >档位:</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 492.000000 -468.000000) translate(0,15)" font-family="SimSun" font-size="18" >#2主变</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1543.000000 -894.000000) translate(0,15)" font-family="SimSun" font-size="18" >信号总复归</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1518.000000 -854.000000) translate(0,15)" font-family="SimSun" font-size="18" >公共信号系统</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1516.000000 -623.000000) translate(0,15)" font-family="SimSun" font-size="18" >0793-2912333</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1550.000000 -812.000000) translate(0,28)" font-family="LiSu" font-size="35" >广</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1550.000000 -812.000000) translate(0,63)" font-family="LiSu" font-size="35" >丰</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1550.000000 -812.000000) translate(0,98)" font-family="LiSu" font-size="35" >排</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1550.000000 -812.000000) translate(0,133)" font-family="LiSu" font-size="35" >山</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1550.000000 -812.000000) translate(0,168)" font-family="LiSu" font-size="35" >变</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 740.500000 -876.000000) translate(0,15)" font-family="SimSun" font-size="18" >养</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 740.500000 -876.000000) translate(0,33)" font-family="SimSun" font-size="18" >排</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 740.500000 -876.000000) translate(0,51)" font-family="SimSun" font-size="18" >线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 472.000000 -876.000000) translate(0,15)" font-family="SimSun" font-size="18" >社</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 472.000000 -876.000000) translate(0,33)" font-family="SimSun" font-size="18" >排</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 472.000000 -876.000000) translate(0,51)" font-family="SimSun" font-size="18" >线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1009.000000 -876.000000) translate(0,15)" font-family="SimSun" font-size="18" >大</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1009.000000 -876.000000) translate(0,33)" font-family="SimSun" font-size="18" >排</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1009.000000 -876.000000) translate(0,51)" font-family="SimSun" font-size="18" >线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1272.000000 -797.000000) translate(0,15)" font-family="SimSun" font-size="18" >35kV</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1272.000000 -797.000000) translate(0,33)" font-family="SimSun" font-size="18" >站</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1272.000000 -797.000000) translate(0,51)" font-family="SimSun" font-size="18" >用</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1272.000000 -797.000000) translate(0,69)" font-family="SimSun" font-size="18" >变</text>
+  <text fill="rgb(255,255,255)" transform="matrix(1.000000 0.000000 0.000000 1.000000 481.000000 -433.000000) translate(0,13)" font-family="SimSun" font-size="16" >油温2:</text>
+  <text fill="rgb(255,255,255)" transform="matrix(1.000000 0.000000 0.000000 1.000000 483.000000 -408.000000) translate(0,13)" font-family="SimSun" font-size="16" >档位:</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1533.000000 -174.000000) translate(0,15)" font-family="SimSun" font-size="18" >10kV</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1533.000000 -174.000000) translate(0,33)" font-family="SimSun" font-size="18" >站</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1533.000000 -174.000000) translate(0,51)" font-family="SimSun" font-size="18" >用</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1533.000000 -174.000000) translate(0,69)" font-family="SimSun" font-size="18" >变</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 216.000000 -126.000000) translate(0,15)" font-family="SimSun" font-size="18" >＃2</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 216.000000 -126.000000) translate(0,33)" font-family="SimSun" font-size="18" >电</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 216.000000 -126.000000) translate(0,51)" font-family="SimSun" font-size="18" >容</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 216.000000 -126.000000) translate(0,69)" font-family="SimSun" font-size="18" >器</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 411.333333 -108.000000) translate(0,15)" font-family="SimSun" font-size="18" >社</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 411.333333 -108.000000) translate(0,33)" font-family="SimSun" font-size="18" >管</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 411.333333 -108.000000) translate(0,51)" font-family="SimSun" font-size="18" >线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 516.666667 -126.000000) translate(0,15)" font-family="SimSun" font-size="18" >编</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 516.666667 -126.000000) translate(0,33)" font-family="SimSun" font-size="18" >织</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 516.666667 -126.000000) translate(0,51)" font-family="SimSun" font-size="18" >厂</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 516.666667 -126.000000) translate(0,69)" font-family="SimSun" font-size="18" >线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 623.000000 -108.000000) translate(0,15)" font-family="SimSun" font-size="18" >非</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 623.000000 -108.000000) translate(0,33)" font-family="SimSun" font-size="18" >矿</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 623.000000 -108.000000) translate(0,51)" font-family="SimSun" font-size="18" >线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1064.000000 -150.000000) translate(0,15)" font-family="SimSun" font-size="18" >南</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1064.000000 -150.000000) translate(0,33)" font-family="SimSun" font-size="18" >方</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1064.000000 -150.000000) translate(0,51)" font-family="SimSun" font-size="18" >水</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1064.000000 -150.000000) translate(0,69)" font-family="SimSun" font-size="18" >泥</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1064.000000 -150.000000) translate(0,87)" font-family="SimSun" font-size="18" >厂</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1064.000000 -150.000000) translate(0,105)" font-family="SimSun" font-size="18" >线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1164.333333 -108.000000) translate(0,15)" font-family="SimSun" font-size="18" >吴</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1164.333333 -108.000000) translate(0,33)" font-family="SimSun" font-size="18" >村</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1164.333333 -108.000000) translate(0,51)" font-family="SimSun" font-size="18" >线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1269.666667 -108.000000) translate(0,15)" font-family="SimSun" font-size="18" >排</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1269.666667 -108.000000) translate(0,33)" font-family="SimSun" font-size="18" >山</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1269.666667 -108.000000) translate(0,51)" font-family="SimSun" font-size="18" >线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1382.000000 -153.000000) translate(0,15)" font-family="SimSun" font-size="18" >排</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1382.000000 -153.000000) translate(0,33)" font-family="SimSun" font-size="18" >山</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1382.000000 -153.000000) translate(0,51)" font-family="SimSun" font-size="18" >水</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1382.000000 -153.000000) translate(0,69)" font-family="SimSun" font-size="18" >泥</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1382.000000 -153.000000) translate(0,87)" font-family="SimSun" font-size="18" >厂</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1382.000000 -153.000000) translate(0,105)" font-family="SimSun" font-size="18" >线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 304.000000 -108.000000) translate(0,15)" font-family="SimSun" font-size="18" >竹</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 304.000000 -108.000000) translate(0,33)" font-family="SimSun" font-size="18" >岩</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 304.000000 -108.000000) translate(0,51)" font-family="SimSun" font-size="18" >线</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1313.000000 -462.000000) translate(0,12)" font-family="SimSun" font-size="15" >35kV PT</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 522.000000 -705.000000) translate(0,15)" font-family="SimSun" font-size="18" >313</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 521.000000 -742.000000) translate(0,15)" font-family="SimSun" font-size="18" >3133</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 522.000000 -658.000000) translate(0,15)" font-family="SimSun" font-size="18" >3131</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 388.000000 -767.000000) translate(0,15)" font-family="SimSun" font-size="18" >31330</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 788.000000 -707.000000) translate(0,15)" font-family="SimSun" font-size="18" >312</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 788.000000 -744.000000) translate(0,15)" font-family="SimSun" font-size="18" >3123</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 789.000000 -662.000000) translate(0,15)" font-family="SimSun" font-size="18" >3121</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 656.000000 -764.000000) translate(0,15)" font-family="SimSun" font-size="18" >31230</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1055.000000 -705.000000) translate(0,15)" font-family="SimSun" font-size="18" >311</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1056.000000 -745.000000) translate(0,15)" font-family="SimSun" font-size="18" >3113</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1057.000000 -662.000000) translate(0,15)" font-family="SimSun" font-size="18" >3111</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 934.000000 -768.000000) translate(0,15)" font-family="SimSun" font-size="18" >31130</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1262.000000 -667.000000) translate(0,15)" font-family="SimSun" font-size="18" >3141</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 434.000000 -385.000000) translate(0,15)" font-family="SimSun" font-size="18" >902</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 438.000000 -342.000000) translate(0,15)" font-family="SimSun" font-size="18" >9021</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 440.000000 -543.000000) translate(0,15)" font-family="SimSun" font-size="18" >302</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 439.000000 -589.000000) translate(0,15)" font-family="SimSun" font-size="18" >3021</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1110.000000 -386.000000) translate(0,15)" font-family="SimSun" font-size="18" >901</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1112.000000 -344.000000) translate(0,15)" font-family="SimSun" font-size="18" >9011</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1108.000000 -545.000000) translate(0,15)" font-family="SimSun" font-size="18" >301</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1111.000000 -589.000000) translate(0,15)" font-family="SimSun" font-size="18" >3011</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1360.000000 -592.000000) translate(0,15)" font-family="SimSun" font-size="18" >3511</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1426.000000 -383.000000) translate(0,15)" font-family="SimSun" font-size="18" >9511</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 756.000000 -375.000000) translate(0,15)" font-family="SimSun" font-size="18" >9341</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 204.000000 -218.000000) translate(0,15)" font-family="SimSun" font-size="18" >925</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 208.000000 -265.000000) translate(0,15)" font-family="SimSun" font-size="18" >9251</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 304.000000 -218.000000) translate(0,15)" font-family="SimSun" font-size="18" >924</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 305.000000 -264.000000) translate(0,15)" font-family="SimSun" font-size="18" >9241</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 307.000000 -168.000000) translate(0,15)" font-family="SimSun" font-size="18" >9243</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 409.000000 -220.000000) translate(0,15)" font-family="SimSun" font-size="18" >923</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 410.000000 -264.000000) translate(0,15)" font-family="SimSun" font-size="18" >9231</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 413.000000 -172.000000) translate(0,15)" font-family="SimSun" font-size="18" >9233</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 515.000000 -220.000000) translate(0,15)" font-family="SimSun" font-size="18" >922</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 519.000000 -264.000000) translate(0,15)" font-family="SimSun" font-size="18" >9221</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 518.000000 -170.000000) translate(0,15)" font-family="SimSun" font-size="18" >9223</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 621.000000 -219.000000) translate(0,15)" font-family="SimSun" font-size="18" >921</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 623.000000 -263.000000) translate(0,15)" font-family="SimSun" font-size="18" >9211</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 625.000000 -173.000000) translate(0,15)" font-family="SimSun" font-size="18" >9213</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 959.000000 -217.000000) translate(0,15)" font-family="SimSun" font-size="18" >915</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 961.000000 -264.000000) translate(0,15)" font-family="SimSun" font-size="18" >9151</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1056.000000 -219.000000) translate(0,15)" font-family="SimSun" font-size="18" >914</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1058.000000 -264.000000) translate(0,15)" font-family="SimSun" font-size="18" >9141</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1059.000000 -174.000000) translate(0,15)" font-family="SimSun" font-size="18" >9143</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1161.000000 -218.000000) translate(0,15)" font-family="SimSun" font-size="18" >913</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1165.000000 -263.000000) translate(0,15)" font-family="SimSun" font-size="18" >9131</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1166.000000 -168.000000) translate(0,15)" font-family="SimSun" font-size="18" >9133</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1273.000000 -219.000000) translate(0,15)" font-family="SimSun" font-size="18" >912</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1270.000000 -261.000000) translate(0,15)" font-family="SimSun" font-size="18" >9121</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1270.000000 -168.000000) translate(0,15)" font-family="SimSun" font-size="18" >9123</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1375.000000 -218.000000) translate(0,15)" font-family="SimSun" font-size="18" >911</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1376.000000 -263.000000) translate(0,15)" font-family="SimSun" font-size="18" >9111</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1378.000000 -172.000000) translate(0,15)" font-family="SimSun" font-size="18" >9113</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 267.000000 -917.000000) translate(0,15)" font-family="SimSun" font-size="18" >35kV母线单相接地</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 267.000000 -881.000000) translate(0,15)" font-family="SimSun" font-size="18" >10kV母线单相接地</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 918.000000 -480.000000) translate(0,15)" font-family="SimSun" font-size="18" >型号:SZ9-4000/35</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 918.000000 -480.000000) translate(0,33)" font-family="SimSun" font-size="18" > 低压侧Ie:219.9A</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 246.000000 -482.000000) translate(0,15)" font-family="SimSun" font-size="18" >型号:SZ9-6300/35</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 246.000000 -482.000000) translate(0,33)" font-family="SimSun" font-size="18" > 低压侧Ie:346.4A</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1536.000000 -282.000000) translate(0,15)" font-family="SimSun" font-size="18" >9161</text>
+  <text fill="rgb(255,250,250)" transform="matrix(1.000000 0.000000 0.000000 1.000000 1457.000000 -485.000000) translate(0,12)" font-family="SimSun" font-size="15" >10kV PT</text>
+ </g>
+ <g id="Other_Layer" >
+  <g id="Image_Layer" >
+   <image width="56" x="1540" xlink:href="srgw3.png" y="-812" height="177" />
+  </g>
+  <g id="Line_Layer" >
+   <line stroke="rgb(0,81,151)" y1="-410" stroke-width="1" y2="-424" x1="1474" x2="1474" />
+   <line stroke="rgb(0,81,151)" y1="-410" stroke-width="1" y2="-410" x1="1474" x2="1474" />
+   <line stroke="rgb(0,81,151)" y1="-449" stroke-width="1" y2="-444" x1="1475" x2="1475" />
+   <line stroke="rgb(0,81,151)" y1="-449" stroke-width="1" y2="-451" x1="1475" x2="1471" />
+   <line stroke="rgb(0,81,151)" y1="-449" stroke-width="1" y2="-451" x1="1474" x2="1479" />
+   <line stroke="rgb(0,81,151)" y1="-445" stroke-width="1" y2="-439" x1="1489" x2="1489" />
+   <line stroke="rgb(0,81,151)" y1="-445" stroke-width="1" y2="-442" x1="1488" x2="1484" />
+   <line stroke="rgb(0,81,151)" y1="-439" stroke-width="1" y2="-440" x1="1489" x2="1484" />
+   <line stroke="rgb(0,81,151)" y1="-437" stroke-width="1" y2="-437" x1="1460" x2="1468" />
+   <line stroke="rgb(0,81,151)" y1="-458" stroke-width="1" y2="-458" x1="1462" x2="1459" />
+   <line stroke="rgb(0,81,151)" y1="-456" stroke-width="1" y2="-456" x1="1463" x2="1457" />
+   <line stroke="rgb(0,81,151)" y1="-454" stroke-width="1" y2="-454" x1="1464" x2="1456" />
+   <line stroke="rgb(0,81,151)" y1="-437" stroke-width="1" y2="-455" x1="1460" x2="1460" />
+   <line stroke="rgb(0,81,151)" y1="-428" stroke-width="1" y2="-402" x1="1473" x2="1473" />
+   <line stroke="rgb(0,81,151)" y1="-436" stroke-width="1" y2="-438" x1="1474" x2="1470" />
+   <line stroke="rgb(0,81,151)" y1="-436" stroke-width="1" y2="-438" x1="1473" x2="1478" />
+   <line stroke="rgb(0,81,151)" y1="-436" stroke-width="1" y2="-431" x1="1474" x2="1474" />
+  </g>
+  <g id="Circle_Layer" >
+   <circle fill="none" cx="1486" cy="-441" stroke="rgb(0,81,151)" r="7.5" stroke-width="1" />
+   <ellipse fill="none" cx="1474" cy="-436" rx="7.5" ry="7" stroke="rgb(0,81,151)" stroke-width="1" />
+   <ellipse fill="none" cx="1475" cy="-448" rx="7.5" ry="7" stroke="rgb(0,81,151)" stroke-width="1" />
+  </g>
+  <g id="Rectangle_Layer" >
+   <rect width="8" x="1470" y="-425" fill="none" height="15" stroke="rgb(0,81,151)" stroke-width="0.932203" />
+  </g>
+  <g id="Earth_Layer" >
+   <g id="b1a6280" >
+    <use width="16" x="0" y="1" xlink:href="#earth:shape0" class="kv0" height="19" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 712.500000 -708.000000)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="b1cda30" >
+    <use width="16" x="0" y="1" xlink:href="#earth:shape0" class="kv0" height="19" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 445.000000 -709.000000)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="b0ecb90" >
+    <use width="16" x="0" y="1" xlink:href="#earth:shape0" class="kv0" height="19" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 980.000000 -710.000000)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+  </g>
+  <g id="LightningRod_Layer" >
+   <g id="aa572f8" >
+    <use width="27" x="1" y="1" xlink:href="#lightningRod:shape47" class="kv35" height="51" transform="matrix(1.000000 -0.000000 0.000000 1.000000 1231.000000 -784.000000)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="a0f8cb8" >
+    <use width="27" x="1" y="1" xlink:href="#lightningRod:shape47" class="kv10" height="51" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 1496.000000 -129.000000)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="a1d83b8" >
+    <use width="11" x="2" y="1" xlink:href="#lightningRod:shape21" class="kv10" height="52" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 1505.000000 -203.000000)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="a42f510" >
+    <use width="16" x="1" y="1" xlink:href="#lightningRod:shape4" class="kv35" height="40" transform="matrix(0.722222 -0.000000 0.000000 -0.666667 1240.000000 -689.000000)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="ab84d50" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv35" height="53" transform="matrix(0.705882 -0.000000 0.000000 -0.711799 1205.000000 -635.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="a420db0" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv10" height="53" transform="matrix(0.705882 -0.000000 0.000000 -0.711799 151.000000 -130.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="a194650" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv10" height="53" transform="matrix(0.705882 -0.000000 0.000000 -0.711799 250.000000 -97.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="a46c868" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv10" height="53" transform="matrix(0.529412 -0.000000 0.000000 -0.711799 367.250000 -96.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="adf5ff0" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv10" height="53" transform="matrix(0.529412 -0.000000 0.000000 -0.711799 474.250000 -94.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="a9005a0" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv10" height="53" transform="matrix(0.529412 -0.000000 0.000000 -0.711799 578.250000 -98.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="adbf600" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv10" height="53" transform="matrix(0.529412 -0.000000 0.000000 -0.711799 915.250000 -126.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="adffb28" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv10" height="53" transform="matrix(0.529412 -0.000000 0.000000 -0.711799 1011.250000 -94.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="a2169d0" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv10" height="53" transform="matrix(0.529412 -0.000000 0.000000 -0.711799 1119.250000 -94.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="a1b0e78" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv10" height="53" transform="matrix(0.529412 -0.000000 0.000000 -0.711799 1226.250000 -91.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="b234188" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv10" height="53" transform="matrix(0.529412 -0.000000 0.000000 -0.711799 1329.250000 -92.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+   <g id="aa36588" >
+    <use width="15" x="1" y="1" xlink:href="#lightningRod:shape17" class="kv10" height="53" transform="matrix(0.529412 -0.000000 0.000000 -0.711799 1442.250000 -302.851064)" />
+    <metadata>
+     <cge:PSR_Ref ObjectID="0" ObjectName="0" />
+    </metadata>
+   </g>
+  </g>
+  <g id="ConnectPoint_Layer" >
+   <use width="4" x="420" xlink:href="#terminal" y="-429" terminal_seq="1" height="4" />
+   <use width="4" x="1094" xlink:href="#terminal" y="-528" terminal_seq="2" height="4" />
+   <use width="4" x="1094" xlink:href="#terminal" y="-548" terminal_seq="3" height="4" />
+  </g>
+  <g id="ConnectNode_Layer" />
+  <g id="DynamicPoint_Layer" >
+   <g id="0" >
+    <use width="27" x="0" y="0" xlink:href="#dynamicPoint:shape9" height="26" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 232.000000 -896.000000)" />
+    <metadata>
+     <cge:Meas_Ref ObjectID="ME-188273" />
+    </metadata>
+   </g>
+   <g id="0" >
+    <use width="27" x="0" y="0" xlink:href="#dynamicPoint:shape9" height="26" transform="matrix(1.000000 -0.000000 0.000000 -1.000000 232.000000 -861.000000)" />
+    <metadata>
+     <cge:Meas_Ref ObjectID="ME-188277" />
+    </metadata>
+   </g>
+   <g id="0" >
+    <use width="20" x="1" y="1" xlink:href="#dynamicPoint:shape28" height="22" transform="matrix(1.260870 -0.000000 0.000000 -1.041667 1504.000000 -876.000000)" />
+    <metadata>
+     <cge:Meas_Ref ObjectID="ME-188292" />
+    </metadata>
+   </g>
+  </g>
+ </g>
+ <g id="Ref_Layer" >
+  <a xlink:href="广丰一次接线图.svg" >
+   <rect width="61" x="1536" y="-818" height="187" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变SR_gfps_GG虚开关间隔接线图_0.svg" >
+   <rect width="109" x="1515" y="-857" height="23" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变大排线311开关间隔接线图_0.svg" >
+   <rect width="30" x="1055" y="-705" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变养排线312开关间隔接线图_0.svg" >
+   <rect width="31" x="788" y="-707" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变#2主变间隔接线图.svg" >
+   <rect width="54" x="492" y="-468" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变#2主变间隔接线图.svg" >
+   <rect width="31" x="440" y="-543" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变#2主变间隔接线图.svg" >
+   <rect width="31" x="434" y="-385" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变#1主变间隔接线图.svg" >
+   <rect width="49" x="1169" y="-466" height="16" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变#1主变间隔接线图.svg" >
+   <rect width="30" x="1108" y="-545" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变#1主变间隔接线图.svg" >
+   <rect width="30" x="1110" y="-386" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变排山水泥厂线911开关间隔接线图_0.svg" >
+   <rect width="30" x="1375" y="-218" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变排山线912开关间隔接线图_0.svg" >
+   <rect width="31" x="1273" y="-219" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变吴村线913开关间隔接线图_0.svg" >
+   <rect width="30" x="1161" y="-218" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变非矿线921开关间隔接线图_0.svg" >
+   <rect width="31" x="621" y="-219" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变编织厂线922开关间隔接线图_0.svg" >
+   <rect width="32" x="515" y="-220" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变社管线923开关间隔接线图_0.svg" >
+   <rect width="31" x="409" y="-220" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变竹岩线924开关间隔接线图_0.svg" >
+   <rect width="31" x="304" y="-218" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变#2电容器925开关间隔接线图_0.svg" >
+   <rect width="31" x="204" y="-218" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变#1电容器915开关间隔接线图_0.svg" >
+   <rect width="30" x="959" y="-217" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变吴村水泥厂线914开关间隔接线图_0.svg" >
+   <rect width="30" x="1056" y="-219" height="18" style="fill-opacity:0" />
+  </a>
+  <a xlink:href="广丰排山变广丰排山变社排线313开关间隔接线图_0.svg" >
+   <rect width="30" x="522" y="-705" height="18" style="fill-opacity:0" />
+  </a>
+ </g>
+</svg>

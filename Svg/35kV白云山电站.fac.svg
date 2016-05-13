@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="(0,0,1500,1200)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cge="http://www.cim.com" >
+<defs>
+<style type="text/css"><![CDATA[
+.kv0{stroke:rgb(170,255,0);fill:none}
+.kv10{stroke:rgb(185,72,66);fill:none}
+.kv110{stroke:rgb(240,65,85);fill:none}
+.kv220{stroke:rgb(128,0,128);fill:none}
+.kv35{stroke:rgb(255,255,0);fill:none}
+.kv500{stroke:rgb(85,85,255);fill:none}
+.kv6{stroke:rgb(0,170,255);fill:none}
+.kv-1{stroke:rgb(93,92,88);fill:none}
+]]></style>
+<symbol id="terminal" preserveAspectRatio="xMidYMid meet">
+ <circle cx="0" cy="0" r="1" stroke="yellow" fill="yellow" stroke-width="1"/>
+</symbol>
+<symbol id="Breaker:hg断路器竖_0" viewBox="0,0,16,38" >
+ <use x="8" y="35" xlink:href="#terminal" Plane="0"/>
+ <use x="8" y="4" xlink:href="#terminal" Plane="0"/>
+ <rect x="2" y="5" width="12" height="29" transform="rotate(0,8,19)" stroke-width="1" stroke="rgb(255,255,255)" fill="none" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Breaker:hg断路器竖_1" viewBox="0,0,16,38" >
+ <use x="8" y="35" xlink:href="#terminal" Plane="0"/>
+ <use x="8" y="4" xlink:href="#terminal" Plane="0"/>
+ <rect x="2" y="5" width="12" height="29" transform="rotate(0,8,19)" stroke-width="1" stroke="rgb(255,0,0)" fill="rgb(255,0,0)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="PT:JA电压互感期_0" viewBox="0,0,90,100" >
+ <use x="52" y="8" xlink:href="#terminal" Plane="0"/>
+ <rect x="71" y="48" width="9" height="16" transform="rotate(360,75,56)" stroke-width="1" stroke="rgb(255,255,255)" fill="none" Plane="0" AFMask="32769"/>
+ <rect x="22" y="34" width="9" height="16" transform="rotate(360,26,42)" stroke-width="1" stroke="rgb(255,255,255)" fill="none" Plane="0" AFMask="32769"/>
+ <rect x="27" y="59" width="0" height="0" transform="rotate(360,27,59)" stroke-width="1" stroke="rgb(0,0,255)" fill="none" Plane="0" AFMask="32769"/>
+ <line x1="80" y1="71" x2="71" y2="71" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="74" y1="76" x2="77" y2="76" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="73" y1="74" x2="78" y2="74" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="75" y1="52" x2="75" y2="70" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="75" y1="42" x2="75" y2="42" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="75" y1="42" x2="75" y2="42" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="58" y1="41" x2="58" y2="41" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="58" y1="44" x2="58" y2="44" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="52" y1="7" x2="52" y2="27" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="27" y1="53" x2="27" y2="53" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <line x1="27" y1="27" x2="27" y2="55" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="76" y1="27" x2="26" y2="27" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="75" y1="27" x2="75" y2="48" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="39" y1="81" x2="39" y2="81" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="26" y1="59" x2="26" y2="66" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="15" y1="89" x2="15" y2="79" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="10" y1="86" x2="16" y2="88" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="32" y1="70" x2="26" y2="65" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="21" y1="70" x2="27" y2="65" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="10" y1="82" x2="16" y2="79" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="37" y1="78" x2="37" y2="85" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="32" y1="89" x2="37" y2="84" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="43" y1="89" x2="37" y2="84" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="78" y1="60" x2="75" y2="52" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="73" y1="60" x2="76" y2="52" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <circle cx="27" cy="67" r="12" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <circle cx="15" cy="84" r="12" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <circle cx="37" cy="84" r="12" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <path d="M 60 51 L 60 51 " stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+ <path d="M 77 59 L 77 59 " stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Disconnector:nc_刀闸（上）_0" viewBox="0,0,20,34" >
+ <use x="6" y="29" xlink:href="#terminal" Plane="0"/>
+ <use x="6" y="4" xlink:href="#terminal" Plane="0"/>
+ <line x1="6" y1="2" x2="6" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="16" y1="8" x2="6" y2="26" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="6" y1="26" x2="6" y2="31" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="2" y1="7" x2="10" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="2" y1="25" x2="10" y2="25" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Disconnector:nc_刀闸（上）_1" viewBox="0,0,20,34" >
+ <use x="6" y="29" xlink:href="#terminal" Plane="0"/>
+ <use x="6" y="4" xlink:href="#terminal" Plane="0"/>
+ <line x1="2" y1="7" x2="10" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="6" y1="2" x2="6" y2="31" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="2" y1="26" x2="10" y2="26" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="SynchronousMachine:ah发电机0_0" viewBox="0,0,28,30" >
+ <use x="14" y="3" xlink:href="#terminal" Plane="0"/>
+ <circle cx="14" cy="14" r="12" stroke-width="2" fill="none" stroke="rgb(85,170,127)" Plane="0" AFMask="32769"/>
+ <path d="M 13 14 A 5 5 0 1 0 3 14" stroke-width="2" fill="none" stroke="rgb(93,92,88)" Plane="0" AFMask="32769"/>
+ <path d="M 14 13 A 5 5 360 1 0 24 13" stroke-width="2" fill="none" stroke="rgb(93,92,88)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="GroundDisconnector:nc_接地刀（竖）_0" viewBox="0,0,16,40" >
+ <use x="7" y="4" xlink:href="#terminal" Plane="0"/>
+ <line x1="5" y1="31" x2="10" y2="31" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="6" y1="33" x2="9" y2="33" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="3" y1="28" x2="12" y2="28" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="7" y1="22" x2="7" y2="28" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="13" y1="8" x2="7" y2="22" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="7" y1="2" x2="7" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="5" y1="7" x2="9" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="5" y1="21" x2="9" y2="21" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="GroundDisconnector:nc_接地刀（竖）_1" viewBox="0,0,16,40" >
+ <use x="7" y="4" xlink:href="#terminal" Plane="0"/>
+ <line x1="7" y1="2" x2="7" y2="28" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="3" y1="28" x2="12" y2="28" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="6" y1="33" x2="9" y2="33" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="5" y1="31" x2="10" y2="31" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="5" y1="21" x2="9" y2="21" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="5" y1="7" x2="9" y2="7" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Disconnector:nc_刀闸（右）_0" viewBox="0,0,40,14" >
+ <use x="33" y="9" xlink:href="#terminal" Plane="0"/>
+ <use x="4" y="9" xlink:href="#terminal" Plane="0"/>
+ <line x1="8" y1="9" x2="2" y2="9" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="28" y1="1" x2="8" y2="9" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="30" y1="5" x2="30" y2="13" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="29" y1="9" x2="34" y2="9" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="7" y1="5" x2="7" y2="13" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Disconnector:nc_刀闸（右）_1" viewBox="0,0,40,14" >
+ <use x="33" y="9" xlink:href="#terminal" Plane="0"/>
+ <use x="4" y="9" xlink:href="#terminal" Plane="0"/>
+ <line x1="34" y1="9" x2="3" y2="9" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="8" y1="5" x2="8" y2="13" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="30" y1="5" x2="30" y2="13" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Breaker:nc_断路器（横）_0" viewBox="0,0,34,16" >
+ <use x="4" y="8" xlink:href="#terminal" Plane="0"/>
+ <use x="29" y="8" xlink:href="#terminal" Plane="0"/>
+ <rect x="8" y="2" width="0" height="0" transform="rotate(0,8,2)" stroke-width="1" stroke="rgb(0,0,255)" fill="none" Plane="0" AFMask="32769"/>
+ <rect x="4" y="2" width="25" height="12" transform="rotate(0,16,8)" stroke-width="1" stroke="rgb(255,255,255)" fill="none" Plane="0" AFMask="32769"/>
+ <line x1="29" y1="8" x2="31" y2="8" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="2" y1="8" x2="4" y2="8" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Breaker:nc_断路器（横）_1" viewBox="0,0,34,16" >
+ <use x="4" y="8" xlink:href="#terminal" Plane="0"/>
+ <use x="29" y="8" xlink:href="#terminal" Plane="0"/>
+ <rect x="4" y="2" width="25" height="12" transform="rotate(0,16,8)" stroke-width="1" stroke="rgb(255,255,255)" fill="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="29" y1="8" x2="31" y2="8" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+ <line x1="2" y1="8" x2="4" y2="8" stroke-width="1" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32769"/>
+</symbol>
+<symbol id="Transformer3:三卷无载变压器1_0" viewBox="0,0,66,70" >
+ <use x="20" y="4" xlink:href="#terminal" Plane="0"/>
+ <circle cx="19.5" cy="20.5" r="16.5" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32783"/>
+ <line x1="20" y1="10" x2="20" y2="22" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32783"/>
+ <line x1="20" y1="22" x2="10" y2="31" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32783"/>
+ <line x1="30" y1="30" x2="20" y2="22" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="0" AFMask="32783"/>
+</symbol>
+<symbol id="Transformer3:三卷无载变压器1_1" viewBox="0,0,66,70" >
+ <use x="63" y="35" xlink:href="#terminal" Plane="0"/>
+ <line x1="45" y1="23" x2="45" y2="33" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="1" AFMask="32783"/>
+ <line x1="54" y1="42" x2="45" y2="33" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="1" AFMask="32783"/>
+ <line x1="45" y1="33" x2="36" y2="42" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="1" AFMask="32783"/>
+ <circle cx="44.5" cy="33.5" r="16.5" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="1" AFMask="32783"/>
+</symbol>
+<symbol id="Transformer3:三卷无载变压器1_2" viewBox="0,0,66,70" >
+ <use x="20" y="66" xlink:href="#terminal" Plane="0"/>
+stroke="rgb(255,255,255)" fill="none" Plane="2" AFMask="32799"/>
+ <circle cx="20.5" cy="48.5" r="16.5" stroke-width="2" fill="none" stroke="rgb(255,255,255)" Plane="2" AFMask="32783"/>
+ <line x1="23" y1="67" x2="23" y2="67" stroke-width="1" fill="none" stroke="rgb(0,0,255)" Plane="2" AFMask="32783"/>
+</symbol>
+<symbol id="Transformer3:三卷无载变压器1_3" viewBox="0,0,66,70" >
+ <use x="20" y="22" xlink:href="#terminal" Plane="0"/>
+</symbol>
+<symbol id="Transformer3:三卷无载变压器1_4" viewBox="0,0,66,70" >
+ <use x="45" y="34" xlink:href="#terminal" Plane="0"/>
+</symbol>
+</defs>
+<g id="Head_Layer">
+ <rect x="0" y="0" height="1080" width="1900" fill="rgb(0,0,0)" FacName="白云山电厂" InitShowingPlane="0," VerNo="1" />
+</g>
+<g id="Other_Layer">
+ <image x="559" y="7" width="368" height="101" xlink:href="botton3.jpg" ShowStyle="0" Plane="0" AFMaske="32895"/>
+ <a xlink:href="ja_JA吉安集控系统电厂接线图目录.fac.svg" Plane="0" AFMask="32895" ChangePicPlane="0,1,2," >
+  <rect x="625" y="30" width="266" height="55" fill-opacity="0" stroke-opacity="0" stroke-width="1" />
+ </a>
+ <rect x="1841" y="12" width="30" height="12" transform="rotate(0,1856,18)" stroke-width="2" stroke="rgb(255,255,0)" fill="rgb(255,255,0)" Plane="0" AFMask="32895"/>
+ <rect x="1841" y="30" width="30" height="12" transform="rotate(0,1856,36)" stroke-width="2" stroke="rgb(0,85,0)" fill="rgb(0,85,0)" Plane="0" AFMask="32895"/>
+ <rect x="1841" y="48" width="30" height="12" transform="rotate(0,1856,54)" stroke-width="2" stroke="rgb(170,0,0)" fill="rgb(170,0,0)" Plane="0" AFMask="32895"/>
+</g>
+<g id="Bus_Layer">
+ <g id="30001675">
+  <path d="M 129 745 L 565 745" stroke-width="2" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="230000298" ObjectName="洋田电厂\0.40千伏\BS_0.4kVI段母线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="30001985">
+  <path d="M 775 746 L 1360 746" stroke-width="2" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="Breaker_Layer">
+ <g id="100001641">
+  <use x="488" y="453" width="16" height="38" transform="rotate(0,488,453) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002218" ObjectName="洋田电厂\35.00千伏\CB_＃1主变301" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200022180020"/>
+  </metadata>
+ </g>
+ <g id="100001642">
+  <use x="1262" y="447" width="16" height="38" transform="rotate(0,1262,447) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002219" ObjectName="洋田电厂\35.00千伏\CB_＃2主变302" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200022190020"/>
+  </metadata>
+ </g>
+ <g id="100001709">
+  <use x="300" y="846" width="16" height="38" transform="rotate(0,300,846) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="220002220" ObjectName="洋田电厂\0.40千伏\CB_＃1发电机910" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02200022200020"/>
+  </metadata>
+ </g>
+ <g id="100001916">
+  <use x="488" y="662" width="16" height="38" transform="rotate(0,488,662) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="100001926">
+  <use x="1262" y="667" width="16" height="38" transform="rotate(0,1262,667) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="100001975">
+  <use x="441" y="846" width="16" height="38" transform="rotate(0,441,846) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="100001999">
+  <use x="907" y="847" width="16" height="38" transform="rotate(0,907,847) scale(1,1) translate(-8,-20)" xlink:href="#Breaker:hg断路器竖_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="100002027">
+  <use x="893" y="350" width="34" height="16" transform="rotate(0,893,350) scale(1,1) translate(-17,-8)" xlink:href="#Breaker:nc_断路器（横）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+</g>
+<g id="Disconnector_Layer">
+ <g id="101001646">
+  <use x="488" y="404" width="20" height="34" transform="rotate(0,488,404) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221003697" ObjectName="洋田电厂\35.00千伏\SW_1＃主变3011" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210036970020"/>
+  </metadata>
+ </g>
+ <g id="101001647">
+  <use x="1262" y="403" width="20" height="34" transform="rotate(0,1262,403) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221003698" ObjectName="洋田电厂\35.00千伏\SW_2＃主变3021" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210036980020"/>
+  </metadata>
+ </g>
+ <g id="101001672">
+  <use x="487" y="238" width="20" height="34" transform="rotate(0,487,238) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221003696" ObjectName="洋田电厂\35.00千伏\SW_大洋线3113" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210036960020"/>
+  </metadata>
+ </g>
+ <g id="101001786">
+  <use x="725" y="413" width="20" height="34" transform="rotate(0,725,413) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="221003694" ObjectName="洋田电厂\35.00千伏\SW_35kV母线PT3511" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="02210036940020"/>
+  </metadata>
+ </g>
+ <g id="101001896">
+  <use x="487" y="509" width="20" height="34" transform="rotate(0,487,509) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101001900">
+  <use x="1262" y="501" width="20" height="34" transform="rotate(0,1262,501) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101001918">
+  <use x="488" y="722" width="20" height="34" transform="rotate(0,488,722) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101001928">
+  <use x="1262" y="713" width="20" height="34" transform="rotate(0,1262,713) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101001963">
+  <use x="204" y="787" width="20" height="34" transform="rotate(0,204,787) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101001967">
+  <use x="300" y="785" width="20" height="34" transform="rotate(0,300,785) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101001976">
+  <use x="441" y="785" width="20" height="34" transform="rotate(0,441,785) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101002002">
+  <use x="907" y="786" width="20" height="34" transform="rotate(0,907,786) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101002001">
+  <use x="1083" y="788" width="20" height="34" transform="rotate(0,1083,788) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101002013">
+  <use x="1088" y="418" width="20" height="34" transform="rotate(0,1088,418) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101002028">
+  <use x="980" y="350" width="40" height="14" transform="rotate(0,980,350) scale(1,1) translate(-19,-9)" xlink:href="#Disconnector:nc_刀闸（右）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101002029">
+  <use x="810" y="350" width="40" height="14" transform="rotate(0,810,350) scale(1,1) translate(-19,-9)" xlink:href="#Disconnector:nc_刀闸（右）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="101002046">
+  <use x="1261" y="268" width="20" height="34" transform="rotate(0,1261,268) scale(1,1) translate(-6,-17)" xlink:href="#Disconnector:nc_刀闸（上）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+</g>
+<g id="GroundDisconnector_Layer">
+ <g id="111001813">
+  <use x="691" y="378" width="16" height="40" transform="rotate(0,691,378) scale(1,1) translate(-7,-4)" xlink:href="#GroundDisconnector:nc_接地刀（竖）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="111001811">
+  <use x="434" y="561" width="16" height="40" transform="rotate(0,434,561) scale(1,1) translate(-7,-4)" xlink:href="#GroundDisconnector:nc_接地刀（竖）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="111001945">
+  <use x="451" y="228" width="16" height="40" transform="rotate(0,451,228) scale(1,1) translate(-7,-4)" xlink:href="#GroundDisconnector:nc_接地刀（竖）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="111001950">
+  <use x="455" y="489" width="16" height="40" transform="rotate(0,455,489) scale(1,1) translate(-7,-4)" xlink:href="#GroundDisconnector:nc_接地刀（竖）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="111001951">
+  <use x="454" y="443" width="16" height="40" transform="rotate(0,454,443) scale(1,1) translate(-7,-4)" xlink:href="#GroundDisconnector:nc_接地刀（竖）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="111001956">
+  <use x="1230" y="485" width="16" height="40" transform="rotate(0,1230,485) scale(1,1) translate(-7,-4)" xlink:href="#GroundDisconnector:nc_接地刀（竖）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="111001957">
+  <use x="1229" y="439" width="16" height="40" transform="rotate(0,1229,439) scale(1,1) translate(-7,-4)" xlink:href="#GroundDisconnector:nc_接地刀（竖）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="111001965">
+  <use x="170" y="769" width="16" height="40" transform="rotate(0,170,769) scale(1,1) translate(-7,-4)" xlink:href="#GroundDisconnector:nc_接地刀（竖）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="111002006">
+  <use x="1049" y="770" width="16" height="40" transform="rotate(0,1049,770) scale(1,1) translate(-7,-4)" xlink:href="#GroundDisconnector:nc_接地刀（竖）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="111002015">
+  <use x="1054" y="384" width="16" height="40" transform="rotate(0,1054,384) scale(1,1) translate(-7,-4)" xlink:href="#GroundDisconnector:nc_接地刀（竖）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+ <g id="111002047">
+  <use x="1225" y="258" width="16" height="40" transform="rotate(0,1225,258) scale(1,1) translate(-7,-4)" xlink:href="#GroundDisconnector:nc_接地刀（竖）_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
+   <cge:Meas_Ref ObjectID="0-10020"/>
+  </metadata>
+ </g>
+</g>
+<g id="Generator_Layer">
+ <g id="104001717">
+  <use x="300" y="902" width="28" height="30" transform="rotate(0,300,902) scale(1,1) translate(-14,-3)" xlink:href="#SynchronousMachine:ah发电机0_0" class="kv10"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="260000059" ObjectName="洋田电厂\0.40千伏\UN_＃1发电机" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="104002004">
+  <use x="907" y="903" width="28" height="30" transform="rotate(0,907,903) scale(1,1) translate(-14,-3)" xlink:href="#SynchronousMachine:ah发电机0_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="Transformer3_Layer">
+<g id="103002071">
+ <g id="1030020710">
+  <use x="501" y="571" width="66" height="70" transform="rotate(0,501,571) scale(1,1) translate(-34,-32)" xlink:href="#Transformer3:三卷无载变压器1_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="1030020711">
+  <use x="501" y="571" width="66" height="70" transform="rotate(0,501,571) scale(1,1) translate(-34,-32)" xlink:href="#Transformer3:三卷无载变压器1_1" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="1030020712">
+  <use x="501" y="571" width="66" height="70" transform="rotate(0,501,571) scale(1,1) translate(-34,-32)" xlink:href="#Transformer3:三卷无载变压器1_2" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <metadata>
+  <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0"/>
+ </metadata>
+</g>
+<g id="103002082">
+ <g id="1030020820">
+  <use x="1276" y="573" width="66" height="70" transform="rotate(0,1276,573) scale(1,1) translate(-34,-32)" xlink:href="#Transformer3:三卷无载变压器1_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="1030020821">
+  <use x="1276" y="573" width="66" height="70" transform="rotate(0,1276,573) scale(1,1) translate(-34,-32)" xlink:href="#Transformer3:三卷无载变压器1_1" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="1030020822">
+  <use x="1276" y="573" width="66" height="70" transform="rotate(0,1276,573) scale(1,1) translate(-34,-32)" xlink:href="#Transformer3:三卷无载变压器1_2" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <metadata>
+  <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0"/>
+ </metadata>
+</g>
+</g>
+<g id="ACLineSegment_Layer">
+ <g id="36001666">
+ <path d="M 488 205 L 488 112" stroke-width="2" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="ST=210000109/LN=240000285" ObjectName="ST=洋田电厂/LN=ACLN_35kV进线" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="36002045">
+ <path d="M 1262 235 L 1262 142" stroke-width="2" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="ST=-1/LN=-1" ObjectName="ST=-1/LN=-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="PT_Layer">
+ <g id="107001785">
+  <use x="725" y="445" width="90" height="100" transform="rotate(360,725,445) scale(-1,1) translate(-1502,-8)" xlink:href="#PT:JA电压互感期_0" class="kv35"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="280001002" ObjectName="洋田电厂\35.00千伏\TERM_35kVPT" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="107001964">
+  <use x="204" y="836" width="90" height="100" transform="rotate(360,204,836) scale(-1,1) translate(-460,-8)" xlink:href="#PT:JA电压互感期_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="107002005">
+  <use x="1083" y="837" width="90" height="100" transform="rotate(360,1083,837) scale(-1,1) translate(-2218,-8)" xlink:href="#PT:JA电压互感期_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="107002014">
+  <use x="1088" y="451" width="90" height="100" transform="rotate(360,1088,451) scale(-1,1) translate(-2228,-8)" xlink:href="#PT:JA电压互感期_0" class="kv-1"/>
+  <metadata>
+   <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="Link_Layer">
+ <g id="34001651">
+ <path d="M 488 437 L 488 416" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100001641_1" Pin1InfoVect0LinkObjId="101001646_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001655">
+ <path d="M 1262 431 L 1262 415" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100001642_1" Pin1InfoVect0LinkObjId="101001647_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001673">
+ <path d="M 488 205 L 487 225" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34001942_1" Pin0InfoVect1LinkObjId="36001666_0" Pin1InfoVect0LinkObjId="101001672_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001723">
+ <path d="M 300 902 L 300 861" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="104001717_0" Pin1InfoVect0LinkObjId="100001709_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001728">
+ <path d="M 300 830 L 300 814" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100001709_1" Pin1InfoVect0LinkObjId="34001968_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001789">
+ <path d="M 725 445 L 725 425" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="107001785_0" Pin1InfoVect0LinkObjId="101001786_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001897">
+ <path d="M 488 468 L 487 496" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100001641_0" Pin1InfoVect0LinkObjId="101001896_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001898">
+ <path d="M 487 521 L 487 543" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101001896_0" Pin1InfoVect0LinkObjId="103002071_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001901">
+ <path d="M 1262 462 L 1262 488" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100001642_0" Pin1InfoVect0LinkObjId="101001900_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001902">
+ <path d="M 1262 513 L 1262 545" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101001900_0" Pin1InfoVect0LinkObjId="103002082_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001919">
+ <path d="M 487 605 L 488 646" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="103002071_2" Pin1InfoVect0LinkObjId="100001916_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001921">
+ <path d="M 488 677 L 488 709" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100001916_0" Pin1InfoVect0LinkObjId="101001918_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001922">
+ <path d="M 488 734 L 488 745" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101001918_0" Pin1InfoVect0LinkObjId="30001675_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001929">
+ <path d="M 1262 607 L 1262 651" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="103002082_2" Pin1InfoVect0LinkObjId="100001926_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001931">
+ <path d="M 1262 682 L 1262 700" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100001926_0" Pin1InfoVect0LinkObjId="101001928_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001932">
+ <path d="M 1262 725 L 1262 746" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101001928_0" Pin1InfoVect0LinkObjId="30001985_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001942">
+ <path d="M 451 228 L 451 205 L 488 205" stroke-width="1"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111001945_0" Pin1InfoVect0LinkObjId="34001673_0" Pin1InfoVect1LinkObjId="36001666_0" Plane="0" AFMask="32895"/>
+  </metadata>
+ </g>
+ <g id="34001949">
+ <path d="M 455 489 L 455 481 L 487 481" stroke-width="1"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111001950_0" Plane="0" AFMask="32895"/>
+  </metadata>
+ </g>
+ <g id="34001948">
+ <path d="M 454 443 L 454 425 L 487 425" stroke-width="1"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111001951_0" Plane="0" AFMask="32895"/>
+  </metadata>
+ </g>
+ <g id="34001955">
+ <path d="M 1230 485 L 1230 477 L 1262 477" stroke-width="1"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111001956_0" Plane="0" AFMask="32895"/>
+  </metadata>
+ </g>
+ <g id="34001954">
+ <path d="M 1229 439 L 1229 421 L 1262 421" stroke-width="1"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111001957_0" Plane="0" AFMask="32895"/>
+  </metadata>
+ </g>
+ <g id="34001962">
+ <path d="M 170 769 L 170 760 L 203 760" stroke-width="1"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111001965_0" Plane="0" AFMask="32895"/>
+  </metadata>
+ </g>
+ <g id="34001961">
+ <path d="M 204 774 L 204 745" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101001963_1" Pin1InfoVect0LinkObjId="30001675_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001960">
+ <path d="M 204 836 L 204 799" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="107001964_0" Pin1InfoVect0LinkObjId="101001963_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001968">
+ <path d="M 300 814 L 300 797" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34001728_1" Pin1InfoVect0LinkObjId="101001967_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001969">
+ <path d="M 300 772 L 300 745" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101001967_1" Pin1InfoVect0LinkObjId="30001675_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001973">
+ <path d="M 441 830 L 441 797" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100001975_1" Pin1InfoVect0LinkObjId="101001976_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001974">
+ <path d="M 441 772 L 441 745" stroke-width="2"  class="kv10"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101001976_1" Pin1InfoVect0LinkObjId="30001675_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001995">
+ <path d="M 907 773 L 907 746" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101002002_1" Pin1InfoVect0LinkObjId="30001985_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001994">
+ <path d="M 907 815 L 907 798" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34001990_1" Pin1InfoVect0LinkObjId="101002002_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001991">
+ <path d="M 1083 837 L 1083 800" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="107002005_0" Pin1InfoVect0LinkObjId="101002001_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001992">
+ <path d="M 1083 775 L 1083 746" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101002001_1" Pin1InfoVect0LinkObjId="30001985_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001993">
+ <path d="M 1049 770 L 1049 761 L 1082 761" stroke-width="1"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111002006_0" Plane="0" AFMask="32895"/>
+  </metadata>
+ </g>
+ <g id="34001990">
+ <path d="M 907 831 L 907 815" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100001999_1" Pin1InfoVect0LinkObjId="34001994_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34001989">
+ <path d="M 907 903 L 907 862" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="104002004_0" Pin1InfoVect0LinkObjId="100001999_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002007">
+ <path d="M 441 861 L 441 903 L 801 903 L 801 746" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100001975_0" Pin1InfoVect0LinkObjId="30001985_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002010">
+ <path d="M 1088 451 L 1088 430" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="107002014_0" Pin1InfoVect0LinkObjId="101002013_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002022">
+ <path d="M 824 350 L 821 350" stroke-width="1"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101002029_0" Plane="0" AFMask="32895"/>
+  </metadata>
+ </g>
+ <g id="34002033">
+ <path d="M 487 250 L 488 350" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101001672_0" Pin1InfoVect0LinkObjId="34002034_0" Pin1InfoVect1LinkObjId="34002036_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002034">
+ <path d="M 488 350 L 488 391" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34002033_1" Pin0InfoVect1LinkObjId="34002036_1" Pin1InfoVect0LinkObjId="101001646_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002035">
+ <path d="M 795 350 L 725 350" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101002029_1" Pin1InfoVect0LinkObjId="34002036_0" Pin1InfoVect1LinkObjId="34002056_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002036">
+ <path d="M 725 350 L 488 350" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34002035_1" Pin0InfoVect1LinkObjId="34002056_1" Pin1InfoVect0LinkObjId="34002033_1" Pin1InfoVect1LinkObjId="34002034_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002044">
+ <path d="M 1225 258 L 1225 235 L 1262 235" stroke-width="1"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111002047_0" Pin1InfoVect0LinkObjId="34002043_0" Pin1InfoVect1LinkObjId="36002045_0" Plane="0" AFMask="32895"/>
+  </metadata>
+ </g>
+ <g id="34002043">
+ <path d="M 1262 235 L 1261 255" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34002044_1" Pin0InfoVect1LinkObjId="36002045_0" Pin1InfoVect0LinkObjId="101002046_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002049">
+ <path d="M 1262 390 L 1262 350" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101001647_1" Pin1InfoVect0LinkObjId="34002050_0" Pin1InfoVect1LinkObjId="34002053_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002050">
+ <path d="M 1262 350 L 1261 280" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34002049_1" Pin0InfoVect1LinkObjId="34002053_1" Pin1InfoVect0LinkObjId="101002046_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002052">
+ <path d="M 994 350 L 1088 350" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101002028_0" Pin1InfoVect0LinkObjId="34002053_0" Pin1InfoVect1LinkObjId="34002059_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002053">
+ <path d="M 1088 350 L 1262 350" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34002052_1" Pin0InfoVect1LinkObjId="34002059_1" Pin1InfoVect0LinkObjId="34002049_1" Pin1InfoVect1LinkObjId="34002050_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002054">
+ <path d="M 691 378 L 725 378" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111001813_0" Pin1InfoVect0LinkObjId="34002055_1" Pin1InfoVect1LinkObjId="34002056_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002055">
+ <path d="M 725 400 L 725 378" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101001786_1" Pin1InfoVect0LinkObjId="34002054_1" Pin1InfoVect1LinkObjId="34002056_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002056">
+ <path d="M 725 378 L 725 350" stroke-width="2"  class="kv35"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34002055_1" Pin0InfoVect1LinkObjId="34002054_1" Pin1InfoVect0LinkObjId="34002035_1" Pin1InfoVect1LinkObjId="34002036_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002057">
+ <path d="M 1054 384 L 1088 384" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111002015_0" Pin1InfoVect0LinkObjId="34002058_1" Pin1InfoVect1LinkObjId="34002059_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002058">
+ <path d="M 1088 405 L 1088 384" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="101002013_1" Pin1InfoVect0LinkObjId="34002057_1" Pin1InfoVect1LinkObjId="34002059_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002059">
+ <path d="M 1088 384 L 1088 350" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="34002058_1" Pin0InfoVect1LinkObjId="34002057_1" Pin1InfoVect0LinkObjId="34002052_1" Pin1InfoVect1LinkObjId="34002053_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002060">
+ <path d="M 824 350 L 880 350" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin1InfoVect0LinkObjId="100002027_0" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002061">
+ <path d="M 905 350 L 965 350" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="100002027_1" Pin1InfoVect0LinkObjId="101002028_1" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+ <g id="34002072">
+ <path d="M 434 561 L 487 561" stroke-width="2"  class="kv-1"/>
+  <metadata>
+   <cge:PSR_Link MaxPinNum="2" Pin0InfoVect0LinkObjId="111001811_0" Pin1InfoVect0LinkObjId="103002071_3" Plane="0" AFMask="32783"/>
+  </metadata>
+ </g>
+</g>
+<g id="MeasurementValue_Layer">
+ <g id="33001668">
+ <text x="514" y="129" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420005690020" ObjectName="ST=洋田电厂/LN=ACLN_35kV进线:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001669">
+ <text x="514" y="152" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420005690030" ObjectName="ST=洋田电厂/LN=ACLN_35kV进线:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001670">
+ <text x="514" y="173" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02420005690040" ObjectName="ST=洋田电厂/LN=ACLN_35kV进线:I" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001720">
+ <text x="280" y="950" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02600000590080" ObjectName="洋田电厂\0.40千伏\UN_＃1发电机:P" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001721">
+ <text x="280" y="967" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="02600000590090" ObjectName="洋田电厂\0.40千伏\UN_＃1发电机:Q" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001722">
+ <text x="280" y="986" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="026000005900100" ObjectName="洋田电厂\0.40千伏\UN_＃1发电机:other" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001986">
+ <text x="887" y="951" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001987">
+ <text x="887" y="968" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33001988">
+ <text x="887" y="987" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002040">
+ <text x="1288" y="159" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002041">
+ <text x="1288" y="182" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002042">
+ <text x="1288" y="203" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002062">
+ <text x="555" y="488" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002063">
+ <text x="555" y="503" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002064">
+ <text x="555" y="518" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002065">
+ <text x="671" y="592" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002066">
+ <text x="671" y="607" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002067">
+ <text x="671" y="622" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002068">
+ <text x="550" y="678" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002069">
+ <text x="550" y="693" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002070">
+ <text x="550" y="708" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002073">
+ <text x="1330" y="490" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002074">
+ <text x="1330" y="505" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002075">
+ <text x="1330" y="520" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002076">
+ <text x="1446" y="594" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002077">
+ <text x="1446" y="609" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002078">
+ <text x="1446" y="624" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002079">
+ <text x="1325" y="680" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002080">
+ <text x="1325" y="695" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(85,255,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+ <g id="33002081">
+ <text x="1325" y="710" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" writing-mode="lr" Plane="0" AFMask="32783">-0.00</text>
+  <metadata>
+   <cge:Meas_Ref ObjectID="-1" ObjectName="" Plane="0" AFMask="32783" DataType="6" ShowStrLen="5" ShowDotNum="2" ShowSignFlag="0"/>
+  </metadata>
+ </g>
+</g>
+<g id="Text_Layer">
+ <text x="498" y="463" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">301</text>
+ <text x="1272" y="457" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">302</text>
+ <text x="498" y="414" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3011</text>
+ <text x="1272" y="413" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3021</text>
+ <text x="468" y="105" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">功敦线</text>
+ <text x="497" y="248" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3113</text>
+ <text x="536" y="772" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">6.3kVI段母线</text>
+ <text x="310" y="856" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">910</text>
+ <text x="320" y="922" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">#1发电机</text>
+ <text x="717" y="68" font-size="23" font-width="23" font-height="23" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(24,100,70)" writing-mode="lr" Plane="0" AFMask="32783">白云山电厂</text>
+ <text x="1881" y="25" font-size="14" font-width="14" font-height="14" font-family="SimSun" fill="rgb(85,170,0)" stroke="rgb(255,255,0)" writing-mode="lr" Plane="0" AFMask="32783">P</text>
+ <text x="1879" y="44" font-size="14" font-width="14" font-height="14" font-family="SimSun" fill="rgb(85,170,0)" stroke="rgb(0,85,0)" writing-mode="lr" Plane="0" AFMask="32783">Q</text>
+ <text x="1881" y="63" font-size="14" font-width="14" font-height="14" font-family="SimSun" fill="rgb(85,170,0)" stroke="rgb(170,0,0)" writing-mode="lr" Plane="0" AFMask="32783">I</text>
+ <text x="735" y="423" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
+ <text x="538" y="576" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">#1主变</text>
+ <text x="1100" y="570" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">#2主变</text>
+ <text x="646" y="393" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31403</text>
+ <text x="388" y="578" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31401</text>
+ <text x="497" y="519" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3011</text>
+ <text x="1272" y="511" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3021</text>
+ <text x="498" y="672" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">302</text>
+ <text x="498" y="732" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3021</text>
+ <text x="1272" y="677" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">302</text>
+ <text x="1272" y="723" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3021</text>
+ <text x="406" y="243" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31403</text>
+ <text x="409" y="506" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31401</text>
+ <text x="409" y="455" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31402</text>
+ <text x="1184" y="502" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31401</text>
+ <text x="1184" y="451" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31402</text>
+ <text x="125" y="784" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31403</text>
+ <text x="214" y="797" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
+ <text x="308" y="797" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
+ <text x="451" y="856" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">910</text>
+ <text x="449" y="797" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
+ <text x="915" y="798" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
+ <text x="1093" y="798" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
+ <text x="1004" y="785" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31403</text>
+ <text x="927" y="923" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">#1发电机</text>
+ <text x="917" y="857" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">910</text>
+ <text x="1331" y="773" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">6.3kVI段母线</text>
+ <text x="1009" y="399" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31403</text>
+ <text x="1098" y="428" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
+ <text x="879" y="375" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">131</text>
+ <text x="799" y="375" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">1311</text>
+ <text x="964" y="375" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">1312</text>
+ <text x="1180" y="273" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31403</text>
+ <text x="1271" y="278" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3113</text>
+ <text x="1242" y="135" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">功敦线</text>
+</g>
+</svg>

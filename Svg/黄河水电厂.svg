@@ -1,0 +1,1621 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:cge="http://iec.ch/TC57/2005/CGE-schema#" xmlns:sxepb="http://sxepb.com/SVGEX-schema#" xmlns:PBD="urn:osisoft-com-data" viewBox="0 0 1233 830">
+<defs>
+<style type="text/css"><![CDATA[
+ .kV330 {stroke:rgb(0,255,0);fill:none}
+ .kV24 {stroke:rgb(0,255,255);fill:none}
+ .kV220 {stroke:rgb(40,76,196);fill:none}
+ .kV22 {stroke:rgb(0,255,255);fill:none}
+ .kV750 {stroke:rgb(40,76,196);fill:none}
+ .kV19 {stroke:rgb(0,255,255);fill:none}
+ .kV20 {stroke:rgb(30,144,255);fill:none}
+ .kV110 {stroke:rgb(235,10,15);fill:none}
+ .kV16 {stroke:rgb(0,255,255);fill:none}
+ .kV15 {stroke:rgb(0,255,255);fill:none}
+ .kV6 {stroke:rgb(128,0,128);fill:none}
+ .kV14 {stroke:rgb(0,255,255);fill:none}
+ .kV500 {stroke:rgb(30,144,255);fill:none}
+ .kV66 {stroke:rgb(0,102,255);fill:none}
+ .kV10 {stroke:rgb(0,210,0);fill:none}
+ .kV0 {stroke:rgb(128,128,128);fill:none}
+ .kV35 {stroke:rgb(255,255,0);fill:none}
+ .kV-1 {stroke:rgb(200,20,200);fill:none}
+]]></style>
+<symbol id="terminal" preserveAspectRatio="xMidYMid meet">
+ <circle cx="0" cy="0" r="1" stroke="none" fill="none" stroke-width="1"/>
+</symbol>
+<symbol id="Breaker:wuhai_开关_竖向_0" viewBox="-23.5 -35.8 47.0 71.6">
+ <use x="0.0" y="-9.8" xlink:href="#terminal" terminal_seq="1" />
+ <use x="0.0" y="10.1" xlink:href="#terminal" terminal_seq="2" />
+ <rect x="2.1" y="11.0" width="20.0" height="20.0" fill="rgb(255,255,155)" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke-width="1"/>
+ <rect x="-22.0" y="11.0" width="20.0" height="20.0" fill="rgb(255,255,155)" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke-width="1"/>
+ <rect x="2.1" y="-30.8" width="20.0" height="20.0" fill="rgb(255,255,155)" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke-width="1"/>
+ <rect x="-22.0" y="-30.8" width="20.0" height="20.0" fill="rgb(255,255,155)" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke-width="1"/>
+ <rect x="-6.0" y="-9.8" width="12.0" height="20.0" fill="none" lineStyle="0" stroke-width="1"/>
+ <text x="-22.0" y="-17.9" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">传动</text>
+ <text x="2.0" y="-18.6" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">保电</text>
+ <text x="-22.0" y="-18.9" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">检修</text>
+ <text x="1.4" y="18.6" font-size="9" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">  置</text>
+ <text x="1.4" y="26.2" font-size="9" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">检 修</text>
+ <text x="1.9" y="18.8" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">禁止</text>
+ <text x="1.9" y="27.2" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">合闸</text>
+ <text x="2.0" y="19.2" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">重点</text>
+ <text x="2.0" y="27.6" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">监视</text>
+ <text x="1.9" y="19.2" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">带电</text>
+ <text x="1.9" y="27.6" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">作业</text>
+ <text x="2.5" y="24.3" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">缺陷</text>
+ <text x="-21.6" y="24.8" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">接地</text>
+ <text x="2.5" y="24.8" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">停用</text>
+</symbol>
+<symbol id="Breaker:wuhai_开关_竖向_1" viewBox="-23.5 -35.8 47.0 71.6">
+ <use x="0.0" y="-9.8" xlink:href="#terminal" terminal_seq="1" />
+ <use x="0.0" y="10.1" xlink:href="#terminal" terminal_seq="2" />
+ <rect x="2" y="11" width="20" height="20" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke-width="1"/>
+ <rect x="-22" y="11" width="20" height="20" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke-width="1"/>
+ <rect x="2" y="-30" width="20" height="20" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke-width="1"/>
+ <rect x="-22" y="-30" width="20" height="20" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke-width="1"/>
+ <rect x="-6" y="-9" width="12" height="20" fill="rgb(255,255,255)" lineStyle="0" stroke-width="1"/>
+ <text x="-22" y="-17" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">传动</text>
+ <text x="2" y="-18" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">保电</text>
+ <text x="-22" y="-18" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">检修</text>
+ <text x="1" y="18" stroke="rgb(255,0,0)" font-size="9" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">  置</text>
+ <text x="1" y="26" stroke="rgb(255,0,0)" font-size="9" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">检 修</text>
+ <text x="1" y="18" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">禁止</text>
+ <text x="1" y="27" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">合闸</text>
+ <text x="2" y="19" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">重点</text>
+ <text x="2" y="27" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">监视</text>
+ <text x="1" y="19" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">带电</text>
+ <text x="1" y="27" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">作业</text>
+ <text x="2" y="24" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">缺陷</text>
+ <text x="-21" y="24" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">接地</text>
+ <text x="2" y="24" stroke="rgb(255,0,0)" font-size="10" font-family="微软雅黑" fill="rgb(255,0,0)" stroke-opacity="0" fill-opacity="0">停用</text>
+</symbol>
+<symbol id="Disconnector:wuhai_刀闸_0" viewBox="-8.6 -11.4 17.3 22.8">
+ <use x="0.0" y="10.0" xlink:href="#terminal" terminal_seq="1" />
+ <use x="0.0" y="-10.3" xlink:href="#terminal" terminal_seq="2" />
+ <ellipse cx="0.0" cy="8.2" rx="1.5" ry="1.7" fill="none" transform="rotate(-180.00,0.09,8.20) " stroke-width="1"/>
+ <path d="M -6.9 0.0 L 7.0 0.0" lineStyle="0" stroke-width="1" visiable="true" transform="rotate(-270.00,0.09,0.0) "/>
+ <path d="M 0.6 -8.1 L 7.6 6.3" lineStyle="0" stroke-width="1" visiable="true" transform="rotate(-180.00,4.19,-0.94) "/>
+ <ellipse cx="0.0" cy="-8.6" rx="1.6" ry="1.7" fill="none" transform="rotate(-180.00,0.04,-8.60) " stroke-width="1"/>
+</symbol>
+<symbol id="Disconnector:wuhai_刀闸_1" viewBox="-8.6 -11.4 17.3 22.8">
+ <use x="0.0" y="10.0" xlink:href="#terminal" terminal_seq="1" />
+ <use x="0.0" y="-10.3" xlink:href="#terminal" terminal_seq="2" />
+ <ellipse cx="0" cy="8" rx="1" ry="1" fill="rgb(255,255,255)" stroke-width="1"/>
+ <path d="M -6 0 L 7 0" lineStyle="0" stroke-width="1" visiable="true" transform="rotate(-270.00,0.09,0.0) "/>
+ <path d="M 0 -8 L 7 6" lineStyle="0" stroke-width="1" visiable="true" transform="rotate(-180.00,4.19,-0.94) "/>
+ <ellipse cx="0" cy="-8" rx="1" ry="1" stroke-width="1"/>
+</symbol>
+<symbol id="Other:wuhai_下接地" viewBox="-7.5 -13.5 15.0 27.1" fileInfo="null" keDongFileInfo="wuhai 接地 下接地.prim">
+ <use x="0.4" y="-12.6" xlink:href="#terminal" terminal_seq="1" />
+ <path d="M -5 3 L 6 3" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true" transform="rotate(-180.00,0.34,3.69) "/>
+ <path d="M -3 6 L 4 6" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true" transform="rotate(-180.00,0.40,6.80) "/>
+ <path d="M -2 9 L 2 9" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true" transform="rotate(-180.00,0.29,9.80) "/>
+ <ellipse cx="0" cy="-11" rx="1" ry="1" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <ellipse cx="0" cy="0" rx="1" ry="1" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <path d="M 0 -10 L 0 -2" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true" transform="rotate(-180.00,0.5,-6.0) "/>
+ <path d="M 0 0 L 0 4" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true" transform="rotate(-180.00,0.5,2.0) "/>
+ <path d="M 1 -12 L 6 -1" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true" transform="rotate(-180.00,3.80,-6.84) "/>
+</symbol>
+<symbol id="Other:wuhai_cb_light" viewBox="-4.0 -4.0 8.1 8.1" fileInfo="null" keDongFileInfo="wuhai 光字牌 cb_light.prim">
+ <rect x="-3" y="-3" width="6" height="6" fill="none" stroke="rgb(255,255,255)" lineStyle="0" stroke-width="1"/>
+</symbol>
+<symbol id="Breaker:wuhai_开关_横向_0" viewBox="-11.0 -7.0 22.0 14.0">
+ <use x="-10.0" y="0.0" xlink:href="#terminal" terminal_seq="1" />
+ <use x="10.0" y="0.0" xlink:href="#terminal" terminal_seq="2" />
+ <rect x="-10.0" y="-6.0" width="20.0" height="12.0" fill="none" lineStyle="0" stroke-width="1"/>
+</symbol>
+<symbol id="Breaker:wuhai_开关_横向_1" viewBox="-11.0 -7.0 22.0 14.0">
+ <use x="-10.0" y="0.0" xlink:href="#terminal" terminal_seq="1" />
+ <use x="10.0" y="0.0" xlink:href="#terminal" terminal_seq="2" />
+ <rect x="-10" y="-6" width="20" height="12" fill="rgb(255,255,255)" lineStyle="0" stroke-width="1"/>
+</symbol>
+<symbol id="MeasureValue:wuhai_有功" viewBox="-15.4 -7.7 30.8 15.5" fileInfo="null" keDongFileInfo="wuhai 遥测 有功.prim">
+ <text x="-13" y="5" stroke="rgb(63,165,150)" font-size="13" font-family="宋体" fill="rgb(63,165,150)">0.0</text>
+</symbol>
+<symbol id="MeasureValue:wuhai_无功" viewBox="-15.4 -7.6 30.8 15.3" fileInfo="null" keDongFileInfo="wuhai 遥测 无功.prim">
+ <text x="-13" y="5" stroke="rgb(63,165,150)" font-size="14" font-family="宋体" fill="rgb(63,165,150)">0.0</text>
+</symbol>
+<symbol id="MeasureValue:wuhai_电流" viewBox="-16.0 -7.6 32.0 15.3" fileInfo="null" keDongFileInfo="wuhai 遥测 电流.prim">
+ <text x="-13" y="5" stroke="rgb(63,165,150)" font-size="14" font-family="宋体" fill="rgb(63,165,150)">0.0</text>
+</symbol>
+<symbol id="Transformer:wuhai_二卷变_中心点" viewBox="-16.5 -27.6 33.1 55.3" fileInfo="null" keDongFileInfo="wuhai 变压器 二卷变_中心点.prim">
+ <use x="0.1" y="-11.6" xlink:href="#terminal" terminal_seq="3" />
+ <use x="0.0" y="26.7" xlink:href="#terminal" terminal_seq="2" />
+ <use x="0.0" y="-26.7" xlink:href="#terminal" terminal_seq="1" />
+ <path d="M 0 -11 L 8 -6" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 0 -11 L -6 -6" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 0 -20 L 0 -11" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <ellipse cx="0" cy="11" rx="15" ry="15" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <ellipse cx="0" cy="-11" rx="15" ry="15" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <path d="M -3 8 L -3 19 L 7 13 z" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+</symbol>
+<symbol id="Unit:wuhai_发电机" viewBox="-19.0 -19.0 38.0 38.0" fileInfo="null" keDongFileInfo="wuhai 发电机 发电机.prim">
+ <use x="0.0" y="-17.9" xlink:href="#terminal" terminal_seq="1" />
+ <ellipse cx="0" cy="0" rx="18" ry="18" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <path d="M -12 6 L -3 -5 L 3 6 L 12 -4" stroke="rgb(255,255,255)" fill="none" stroke-width="1"/>
+</symbol>
+<symbol id="Disconnector:wuhai_手车刀闸_0" viewBox="-9.4 -32.5 18.8 65.0">
+ <use x="0.0" y="-11.5" xlink:href="#terminal" terminal_seq="2" />
+ <use x="0.5" y="-31.5" xlink:href="#terminal" terminal_seq="1" />
+ <path d="M 0.0 -24.0 L 0.0 -11.5" lineStyle="0" stroke-width="1" visiable="true"/>
+ <path d="M -0.3 -24.0 L 4.6 -24.0" lineStyle="0" stroke-width="1" visiable="true"/>
+ <path d="M -3.6 23.4 L 1.3 23.4" lineStyle="0" stroke-width="1" visiable="true" transform="rotate(-178.00,-1.19,23.40) "/>
+ <path d="M 1 -26 L 5 -23 L 1 -21" stroke-width="1"/>
+ <path d="M -4 20 L 0 23 L -4 26" transform="rotate(-178.00,-2.59,23.34) " stroke-width="1"/>
+ <path d="M -8 -23 L 0 -31 L 8 -23" stroke-width="1"/>
+ <path d="M -7 30 L 0 23 L 7 30" transform="rotate(-180.00,0.10,26.90) " stroke-width="1"/>
+ <path d="M -7 -17 L 0 -24 L 7 -16" transform="rotate(-0.99,0.20,-20.70) " stroke-width="1"/>
+ <path d="M -7 24 L 0 17 L 7 24" transform="rotate(-180.99,0.10,20.90) " stroke-width="1"/>
+ <path d="M 0.0 9.3 L 0.0 23.6" lineStyle="0" stroke-width="1" visiable="true"/>
+</symbol>
+<symbol id="Disconnector:wuhai_手车刀闸_1" viewBox="-9.4 -32.5 18.8 65.0">
+ <use x="0.0" y="-11.5" xlink:href="#terminal" terminal_seq="2" />
+ <use x="0.5" y="-31.5" xlink:href="#terminal" terminal_seq="1" />
+ <path d="M 0 -24 L 0 -11" lineStyle="0" stroke-width="1" visiable="true"/>
+ <path d="M 0 -24 L 4 -24" lineStyle="0" stroke-width="1" visiable="true"/>
+ <path d="M -3 23 L 1 23" lineStyle="0" stroke-width="1" visiable="true" transform="rotate(-178.00,-1.19,23.40) "/>
+ <path d="M 1 -26 L 5 -23 L 1 -21" stroke="rgb(255,255,255)" fill="none" stroke-width="1"/>
+ <path d="M -4 20 L 0 23 L -4 26" stroke="rgb(255,255,255)" fill="none" transform="rotate(-178.00,-2.59,23.34) " stroke-width="1"/>
+ <path d="M -8 -23 L 0 -31 L 8 -23" stroke="rgb(255,255,255)" fill="none" stroke-width="1"/>
+ <path d="M -7 30 L 0 23 L 7 30" stroke="rgb(255,255,255)" fill="none" transform="rotate(-180.00,0.10,26.90) " stroke-width="1"/>
+ <path d="M -7 -17 L 0 -24 L 7 -16" stroke="rgb(255,255,255)" fill="none" transform="rotate(-0.99,0.20,-20.70) " stroke-width="1"/>
+ <path d="M -7 24 L 0 17 L 7 24" stroke="rgb(255,255,255)" fill="none" transform="rotate(-180.99,0.10,20.90) " stroke-width="1"/>
+ <path d="M 0 9 L 0 23" lineStyle="0" stroke-width="1" visiable="true"/>
+</symbol>
+<symbol id="Other:wuhai_中性点右" viewBox="-20.3 -29.5 40.6 59.1" fileInfo="null" keDongFileInfo="wuhai 中性点 中性点右.prim">
+ <use x="16.3" y="-27.9" xlink:href="#terminal" terminal_seq="1" />
+ <path d="M -15 -27 L 16 -27" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 6 11 L 6 -1" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="0" visiable="true"/>
+ <path d="M 4 17 L 9 17" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 3 14 L 10 14" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 4 -1 L 6 -8 L 8 -1 z" fill="rgb(255,255,255)" stroke-width="1"/>
+ <path d="M 4 -16 L 6 -9 L 8 -16 z" fill="rgb(255,255,255)" stroke-width="1"/>
+ <path d="M 2 11 L 10 11" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 6 -16 L 6 -28" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="0" visiable="true"/>
+ <path d="M -15 -28 L -15 -17" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M -17 17 L -12 17" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M -18 14 L -11 14" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M -19 11 L -11 11" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M -15 2 L -15 11" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="0" visiable="true"/>
+ <ellipse cx="-15" cy="0" rx="1" ry="1" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <path d="M -14 -15 L -8 0" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M -22 -7 L -9 -7" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true" transform="rotate(-90.00,-15.95,-7.90) "/>
+ <ellipse cx="-15" cy="-16" rx="1" ry="1" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+</symbol>
+<symbol id="MeasureValue:wuhai_功率因数" viewBox="-15.5 -7.9 31.1 15.8" fileInfo="null" keDongFileInfo="wuhai 遥测 功率因数.prim">
+ <text x="-13" y="4" stroke="rgb(63,165,150)" font-size="14" font-family="宋体" fill="rgb(63,165,150)">0.0</text>
+</symbol>
+<symbol id="Load:wuhai_负荷(上)" viewBox="-43.6 -19.5 87.3 39.1">
+ <use x="0.1" y="17.9" xlink:href="#terminal" terminal_seq="1" />
+ <rect x="22.6" y="-18.5" width="20.0" height="20.0" fill="rgb(255,255,155)" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke-width="1"/>
+ <rect x="0.5" y="-18.5" width="20.0" height="20.0" fill="rgb(255,255,155)" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke-width="1"/>
+ <path d="M -3 6 L 4 6 L 0 14 z" fill="none" stroke-width="1" transform="rotate(-180.00,0.30,10.54) "/>
+ <path d="M 0.1 17.9 L 0.1 0.1" lineStyle="0" stroke-width="1" visiable="true" transform="rotate(-180.00,0.19,9.04) "/>
+ <text x="0.4" y="-10.1" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">带电</text>
+ <text x="0.4" y="-1.7" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">作业</text>
+ <text x="22.5" y="-10.1" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">重点</text>
+ <text x="22.5" y="-1.7" font-size="10" font-family="微软雅黑" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">监视</text>
+</symbol>
+<symbol id="MeasureValue:wuhai_电压Uab" viewBox="-30.9 -7.0 61.8 14.0" fileInfo="null" keDongFileInfo="wuhai 遥测 电压Uab.prim">
+ <text x="0" y="4" stroke="rgb(63,165,150)" font-size="12" font-family="宋体" fill="rgb(63,165,150)">0.0</text>
+ <text x="-29" y="4" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)" font-weight="bolder">Uab</text>
+</symbol>
+<symbol id="MeasureValue:wuhai_电压Ua" viewBox="-30.5 -7.1 61.1 14.3" fileInfo="null" keDongFileInfo="wuhai 遥测 电压Ua.prim">
+ <text x="0" y="4" stroke="rgb(63,165,150)" font-size="12" font-family="宋体" fill="rgb(63,165,150)">0.0</text>
+ <text x="-29" y="4" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)" font-weight="bolder">Ua</text>
+</symbol>
+<symbol id="MeasureValue:wuhai_电压Ub" viewBox="-29.5 -7.0 59.1 14.0" fileInfo="null" keDongFileInfo="wuhai 遥测 电压Ub.prim">
+ <text x="0" y="4" stroke="rgb(63,165,150)" font-size="12" font-family="宋体" fill="rgb(63,165,150)">0.0</text>
+ <text x="-28" y="4" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)" font-weight="bolder">Ub</text>
+</symbol>
+<symbol id="MeasureValue:wuhai_电压Uc" viewBox="-29.0 -7.0 58.1 14.1" fileInfo="null" keDongFileInfo="wuhai 遥测 电压Uc.prim">
+ <text x="1" y="4" stroke="rgb(63,165,150)" font-size="12" font-family="宋体" fill="rgb(63,165,150)">0.0</text>
+ <text x="-28" y="4" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)" font-weight="bolder">Uc</text>
+</symbol>
+<symbol id="MeasureValue:wuhai_档位" viewBox="-31.0 -7.5 62.0 15.0" fileInfo="null" keDongFileInfo="wuhai 遥测 档位.prim">
+ <text x="0" y="3" stroke="rgb(63,165,150)" font-size="12" font-family="宋体" fill="rgb(63,165,150)">0.0</text>
+ <text x="-30" y="3" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)">档位：</text>
+</symbol>
+<symbol id="MeasureValue:wuhai_油温" viewBox="-31.6 -7.3 63.3 14.6" fileInfo="null" keDongFileInfo="wuhai 遥测 油温.prim">
+ <text x="0" y="3" stroke="rgb(63,165,150)" font-size="12" font-family="宋体" fill="rgb(63,165,150)">0.0</text>
+ <text x="-30" y="3" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)">温度：</text>
+</symbol>
+<symbol id="Transformer:wuhai_xfmr_light" viewBox="-4.0 -4.0 8.1 8.1" fileInfo="null" keDongFileInfo="wuhai 光字牌 xfmr_light.prim">
+ <rect x="-3" y="-3" width="6" height="6" fill="none" stroke="rgb(255,255,255)" lineStyle="0" stroke-width="1"/>
+</symbol>
+<symbol id="wuhai" viewBox="-52.6 -10.8 105.2 21.6" fileInfo="null" keDongFileInfo="wuhai 光字牌 母线公用信号.prim">
+ <rect x="-50" y="-9" width="102" height="17" fill="none" stroke="rgb(255,255,255)" lineStyle="0" stroke-width="2"/>
+ <text x="-42" y="3" stroke="rgb(255,255,255)" font-size="14" font-family="宋体" fill="rgb(255,255,255)">母线公用信号</text>
+</symbol>
+<symbol id="wuhai" viewBox="-53.0 -26.1 106.0 52.3" fileInfo="null" keDongFileInfo="wuhai 光字牌 全站公用信号.prim">
+ <rect x="-50" y="-9" width="102" height="17" fill="none" stroke="rgb(255,255,255)" lineStyle="0" stroke-width="2"/>
+ <text x="-40" y="4" stroke="rgb(255,255,255)" font-size="14" font-family="宋体" fill="rgb(255,255,255)">全站公用信号</text>
+ <text x="-52" y="-13" stroke="rgb(255,255,255)" font-size="14" font-family="宋体" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">检修工作</text>
+ <text x="23" y="-13" stroke="rgb(255,255,255)" font-size="14" font-family="宋体" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">待用</text>
+ <text x="-51" y="21" stroke="rgb(255,255,255)" font-size="14" font-family="宋体" fill="rgb(255,255,255)" stroke-opacity="0" fill-opacity="0">传动</text>
+</symbol>
+<symbol id="wuhai_三卷PT带接地带避雷器带熔断器" viewBox="-15.2 -14.8 30.4 29.6" fileInfo="null" keDongFileInfo="wuhai PT电压互感器 三卷PT带接地带避雷器带熔断器.prim">
+ <use x="0.3" y="-13.7" xlink:href="#terminal" terminal_seq="1" />
+ <path d="M 4 0 L 4 10" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true" transform="rotate(-178.99,4.0,5.54) "/>
+ <path d="M 10 3 L 4 1" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true" transform="rotate(-178.99,7.29,2.19) "/>
+ <path d="M 9 7 L 3 10" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true" transform="rotate(-178.99,6.90,9.20) "/>
+ <ellipse cx="0" cy="-6" rx="7" ry="7" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <ellipse cx="6" cy="5" rx="7" ry="7" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <path d="M 0 -6 L 5 -2" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 0 -6 L -4 -2" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 0 -12 L 0 -6" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M -5 0 L -5 4" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M -5 4 L -10 8" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M -5 5 L 0 8" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <ellipse cx="-5" cy="5" rx="7" ry="7" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+</symbol>
+<symbol id="wuhai_四圈PT" viewBox="-22.0 -15.0 44.0 30.0" fileInfo="null" keDongFileInfo="wuhai PT电压互感器 四圈PT.prim">
+ <use x="0.0" y="-14.0" xlink:href="#terminal" terminal_seq="1" />
+ <ellipse cx="0" cy="6" rx="8" ry="8" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <ellipse cx="0" cy="-6" rx="8" ry="8" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <ellipse cx="-12" cy="0" rx="8" ry="8" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <ellipse cx="13" cy="0" rx="8" ry="8" fill="none" stroke="rgb(255,255,255)" stroke-width="1"/>
+ <path d="M 0 -7 L 0 -3" stroke="rgb(255,255,255)" fill="none" stroke-width="1"/>
+ <path d="M -2 -10 L 0 -7 L 2 -10" stroke="rgb(255,255,255)" fill="none" stroke-width="1"/>
+ <path d="M 0 7 L 0 11" stroke="rgb(255,255,255)" fill="none" stroke-width="1"/>
+ <path d="M -2 4 L 0 7 L 2 4" stroke="rgb(255,255,255)" fill="none" stroke-width="1"/>
+ <path d="M -12 0 L -12 3" stroke="rgb(255,255,255)" fill="none" stroke-width="1"/>
+ <path d="M -14 -2 L -12 0 L -9 -2" stroke="rgb(255,255,255)" fill="none" stroke-width="1"/>
+ <path d="M 11 -2 L 11 3" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 12 -2 L 15 -2" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 11 2 L 14 2" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+</symbol>
+<symbol id="MeasureValue:wuhai_功能图功率因数" viewBox="-19.0 -8.1 38.0 16.3" fileInfo="null" keDongFileInfo="wuhai 遥测 功能图功率因数.prim">
+ <text x="-18" y="4" stroke="rgb(0,0,0)" font-size="14" font-family="宋体" fill="rgb(0,0,0)" font-weight="bolder">0.0</text>
+</symbol>
+<symbol id="MeasureValue:wuhai_功能图无功" viewBox="-18.0 -10.1 36.0 20.3" fileInfo="null" keDongFileInfo="wuhai 遥测 功能图无功.prim">
+ <text x="-17" y="2" stroke="rgb(0,0,0)" font-size="14" font-family="宋体" fill="rgb(0,0,0)" font-weight="bolder">0.0</text>
+</symbol>
+<symbol id="MeasureValue:wuhai_功能图有功" viewBox="-19.3 -8.3 38.6 16.6" fileInfo="null" keDongFileInfo="wuhai 遥测 功能图有功.prim">
+ <text x="-18" y="4" stroke="rgb(0,0,0)" font-size="14" font-family="宋体" fill="rgb(0,0,0)" font-weight="bolder">0.0</text>
+</symbol>
+<symbol id="Other:wuhai_直流系统" viewBox="-52.6 -10.8 105.2 21.6" fileInfo="null" keDongFileInfo="wuhai 光字牌 直流系统.prim">
+ <rect x="-50" y="-9" width="102" height="17" fill="none" stroke="rgb(255,255,255)" lineStyle="0" stroke-width="2"/>
+ <text x="-27" y="4" stroke="rgb(255,255,255)" font-size="14" font-family="宋体" fill="rgb(255,255,255)">直流信号</text>
+</symbol>
+<symbol id="Transformer:Winding" viewBox="-20 -20 50 42" >
+ <ellipse cx="5" cy="1" rx="24" ry="24" fill="none"  stroke-width="3" />
+</symbol>
+</defs>
+<g id="Head_Layer">
+ <rect x="0" y="0" width="1645" height="905" fill="rgb(0,0,0)"/>
+</g>
+<g id="Bus_Layer">
+ <g id="1">
+  <path d="M 352 274 L 855 274" stroke-width="3" id="sdc110BUSⅠ" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_BusbarSection_sdc110BUSⅠ" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="2">
+  <path d="M 883 273 L 1431 273" stroke-width="3" id="sdc110BUSⅡ" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_BusbarSection_sdc110BUSⅡ" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="3">
+  <path d="M 351 616 L 834 616" stroke-width="3" id="sdc10BUSⅠ" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_BusbarSection_sdc10BUSⅠ" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="4">
+  <path d="M 902 616 L 1441 616" stroke-width="3" id="sdc10BUSⅡ" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_BusbarSection_sdc10BUSⅡ" ObjectName="null" />
+     </metadata>
+ </g>
+</g>
+<g id="Breaker_Layer">
+ <g id="25">
+   <use x="650.0" y="136.6" width="47.0" height="71.6" xlink:href="#Breaker:wuhai_开关_竖向_0" id="sdcCB151" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Breaker_sdcCB151" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcCB151" />
+     </metadata>
+ </g>
+ <g id="109">
+   <use x="857.5" y="317.5" width="22.0" height="14.0" xlink:href="#Breaker:wuhai_开关_横向_0" id="sdcCB112" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Breaker_sdcCB112" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcCB112" />
+     </metadata>
+ </g>
+ <g id="174">
+   <use x="549.0" y="649.7" width="47.0" height="71.5" xlink:href="#Breaker:wuhai_开关_竖向_0" id="sdcCB9101" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Breaker_sdcCB9101" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcCB9101" />
+     </metadata>
+ </g>
+ <g id="192">
+   <use x="746.0" y="654.7" width="47.0" height="71.5" xlink:href="#Breaker:wuhai_开关_竖向_0" id="sdcCB9103" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Breaker_sdcCB9103" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcCB9103" />
+     </metadata>
+ </g>
+ <g id="210">
+   <use x="948.0" y="659.7" width="47.0" height="71.5" xlink:href="#Breaker:wuhai_开关_竖向_0" id="sdcCB9202" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Breaker_sdcCB9202" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcCB9202" />
+     </metadata>
+ </g>
+ <g id="228">
+   <use x="1128.0" y="666.7" width="47.0" height="71.5" xlink:href="#Breaker:wuhai_开关_竖向_0" id="sdcCB9204" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Breaker_sdcCB9204" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcCB9204" />
+     </metadata>
+ </g>
+ <g id="275">
+   <use x="650.0" y="331.7" width="47.0" height="71.5" xlink:href="#Breaker:wuhai_开关_竖向_0" id="sdcCB101" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Breaker_sdcCB101" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcCB101" />
+     </metadata>
+ </g>
+ <g id="526">
+   <use x="1021.0" y="319.7" width="47.0" height="71.5" xlink:href="#Breaker:wuhai_开关_竖向_0" id="sdcCB102" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Breaker_sdcCB102" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcCB102" />
+     </metadata>
+ </g>
+ <g id="586">
+   <use x="1022.0" y="124.6" width="47.0" height="71.6" xlink:href="#Breaker:wuhai_开关_竖向_0" id="sdcCB152" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Breaker_sdcCB152" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcCB152" />
+     </metadata>
+ </g>
+</g>
+<g id="Disconnector_Layer">
+ <g id="28">
+   <use x="664.7" y="208.1" width="17.4" height="22.7" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS1511" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS1511" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS1511" />
+     </metadata>
+ </g>
+ <g id="31">
+   <use x="665.7" y="114.1" width="17.4" height="22.7" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS1516" class="kV110" transform="rotate(-180.00 675.0 126.0) "/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS1516" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS1516" />
+     </metadata>
+ </g>
+ <g id="112">
+   <use x="828.7" y="278.1" width="17.4" height="22.7" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS1121" class="kV110" transform="rotate(-180.00 838.0 290.0) "/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS1121" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS1121" />
+     </metadata>
+ </g>
+ <g id="115">
+   <use x="889.7" y="277.1" width="17.4" height="22.7" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS1122" class="kV110" transform="rotate(-180.00 899.0 289.0) "/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS1122" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS1122" />
+     </metadata>
+ </g>
+ <g id="177">
+   <use x="563.0" y="653.0" width="18.8" height="65.0" xlink:href="#Disconnector:wuhai_手车刀闸_0" id="sdcDIS9101" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS9101" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS9101" />
+     </metadata>
+ </g>
+ <g id="195">
+   <use x="760.0" y="658.0" width="18.8" height="65.0" xlink:href="#Disconnector:wuhai_手车刀闸_0" id="sdcDIS9103" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS9103" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS9103" />
+     </metadata>
+ </g>
+ <g id="213">
+   <use x="962.0" y="663.0" width="18.8" height="65.0" xlink:href="#Disconnector:wuhai_手车刀闸_0" id="sdcDIS9202" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS9202" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS9202" />
+     </metadata>
+ </g>
+ <g id="231">
+   <use x="1142.0" y="670.0" width="18.8" height="65.0" xlink:href="#Disconnector:wuhai_手车刀闸_0" id="sdcDIS9204" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS9204" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS9204" />
+     </metadata>
+ </g>
+ <g id="262">
+   <use x="1035.0" y="538.0" width="18.8" height="65.0" xlink:href="#Disconnector:wuhai_手车刀闸_0" id="sdcDIS902" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS902" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS902" />
+     </metadata>
+ </g>
+ <g id="268">
+   <use x="664.0" y="539.0" width="18.8" height="65.0" xlink:href="#Disconnector:wuhai_手车刀闸_0" id="sdcDIS901" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS901" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS901" />
+     </metadata>
+ </g>
+ <g id="278">
+   <use x="665.7" y="294.1" width="17.4" height="22.7" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS1011" class="kV110" transform="rotate(-180.00 675.0 306.0) "/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS1011" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS1011" />
+     </metadata>
+ </g>
+ <g id="283">
+   <use x="664.7" y="408.1" width="17.4" height="22.7" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS1016" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS1016" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS1016" />
+     </metadata>
+ </g>
+ <g id="529">
+   <use x="1036.8" y="282.1" width="17.3" height="22.7" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS1022" class="kV110" transform="rotate(-180.00 1046.0 294.0) "/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS1022" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS1022" />
+     </metadata>
+ </g>
+ <g id="534">
+   <use x="1035.8" y="396.1" width="17.3" height="22.7" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS1026" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS1026" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS1026" />
+     </metadata>
+ </g>
+ <g id="589">
+   <use x="1036.8" y="196.1" width="17.3" height="22.7" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS1522" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS1522" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS1522" />
+     </metadata>
+ </g>
+ <g id="592">
+   <use x="1037.8" y="102.0" width="17.3" height="22.8" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS1526" class="kV110" transform="rotate(-180.00 1047.0 114.0) "/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS1526" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS1526" />
+     </metadata>
+ </g>
+ <g id="710">
+   <use x="466.7" y="639.0" width="17.4" height="22.8" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS919" class="kV10" transform="rotate(-180.99 476.0 651.0) "/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS919" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS919" />
+     </metadata>
+ </g>
+ <g id="717">
+   <use x="1317.8" y="638.6" width="17.3" height="22.8" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS929" class="kV10" transform="rotate(-180.99 1327.0 650.59) "/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS929" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS929" />
+     </metadata>
+ </g>
+ <g id="736">
+   <use x="504.7" y="319.1" width="17.4" height="22.7" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS119" class="kV110" transform="rotate(-180.00 514.0 331.0) "/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS119" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS119" />
+     </metadata>
+ </g>
+ <g id="769">
+   <use x="1288.8" y="320.1" width="17.3" height="22.7" xlink:href="#Disconnector:wuhai_刀闸_0" id="sdcDIS129" class="kV110" transform="rotate(-180.00 1298.0 332.0) "/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Disconnector_sdcDIS129" ObjectName="null" />
+       <cge:Meas_Ref ObjectID="_Measurement_P_sdcDIS129" />
+     </metadata>
+ </g>
+</g>
+<g id="GroundDisconnector_Layer">
+</g>
+<g id="Transformer2_Layer">
+ <g id="156">
+   <use x="656.9" y="469.7" width="33.1" height="55.4" xlink:href="#Transformer:wuhai_二卷变_中心点" id="sdcXF1#" class="kV0"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_PowerTransformer_sdcXF1#" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="160">
+   <use x="1027.9" y="470.7" width="33.1" height="55.4" xlink:href="#Transformer:wuhai_二卷变_中心点" id="sdcXF2#" class="kV0"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_PowerTransformer_sdcXF2#" ObjectName="null" />
+     </metadata>
+ </g>
+</g>
+<g id="Transformer3_Layer">
+ <g id="490">
+   <use x="694.4" y="471.3" width="8.1" height="8.2" xlink:href="#Transformer:wuhai_xfmr_light" id="sdcXF1#" class="kV-1"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_PowerTransformer_sdcXF1#" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="501">
+   <use x="1066.4" y="474.3" width="8.1" height="8.2" xlink:href="#Transformer:wuhai_xfmr_light" id="sdcXF2#" class="kV-1"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_PowerTransformer_sdcXF2#" ObjectName="null" />
+     </metadata>
+ </g>
+</g>
+<g id="Generator_Layer">
+ <g id="165">
+   <use x="553.5" y="796.5" width="38.0" height="38.0" xlink:href="#Unit:wuhai_发电机" id="sdc10GEN1#" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_SynchronousMachine_sdc10GEN1#" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="167">
+   <use x="750.5" y="798.5" width="38.0" height="38.0" xlink:href="#Unit:wuhai_发电机" id="sdc10GEN2#" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_SynchronousMachine_sdc10GEN2#" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="169">
+   <use x="951.5" y="798.5" width="38.0" height="38.0" xlink:href="#Unit:wuhai_发电机" id="sdc10GEN3#" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_SynchronousMachine_sdc10GEN3#" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="171">
+   <use x="1132.5" y="794.5" width="38.0" height="38.0" xlink:href="#Unit:wuhai_发电机" id="sdc10GEN4#" class="kV10"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_SynchronousMachine_sdc10GEN4#" ObjectName="null" />
+     </metadata>
+ </g>
+</g>
+<g id="Compensator_Layer">
+</g>
+<g id="Load_Layer">
+ <g id="468">
+   <use x="1001.8" y="24.9" width="87.3" height="39.1" xlink:href="#Load:wuhai_负荷(上)" id="sdc110LD152" class="kV110"/>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_EnergyConsumer_sdc110LD152" ObjectName="null" />
+     </metadata>
+ </g>
+</g>
+<g id="ACLineSegment_Layer">
+ <g id="458">
+ <path d="M 674 51 L 674 88" id="LNheda" class="kV110" arrowType="0"  arrowDirection="0" />
+     <metadata>
+       <cge:PSR_Ref ObjectID="_ACLineSegment_LNheda" ObjectName="null" />
+     </metadata>
+ </g>
+</g>
+<g id="ConnectNode_Layer">
+ <g id="227">
+ <path d="M 972 664 L 972 616" stroke="rgb(0,210,0)" stroke-width="1" id="227" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="213_1" ObjectIDznd="4_0" />
+     </metadata>
+ </g>
+ <g id="716">
+ <path d="M 475 640 L 475 616" stroke="rgb(0,210,0)" stroke-width="1" id="716" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="710_1" ObjectIDznd="3_0" />
+     </metadata>
+ </g>
+ <g id="224">
+ <path d="M 972 727 L 972 727" stroke="rgb(0,210,0)" stroke-width="1" id="224" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="217_0" ObjectIDznd="221_-1" />
+     </metadata>
+ </g>
+ <g id="714">
+ <path d="M 476 661 L 476 687" stroke="rgb(0,210,0)" stroke-width="1" id="714" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="710_2" ObjectIDznd="694_1" />
+     </metadata>
+ </g>
+ <g id="127">
+ <path d="M 927 308 L 898 308" stroke="rgb(235,10,15)" stroke-width="1" id="127" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="124_1" ObjectIDznd="120_0" />
+     </metadata>
+ </g>
+ <g id="286">
+ <path d="M 674 378 L 674 409" stroke="rgb(235,10,15)" stroke-width="1" id="286" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="275_2" ObjectIDznd="283_2" />
+     </metadata>
+ </g>
+ <g id="126">
+ <path d="M 809 308 L 837 308" stroke="rgb(235,10,15)" stroke-width="1" id="126" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="122_1" ObjectIDznd="118_0" />
+     </metadata>
+ </g>
+ <g id="220">
+ <path d="M 972 706 L 972 706" stroke="rgb(0,210,0)" stroke-width="1" id="220" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="210_2" ObjectIDznd="217_0" />
+     </metadata>
+ </g>
+ <g id="774">
+ <path d="M 1297 342 L 1298 378" stroke="rgb(235,10,15)" stroke-width="1" id="774" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="769_2" ObjectIDznd="767_1" />
+     </metadata>
+ </g>
+ <g id="188">
+ <path d="M 573 717 L 573 717" stroke="rgb(0,210,0)" stroke-width="1" id="188" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="181_0" ObjectIDznd="185_-1" />
+     </metadata>
+ </g>
+ <g id="773">
+ <path d="M 1297 321 L 1297 273" stroke="rgb(235,10,15)" stroke-width="1" id="773" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="769_1" ObjectIDznd="2_0" />
+     </metadata>
+ </g>
+ <g id="281">
+ <path d="M 674 316 L 674 358" stroke="rgb(235,10,15)" stroke-width="1" id="281" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="278_2" ObjectIDznd="275_1" />
+     </metadata>
+ </g>
+ <g id="612">
+  <path d="M 1074 103 L 1074 89 L 1046 89" stroke="rgb(235,10,15)" stroke-width="1" id="612" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="595_1" ObjectIDznd="610_0" />
+     </metadata>
+ </g>
+ <g id="120">
+  <path d="M 898 299 L 898 325 L 879 325" stroke="rgb(235,10,15)" stroke-width="1" id="120" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="115_2" ObjectIDznd="109_2" />
+     </metadata>
+ </g>
+ <g id="184">
+ <path d="M 573 696 L 573 696" stroke="rgb(0,210,0)" stroke-width="1" id="184" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="174_2" ObjectIDznd="181_0" />
+     </metadata>
+ </g>
+ <g id="610">
+ <path d="M 1046 103 L 1046 78" stroke="rgb(235,10,15)" stroke-width="1" id="610" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="592_1" ObjectIDznd="607_0" />
+     </metadata>
+ </g>
+ <g id="180">
+ <path d="M 573 676 L 573 676" stroke="rgb(0,210,0)" stroke-width="1" id="180" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="174_1" ObjectIDznd="177_2" />
+     </metadata>
+ </g>
+ <g id="51">
+  <path d="M 702 115 L 702 104 L 674 104" stroke="rgb(235,10,15)" stroke-width="1" id="51" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="34_1" ObjectIDznd="49_0" />
+     </metadata>
+ </g>
+ <g id="806">
+ <path d="M 674 540 L 674 524" stroke="rgb(0,210,0)" stroke-width="1" id="806" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="268_1" ObjectIDznd="156_2" />
+     </metadata>
+ </g>
+ <g id="805">
+ <path d="M 674 560 L 674 616" stroke="rgb(0,210,0)" stroke-width="1" id="805" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="268_2" ObjectIDznd="3_0" />
+     </metadata>
+ </g>
+ <g id="379">
+ <path d="M 770 800 L 770 723" stroke="rgb(0,210,0)" stroke-width="1" id="379" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="167_1" ObjectIDznd="203_0" />
+     </metadata>
+ </g>
+ <g id="378">
+ <path d="M 573 798 L 573 718" stroke="rgb(0,210,0)" stroke-width="1" id="378" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="165_1" ObjectIDznd="185_0" />
+     </metadata>
+ </g>
+ <g id="803">
+ <path d="M 898 278 L 898 273" stroke="rgb(235,10,15)" stroke-width="1" id="803" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="115_1" ObjectIDznd="2_0" />
+     </metadata>
+ </g>
+ <g id="377">
+ <path d="M 674 230 L 674 274" stroke="rgb(235,10,15)" stroke-width="1" id="377" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="28_1" ObjectIDznd="1_0" />
+     </metadata>
+ </g>
+ <g id="801">
+ <path d="M 837 279 L 837 274" stroke="rgb(235,10,15)" stroke-width="1" id="801" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="112_1" ObjectIDznd="1_0" />
+     </metadata>
+ </g>
+ <g id="216">
+ <path d="M 972 686 L 972 686" stroke="rgb(0,210,0)" stroke-width="1" id="216" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="210_1" ObjectIDznd="213_2" />
+     </metadata>
+ </g>
+ <g id="375">
+ <path d="M 674 471 L 674 455" stroke="rgb(235,10,15)" stroke-width="1" id="375" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="156_1" ObjectIDznd="293_0" />
+     </metadata>
+ </g>
+ <g id="118">
+  <path d="M 837 300 L 837 325 L 859 325" stroke="rgb(235,10,15)" stroke-width="1" id="118" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="112_2" ObjectIDznd="109_1" />
+     </metadata>
+ </g>
+ <g id="606">
+  <path d="M 1016 150 L 1016 137 L 1046 137" stroke="rgb(235,10,15)" stroke-width="1" id="606" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="597_1" ObjectIDznd="603_0" />
+     </metadata>
+ </g>
+ <g id="605">
+  <path d="M 1074 199 L 1074 188 L 1046 188" stroke="rgb(235,10,15)" stroke-width="1" id="605" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="599_1" ObjectIDznd="601_0" />
+     </metadata>
+ </g>
+ <g id="603">
+ <path d="M 1046 124 L 1046 151" stroke="rgb(235,10,15)" stroke-width="1" id="603" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="592_2" ObjectIDznd="586_1" />
+     </metadata>
+ </g>
+ <g id="601">
+ <path d="M 1046 197 L 1046 171" stroke="rgb(235,10,15)" stroke-width="1" id="601" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="589_2" ObjectIDznd="586_2" />
+     </metadata>
+ </g>
+ <g id="49">
+ <path d="M 674 115 L 674 93" stroke="rgb(235,10,15)" stroke-width="1" id="49" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="31_1" ObjectIDznd="46_0" />
+     </metadata>
+ </g>
+ <g id="45">
+  <path d="M 644 162 L 644 149 L 674 149" stroke="rgb(235,10,15)" stroke-width="1" id="45" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="36_1" ObjectIDznd="42_0" />
+     </metadata>
+ </g>
+ <g id="44">
+  <path d="M 702 211 L 702 200 L 674 200" stroke="rgb(235,10,15)" stroke-width="1" id="44" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="38_1" ObjectIDznd="40_0" />
+     </metadata>
+ </g>
+ <g id="406">
+ <path d="M 987 487 L 1045 487" stroke="rgb(235,10,15)" stroke-width="1" id="406" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="403_1" ObjectIDznd="160_3" />
+     </metadata>
+ </g>
+ <g id="42">
+ <path d="M 674 136 L 674 163" stroke="rgb(235,10,15)" stroke-width="1" id="42" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="31_2" ObjectIDznd="25_1" />
+     </metadata>
+ </g>
+ <g id="40">
+ <path d="M 674 209 L 674 183" stroke="rgb(235,10,15)" stroke-width="1" id="40" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="28_2" ObjectIDznd="25_2" />
+     </metadata>
+ </g>
+ <g id="402">
+ <path d="M 618 486 L 674 486" stroke="rgb(235,10,15)" stroke-width="1" id="402" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="400_1" ObjectIDznd="156_3" />
+     </metadata>
+ </g>
+ <g id="209">
+ <path d="M 770 659 L 770 616" stroke="rgb(0,210,0)" stroke-width="1" id="209" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="195_1" ObjectIDznd="3_0" />
+     </metadata>
+ </g>
+ <g id="461">
+ <path d="M 674 88 L 674 91" stroke="rgb(235,10,15)" stroke-width="1" id="461" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="458_0" ObjectIDznd="46_-1" />
+     </metadata>
+ </g>
+ <g id="301">
+  <path d="M 646 452 L 646 437 L 674 437" stroke="rgb(235,10,15)" stroke-width="1" id="301" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="291_1" ObjectIDznd="293_0" />
+     </metadata>
+ </g>
+ <g id="206">
+ <path d="M 770 722 L 770 722" stroke="rgb(0,210,0)" stroke-width="1" id="206" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="199_0" ObjectIDznd="203_-1" />
+     </metadata>
+ </g>
+ <g id="300">
+  <path d="M 699 402 L 699 392 L 674 392" stroke="rgb(235,10,15)" stroke-width="1" id="300" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="298_1" ObjectIDznd="286_0" />
+     </metadata>
+ </g>
+ <g id="365">
+ <path d="M 674 295 L 674 274" stroke="rgb(235,10,15)" stroke-width="1" id="365" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="278_1" ObjectIDznd="1_0" />
+     </metadata>
+ </g>
+ <g id="202">
+ <path d="M 770 701 L 770 701" stroke="rgb(0,210,0)" stroke-width="1" id="202" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="192_2" ObjectIDznd="199_0" />
+     </metadata>
+ </g>
+ <g id="266">
+ <path d="M 1045 559 L 1045 616" stroke="rgb(0,210,0)" stroke-width="1" id="266" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="262_2" ObjectIDznd="4_0" />
+     </metadata>
+ </g>
+ <g id="552">
+  <path d="M 1070 390 L 1070 380 L 1045 380" stroke="rgb(235,10,15)" stroke-width="1" id="552" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="550_1" ObjectIDznd="537_0" />
+     </metadata>
+ </g>
+ <g id="748">
+  <path d="M 537 303 L 537 292 L 513 292 L 513 274" stroke="rgb(235,10,15)" stroke-width="1" id="748" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="743_1" ObjectIDznd="1_0" />
+     </metadata>
+ </g>
+ <g id="746">
+  <path d="M 480 358 L 480 347 L 513 347" stroke="rgb(235,10,15)" stroke-width="1" id="746" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="733_1" ObjectIDznd="742_0" />
+     </metadata>
+ </g>
+ <g id="742">
+ <path d="M 513 373 L 513 341" stroke="rgb(235,10,15)" stroke-width="1" id="742" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="699_1" ObjectIDznd="736_2" />
+     </metadata>
+ </g>
+ <g id="741">
+ <path d="M 513 320 L 513 274" stroke="rgb(235,10,15)" stroke-width="1" id="741" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="736_1" ObjectIDznd="1_0" />
+     </metadata>
+ </g>
+ <g id="644">
+ <path d="M 1046 218 L 1046 273" stroke="rgb(235,10,15)" stroke-width="1" id="644" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="589_1" ObjectIDznd="2_0" />
+     </metadata>
+ </g>
+ <g id="549">
+  <path d="M 1017 430 L 1045 430" stroke="rgb(235,10,15)" stroke-width="1" id="549" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="542_1" ObjectIDznd="544_0" />
+     </metadata>
+ </g>
+ <g id="548">
+ <path d="M 1045 418 L 1045 430" stroke="rgb(235,10,15)" stroke-width="1" id="548" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="534_1" ObjectIDznd="544_0" />
+     </metadata>
+ </g>
+ <g id="642">
+ <path d="M 1046 76 L 1046 62" stroke="rgb(235,10,15)" stroke-width="1" id="642" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="607_0" ObjectIDznd="468_1" />
+     </metadata>
+ </g>
+ <g id="541">
+  <path d="M 1017 333 L 1017 324 L 1045 324" stroke="rgb(235,10,15)" stroke-width="1" id="541" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="539_1" ObjectIDznd="532_0" />
+     </metadata>
+ </g>
+ <g id="245">
+ <path d="M 1152 671 L 1152 616" stroke="rgb(0,210,0)" stroke-width="1" id="245" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="231_1" ObjectIDznd="4_0" />
+     </metadata>
+ </g>
+ <g id="242">
+ <path d="M 1152 734 L 1152 734" stroke="rgb(0,210,0)" stroke-width="1" id="242" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="235_0" ObjectIDznd="239_-1" />
+     </metadata>
+ </g>
+ <g id="537">
+ <path d="M 1045 366 L 1045 397" stroke="rgb(235,10,15)" stroke-width="1" id="537" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="526_2" ObjectIDznd="534_2" />
+     </metadata>
+ </g>
+ <g id="532">
+ <path d="M 1045 304 L 1045 346" stroke="rgb(235,10,15)" stroke-width="1" id="532" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="529_2" ObjectIDznd="526_1" />
+     </metadata>
+ </g>
+ <g id="238">
+ <path d="M 1152 713 L 1152 713" stroke="rgb(0,210,0)" stroke-width="1" id="238" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="228_2" ObjectIDznd="235_0" />
+     </metadata>
+ </g>
+ <g id="725">
+ <path d="M 1326 640 L 1326 616" stroke="rgb(0,210,0)" stroke-width="1" id="725" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="717_1" ObjectIDznd="4_0" />
+     </metadata>
+ </g>
+ <g id="234">
+ <path d="M 1152 693 L 1152 693" stroke="rgb(0,210,0)" stroke-width="1" id="234" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="228_1" ObjectIDznd="231_2" />
+     </metadata>
+ </g>
+ <g id="392">
+ <path d="M 1152 796 L 1152 735" stroke="rgb(0,210,0)" stroke-width="1" id="392" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="171_1" ObjectIDznd="239_0" />
+     </metadata>
+ </g>
+ <g id="391">
+ <path d="M 971 800 L 972 728" stroke="rgb(0,210,0)" stroke-width="1" id="391" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="169_1" ObjectIDznd="221_0" />
+     </metadata>
+ </g>
+ <g id="297">
+ <path d="M 674 430 L 674 437" stroke="rgb(235,10,15)" stroke-width="1" id="297" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="283_1" ObjectIDznd="293_0" />
+     </metadata>
+ </g>
+ <g id="390">
+ <path d="M 1045 539 L 1045 525" stroke="rgb(0,210,0)" stroke-width="1" id="390" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="262_1" ObjectIDznd="160_2" />
+     </metadata>
+ </g>
+ <g id="722">
+ <path d="M 1327 660 L 1327 686" stroke="rgb(0,210,0)" stroke-width="1" id="722" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="717_2" ObjectIDznd="720_1" />
+     </metadata>
+ </g>
+ <g id="198">
+ <path d="M 770 681 L 770 681" stroke="rgb(0,210,0)" stroke-width="1" id="198" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="192_1" ObjectIDznd="195_2" />
+     </metadata>
+ </g>
+ <g id="782">
+  <path d="M 1269 364 L 1269 352 L 1275 352 L 1275 352 L 1297 352" stroke="rgb(235,10,15)" stroke-width="1" id="782" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="777_1" ObjectIDznd="774_0" />
+     </metadata>
+ </g>
+ <g id="290">
+  <path d="M 646 345 L 646 336 L 674 336" stroke="rgb(235,10,15)" stroke-width="1" id="290" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="288_1" ObjectIDznd="281_0" />
+     </metadata>
+ </g>
+ <g id="780">
+  <path d="M 1325 311 L 1325 297 L 1297 297" stroke="rgb(235,10,15)" stroke-width="1" id="780" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="775_1" ObjectIDznd="773_0" />
+     </metadata>
+ </g>
+ <g id="191">
+ <path d="M 573 654 L 573 616" stroke="rgb(0,210,0)" stroke-width="1" id="191" class="kV10"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="177_1" ObjectIDznd="3_0" />
+     </metadata>
+ </g>
+ <g id="584">
+ <path d="M 1045 448 L 1045 472" stroke="rgb(235,10,15)" stroke-width="1" id="584" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="544_0" ObjectIDznd="160_1" />
+     </metadata>
+ </g>
+ <g id="583">
+ <path d="M 1045 283 L 1045 273" stroke="rgb(235,10,15)" stroke-width="1" id="583" class="kV110"/>
+     <metadata>
+       <cge:PSR_Link MaxPinNum="2" ObjectIDnd="529_1" ObjectIDznd="2_0" />
+     </metadata>
+ </g>
+</g>
+<g id="Other_Layer">
+  <image x="42" y="105" width="226" height="39"  xlink:href="image\界面分区-标签3.png"/>
+  <image x="42" y="25" width="226" height="92"  xlink:href="image\界面分区-标签3.png"/>
+ <path d="M 674 93 L 674 91" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 573 697 L 573 717" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="false"/>
+ <path d="M 573 718 L 573 718" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 770 702 L 770 722" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="false"/>
+ <path d="M 770 723 L 770 723" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 972 707 L 972 727" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="false"/>
+ <path d="M 972 728 L 972 728" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 1152 714 L 1152 734" stroke-opacity="0" fill-opacity="0" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="false"/>
+ <path d="M 1152 735 L 1152 735" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 674 437 L 674 455" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 1045 430 L 1045 448" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <path d="M 1046 78 L 1046 76" lineStyle="0" stroke="rgb(255,255,255)" stroke-width="1" visiable="true"/>
+ <g id="34">
+   <use x="694.0" y="113.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS151617" class="kV110"/>
+ </g>
+ <g id="36">
+   <use x="636.0" y="160.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS15167" class="kV110"/>
+ </g>
+ <g id="38">
+   <use x="694.0" y="209.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS15117" class="kV110"/>
+ </g>
+ <g id="822">
+   <use x="695.0" y="144.5" width="8.1" height="8.2" xlink:href="#Other:wuhai_cb_light" id="sdcCB151" class="kV-1"/>
+ </g>
+ <g id="122">
+   <use x="801.0" y="306.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS11217" class="kV110"/>
+ </g>
+ <g id="124">
+   <use x="919.0" y="306.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS11227" class="kV110"/>
+ </g>
+ <g id="816">
+   <use x="594.0" y="657.5" width="8.1" height="8.1" xlink:href="#Other:wuhai_cb_light" id="sdcCB9101" class="kV-1"/>
+ </g>
+ <g id="817">
+   <use x="791.0" y="662.5" width="8.1" height="8.1" xlink:href="#Other:wuhai_cb_light" id="sdcCB9103" class="kV-1"/>
+ </g>
+ <g id="818">
+   <use x="993.0" y="667.5" width="8.1" height="8.1" xlink:href="#Other:wuhai_cb_light" id="sdcCB9202" class="kV-1"/>
+ </g>
+ <g id="819">
+   <use x="1173.0" y="674.5" width="8.1" height="8.1" xlink:href="#Other:wuhai_cb_light" id="sdcCB9204" class="kV-1"/>
+ </g>
+ <g id="288">
+   <use x="638.0" y="343.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS10117" class="kV110"/>
+ </g>
+ <g id="291">
+   <use x="638.0" y="450.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS101617" class="kV110"/>
+ </g>
+ <g id="298">
+   <use x="691.0" y="400.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS10167" class="kV110"/>
+ </g>
+ <g id="820">
+   <use x="695.0" y="339.5" width="8.1" height="8.2" xlink:href="#Other:wuhai_cb_light" id="sdcCB101" class="kV-1"/>
+ </g>
+ <g id="400">
+   <use x="581.2" y="483.9" width="40.5" height="59.1" xlink:href="#Other:wuhai_中性点右" id="sdcDIS110" class="kV110"/>
+ </g>
+ <g id="403">
+   <use x="950.2" y="484.9" width="40.5" height="59.1" xlink:href="#Other:wuhai_中性点右" id="sdcDIS120" class="kV110"/>
+ </g>
+ <g id="539">
+   <use x="1009.0" y="331.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS10227" class="kV110"/>
+ </g>
+ <g id="542">
+   <use x="1009.0" y="428.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS102617" class="kV110"/>
+ </g>
+ <g id="550">
+   <use x="1062.0" y="388.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS10267" class="kV110"/>
+ </g>
+ <g id="821">
+   <use x="1066.0" y="327.5" width="8.1" height="8.2" xlink:href="#Other:wuhai_cb_light" id="sdcCB102" class="kV-1"/>
+ </g>
+ <g id="595">
+   <use x="1066.0" y="101.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS152617" class="kV110"/>
+ </g>
+ <g id="597">
+   <use x="1008.0" y="148.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS15267" class="kV110"/>
+ </g>
+ <g id="599">
+   <use x="1066.0" y="197.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS15227" class="kV110"/>
+ </g>
+ <g id="823">
+   <use x="1067.0" y="132.5" width="8.1" height="8.2" xlink:href="#Other:wuhai_cb_light" id="sdcCB152" class="kV-1"/>
+ </g>
+ <g id="688">
+   <use x="90.8" y="210.6" width="105.2" height="21.6" xlink:href="#wuhai" id="sdc110" class="kV-1"/>
+ </g>
+ <g id="690">
+   <use x="90.5" y="159.3" width="106.0" height="52.3" xlink:href="#wuhai" id="HuangHeShui" class="kV-1"/>
+ </g>
+ <g id="694">
+   <use x="460.2" y="685.7" width="30.4" height="29.5" xlink:href="#wuhai_三卷PT带接地带避雷器带熔断器" id="null" class="kV-1"/>
+ </g>
+ <g id="699">
+   <use x="490.5" y="371.5" width="44.0" height="30.0" xlink:href="#wuhai_四圈PT" id="null" class="kV-1"/>
+ </g>
+ <g id="720">
+   <use x="1311.2" y="685.2" width="30.4" height="29.5" xlink:href="#wuhai_三卷PT带接地带避雷器带熔断器" id="null" class="kV-1"/>
+ </g>
+ <g id="733">
+   <use x="472.0" y="356.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS1197" class="kV110"/>
+ </g>
+ <g id="743">
+   <use x="529.0" y="301.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS1117" class="kV110"/>
+ </g>
+ <g id="767">
+   <use x="1275.5" y="376.5" width="44.0" height="30.0" xlink:href="#wuhai_四圈PT" id="null" class="kV-1"/>
+ </g>
+ <g id="775">
+   <use x="1317.0" y="309.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS1217" class="kV110"/>
+ </g>
+ <g id="777">
+   <use x="1261.0" y="362.8" width="15.0" height="27.2" xlink:href="#Other:wuhai_下接地" id="sdcDIS1297" class="kV110"/>
+ </g>
+ <g id="814">
+   <use x="89.8" y="245.7" width="105.2" height="21.5" xlink:href="#Other:wuhai_直流系统" id="sdczlxt" class="kV110"/>
+ </g>
+</g>
+<g id="MeasureValue_Layer">
+ <g id="795">
+  <text x="861" y="363" stroke="rgb(0,255,0)" id="sdcCB112P" font-size="16" font-family="Dialog" fill="rgb(0,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcCB112P" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="796">
+  <text x="862" y="377" stroke="rgb(255,255,0)" id="sdcCB112Q" font-size="16" font-family="Dialog" fill="rgb(255,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcCB112Q" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="797">
+  <text x="861" y="391" stroke="rgb(0,0,255)" id="sdcCB112Ia" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcCB112Ia" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="798">
+  <text x="861" y="404" stroke="rgb(0,0,255)" id="sdcCB112Ib" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcCB112Ib" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="799">
+  <text x="861" y="417" stroke="rgb(0,0,255)" id="sdcCB112Ic" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcCB112Ic" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="462">
+  <text x="691" y="26" stroke="rgb(0,255,0)" id="sdcLNhedaP" font-size="16" font-family="Dialog" fill="rgb(0,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcLNhedaP" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="463">
+  <text x="692" y="40" stroke="rgb(255,255,0)" id="sdcLNhedaQ" font-size="16" font-family="Dialog" fill="rgb(255,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcLNhedaQ" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="464">
+  <text x="691" y="54" stroke="rgb(0,0,255)" id="sdcLNhedaIa" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcLNhedaIa" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="465">
+  <text x="691" y="67" stroke="rgb(0,0,255)" id="sdcLNhedaIb" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcLNhedaIb" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="466">
+  <text x="691" y="80" stroke="rgb(0,0,255)" id="sdcLNhedaIc" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcLNhedaIc" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="467">
+  <text x="691" y="93" stroke="rgb(1,146,115)" id="sdcLNhedaCos" font-size="16" font-family="Dialog" fill="rgb(1,146,115)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcLNhedaCos" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="472">
+  <text x="351" y="262" stroke="rgb(255,0,0)" id="sdc110BUSⅠUab" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc110BUSⅠUab" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="473">
+  <text x="350" y="221" stroke="rgb(255,0,0)" id="sdc110BUSⅠUa" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc110BUSⅠUa" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="474">
+  <text x="350" y="234" stroke="rgb(255,0,0)" id="sdc110BUSⅠUb" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc110BUSⅠUb" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="475">
+  <text x="350" y="247" stroke="rgb(255,0,0)" id="sdc110BUSⅠUc" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc110BUSⅠUc" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="476">
+  <text x="1389" y="260" stroke="rgb(255,0,0)" id="sdc110BUSⅡUab" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc110BUSⅡUab" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="477">
+  <text x="1389" y="221" stroke="rgb(255,0,0)" id="sdc110BUSⅡUa" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc110BUSⅡUa" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="478">
+  <text x="1389" y="234" stroke="rgb(255,0,0)" id="sdc110BUSⅡUb" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc110BUSⅡUb" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="479">
+  <text x="1389" y="247" stroke="rgb(255,0,0)" id="sdc110BUSⅡUc" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc110BUSⅡUc" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="480">
+  <text x="730" y="344" stroke="rgb(0,255,0)" id="sdcXF1#hP" font-size="16" font-family="Dialog" fill="rgb(0,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF1#hP" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="481">
+  <text x="730" y="358" stroke="rgb(255,255,0)" id="sdcXF1#hQ" font-size="16" font-family="Dialog" fill="rgb(255,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF1#hQ" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="482">
+  <text x="729" y="372" stroke="rgb(0,0,255)" id="sdcXF1#hIa" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF1#hIa" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="483">
+  <text x="730" y="385" stroke="rgb(1,146,115)" id="sdcXF1#hCos" font-size="16" font-family="Dialog" fill="rgb(1,146,115)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF1#hCos" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="484">
+  <text x="714" y="554" stroke="rgb(0,255,0)" id="sdcXF1#lP" font-size="16" font-family="Dialog" fill="rgb(0,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF1#lP" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="485">
+  <text x="714" y="568" stroke="rgb(255,255,0)" id="sdcXF1#lQ" font-size="16" font-family="Dialog" fill="rgb(255,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF1#lQ" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="486">
+  <text x="713" y="582" stroke="rgb(0,0,255)" id="sdcXF1#lIa" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF1#lIa" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="487">
+  <text x="714" y="595" stroke="rgb(1,146,115)" id="sdcXF1#lCos" font-size="16" font-family="Dialog" fill="rgb(1,146,115)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF1#lCos" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="488">
+  <text x="712" y="506" stroke="rgb(1,146,115)" id="sdcXF1#Tap" font-size="16" font-family="Dialog" fill="rgb(1,146,115)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF1#Tap" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="489">
+  <text x="712" y="520" stroke="rgb(1,146,115)" id="sdcXF1#T" font-size="16" font-family="Dialog" fill="rgb(1,146,115)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF1#T" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="491">
+  <text x="1095" y="350" stroke="rgb(0,255,0)" id="sdcXF2#hP" font-size="16" font-family="Dialog" fill="rgb(0,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF2#hP" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="492">
+  <text x="1095" y="364" stroke="rgb(255,255,0)" id="sdcXF2#hQ" font-size="16" font-family="Dialog" fill="rgb(255,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF2#hQ" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="493">
+  <text x="1094" y="378" stroke="rgb(0,0,255)" id="sdcXF2#hIa" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF2#hIa" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="494">
+  <text x="1095" y="391" stroke="rgb(1,146,115)" id="sdcXF2#hCos" font-size="16" font-family="Dialog" fill="rgb(1,146,115)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF2#hCos" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="495">
+  <text x="1095" y="555" stroke="rgb(0,255,0)" id="sdcXF2#lP" font-size="16" font-family="Dialog" fill="rgb(0,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF2#lP" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="496">
+  <text x="1095" y="569" stroke="rgb(255,255,0)" id="sdcXF2#lQ" font-size="16" font-family="Dialog" fill="rgb(255,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF2#lQ" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="497">
+  <text x="1094" y="583" stroke="rgb(0,0,255)" id="sdcXF2#lIa" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF2#lIa" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="498">
+  <text x="1095" y="596" stroke="rgb(1,146,115)" id="sdcXF2#lCos" font-size="16" font-family="Dialog" fill="rgb(1,146,115)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF2#lCos" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="499">
+  <text x="1083" y="508" stroke="rgb(1,146,115)" id="sdcXF2#Tap" font-size="16" font-family="Dialog" fill="rgb(1,146,115)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF2#Tap" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="500">
+  <text x="1083" y="522" stroke="rgb(1,146,115)" id="sdcXF2#T" font-size="16" font-family="Dialog" fill="rgb(1,146,115)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdcXF2#T" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="502">
+  <text x="353" y="601" stroke="rgb(255,0,0)" id="sdc10BUSⅠUab" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10BUSⅠUab" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="503">
+  <text x="352" y="560" stroke="rgb(255,0,0)" id="sdc10BUSⅠUa" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10BUSⅠUa" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="504">
+  <text x="352" y="573" stroke="rgb(255,0,0)" id="sdc10BUSⅠUb" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10BUSⅠUb" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="505">
+  <text x="352" y="586" stroke="rgb(255,0,0)" id="sdc10BUSⅠUc" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10BUSⅠUc" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="506">
+  <text x="1399" y="602" stroke="rgb(255,0,0)" id="sdc10BUSⅡUab" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10BUSⅡUab" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="507">
+  <text x="1399" y="562" stroke="rgb(255,0,0)" id="sdc10BUSⅡUa" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10BUSⅡUa" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="508">
+  <text x="1399" y="575" stroke="rgb(255,0,0)" id="sdc10BUSⅡUb" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10BUSⅡUb" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="509">
+  <text x="1399" y="588" stroke="rgb(255,0,0)" id="sdc10BUSⅡUc" font-size="16" font-family="Dialog" fill="rgb(255,0,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10BUSⅡUc" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="510">
+  <text x="615" y="807" stroke="rgb(0,255,0)" id="sdc10GEN1#P" font-size="16" font-family="Dialog" fill="rgb(0,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN1#P" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="511">
+  <text x="616" y="821" stroke="rgb(255,255,0)" id="sdc10GEN1#Q" font-size="16" font-family="Dialog" fill="rgb(255,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN1#Q" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="512">
+  <text x="615" y="835" stroke="rgb(0,0,255)" id="sdc10GEN1#Ia" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN1#Ia" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="515">
+  <text x="820" y="808" stroke="rgb(0,255,0)" id="sdc10GEN2#P" font-size="16" font-family="Dialog" fill="rgb(0,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN2#P" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="516">
+  <text x="821" y="822" stroke="rgb(255,255,0)" id="sdc10GEN2#Q" font-size="16" font-family="Dialog" fill="rgb(255,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN2#Q" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="517">
+  <text x="820" y="836" stroke="rgb(0,0,255)" id="sdc10GEN2#Ia" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN2#Ia" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="518">
+  <text x="1021" y="808" stroke="rgb(0,255,0)" id="sdc10GEN3#P" font-size="16" font-family="Dialog" fill="rgb(0,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN3#P" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="519">
+  <text x="1022" y="822" stroke="rgb(255,255,0)" id="sdc10GEN3#Q" font-size="16" font-family="Dialog" fill="rgb(255,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN3#Q" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="520">
+  <text x="1022" y="836" stroke="rgb(0,0,255)" id="sdc10GEN3#Ia" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN3#Ia" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="521">
+  <text x="1202" y="804" stroke="rgb(0,255,0)" id="sdc10GEN4#P" font-size="16" font-family="Dialog" fill="rgb(0,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN4#P" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="522">
+  <text x="1203" y="818" stroke="rgb(255,255,0)" id="sdc10GEN4#Q" font-size="16" font-family="Dialog" fill="rgb(255,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN4#Q" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="523">
+  <text x="1202" y="832" stroke="rgb(0,0,255)" id="sdc10GEN4#Ia" font-size="16" font-family="Dialog" fill="rgb(0,0,255)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_sdc10GEN4#Ia" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="807">
+  <text x="212" y="134" stroke="rgb(1,146,115)" id="calsdcsumCOS" font-size="16" font-family="Dialog" fill="rgb(1,146,115)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_calsdcsumCOS" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="809">
+  <text x="149" y="139" stroke="rgb(255,255,0)" id="calsdcsumQ" font-size="16" font-family="Dialog" fill="rgb(255,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_calsdcsumQ" ObjectName="null" />
+     </metadata>
+ </g>
+ <g id="811">
+  <text x="79" y="135" stroke="rgb(0,255,0)" id="calsdcsumP" font-size="16" font-family="Dialog" fill="rgb(0,255,0)" >0.0</text>
+     <metadata>
+       <cge:PSR_Ref ObjectID="_Measurement_A_calsdcsumP" ObjectName="null" />
+     </metadata>
+ </g>
+</g>
+<g id="Text_Layer">
+  <text x="698" y="177" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">151</text>
+  <text x="683" y="224" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">1</text>
+  <text x="684" y="130" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">6</text>
+  <text x="710" y="132" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">617</text>
+  <text x="652" y="179" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">67</text>
+  <text x="710" y="228" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">17</text>
+  <text x="860" y="344" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">112</text>
+  <text x="847" y="294" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">1</text>
+  <text x="908" y="293" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">2</text>
+  <text x="817" y="325" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">17</text>
+  <text x="935" y="325" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">27</text>
+  <text x="597" y="690" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">9101</text>
+  <text x="794" y="695" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">9103</text>
+  <text x="996" y="700" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">9202</text>
+  <text x="1176" y="707" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">9204</text>
+  <text x="698" y="372" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">101</text>
+  <text x="684" y="310" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">1</text>
+  <text x="683" y="424" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">6</text>
+  <text x="654" y="362" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">17</text>
+  <text x="654" y="469" stroke="rgb(255,255,255)" font-size="11" font-family="Times New Roman" fill="rgb(255,255,255)">617</text>
+  <text x="707" y="419" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">67</text>
+  <text x="684" y="576" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">901</text>
+  <text x="684" y="576" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">901</text>
+  <text x="1055" y="575" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">902</text>
+  <text x="716" y="489" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)">1#主变</text>
+  <text x="1088" y="490" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)">2#主变</text>
+  <text x="623" y="518" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">110</text>
+  <text x="623" y="518" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">110</text>
+  <text x="992" y="519" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">120</text>
+  <text x="593" y="820" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">1#</text>
+  <text x="790" y="822" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">2#</text>
+  <text x="991" y="822" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">3#</text>
+  <text x="1172" y="818" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">4#</text>
+  <text x="1069" y="360" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">102</text>
+  <text x="1055" y="298" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">2</text>
+  <text x="1054" y="412" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">6</text>
+  <text x="1025" y="350" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">27</text>
+  <text x="1025" y="447" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">617</text>
+  <text x="1078" y="407" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">67</text>
+  <text x="1070" y="165" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">152</text>
+  <text x="1055" y="212" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">2</text>
+  <text x="1056" y="118" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">6</text>
+  <text x="1082" y="120" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">617</text>
+  <text x="1024" y="167" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">67</text>
+  <text x="1082" y="216" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">27</text>
+ <a xlink:href="wuhai_系统110kV_大桥站.svg">
+  <text x="658" y="64" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)">河</text>
+  <text x="658" y="74" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)">大</text>
+  <text x="658" y="84" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)">线</text>
+ </a>
+  <text x="54" y="136" stroke="rgb(0,0,0)" font-size="16" font-family="Times New Roman" fill="rgb(0,0,0)">P</text>
+  <text x="124" y="134" stroke="rgb(0,0,0)" font-size="16" font-family="Times New Roman" fill="rgb(0,0,0)">Q</text>
+  <text x="189" y="135" stroke="rgb(0,0,0)" font-size="16" font-family="Times New Roman" fill="rgb(0,0,0)">C</text>
+ <a xlink:href="wuhai_系统图_调度-厂站目录.svg">
+  <text x="73" y="88" stroke="rgb(0,0,0)" font-size="27" font-family="宋体" fill="rgb(0,0,0)">黄河水利电厂</text>
+ </a>
+  <text x="324" y="280" stroke="rgb(255,255,255)" font-size="16" font-family="宋体" fill="rgb(255,255,255)">1M</text>
+  <text x="329" y="621" stroke="rgb(255,255,255)" font-size="16" font-family="宋体" fill="rgb(255,255,255)">1M</text>
+  <text x="1020" y="68" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)">备</text>
+  <text x="1020" y="88" stroke="rgb(255,255,255)" font-size="12" font-family="宋体" fill="rgb(255,255,255)">用</text>
+  <text x="1450" y="621" stroke="rgb(255,255,255)" font-size="16" font-family="宋体" fill="rgb(255,255,255)">2M</text>
+  <text x="1435" y="279" stroke="rgb(255,255,255)" font-size="16" font-family="宋体" fill="rgb(255,255,255)">2M</text>
+  <text x="517" y="336" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">119</text>
+  <text x="547" y="313" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">1117</text>
+  <text x="487" y="365" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">1197</text>
+  <text x="485" y="655" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">919</text>
+  <text x="1302" y="342" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">129</text>
+  <text x="1336" y="320" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">1217</text>
+  <text x="1273" y="370" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">1297</text>
+  <text x="1336" y="655" stroke="rgb(255,255,255)" font-size="12" font-family="Times New Roman" fill="rgb(255,255,255)">929</text>
+</g>
+</svg>
