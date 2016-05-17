@@ -1,0 +1,17 @@
+<voltagedefine>
+ <voltage voltagename="kv1000" voltagevalue="1000" id="1" color="stroke:#aa5500;"/>
+ <voltage voltagename="kv750" voltagevalue="787.5" id="2" color="stroke:#aa5500"/>
+ <voltage voltagename="kv500" voltagevalue="525" id="3" color="stroke:#aa5500"/>
+ <voltage voltagename="kv330" voltagevalue="345" id="4" color="stroke:#aa5500"/>
+ <voltage voltagename="kv220" voltagevalue="230" id="5" color="stroke:#c1ff2f"/>
+ <voltage voltagename="kv115" voltagevalue="121" id="6" color="stroke:#ff5500"/>
+ <voltage voltagename="kv63" voltagevalue="66" id="7" color="stroke:#ff5500"/>
+ <voltage voltagename="kv35" voltagevalue="38.5" id="8" color="stroke:#ffff00"/>
+ <voltage voltagename="kv27" voltagevalue="27.5" id="9" color="stroke:#00aa00"/>
+ <voltage voltagename="kv20" voltagevalue="21" id="10" color="stroke:#00aa00"/>
+ <voltage voltagename="kv18" voltagevalue="18.9" id="11" color="stroke:#00aa00"/>
+ <voltage voltagename="kv15" voltagevalue="15.75" id="12" color="stroke:#00aa00"/>
+ <voltage voltagename="kv13" voltagevalue="13.25" id="13" color="stroke:#00aa00"/>
+ <voltage voltagename="kv10" voltagevalue="10.5" id="14" color="stroke:#0055ff"/>
+ <voltage voltagename="kv6" voltagevalue="6.3" id="15" color="stroke:#0055ff"/>
+</voltagedefine>
