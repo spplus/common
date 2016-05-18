@@ -14,4 +14,5 @@
  <voltage voltagename="kv13" voltagevalue="13.25" id="13" color="stroke:#00aa00"/>
  <voltage voltagename="kv10" voltagevalue="10.5" id="14" color="stroke:#0055ff"/>
  <voltage voltagename="kv6" voltagevalue="6.3" id="15" color="stroke:#0055ff"/>
+ <voltage voltagename="kv-1" voltagevalue="6.3" id="15" color="stroke:rgb(93,92,88)"/>
 </voltagedefine>

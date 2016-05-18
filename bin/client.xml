@@ -1,0 +1,6 @@
+<config>
+ <server addr="127.0.0.1" port="45211"/>
+ <ftp addr="192.168.0.1" port="21" />
+ <title name="调控一体化系统" />
+ <svgroot path="F:/work/AM/common/Svg" />
+</config>
