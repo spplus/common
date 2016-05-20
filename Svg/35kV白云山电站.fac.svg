@@ -351,7 +351,7 @@ stroke="rgb(255,255,255)" fill="none" Plane="2" AFMask="32799"/>
   </metadata>
  </g>
  <g id="101002029">
-  <use x="810" y="350" width="40" height="14" transform="rotate(0,810,350) scale(1,1) translate(-19,-9)" xlink:href="#Disconnector:nc_刀闸（右）_0" class="kv-1"/>
+  <use x="810" y="350" width="40" height="14" transform="rotate(0,810,350) scale(1,1) translate(-19,-9)" xlink:href="#Disconnector:nc_刀闸（R）_0" class="kv-1"/>
   <metadata>
    <cge:PSR_Ref ObjectID="-1" ObjectName="-1" Plane="0" AFMask="32895"/>
    <cge:Meas_Ref ObjectID="0-10020"/>
@@ -1094,32 +1094,4 @@ stroke="rgb(255,255,255)" fill="none" Plane="2" AFMask="32799"/>
  <text x="497" y="519" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3011</text>
  <text x="1272" y="511" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3021</text>
  <text x="498" y="672" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">302</text>
- <text x="498" y="732" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3021</text>
- <text x="1272" y="677" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">302</text>
- <text x="1272" y="723" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3021</text>
- <text x="406" y="243" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31403</text>
- <text x="409" y="506" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31401</text>
- <text x="409" y="455" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31402</text>
- <text x="1184" y="502" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31401</text>
- <text x="1184" y="451" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31402</text>
- <text x="125" y="784" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31403</text>
- <text x="214" y="797" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
- <text x="308" y="797" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
- <text x="451" y="856" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">910</text>
- <text x="449" y="797" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
- <text x="915" y="798" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
- <text x="1093" y="798" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
- <text x="1004" y="785" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31403</text>
- <text x="927" y="923" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">#1发电机</text>
- <text x="917" y="857" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">910</text>
- <text x="1331" y="773" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">6.3kVI段母线</text>
- <text x="1009" y="399" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31403</text>
- <text x="1098" y="428" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3511</text>
- <text x="879" y="375" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">131</text>
- <text x="799" y="375" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">1311</text>
- <text x="964" y="375" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">1312</text>
- <text x="1180" y="273" font-size="15" font-width="15" font-height="15" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">31403</text>
- <text x="1271" y="278" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">3113</text>
- <text x="1242" y="135" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)" stroke="rgb(170,255,255)" writing-mode="lr" Plane="0" AFMask="32783">功敦线</text>
-</g>
-</svg>
+ <text x="498" y="732" font-size="20" font-width="20" font-height="20" font-family="SimSun" fill="rgb(0,255,0)"
