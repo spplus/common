@@ -1,11 +1,22 @@
 package com.spplus.buff;
+
+//用户列表基础信息
 message UserBean
 { 
-
     optional bytes userid  = 1;
-    optional bytes username= 2;
-    optional bytes userrole= 3;  
+    optional bytes username = 2;
+	optional bytes userpwd = 3;
+    optional bytes userrole = 4; 
+	optional bytes rolename = 5;
+	optional bytes realname = 6;
 
+}
+
+//用户角色信息
+message UserRoleBean
+{
+	optional bytes userroleid  = 1;
+    optional bytes userrolename = 2;
 }
 
 // 元件状态信息

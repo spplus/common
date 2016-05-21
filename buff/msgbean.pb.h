@@ -36,6 +36,7 @@ void protobuf_AssignDesc_msgbean_2eproto();
 void protobuf_ShutdownFile_msgbean_2eproto();
 
 class UserBean;
+class UserRoleBean;
 class StateBean;
 class StationTypeBean;
 class StationBean;
@@ -120,10 +121,22 @@ class UserBean : public ::google::protobuf::Message {
   inline ::std::string* release_username();
   inline void set_allocated_username(::std::string* username);
 
-  // optional bytes userrole = 3;
+  // optional bytes userpwd = 3;
+  inline bool has_userpwd() const;
+  inline void clear_userpwd();
+  static const int kUserpwdFieldNumber = 3;
+  inline const ::std::string& userpwd() const;
+  inline void set_userpwd(const ::std::string& value);
+  inline void set_userpwd(const char* value);
+  inline void set_userpwd(const void* value, size_t size);
+  inline ::std::string* mutable_userpwd();
+  inline ::std::string* release_userpwd();
+  inline void set_allocated_userpwd(::std::string* userpwd);
+
+  // optional bytes userrole = 4;
   inline bool has_userrole() const;
   inline void clear_userrole();
-  static const int kUserroleFieldNumber = 3;
+  static const int kUserroleFieldNumber = 4;
   inline const ::std::string& userrole() const;
   inline void set_userrole(const ::std::string& value);
   inline void set_userrole(const char* value);
@@ -132,23 +145,56 @@ class UserBean : public ::google::protobuf::Message {
   inline ::std::string* release_userrole();
   inline void set_allocated_userrole(::std::string* userrole);
 
+  // optional bytes rolename = 5;
+  inline bool has_rolename() const;
+  inline void clear_rolename();
+  static const int kRolenameFieldNumber = 5;
+  inline const ::std::string& rolename() const;
+  inline void set_rolename(const ::std::string& value);
+  inline void set_rolename(const char* value);
+  inline void set_rolename(const void* value, size_t size);
+  inline ::std::string* mutable_rolename();
+  inline ::std::string* release_rolename();
+  inline void set_allocated_rolename(::std::string* rolename);
+
+  // optional bytes realname = 6;
+  inline bool has_realname() const;
+  inline void clear_realname();
+  static const int kRealnameFieldNumber = 6;
+  inline const ::std::string& realname() const;
+  inline void set_realname(const ::std::string& value);
+  inline void set_realname(const char* value);
+  inline void set_realname(const void* value, size_t size);
+  inline ::std::string* mutable_realname();
+  inline ::std::string* release_realname();
+  inline void set_allocated_realname(::std::string* realname);
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.UserBean)
  private:
   inline void set_has_userid();
   inline void clear_has_userid();
   inline void set_has_username();
   inline void clear_has_username();
+  inline void set_has_userpwd();
+  inline void clear_has_userpwd();
   inline void set_has_userrole();
   inline void clear_has_userrole();
+  inline void set_has_rolename();
+  inline void clear_has_rolename();
+  inline void set_has_realname();
+  inline void clear_has_realname();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
   ::std::string* userid_;
   ::std::string* username_;
+  ::std::string* userpwd_;
   ::std::string* userrole_;
+  ::std::string* rolename_;
+  ::std::string* realname_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbean_2eproto();
   friend void protobuf_AssignDesc_msgbean_2eproto();
@@ -156,6 +202,108 @@ class UserBean : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static UserBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class UserRoleBean : public ::google::protobuf::Message {
+ public:
+  UserRoleBean();
+  virtual ~UserRoleBean();
+
+  UserRoleBean(const UserRoleBean& from);
+
+  inline UserRoleBean& operator=(const UserRoleBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UserRoleBean& default_instance();
+
+  void Swap(UserRoleBean* other);
+
+  // implements Message ----------------------------------------------
+
+  UserRoleBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const UserRoleBean& from);
+  void MergeFrom(const UserRoleBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes userroleid = 1;
+  inline bool has_userroleid() const;
+  inline void clear_userroleid();
+  static const int kUserroleidFieldNumber = 1;
+  inline const ::std::string& userroleid() const;
+  inline void set_userroleid(const ::std::string& value);
+  inline void set_userroleid(const char* value);
+  inline void set_userroleid(const void* value, size_t size);
+  inline ::std::string* mutable_userroleid();
+  inline ::std::string* release_userroleid();
+  inline void set_allocated_userroleid(::std::string* userroleid);
+
+  // optional bytes userrolename = 2;
+  inline bool has_userrolename() const;
+  inline void clear_userrolename();
+  static const int kUserrolenameFieldNumber = 2;
+  inline const ::std::string& userrolename() const;
+  inline void set_userrolename(const ::std::string& value);
+  inline void set_userrolename(const char* value);
+  inline void set_userrolename(const void* value, size_t size);
+  inline ::std::string* mutable_userrolename();
+  inline ::std::string* release_userrolename();
+  inline void set_allocated_userrolename(::std::string* userrolename);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.UserRoleBean)
+ private:
+  inline void set_has_userroleid();
+  inline void clear_has_userroleid();
+  inline void set_has_userrolename();
+  inline void clear_has_userrolename();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* userroleid_;
+  ::std::string* userrolename_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static UserRoleBean* default_instance_;
 };
 // -------------------------------------------------------------------
 
@@ -683,15 +831,85 @@ inline void UserBean::set_allocated_username(::std::string* username) {
   }
 }
 
-// optional bytes userrole = 3;
-inline bool UserBean::has_userrole() const {
+// optional bytes userpwd = 3;
+inline bool UserBean::has_userpwd() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
-inline void UserBean::set_has_userrole() {
+inline void UserBean::set_has_userpwd() {
   _has_bits_[0] |= 0x00000004u;
 }
-inline void UserBean::clear_has_userrole() {
+inline void UserBean::clear_has_userpwd() {
   _has_bits_[0] &= ~0x00000004u;
+}
+inline void UserBean::clear_userpwd() {
+  if (userpwd_ != &::google::protobuf::internal::kEmptyString) {
+    userpwd_->clear();
+  }
+  clear_has_userpwd();
+}
+inline const ::std::string& UserBean::userpwd() const {
+  return *userpwd_;
+}
+inline void UserBean::set_userpwd(const ::std::string& value) {
+  set_has_userpwd();
+  if (userpwd_ == &::google::protobuf::internal::kEmptyString) {
+    userpwd_ = new ::std::string;
+  }
+  userpwd_->assign(value);
+}
+inline void UserBean::set_userpwd(const char* value) {
+  set_has_userpwd();
+  if (userpwd_ == &::google::protobuf::internal::kEmptyString) {
+    userpwd_ = new ::std::string;
+  }
+  userpwd_->assign(value);
+}
+inline void UserBean::set_userpwd(const void* value, size_t size) {
+  set_has_userpwd();
+  if (userpwd_ == &::google::protobuf::internal::kEmptyString) {
+    userpwd_ = new ::std::string;
+  }
+  userpwd_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* UserBean::mutable_userpwd() {
+  set_has_userpwd();
+  if (userpwd_ == &::google::protobuf::internal::kEmptyString) {
+    userpwd_ = new ::std::string;
+  }
+  return userpwd_;
+}
+inline ::std::string* UserBean::release_userpwd() {
+  clear_has_userpwd();
+  if (userpwd_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = userpwd_;
+    userpwd_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void UserBean::set_allocated_userpwd(::std::string* userpwd) {
+  if (userpwd_ != &::google::protobuf::internal::kEmptyString) {
+    delete userpwd_;
+  }
+  if (userpwd) {
+    set_has_userpwd();
+    userpwd_ = userpwd;
+  } else {
+    clear_has_userpwd();
+    userpwd_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes userrole = 4;
+inline bool UserBean::has_userrole() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void UserBean::set_has_userrole() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void UserBean::clear_has_userrole() {
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline void UserBean::clear_userrole() {
   if (userrole_ != &::google::protobuf::internal::kEmptyString) {
@@ -750,6 +968,290 @@ inline void UserBean::set_allocated_userrole(::std::string* userrole) {
   } else {
     clear_has_userrole();
     userrole_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes rolename = 5;
+inline bool UserBean::has_rolename() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void UserBean::set_has_rolename() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void UserBean::clear_has_rolename() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void UserBean::clear_rolename() {
+  if (rolename_ != &::google::protobuf::internal::kEmptyString) {
+    rolename_->clear();
+  }
+  clear_has_rolename();
+}
+inline const ::std::string& UserBean::rolename() const {
+  return *rolename_;
+}
+inline void UserBean::set_rolename(const ::std::string& value) {
+  set_has_rolename();
+  if (rolename_ == &::google::protobuf::internal::kEmptyString) {
+    rolename_ = new ::std::string;
+  }
+  rolename_->assign(value);
+}
+inline void UserBean::set_rolename(const char* value) {
+  set_has_rolename();
+  if (rolename_ == &::google::protobuf::internal::kEmptyString) {
+    rolename_ = new ::std::string;
+  }
+  rolename_->assign(value);
+}
+inline void UserBean::set_rolename(const void* value, size_t size) {
+  set_has_rolename();
+  if (rolename_ == &::google::protobuf::internal::kEmptyString) {
+    rolename_ = new ::std::string;
+  }
+  rolename_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* UserBean::mutable_rolename() {
+  set_has_rolename();
+  if (rolename_ == &::google::protobuf::internal::kEmptyString) {
+    rolename_ = new ::std::string;
+  }
+  return rolename_;
+}
+inline ::std::string* UserBean::release_rolename() {
+  clear_has_rolename();
+  if (rolename_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = rolename_;
+    rolename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void UserBean::set_allocated_rolename(::std::string* rolename) {
+  if (rolename_ != &::google::protobuf::internal::kEmptyString) {
+    delete rolename_;
+  }
+  if (rolename) {
+    set_has_rolename();
+    rolename_ = rolename;
+  } else {
+    clear_has_rolename();
+    rolename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes realname = 6;
+inline bool UserBean::has_realname() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void UserBean::set_has_realname() {
+  _has_bits_[0] |= 0x00000020u;
+}
+inline void UserBean::clear_has_realname() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline void UserBean::clear_realname() {
+  if (realname_ != &::google::protobuf::internal::kEmptyString) {
+    realname_->clear();
+  }
+  clear_has_realname();
+}
+inline const ::std::string& UserBean::realname() const {
+  return *realname_;
+}
+inline void UserBean::set_realname(const ::std::string& value) {
+  set_has_realname();
+  if (realname_ == &::google::protobuf::internal::kEmptyString) {
+    realname_ = new ::std::string;
+  }
+  realname_->assign(value);
+}
+inline void UserBean::set_realname(const char* value) {
+  set_has_realname();
+  if (realname_ == &::google::protobuf::internal::kEmptyString) {
+    realname_ = new ::std::string;
+  }
+  realname_->assign(value);
+}
+inline void UserBean::set_realname(const void* value, size_t size) {
+  set_has_realname();
+  if (realname_ == &::google::protobuf::internal::kEmptyString) {
+    realname_ = new ::std::string;
+  }
+  realname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* UserBean::mutable_realname() {
+  set_has_realname();
+  if (realname_ == &::google::protobuf::internal::kEmptyString) {
+    realname_ = new ::std::string;
+  }
+  return realname_;
+}
+inline ::std::string* UserBean::release_realname() {
+  clear_has_realname();
+  if (realname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = realname_;
+    realname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void UserBean::set_allocated_realname(::std::string* realname) {
+  if (realname_ != &::google::protobuf::internal::kEmptyString) {
+    delete realname_;
+  }
+  if (realname) {
+    set_has_realname();
+    realname_ = realname;
+  } else {
+    clear_has_realname();
+    realname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// UserRoleBean
+
+// optional bytes userroleid = 1;
+inline bool UserRoleBean::has_userroleid() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void UserRoleBean::set_has_userroleid() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void UserRoleBean::clear_has_userroleid() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void UserRoleBean::clear_userroleid() {
+  if (userroleid_ != &::google::protobuf::internal::kEmptyString) {
+    userroleid_->clear();
+  }
+  clear_has_userroleid();
+}
+inline const ::std::string& UserRoleBean::userroleid() const {
+  return *userroleid_;
+}
+inline void UserRoleBean::set_userroleid(const ::std::string& value) {
+  set_has_userroleid();
+  if (userroleid_ == &::google::protobuf::internal::kEmptyString) {
+    userroleid_ = new ::std::string;
+  }
+  userroleid_->assign(value);
+}
+inline void UserRoleBean::set_userroleid(const char* value) {
+  set_has_userroleid();
+  if (userroleid_ == &::google::protobuf::internal::kEmptyString) {
+    userroleid_ = new ::std::string;
+  }
+  userroleid_->assign(value);
+}
+inline void UserRoleBean::set_userroleid(const void* value, size_t size) {
+  set_has_userroleid();
+  if (userroleid_ == &::google::protobuf::internal::kEmptyString) {
+    userroleid_ = new ::std::string;
+  }
+  userroleid_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* UserRoleBean::mutable_userroleid() {
+  set_has_userroleid();
+  if (userroleid_ == &::google::protobuf::internal::kEmptyString) {
+    userroleid_ = new ::std::string;
+  }
+  return userroleid_;
+}
+inline ::std::string* UserRoleBean::release_userroleid() {
+  clear_has_userroleid();
+  if (userroleid_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = userroleid_;
+    userroleid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void UserRoleBean::set_allocated_userroleid(::std::string* userroleid) {
+  if (userroleid_ != &::google::protobuf::internal::kEmptyString) {
+    delete userroleid_;
+  }
+  if (userroleid) {
+    set_has_userroleid();
+    userroleid_ = userroleid;
+  } else {
+    clear_has_userroleid();
+    userroleid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes userrolename = 2;
+inline bool UserRoleBean::has_userrolename() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void UserRoleBean::set_has_userrolename() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void UserRoleBean::clear_has_userrolename() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void UserRoleBean::clear_userrolename() {
+  if (userrolename_ != &::google::protobuf::internal::kEmptyString) {
+    userrolename_->clear();
+  }
+  clear_has_userrolename();
+}
+inline const ::std::string& UserRoleBean::userrolename() const {
+  return *userrolename_;
+}
+inline void UserRoleBean::set_userrolename(const ::std::string& value) {
+  set_has_userrolename();
+  if (userrolename_ == &::google::protobuf::internal::kEmptyString) {
+    userrolename_ = new ::std::string;
+  }
+  userrolename_->assign(value);
+}
+inline void UserRoleBean::set_userrolename(const char* value) {
+  set_has_userrolename();
+  if (userrolename_ == &::google::protobuf::internal::kEmptyString) {
+    userrolename_ = new ::std::string;
+  }
+  userrolename_->assign(value);
+}
+inline void UserRoleBean::set_userrolename(const void* value, size_t size) {
+  set_has_userrolename();
+  if (userrolename_ == &::google::protobuf::internal::kEmptyString) {
+    userrolename_ = new ::std::string;
+  }
+  userrolename_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* UserRoleBean::mutable_userrolename() {
+  set_has_userrolename();
+  if (userrolename_ == &::google::protobuf::internal::kEmptyString) {
+    userrolename_ = new ::std::string;
+  }
+  return userrolename_;
+}
+inline ::std::string* UserRoleBean::release_userrolename() {
+  clear_has_userrolename();
+  if (userrolename_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = userrolename_;
+    userrolename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void UserRoleBean::set_allocated_userrolename(::std::string* userrolename) {
+  if (userrolename_ != &::google::protobuf::internal::kEmptyString) {
+    delete userrolename_;
+  }
+  if (userrolename) {
+    set_has_userrolename();
+    userrolename_ = userrolename;
+  } else {
+    clear_has_userrolename();
+    userrolename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
 }
 

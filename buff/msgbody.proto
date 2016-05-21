@@ -1,5 +1,7 @@
 import "msgbean.proto";
 package com.spplus.buff;
+
+//用户登录管理
 message UserLoginMsg
 { 
 	//请求体定义
@@ -16,6 +18,7 @@ message UserLoginMsg
   
 }
 
+//用户列表管理
 message UserListMsg
 { 
 	//请求体定义
@@ -32,6 +35,40 @@ message UserListMsg
   	optional Response 	response 	= 2;
   
 }
+
+//用户角色列表
+message UserRoleListMsg
+{
+	//请求体定义
+	message Request {
+		optional bytes	reqdate	= 1;		// 请求日期，可以不填					
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32		rescode		= 1;			// 0 成功，其他失败
+		repeated UserRoleBean	userrolelist	= 2;	// 用户角色列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+//用户操作管理
+message UserMgrMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	mgrsql	= 1;		//用户管理中增加删除修改组合的sql语句		
+  	}
+  	//响应体定义
+	message Response {
+		optional uint32	rescode		= 1;	// 0 成功，其他失败
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}
+
 
 // 元件状态消息
 message DevStateMsg

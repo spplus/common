@@ -17,7 +17,23 @@
 #define				CMD_DISCONNECTED			1001
 
 // 用户登录
-#define				CMD_USER_LONGIN					2000
+#define				CMD_USER_LONGIN				1002
+
+// 用户登录管理
+#define				CMD_USER_MANAGER			1003
+
+// 用户角色
+#define				CMD_USER_ROLE				1004
+
+// 用户添加操作
+#define				CMD_USER_ADD				1005
+
+// 用户删除操作
+#define				CMD_USER_DEL				1006
+
+// 用户修改操作
+#define				CMD_USER_MODIFY				1007
+
 
 // 获取设备状态
 #define				CMD_DEV_STATE					2001

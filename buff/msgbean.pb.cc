@@ -25,6 +25,9 @@ namespace {
 const ::google::protobuf::Descriptor* UserBean_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   UserBean_reflection_ = NULL;
+const ::google::protobuf::Descriptor* UserRoleBean_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UserRoleBean_reflection_ = NULL;
 const ::google::protobuf::Descriptor* StateBean_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   StateBean_reflection_ = NULL;
@@ -45,10 +48,13 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       "msgbean.proto");
   GOOGLE_CHECK(file != NULL);
   UserBean_descriptor_ = file->message_type(0);
-  static const int UserBean_offsets_[3] = {
+  static const int UserBean_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserBean, userid_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserBean, username_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserBean, userpwd_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserBean, userrole_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserBean, rolename_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserBean, realname_),
   };
   UserBean_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -61,7 +67,23 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(UserBean));
-  StateBean_descriptor_ = file->message_type(1);
+  UserRoleBean_descriptor_ = file->message_type(1);
+  static const int UserRoleBean_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserRoleBean, userroleid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserRoleBean, userrolename_),
+  };
+  UserRoleBean_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      UserRoleBean_descriptor_,
+      UserRoleBean::default_instance_,
+      UserRoleBean_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserRoleBean, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserRoleBean, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(UserRoleBean));
+  StateBean_descriptor_ = file->message_type(2);
   static const int StateBean_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, cimid_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, state_),
@@ -79,7 +101,7 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(StateBean));
-  StationTypeBean_descriptor_ = file->message_type(2);
+  StationTypeBean_descriptor_ = file->message_type(3);
   static const int StationTypeBean_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationTypeBean, id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationTypeBean, name_),
@@ -96,7 +118,7 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(StationTypeBean));
-  StationBean_descriptor_ = file->message_type(3);
+  StationBean_descriptor_ = file->message_type(4);
   static const int StationBean_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationBean, id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationBean, categoryid_),
@@ -131,6 +153,8 @@ void protobuf_RegisterTypes(const ::std::string&) {
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     UserBean_descriptor_, &UserBean::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    UserRoleBean_descriptor_, &UserRoleBean::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     StateBean_descriptor_, &StateBean::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     StationTypeBean_descriptor_, &StationTypeBean::default_instance());
@@ -143,6 +167,8 @@ void protobuf_RegisterTypes(const ::std::string&) {
 void protobuf_ShutdownFile_msgbean_2eproto() {
   delete UserBean::default_instance_;
   delete UserBean_reflection_;
+  delete UserRoleBean::default_instance_;
+  delete UserRoleBean_reflection_;
   delete StateBean::default_instance_;
   delete StateBean_reflection_;
   delete StationTypeBean::default_instance_;
@@ -158,23 +184,28 @@ void protobuf_AddDesc_msgbean_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\rmsgbean.proto\022\017com.spplus.buff\">\n\010User"
-    "Bean\022\016\n\006userid\030\001 \001(\014\022\020\n\010username\030\002 \001(\014\022\020"
-    "\n\010userrole\030\003 \001(\014\"N\n\tStateBean\022\r\n\005cimId\030\001"
-    " \001(\014\022\r\n\005state\030\002 \001(\r\022\017\n\007isBoard\030\003 \001(\r\022\022\n\n"
-    "isElectric\030\004 \001(\r\"^\n\017StationTypeBean\022\n\n\002I"
-    "d\030\001 \001(\r\022\014\n\004Name\030\002 \001(\014\0221\n\013StationList\030\003 \003"
-    "(\0132\034.com.spplus.buff.StationBean\"m\n\013Stat"
-    "ionBean\022\n\n\002Id\030\001 \001(\r\022\022\n\nCategoryId\030\002 \001(\r\022"
-    "\014\n\004Name\030\003 \001(\014\022\r\n\005CimId\030\004 \001(\014\022\023\n\013CurrentN"
-    "ame\030\005 \001(\014\022\014\n\004Path\030\006 \001(\014", 383);
+    "\n\rmsgbean.proto\022\017com.spplus.buff\"s\n\010User"
+    "Bean\022\016\n\006userid\030\001 \001(\014\022\020\n\010username\030\002 \001(\014\022\017"
+    "\n\007userpwd\030\003 \001(\014\022\020\n\010userrole\030\004 \001(\014\022\020\n\010rol"
+    "ename\030\005 \001(\014\022\020\n\010realname\030\006 \001(\014\"8\n\014UserRol"
+    "eBean\022\022\n\nuserroleid\030\001 \001(\014\022\024\n\014userrolenam"
+    "e\030\002 \001(\014\"N\n\tStateBean\022\r\n\005cimId\030\001 \001(\014\022\r\n\005s"
+    "tate\030\002 \001(\r\022\017\n\007isBoard\030\003 \001(\r\022\022\n\nisElectri"
+    "c\030\004 \001(\r\"^\n\017StationTypeBean\022\n\n\002Id\030\001 \001(\r\022\014"
+    "\n\004Name\030\002 \001(\014\0221\n\013StationList\030\003 \003(\0132\034.com."
+    "spplus.buff.StationBean\"m\n\013StationBean\022\n"
+    "\n\002Id\030\001 \001(\r\022\022\n\nCategoryId\030\002 \001(\r\022\014\n\004Name\030\003"
+    " \001(\014\022\r\n\005CimId\030\004 \001(\014\022\023\n\013CurrentName\030\005 \001(\014"
+    "\022\014\n\004Path\030\006 \001(\014", 494);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbean.proto", &protobuf_RegisterTypes);
   UserBean::default_instance_ = new UserBean();
+  UserRoleBean::default_instance_ = new UserRoleBean();
   StateBean::default_instance_ = new StateBean();
   StationTypeBean::default_instance_ = new StationTypeBean();
   StationBean::default_instance_ = new StationBean();
   UserBean::default_instance_->InitAsDefaultInstance();
+  UserRoleBean::default_instance_->InitAsDefaultInstance();
   StateBean::default_instance_->InitAsDefaultInstance();
   StationTypeBean::default_instance_->InitAsDefaultInstance();
   StationBean::default_instance_->InitAsDefaultInstance();
@@ -193,7 +224,10 @@ struct StaticDescriptorInitializer_msgbean_2eproto {
 #ifndef _MSC_VER
 const int UserBean::kUseridFieldNumber;
 const int UserBean::kUsernameFieldNumber;
+const int UserBean::kUserpwdFieldNumber;
 const int UserBean::kUserroleFieldNumber;
+const int UserBean::kRolenameFieldNumber;
+const int UserBean::kRealnameFieldNumber;
 #endif  // !_MSC_VER
 
 UserBean::UserBean()
@@ -214,7 +248,10 @@ void UserBean::SharedCtor() {
   _cached_size_ = 0;
   userid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   username_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  userpwd_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   userrole_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  rolename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  realname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -229,8 +266,17 @@ void UserBean::SharedDtor() {
   if (username_ != &::google::protobuf::internal::kEmptyString) {
     delete username_;
   }
+  if (userpwd_ != &::google::protobuf::internal::kEmptyString) {
+    delete userpwd_;
+  }
   if (userrole_ != &::google::protobuf::internal::kEmptyString) {
     delete userrole_;
+  }
+  if (rolename_ != &::google::protobuf::internal::kEmptyString) {
+    delete rolename_;
+  }
+  if (realname_ != &::google::protobuf::internal::kEmptyString) {
+    delete realname_;
   }
   if (this != default_instance_) {
   }
@@ -269,9 +315,24 @@ void UserBean::Clear() {
         username_->clear();
       }
     }
+    if (has_userpwd()) {
+      if (userpwd_ != &::google::protobuf::internal::kEmptyString) {
+        userpwd_->clear();
+      }
+    }
     if (has_userrole()) {
       if (userrole_ != &::google::protobuf::internal::kEmptyString) {
         userrole_->clear();
+      }
+    }
+    if (has_rolename()) {
+      if (rolename_ != &::google::protobuf::internal::kEmptyString) {
+        rolename_->clear();
+      }
+    }
+    if (has_realname()) {
+      if (realname_ != &::google::protobuf::internal::kEmptyString) {
+        realname_->clear();
       }
     }
   }
@@ -308,17 +369,59 @@ bool UserBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(26)) goto parse_userrole;
+        if (input->ExpectTag(26)) goto parse_userpwd;
         break;
       }
 
-      // optional bytes userrole = 3;
+      // optional bytes userpwd = 3;
       case 3: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_userpwd:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_userpwd()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(34)) goto parse_userrole;
+        break;
+      }
+
+      // optional bytes userrole = 4;
+      case 4: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_userrole:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_userrole()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(42)) goto parse_rolename;
+        break;
+      }
+
+      // optional bytes rolename = 5;
+      case 5: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_rolename:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_rolename()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(50)) goto parse_realname;
+        break;
+      }
+
+      // optional bytes realname = 6;
+      case 6: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_realname:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_realname()));
         } else {
           goto handle_uninterpreted;
         }
@@ -356,10 +459,28 @@ void UserBean::SerializeWithCachedSizes(
       2, this->username(), output);
   }
 
-  // optional bytes userrole = 3;
+  // optional bytes userpwd = 3;
+  if (has_userpwd()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      3, this->userpwd(), output);
+  }
+
+  // optional bytes userrole = 4;
   if (has_userrole()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytes(
-      3, this->userrole(), output);
+      4, this->userrole(), output);
+  }
+
+  // optional bytes rolename = 5;
+  if (has_rolename()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      5, this->rolename(), output);
+  }
+
+  // optional bytes realname = 6;
+  if (has_realname()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      6, this->realname(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -384,11 +505,32 @@ void UserBean::SerializeWithCachedSizes(
         2, this->username(), target);
   }
 
-  // optional bytes userrole = 3;
+  // optional bytes userpwd = 3;
+  if (has_userpwd()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        3, this->userpwd(), target);
+  }
+
+  // optional bytes userrole = 4;
   if (has_userrole()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        3, this->userrole(), target);
+        4, this->userrole(), target);
+  }
+
+  // optional bytes rolename = 5;
+  if (has_rolename()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        5, this->rolename(), target);
+  }
+
+  // optional bytes realname = 6;
+  if (has_realname()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        6, this->realname(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -416,11 +558,32 @@ int UserBean::ByteSize() const {
           this->username());
     }
 
-    // optional bytes userrole = 3;
+    // optional bytes userpwd = 3;
+    if (has_userpwd()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->userpwd());
+    }
+
+    // optional bytes userrole = 4;
     if (has_userrole()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->userrole());
+    }
+
+    // optional bytes rolename = 5;
+    if (has_rolename()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->rolename());
+    }
+
+    // optional bytes realname = 6;
+    if (has_realname()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->realname());
     }
 
   }
@@ -456,8 +619,17 @@ void UserBean::MergeFrom(const UserBean& from) {
     if (from.has_username()) {
       set_username(from.username());
     }
+    if (from.has_userpwd()) {
+      set_userpwd(from.userpwd());
+    }
     if (from.has_userrole()) {
       set_userrole(from.userrole());
+    }
+    if (from.has_rolename()) {
+      set_rolename(from.rolename());
+    }
+    if (from.has_realname()) {
+      set_realname(from.realname());
     }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
@@ -484,7 +656,10 @@ void UserBean::Swap(UserBean* other) {
   if (other != this) {
     std::swap(userid_, other->userid_);
     std::swap(username_, other->username_);
+    std::swap(userpwd_, other->userpwd_);
     std::swap(userrole_, other->userrole_);
+    std::swap(rolename_, other->rolename_);
+    std::swap(realname_, other->realname_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);
@@ -496,6 +671,270 @@ void UserBean::Swap(UserBean* other) {
   ::google::protobuf::Metadata metadata;
   metadata.descriptor = UserBean_descriptor_;
   metadata.reflection = UserBean_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int UserRoleBean::kUserroleidFieldNumber;
+const int UserRoleBean::kUserrolenameFieldNumber;
+#endif  // !_MSC_VER
+
+UserRoleBean::UserRoleBean()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void UserRoleBean::InitAsDefaultInstance() {
+}
+
+UserRoleBean::UserRoleBean(const UserRoleBean& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void UserRoleBean::SharedCtor() {
+  _cached_size_ = 0;
+  userroleid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  userrolename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+UserRoleBean::~UserRoleBean() {
+  SharedDtor();
+}
+
+void UserRoleBean::SharedDtor() {
+  if (userroleid_ != &::google::protobuf::internal::kEmptyString) {
+    delete userroleid_;
+  }
+  if (userrolename_ != &::google::protobuf::internal::kEmptyString) {
+    delete userrolename_;
+  }
+  if (this != default_instance_) {
+  }
+}
+
+void UserRoleBean::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* UserRoleBean::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return UserRoleBean_descriptor_;
+}
+
+const UserRoleBean& UserRoleBean::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbean_2eproto();
+  return *default_instance_;
+}
+
+UserRoleBean* UserRoleBean::default_instance_ = NULL;
+
+UserRoleBean* UserRoleBean::New() const {
+  return new UserRoleBean;
+}
+
+void UserRoleBean::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (has_userroleid()) {
+      if (userroleid_ != &::google::protobuf::internal::kEmptyString) {
+        userroleid_->clear();
+      }
+    }
+    if (has_userrolename()) {
+      if (userrolename_ != &::google::protobuf::internal::kEmptyString) {
+        userrolename_->clear();
+      }
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool UserRoleBean::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional bytes userroleid = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_userroleid()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_userrolename;
+        break;
+      }
+
+      // optional bytes userrolename = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_userrolename:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_userrolename()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void UserRoleBean::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional bytes userroleid = 1;
+  if (has_userroleid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      1, this->userroleid(), output);
+  }
+
+  // optional bytes userrolename = 2;
+  if (has_userrolename()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      2, this->userrolename(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* UserRoleBean::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional bytes userroleid = 1;
+  if (has_userroleid()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        1, this->userroleid(), target);
+  }
+
+  // optional bytes userrolename = 2;
+  if (has_userrolename()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        2, this->userrolename(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int UserRoleBean::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional bytes userroleid = 1;
+    if (has_userroleid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->userroleid());
+    }
+
+    // optional bytes userrolename = 2;
+    if (has_userrolename()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->userrolename());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void UserRoleBean::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const UserRoleBean* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const UserRoleBean*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void UserRoleBean::MergeFrom(const UserRoleBean& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_userroleid()) {
+      set_userroleid(from.userroleid());
+    }
+    if (from.has_userrolename()) {
+      set_userrolename(from.userrolename());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void UserRoleBean::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void UserRoleBean::CopyFrom(const UserRoleBean& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UserRoleBean::IsInitialized() const {
+
+  return true;
+}
+
+void UserRoleBean::Swap(UserRoleBean* other) {
+  if (other != this) {
+    std::swap(userroleid_, other->userroleid_);
+    std::swap(userrolename_, other->userrolename_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata UserRoleBean::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UserRoleBean_descriptor_;
+  metadata.reflection = UserRoleBean_reflection_;
   return metadata;
 }
 

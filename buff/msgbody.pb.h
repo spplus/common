@@ -42,6 +42,12 @@ class UserLoginMsg_Response;
 class UserListMsg;
 class UserListMsg_Request;
 class UserListMsg_Response;
+class UserRoleListMsg;
+class UserRoleListMsg_Request;
+class UserRoleListMsg_Response;
+class UserMgrMsg;
+class UserMgrMsg_Request;
+class UserMgrMsg_Response;
 class DevStateMsg;
 class DevStateMsg_Request;
 class DevStateMsg_Response;
@@ -615,6 +621,555 @@ class UserListMsg : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static UserListMsg* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class UserRoleListMsg_Request : public ::google::protobuf::Message {
+ public:
+  UserRoleListMsg_Request();
+  virtual ~UserRoleListMsg_Request();
+
+  UserRoleListMsg_Request(const UserRoleListMsg_Request& from);
+
+  inline UserRoleListMsg_Request& operator=(const UserRoleListMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UserRoleListMsg_Request& default_instance();
+
+  void Swap(UserRoleListMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  UserRoleListMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const UserRoleListMsg_Request& from);
+  void MergeFrom(const UserRoleListMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes reqdate = 1;
+  inline bool has_reqdate() const;
+  inline void clear_reqdate();
+  static const int kReqdateFieldNumber = 1;
+  inline const ::std::string& reqdate() const;
+  inline void set_reqdate(const ::std::string& value);
+  inline void set_reqdate(const char* value);
+  inline void set_reqdate(const void* value, size_t size);
+  inline ::std::string* mutable_reqdate();
+  inline ::std::string* release_reqdate();
+  inline void set_allocated_reqdate(::std::string* reqdate);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.UserRoleListMsg.Request)
+ private:
+  inline void set_has_reqdate();
+  inline void clear_has_reqdate();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* reqdate_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static UserRoleListMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class UserRoleListMsg_Response : public ::google::protobuf::Message {
+ public:
+  UserRoleListMsg_Response();
+  virtual ~UserRoleListMsg_Response();
+
+  UserRoleListMsg_Response(const UserRoleListMsg_Response& from);
+
+  inline UserRoleListMsg_Response& operator=(const UserRoleListMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UserRoleListMsg_Response& default_instance();
+
+  void Swap(UserRoleListMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  UserRoleListMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const UserRoleListMsg_Response& from);
+  void MergeFrom(const UserRoleListMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 rescode = 1;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 1;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // repeated .com.spplus.buff.UserRoleBean userrolelist = 2;
+  inline int userrolelist_size() const;
+  inline void clear_userrolelist();
+  static const int kUserrolelistFieldNumber = 2;
+  inline const ::com::spplus::buff::UserRoleBean& userrolelist(int index) const;
+  inline ::com::spplus::buff::UserRoleBean* mutable_userrolelist(int index);
+  inline ::com::spplus::buff::UserRoleBean* add_userrolelist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::UserRoleBean >&
+      userrolelist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::UserRoleBean >*
+      mutable_userrolelist();
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.UserRoleListMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::UserRoleBean > userrolelist_;
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static UserRoleListMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class UserRoleListMsg : public ::google::protobuf::Message {
+ public:
+  UserRoleListMsg();
+  virtual ~UserRoleListMsg();
+
+  UserRoleListMsg(const UserRoleListMsg& from);
+
+  inline UserRoleListMsg& operator=(const UserRoleListMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UserRoleListMsg& default_instance();
+
+  void Swap(UserRoleListMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  UserRoleListMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const UserRoleListMsg& from);
+  void MergeFrom(const UserRoleListMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef UserRoleListMsg_Request Request;
+  typedef UserRoleListMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.UserRoleListMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::UserRoleListMsg_Request& request() const;
+  inline ::com::spplus::buff::UserRoleListMsg_Request* mutable_request();
+  inline ::com::spplus::buff::UserRoleListMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::UserRoleListMsg_Request* request);
+
+  // optional .com.spplus.buff.UserRoleListMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::UserRoleListMsg_Response& response() const;
+  inline ::com::spplus::buff::UserRoleListMsg_Response* mutable_response();
+  inline ::com::spplus::buff::UserRoleListMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::UserRoleListMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.UserRoleListMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::UserRoleListMsg_Request* request_;
+  ::com::spplus::buff::UserRoleListMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static UserRoleListMsg* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class UserMgrMsg_Request : public ::google::protobuf::Message {
+ public:
+  UserMgrMsg_Request();
+  virtual ~UserMgrMsg_Request();
+
+  UserMgrMsg_Request(const UserMgrMsg_Request& from);
+
+  inline UserMgrMsg_Request& operator=(const UserMgrMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UserMgrMsg_Request& default_instance();
+
+  void Swap(UserMgrMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  UserMgrMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const UserMgrMsg_Request& from);
+  void MergeFrom(const UserMgrMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes mgrsql = 1;
+  inline bool has_mgrsql() const;
+  inline void clear_mgrsql();
+  static const int kMgrsqlFieldNumber = 1;
+  inline const ::std::string& mgrsql() const;
+  inline void set_mgrsql(const ::std::string& value);
+  inline void set_mgrsql(const char* value);
+  inline void set_mgrsql(const void* value, size_t size);
+  inline ::std::string* mutable_mgrsql();
+  inline ::std::string* release_mgrsql();
+  inline void set_allocated_mgrsql(::std::string* mgrsql);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.UserMgrMsg.Request)
+ private:
+  inline void set_has_mgrsql();
+  inline void clear_has_mgrsql();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* mgrsql_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static UserMgrMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class UserMgrMsg_Response : public ::google::protobuf::Message {
+ public:
+  UserMgrMsg_Response();
+  virtual ~UserMgrMsg_Response();
+
+  UserMgrMsg_Response(const UserMgrMsg_Response& from);
+
+  inline UserMgrMsg_Response& operator=(const UserMgrMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UserMgrMsg_Response& default_instance();
+
+  void Swap(UserMgrMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  UserMgrMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const UserMgrMsg_Response& from);
+  void MergeFrom(const UserMgrMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 rescode = 1;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 1;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.UserMgrMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static UserMgrMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class UserMgrMsg : public ::google::protobuf::Message {
+ public:
+  UserMgrMsg();
+  virtual ~UserMgrMsg();
+
+  UserMgrMsg(const UserMgrMsg& from);
+
+  inline UserMgrMsg& operator=(const UserMgrMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UserMgrMsg& default_instance();
+
+  void Swap(UserMgrMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  UserMgrMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const UserMgrMsg& from);
+  void MergeFrom(const UserMgrMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef UserMgrMsg_Request Request;
+  typedef UserMgrMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.UserMgrMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::UserMgrMsg_Request& request() const;
+  inline ::com::spplus::buff::UserMgrMsg_Request* mutable_request();
+  inline ::com::spplus::buff::UserMgrMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::UserMgrMsg_Request* request);
+
+  // optional .com.spplus.buff.UserMgrMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::UserMgrMsg_Response& response() const;
+  inline ::com::spplus::buff::UserMgrMsg_Response* mutable_response();
+  inline ::com::spplus::buff::UserMgrMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::UserMgrMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.UserMgrMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::UserMgrMsg_Request* request_;
+  ::com::spplus::buff::UserMgrMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static UserMgrMsg* default_instance_;
 };
 // -------------------------------------------------------------------
 
@@ -1903,6 +2458,391 @@ inline ::com::spplus::buff::UserListMsg_Response* UserListMsg::release_response(
   return temp;
 }
 inline void UserListMsg::set_allocated_response(::com::spplus::buff::UserListMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
+// UserRoleListMsg_Request
+
+// optional bytes reqdate = 1;
+inline bool UserRoleListMsg_Request::has_reqdate() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void UserRoleListMsg_Request::set_has_reqdate() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void UserRoleListMsg_Request::clear_has_reqdate() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void UserRoleListMsg_Request::clear_reqdate() {
+  if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
+    reqdate_->clear();
+  }
+  clear_has_reqdate();
+}
+inline const ::std::string& UserRoleListMsg_Request::reqdate() const {
+  return *reqdate_;
+}
+inline void UserRoleListMsg_Request::set_reqdate(const ::std::string& value) {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  reqdate_->assign(value);
+}
+inline void UserRoleListMsg_Request::set_reqdate(const char* value) {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  reqdate_->assign(value);
+}
+inline void UserRoleListMsg_Request::set_reqdate(const void* value, size_t size) {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  reqdate_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* UserRoleListMsg_Request::mutable_reqdate() {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  return reqdate_;
+}
+inline ::std::string* UserRoleListMsg_Request::release_reqdate() {
+  clear_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = reqdate_;
+    reqdate_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void UserRoleListMsg_Request::set_allocated_reqdate(::std::string* reqdate) {
+  if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
+    delete reqdate_;
+  }
+  if (reqdate) {
+    set_has_reqdate();
+    reqdate_ = reqdate;
+  } else {
+    clear_has_reqdate();
+    reqdate_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// UserRoleListMsg_Response
+
+// optional uint32 rescode = 1;
+inline bool UserRoleListMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void UserRoleListMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void UserRoleListMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void UserRoleListMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 UserRoleListMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void UserRoleListMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// repeated .com.spplus.buff.UserRoleBean userrolelist = 2;
+inline int UserRoleListMsg_Response::userrolelist_size() const {
+  return userrolelist_.size();
+}
+inline void UserRoleListMsg_Response::clear_userrolelist() {
+  userrolelist_.Clear();
+}
+inline const ::com::spplus::buff::UserRoleBean& UserRoleListMsg_Response::userrolelist(int index) const {
+  return userrolelist_.Get(index);
+}
+inline ::com::spplus::buff::UserRoleBean* UserRoleListMsg_Response::mutable_userrolelist(int index) {
+  return userrolelist_.Mutable(index);
+}
+inline ::com::spplus::buff::UserRoleBean* UserRoleListMsg_Response::add_userrolelist() {
+  return userrolelist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::UserRoleBean >&
+UserRoleListMsg_Response::userrolelist() const {
+  return userrolelist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::UserRoleBean >*
+UserRoleListMsg_Response::mutable_userrolelist() {
+  return &userrolelist_;
+}
+
+// -------------------------------------------------------------------
+
+// UserRoleListMsg
+
+// optional .com.spplus.buff.UserRoleListMsg.Request request = 1;
+inline bool UserRoleListMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void UserRoleListMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void UserRoleListMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void UserRoleListMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::UserRoleListMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::UserRoleListMsg_Request& UserRoleListMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::UserRoleListMsg_Request* UserRoleListMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::UserRoleListMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::UserRoleListMsg_Request* UserRoleListMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::UserRoleListMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void UserRoleListMsg::set_allocated_request(::com::spplus::buff::UserRoleListMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.UserRoleListMsg.Response response = 2;
+inline bool UserRoleListMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void UserRoleListMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void UserRoleListMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void UserRoleListMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::UserRoleListMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::UserRoleListMsg_Response& UserRoleListMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::UserRoleListMsg_Response* UserRoleListMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::UserRoleListMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::UserRoleListMsg_Response* UserRoleListMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::UserRoleListMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void UserRoleListMsg::set_allocated_response(::com::spplus::buff::UserRoleListMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
+// UserMgrMsg_Request
+
+// optional bytes mgrsql = 1;
+inline bool UserMgrMsg_Request::has_mgrsql() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void UserMgrMsg_Request::set_has_mgrsql() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void UserMgrMsg_Request::clear_has_mgrsql() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void UserMgrMsg_Request::clear_mgrsql() {
+  if (mgrsql_ != &::google::protobuf::internal::kEmptyString) {
+    mgrsql_->clear();
+  }
+  clear_has_mgrsql();
+}
+inline const ::std::string& UserMgrMsg_Request::mgrsql() const {
+  return *mgrsql_;
+}
+inline void UserMgrMsg_Request::set_mgrsql(const ::std::string& value) {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  mgrsql_->assign(value);
+}
+inline void UserMgrMsg_Request::set_mgrsql(const char* value) {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  mgrsql_->assign(value);
+}
+inline void UserMgrMsg_Request::set_mgrsql(const void* value, size_t size) {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  mgrsql_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* UserMgrMsg_Request::mutable_mgrsql() {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  return mgrsql_;
+}
+inline ::std::string* UserMgrMsg_Request::release_mgrsql() {
+  clear_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = mgrsql_;
+    mgrsql_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void UserMgrMsg_Request::set_allocated_mgrsql(::std::string* mgrsql) {
+  if (mgrsql_ != &::google::protobuf::internal::kEmptyString) {
+    delete mgrsql_;
+  }
+  if (mgrsql) {
+    set_has_mgrsql();
+    mgrsql_ = mgrsql;
+  } else {
+    clear_has_mgrsql();
+    mgrsql_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// UserMgrMsg_Response
+
+// optional uint32 rescode = 1;
+inline bool UserMgrMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void UserMgrMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void UserMgrMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void UserMgrMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 UserMgrMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void UserMgrMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// UserMgrMsg
+
+// optional .com.spplus.buff.UserMgrMsg.Request request = 1;
+inline bool UserMgrMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void UserMgrMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void UserMgrMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void UserMgrMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::UserMgrMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::UserMgrMsg_Request& UserMgrMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::UserMgrMsg_Request* UserMgrMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::UserMgrMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::UserMgrMsg_Request* UserMgrMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::UserMgrMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void UserMgrMsg::set_allocated_request(::com::spplus::buff::UserMgrMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.UserMgrMsg.Response response = 2;
+inline bool UserMgrMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void UserMgrMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void UserMgrMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void UserMgrMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::UserMgrMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::UserMgrMsg_Response& UserMgrMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::UserMgrMsg_Response* UserMgrMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::UserMgrMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::UserMgrMsg_Response* UserMgrMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::UserMgrMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void UserMgrMsg::set_allocated_response(::com::spplus::buff::UserMgrMsg_Response* response) {
   delete response_;
   response_ = response;
   if (response) {
