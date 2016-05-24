@@ -44,6 +44,9 @@
 // 加载站点列表
 #define				CMD_STATION_LIST				2003
 
+// 整站拓扑
+#define				CMD_TOPO_ENTIRE				2004
+
 
 
 

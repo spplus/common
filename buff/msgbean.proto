@@ -50,3 +50,15 @@ message StationBean
     optional 	bytes 	CurrentName	= 5;
     optional 	bytes 	Path		= 6;
 }
+
+// 元件信息
+message UnitsBean
+{ 
+    optional 	uint32 	Id  		= 1;
+    optional 	uint32  StationId	= 2; 
+    optional 	bytes 	Name		= 3;
+    optional 	bytes 	CimId		= 4;
+    optional 	bytes 	VolId		= 5;
+    optional 	bytes 	UnitType	= 6;
+    optional 	bytes 	SelfType	= 7;
+}

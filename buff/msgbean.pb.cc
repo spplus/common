@@ -37,6 +37,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* StationBean_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   StationBean_reflection_ = NULL;
+const ::google::protobuf::Descriptor* UnitsBean_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UnitsBean_reflection_ = NULL;
 
 }  // namespace
 
@@ -138,6 +141,27 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(StationBean));
+  UnitsBean_descriptor_ = file->message_type(5);
+  static const int UnitsBean_offsets_[7] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UnitsBean, id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UnitsBean, stationid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UnitsBean, name_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UnitsBean, cimid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UnitsBean, volid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UnitsBean, unittype_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UnitsBean, selftype_),
+  };
+  UnitsBean_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      UnitsBean_descriptor_,
+      UnitsBean::default_instance_,
+      UnitsBean_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UnitsBean, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UnitsBean, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(UnitsBean));
 }
 
 namespace {
@@ -160,6 +184,8 @@ void protobuf_RegisterTypes(const ::std::string&) {
     StationTypeBean_descriptor_, &StationTypeBean::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     StationBean_descriptor_, &StationBean::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    UnitsBean_descriptor_, &UnitsBean::default_instance());
 }
 
 }  // namespace
@@ -175,6 +201,8 @@ void protobuf_ShutdownFile_msgbean_2eproto() {
   delete StationTypeBean_reflection_;
   delete StationBean::default_instance_;
   delete StationBean_reflection_;
+  delete UnitsBean::default_instance_;
+  delete UnitsBean_reflection_;
 }
 
 void protobuf_AddDesc_msgbean_2eproto() {
@@ -196,7 +224,10 @@ void protobuf_AddDesc_msgbean_2eproto() {
     "spplus.buff.StationBean\"m\n\013StationBean\022\n"
     "\n\002Id\030\001 \001(\r\022\022\n\nCategoryId\030\002 \001(\r\022\014\n\004Name\030\003"
     " \001(\014\022\r\n\005CimId\030\004 \001(\014\022\023\n\013CurrentName\030\005 \001(\014"
-    "\022\014\n\004Path\030\006 \001(\014", 494);
+    "\022\014\n\004Path\030\006 \001(\014\"z\n\tUnitsBean\022\n\n\002Id\030\001 \001(\r\022"
+    "\021\n\tStationId\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014\022\r\n\005CimI"
+    "d\030\004 \001(\014\022\r\n\005VolId\030\005 \001(\014\022\020\n\010UnitType\030\006 \001(\014"
+    "\022\020\n\010SelfType\030\007 \001(\014", 618);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbean.proto", &protobuf_RegisterTypes);
   UserBean::default_instance_ = new UserBean();
@@ -204,11 +235,13 @@ void protobuf_AddDesc_msgbean_2eproto() {
   StateBean::default_instance_ = new StateBean();
   StationTypeBean::default_instance_ = new StationTypeBean();
   StationBean::default_instance_ = new StationBean();
+  UnitsBean::default_instance_ = new UnitsBean();
   UserBean::default_instance_->InitAsDefaultInstance();
   UserRoleBean::default_instance_->InitAsDefaultInstance();
   StateBean::default_instance_->InitAsDefaultInstance();
   StationTypeBean::default_instance_->InitAsDefaultInstance();
   StationBean::default_instance_->InitAsDefaultInstance();
+  UnitsBean::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_msgbean_2eproto);
 }
 
@@ -2007,6 +2040,494 @@ void StationBean::Swap(StationBean* other) {
   ::google::protobuf::Metadata metadata;
   metadata.descriptor = StationBean_descriptor_;
   metadata.reflection = StationBean_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int UnitsBean::kIdFieldNumber;
+const int UnitsBean::kStationIdFieldNumber;
+const int UnitsBean::kNameFieldNumber;
+const int UnitsBean::kCimIdFieldNumber;
+const int UnitsBean::kVolIdFieldNumber;
+const int UnitsBean::kUnitTypeFieldNumber;
+const int UnitsBean::kSelfTypeFieldNumber;
+#endif  // !_MSC_VER
+
+UnitsBean::UnitsBean()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void UnitsBean::InitAsDefaultInstance() {
+}
+
+UnitsBean::UnitsBean(const UnitsBean& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void UnitsBean::SharedCtor() {
+  _cached_size_ = 0;
+  id_ = 0u;
+  stationid_ = 0u;
+  name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  cimid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  volid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  unittype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  selftype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+UnitsBean::~UnitsBean() {
+  SharedDtor();
+}
+
+void UnitsBean::SharedDtor() {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    delete name_;
+  }
+  if (cimid_ != &::google::protobuf::internal::kEmptyString) {
+    delete cimid_;
+  }
+  if (volid_ != &::google::protobuf::internal::kEmptyString) {
+    delete volid_;
+  }
+  if (unittype_ != &::google::protobuf::internal::kEmptyString) {
+    delete unittype_;
+  }
+  if (selftype_ != &::google::protobuf::internal::kEmptyString) {
+    delete selftype_;
+  }
+  if (this != default_instance_) {
+  }
+}
+
+void UnitsBean::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* UnitsBean::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return UnitsBean_descriptor_;
+}
+
+const UnitsBean& UnitsBean::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbean_2eproto();
+  return *default_instance_;
+}
+
+UnitsBean* UnitsBean::default_instance_ = NULL;
+
+UnitsBean* UnitsBean::New() const {
+  return new UnitsBean;
+}
+
+void UnitsBean::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    id_ = 0u;
+    stationid_ = 0u;
+    if (has_name()) {
+      if (name_ != &::google::protobuf::internal::kEmptyString) {
+        name_->clear();
+      }
+    }
+    if (has_cimid()) {
+      if (cimid_ != &::google::protobuf::internal::kEmptyString) {
+        cimid_->clear();
+      }
+    }
+    if (has_volid()) {
+      if (volid_ != &::google::protobuf::internal::kEmptyString) {
+        volid_->clear();
+      }
+    }
+    if (has_unittype()) {
+      if (unittype_ != &::google::protobuf::internal::kEmptyString) {
+        unittype_->clear();
+      }
+    }
+    if (has_selftype()) {
+      if (selftype_ != &::google::protobuf::internal::kEmptyString) {
+        selftype_->clear();
+      }
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool UnitsBean::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 Id = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &id_)));
+          set_has_id();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(16)) goto parse_StationId;
+        break;
+      }
+
+      // optional uint32 StationId = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_StationId:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &stationid_)));
+          set_has_stationid();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(26)) goto parse_Name;
+        break;
+      }
+
+      // optional bytes Name = 3;
+      case 3: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_Name:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_name()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(34)) goto parse_CimId;
+        break;
+      }
+
+      // optional bytes CimId = 4;
+      case 4: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_CimId:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_cimid()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(42)) goto parse_VolId;
+        break;
+      }
+
+      // optional bytes VolId = 5;
+      case 5: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_VolId:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_volid()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(50)) goto parse_UnitType;
+        break;
+      }
+
+      // optional bytes UnitType = 6;
+      case 6: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_UnitType:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_unittype()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(58)) goto parse_SelfType;
+        break;
+      }
+
+      // optional bytes SelfType = 7;
+      case 7: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_SelfType:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_selftype()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void UnitsBean::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional uint32 Id = 1;
+  if (has_id()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->id(), output);
+  }
+
+  // optional uint32 StationId = 2;
+  if (has_stationid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->stationid(), output);
+  }
+
+  // optional bytes Name = 3;
+  if (has_name()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      3, this->name(), output);
+  }
+
+  // optional bytes CimId = 4;
+  if (has_cimid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      4, this->cimid(), output);
+  }
+
+  // optional bytes VolId = 5;
+  if (has_volid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      5, this->volid(), output);
+  }
+
+  // optional bytes UnitType = 6;
+  if (has_unittype()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      6, this->unittype(), output);
+  }
+
+  // optional bytes SelfType = 7;
+  if (has_selftype()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      7, this->selftype(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* UnitsBean::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional uint32 Id = 1;
+  if (has_id()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->id(), target);
+  }
+
+  // optional uint32 StationId = 2;
+  if (has_stationid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->stationid(), target);
+  }
+
+  // optional bytes Name = 3;
+  if (has_name()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        3, this->name(), target);
+  }
+
+  // optional bytes CimId = 4;
+  if (has_cimid()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        4, this->cimid(), target);
+  }
+
+  // optional bytes VolId = 5;
+  if (has_volid()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        5, this->volid(), target);
+  }
+
+  // optional bytes UnitType = 6;
+  if (has_unittype()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        6, this->unittype(), target);
+  }
+
+  // optional bytes SelfType = 7;
+  if (has_selftype()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        7, this->selftype(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int UnitsBean::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 Id = 1;
+    if (has_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->id());
+    }
+
+    // optional uint32 StationId = 2;
+    if (has_stationid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->stationid());
+    }
+
+    // optional bytes Name = 3;
+    if (has_name()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->name());
+    }
+
+    // optional bytes CimId = 4;
+    if (has_cimid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->cimid());
+    }
+
+    // optional bytes VolId = 5;
+    if (has_volid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->volid());
+    }
+
+    // optional bytes UnitType = 6;
+    if (has_unittype()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->unittype());
+    }
+
+    // optional bytes SelfType = 7;
+    if (has_selftype()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->selftype());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void UnitsBean::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const UnitsBean* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const UnitsBean*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void UnitsBean::MergeFrom(const UnitsBean& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_id()) {
+      set_id(from.id());
+    }
+    if (from.has_stationid()) {
+      set_stationid(from.stationid());
+    }
+    if (from.has_name()) {
+      set_name(from.name());
+    }
+    if (from.has_cimid()) {
+      set_cimid(from.cimid());
+    }
+    if (from.has_volid()) {
+      set_volid(from.volid());
+    }
+    if (from.has_unittype()) {
+      set_unittype(from.unittype());
+    }
+    if (from.has_selftype()) {
+      set_selftype(from.selftype());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void UnitsBean::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void UnitsBean::CopyFrom(const UnitsBean& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UnitsBean::IsInitialized() const {
+
+  return true;
+}
+
+void UnitsBean::Swap(UnitsBean* other) {
+  if (other != this) {
+    std::swap(id_, other->id_);
+    std::swap(stationid_, other->stationid_);
+    std::swap(name_, other->name_);
+    std::swap(cimid_, other->cimid_);
+    std::swap(volid_, other->volid_);
+    std::swap(unittype_, other->unittype_);
+    std::swap(selftype_, other->selftype_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata UnitsBean::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UnitsBean_descriptor_;
+  metadata.reflection = UnitsBean_reflection_;
   return metadata;
 }
 
