@@ -301,7 +301,7 @@ void protobuf_AssignDesc_msgbody_2eproto() {
   DevStateMsg_Request_descriptor_ = DevStateMsg_descriptor_->nested_type(0);
   static const int DevStateMsg_Request_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DevStateMsg_Request, saveid_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DevStateMsg_Request, stationid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DevStateMsg_Request, stationcim_),
   };
   DevStateMsg_Request_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -557,26 +557,26 @@ void protobuf_AddDesc_msgbody_2eproto() {
     "\001 \001(\0132#.com.spplus.buff.UserMgrMsg.Reque"
     "st\0226\n\010response\030\002 \001(\0132$.com.spplus.buff.U"
     "serMgrMsg.Response\032\031\n\007Request\022\016\n\006mgrsql\030"
-    "\001 \001(\014\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r\"\366\001\n\013D"
+    "\001 \001(\014\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r\"\367\001\n\013D"
     "evStateMsg\0225\n\007request\030\001 \001(\0132$.com.spplus"
     ".buff.DevStateMsg.Request\0227\n\010response\030\002 "
     "\001(\0132%.com.spplus.buff.DevStateMsg.Respon"
-    "se\032,\n\007Request\022\016\n\006saveId\030\001 \001(\r\022\021\n\tstation"
-    "Id\030\002 \001(\r\032I\n\010Response\022\017\n\007rescode\030\001 \001(\r\022,\n"
-    "\010devState\030\002 \003(\0132\032.com.spplus.buff.StateB"
-    "ean\"\362\001\n\016StationTypeMsg\0228\n\007request\030\001 \001(\0132"
-    "\'.com.spplus.buff.StationTypeMsg.Request"
-    "\022:\n\010response\030\002 \001(\0132(.com.spplus.buff.Sta"
-    "tionTypeMsg.Response\032\031\n\007Request\022\016\n\006saveI"
-    "d\030\001 \001(\r\032O\n\010Response\022\017\n\007rescode\030\001 \001(\r\0222\n\010"
-    "typeList\030\002 \003(\0132 .com.spplus.buff.Station"
-    "TypeBean\"\364\001\n\016StationListMsg\0228\n\007request\030\001"
-    " \001(\0132\'.com.spplus.buff.StationListMsg.Re"
-    "quest\022:\n\010response\030\002 \001(\0132(.com.spplus.buf"
-    "f.StationListMsg.Response\032\034\n\007Request\022\021\n\t"
-    "stationId\030\001 \001(\r\032N\n\010Response\022\017\n\007rescode\030\001"
-    " \001(\r\0221\n\013stationList\030\002 \003(\0132\034.com.spplus.b"
-    "uff.StationBean", 1655);
+    "se\032-\n\007Request\022\016\n\006saveId\030\001 \001(\r\022\022\n\nstation"
+    "Cim\030\002 \001(\014\032I\n\010Response\022\017\n\007rescode\030\001 \001(\r\022,"
+    "\n\010devState\030\002 \003(\0132\032.com.spplus.buff.State"
+    "Bean\"\362\001\n\016StationTypeMsg\0228\n\007request\030\001 \001(\013"
+    "2\'.com.spplus.buff.StationTypeMsg.Reques"
+    "t\022:\n\010response\030\002 \001(\0132(.com.spplus.buff.St"
+    "ationTypeMsg.Response\032\031\n\007Request\022\016\n\006save"
+    "Id\030\001 \001(\r\032O\n\010Response\022\017\n\007rescode\030\001 \001(\r\0222\n"
+    "\010typeList\030\002 \003(\0132 .com.spplus.buff.Statio"
+    "nTypeBean\"\364\001\n\016StationListMsg\0228\n\007request\030"
+    "\001 \001(\0132\'.com.spplus.buff.StationListMsg.R"
+    "equest\022:\n\010response\030\002 \001(\0132(.com.spplus.bu"
+    "ff.StationListMsg.Response\032\034\n\007Request\022\021\n"
+    "\tstationId\030\001 \001(\r\032N\n\010Response\022\017\n\007rescode\030"
+    "\001 \001(\r\0221\n\013stationList\030\002 \003(\0132\034.com.spplus."
+    "buff.StationBean", 1656);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbody.proto", &protobuf_RegisterTypes);
   UserLoginMsg::default_instance_ = new UserLoginMsg();
@@ -3491,7 +3491,7 @@ void UserMgrMsg::Swap(UserMgrMsg* other) {
 
 #ifndef _MSC_VER
 const int DevStateMsg_Request::kSaveIdFieldNumber;
-const int DevStateMsg_Request::kStationIdFieldNumber;
+const int DevStateMsg_Request::kStationCimFieldNumber;
 #endif  // !_MSC_VER
 
 DevStateMsg_Request::DevStateMsg_Request()
@@ -3511,7 +3511,7 @@ DevStateMsg_Request::DevStateMsg_Request(const DevStateMsg_Request& from)
 void DevStateMsg_Request::SharedCtor() {
   _cached_size_ = 0;
   saveid_ = 0u;
-  stationid_ = 0u;
+  stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -3520,6 +3520,9 @@ DevStateMsg_Request::~DevStateMsg_Request() {
 }
 
 void DevStateMsg_Request::SharedDtor() {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationcim_;
+  }
   if (this != default_instance_) {
   }
 }
@@ -3548,7 +3551,11 @@ DevStateMsg_Request* DevStateMsg_Request::New() const {
 void DevStateMsg_Request::Clear() {
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     saveid_ = 0u;
-    stationid_ = 0u;
+    if (has_stationcim()) {
+      if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+        stationcim_->clear();
+      }
+    }
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -3571,19 +3578,17 @@ bool DevStateMsg_Request::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(16)) goto parse_stationId;
+        if (input->ExpectTag(18)) goto parse_stationCim;
         break;
       }
 
-      // optional uint32 stationId = 2;
+      // optional bytes stationCim = 2;
       case 2: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_stationId:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &stationid_)));
-          set_has_stationid();
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_stationCim:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_stationcim()));
         } else {
           goto handle_uninterpreted;
         }
@@ -3614,9 +3619,10 @@ void DevStateMsg_Request::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->saveid(), output);
   }
 
-  // optional uint32 stationId = 2;
-  if (has_stationid()) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->stationid(), output);
+  // optional bytes stationCim = 2;
+  if (has_stationcim()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      2, this->stationcim(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -3632,9 +3638,11 @@ void DevStateMsg_Request::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->saveid(), target);
   }
 
-  // optional uint32 stationId = 2;
-  if (has_stationid()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->stationid(), target);
+  // optional bytes stationCim = 2;
+  if (has_stationcim()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        2, this->stationcim(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -3655,11 +3663,11 @@ int DevStateMsg_Request::ByteSize() const {
           this->saveid());
     }
 
-    // optional uint32 stationId = 2;
-    if (has_stationid()) {
+    // optional bytes stationCim = 2;
+    if (has_stationcim()) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::UInt32Size(
-          this->stationid());
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->stationcim());
     }
 
   }
@@ -3692,8 +3700,8 @@ void DevStateMsg_Request::MergeFrom(const DevStateMsg_Request& from) {
     if (from.has_saveid()) {
       set_saveid(from.saveid());
     }
-    if (from.has_stationid()) {
-      set_stationid(from.stationid());
+    if (from.has_stationcim()) {
+      set_stationcim(from.stationcim());
     }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
@@ -3719,7 +3727,7 @@ bool DevStateMsg_Request::IsInitialized() const {
 void DevStateMsg_Request::Swap(DevStateMsg_Request* other) {
   if (other != this) {
     std::swap(saveid_, other->saveid_);
-    std::swap(stationid_, other->stationid_);
+    std::swap(stationcim_, other->stationcim_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);

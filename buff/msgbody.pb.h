@@ -1234,24 +1234,29 @@ class DevStateMsg_Request : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 saveid() const;
   inline void set_saveid(::google::protobuf::uint32 value);
 
-  // optional uint32 stationId = 2;
-  inline bool has_stationid() const;
-  inline void clear_stationid();
-  static const int kStationIdFieldNumber = 2;
-  inline ::google::protobuf::uint32 stationid() const;
-  inline void set_stationid(::google::protobuf::uint32 value);
+  // optional bytes stationCim = 2;
+  inline bool has_stationcim() const;
+  inline void clear_stationcim();
+  static const int kStationCimFieldNumber = 2;
+  inline const ::std::string& stationcim() const;
+  inline void set_stationcim(const ::std::string& value);
+  inline void set_stationcim(const char* value);
+  inline void set_stationcim(const void* value, size_t size);
+  inline ::std::string* mutable_stationcim();
+  inline ::std::string* release_stationcim();
+  inline void set_allocated_stationcim(::std::string* stationcim);
 
   // @@protoc_insertion_point(class_scope:com.spplus.buff.DevStateMsg.Request)
  private:
   inline void set_has_saveid();
   inline void clear_has_saveid();
-  inline void set_has_stationid();
-  inline void clear_has_stationid();
+  inline void set_has_stationcim();
+  inline void clear_has_stationcim();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
+  ::std::string* stationcim_;
   ::google::protobuf::uint32 saveid_;
-  ::google::protobuf::uint32 stationid_;
 
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
@@ -2878,26 +2883,74 @@ inline void DevStateMsg_Request::set_saveid(::google::protobuf::uint32 value) {
   saveid_ = value;
 }
 
-// optional uint32 stationId = 2;
-inline bool DevStateMsg_Request::has_stationid() const {
+// optional bytes stationCim = 2;
+inline bool DevStateMsg_Request::has_stationcim() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
-inline void DevStateMsg_Request::set_has_stationid() {
+inline void DevStateMsg_Request::set_has_stationcim() {
   _has_bits_[0] |= 0x00000002u;
 }
-inline void DevStateMsg_Request::clear_has_stationid() {
+inline void DevStateMsg_Request::clear_has_stationcim() {
   _has_bits_[0] &= ~0x00000002u;
 }
-inline void DevStateMsg_Request::clear_stationid() {
-  stationid_ = 0u;
-  clear_has_stationid();
+inline void DevStateMsg_Request::clear_stationcim() {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    stationcim_->clear();
+  }
+  clear_has_stationcim();
 }
-inline ::google::protobuf::uint32 DevStateMsg_Request::stationid() const {
-  return stationid_;
+inline const ::std::string& DevStateMsg_Request::stationcim() const {
+  return *stationcim_;
 }
-inline void DevStateMsg_Request::set_stationid(::google::protobuf::uint32 value) {
-  set_has_stationid();
-  stationid_ = value;
+inline void DevStateMsg_Request::set_stationcim(const ::std::string& value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void DevStateMsg_Request::set_stationcim(const char* value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void DevStateMsg_Request::set_stationcim(const void* value, size_t size) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* DevStateMsg_Request::mutable_stationcim() {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  return stationcim_;
+}
+inline ::std::string* DevStateMsg_Request::release_stationcim() {
+  clear_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationcim_;
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void DevStateMsg_Request::set_allocated_stationcim(::std::string* stationcim) {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationcim_;
+  }
+  if (stationcim) {
+    set_has_stationcim();
+    stationcim_ = stationcim;
+  } else {
+    clear_has_stationcim();
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
 }
 
 // -------------------------------------------------------------------
