@@ -1246,20 +1246,35 @@ class DevStateMsg_Request : public ::google::protobuf::Message {
   inline ::std::string* release_stationcim();
   inline void set_allocated_stationcim(::std::string* stationcim);
 
+  // optional bytes unitCim = 3;
+  inline bool has_unitcim() const;
+  inline void clear_unitcim();
+  static const int kUnitCimFieldNumber = 3;
+  inline const ::std::string& unitcim() const;
+  inline void set_unitcim(const ::std::string& value);
+  inline void set_unitcim(const char* value);
+  inline void set_unitcim(const void* value, size_t size);
+  inline ::std::string* mutable_unitcim();
+  inline ::std::string* release_unitcim();
+  inline void set_allocated_unitcim(::std::string* unitcim);
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.DevStateMsg.Request)
  private:
   inline void set_has_saveid();
   inline void clear_has_saveid();
   inline void set_has_stationcim();
   inline void clear_has_stationcim();
+  inline void set_has_unitcim();
+  inline void clear_has_unitcim();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
   ::std::string* stationcim_;
+  ::std::string* unitcim_;
   ::google::protobuf::uint32 saveid_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -2950,6 +2965,76 @@ inline void DevStateMsg_Request::set_allocated_stationcim(::std::string* station
   } else {
     clear_has_stationcim();
     stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes unitCim = 3;
+inline bool DevStateMsg_Request::has_unitcim() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void DevStateMsg_Request::set_has_unitcim() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void DevStateMsg_Request::clear_has_unitcim() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void DevStateMsg_Request::clear_unitcim() {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    unitcim_->clear();
+  }
+  clear_has_unitcim();
+}
+inline const ::std::string& DevStateMsg_Request::unitcim() const {
+  return *unitcim_;
+}
+inline void DevStateMsg_Request::set_unitcim(const ::std::string& value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void DevStateMsg_Request::set_unitcim(const char* value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void DevStateMsg_Request::set_unitcim(const void* value, size_t size) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* DevStateMsg_Request::mutable_unitcim() {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  return unitcim_;
+}
+inline ::std::string* DevStateMsg_Request::release_unitcim() {
+  clear_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unitcim_;
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void DevStateMsg_Request::set_allocated_unitcim(::std::string* unitcim) {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete unitcim_;
+  }
+  if (unitcim) {
+    set_has_unitcim();
+    unitcim_ = unitcim;
+  } else {
+    clear_has_unitcim();
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
 }
 

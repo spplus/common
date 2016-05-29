@@ -395,6 +395,18 @@ class StateBean : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 iselectric() const;
   inline void set_iselectric(::google::protobuf::uint32 value);
 
+  // optional bytes volValue = 5;
+  inline bool has_volvalue() const;
+  inline void clear_volvalue();
+  static const int kVolValueFieldNumber = 5;
+  inline const ::std::string& volvalue() const;
+  inline void set_volvalue(const ::std::string& value);
+  inline void set_volvalue(const char* value);
+  inline void set_volvalue(const void* value, size_t size);
+  inline ::std::string* mutable_volvalue();
+  inline ::std::string* release_volvalue();
+  inline void set_allocated_volvalue(::std::string* volvalue);
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.StateBean)
  private:
   inline void set_has_cimid();
@@ -405,16 +417,19 @@ class StateBean : public ::google::protobuf::Message {
   inline void clear_has_isboard();
   inline void set_has_iselectric();
   inline void clear_has_iselectric();
+  inline void set_has_volvalue();
+  inline void clear_has_volvalue();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
   ::std::string* cimid_;
   ::google::protobuf::uint32 state_;
   ::google::protobuf::uint32 isboard_;
+  ::std::string* volvalue_;
   ::google::protobuf::uint32 iselectric_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbean_2eproto();
   friend void protobuf_AssignDesc_msgbean_2eproto();
@@ -1561,6 +1576,76 @@ inline ::google::protobuf::uint32 StateBean::iselectric() const {
 inline void StateBean::set_iselectric(::google::protobuf::uint32 value) {
   set_has_iselectric();
   iselectric_ = value;
+}
+
+// optional bytes volValue = 5;
+inline bool StateBean::has_volvalue() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void StateBean::set_has_volvalue() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void StateBean::clear_has_volvalue() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void StateBean::clear_volvalue() {
+  if (volvalue_ != &::google::protobuf::internal::kEmptyString) {
+    volvalue_->clear();
+  }
+  clear_has_volvalue();
+}
+inline const ::std::string& StateBean::volvalue() const {
+  return *volvalue_;
+}
+inline void StateBean::set_volvalue(const ::std::string& value) {
+  set_has_volvalue();
+  if (volvalue_ == &::google::protobuf::internal::kEmptyString) {
+    volvalue_ = new ::std::string;
+  }
+  volvalue_->assign(value);
+}
+inline void StateBean::set_volvalue(const char* value) {
+  set_has_volvalue();
+  if (volvalue_ == &::google::protobuf::internal::kEmptyString) {
+    volvalue_ = new ::std::string;
+  }
+  volvalue_->assign(value);
+}
+inline void StateBean::set_volvalue(const void* value, size_t size) {
+  set_has_volvalue();
+  if (volvalue_ == &::google::protobuf::internal::kEmptyString) {
+    volvalue_ = new ::std::string;
+  }
+  volvalue_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StateBean::mutable_volvalue() {
+  set_has_volvalue();
+  if (volvalue_ == &::google::protobuf::internal::kEmptyString) {
+    volvalue_ = new ::std::string;
+  }
+  return volvalue_;
+}
+inline ::std::string* StateBean::release_volvalue() {
+  clear_has_volvalue();
+  if (volvalue_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = volvalue_;
+    volvalue_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StateBean::set_allocated_volvalue(::std::string* volvalue) {
+  if (volvalue_ != &::google::protobuf::internal::kEmptyString) {
+    delete volvalue_;
+  }
+  if (volvalue) {
+    set_has_volvalue();
+    volvalue_ = volvalue;
+  } else {
+    clear_has_volvalue();
+    volvalue_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
 }
 
 // -------------------------------------------------------------------

@@ -27,7 +27,7 @@ message StateBean
     optional uint32 	state= 2;
     optional uint32	isBoard = 3;
     optional uint32	isElectric = 4;	  
-
+    optional bytes 	volValue = 5;		// 电压等级 如：110kv 
 }
 
 // 站点分类

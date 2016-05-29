@@ -47,8 +47,9 @@
 // 整站拓扑
 #define				CMD_TOPO_ENTIRE				2004
 
-
-
+// 开关变位
+#define				CMD_TOPO_BREAKER_CHANGE		2005
+	
 
 #endif
 

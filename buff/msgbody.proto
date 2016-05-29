@@ -77,6 +77,7 @@ message DevStateMsg
 	message Request {
 		optional uint32	saveId		= 1;		// 存档ID
 		optional bytes	stationCim	= 2;		// 站点CIMID
+		optional bytes	unitCim		= 3;		// 设备CIMID
 						
   	}
   	//响应体定义
