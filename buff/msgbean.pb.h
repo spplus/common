@@ -501,10 +501,17 @@ class StationTypeBean : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 id() const;
   inline void set_id(::google::protobuf::uint32 value);
 
-  // optional bytes Name = 2;
+  // optional uint32 ordernum = 2;
+  inline bool has_ordernum() const;
+  inline void clear_ordernum();
+  static const int kOrdernumFieldNumber = 2;
+  inline ::google::protobuf::uint32 ordernum() const;
+  inline void set_ordernum(::google::protobuf::uint32 value);
+
+  // optional bytes Name = 3;
   inline bool has_name() const;
   inline void clear_name();
-  static const int kNameFieldNumber = 2;
+  static const int kNameFieldNumber = 3;
   inline const ::std::string& name() const;
   inline void set_name(const ::std::string& value);
   inline void set_name(const char* value);
@@ -513,10 +520,10 @@ class StationTypeBean : public ::google::protobuf::Message {
   inline ::std::string* release_name();
   inline void set_allocated_name(::std::string* name);
 
-  // repeated .com.spplus.buff.StationBean StationList = 3;
+  // repeated .com.spplus.buff.StationBean StationList = 4;
   inline int stationlist_size() const;
   inline void clear_stationlist();
-  static const int kStationListFieldNumber = 3;
+  static const int kStationListFieldNumber = 4;
   inline const ::com::spplus::buff::StationBean& stationlist(int index) const;
   inline ::com::spplus::buff::StationBean* mutable_stationlist(int index);
   inline ::com::spplus::buff::StationBean* add_stationlist();
@@ -529,17 +536,20 @@ class StationTypeBean : public ::google::protobuf::Message {
  private:
   inline void set_has_id();
   inline void clear_has_id();
+  inline void set_has_ordernum();
+  inline void clear_has_ordernum();
   inline void set_has_name();
   inline void clear_has_name();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
+  ::google::protobuf::uint32 id_;
+  ::google::protobuf::uint32 ordernum_;
   ::std::string* name_;
   ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StationBean > stationlist_;
-  ::google::protobuf::uint32 id_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbean_2eproto();
   friend void protobuf_AssignDesc_msgbean_2eproto();
@@ -1674,15 +1684,37 @@ inline void StationTypeBean::set_id(::google::protobuf::uint32 value) {
   id_ = value;
 }
 
-// optional bytes Name = 2;
-inline bool StationTypeBean::has_name() const {
+// optional uint32 ordernum = 2;
+inline bool StationTypeBean::has_ordernum() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
-inline void StationTypeBean::set_has_name() {
+inline void StationTypeBean::set_has_ordernum() {
   _has_bits_[0] |= 0x00000002u;
 }
-inline void StationTypeBean::clear_has_name() {
+inline void StationTypeBean::clear_has_ordernum() {
   _has_bits_[0] &= ~0x00000002u;
+}
+inline void StationTypeBean::clear_ordernum() {
+  ordernum_ = 0u;
+  clear_has_ordernum();
+}
+inline ::google::protobuf::uint32 StationTypeBean::ordernum() const {
+  return ordernum_;
+}
+inline void StationTypeBean::set_ordernum(::google::protobuf::uint32 value) {
+  set_has_ordernum();
+  ordernum_ = value;
+}
+
+// optional bytes Name = 3;
+inline bool StationTypeBean::has_name() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void StationTypeBean::set_has_name() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void StationTypeBean::clear_has_name() {
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline void StationTypeBean::clear_name() {
   if (name_ != &::google::protobuf::internal::kEmptyString) {
@@ -1744,7 +1776,7 @@ inline void StationTypeBean::set_allocated_name(::std::string* name) {
   }
 }
 
-// repeated .com.spplus.buff.StationBean StationList = 3;
+// repeated .com.spplus.buff.StationBean StationList = 4;
 inline int StationTypeBean::stationlist_size() const {
   return stationlist_.size();
 }

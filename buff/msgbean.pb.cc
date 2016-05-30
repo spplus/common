@@ -106,8 +106,9 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(StateBean));
   StationTypeBean_descriptor_ = file->message_type(3);
-  static const int StationTypeBean_offsets_[3] = {
+  static const int StationTypeBean_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationTypeBean, id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationTypeBean, ordernum_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationTypeBean, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationTypeBean, stationlist_),
   };
@@ -220,15 +221,16 @@ void protobuf_AddDesc_msgbean_2eproto() {
     "eBean\022\022\n\nuserroleid\030\001 \001(\014\022\024\n\014userrolenam"
     "e\030\002 \001(\014\"`\n\tStateBean\022\r\n\005cimId\030\001 \001(\014\022\r\n\005s"
     "tate\030\002 \001(\r\022\017\n\007isBoard\030\003 \001(\r\022\022\n\nisElectri"
-    "c\030\004 \001(\r\022\020\n\010volValue\030\005 \001(\014\"^\n\017StationType"
-    "Bean\022\n\n\002Id\030\001 \001(\r\022\014\n\004Name\030\002 \001(\014\0221\n\013Statio"
-    "nList\030\003 \003(\0132\034.com.spplus.buff.StationBea"
-    "n\"m\n\013StationBean\022\n\n\002Id\030\001 \001(\r\022\022\n\nCategory"
-    "Id\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014\022\r\n\005CimId\030\004 \001(\014\022\023\n"
-    "\013CurrentName\030\005 \001(\014\022\014\n\004Path\030\006 \001(\014\"z\n\tUnit"
-    "sBean\022\n\n\002Id\030\001 \001(\r\022\021\n\tStationId\030\002 \001(\r\022\014\n\004"
-    "Name\030\003 \001(\014\022\r\n\005CimId\030\004 \001(\014\022\r\n\005VolId\030\005 \001(\014"
-    "\022\020\n\010UnitType\030\006 \001(\014\022\020\n\010SelfType\030\007 \001(\014", 636);
+    "c\030\004 \001(\r\022\020\n\010volValue\030\005 \001(\014\"p\n\017StationType"
+    "Bean\022\n\n\002Id\030\001 \001(\r\022\020\n\010ordernum\030\002 \001(\r\022\014\n\004Na"
+    "me\030\003 \001(\014\0221\n\013StationList\030\004 \003(\0132\034.com.sppl"
+    "us.buff.StationBean\"m\n\013StationBean\022\n\n\002Id"
+    "\030\001 \001(\r\022\022\n\nCategoryId\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014"
+    "\022\r\n\005CimId\030\004 \001(\014\022\023\n\013CurrentName\030\005 \001(\014\022\014\n\004"
+    "Path\030\006 \001(\014\"z\n\tUnitsBean\022\n\n\002Id\030\001 \001(\r\022\021\n\tS"
+    "tationId\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014\022\r\n\005CimId\030\004 "
+    "\001(\014\022\r\n\005VolId\030\005 \001(\014\022\020\n\010UnitType\030\006 \001(\014\022\020\n\010"
+    "SelfType\030\007 \001(\014", 654);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbean.proto", &protobuf_RegisterTypes);
   UserBean::default_instance_ = new UserBean();
@@ -1361,6 +1363,7 @@ void StateBean::Swap(StateBean* other) {
 
 #ifndef _MSC_VER
 const int StationTypeBean::kIdFieldNumber;
+const int StationTypeBean::kOrdernumFieldNumber;
 const int StationTypeBean::kNameFieldNumber;
 const int StationTypeBean::kStationListFieldNumber;
 #endif  // !_MSC_VER
@@ -1382,6 +1385,7 @@ StationTypeBean::StationTypeBean(const StationTypeBean& from)
 void StationTypeBean::SharedCtor() {
   _cached_size_ = 0;
   id_ = 0u;
+  ordernum_ = 0u;
   name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -1422,6 +1426,7 @@ StationTypeBean* StationTypeBean::New() const {
 void StationTypeBean::Clear() {
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     id_ = 0u;
+    ordernum_ = 0u;
     if (has_name()) {
       if (name_ != &::google::protobuf::internal::kEmptyString) {
         name_->clear();
@@ -1450,12 +1455,28 @@ bool StationTypeBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(18)) goto parse_Name;
+        if (input->ExpectTag(16)) goto parse_ordernum;
         break;
       }
 
-      // optional bytes Name = 2;
+      // optional uint32 ordernum = 2;
       case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_ordernum:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &ordernum_)));
+          set_has_ordernum();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(26)) goto parse_Name;
+        break;
+      }
+
+      // optional bytes Name = 3;
+      case 3: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_Name:
@@ -1464,12 +1485,12 @@ bool StationTypeBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(26)) goto parse_StationList;
+        if (input->ExpectTag(34)) goto parse_StationList;
         break;
       }
 
-      // repeated .com.spplus.buff.StationBean StationList = 3;
-      case 3: {
+      // repeated .com.spplus.buff.StationBean StationList = 4;
+      case 4: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_StationList:
@@ -1478,7 +1499,7 @@ bool StationTypeBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(26)) goto parse_StationList;
+        if (input->ExpectTag(34)) goto parse_StationList;
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -1506,16 +1527,21 @@ void StationTypeBean::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->id(), output);
   }
 
-  // optional bytes Name = 2;
-  if (has_name()) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytes(
-      2, this->name(), output);
+  // optional uint32 ordernum = 2;
+  if (has_ordernum()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->ordernum(), output);
   }
 
-  // repeated .com.spplus.buff.StationBean StationList = 3;
+  // optional bytes Name = 3;
+  if (has_name()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      3, this->name(), output);
+  }
+
+  // repeated .com.spplus.buff.StationBean StationList = 4;
   for (int i = 0; i < this->stationlist_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->stationlist(i), output);
+      4, this->stationlist(i), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -1531,18 +1557,23 @@ void StationTypeBean::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->id(), target);
   }
 
-  // optional bytes Name = 2;
+  // optional uint32 ordernum = 2;
+  if (has_ordernum()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->ordernum(), target);
+  }
+
+  // optional bytes Name = 3;
   if (has_name()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        2, this->name(), target);
+        3, this->name(), target);
   }
 
-  // repeated .com.spplus.buff.StationBean StationList = 3;
+  // repeated .com.spplus.buff.StationBean StationList = 4;
   for (int i = 0; i < this->stationlist_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        3, this->stationlist(i), target);
+        4, this->stationlist(i), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -1563,7 +1594,14 @@ int StationTypeBean::ByteSize() const {
           this->id());
     }
 
-    // optional bytes Name = 2;
+    // optional uint32 ordernum = 2;
+    if (has_ordernum()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->ordernum());
+    }
+
+    // optional bytes Name = 3;
     if (has_name()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -1571,7 +1609,7 @@ int StationTypeBean::ByteSize() const {
     }
 
   }
-  // repeated .com.spplus.buff.StationBean StationList = 3;
+  // repeated .com.spplus.buff.StationBean StationList = 4;
   total_size += 1 * this->stationlist_size();
   for (int i = 0; i < this->stationlist_size(); i++) {
     total_size +=
@@ -1609,6 +1647,9 @@ void StationTypeBean::MergeFrom(const StationTypeBean& from) {
     if (from.has_id()) {
       set_id(from.id());
     }
+    if (from.has_ordernum()) {
+      set_ordernum(from.ordernum());
+    }
     if (from.has_name()) {
       set_name(from.name());
     }
@@ -1636,6 +1677,7 @@ bool StationTypeBean::IsInitialized() const {
 void StationTypeBean::Swap(StationTypeBean* other) {
   if (other != this) {
     std::swap(id_, other->id_);
+    std::swap(ordernum_, other->ordernum_);
     std::swap(name_, other->name_);
     stationlist_.Swap(&other->stationlist_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);

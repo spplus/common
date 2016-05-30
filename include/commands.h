@@ -34,6 +34,24 @@
 // 用户修改操作
 #define				CMD_USER_MODIFY				1007
 
+// 密码修改操作
+#define				CMD_PWD_MODIFY				1008
+
+//厂站类型添加操作
+#define				CMD_STATION_TYPE_ADD		1100
+
+//厂站类型添加操作
+#define				CMD_STATION_TYPE_DEL		1101
+
+//厂站类型修改操作
+#define				CMD_STATION_TYPE_MODIFY		1102
+
+//厂站类型添加操作
+#define				CMD_STATION_TYPE_LIST		1103
+
+//厂站配置管理
+#define				CMD_STATION_MANAGER			2000
+
 
 // 获取设备状态
 #define				CMD_DEV_STATE					2001

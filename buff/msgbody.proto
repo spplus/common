@@ -11,7 +11,8 @@ message UserLoginMsg
   	}
   	//响应体定义
 	message Response {
-		optional uint32	rescode		= 1;	// 0 成功，其他失败
+		optional uint32	rescode			= 1;	// 0 成功，其他失败
+		repeated UserBean	userlist	= 2;	// 用户列表
   	}
 	optional Request 	request 	= 1;
   	optional Response 	response 	= 2;
@@ -59,6 +60,39 @@ message UserMgrMsg
 	//请求体定义
 	message Request {
 		optional bytes	mgrsql	= 1;		//用户管理中增加删除修改组合的sql语句		
+  	}
+  	//响应体定义
+	message Response {
+		optional uint32	rescode		= 1;	// 0 成功，其他失败
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}
+
+//厂站类型管理
+message StationTypeMgrMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	mgrsql	= 1;		//厂站类型管理中增加，修改组合的sql语句		
+  	}
+  	//响应体定义
+	message Response {
+		optional uint32	rescode		= 1;	// 0 成功，其他失败
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}
+
+//厂站管理
+message StationMgrMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	reqdate	= 1;				//请求	
+		repeated StationBean	stationlist	= 2;	//请求更新的厂站列表
   	}
   	//响应体定义
 	message Response {

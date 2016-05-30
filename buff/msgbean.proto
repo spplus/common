@@ -35,8 +35,9 @@ message StationTypeBean
 { 
 
     optional uint32 		Id  = 1;
-    optional bytes 		Name= 2;
-    repeated StationBean	StationList = 3;
+	optional uint32 	ordernum  = 2;
+    optional bytes 		Name= 3;
+    repeated StationBean	StationList = 4;
 }
 
 // ’æµ„–≈œ¢
