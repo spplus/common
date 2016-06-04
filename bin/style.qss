@@ -17,7 +17,7 @@ border-image: url(:/images/title.png);
 QListWidget {
     alternate-background-color: yellow;
 	background-color: #EEF8F9;
-	background: url(:/images/leftbk.png);	
+	border-image: url(:/images/leftbk.png);	
 }
 
 QListWidget {
