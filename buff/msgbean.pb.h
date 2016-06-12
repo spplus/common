@@ -407,6 +407,13 @@ class StateBean : public ::google::protobuf::Message {
   inline ::std::string* release_volvalue();
   inline void set_allocated_volvalue(::std::string* volvalue);
 
+  // optional uint32 unitType = 6;
+  inline bool has_unittype() const;
+  inline void clear_unittype();
+  static const int kUnitTypeFieldNumber = 6;
+  inline ::google::protobuf::uint32 unittype() const;
+  inline void set_unittype(::google::protobuf::uint32 value);
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.StateBean)
  private:
   inline void set_has_cimid();
@@ -419,6 +426,8 @@ class StateBean : public ::google::protobuf::Message {
   inline void clear_has_iselectric();
   inline void set_has_volvalue();
   inline void clear_has_volvalue();
+  inline void set_has_unittype();
+  inline void clear_has_unittype();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
@@ -427,9 +436,10 @@ class StateBean : public ::google::protobuf::Message {
   ::google::protobuf::uint32 isboard_;
   ::std::string* volvalue_;
   ::google::protobuf::uint32 iselectric_;
+  ::google::protobuf::uint32 unittype_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbean_2eproto();
   friend void protobuf_AssignDesc_msgbean_2eproto();
@@ -1656,6 +1666,28 @@ inline void StateBean::set_allocated_volvalue(::std::string* volvalue) {
     clear_has_volvalue();
     volvalue_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
+}
+
+// optional uint32 unitType = 6;
+inline bool StateBean::has_unittype() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void StateBean::set_has_unittype() {
+  _has_bits_[0] |= 0x00000020u;
+}
+inline void StateBean::clear_has_unittype() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline void StateBean::clear_unittype() {
+  unittype_ = 0u;
+  clear_has_unittype();
+}
+inline ::google::protobuf::uint32 StateBean::unittype() const {
+  return unittype_;
+}
+inline void StateBean::set_unittype(::google::protobuf::uint32 value) {
+  set_has_unittype();
+  unittype_ = value;
 }
 
 // -------------------------------------------------------------------
