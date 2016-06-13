@@ -87,13 +87,14 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(UserRoleBean));
   StateBean_descriptor_ = file->message_type(2);
-  static const int StateBean_offsets_[6] = {
+  static const int StateBean_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, cimid_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, state_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, isboard_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, iselectric_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, volvalue_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, unittype_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, stationcim_),
   };
   StateBean_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -220,18 +221,19 @@ void protobuf_AddDesc_msgbean_2eproto() {
     "\n\007userpwd\030\003 \001(\014\022\020\n\010userrole\030\004 \001(\014\022\020\n\010rol"
     "ename\030\005 \001(\014\022\020\n\010realname\030\006 \001(\014\"8\n\014UserRol"
     "eBean\022\022\n\nuserroleid\030\001 \001(\014\022\024\n\014userrolenam"
-    "e\030\002 \001(\014\"r\n\tStateBean\022\r\n\005cimId\030\001 \001(\014\022\r\n\005s"
-    "tate\030\002 \001(\r\022\017\n\007isBoard\030\003 \001(\r\022\022\n\nisElectri"
-    "c\030\004 \001(\r\022\020\n\010volValue\030\005 \001(\014\022\020\n\010unitType\030\006 "
-    "\001(\r\"p\n\017StationTypeBean\022\n\n\002Id\030\001 \001(\r\022\020\n\010or"
-    "dernum\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014\0221\n\013StationLis"
-    "t\030\004 \003(\0132\034.com.spplus.buff.StationBean\"m\n"
-    "\013StationBean\022\n\n\002Id\030\001 \001(\r\022\022\n\nCategoryId\030\002"
-    " \001(\r\022\014\n\004Name\030\003 \001(\014\022\r\n\005CimId\030\004 \001(\014\022\023\n\013Cur"
-    "rentName\030\005 \001(\014\022\014\n\004Path\030\006 \001(\014\"z\n\tUnitsBea"
-    "n\022\n\n\002Id\030\001 \001(\r\022\021\n\tStationId\030\002 \001(\r\022\014\n\004Name"
-    "\030\003 \001(\014\022\r\n\005CimId\030\004 \001(\014\022\r\n\005VolId\030\005 \001(\014\022\020\n\010"
-    "UnitType\030\006 \001(\014\022\020\n\010SelfType\030\007 \001(\014", 672);
+    "e\030\002 \001(\014\"\206\001\n\tStateBean\022\r\n\005cimId\030\001 \001(\014\022\r\n\005"
+    "state\030\002 \001(\r\022\017\n\007isBoard\030\003 \001(\r\022\022\n\nisElectr"
+    "ic\030\004 \001(\r\022\020\n\010volValue\030\005 \001(\014\022\020\n\010unitType\030\006"
+    " \001(\r\022\022\n\nstationCim\030\007 \001(\014\"p\n\017StationTypeB"
+    "ean\022\n\n\002Id\030\001 \001(\r\022\020\n\010ordernum\030\002 \001(\r\022\014\n\004Nam"
+    "e\030\003 \001(\014\0221\n\013StationList\030\004 \003(\0132\034.com.spplu"
+    "s.buff.StationBean\"m\n\013StationBean\022\n\n\002Id\030"
+    "\001 \001(\r\022\022\n\nCategoryId\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014\022"
+    "\r\n\005CimId\030\004 \001(\014\022\023\n\013CurrentName\030\005 \001(\014\022\014\n\004P"
+    "ath\030\006 \001(\014\"z\n\tUnitsBean\022\n\n\002Id\030\001 \001(\r\022\021\n\tSt"
+    "ationId\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014\022\r\n\005CimId\030\004 \001"
+    "(\014\022\r\n\005VolId\030\005 \001(\014\022\020\n\010UnitType\030\006 \001(\014\022\020\n\010S"
+    "elfType\030\007 \001(\014", 693);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbean.proto", &protobuf_RegisterTypes);
   UserBean::default_instance_ = new UserBean();
@@ -985,6 +987,7 @@ const int StateBean::kIsBoardFieldNumber;
 const int StateBean::kIsElectricFieldNumber;
 const int StateBean::kVolValueFieldNumber;
 const int StateBean::kUnitTypeFieldNumber;
+const int StateBean::kStationCimFieldNumber;
 #endif  // !_MSC_VER
 
 StateBean::StateBean()
@@ -1009,6 +1012,7 @@ void StateBean::SharedCtor() {
   iselectric_ = 0u;
   volvalue_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   unittype_ = 0u;
+  stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -1022,6 +1026,9 @@ void StateBean::SharedDtor() {
   }
   if (volvalue_ != &::google::protobuf::internal::kEmptyString) {
     delete volvalue_;
+  }
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationcim_;
   }
   if (this != default_instance_) {
   }
@@ -1064,6 +1071,11 @@ void StateBean::Clear() {
       }
     }
     unittype_ = 0u;
+    if (has_stationcim()) {
+      if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+        stationcim_->clear();
+      }
+    }
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -1162,6 +1174,20 @@ bool StateBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
+        if (input->ExpectTag(58)) goto parse_stationCim;
+        break;
+      }
+
+      // optional bytes stationCim = 7;
+      case 7: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_stationCim:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_stationcim()));
+        } else {
+          goto handle_uninterpreted;
+        }
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -1216,6 +1242,12 @@ void StateBean::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(6, this->unittype(), output);
   }
 
+  // optional bytes stationCim = 7;
+  if (has_stationcim()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      7, this->stationcim(), output);
+  }
+
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -1256,6 +1288,13 @@ void StateBean::SerializeWithCachedSizes(
   // optional uint32 unitType = 6;
   if (has_unittype()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(6, this->unittype(), target);
+  }
+
+  // optional bytes stationCim = 7;
+  if (has_stationcim()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        7, this->stationcim(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -1311,6 +1350,13 @@ int StateBean::ByteSize() const {
           this->unittype());
     }
 
+    // optional bytes stationCim = 7;
+    if (has_stationcim()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->stationcim());
+    }
+
   }
   if (!unknown_fields().empty()) {
     total_size +=
@@ -1356,6 +1402,9 @@ void StateBean::MergeFrom(const StateBean& from) {
     if (from.has_unittype()) {
       set_unittype(from.unittype());
     }
+    if (from.has_stationcim()) {
+      set_stationcim(from.stationcim());
+    }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
@@ -1385,6 +1434,7 @@ void StateBean::Swap(StateBean* other) {
     std::swap(iselectric_, other->iselectric_);
     std::swap(volvalue_, other->volvalue_);
     std::swap(unittype_, other->unittype_);
+    std::swap(stationcim_, other->stationcim_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);

@@ -163,3 +163,66 @@ message StationListMsg
   	optional Response 	response 	= 2;
   
 }
+
+// 挂牌，摘牌消息
+message TagMsg
+{ 
+	//请求体定义
+	message Request {
+		optional uint32	saveId		= 1;		// ID
+		optional uint32	type		= 2;		// 操作类型 0 摘牌，1挂牌
+		optional bytes	unitCim		= 3;		// 元件cim
+						
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		optional bytes			resmsg		= 2;	// 
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}
+
+// 设置电源点消息
+message PowerSetMsg
+{ 
+	//请求体定义
+	message Request {
+		
+		optional bytes	stationCim	= 1;		// 站点cim
+		optional bytes	unitCim		= 2;		// 元件cim
+						
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		optional bytes			resmsg		= 2;	// 
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}
+
+// 设置进出线消息
+message LineSetMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	unitCim				= 1;		// 元件cim
+		optional bytes	stationOneCim		= 2;		// 站点cim
+		optional bytes	stationOtherCim		= 3;		// 站点cim
+						
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		optional bytes			resmsg		= 2;	// 
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}

@@ -67,6 +67,16 @@
 
 // 开关变位
 #define				CMD_TOPO_BREAKER_CHANGE		2005
+
+// 设置电源点
+#define				CMD_POWER_SET					2006
+
+// 设置进出线		
+#define				CMD_LINE_SET						2007
+
+// 挂牌，摘牌
+#define				CMD_TAG_OP							2008
+
 	
 
 #endif
