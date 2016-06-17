@@ -40,6 +40,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* UnitsBean_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   UnitsBean_reflection_ = NULL;
+const ::google::protobuf::Descriptor* SavingBean_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  SavingBean_reflection_ = NULL;
 
 }  // namespace
 
@@ -166,6 +169,23 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(UnitsBean));
+  SavingBean_descriptor_ = file->message_type(6);
+  static const int SavingBean_offsets_[3] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SavingBean, id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SavingBean, name_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SavingBean, savetime_),
+  };
+  SavingBean_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      SavingBean_descriptor_,
+      SavingBean::default_instance_,
+      SavingBean_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SavingBean, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SavingBean, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(SavingBean));
 }
 
 namespace {
@@ -190,6 +210,8 @@ void protobuf_RegisterTypes(const ::std::string&) {
     StationBean_descriptor_, &StationBean::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     UnitsBean_descriptor_, &UnitsBean::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    SavingBean_descriptor_, &SavingBean::default_instance());
 }
 
 }  // namespace
@@ -207,6 +229,8 @@ void protobuf_ShutdownFile_msgbean_2eproto() {
   delete StationBean_reflection_;
   delete UnitsBean::default_instance_;
   delete UnitsBean_reflection_;
+  delete SavingBean::default_instance_;
+  delete SavingBean_reflection_;
 }
 
 void protobuf_AddDesc_msgbean_2eproto() {
@@ -233,7 +257,8 @@ void protobuf_AddDesc_msgbean_2eproto() {
     "ath\030\006 \001(\014\"z\n\tUnitsBean\022\n\n\002Id\030\001 \001(\r\022\021\n\tSt"
     "ationId\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014\022\r\n\005CimId\030\004 \001"
     "(\014\022\r\n\005VolId\030\005 \001(\014\022\020\n\010UnitType\030\006 \001(\014\022\020\n\010S"
-    "elfType\030\007 \001(\014", 693);
+    "elfType\030\007 \001(\014\"8\n\nSavingBean\022\n\n\002Id\030\001 \001(\r\022"
+    "\014\n\004Name\030\002 \001(\014\022\020\n\010SaveTime\030\003 \001(\014", 751);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbean.proto", &protobuf_RegisterTypes);
   UserBean::default_instance_ = new UserBean();
@@ -242,12 +267,14 @@ void protobuf_AddDesc_msgbean_2eproto() {
   StationTypeBean::default_instance_ = new StationTypeBean();
   StationBean::default_instance_ = new StationBean();
   UnitsBean::default_instance_ = new UnitsBean();
+  SavingBean::default_instance_ = new SavingBean();
   UserBean::default_instance_->InitAsDefaultInstance();
   UserRoleBean::default_instance_->InitAsDefaultInstance();
   StateBean::default_instance_->InitAsDefaultInstance();
   StationTypeBean::default_instance_->InitAsDefaultInstance();
   StationBean::default_instance_->InitAsDefaultInstance();
   UnitsBean::default_instance_->InitAsDefaultInstance();
+  SavingBean::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_msgbean_2eproto);
 }
 
@@ -2710,6 +2737,310 @@ void UnitsBean::Swap(UnitsBean* other) {
   ::google::protobuf::Metadata metadata;
   metadata.descriptor = UnitsBean_descriptor_;
   metadata.reflection = UnitsBean_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int SavingBean::kIdFieldNumber;
+const int SavingBean::kNameFieldNumber;
+const int SavingBean::kSaveTimeFieldNumber;
+#endif  // !_MSC_VER
+
+SavingBean::SavingBean()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void SavingBean::InitAsDefaultInstance() {
+}
+
+SavingBean::SavingBean(const SavingBean& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void SavingBean::SharedCtor() {
+  _cached_size_ = 0;
+  id_ = 0u;
+  name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  savetime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+SavingBean::~SavingBean() {
+  SharedDtor();
+}
+
+void SavingBean::SharedDtor() {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    delete name_;
+  }
+  if (savetime_ != &::google::protobuf::internal::kEmptyString) {
+    delete savetime_;
+  }
+  if (this != default_instance_) {
+  }
+}
+
+void SavingBean::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* SavingBean::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return SavingBean_descriptor_;
+}
+
+const SavingBean& SavingBean::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbean_2eproto();
+  return *default_instance_;
+}
+
+SavingBean* SavingBean::default_instance_ = NULL;
+
+SavingBean* SavingBean::New() const {
+  return new SavingBean;
+}
+
+void SavingBean::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    id_ = 0u;
+    if (has_name()) {
+      if (name_ != &::google::protobuf::internal::kEmptyString) {
+        name_->clear();
+      }
+    }
+    if (has_savetime()) {
+      if (savetime_ != &::google::protobuf::internal::kEmptyString) {
+        savetime_->clear();
+      }
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool SavingBean::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 Id = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &id_)));
+          set_has_id();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_Name;
+        break;
+      }
+
+      // optional bytes Name = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_Name:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_name()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(26)) goto parse_SaveTime;
+        break;
+      }
+
+      // optional bytes SaveTime = 3;
+      case 3: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_SaveTime:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_savetime()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void SavingBean::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional uint32 Id = 1;
+  if (has_id()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->id(), output);
+  }
+
+  // optional bytes Name = 2;
+  if (has_name()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      2, this->name(), output);
+  }
+
+  // optional bytes SaveTime = 3;
+  if (has_savetime()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      3, this->savetime(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* SavingBean::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional uint32 Id = 1;
+  if (has_id()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->id(), target);
+  }
+
+  // optional bytes Name = 2;
+  if (has_name()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        2, this->name(), target);
+  }
+
+  // optional bytes SaveTime = 3;
+  if (has_savetime()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        3, this->savetime(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int SavingBean::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 Id = 1;
+    if (has_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->id());
+    }
+
+    // optional bytes Name = 2;
+    if (has_name()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->name());
+    }
+
+    // optional bytes SaveTime = 3;
+    if (has_savetime()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->savetime());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void SavingBean::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const SavingBean* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const SavingBean*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void SavingBean::MergeFrom(const SavingBean& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_id()) {
+      set_id(from.id());
+    }
+    if (from.has_name()) {
+      set_name(from.name());
+    }
+    if (from.has_savetime()) {
+      set_savetime(from.savetime());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void SavingBean::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void SavingBean::CopyFrom(const SavingBean& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SavingBean::IsInitialized() const {
+
+  return true;
+}
+
+void SavingBean::Swap(SavingBean* other) {
+  if (other != this) {
+    std::swap(id_, other->id_);
+    std::swap(name_, other->name_);
+    std::swap(savetime_, other->savetime_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata SavingBean::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = SavingBean_descriptor_;
+  metadata.reflection = SavingBean_reflection_;
   return metadata;
 }
 

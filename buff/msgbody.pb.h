@@ -72,6 +72,12 @@ class PowerSetMsg_Response;
 class LineSetMsg;
 class LineSetMsg_Request;
 class LineSetMsg_Response;
+class SavingListMsg;
+class SavingListMsg_Request;
+class SavingListMsg_Response;
+class WriteSavingMsg;
+class WriteSavingMsg_Request;
+class WriteSavingMsg_Response;
 
 // ===================================================================
 
@@ -3520,6 +3526,568 @@ class LineSetMsg : public ::google::protobuf::Message {
   void InitAsDefaultInstance();
   static LineSetMsg* default_instance_;
 };
+// -------------------------------------------------------------------
+
+class SavingListMsg_Request : public ::google::protobuf::Message {
+ public:
+  SavingListMsg_Request();
+  virtual ~SavingListMsg_Request();
+
+  SavingListMsg_Request(const SavingListMsg_Request& from);
+
+  inline SavingListMsg_Request& operator=(const SavingListMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const SavingListMsg_Request& default_instance();
+
+  void Swap(SavingListMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  SavingListMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const SavingListMsg_Request& from);
+  void MergeFrom(const SavingListMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes id = 1;
+  inline bool has_id() const;
+  inline void clear_id();
+  static const int kIdFieldNumber = 1;
+  inline const ::std::string& id() const;
+  inline void set_id(const ::std::string& value);
+  inline void set_id(const char* value);
+  inline void set_id(const void* value, size_t size);
+  inline ::std::string* mutable_id();
+  inline ::std::string* release_id();
+  inline void set_allocated_id(::std::string* id);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.SavingListMsg.Request)
+ private:
+  inline void set_has_id();
+  inline void clear_has_id();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* id_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static SavingListMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class SavingListMsg_Response : public ::google::protobuf::Message {
+ public:
+  SavingListMsg_Response();
+  virtual ~SavingListMsg_Response();
+
+  SavingListMsg_Response(const SavingListMsg_Response& from);
+
+  inline SavingListMsg_Response& operator=(const SavingListMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const SavingListMsg_Response& default_instance();
+
+  void Swap(SavingListMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  SavingListMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const SavingListMsg_Response& from);
+  void MergeFrom(const SavingListMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .com.spplus.buff.SavingBean saveList = 1;
+  inline int savelist_size() const;
+  inline void clear_savelist();
+  static const int kSaveListFieldNumber = 1;
+  inline const ::com::spplus::buff::SavingBean& savelist(int index) const;
+  inline ::com::spplus::buff::SavingBean* mutable_savelist(int index);
+  inline ::com::spplus::buff::SavingBean* add_savelist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::SavingBean >&
+      savelist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::SavingBean >*
+      mutable_savelist();
+
+  // optional uint32 rescode = 2;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 2;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.SavingListMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::SavingBean > savelist_;
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static SavingListMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class SavingListMsg : public ::google::protobuf::Message {
+ public:
+  SavingListMsg();
+  virtual ~SavingListMsg();
+
+  SavingListMsg(const SavingListMsg& from);
+
+  inline SavingListMsg& operator=(const SavingListMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const SavingListMsg& default_instance();
+
+  void Swap(SavingListMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  SavingListMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const SavingListMsg& from);
+  void MergeFrom(const SavingListMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef SavingListMsg_Request Request;
+  typedef SavingListMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.SavingListMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::SavingListMsg_Request& request() const;
+  inline ::com::spplus::buff::SavingListMsg_Request* mutable_request();
+  inline ::com::spplus::buff::SavingListMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::SavingListMsg_Request* request);
+
+  // optional .com.spplus.buff.SavingListMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::SavingListMsg_Response& response() const;
+  inline ::com::spplus::buff::SavingListMsg_Response* mutable_response();
+  inline ::com::spplus::buff::SavingListMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::SavingListMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.SavingListMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::SavingListMsg_Request* request_;
+  ::com::spplus::buff::SavingListMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static SavingListMsg* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class WriteSavingMsg_Request : public ::google::protobuf::Message {
+ public:
+  WriteSavingMsg_Request();
+  virtual ~WriteSavingMsg_Request();
+
+  WriteSavingMsg_Request(const WriteSavingMsg_Request& from);
+
+  inline WriteSavingMsg_Request& operator=(const WriteSavingMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const WriteSavingMsg_Request& default_instance();
+
+  void Swap(WriteSavingMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  WriteSavingMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const WriteSavingMsg_Request& from);
+  void MergeFrom(const WriteSavingMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes saveName = 1;
+  inline bool has_savename() const;
+  inline void clear_savename();
+  static const int kSaveNameFieldNumber = 1;
+  inline const ::std::string& savename() const;
+  inline void set_savename(const ::std::string& value);
+  inline void set_savename(const char* value);
+  inline void set_savename(const void* value, size_t size);
+  inline ::std::string* mutable_savename();
+  inline ::std::string* release_savename();
+  inline void set_allocated_savename(::std::string* savename);
+
+  // repeated .com.spplus.buff.StateBean stateList = 2;
+  inline int statelist_size() const;
+  inline void clear_statelist();
+  static const int kStateListFieldNumber = 2;
+  inline const ::com::spplus::buff::StateBean& statelist(int index) const;
+  inline ::com::spplus::buff::StateBean* mutable_statelist(int index);
+  inline ::com::spplus::buff::StateBean* add_statelist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+      statelist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+      mutable_statelist();
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.WriteSavingMsg.Request)
+ private:
+  inline void set_has_savename();
+  inline void clear_has_savename();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* savename_;
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean > statelist_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static WriteSavingMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class WriteSavingMsg_Response : public ::google::protobuf::Message {
+ public:
+  WriteSavingMsg_Response();
+  virtual ~WriteSavingMsg_Response();
+
+  WriteSavingMsg_Response(const WriteSavingMsg_Response& from);
+
+  inline WriteSavingMsg_Response& operator=(const WriteSavingMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const WriteSavingMsg_Response& default_instance();
+
+  void Swap(WriteSavingMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  WriteSavingMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const WriteSavingMsg_Response& from);
+  void MergeFrom(const WriteSavingMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 rescode = 1;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 1;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.WriteSavingMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static WriteSavingMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class WriteSavingMsg : public ::google::protobuf::Message {
+ public:
+  WriteSavingMsg();
+  virtual ~WriteSavingMsg();
+
+  WriteSavingMsg(const WriteSavingMsg& from);
+
+  inline WriteSavingMsg& operator=(const WriteSavingMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const WriteSavingMsg& default_instance();
+
+  void Swap(WriteSavingMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  WriteSavingMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const WriteSavingMsg& from);
+  void MergeFrom(const WriteSavingMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef WriteSavingMsg_Request Request;
+  typedef WriteSavingMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.WriteSavingMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::WriteSavingMsg_Request& request() const;
+  inline ::com::spplus::buff::WriteSavingMsg_Request* mutable_request();
+  inline ::com::spplus::buff::WriteSavingMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::WriteSavingMsg_Request* request);
+
+  // optional .com.spplus.buff.WriteSavingMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::WriteSavingMsg_Response& response() const;
+  inline ::com::spplus::buff::WriteSavingMsg_Response* mutable_response();
+  inline ::com::spplus::buff::WriteSavingMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::WriteSavingMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.WriteSavingMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::WriteSavingMsg_Request* request_;
+  ::com::spplus::buff::WriteSavingMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static WriteSavingMsg* default_instance_;
+};
 // ===================================================================
 
 
@@ -6379,6 +6947,416 @@ inline ::com::spplus::buff::LineSetMsg_Response* LineSetMsg::release_response() 
   return temp;
 }
 inline void LineSetMsg::set_allocated_response(::com::spplus::buff::LineSetMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
+// SavingListMsg_Request
+
+// optional bytes id = 1;
+inline bool SavingListMsg_Request::has_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void SavingListMsg_Request::set_has_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void SavingListMsg_Request::clear_has_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void SavingListMsg_Request::clear_id() {
+  if (id_ != &::google::protobuf::internal::kEmptyString) {
+    id_->clear();
+  }
+  clear_has_id();
+}
+inline const ::std::string& SavingListMsg_Request::id() const {
+  return *id_;
+}
+inline void SavingListMsg_Request::set_id(const ::std::string& value) {
+  set_has_id();
+  if (id_ == &::google::protobuf::internal::kEmptyString) {
+    id_ = new ::std::string;
+  }
+  id_->assign(value);
+}
+inline void SavingListMsg_Request::set_id(const char* value) {
+  set_has_id();
+  if (id_ == &::google::protobuf::internal::kEmptyString) {
+    id_ = new ::std::string;
+  }
+  id_->assign(value);
+}
+inline void SavingListMsg_Request::set_id(const void* value, size_t size) {
+  set_has_id();
+  if (id_ == &::google::protobuf::internal::kEmptyString) {
+    id_ = new ::std::string;
+  }
+  id_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* SavingListMsg_Request::mutable_id() {
+  set_has_id();
+  if (id_ == &::google::protobuf::internal::kEmptyString) {
+    id_ = new ::std::string;
+  }
+  return id_;
+}
+inline ::std::string* SavingListMsg_Request::release_id() {
+  clear_has_id();
+  if (id_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = id_;
+    id_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void SavingListMsg_Request::set_allocated_id(::std::string* id) {
+  if (id_ != &::google::protobuf::internal::kEmptyString) {
+    delete id_;
+  }
+  if (id) {
+    set_has_id();
+    id_ = id;
+  } else {
+    clear_has_id();
+    id_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// SavingListMsg_Response
+
+// repeated .com.spplus.buff.SavingBean saveList = 1;
+inline int SavingListMsg_Response::savelist_size() const {
+  return savelist_.size();
+}
+inline void SavingListMsg_Response::clear_savelist() {
+  savelist_.Clear();
+}
+inline const ::com::spplus::buff::SavingBean& SavingListMsg_Response::savelist(int index) const {
+  return savelist_.Get(index);
+}
+inline ::com::spplus::buff::SavingBean* SavingListMsg_Response::mutable_savelist(int index) {
+  return savelist_.Mutable(index);
+}
+inline ::com::spplus::buff::SavingBean* SavingListMsg_Response::add_savelist() {
+  return savelist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::SavingBean >&
+SavingListMsg_Response::savelist() const {
+  return savelist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::SavingBean >*
+SavingListMsg_Response::mutable_savelist() {
+  return &savelist_;
+}
+
+// optional uint32 rescode = 2;
+inline bool SavingListMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void SavingListMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void SavingListMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void SavingListMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 SavingListMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void SavingListMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// SavingListMsg
+
+// optional .com.spplus.buff.SavingListMsg.Request request = 1;
+inline bool SavingListMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void SavingListMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void SavingListMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void SavingListMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::SavingListMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::SavingListMsg_Request& SavingListMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::SavingListMsg_Request* SavingListMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::SavingListMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::SavingListMsg_Request* SavingListMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::SavingListMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void SavingListMsg::set_allocated_request(::com::spplus::buff::SavingListMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.SavingListMsg.Response response = 2;
+inline bool SavingListMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void SavingListMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void SavingListMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void SavingListMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::SavingListMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::SavingListMsg_Response& SavingListMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::SavingListMsg_Response* SavingListMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::SavingListMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::SavingListMsg_Response* SavingListMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::SavingListMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void SavingListMsg::set_allocated_response(::com::spplus::buff::SavingListMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
+// WriteSavingMsg_Request
+
+// optional bytes saveName = 1;
+inline bool WriteSavingMsg_Request::has_savename() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void WriteSavingMsg_Request::set_has_savename() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void WriteSavingMsg_Request::clear_has_savename() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void WriteSavingMsg_Request::clear_savename() {
+  if (savename_ != &::google::protobuf::internal::kEmptyString) {
+    savename_->clear();
+  }
+  clear_has_savename();
+}
+inline const ::std::string& WriteSavingMsg_Request::savename() const {
+  return *savename_;
+}
+inline void WriteSavingMsg_Request::set_savename(const ::std::string& value) {
+  set_has_savename();
+  if (savename_ == &::google::protobuf::internal::kEmptyString) {
+    savename_ = new ::std::string;
+  }
+  savename_->assign(value);
+}
+inline void WriteSavingMsg_Request::set_savename(const char* value) {
+  set_has_savename();
+  if (savename_ == &::google::protobuf::internal::kEmptyString) {
+    savename_ = new ::std::string;
+  }
+  savename_->assign(value);
+}
+inline void WriteSavingMsg_Request::set_savename(const void* value, size_t size) {
+  set_has_savename();
+  if (savename_ == &::google::protobuf::internal::kEmptyString) {
+    savename_ = new ::std::string;
+  }
+  savename_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* WriteSavingMsg_Request::mutable_savename() {
+  set_has_savename();
+  if (savename_ == &::google::protobuf::internal::kEmptyString) {
+    savename_ = new ::std::string;
+  }
+  return savename_;
+}
+inline ::std::string* WriteSavingMsg_Request::release_savename() {
+  clear_has_savename();
+  if (savename_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = savename_;
+    savename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void WriteSavingMsg_Request::set_allocated_savename(::std::string* savename) {
+  if (savename_ != &::google::protobuf::internal::kEmptyString) {
+    delete savename_;
+  }
+  if (savename) {
+    set_has_savename();
+    savename_ = savename;
+  } else {
+    clear_has_savename();
+    savename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// repeated .com.spplus.buff.StateBean stateList = 2;
+inline int WriteSavingMsg_Request::statelist_size() const {
+  return statelist_.size();
+}
+inline void WriteSavingMsg_Request::clear_statelist() {
+  statelist_.Clear();
+}
+inline const ::com::spplus::buff::StateBean& WriteSavingMsg_Request::statelist(int index) const {
+  return statelist_.Get(index);
+}
+inline ::com::spplus::buff::StateBean* WriteSavingMsg_Request::mutable_statelist(int index) {
+  return statelist_.Mutable(index);
+}
+inline ::com::spplus::buff::StateBean* WriteSavingMsg_Request::add_statelist() {
+  return statelist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+WriteSavingMsg_Request::statelist() const {
+  return statelist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+WriteSavingMsg_Request::mutable_statelist() {
+  return &statelist_;
+}
+
+// -------------------------------------------------------------------
+
+// WriteSavingMsg_Response
+
+// optional uint32 rescode = 1;
+inline bool WriteSavingMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void WriteSavingMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void WriteSavingMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void WriteSavingMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 WriteSavingMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void WriteSavingMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// WriteSavingMsg
+
+// optional .com.spplus.buff.WriteSavingMsg.Request request = 1;
+inline bool WriteSavingMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void WriteSavingMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void WriteSavingMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void WriteSavingMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::WriteSavingMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::WriteSavingMsg_Request& WriteSavingMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::WriteSavingMsg_Request* WriteSavingMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::WriteSavingMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::WriteSavingMsg_Request* WriteSavingMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::WriteSavingMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void WriteSavingMsg::set_allocated_request(::com::spplus::buff::WriteSavingMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.WriteSavingMsg.Response response = 2;
+inline bool WriteSavingMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void WriteSavingMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void WriteSavingMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void WriteSavingMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::WriteSavingMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::WriteSavingMsg_Response& WriteSavingMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::WriteSavingMsg_Response* WriteSavingMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::WriteSavingMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::WriteSavingMsg_Response* WriteSavingMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::WriteSavingMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void WriteSavingMsg::set_allocated_response(::com::spplus::buff::WriteSavingMsg_Response* response) {
   delete response_;
   response_ = response;
   if (response) {

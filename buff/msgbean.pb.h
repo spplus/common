@@ -41,6 +41,7 @@ class StateBean;
 class StationTypeBean;
 class StationBean;
 class UnitsBean;
+class SavingBean;
 
 // ===================================================================
 
@@ -901,6 +902,118 @@ class UnitsBean : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static UnitsBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class SavingBean : public ::google::protobuf::Message {
+ public:
+  SavingBean();
+  virtual ~SavingBean();
+
+  SavingBean(const SavingBean& from);
+
+  inline SavingBean& operator=(const SavingBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const SavingBean& default_instance();
+
+  void Swap(SavingBean* other);
+
+  // implements Message ----------------------------------------------
+
+  SavingBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const SavingBean& from);
+  void MergeFrom(const SavingBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 Id = 1;
+  inline bool has_id() const;
+  inline void clear_id();
+  static const int kIdFieldNumber = 1;
+  inline ::google::protobuf::uint32 id() const;
+  inline void set_id(::google::protobuf::uint32 value);
+
+  // optional bytes Name = 2;
+  inline bool has_name() const;
+  inline void clear_name();
+  static const int kNameFieldNumber = 2;
+  inline const ::std::string& name() const;
+  inline void set_name(const ::std::string& value);
+  inline void set_name(const char* value);
+  inline void set_name(const void* value, size_t size);
+  inline ::std::string* mutable_name();
+  inline ::std::string* release_name();
+  inline void set_allocated_name(::std::string* name);
+
+  // optional bytes SaveTime = 3;
+  inline bool has_savetime() const;
+  inline void clear_savetime();
+  static const int kSaveTimeFieldNumber = 3;
+  inline const ::std::string& savetime() const;
+  inline void set_savetime(const ::std::string& value);
+  inline void set_savetime(const char* value);
+  inline void set_savetime(const void* value, size_t size);
+  inline ::std::string* mutable_savetime();
+  inline ::std::string* release_savetime();
+  inline void set_allocated_savetime(::std::string* savetime);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.SavingBean)
+ private:
+  inline void set_has_id();
+  inline void clear_has_id();
+  inline void set_has_name();
+  inline void clear_has_name();
+  inline void set_has_savetime();
+  inline void clear_has_savetime();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* name_;
+  ::std::string* savetime_;
+  ::google::protobuf::uint32 id_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static SavingBean* default_instance_;
 };
 // ===================================================================
 
@@ -2641,6 +2754,172 @@ inline void UnitsBean::set_allocated_selftype(::std::string* selftype) {
   } else {
     clear_has_selftype();
     selftype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// SavingBean
+
+// optional uint32 Id = 1;
+inline bool SavingBean::has_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void SavingBean::set_has_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void SavingBean::clear_has_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void SavingBean::clear_id() {
+  id_ = 0u;
+  clear_has_id();
+}
+inline ::google::protobuf::uint32 SavingBean::id() const {
+  return id_;
+}
+inline void SavingBean::set_id(::google::protobuf::uint32 value) {
+  set_has_id();
+  id_ = value;
+}
+
+// optional bytes Name = 2;
+inline bool SavingBean::has_name() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void SavingBean::set_has_name() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void SavingBean::clear_has_name() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void SavingBean::clear_name() {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    name_->clear();
+  }
+  clear_has_name();
+}
+inline const ::std::string& SavingBean::name() const {
+  return *name_;
+}
+inline void SavingBean::set_name(const ::std::string& value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void SavingBean::set_name(const char* value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void SavingBean::set_name(const void* value, size_t size) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* SavingBean::mutable_name() {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  return name_;
+}
+inline ::std::string* SavingBean::release_name() {
+  clear_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = name_;
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void SavingBean::set_allocated_name(::std::string* name) {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    delete name_;
+  }
+  if (name) {
+    set_has_name();
+    name_ = name;
+  } else {
+    clear_has_name();
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes SaveTime = 3;
+inline bool SavingBean::has_savetime() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void SavingBean::set_has_savetime() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void SavingBean::clear_has_savetime() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void SavingBean::clear_savetime() {
+  if (savetime_ != &::google::protobuf::internal::kEmptyString) {
+    savetime_->clear();
+  }
+  clear_has_savetime();
+}
+inline const ::std::string& SavingBean::savetime() const {
+  return *savetime_;
+}
+inline void SavingBean::set_savetime(const ::std::string& value) {
+  set_has_savetime();
+  if (savetime_ == &::google::protobuf::internal::kEmptyString) {
+    savetime_ = new ::std::string;
+  }
+  savetime_->assign(value);
+}
+inline void SavingBean::set_savetime(const char* value) {
+  set_has_savetime();
+  if (savetime_ == &::google::protobuf::internal::kEmptyString) {
+    savetime_ = new ::std::string;
+  }
+  savetime_->assign(value);
+}
+inline void SavingBean::set_savetime(const void* value, size_t size) {
+  set_has_savetime();
+  if (savetime_ == &::google::protobuf::internal::kEmptyString) {
+    savetime_ = new ::std::string;
+  }
+  savetime_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* SavingBean::mutable_savetime() {
+  set_has_savetime();
+  if (savetime_ == &::google::protobuf::internal::kEmptyString) {
+    savetime_ = new ::std::string;
+  }
+  return savetime_;
+}
+inline ::std::string* SavingBean::release_savetime() {
+  clear_has_savetime();
+  if (savetime_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = savetime_;
+    savetime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void SavingBean::set_allocated_savetime(::std::string* savetime) {
+  if (savetime_ != &::google::protobuf::internal::kEmptyString) {
+    delete savetime_;
+  }
+  if (savetime) {
+    set_has_savetime();
+    savetime_ = savetime;
+  } else {
+    clear_has_savetime();
+    savetime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
 }
 

@@ -65,3 +65,11 @@ message UnitsBean
     optional 	bytes 	UnitType	= 6;
     optional 	bytes 	SelfType	= 7;
 }
+
+// ¥Êµµ–≈œ¢
+message SavingBean
+{ 
+    optional 	uint32 	Id  		= 1;
+    optional 	bytes 	Name		= 2;
+    optional 	bytes 	SaveTime	= 3;
+}

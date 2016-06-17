@@ -226,3 +226,35 @@ message LineSetMsg
   	optional Response 	response 	= 2;
   
 }
+
+// 获取存档列表消息
+message SavingListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	id				= 1;		// 获取所有存档列表，该参数无用		
+  	}
+  	//响应体定义
+	message Response {
+		repeated SavingBean		saveList	= 1;
+		optional uint32			rescode		= 2;	// 0 成功，其他失败
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+// 保存存档
+message WriteSavingMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	saveName			= 1;		// 存档名称
+		repeated StateBean stateList		= 2;		// 元件状态列表
+  	}
+  	//响应体定义
+	message Response {
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}

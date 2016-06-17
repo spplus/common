@@ -75,9 +75,14 @@
 #define				CMD_LINE_SET						2007
 
 // ¹ÒÅÆ£¬ÕªÅÆ
-#define				CMD_TAG_OP							2008
+#define				CMD_TAG_OP						2008
 
-	
+// ±£´æ´æµµ
+#define				CMD_WRITE_SAVING					2009
+
+// ´ò¿ª´æµµ
+#define				CMD_READ_SAVING					2010
+
 
 #endif
 
