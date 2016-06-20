@@ -249,7 +249,8 @@ message WriteSavingMsg
 	//请求体定义
 	message Request {
 		optional bytes	saveName			= 1;		// 存档名称
-		repeated StateBean stateList		= 2;		// 元件状态列表
+		optional uint32 saveId				= 2;		// 断面ID
+		repeated StateBean stateList		= 3;		// 元件状态列表
   	}
   	//响应体定义
 	message Response {

@@ -3875,10 +3875,17 @@ class WriteSavingMsg_Request : public ::google::protobuf::Message {
   inline ::std::string* release_savename();
   inline void set_allocated_savename(::std::string* savename);
 
-  // repeated .com.spplus.buff.StateBean stateList = 2;
+  // optional uint32 saveId = 2;
+  inline bool has_saveid() const;
+  inline void clear_saveid();
+  static const int kSaveIdFieldNumber = 2;
+  inline ::google::protobuf::uint32 saveid() const;
+  inline void set_saveid(::google::protobuf::uint32 value);
+
+  // repeated .com.spplus.buff.StateBean stateList = 3;
   inline int statelist_size() const;
   inline void clear_statelist();
-  static const int kStateListFieldNumber = 2;
+  static const int kStateListFieldNumber = 3;
   inline const ::com::spplus::buff::StateBean& statelist(int index) const;
   inline ::com::spplus::buff::StateBean* mutable_statelist(int index);
   inline ::com::spplus::buff::StateBean* add_statelist();
@@ -3891,14 +3898,17 @@ class WriteSavingMsg_Request : public ::google::protobuf::Message {
  private:
   inline void set_has_savename();
   inline void clear_has_savename();
+  inline void set_has_saveid();
+  inline void clear_has_saveid();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
   ::std::string* savename_;
   ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean > statelist_;
+  ::google::protobuf::uint32 saveid_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -7235,7 +7245,29 @@ inline void WriteSavingMsg_Request::set_allocated_savename(::std::string* savena
   }
 }
 
-// repeated .com.spplus.buff.StateBean stateList = 2;
+// optional uint32 saveId = 2;
+inline bool WriteSavingMsg_Request::has_saveid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void WriteSavingMsg_Request::set_has_saveid() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void WriteSavingMsg_Request::clear_has_saveid() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void WriteSavingMsg_Request::clear_saveid() {
+  saveid_ = 0u;
+  clear_has_saveid();
+}
+inline ::google::protobuf::uint32 WriteSavingMsg_Request::saveid() const {
+  return saveid_;
+}
+inline void WriteSavingMsg_Request::set_saveid(::google::protobuf::uint32 value) {
+  set_has_saveid();
+  saveid_ = value;
+}
+
+// repeated .com.spplus.buff.StateBean stateList = 3;
 inline int WriteSavingMsg_Request::statelist_size() const {
   return statelist_.size();
 }

@@ -792,8 +792,9 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(WriteSavingMsg));
   WriteSavingMsg_Request_descriptor_ = WriteSavingMsg_descriptor_->nested_type(0);
-  static const int WriteSavingMsg_Request_offsets_[2] = {
+  static const int WriteSavingMsg_Request_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteSavingMsg_Request, savename_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteSavingMsg_Request, saveid_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteSavingMsg_Request, statelist_),
   };
   WriteSavingMsg_Request_reflection_ =
@@ -1093,13 +1094,14 @@ void protobuf_AddDesc_msgbody_2eproto() {
     "\0229\n\010response\030\002 \001(\0132\'.com.spplus.buff.Sav"
     "ingListMsg.Response\032\025\n\007Request\022\n\n\002id\030\001 \001"
     "(\014\032J\n\010Response\022-\n\010saveList\030\001 \003(\0132\033.com.s"
-    "pplus.buff.SavingBean\022\017\n\007rescode\030\002 \001(\r\"\357"
+    "pplus.buff.SavingBean\022\017\n\007rescode\030\002 \001(\r\"\377"
     "\001\n\016WriteSavingMsg\0228\n\007request\030\001 \001(\0132\'.com"
     ".spplus.buff.WriteSavingMsg.Request\022:\n\010r"
     "esponse\030\002 \001(\0132(.com.spplus.buff.WriteSav"
-    "ingMsg.Response\032J\n\007Request\022\020\n\010saveName\030\001"
-    " \001(\014\022-\n\tstateList\030\002 \003(\0132\032.com.spplus.buf"
-    "f.StateBean\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r", 3320);
+    "ingMsg.Response\032Z\n\007Request\022\020\n\010saveName\030\001"
+    " \001(\014\022\016\n\006saveId\030\002 \001(\r\022-\n\tstateList\030\003 \003(\0132"
+    "\032.com.spplus.buff.StateBean\032\033\n\010Response\022"
+    "\017\n\007rescode\030\001 \001(\r", 3336);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbody.proto", &protobuf_RegisterTypes);
   UserLoginMsg::default_instance_ = new UserLoginMsg();
@@ -10875,6 +10877,7 @@ void SavingListMsg::Swap(SavingListMsg* other) {
 
 #ifndef _MSC_VER
 const int WriteSavingMsg_Request::kSaveNameFieldNumber;
+const int WriteSavingMsg_Request::kSaveIdFieldNumber;
 const int WriteSavingMsg_Request::kStateListFieldNumber;
 #endif  // !_MSC_VER
 
@@ -10895,6 +10898,7 @@ WriteSavingMsg_Request::WriteSavingMsg_Request(const WriteSavingMsg_Request& fro
 void WriteSavingMsg_Request::SharedCtor() {
   _cached_size_ = 0;
   savename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  saveid_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -10938,6 +10942,7 @@ void WriteSavingMsg_Request::Clear() {
         savename_->clear();
       }
     }
+    saveid_ = 0u;
   }
   statelist_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -10959,12 +10964,28 @@ bool WriteSavingMsg_Request::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(18)) goto parse_stateList;
+        if (input->ExpectTag(16)) goto parse_saveId;
         break;
       }
 
-      // repeated .com.spplus.buff.StateBean stateList = 2;
+      // optional uint32 saveId = 2;
       case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_saveId:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &saveid_)));
+          set_has_saveid();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(26)) goto parse_stateList;
+        break;
+      }
+
+      // repeated .com.spplus.buff.StateBean stateList = 3;
+      case 3: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_stateList:
@@ -10973,7 +10994,7 @@ bool WriteSavingMsg_Request::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(18)) goto parse_stateList;
+        if (input->ExpectTag(26)) goto parse_stateList;
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -11002,10 +11023,15 @@ void WriteSavingMsg_Request::SerializeWithCachedSizes(
       1, this->savename(), output);
   }
 
-  // repeated .com.spplus.buff.StateBean stateList = 2;
+  // optional uint32 saveId = 2;
+  if (has_saveid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->saveid(), output);
+  }
+
+  // repeated .com.spplus.buff.StateBean stateList = 3;
   for (int i = 0; i < this->statelist_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->statelist(i), output);
+      3, this->statelist(i), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -11023,11 +11049,16 @@ void WriteSavingMsg_Request::SerializeWithCachedSizes(
         1, this->savename(), target);
   }
 
-  // repeated .com.spplus.buff.StateBean stateList = 2;
+  // optional uint32 saveId = 2;
+  if (has_saveid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->saveid(), target);
+  }
+
+  // repeated .com.spplus.buff.StateBean stateList = 3;
   for (int i = 0; i < this->statelist_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        2, this->statelist(i), target);
+        3, this->statelist(i), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -11048,8 +11079,15 @@ int WriteSavingMsg_Request::ByteSize() const {
           this->savename());
     }
 
+    // optional uint32 saveId = 2;
+    if (has_saveid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->saveid());
+    }
+
   }
-  // repeated .com.spplus.buff.StateBean stateList = 2;
+  // repeated .com.spplus.buff.StateBean stateList = 3;
   total_size += 1 * this->statelist_size();
   for (int i = 0; i < this->statelist_size(); i++) {
     total_size +=
@@ -11087,6 +11125,9 @@ void WriteSavingMsg_Request::MergeFrom(const WriteSavingMsg_Request& from) {
     if (from.has_savename()) {
       set_savename(from.savename());
     }
+    if (from.has_saveid()) {
+      set_saveid(from.saveid());
+    }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
@@ -11111,6 +11152,7 @@ bool WriteSavingMsg_Request::IsInitialized() const {
 void WriteSavingMsg_Request::Swap(WriteSavingMsg_Request* other) {
   if (other != this) {
     std::swap(savename_, other->savename_);
+    std::swap(saveid_, other->saveid_);
     statelist_.Swap(&other->statelist_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
