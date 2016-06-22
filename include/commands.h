@@ -10,6 +10,30 @@
 #ifndef __COMMANDS_H__
 #define __COMMANDS_H__
 
+// 设备类型定义
+// 0开关，1刀闸，2母线，3电容，4负载，5发电机，6电压互感器(PT)，7电抗器，8变压器，9进出线
+enum eDeviceType
+{
+	eBREAKER = 0,		// 开关
+	eSWITCH,				// 刀闸，接地刀闸
+	eBUS,				// 母线
+	eCAPACITOR,			// 电容器
+	eLOAD,				// 负载
+	eGENERATOR,			// 发电机
+	ePT,					// PT
+	eREACTOR,			// 电抗器
+	eTRANSFORMER,		// 变压器
+	eLINE,				// 进出线
+	eGROUNDSWITCH,		// 接地刀闸
+	eWINDING,			// 变压器绕组
+	eLINK,				// 连接线
+	eACLINE,				// 交流线路
+	eARRESTER,			// 避雷针
+	eTEXT,				// 文字
+	eDEFAULT				// 缺省类型
+};
+
+
 // 连接建立
 #define				CMD_CONNECTED				1000
 
