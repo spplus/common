@@ -185,6 +185,29 @@ message TagMsg
   
 }
 
+// 开关操作消息
+message OprationMsg
+{ 
+	//请求体定义
+	message Request {
+		optional uint32	saveId		= 1;		// ID
+		optional uint32	type		= 2;		// 操作类型 0 分，1 合
+		optional bytes	unitCim		= 3;		// 元件cim
+		optional bool	ischeck		= 4;		// 是否允许校验	
+						
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		optional bytes			resmsg		= 2;	// 
+		repeated StateBean		devState	= 3;	// 返回设备列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}
+
 // 设置电源点消息
 message PowerSetMsg
 { 

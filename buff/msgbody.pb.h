@@ -66,6 +66,9 @@ class StationListMsg_Response;
 class TagMsg;
 class TagMsg_Request;
 class TagMsg_Response;
+class OprationMsg;
+class OprationMsg_Request;
+class OprationMsg_Response;
 class PowerSetMsg;
 class PowerSetMsg_Request;
 class PowerSetMsg_Response;
@@ -2914,6 +2917,332 @@ class TagMsg : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static TagMsg* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class OprationMsg_Request : public ::google::protobuf::Message {
+ public:
+  OprationMsg_Request();
+  virtual ~OprationMsg_Request();
+
+  OprationMsg_Request(const OprationMsg_Request& from);
+
+  inline OprationMsg_Request& operator=(const OprationMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const OprationMsg_Request& default_instance();
+
+  void Swap(OprationMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  OprationMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const OprationMsg_Request& from);
+  void MergeFrom(const OprationMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 saveId = 1;
+  inline bool has_saveid() const;
+  inline void clear_saveid();
+  static const int kSaveIdFieldNumber = 1;
+  inline ::google::protobuf::uint32 saveid() const;
+  inline void set_saveid(::google::protobuf::uint32 value);
+
+  // optional uint32 type = 2;
+  inline bool has_type() const;
+  inline void clear_type();
+  static const int kTypeFieldNumber = 2;
+  inline ::google::protobuf::uint32 type() const;
+  inline void set_type(::google::protobuf::uint32 value);
+
+  // optional bytes unitCim = 3;
+  inline bool has_unitcim() const;
+  inline void clear_unitcim();
+  static const int kUnitCimFieldNumber = 3;
+  inline const ::std::string& unitcim() const;
+  inline void set_unitcim(const ::std::string& value);
+  inline void set_unitcim(const char* value);
+  inline void set_unitcim(const void* value, size_t size);
+  inline ::std::string* mutable_unitcim();
+  inline ::std::string* release_unitcim();
+  inline void set_allocated_unitcim(::std::string* unitcim);
+
+  // optional bool ischeck = 4;
+  inline bool has_ischeck() const;
+  inline void clear_ischeck();
+  static const int kIscheckFieldNumber = 4;
+  inline bool ischeck() const;
+  inline void set_ischeck(bool value);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.OprationMsg.Request)
+ private:
+  inline void set_has_saveid();
+  inline void clear_has_saveid();
+  inline void set_has_type();
+  inline void clear_has_type();
+  inline void set_has_unitcim();
+  inline void clear_has_unitcim();
+  inline void set_has_ischeck();
+  inline void clear_has_ischeck();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 saveid_;
+  ::google::protobuf::uint32 type_;
+  ::std::string* unitcim_;
+  bool ischeck_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static OprationMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class OprationMsg_Response : public ::google::protobuf::Message {
+ public:
+  OprationMsg_Response();
+  virtual ~OprationMsg_Response();
+
+  OprationMsg_Response(const OprationMsg_Response& from);
+
+  inline OprationMsg_Response& operator=(const OprationMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const OprationMsg_Response& default_instance();
+
+  void Swap(OprationMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  OprationMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const OprationMsg_Response& from);
+  void MergeFrom(const OprationMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 rescode = 1;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 1;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // optional bytes resmsg = 2;
+  inline bool has_resmsg() const;
+  inline void clear_resmsg();
+  static const int kResmsgFieldNumber = 2;
+  inline const ::std::string& resmsg() const;
+  inline void set_resmsg(const ::std::string& value);
+  inline void set_resmsg(const char* value);
+  inline void set_resmsg(const void* value, size_t size);
+  inline ::std::string* mutable_resmsg();
+  inline ::std::string* release_resmsg();
+  inline void set_allocated_resmsg(::std::string* resmsg);
+
+  // repeated .com.spplus.buff.StateBean devState = 3;
+  inline int devstate_size() const;
+  inline void clear_devstate();
+  static const int kDevStateFieldNumber = 3;
+  inline const ::com::spplus::buff::StateBean& devstate(int index) const;
+  inline ::com::spplus::buff::StateBean* mutable_devstate(int index);
+  inline ::com::spplus::buff::StateBean* add_devstate();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+      devstate() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+      mutable_devstate();
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.OprationMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+  inline void set_has_resmsg();
+  inline void clear_has_resmsg();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* resmsg_;
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean > devstate_;
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static OprationMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class OprationMsg : public ::google::protobuf::Message {
+ public:
+  OprationMsg();
+  virtual ~OprationMsg();
+
+  OprationMsg(const OprationMsg& from);
+
+  inline OprationMsg& operator=(const OprationMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const OprationMsg& default_instance();
+
+  void Swap(OprationMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  OprationMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const OprationMsg& from);
+  void MergeFrom(const OprationMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef OprationMsg_Request Request;
+  typedef OprationMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.OprationMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::OprationMsg_Request& request() const;
+  inline ::com::spplus::buff::OprationMsg_Request* mutable_request();
+  inline ::com::spplus::buff::OprationMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::OprationMsg_Request* request);
+
+  // optional .com.spplus.buff.OprationMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::OprationMsg_Response& response() const;
+  inline ::com::spplus::buff::OprationMsg_Response* mutable_response();
+  inline ::com::spplus::buff::OprationMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::OprationMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.OprationMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::OprationMsg_Request* request_;
+  ::com::spplus::buff::OprationMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static OprationMsg* default_instance_;
 };
 // -------------------------------------------------------------------
 
@@ -6247,6 +6576,347 @@ inline ::com::spplus::buff::TagMsg_Response* TagMsg::release_response() {
   return temp;
 }
 inline void TagMsg::set_allocated_response(::com::spplus::buff::TagMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
+// OprationMsg_Request
+
+// optional uint32 saveId = 1;
+inline bool OprationMsg_Request::has_saveid() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void OprationMsg_Request::set_has_saveid() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void OprationMsg_Request::clear_has_saveid() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void OprationMsg_Request::clear_saveid() {
+  saveid_ = 0u;
+  clear_has_saveid();
+}
+inline ::google::protobuf::uint32 OprationMsg_Request::saveid() const {
+  return saveid_;
+}
+inline void OprationMsg_Request::set_saveid(::google::protobuf::uint32 value) {
+  set_has_saveid();
+  saveid_ = value;
+}
+
+// optional uint32 type = 2;
+inline bool OprationMsg_Request::has_type() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void OprationMsg_Request::set_has_type() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void OprationMsg_Request::clear_has_type() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void OprationMsg_Request::clear_type() {
+  type_ = 0u;
+  clear_has_type();
+}
+inline ::google::protobuf::uint32 OprationMsg_Request::type() const {
+  return type_;
+}
+inline void OprationMsg_Request::set_type(::google::protobuf::uint32 value) {
+  set_has_type();
+  type_ = value;
+}
+
+// optional bytes unitCim = 3;
+inline bool OprationMsg_Request::has_unitcim() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void OprationMsg_Request::set_has_unitcim() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void OprationMsg_Request::clear_has_unitcim() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void OprationMsg_Request::clear_unitcim() {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    unitcim_->clear();
+  }
+  clear_has_unitcim();
+}
+inline const ::std::string& OprationMsg_Request::unitcim() const {
+  return *unitcim_;
+}
+inline void OprationMsg_Request::set_unitcim(const ::std::string& value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void OprationMsg_Request::set_unitcim(const char* value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void OprationMsg_Request::set_unitcim(const void* value, size_t size) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* OprationMsg_Request::mutable_unitcim() {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  return unitcim_;
+}
+inline ::std::string* OprationMsg_Request::release_unitcim() {
+  clear_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unitcim_;
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void OprationMsg_Request::set_allocated_unitcim(::std::string* unitcim) {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete unitcim_;
+  }
+  if (unitcim) {
+    set_has_unitcim();
+    unitcim_ = unitcim;
+  } else {
+    clear_has_unitcim();
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bool ischeck = 4;
+inline bool OprationMsg_Request::has_ischeck() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void OprationMsg_Request::set_has_ischeck() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void OprationMsg_Request::clear_has_ischeck() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void OprationMsg_Request::clear_ischeck() {
+  ischeck_ = false;
+  clear_has_ischeck();
+}
+inline bool OprationMsg_Request::ischeck() const {
+  return ischeck_;
+}
+inline void OprationMsg_Request::set_ischeck(bool value) {
+  set_has_ischeck();
+  ischeck_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// OprationMsg_Response
+
+// optional uint32 rescode = 1;
+inline bool OprationMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void OprationMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void OprationMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void OprationMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 OprationMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void OprationMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// optional bytes resmsg = 2;
+inline bool OprationMsg_Response::has_resmsg() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void OprationMsg_Response::set_has_resmsg() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void OprationMsg_Response::clear_has_resmsg() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void OprationMsg_Response::clear_resmsg() {
+  if (resmsg_ != &::google::protobuf::internal::kEmptyString) {
+    resmsg_->clear();
+  }
+  clear_has_resmsg();
+}
+inline const ::std::string& OprationMsg_Response::resmsg() const {
+  return *resmsg_;
+}
+inline void OprationMsg_Response::set_resmsg(const ::std::string& value) {
+  set_has_resmsg();
+  if (resmsg_ == &::google::protobuf::internal::kEmptyString) {
+    resmsg_ = new ::std::string;
+  }
+  resmsg_->assign(value);
+}
+inline void OprationMsg_Response::set_resmsg(const char* value) {
+  set_has_resmsg();
+  if (resmsg_ == &::google::protobuf::internal::kEmptyString) {
+    resmsg_ = new ::std::string;
+  }
+  resmsg_->assign(value);
+}
+inline void OprationMsg_Response::set_resmsg(const void* value, size_t size) {
+  set_has_resmsg();
+  if (resmsg_ == &::google::protobuf::internal::kEmptyString) {
+    resmsg_ = new ::std::string;
+  }
+  resmsg_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* OprationMsg_Response::mutable_resmsg() {
+  set_has_resmsg();
+  if (resmsg_ == &::google::protobuf::internal::kEmptyString) {
+    resmsg_ = new ::std::string;
+  }
+  return resmsg_;
+}
+inline ::std::string* OprationMsg_Response::release_resmsg() {
+  clear_has_resmsg();
+  if (resmsg_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = resmsg_;
+    resmsg_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void OprationMsg_Response::set_allocated_resmsg(::std::string* resmsg) {
+  if (resmsg_ != &::google::protobuf::internal::kEmptyString) {
+    delete resmsg_;
+  }
+  if (resmsg) {
+    set_has_resmsg();
+    resmsg_ = resmsg;
+  } else {
+    clear_has_resmsg();
+    resmsg_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// repeated .com.spplus.buff.StateBean devState = 3;
+inline int OprationMsg_Response::devstate_size() const {
+  return devstate_.size();
+}
+inline void OprationMsg_Response::clear_devstate() {
+  devstate_.Clear();
+}
+inline const ::com::spplus::buff::StateBean& OprationMsg_Response::devstate(int index) const {
+  return devstate_.Get(index);
+}
+inline ::com::spplus::buff::StateBean* OprationMsg_Response::mutable_devstate(int index) {
+  return devstate_.Mutable(index);
+}
+inline ::com::spplus::buff::StateBean* OprationMsg_Response::add_devstate() {
+  return devstate_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+OprationMsg_Response::devstate() const {
+  return devstate_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+OprationMsg_Response::mutable_devstate() {
+  return &devstate_;
+}
+
+// -------------------------------------------------------------------
+
+// OprationMsg
+
+// optional .com.spplus.buff.OprationMsg.Request request = 1;
+inline bool OprationMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void OprationMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void OprationMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void OprationMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::OprationMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::OprationMsg_Request& OprationMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::OprationMsg_Request* OprationMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::OprationMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::OprationMsg_Request* OprationMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::OprationMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void OprationMsg::set_allocated_request(::com::spplus::buff::OprationMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.OprationMsg.Response response = 2;
+inline bool OprationMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void OprationMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void OprationMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void OprationMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::OprationMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::OprationMsg_Response& OprationMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::OprationMsg_Response* OprationMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::OprationMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::OprationMsg_Response* OprationMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::OprationMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void OprationMsg::set_allocated_response(::com::spplus::buff::OprationMsg_Response* response) {
   delete response_;
   response_ = response;
   if (response) {
