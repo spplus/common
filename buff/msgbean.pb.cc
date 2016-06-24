@@ -43,6 +43,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* SavingBean_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   SavingBean_reflection_ = NULL;
+const ::google::protobuf::Descriptor* RuleBean_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RuleBean_reflection_ = NULL;
 
 }  // namespace
 
@@ -186,6 +189,24 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(SavingBean));
+  RuleBean_descriptor_ = file->message_type(7);
+  static const int RuleBean_offsets_[4] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RuleBean, id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RuleBean, name_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RuleBean, alarmlevel_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RuleBean, description_),
+  };
+  RuleBean_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      RuleBean_descriptor_,
+      RuleBean::default_instance_,
+      RuleBean_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RuleBean, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RuleBean, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(RuleBean));
 }
 
 namespace {
@@ -212,6 +233,8 @@ void protobuf_RegisterTypes(const ::std::string&) {
     UnitsBean_descriptor_, &UnitsBean::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     SavingBean_descriptor_, &SavingBean::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    RuleBean_descriptor_, &RuleBean::default_instance());
 }
 
 }  // namespace
@@ -231,6 +254,8 @@ void protobuf_ShutdownFile_msgbean_2eproto() {
   delete UnitsBean_reflection_;
   delete SavingBean::default_instance_;
   delete SavingBean_reflection_;
+  delete RuleBean::default_instance_;
+  delete RuleBean_reflection_;
 }
 
 void protobuf_AddDesc_msgbean_2eproto() {
@@ -258,7 +283,9 @@ void protobuf_AddDesc_msgbean_2eproto() {
     "ationId\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014\022\r\n\005CimId\030\004 \001"
     "(\014\022\r\n\005VolId\030\005 \001(\014\022\020\n\010UnitType\030\006 \001(\014\022\020\n\010S"
     "elfType\030\007 \001(\014\"8\n\nSavingBean\022\n\n\002Id\030\001 \001(\r\022"
-    "\014\n\004Name\030\002 \001(\014\022\020\n\010SaveTime\030\003 \001(\014", 751);
+    "\014\n\004Name\030\002 \001(\014\022\020\n\010SaveTime\030\003 \001(\014\"M\n\010RuleB"
+    "ean\022\n\n\002Id\030\001 \001(\r\022\014\n\004Name\030\002 \001(\014\022\022\n\nAlarmLe"
+    "vel\030\003 \001(\014\022\023\n\013Description\030\004 \001(\014", 830);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbean.proto", &protobuf_RegisterTypes);
   UserBean::default_instance_ = new UserBean();
@@ -268,6 +295,7 @@ void protobuf_AddDesc_msgbean_2eproto() {
   StationBean::default_instance_ = new StationBean();
   UnitsBean::default_instance_ = new UnitsBean();
   SavingBean::default_instance_ = new SavingBean();
+  RuleBean::default_instance_ = new RuleBean();
   UserBean::default_instance_->InitAsDefaultInstance();
   UserRoleBean::default_instance_->InitAsDefaultInstance();
   StateBean::default_instance_->InitAsDefaultInstance();
@@ -275,6 +303,7 @@ void protobuf_AddDesc_msgbean_2eproto() {
   StationBean::default_instance_->InitAsDefaultInstance();
   UnitsBean::default_instance_->InitAsDefaultInstance();
   SavingBean::default_instance_->InitAsDefaultInstance();
+  RuleBean::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_msgbean_2eproto);
 }
 
@@ -3041,6 +3070,358 @@ void SavingBean::Swap(SavingBean* other) {
   ::google::protobuf::Metadata metadata;
   metadata.descriptor = SavingBean_descriptor_;
   metadata.reflection = SavingBean_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int RuleBean::kIdFieldNumber;
+const int RuleBean::kNameFieldNumber;
+const int RuleBean::kAlarmLevelFieldNumber;
+const int RuleBean::kDescriptionFieldNumber;
+#endif  // !_MSC_VER
+
+RuleBean::RuleBean()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void RuleBean::InitAsDefaultInstance() {
+}
+
+RuleBean::RuleBean(const RuleBean& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void RuleBean::SharedCtor() {
+  _cached_size_ = 0;
+  id_ = 0u;
+  name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  alarmlevel_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  description_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+RuleBean::~RuleBean() {
+  SharedDtor();
+}
+
+void RuleBean::SharedDtor() {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    delete name_;
+  }
+  if (alarmlevel_ != &::google::protobuf::internal::kEmptyString) {
+    delete alarmlevel_;
+  }
+  if (description_ != &::google::protobuf::internal::kEmptyString) {
+    delete description_;
+  }
+  if (this != default_instance_) {
+  }
+}
+
+void RuleBean::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* RuleBean::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return RuleBean_descriptor_;
+}
+
+const RuleBean& RuleBean::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbean_2eproto();
+  return *default_instance_;
+}
+
+RuleBean* RuleBean::default_instance_ = NULL;
+
+RuleBean* RuleBean::New() const {
+  return new RuleBean;
+}
+
+void RuleBean::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    id_ = 0u;
+    if (has_name()) {
+      if (name_ != &::google::protobuf::internal::kEmptyString) {
+        name_->clear();
+      }
+    }
+    if (has_alarmlevel()) {
+      if (alarmlevel_ != &::google::protobuf::internal::kEmptyString) {
+        alarmlevel_->clear();
+      }
+    }
+    if (has_description()) {
+      if (description_ != &::google::protobuf::internal::kEmptyString) {
+        description_->clear();
+      }
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool RuleBean::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 Id = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &id_)));
+          set_has_id();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_Name;
+        break;
+      }
+
+      // optional bytes Name = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_Name:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_name()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(26)) goto parse_AlarmLevel;
+        break;
+      }
+
+      // optional bytes AlarmLevel = 3;
+      case 3: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_AlarmLevel:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_alarmlevel()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(34)) goto parse_Description;
+        break;
+      }
+
+      // optional bytes Description = 4;
+      case 4: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_Description:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_description()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void RuleBean::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional uint32 Id = 1;
+  if (has_id()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->id(), output);
+  }
+
+  // optional bytes Name = 2;
+  if (has_name()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      2, this->name(), output);
+  }
+
+  // optional bytes AlarmLevel = 3;
+  if (has_alarmlevel()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      3, this->alarmlevel(), output);
+  }
+
+  // optional bytes Description = 4;
+  if (has_description()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      4, this->description(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* RuleBean::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional uint32 Id = 1;
+  if (has_id()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->id(), target);
+  }
+
+  // optional bytes Name = 2;
+  if (has_name()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        2, this->name(), target);
+  }
+
+  // optional bytes AlarmLevel = 3;
+  if (has_alarmlevel()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        3, this->alarmlevel(), target);
+  }
+
+  // optional bytes Description = 4;
+  if (has_description()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        4, this->description(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int RuleBean::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 Id = 1;
+    if (has_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->id());
+    }
+
+    // optional bytes Name = 2;
+    if (has_name()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->name());
+    }
+
+    // optional bytes AlarmLevel = 3;
+    if (has_alarmlevel()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->alarmlevel());
+    }
+
+    // optional bytes Description = 4;
+    if (has_description()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->description());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void RuleBean::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const RuleBean* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const RuleBean*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void RuleBean::MergeFrom(const RuleBean& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_id()) {
+      set_id(from.id());
+    }
+    if (from.has_name()) {
+      set_name(from.name());
+    }
+    if (from.has_alarmlevel()) {
+      set_alarmlevel(from.alarmlevel());
+    }
+    if (from.has_description()) {
+      set_description(from.description());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void RuleBean::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void RuleBean::CopyFrom(const RuleBean& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool RuleBean::IsInitialized() const {
+
+  return true;
+}
+
+void RuleBean::Swap(RuleBean* other) {
+  if (other != this) {
+    std::swap(id_, other->id_);
+    std::swap(name_, other->name_);
+    std::swap(alarmlevel_, other->alarmlevel_);
+    std::swap(description_, other->description_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata RuleBean::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RuleBean_descriptor_;
+  metadata.reflection = RuleBean_reflection_;
   return metadata;
 }
 

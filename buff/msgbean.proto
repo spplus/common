@@ -73,3 +73,12 @@ message SavingBean
     optional 	bytes 	Name		= 2;
     optional 	bytes 	SaveTime	= 3;
 }
+
+// 规则信息
+message RuleBean
+{ 
+    optional 	uint32 	Id  		= 1;
+    optional 	bytes 	Name		= 2;
+    optional 	bytes 	AlarmLevel	= 3;
+    optional 	bytes 	Description	= 4;
+}

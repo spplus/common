@@ -42,6 +42,7 @@ class StationTypeBean;
 class StationBean;
 class UnitsBean;
 class SavingBean;
+class RuleBean;
 
 // ===================================================================
 
@@ -1014,6 +1015,133 @@ class SavingBean : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static SavingBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class RuleBean : public ::google::protobuf::Message {
+ public:
+  RuleBean();
+  virtual ~RuleBean();
+
+  RuleBean(const RuleBean& from);
+
+  inline RuleBean& operator=(const RuleBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const RuleBean& default_instance();
+
+  void Swap(RuleBean* other);
+
+  // implements Message ----------------------------------------------
+
+  RuleBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const RuleBean& from);
+  void MergeFrom(const RuleBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 Id = 1;
+  inline bool has_id() const;
+  inline void clear_id();
+  static const int kIdFieldNumber = 1;
+  inline ::google::protobuf::uint32 id() const;
+  inline void set_id(::google::protobuf::uint32 value);
+
+  // optional bytes Name = 2;
+  inline bool has_name() const;
+  inline void clear_name();
+  static const int kNameFieldNumber = 2;
+  inline const ::std::string& name() const;
+  inline void set_name(const ::std::string& value);
+  inline void set_name(const char* value);
+  inline void set_name(const void* value, size_t size);
+  inline ::std::string* mutable_name();
+  inline ::std::string* release_name();
+  inline void set_allocated_name(::std::string* name);
+
+  // optional bytes AlarmLevel = 3;
+  inline bool has_alarmlevel() const;
+  inline void clear_alarmlevel();
+  static const int kAlarmLevelFieldNumber = 3;
+  inline const ::std::string& alarmlevel() const;
+  inline void set_alarmlevel(const ::std::string& value);
+  inline void set_alarmlevel(const char* value);
+  inline void set_alarmlevel(const void* value, size_t size);
+  inline ::std::string* mutable_alarmlevel();
+  inline ::std::string* release_alarmlevel();
+  inline void set_allocated_alarmlevel(::std::string* alarmlevel);
+
+  // optional bytes Description = 4;
+  inline bool has_description() const;
+  inline void clear_description();
+  static const int kDescriptionFieldNumber = 4;
+  inline const ::std::string& description() const;
+  inline void set_description(const ::std::string& value);
+  inline void set_description(const char* value);
+  inline void set_description(const void* value, size_t size);
+  inline ::std::string* mutable_description();
+  inline ::std::string* release_description();
+  inline void set_allocated_description(::std::string* description);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.RuleBean)
+ private:
+  inline void set_has_id();
+  inline void clear_has_id();
+  inline void set_has_name();
+  inline void clear_has_name();
+  inline void set_has_alarmlevel();
+  inline void clear_has_alarmlevel();
+  inline void set_has_description();
+  inline void clear_has_description();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* name_;
+  ::std::string* alarmlevel_;
+  ::std::string* description_;
+  ::google::protobuf::uint32 id_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static RuleBean* default_instance_;
 };
 // ===================================================================
 
@@ -2920,6 +3048,242 @@ inline void SavingBean::set_allocated_savetime(::std::string* savetime) {
   } else {
     clear_has_savetime();
     savetime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// RuleBean
+
+// optional uint32 Id = 1;
+inline bool RuleBean::has_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void RuleBean::set_has_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void RuleBean::clear_has_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void RuleBean::clear_id() {
+  id_ = 0u;
+  clear_has_id();
+}
+inline ::google::protobuf::uint32 RuleBean::id() const {
+  return id_;
+}
+inline void RuleBean::set_id(::google::protobuf::uint32 value) {
+  set_has_id();
+  id_ = value;
+}
+
+// optional bytes Name = 2;
+inline bool RuleBean::has_name() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void RuleBean::set_has_name() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void RuleBean::clear_has_name() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void RuleBean::clear_name() {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    name_->clear();
+  }
+  clear_has_name();
+}
+inline const ::std::string& RuleBean::name() const {
+  return *name_;
+}
+inline void RuleBean::set_name(const ::std::string& value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void RuleBean::set_name(const char* value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void RuleBean::set_name(const void* value, size_t size) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* RuleBean::mutable_name() {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  return name_;
+}
+inline ::std::string* RuleBean::release_name() {
+  clear_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = name_;
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void RuleBean::set_allocated_name(::std::string* name) {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    delete name_;
+  }
+  if (name) {
+    set_has_name();
+    name_ = name;
+  } else {
+    clear_has_name();
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes AlarmLevel = 3;
+inline bool RuleBean::has_alarmlevel() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void RuleBean::set_has_alarmlevel() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void RuleBean::clear_has_alarmlevel() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void RuleBean::clear_alarmlevel() {
+  if (alarmlevel_ != &::google::protobuf::internal::kEmptyString) {
+    alarmlevel_->clear();
+  }
+  clear_has_alarmlevel();
+}
+inline const ::std::string& RuleBean::alarmlevel() const {
+  return *alarmlevel_;
+}
+inline void RuleBean::set_alarmlevel(const ::std::string& value) {
+  set_has_alarmlevel();
+  if (alarmlevel_ == &::google::protobuf::internal::kEmptyString) {
+    alarmlevel_ = new ::std::string;
+  }
+  alarmlevel_->assign(value);
+}
+inline void RuleBean::set_alarmlevel(const char* value) {
+  set_has_alarmlevel();
+  if (alarmlevel_ == &::google::protobuf::internal::kEmptyString) {
+    alarmlevel_ = new ::std::string;
+  }
+  alarmlevel_->assign(value);
+}
+inline void RuleBean::set_alarmlevel(const void* value, size_t size) {
+  set_has_alarmlevel();
+  if (alarmlevel_ == &::google::protobuf::internal::kEmptyString) {
+    alarmlevel_ = new ::std::string;
+  }
+  alarmlevel_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* RuleBean::mutable_alarmlevel() {
+  set_has_alarmlevel();
+  if (alarmlevel_ == &::google::protobuf::internal::kEmptyString) {
+    alarmlevel_ = new ::std::string;
+  }
+  return alarmlevel_;
+}
+inline ::std::string* RuleBean::release_alarmlevel() {
+  clear_has_alarmlevel();
+  if (alarmlevel_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = alarmlevel_;
+    alarmlevel_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void RuleBean::set_allocated_alarmlevel(::std::string* alarmlevel) {
+  if (alarmlevel_ != &::google::protobuf::internal::kEmptyString) {
+    delete alarmlevel_;
+  }
+  if (alarmlevel) {
+    set_has_alarmlevel();
+    alarmlevel_ = alarmlevel;
+  } else {
+    clear_has_alarmlevel();
+    alarmlevel_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes Description = 4;
+inline bool RuleBean::has_description() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void RuleBean::set_has_description() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void RuleBean::clear_has_description() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void RuleBean::clear_description() {
+  if (description_ != &::google::protobuf::internal::kEmptyString) {
+    description_->clear();
+  }
+  clear_has_description();
+}
+inline const ::std::string& RuleBean::description() const {
+  return *description_;
+}
+inline void RuleBean::set_description(const ::std::string& value) {
+  set_has_description();
+  if (description_ == &::google::protobuf::internal::kEmptyString) {
+    description_ = new ::std::string;
+  }
+  description_->assign(value);
+}
+inline void RuleBean::set_description(const char* value) {
+  set_has_description();
+  if (description_ == &::google::protobuf::internal::kEmptyString) {
+    description_ = new ::std::string;
+  }
+  description_->assign(value);
+}
+inline void RuleBean::set_description(const void* value, size_t size) {
+  set_has_description();
+  if (description_ == &::google::protobuf::internal::kEmptyString) {
+    description_ = new ::std::string;
+  }
+  description_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* RuleBean::mutable_description() {
+  set_has_description();
+  if (description_ == &::google::protobuf::internal::kEmptyString) {
+    description_ = new ::std::string;
+  }
+  return description_;
+}
+inline ::std::string* RuleBean::release_description() {
+  clear_has_description();
+  if (description_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = description_;
+    description_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void RuleBean::set_allocated_description(::std::string* description) {
+  if (description_ != &::google::protobuf::internal::kEmptyString) {
+    delete description_;
+  }
+  if (description) {
+    set_has_description();
+    description_ = description;
+  } else {
+    clear_has_description();
+    description_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
 }
 
