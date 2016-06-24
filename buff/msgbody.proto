@@ -202,6 +202,7 @@ message OprationMsg
 		optional uint32			rescode		= 1;	// 0 成功，其他失败
 		optional bytes			resmsg		= 2;	// 
 		repeated StateBean		devState	= 3;	// 返回设备列表
+		repeated RuleBean		ruleList	= 4;	// 规则列表
   	}
 	optional Request 	request 	= 1;
   	optional Response 	response 	= 2;

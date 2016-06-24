@@ -33,6 +33,12 @@ enum eDeviceType
 	eDEFAULT				// 缺省类型
 };
 
+// 规则定义
+#define				R_CHECK_1					1
+#define				R_CHECK_2					2
+#define				R_CHECK_3					3
+#define				R_CHECK_4					4
+#define				R_CHECK_5					5
 
 // 连接建立
 #define				CMD_CONNECTED				1000
@@ -107,6 +113,11 @@ enum eDeviceType
 // 打开存档
 #define				CMD_READ_SAVING					2010
 
+// 规则校验通过
+#define				CMD_CHECK_PASS					2011
+
+// 触发规则
+#define				CMD_TRIGGER_RULES				2012
 
 #endif
 

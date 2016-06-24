@@ -3122,6 +3122,18 @@ class OprationMsg_Response : public ::google::protobuf::Message {
   inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
       mutable_devstate();
 
+  // repeated .com.spplus.buff.RuleBean ruleList = 4;
+  inline int rulelist_size() const;
+  inline void clear_rulelist();
+  static const int kRuleListFieldNumber = 4;
+  inline const ::com::spplus::buff::RuleBean& rulelist(int index) const;
+  inline ::com::spplus::buff::RuleBean* mutable_rulelist(int index);
+  inline ::com::spplus::buff::RuleBean* add_rulelist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::RuleBean >&
+      rulelist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::RuleBean >*
+      mutable_rulelist();
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.OprationMsg.Response)
  private:
   inline void set_has_rescode();
@@ -3133,10 +3145,11 @@ class OprationMsg_Response : public ::google::protobuf::Message {
 
   ::std::string* resmsg_;
   ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean > devstate_;
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::RuleBean > rulelist_;
   ::google::protobuf::uint32 rescode_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -6844,6 +6857,31 @@ OprationMsg_Response::devstate() const {
 inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
 OprationMsg_Response::mutable_devstate() {
   return &devstate_;
+}
+
+// repeated .com.spplus.buff.RuleBean ruleList = 4;
+inline int OprationMsg_Response::rulelist_size() const {
+  return rulelist_.size();
+}
+inline void OprationMsg_Response::clear_rulelist() {
+  rulelist_.Clear();
+}
+inline const ::com::spplus::buff::RuleBean& OprationMsg_Response::rulelist(int index) const {
+  return rulelist_.Get(index);
+}
+inline ::com::spplus::buff::RuleBean* OprationMsg_Response::mutable_rulelist(int index) {
+  return rulelist_.Mutable(index);
+}
+inline ::com::spplus::buff::RuleBean* OprationMsg_Response::add_rulelist() {
+  return rulelist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::RuleBean >&
+OprationMsg_Response::rulelist() const {
+  return rulelist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::RuleBean >*
+OprationMsg_Response::mutable_rulelist() {
+  return &rulelist_;
 }
 
 // -------------------------------------------------------------------
