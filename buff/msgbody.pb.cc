@@ -657,11 +657,12 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(OprationMsg));
   OprationMsg_Request_descriptor_ = OprationMsg_descriptor_->nested_type(0);
-  static const int OprationMsg_Request_offsets_[4] = {
+  static const int OprationMsg_Request_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Request, saveid_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Request, type_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Request, unitcim_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Request, ischeck_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Request, unittype_),
   };
   OprationMsg_Request_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -675,11 +676,12 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(OprationMsg_Request));
   OprationMsg_Response_descriptor_ = OprationMsg_descriptor_->nested_type(1);
-  static const int OprationMsg_Response_offsets_[4] = {
+  static const int OprationMsg_Response_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Response, rescode_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Response, resmsg_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Response, devstate_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Response, rulelist_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Response, optype_),
   };
   OprationMsg_Response_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -1150,39 +1152,40 @@ void protobuf_AddDesc_msgbody_2eproto() {
     "\0132 .com.spplus.buff.TagMsg.Response\0328\n\007R"
     "equest\022\016\n\006saveId\030\001 \001(\r\022\014\n\004type\030\002 \001(\r\022\017\n\007"
     "unitCim\030\003 \001(\014\032+\n\010Response\022\017\n\007rescode\030\001 \001"
-    "(\r\022\016\n\006resmsg\030\002 \001(\014\"\321\002\n\013OprationMsg\0225\n\007re"
+    "(\r\022\016\n\006resmsg\030\002 \001(\014\"\363\002\n\013OprationMsg\0225\n\007re"
     "quest\030\001 \001(\0132$.com.spplus.buff.OprationMs"
     "g.Request\0227\n\010response\030\002 \001(\0132%.com.spplus"
-    ".buff.OprationMsg.Response\032I\n\007Request\022\016\n"
+    ".buff.OprationMsg.Response\032[\n\007Request\022\016\n"
     "\006saveId\030\001 \001(\r\022\014\n\004type\030\002 \001(\r\022\017\n\007unitCim\030\003"
-    " \001(\014\022\017\n\007ischeck\030\004 \001(\010\032\206\001\n\010Response\022\017\n\007re"
-    "scode\030\001 \001(\r\022\016\n\006resmsg\030\002 \001(\014\022,\n\010devState\030"
-    "\003 \003(\0132\032.com.spplus.buff.StateBean\022+\n\010rul"
-    "eList\030\004 \003(\0132\031.com.spplus.buff.RuleBean\"\332"
-    "\001\n\013PowerSetMsg\0225\n\007request\030\001 \001(\0132$.com.sp"
-    "plus.buff.PowerSetMsg.Request\0227\n\010respons"
-    "e\030\002 \001(\0132%.com.spplus.buff.PowerSetMsg.Re"
-    "sponse\032.\n\007Request\022\022\n\nstationCim\030\001 \001(\014\022\017\n"
-    "\007unitCim\030\002 \001(\014\032+\n\010Response\022\017\n\007rescode\030\001 "
-    "\001(\r\022\016\n\006resmsg\030\002 \001(\014\"\363\001\n\nLineSetMsg\0224\n\007re"
-    "quest\030\001 \001(\0132#.com.spplus.buff.LineSetMsg"
-    ".Request\0226\n\010response\030\002 \001(\0132$.com.spplus."
-    "buff.LineSetMsg.Response\032J\n\007Request\022\017\n\007u"
-    "nitCim\030\001 \001(\014\022\025\n\rstationOneCim\030\002 \001(\014\022\027\n\017s"
-    "tationOtherCim\030\003 \001(\014\032+\n\010Response\022\017\n\007resc"
-    "ode\030\001 \001(\r\022\016\n\006resmsg\030\002 \001(\014\"\346\001\n\rSavingList"
-    "Msg\0227\n\007request\030\001 \001(\0132&.com.spplus.buff.S"
-    "avingListMsg.Request\0229\n\010response\030\002 \001(\0132\'"
-    ".com.spplus.buff.SavingListMsg.Response\032"
-    "\025\n\007Request\022\n\n\002id\030\001 \001(\014\032J\n\010Response\022-\n\010sa"
-    "veList\030\001 \003(\0132\033.com.spplus.buff.SavingBea"
-    "n\022\017\n\007rescode\030\002 \001(\r\"\377\001\n\016WriteSavingMsg\0228\n"
-    "\007request\030\001 \001(\0132\'.com.spplus.buff.WriteSa"
-    "vingMsg.Request\022:\n\010response\030\002 \001(\0132(.com."
-    "spplus.buff.WriteSavingMsg.Response\032Z\n\007R"
-    "equest\022\020\n\010saveName\030\001 \001(\014\022\016\n\006saveId\030\002 \001(\r"
-    "\022-\n\tstateList\030\003 \003(\0132\032.com.spplus.buff.St"
-    "ateBean\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r", 3676);
+    " \001(\014\022\017\n\007ischeck\030\004 \001(\010\022\020\n\010unittype\030\005 \001(\r\032"
+    "\226\001\n\010Response\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resmsg\030"
+    "\002 \001(\014\022,\n\010devState\030\003 \003(\0132\032.com.spplus.buf"
+    "f.StateBean\022+\n\010ruleList\030\004 \003(\0132\031.com.sppl"
+    "us.buff.RuleBean\022\016\n\006optype\030\005 \001(\r\"\332\001\n\013Pow"
+    "erSetMsg\0225\n\007request\030\001 \001(\0132$.com.spplus.b"
+    "uff.PowerSetMsg.Request\0227\n\010response\030\002 \001("
+    "\0132%.com.spplus.buff.PowerSetMsg.Response"
+    "\032.\n\007Request\022\022\n\nstationCim\030\001 \001(\014\022\017\n\007unitC"
+    "im\030\002 \001(\014\032+\n\010Response\022\017\n\007rescode\030\001 \001(\r\022\016\n"
+    "\006resmsg\030\002 \001(\014\"\363\001\n\nLineSetMsg\0224\n\007request\030"
+    "\001 \001(\0132#.com.spplus.buff.LineSetMsg.Reque"
+    "st\0226\n\010response\030\002 \001(\0132$.com.spplus.buff.L"
+    "ineSetMsg.Response\032J\n\007Request\022\017\n\007unitCim"
+    "\030\001 \001(\014\022\025\n\rstationOneCim\030\002 \001(\014\022\027\n\017station"
+    "OtherCim\030\003 \001(\014\032+\n\010Response\022\017\n\007rescode\030\001 "
+    "\001(\r\022\016\n\006resmsg\030\002 \001(\014\"\346\001\n\rSavingListMsg\0227\n"
+    "\007request\030\001 \001(\0132&.com.spplus.buff.SavingL"
+    "istMsg.Request\0229\n\010response\030\002 \001(\0132\'.com.s"
+    "pplus.buff.SavingListMsg.Response\032\025\n\007Req"
+    "uest\022\n\n\002id\030\001 \001(\014\032J\n\010Response\022-\n\010saveList"
+    "\030\001 \003(\0132\033.com.spplus.buff.SavingBean\022\017\n\007r"
+    "escode\030\002 \001(\r\"\377\001\n\016WriteSavingMsg\0228\n\007reque"
+    "st\030\001 \001(\0132\'.com.spplus.buff.WriteSavingMs"
+    "g.Request\022:\n\010response\030\002 \001(\0132(.com.spplus"
+    ".buff.WriteSavingMsg.Response\032Z\n\007Request"
+    "\022\020\n\010saveName\030\001 \001(\014\022\016\n\006saveId\030\002 \001(\r\022-\n\tst"
+    "ateList\030\003 \003(\0132\032.com.spplus.buff.StateBea"
+    "n\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r", 3710);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbody.proto", &protobuf_RegisterTypes);
   UserLoginMsg::default_instance_ = new UserLoginMsg();
@@ -8640,6 +8643,7 @@ const int OprationMsg_Request::kSaveIdFieldNumber;
 const int OprationMsg_Request::kTypeFieldNumber;
 const int OprationMsg_Request::kUnitCimFieldNumber;
 const int OprationMsg_Request::kIscheckFieldNumber;
+const int OprationMsg_Request::kUnittypeFieldNumber;
 #endif  // !_MSC_VER
 
 OprationMsg_Request::OprationMsg_Request()
@@ -8662,6 +8666,7 @@ void OprationMsg_Request::SharedCtor() {
   type_ = 0u;
   unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ischeck_ = false;
+  unittype_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -8708,6 +8713,7 @@ void OprationMsg_Request::Clear() {
       }
     }
     ischeck_ = false;
+    unittype_ = 0u;
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -8776,6 +8782,22 @@ bool OprationMsg_Request::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
+        if (input->ExpectTag(40)) goto parse_unittype;
+        break;
+      }
+
+      // optional uint32 unittype = 5;
+      case 5: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_unittype:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &unittype_)));
+          set_has_unittype();
+        } else {
+          goto handle_uninterpreted;
+        }
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -8819,6 +8841,11 @@ void OprationMsg_Request::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(4, this->ischeck(), output);
   }
 
+  // optional uint32 unittype = 5;
+  if (has_unittype()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->unittype(), output);
+  }
+
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -8847,6 +8874,11 @@ void OprationMsg_Request::SerializeWithCachedSizes(
   // optional bool ischeck = 4;
   if (has_ischeck()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(4, this->ischeck(), target);
+  }
+
+  // optional uint32 unittype = 5;
+  if (has_unittype()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->unittype(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -8884,6 +8916,13 @@ int OprationMsg_Request::ByteSize() const {
     // optional bool ischeck = 4;
     if (has_ischeck()) {
       total_size += 1 + 1;
+    }
+
+    // optional uint32 unittype = 5;
+    if (has_unittype()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->unittype());
     }
 
   }
@@ -8925,6 +8964,9 @@ void OprationMsg_Request::MergeFrom(const OprationMsg_Request& from) {
     if (from.has_ischeck()) {
       set_ischeck(from.ischeck());
     }
+    if (from.has_unittype()) {
+      set_unittype(from.unittype());
+    }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
@@ -8952,6 +8994,7 @@ void OprationMsg_Request::Swap(OprationMsg_Request* other) {
     std::swap(type_, other->type_);
     std::swap(unitcim_, other->unitcim_);
     std::swap(ischeck_, other->ischeck_);
+    std::swap(unittype_, other->unittype_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);
@@ -8974,6 +9017,7 @@ const int OprationMsg_Response::kRescodeFieldNumber;
 const int OprationMsg_Response::kResmsgFieldNumber;
 const int OprationMsg_Response::kDevStateFieldNumber;
 const int OprationMsg_Response::kRuleListFieldNumber;
+const int OprationMsg_Response::kOptypeFieldNumber;
 #endif  // !_MSC_VER
 
 OprationMsg_Response::OprationMsg_Response()
@@ -8994,6 +9038,7 @@ void OprationMsg_Response::SharedCtor() {
   _cached_size_ = 0;
   rescode_ = 0u;
   resmsg_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  optype_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -9038,6 +9083,7 @@ void OprationMsg_Response::Clear() {
         resmsg_->clear();
       }
     }
+    optype_ = 0u;
   }
   devstate_.Clear();
   rulelist_.Clear();
@@ -9106,6 +9152,22 @@ bool OprationMsg_Response::MergePartialFromCodedStream(
           goto handle_uninterpreted;
         }
         if (input->ExpectTag(34)) goto parse_ruleList;
+        if (input->ExpectTag(40)) goto parse_optype;
+        break;
+      }
+
+      // optional uint32 optype = 5;
+      case 5: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_optype:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &optype_)));
+          set_has_optype();
+        } else {
+          goto handle_uninterpreted;
+        }
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -9151,6 +9213,11 @@ void OprationMsg_Response::SerializeWithCachedSizes(
       4, this->rulelist(i), output);
   }
 
+  // optional uint32 optype = 5;
+  if (has_optype()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->optype(), output);
+  }
+
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -9185,6 +9252,11 @@ void OprationMsg_Response::SerializeWithCachedSizes(
         4, this->rulelist(i), target);
   }
 
+  // optional uint32 optype = 5;
+  if (has_optype()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->optype(), target);
+  }
+
   if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
@@ -9208,6 +9280,13 @@ int OprationMsg_Response::ByteSize() const {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->resmsg());
+    }
+
+    // optional uint32 optype = 5;
+    if (has_optype()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->optype());
     }
 
   }
@@ -9261,6 +9340,9 @@ void OprationMsg_Response::MergeFrom(const OprationMsg_Response& from) {
     if (from.has_resmsg()) {
       set_resmsg(from.resmsg());
     }
+    if (from.has_optype()) {
+      set_optype(from.optype());
+    }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
@@ -9288,6 +9370,7 @@ void OprationMsg_Response::Swap(OprationMsg_Response* other) {
     std::swap(resmsg_, other->resmsg_);
     devstate_.Swap(&other->devstate_);
     rulelist_.Swap(&other->rulelist_);
+    std::swap(optype_, other->optype_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);

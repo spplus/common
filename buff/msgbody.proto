@@ -194,6 +194,7 @@ message OprationMsg
 		optional uint32	type		= 2;		// 操作类型 0 分，1 合
 		optional bytes	unitCim		= 3;		// 元件cim
 		optional bool	ischeck		= 4;		// 是否允许校验	
+		optional uint32	unittype	= 5;		// 元件类型
 						
   	}
   	//响应体定义
@@ -203,6 +204,7 @@ message OprationMsg
 		optional bytes			resmsg		= 2;	// 
 		repeated StateBean		devState	= 3;	// 返回设备列表
 		repeated RuleBean		ruleList	= 4;	// 规则列表
+		optional uint32			optype		= 5;	// 操作类型
   	}
 	optional Request 	request 	= 1;
   	optional Response 	response 	= 2;

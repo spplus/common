@@ -3007,6 +3007,13 @@ class OprationMsg_Request : public ::google::protobuf::Message {
   inline bool ischeck() const;
   inline void set_ischeck(bool value);
 
+  // optional uint32 unittype = 5;
+  inline bool has_unittype() const;
+  inline void clear_unittype();
+  static const int kUnittypeFieldNumber = 5;
+  inline ::google::protobuf::uint32 unittype() const;
+  inline void set_unittype(::google::protobuf::uint32 value);
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.OprationMsg.Request)
  private:
   inline void set_has_saveid();
@@ -3017,6 +3024,8 @@ class OprationMsg_Request : public ::google::protobuf::Message {
   inline void clear_has_unitcim();
   inline void set_has_ischeck();
   inline void clear_has_ischeck();
+  inline void set_has_unittype();
+  inline void clear_has_unittype();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
@@ -3024,9 +3033,10 @@ class OprationMsg_Request : public ::google::protobuf::Message {
   ::google::protobuf::uint32 type_;
   ::std::string* unitcim_;
   bool ischeck_;
+  ::google::protobuf::uint32 unittype_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -3134,22 +3144,32 @@ class OprationMsg_Response : public ::google::protobuf::Message {
   inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::RuleBean >*
       mutable_rulelist();
 
+  // optional uint32 optype = 5;
+  inline bool has_optype() const;
+  inline void clear_optype();
+  static const int kOptypeFieldNumber = 5;
+  inline ::google::protobuf::uint32 optype() const;
+  inline void set_optype(::google::protobuf::uint32 value);
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.OprationMsg.Response)
  private:
   inline void set_has_rescode();
   inline void clear_has_rescode();
   inline void set_has_resmsg();
   inline void clear_has_resmsg();
+  inline void set_has_optype();
+  inline void clear_has_optype();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
   ::std::string* resmsg_;
   ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean > devstate_;
-  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::RuleBean > rulelist_;
   ::google::protobuf::uint32 rescode_;
+  ::google::protobuf::uint32 optype_;
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::RuleBean > rulelist_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -6738,6 +6758,28 @@ inline void OprationMsg_Request::set_ischeck(bool value) {
   ischeck_ = value;
 }
 
+// optional uint32 unittype = 5;
+inline bool OprationMsg_Request::has_unittype() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void OprationMsg_Request::set_has_unittype() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void OprationMsg_Request::clear_has_unittype() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void OprationMsg_Request::clear_unittype() {
+  unittype_ = 0u;
+  clear_has_unittype();
+}
+inline ::google::protobuf::uint32 OprationMsg_Request::unittype() const {
+  return unittype_;
+}
+inline void OprationMsg_Request::set_unittype(::google::protobuf::uint32 value) {
+  set_has_unittype();
+  unittype_ = value;
+}
+
 // -------------------------------------------------------------------
 
 // OprationMsg_Response
@@ -6882,6 +6924,28 @@ OprationMsg_Response::rulelist() const {
 inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::RuleBean >*
 OprationMsg_Response::mutable_rulelist() {
   return &rulelist_;
+}
+
+// optional uint32 optype = 5;
+inline bool OprationMsg_Response::has_optype() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void OprationMsg_Response::set_has_optype() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void OprationMsg_Response::clear_has_optype() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void OprationMsg_Response::clear_optype() {
+  optype_ = 0u;
+  clear_has_optype();
+}
+inline ::google::protobuf::uint32 OprationMsg_Response::optype() const {
+  return optype_;
+}
+inline void OprationMsg_Response::set_optype(::google::protobuf::uint32 value) {
+  set_has_optype();
+  optype_ = value;
 }
 
 // -------------------------------------------------------------------
