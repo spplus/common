@@ -36,9 +36,29 @@ enum eDeviceType
 // 规则定义
 #define				R_CHECK_1					1
 #define				R_CHECK_2					2
-#define				R_CHECK_3					3
 #define				R_CHECK_4					4
 #define				R_CHECK_5					5
+#define				R_CHECK_12					12
+#define				R_CHECK_16					16
+#define				R_CHECK_18					18
+#define				R_CHECK_20					20
+#define				R_CHECK_21					21
+#define				R_CHECK_22					22
+#define				R_CHECK_25					25
+#define				R_CHECK_26					26
+#define				R_CHECK_27					27
+#define				R_CHECK_28					28
+#define				R_CHECK_29					29
+#define				R_CHECK_32					32
+#define				R_CHECK_33					33
+#define				R_CHECK_38					38
+#define				R_CHECK_39					39
+#define				R_CHECK_43					43
+#define				R_CHECK_44					44
+#define				R_CHECK_45					45
+#define				R_CHECK_46					46
+#define				R_CHECK_47					47
+#define				R_CHECK_48					48
 
 // 连接建立
 #define				CMD_CONNECTED				1000
