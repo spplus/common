@@ -428,6 +428,13 @@ class StateBean : public ::google::protobuf::Message {
   inline ::std::string* release_stationcim();
   inline void set_allocated_stationcim(::std::string* stationcim);
 
+  // optional uint32 isPower = 8;
+  inline bool has_ispower() const;
+  inline void clear_ispower();
+  static const int kIsPowerFieldNumber = 8;
+  inline ::google::protobuf::uint32 ispower() const;
+  inline void set_ispower(::google::protobuf::uint32 value);
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.StateBean)
  private:
   inline void set_has_cimid();
@@ -444,6 +451,8 @@ class StateBean : public ::google::protobuf::Message {
   inline void clear_has_unittype();
   inline void set_has_stationcim();
   inline void clear_has_stationcim();
+  inline void set_has_ispower();
+  inline void clear_has_ispower();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
@@ -454,9 +463,10 @@ class StateBean : public ::google::protobuf::Message {
   ::google::protobuf::uint32 iselectric_;
   ::google::protobuf::uint32 unittype_;
   ::std::string* stationcim_;
+  ::google::protobuf::uint32 ispower_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(7 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(8 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbean_2eproto();
   friend void protobuf_AssignDesc_msgbean_2eproto();
@@ -2014,6 +2024,28 @@ inline void StateBean::set_allocated_stationcim(::std::string* stationcim) {
     clear_has_stationcim();
     stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
+}
+
+// optional uint32 isPower = 8;
+inline bool StateBean::has_ispower() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+inline void StateBean::set_has_ispower() {
+  _has_bits_[0] |= 0x00000080u;
+}
+inline void StateBean::clear_has_ispower() {
+  _has_bits_[0] &= ~0x00000080u;
+}
+inline void StateBean::clear_ispower() {
+  ispower_ = 0u;
+  clear_has_ispower();
+}
+inline ::google::protobuf::uint32 StateBean::ispower() const {
+  return ispower_;
+}
+inline void StateBean::set_ispower(::google::protobuf::uint32 value) {
+  set_has_ispower();
+  ispower_ = value;
 }
 
 // -------------------------------------------------------------------
