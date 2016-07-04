@@ -51,6 +51,8 @@ enum eDeviceType
 #define				R_CHECK_29					29
 #define				R_CHECK_32					32
 #define				R_CHECK_33					33
+#define				R_CHECK_34					34
+#define				R_CHECK_35					35
 #define				R_CHECK_38					38
 #define				R_CHECK_39					39
 #define				R_CHECK_43					43
