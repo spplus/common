@@ -37,6 +37,10 @@ void protobuf_ShutdownFile_msgbean_2eproto();
 
 class UserBean;
 class UserRoleBean;
+class StationRuleBean;
+class SignQueryBean;
+class GswitchQueryBean;
+class MsetQueryBean;
 class StateBean;
 class StationTypeBean;
 class StationBean;
@@ -307,6 +311,604 @@ class UserRoleBean : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static UserRoleBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class StationRuleBean : public ::google::protobuf::Message {
+ public:
+  StationRuleBean();
+  virtual ~StationRuleBean();
+
+  StationRuleBean(const StationRuleBean& from);
+
+  inline StationRuleBean& operator=(const StationRuleBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const StationRuleBean& default_instance();
+
+  void Swap(StationRuleBean* other);
+
+  // implements Message ----------------------------------------------
+
+  StationRuleBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const StationRuleBean& from);
+  void MergeFrom(const StationRuleBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes stationCim = 1;
+  inline bool has_stationcim() const;
+  inline void clear_stationcim();
+  static const int kStationCimFieldNumber = 1;
+  inline const ::std::string& stationcim() const;
+  inline void set_stationcim(const ::std::string& value);
+  inline void set_stationcim(const char* value);
+  inline void set_stationcim(const void* value, size_t size);
+  inline ::std::string* mutable_stationcim();
+  inline ::std::string* release_stationcim();
+  inline void set_allocated_stationcim(::std::string* stationcim);
+
+  // optional bytes stationName = 2;
+  inline bool has_stationname() const;
+  inline void clear_stationname();
+  static const int kStationNameFieldNumber = 2;
+  inline const ::std::string& stationname() const;
+  inline void set_stationname(const ::std::string& value);
+  inline void set_stationname(const char* value);
+  inline void set_stationname(const void* value, size_t size);
+  inline ::std::string* mutable_stationname();
+  inline ::std::string* release_stationname();
+  inline void set_allocated_stationname(::std::string* stationname);
+
+  // optional uint32 ruleId = 3;
+  inline bool has_ruleid() const;
+  inline void clear_ruleid();
+  static const int kRuleIdFieldNumber = 3;
+  inline ::google::protobuf::uint32 ruleid() const;
+  inline void set_ruleid(::google::protobuf::uint32 value);
+
+  // optional bytes ruleName = 4;
+  inline bool has_rulename() const;
+  inline void clear_rulename();
+  static const int kRuleNameFieldNumber = 4;
+  inline const ::std::string& rulename() const;
+  inline void set_rulename(const ::std::string& value);
+  inline void set_rulename(const char* value);
+  inline void set_rulename(const void* value, size_t size);
+  inline ::std::string* mutable_rulename();
+  inline ::std::string* release_rulename();
+  inline void set_allocated_rulename(::std::string* rulename);
+
+  // optional bytes isUse = 5;
+  inline bool has_isuse() const;
+  inline void clear_isuse();
+  static const int kIsUseFieldNumber = 5;
+  inline const ::std::string& isuse() const;
+  inline void set_isuse(const ::std::string& value);
+  inline void set_isuse(const char* value);
+  inline void set_isuse(const void* value, size_t size);
+  inline ::std::string* mutable_isuse();
+  inline ::std::string* release_isuse();
+  inline void set_allocated_isuse(::std::string* isuse);
+
+  // optional bytes isUseName = 6;
+  inline bool has_isusename() const;
+  inline void clear_isusename();
+  static const int kIsUseNameFieldNumber = 6;
+  inline const ::std::string& isusename() const;
+  inline void set_isusename(const ::std::string& value);
+  inline void set_isusename(const char* value);
+  inline void set_isusename(const void* value, size_t size);
+  inline ::std::string* mutable_isusename();
+  inline ::std::string* release_isusename();
+  inline void set_allocated_isusename(::std::string* isusename);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.StationRuleBean)
+ private:
+  inline void set_has_stationcim();
+  inline void clear_has_stationcim();
+  inline void set_has_stationname();
+  inline void clear_has_stationname();
+  inline void set_has_ruleid();
+  inline void clear_has_ruleid();
+  inline void set_has_rulename();
+  inline void clear_has_rulename();
+  inline void set_has_isuse();
+  inline void clear_has_isuse();
+  inline void set_has_isusename();
+  inline void clear_has_isusename();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* stationcim_;
+  ::std::string* stationname_;
+  ::std::string* rulename_;
+  ::std::string* isuse_;
+  ::std::string* isusename_;
+  ::google::protobuf::uint32 ruleid_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static StationRuleBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class SignQueryBean : public ::google::protobuf::Message {
+ public:
+  SignQueryBean();
+  virtual ~SignQueryBean();
+
+  SignQueryBean(const SignQueryBean& from);
+
+  inline SignQueryBean& operator=(const SignQueryBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const SignQueryBean& default_instance();
+
+  void Swap(SignQueryBean* other);
+
+  // implements Message ----------------------------------------------
+
+  SignQueryBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const SignQueryBean& from);
+  void MergeFrom(const SignQueryBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes unitCim = 1;
+  inline bool has_unitcim() const;
+  inline void clear_unitcim();
+  static const int kUnitCimFieldNumber = 1;
+  inline const ::std::string& unitcim() const;
+  inline void set_unitcim(const ::std::string& value);
+  inline void set_unitcim(const char* value);
+  inline void set_unitcim(const void* value, size_t size);
+  inline ::std::string* mutable_unitcim();
+  inline ::std::string* release_unitcim();
+  inline void set_allocated_unitcim(::std::string* unitcim);
+
+  // optional bytes unitCimName = 2;
+  inline bool has_unitcimname() const;
+  inline void clear_unitcimname();
+  static const int kUnitCimNameFieldNumber = 2;
+  inline const ::std::string& unitcimname() const;
+  inline void set_unitcimname(const ::std::string& value);
+  inline void set_unitcimname(const char* value);
+  inline void set_unitcimname(const void* value, size_t size);
+  inline ::std::string* mutable_unitcimname();
+  inline ::std::string* release_unitcimname();
+  inline void set_allocated_unitcimname(::std::string* unitcimname);
+
+  // optional bytes stationCim = 3;
+  inline bool has_stationcim() const;
+  inline void clear_stationcim();
+  static const int kStationCimFieldNumber = 3;
+  inline const ::std::string& stationcim() const;
+  inline void set_stationcim(const ::std::string& value);
+  inline void set_stationcim(const char* value);
+  inline void set_stationcim(const void* value, size_t size);
+  inline ::std::string* mutable_stationcim();
+  inline ::std::string* release_stationcim();
+  inline void set_allocated_stationcim(::std::string* stationcim);
+
+  // optional bytes stationName = 4;
+  inline bool has_stationname() const;
+  inline void clear_stationname();
+  static const int kStationNameFieldNumber = 4;
+  inline const ::std::string& stationname() const;
+  inline void set_stationname(const ::std::string& value);
+  inline void set_stationname(const char* value);
+  inline void set_stationname(const void* value, size_t size);
+  inline ::std::string* mutable_stationname();
+  inline ::std::string* release_stationname();
+  inline void set_allocated_stationname(::std::string* stationname);
+
+  // optional bytes unitType = 5;
+  inline bool has_unittype() const;
+  inline void clear_unittype();
+  static const int kUnitTypeFieldNumber = 5;
+  inline const ::std::string& unittype() const;
+  inline void set_unittype(const ::std::string& value);
+  inline void set_unittype(const char* value);
+  inline void set_unittype(const void* value, size_t size);
+  inline ::std::string* mutable_unittype();
+  inline ::std::string* release_unittype();
+  inline void set_allocated_unittype(::std::string* unittype);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.SignQueryBean)
+ private:
+  inline void set_has_unitcim();
+  inline void clear_has_unitcim();
+  inline void set_has_unitcimname();
+  inline void clear_has_unitcimname();
+  inline void set_has_stationcim();
+  inline void clear_has_stationcim();
+  inline void set_has_stationname();
+  inline void clear_has_stationname();
+  inline void set_has_unittype();
+  inline void clear_has_unittype();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* unitcim_;
+  ::std::string* unitcimname_;
+  ::std::string* stationcim_;
+  ::std::string* stationname_;
+  ::std::string* unittype_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static SignQueryBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class GswitchQueryBean : public ::google::protobuf::Message {
+ public:
+  GswitchQueryBean();
+  virtual ~GswitchQueryBean();
+
+  GswitchQueryBean(const GswitchQueryBean& from);
+
+  inline GswitchQueryBean& operator=(const GswitchQueryBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const GswitchQueryBean& default_instance();
+
+  void Swap(GswitchQueryBean* other);
+
+  // implements Message ----------------------------------------------
+
+  GswitchQueryBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const GswitchQueryBean& from);
+  void MergeFrom(const GswitchQueryBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes unitCim = 1;
+  inline bool has_unitcim() const;
+  inline void clear_unitcim();
+  static const int kUnitCimFieldNumber = 1;
+  inline const ::std::string& unitcim() const;
+  inline void set_unitcim(const ::std::string& value);
+  inline void set_unitcim(const char* value);
+  inline void set_unitcim(const void* value, size_t size);
+  inline ::std::string* mutable_unitcim();
+  inline ::std::string* release_unitcim();
+  inline void set_allocated_unitcim(::std::string* unitcim);
+
+  // optional bytes unitCimName = 2;
+  inline bool has_unitcimname() const;
+  inline void clear_unitcimname();
+  static const int kUnitCimNameFieldNumber = 2;
+  inline const ::std::string& unitcimname() const;
+  inline void set_unitcimname(const ::std::string& value);
+  inline void set_unitcimname(const char* value);
+  inline void set_unitcimname(const void* value, size_t size);
+  inline ::std::string* mutable_unitcimname();
+  inline ::std::string* release_unitcimname();
+  inline void set_allocated_unitcimname(::std::string* unitcimname);
+
+  // optional bytes stationCim = 3;
+  inline bool has_stationcim() const;
+  inline void clear_stationcim();
+  static const int kStationCimFieldNumber = 3;
+  inline const ::std::string& stationcim() const;
+  inline void set_stationcim(const ::std::string& value);
+  inline void set_stationcim(const char* value);
+  inline void set_stationcim(const void* value, size_t size);
+  inline ::std::string* mutable_stationcim();
+  inline ::std::string* release_stationcim();
+  inline void set_allocated_stationcim(::std::string* stationcim);
+
+  // optional bytes stationName = 4;
+  inline bool has_stationname() const;
+  inline void clear_stationname();
+  static const int kStationNameFieldNumber = 4;
+  inline const ::std::string& stationname() const;
+  inline void set_stationname(const ::std::string& value);
+  inline void set_stationname(const char* value);
+  inline void set_stationname(const void* value, size_t size);
+  inline ::std::string* mutable_stationname();
+  inline ::std::string* release_stationname();
+  inline void set_allocated_stationname(::std::string* stationname);
+
+  // optional bytes unitType = 5;
+  inline bool has_unittype() const;
+  inline void clear_unittype();
+  static const int kUnitTypeFieldNumber = 5;
+  inline const ::std::string& unittype() const;
+  inline void set_unittype(const ::std::string& value);
+  inline void set_unittype(const char* value);
+  inline void set_unittype(const void* value, size_t size);
+  inline ::std::string* mutable_unittype();
+  inline ::std::string* release_unittype();
+  inline void set_allocated_unittype(::std::string* unittype);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.GswitchQueryBean)
+ private:
+  inline void set_has_unitcim();
+  inline void clear_has_unitcim();
+  inline void set_has_unitcimname();
+  inline void clear_has_unitcimname();
+  inline void set_has_stationcim();
+  inline void clear_has_stationcim();
+  inline void set_has_stationname();
+  inline void clear_has_stationname();
+  inline void set_has_unittype();
+  inline void clear_has_unittype();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* unitcim_;
+  ::std::string* unitcimname_;
+  ::std::string* stationcim_;
+  ::std::string* stationname_;
+  ::std::string* unittype_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static GswitchQueryBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class MsetQueryBean : public ::google::protobuf::Message {
+ public:
+  MsetQueryBean();
+  virtual ~MsetQueryBean();
+
+  MsetQueryBean(const MsetQueryBean& from);
+
+  inline MsetQueryBean& operator=(const MsetQueryBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const MsetQueryBean& default_instance();
+
+  void Swap(MsetQueryBean* other);
+
+  // implements Message ----------------------------------------------
+
+  MsetQueryBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const MsetQueryBean& from);
+  void MergeFrom(const MsetQueryBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes unitCim = 1;
+  inline bool has_unitcim() const;
+  inline void clear_unitcim();
+  static const int kUnitCimFieldNumber = 1;
+  inline const ::std::string& unitcim() const;
+  inline void set_unitcim(const ::std::string& value);
+  inline void set_unitcim(const char* value);
+  inline void set_unitcim(const void* value, size_t size);
+  inline ::std::string* mutable_unitcim();
+  inline ::std::string* release_unitcim();
+  inline void set_allocated_unitcim(::std::string* unitcim);
+
+  // optional bytes unitCimName = 2;
+  inline bool has_unitcimname() const;
+  inline void clear_unitcimname();
+  static const int kUnitCimNameFieldNumber = 2;
+  inline const ::std::string& unitcimname() const;
+  inline void set_unitcimname(const ::std::string& value);
+  inline void set_unitcimname(const char* value);
+  inline void set_unitcimname(const void* value, size_t size);
+  inline ::std::string* mutable_unitcimname();
+  inline ::std::string* release_unitcimname();
+  inline void set_allocated_unitcimname(::std::string* unitcimname);
+
+  // optional bytes stationCim = 3;
+  inline bool has_stationcim() const;
+  inline void clear_stationcim();
+  static const int kStationCimFieldNumber = 3;
+  inline const ::std::string& stationcim() const;
+  inline void set_stationcim(const ::std::string& value);
+  inline void set_stationcim(const char* value);
+  inline void set_stationcim(const void* value, size_t size);
+  inline ::std::string* mutable_stationcim();
+  inline ::std::string* release_stationcim();
+  inline void set_allocated_stationcim(::std::string* stationcim);
+
+  // optional bytes stationName = 4;
+  inline bool has_stationname() const;
+  inline void clear_stationname();
+  static const int kStationNameFieldNumber = 4;
+  inline const ::std::string& stationname() const;
+  inline void set_stationname(const ::std::string& value);
+  inline void set_stationname(const char* value);
+  inline void set_stationname(const void* value, size_t size);
+  inline ::std::string* mutable_stationname();
+  inline ::std::string* release_stationname();
+  inline void set_allocated_stationname(::std::string* stationname);
+
+  // optional bytes unitType = 5;
+  inline bool has_unittype() const;
+  inline void clear_unittype();
+  static const int kUnitTypeFieldNumber = 5;
+  inline const ::std::string& unittype() const;
+  inline void set_unittype(const ::std::string& value);
+  inline void set_unittype(const char* value);
+  inline void set_unittype(const void* value, size_t size);
+  inline ::std::string* mutable_unittype();
+  inline ::std::string* release_unittype();
+  inline void set_allocated_unittype(::std::string* unittype);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.MsetQueryBean)
+ private:
+  inline void set_has_unitcim();
+  inline void clear_has_unitcim();
+  inline void set_has_unitcimname();
+  inline void clear_has_unitcimname();
+  inline void set_has_stationcim();
+  inline void clear_has_stationcim();
+  inline void set_has_stationname();
+  inline void clear_has_stationname();
+  inline void set_has_unittype();
+  inline void clear_has_unittype();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* unitcim_;
+  ::std::string* unitcimname_;
+  ::std::string* stationcim_;
+  ::std::string* stationname_;
+  ::std::string* unittype_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static MsetQueryBean* default_instance_;
 };
 // -------------------------------------------------------------------
 
@@ -1721,6 +2323,1444 @@ inline void UserRoleBean::set_allocated_userrolename(::std::string* userrolename
   } else {
     clear_has_userrolename();
     userrolename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// StationRuleBean
+
+// optional bytes stationCim = 1;
+inline bool StationRuleBean::has_stationcim() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void StationRuleBean::set_has_stationcim() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void StationRuleBean::clear_has_stationcim() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void StationRuleBean::clear_stationcim() {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    stationcim_->clear();
+  }
+  clear_has_stationcim();
+}
+inline const ::std::string& StationRuleBean::stationcim() const {
+  return *stationcim_;
+}
+inline void StationRuleBean::set_stationcim(const ::std::string& value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void StationRuleBean::set_stationcim(const char* value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void StationRuleBean::set_stationcim(const void* value, size_t size) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StationRuleBean::mutable_stationcim() {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  return stationcim_;
+}
+inline ::std::string* StationRuleBean::release_stationcim() {
+  clear_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationcim_;
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StationRuleBean::set_allocated_stationcim(::std::string* stationcim) {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationcim_;
+  }
+  if (stationcim) {
+    set_has_stationcim();
+    stationcim_ = stationcim;
+  } else {
+    clear_has_stationcim();
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes stationName = 2;
+inline bool StationRuleBean::has_stationname() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void StationRuleBean::set_has_stationname() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void StationRuleBean::clear_has_stationname() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void StationRuleBean::clear_stationname() {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    stationname_->clear();
+  }
+  clear_has_stationname();
+}
+inline const ::std::string& StationRuleBean::stationname() const {
+  return *stationname_;
+}
+inline void StationRuleBean::set_stationname(const ::std::string& value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void StationRuleBean::set_stationname(const char* value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void StationRuleBean::set_stationname(const void* value, size_t size) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StationRuleBean::mutable_stationname() {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  return stationname_;
+}
+inline ::std::string* StationRuleBean::release_stationname() {
+  clear_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationname_;
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StationRuleBean::set_allocated_stationname(::std::string* stationname) {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationname_;
+  }
+  if (stationname) {
+    set_has_stationname();
+    stationname_ = stationname;
+  } else {
+    clear_has_stationname();
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional uint32 ruleId = 3;
+inline bool StationRuleBean::has_ruleid() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void StationRuleBean::set_has_ruleid() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void StationRuleBean::clear_has_ruleid() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void StationRuleBean::clear_ruleid() {
+  ruleid_ = 0u;
+  clear_has_ruleid();
+}
+inline ::google::protobuf::uint32 StationRuleBean::ruleid() const {
+  return ruleid_;
+}
+inline void StationRuleBean::set_ruleid(::google::protobuf::uint32 value) {
+  set_has_ruleid();
+  ruleid_ = value;
+}
+
+// optional bytes ruleName = 4;
+inline bool StationRuleBean::has_rulename() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void StationRuleBean::set_has_rulename() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void StationRuleBean::clear_has_rulename() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void StationRuleBean::clear_rulename() {
+  if (rulename_ != &::google::protobuf::internal::kEmptyString) {
+    rulename_->clear();
+  }
+  clear_has_rulename();
+}
+inline const ::std::string& StationRuleBean::rulename() const {
+  return *rulename_;
+}
+inline void StationRuleBean::set_rulename(const ::std::string& value) {
+  set_has_rulename();
+  if (rulename_ == &::google::protobuf::internal::kEmptyString) {
+    rulename_ = new ::std::string;
+  }
+  rulename_->assign(value);
+}
+inline void StationRuleBean::set_rulename(const char* value) {
+  set_has_rulename();
+  if (rulename_ == &::google::protobuf::internal::kEmptyString) {
+    rulename_ = new ::std::string;
+  }
+  rulename_->assign(value);
+}
+inline void StationRuleBean::set_rulename(const void* value, size_t size) {
+  set_has_rulename();
+  if (rulename_ == &::google::protobuf::internal::kEmptyString) {
+    rulename_ = new ::std::string;
+  }
+  rulename_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StationRuleBean::mutable_rulename() {
+  set_has_rulename();
+  if (rulename_ == &::google::protobuf::internal::kEmptyString) {
+    rulename_ = new ::std::string;
+  }
+  return rulename_;
+}
+inline ::std::string* StationRuleBean::release_rulename() {
+  clear_has_rulename();
+  if (rulename_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = rulename_;
+    rulename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StationRuleBean::set_allocated_rulename(::std::string* rulename) {
+  if (rulename_ != &::google::protobuf::internal::kEmptyString) {
+    delete rulename_;
+  }
+  if (rulename) {
+    set_has_rulename();
+    rulename_ = rulename;
+  } else {
+    clear_has_rulename();
+    rulename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes isUse = 5;
+inline bool StationRuleBean::has_isuse() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void StationRuleBean::set_has_isuse() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void StationRuleBean::clear_has_isuse() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void StationRuleBean::clear_isuse() {
+  if (isuse_ != &::google::protobuf::internal::kEmptyString) {
+    isuse_->clear();
+  }
+  clear_has_isuse();
+}
+inline const ::std::string& StationRuleBean::isuse() const {
+  return *isuse_;
+}
+inline void StationRuleBean::set_isuse(const ::std::string& value) {
+  set_has_isuse();
+  if (isuse_ == &::google::protobuf::internal::kEmptyString) {
+    isuse_ = new ::std::string;
+  }
+  isuse_->assign(value);
+}
+inline void StationRuleBean::set_isuse(const char* value) {
+  set_has_isuse();
+  if (isuse_ == &::google::protobuf::internal::kEmptyString) {
+    isuse_ = new ::std::string;
+  }
+  isuse_->assign(value);
+}
+inline void StationRuleBean::set_isuse(const void* value, size_t size) {
+  set_has_isuse();
+  if (isuse_ == &::google::protobuf::internal::kEmptyString) {
+    isuse_ = new ::std::string;
+  }
+  isuse_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StationRuleBean::mutable_isuse() {
+  set_has_isuse();
+  if (isuse_ == &::google::protobuf::internal::kEmptyString) {
+    isuse_ = new ::std::string;
+  }
+  return isuse_;
+}
+inline ::std::string* StationRuleBean::release_isuse() {
+  clear_has_isuse();
+  if (isuse_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = isuse_;
+    isuse_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StationRuleBean::set_allocated_isuse(::std::string* isuse) {
+  if (isuse_ != &::google::protobuf::internal::kEmptyString) {
+    delete isuse_;
+  }
+  if (isuse) {
+    set_has_isuse();
+    isuse_ = isuse;
+  } else {
+    clear_has_isuse();
+    isuse_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes isUseName = 6;
+inline bool StationRuleBean::has_isusename() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void StationRuleBean::set_has_isusename() {
+  _has_bits_[0] |= 0x00000020u;
+}
+inline void StationRuleBean::clear_has_isusename() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline void StationRuleBean::clear_isusename() {
+  if (isusename_ != &::google::protobuf::internal::kEmptyString) {
+    isusename_->clear();
+  }
+  clear_has_isusename();
+}
+inline const ::std::string& StationRuleBean::isusename() const {
+  return *isusename_;
+}
+inline void StationRuleBean::set_isusename(const ::std::string& value) {
+  set_has_isusename();
+  if (isusename_ == &::google::protobuf::internal::kEmptyString) {
+    isusename_ = new ::std::string;
+  }
+  isusename_->assign(value);
+}
+inline void StationRuleBean::set_isusename(const char* value) {
+  set_has_isusename();
+  if (isusename_ == &::google::protobuf::internal::kEmptyString) {
+    isusename_ = new ::std::string;
+  }
+  isusename_->assign(value);
+}
+inline void StationRuleBean::set_isusename(const void* value, size_t size) {
+  set_has_isusename();
+  if (isusename_ == &::google::protobuf::internal::kEmptyString) {
+    isusename_ = new ::std::string;
+  }
+  isusename_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* StationRuleBean::mutable_isusename() {
+  set_has_isusename();
+  if (isusename_ == &::google::protobuf::internal::kEmptyString) {
+    isusename_ = new ::std::string;
+  }
+  return isusename_;
+}
+inline ::std::string* StationRuleBean::release_isusename() {
+  clear_has_isusename();
+  if (isusename_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = isusename_;
+    isusename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void StationRuleBean::set_allocated_isusename(::std::string* isusename) {
+  if (isusename_ != &::google::protobuf::internal::kEmptyString) {
+    delete isusename_;
+  }
+  if (isusename) {
+    set_has_isusename();
+    isusename_ = isusename;
+  } else {
+    clear_has_isusename();
+    isusename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// SignQueryBean
+
+// optional bytes unitCim = 1;
+inline bool SignQueryBean::has_unitcim() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void SignQueryBean::set_has_unitcim() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void SignQueryBean::clear_has_unitcim() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void SignQueryBean::clear_unitcim() {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    unitcim_->clear();
+  }
+  clear_has_unitcim();
+}
+inline const ::std::string& SignQueryBean::unitcim() const {
+  return *unitcim_;
+}
+inline void SignQueryBean::set_unitcim(const ::std::string& value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void SignQueryBean::set_unitcim(const char* value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void SignQueryBean::set_unitcim(const void* value, size_t size) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* SignQueryBean::mutable_unitcim() {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  return unitcim_;
+}
+inline ::std::string* SignQueryBean::release_unitcim() {
+  clear_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unitcim_;
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void SignQueryBean::set_allocated_unitcim(::std::string* unitcim) {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete unitcim_;
+  }
+  if (unitcim) {
+    set_has_unitcim();
+    unitcim_ = unitcim;
+  } else {
+    clear_has_unitcim();
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes unitCimName = 2;
+inline bool SignQueryBean::has_unitcimname() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void SignQueryBean::set_has_unitcimname() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void SignQueryBean::clear_has_unitcimname() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void SignQueryBean::clear_unitcimname() {
+  if (unitcimname_ != &::google::protobuf::internal::kEmptyString) {
+    unitcimname_->clear();
+  }
+  clear_has_unitcimname();
+}
+inline const ::std::string& SignQueryBean::unitcimname() const {
+  return *unitcimname_;
+}
+inline void SignQueryBean::set_unitcimname(const ::std::string& value) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(value);
+}
+inline void SignQueryBean::set_unitcimname(const char* value) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(value);
+}
+inline void SignQueryBean::set_unitcimname(const void* value, size_t size) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* SignQueryBean::mutable_unitcimname() {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  return unitcimname_;
+}
+inline ::std::string* SignQueryBean::release_unitcimname() {
+  clear_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unitcimname_;
+    unitcimname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void SignQueryBean::set_allocated_unitcimname(::std::string* unitcimname) {
+  if (unitcimname_ != &::google::protobuf::internal::kEmptyString) {
+    delete unitcimname_;
+  }
+  if (unitcimname) {
+    set_has_unitcimname();
+    unitcimname_ = unitcimname;
+  } else {
+    clear_has_unitcimname();
+    unitcimname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes stationCim = 3;
+inline bool SignQueryBean::has_stationcim() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void SignQueryBean::set_has_stationcim() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void SignQueryBean::clear_has_stationcim() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void SignQueryBean::clear_stationcim() {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    stationcim_->clear();
+  }
+  clear_has_stationcim();
+}
+inline const ::std::string& SignQueryBean::stationcim() const {
+  return *stationcim_;
+}
+inline void SignQueryBean::set_stationcim(const ::std::string& value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void SignQueryBean::set_stationcim(const char* value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void SignQueryBean::set_stationcim(const void* value, size_t size) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* SignQueryBean::mutable_stationcim() {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  return stationcim_;
+}
+inline ::std::string* SignQueryBean::release_stationcim() {
+  clear_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationcim_;
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void SignQueryBean::set_allocated_stationcim(::std::string* stationcim) {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationcim_;
+  }
+  if (stationcim) {
+    set_has_stationcim();
+    stationcim_ = stationcim;
+  } else {
+    clear_has_stationcim();
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes stationName = 4;
+inline bool SignQueryBean::has_stationname() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void SignQueryBean::set_has_stationname() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void SignQueryBean::clear_has_stationname() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void SignQueryBean::clear_stationname() {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    stationname_->clear();
+  }
+  clear_has_stationname();
+}
+inline const ::std::string& SignQueryBean::stationname() const {
+  return *stationname_;
+}
+inline void SignQueryBean::set_stationname(const ::std::string& value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void SignQueryBean::set_stationname(const char* value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void SignQueryBean::set_stationname(const void* value, size_t size) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* SignQueryBean::mutable_stationname() {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  return stationname_;
+}
+inline ::std::string* SignQueryBean::release_stationname() {
+  clear_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationname_;
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void SignQueryBean::set_allocated_stationname(::std::string* stationname) {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationname_;
+  }
+  if (stationname) {
+    set_has_stationname();
+    stationname_ = stationname;
+  } else {
+    clear_has_stationname();
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes unitType = 5;
+inline bool SignQueryBean::has_unittype() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void SignQueryBean::set_has_unittype() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void SignQueryBean::clear_has_unittype() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void SignQueryBean::clear_unittype() {
+  if (unittype_ != &::google::protobuf::internal::kEmptyString) {
+    unittype_->clear();
+  }
+  clear_has_unittype();
+}
+inline const ::std::string& SignQueryBean::unittype() const {
+  return *unittype_;
+}
+inline void SignQueryBean::set_unittype(const ::std::string& value) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(value);
+}
+inline void SignQueryBean::set_unittype(const char* value) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(value);
+}
+inline void SignQueryBean::set_unittype(const void* value, size_t size) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* SignQueryBean::mutable_unittype() {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  return unittype_;
+}
+inline ::std::string* SignQueryBean::release_unittype() {
+  clear_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unittype_;
+    unittype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void SignQueryBean::set_allocated_unittype(::std::string* unittype) {
+  if (unittype_ != &::google::protobuf::internal::kEmptyString) {
+    delete unittype_;
+  }
+  if (unittype) {
+    set_has_unittype();
+    unittype_ = unittype;
+  } else {
+    clear_has_unittype();
+    unittype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// GswitchQueryBean
+
+// optional bytes unitCim = 1;
+inline bool GswitchQueryBean::has_unitcim() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void GswitchQueryBean::set_has_unitcim() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void GswitchQueryBean::clear_has_unitcim() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void GswitchQueryBean::clear_unitcim() {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    unitcim_->clear();
+  }
+  clear_has_unitcim();
+}
+inline const ::std::string& GswitchQueryBean::unitcim() const {
+  return *unitcim_;
+}
+inline void GswitchQueryBean::set_unitcim(const ::std::string& value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void GswitchQueryBean::set_unitcim(const char* value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void GswitchQueryBean::set_unitcim(const void* value, size_t size) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* GswitchQueryBean::mutable_unitcim() {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  return unitcim_;
+}
+inline ::std::string* GswitchQueryBean::release_unitcim() {
+  clear_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unitcim_;
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void GswitchQueryBean::set_allocated_unitcim(::std::string* unitcim) {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete unitcim_;
+  }
+  if (unitcim) {
+    set_has_unitcim();
+    unitcim_ = unitcim;
+  } else {
+    clear_has_unitcim();
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes unitCimName = 2;
+inline bool GswitchQueryBean::has_unitcimname() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void GswitchQueryBean::set_has_unitcimname() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void GswitchQueryBean::clear_has_unitcimname() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void GswitchQueryBean::clear_unitcimname() {
+  if (unitcimname_ != &::google::protobuf::internal::kEmptyString) {
+    unitcimname_->clear();
+  }
+  clear_has_unitcimname();
+}
+inline const ::std::string& GswitchQueryBean::unitcimname() const {
+  return *unitcimname_;
+}
+inline void GswitchQueryBean::set_unitcimname(const ::std::string& value) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(value);
+}
+inline void GswitchQueryBean::set_unitcimname(const char* value) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(value);
+}
+inline void GswitchQueryBean::set_unitcimname(const void* value, size_t size) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* GswitchQueryBean::mutable_unitcimname() {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  return unitcimname_;
+}
+inline ::std::string* GswitchQueryBean::release_unitcimname() {
+  clear_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unitcimname_;
+    unitcimname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void GswitchQueryBean::set_allocated_unitcimname(::std::string* unitcimname) {
+  if (unitcimname_ != &::google::protobuf::internal::kEmptyString) {
+    delete unitcimname_;
+  }
+  if (unitcimname) {
+    set_has_unitcimname();
+    unitcimname_ = unitcimname;
+  } else {
+    clear_has_unitcimname();
+    unitcimname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes stationCim = 3;
+inline bool GswitchQueryBean::has_stationcim() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void GswitchQueryBean::set_has_stationcim() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void GswitchQueryBean::clear_has_stationcim() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void GswitchQueryBean::clear_stationcim() {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    stationcim_->clear();
+  }
+  clear_has_stationcim();
+}
+inline const ::std::string& GswitchQueryBean::stationcim() const {
+  return *stationcim_;
+}
+inline void GswitchQueryBean::set_stationcim(const ::std::string& value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void GswitchQueryBean::set_stationcim(const char* value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void GswitchQueryBean::set_stationcim(const void* value, size_t size) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* GswitchQueryBean::mutable_stationcim() {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  return stationcim_;
+}
+inline ::std::string* GswitchQueryBean::release_stationcim() {
+  clear_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationcim_;
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void GswitchQueryBean::set_allocated_stationcim(::std::string* stationcim) {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationcim_;
+  }
+  if (stationcim) {
+    set_has_stationcim();
+    stationcim_ = stationcim;
+  } else {
+    clear_has_stationcim();
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes stationName = 4;
+inline bool GswitchQueryBean::has_stationname() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void GswitchQueryBean::set_has_stationname() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void GswitchQueryBean::clear_has_stationname() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void GswitchQueryBean::clear_stationname() {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    stationname_->clear();
+  }
+  clear_has_stationname();
+}
+inline const ::std::string& GswitchQueryBean::stationname() const {
+  return *stationname_;
+}
+inline void GswitchQueryBean::set_stationname(const ::std::string& value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void GswitchQueryBean::set_stationname(const char* value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void GswitchQueryBean::set_stationname(const void* value, size_t size) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* GswitchQueryBean::mutable_stationname() {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  return stationname_;
+}
+inline ::std::string* GswitchQueryBean::release_stationname() {
+  clear_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationname_;
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void GswitchQueryBean::set_allocated_stationname(::std::string* stationname) {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationname_;
+  }
+  if (stationname) {
+    set_has_stationname();
+    stationname_ = stationname;
+  } else {
+    clear_has_stationname();
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes unitType = 5;
+inline bool GswitchQueryBean::has_unittype() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void GswitchQueryBean::set_has_unittype() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void GswitchQueryBean::clear_has_unittype() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void GswitchQueryBean::clear_unittype() {
+  if (unittype_ != &::google::protobuf::internal::kEmptyString) {
+    unittype_->clear();
+  }
+  clear_has_unittype();
+}
+inline const ::std::string& GswitchQueryBean::unittype() const {
+  return *unittype_;
+}
+inline void GswitchQueryBean::set_unittype(const ::std::string& value) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(value);
+}
+inline void GswitchQueryBean::set_unittype(const char* value) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(value);
+}
+inline void GswitchQueryBean::set_unittype(const void* value, size_t size) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* GswitchQueryBean::mutable_unittype() {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  return unittype_;
+}
+inline ::std::string* GswitchQueryBean::release_unittype() {
+  clear_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unittype_;
+    unittype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void GswitchQueryBean::set_allocated_unittype(::std::string* unittype) {
+  if (unittype_ != &::google::protobuf::internal::kEmptyString) {
+    delete unittype_;
+  }
+  if (unittype) {
+    set_has_unittype();
+    unittype_ = unittype;
+  } else {
+    clear_has_unittype();
+    unittype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// MsetQueryBean
+
+// optional bytes unitCim = 1;
+inline bool MsetQueryBean::has_unitcim() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void MsetQueryBean::set_has_unitcim() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void MsetQueryBean::clear_has_unitcim() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void MsetQueryBean::clear_unitcim() {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    unitcim_->clear();
+  }
+  clear_has_unitcim();
+}
+inline const ::std::string& MsetQueryBean::unitcim() const {
+  return *unitcim_;
+}
+inline void MsetQueryBean::set_unitcim(const ::std::string& value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void MsetQueryBean::set_unitcim(const char* value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void MsetQueryBean::set_unitcim(const void* value, size_t size) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* MsetQueryBean::mutable_unitcim() {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  return unitcim_;
+}
+inline ::std::string* MsetQueryBean::release_unitcim() {
+  clear_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unitcim_;
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void MsetQueryBean::set_allocated_unitcim(::std::string* unitcim) {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete unitcim_;
+  }
+  if (unitcim) {
+    set_has_unitcim();
+    unitcim_ = unitcim;
+  } else {
+    clear_has_unitcim();
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes unitCimName = 2;
+inline bool MsetQueryBean::has_unitcimname() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void MsetQueryBean::set_has_unitcimname() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void MsetQueryBean::clear_has_unitcimname() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void MsetQueryBean::clear_unitcimname() {
+  if (unitcimname_ != &::google::protobuf::internal::kEmptyString) {
+    unitcimname_->clear();
+  }
+  clear_has_unitcimname();
+}
+inline const ::std::string& MsetQueryBean::unitcimname() const {
+  return *unitcimname_;
+}
+inline void MsetQueryBean::set_unitcimname(const ::std::string& value) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(value);
+}
+inline void MsetQueryBean::set_unitcimname(const char* value) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(value);
+}
+inline void MsetQueryBean::set_unitcimname(const void* value, size_t size) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* MsetQueryBean::mutable_unitcimname() {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  return unitcimname_;
+}
+inline ::std::string* MsetQueryBean::release_unitcimname() {
+  clear_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unitcimname_;
+    unitcimname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void MsetQueryBean::set_allocated_unitcimname(::std::string* unitcimname) {
+  if (unitcimname_ != &::google::protobuf::internal::kEmptyString) {
+    delete unitcimname_;
+  }
+  if (unitcimname) {
+    set_has_unitcimname();
+    unitcimname_ = unitcimname;
+  } else {
+    clear_has_unitcimname();
+    unitcimname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes stationCim = 3;
+inline bool MsetQueryBean::has_stationcim() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void MsetQueryBean::set_has_stationcim() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void MsetQueryBean::clear_has_stationcim() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void MsetQueryBean::clear_stationcim() {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    stationcim_->clear();
+  }
+  clear_has_stationcim();
+}
+inline const ::std::string& MsetQueryBean::stationcim() const {
+  return *stationcim_;
+}
+inline void MsetQueryBean::set_stationcim(const ::std::string& value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void MsetQueryBean::set_stationcim(const char* value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void MsetQueryBean::set_stationcim(const void* value, size_t size) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* MsetQueryBean::mutable_stationcim() {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  return stationcim_;
+}
+inline ::std::string* MsetQueryBean::release_stationcim() {
+  clear_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationcim_;
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void MsetQueryBean::set_allocated_stationcim(::std::string* stationcim) {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationcim_;
+  }
+  if (stationcim) {
+    set_has_stationcim();
+    stationcim_ = stationcim;
+  } else {
+    clear_has_stationcim();
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes stationName = 4;
+inline bool MsetQueryBean::has_stationname() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void MsetQueryBean::set_has_stationname() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void MsetQueryBean::clear_has_stationname() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void MsetQueryBean::clear_stationname() {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    stationname_->clear();
+  }
+  clear_has_stationname();
+}
+inline const ::std::string& MsetQueryBean::stationname() const {
+  return *stationname_;
+}
+inline void MsetQueryBean::set_stationname(const ::std::string& value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void MsetQueryBean::set_stationname(const char* value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void MsetQueryBean::set_stationname(const void* value, size_t size) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* MsetQueryBean::mutable_stationname() {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  return stationname_;
+}
+inline ::std::string* MsetQueryBean::release_stationname() {
+  clear_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationname_;
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void MsetQueryBean::set_allocated_stationname(::std::string* stationname) {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationname_;
+  }
+  if (stationname) {
+    set_has_stationname();
+    stationname_ = stationname;
+  } else {
+    clear_has_stationname();
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes unitType = 5;
+inline bool MsetQueryBean::has_unittype() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void MsetQueryBean::set_has_unittype() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void MsetQueryBean::clear_has_unittype() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void MsetQueryBean::clear_unittype() {
+  if (unittype_ != &::google::protobuf::internal::kEmptyString) {
+    unittype_->clear();
+  }
+  clear_has_unittype();
+}
+inline const ::std::string& MsetQueryBean::unittype() const {
+  return *unittype_;
+}
+inline void MsetQueryBean::set_unittype(const ::std::string& value) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(value);
+}
+inline void MsetQueryBean::set_unittype(const char* value) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(value);
+}
+inline void MsetQueryBean::set_unittype(const void* value, size_t size) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* MsetQueryBean::mutable_unittype() {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  return unittype_;
+}
+inline ::std::string* MsetQueryBean::release_unittype() {
+  clear_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unittype_;
+    unittype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void MsetQueryBean::set_allocated_unittype(::std::string* unittype) {
+  if (unittype_ != &::google::protobuf::internal::kEmptyString) {
+    delete unittype_;
+  }
+  if (unittype) {
+    set_has_unittype();
+    unittype_ = unittype;
+  } else {
+    clear_has_unittype();
+    unittype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
 }
 

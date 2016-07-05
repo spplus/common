@@ -104,6 +104,125 @@ message StationMgrMsg
 }
 
 
+//规则列表
+message RuleListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	reqdate	= 1;		// 请求日期，可以不填					
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32		rescode		= 1;	// 0 成功，其他失败
+		repeated RuleBean	rulelist	= 2;	// 规则列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+//规则操作管理
+message RuleMgrMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	mgrsql	= 1;		//规则编辑管理中增加删除修改组合的sql语句		
+  	}
+  	//响应体定义
+	message Response {
+		optional uint32	rescode		= 1;	// 0 成功，其他失败
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+//站点规则关联关系列表
+message StationRuleListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	reqdate	= 1;		// 请求日期，可以不填					
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32		rescode		= 1;		// 0 成功，其他失败
+		repeated StationRuleBean	starulelist	= 2;	// 站点规则关联关系列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+//站点规则关联关系列表管理
+message StationRuleMgrMsg
+{ 
+	//请求体定义
+	message Request {
+		optional uint32	reqtype	= 1;					//请求类型	
+		optional bytes	mgrsql	= 2;					//厂站规则启用停运组合的sql语句	
+		repeated StationRuleBean	stationrllist	= 3;	//请求更新的厂站规则关联列表
+  	}
+  	//响应体定义
+	message Response {
+		optional uint32	rescode		= 1;	// 0 成功，其他失败
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}
+
+//挂牌列表
+message SignListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	reqdate	= 1;		// 请求日期，可以不填					
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		repeated SignQueryBean	signlist	= 2;	// 挂牌列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+//接地列表
+message GswitchListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	reqdate	= 1;		// 请求日期，可以不填					
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		repeated GswitchQueryBean	gswitchlist	= 2;	// 接地列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+//接地列表
+message MsetListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	reqdate	= 1;		// 请求日期，可以不填					
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		repeated MsetQueryBean	msetlist	= 2;	// 人工设置列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+
 // 元件状态消息
 message DevStateMsg
 { 

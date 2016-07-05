@@ -19,6 +19,56 @@ message UserRoleBean
     optional bytes userrolename = 2;
 }
 
+//规则信息
+//message RuleBean
+//{
+//	optional bytes ruleid  = 1;
+//    optional bytes rulename = 2;
+//	optional bytes	rulelevel = 3;		// 规则风险等级
+//	optional bytes ruledescrip = 4;
+//}
+
+//站点规则关联信息
+message StationRuleBean
+{
+	optional bytes stationCim  = 1;
+    optional bytes stationName = 2;
+	optional uint32 ruleId	  = 3;
+    optional bytes  ruleName  = 4;
+	optional bytes  isUse 	  = 5;		// 规则是否启用
+	optional bytes  isUseName = 6;		//规则是否启用对应文字
+}
+
+//挂牌查询信息
+message SignQueryBean
+{
+	optional bytes unitCim  	= 1;
+    optional bytes unitCimName = 2;
+	optional bytes stationCim	= 3;
+    optional bytes stationName  = 4;
+	optional bytes unitType 	= 5;		// 元件设备类型
+}
+
+//接地查询信息
+message GswitchQueryBean
+{
+	optional bytes unitCim  	= 1;
+    optional bytes unitCimName = 2;
+	optional bytes stationCim	= 3;
+    optional bytes stationName  = 4;
+	optional bytes unitType 	= 5;		// 元件设备类型
+}
+
+//人工设置查询信息
+message MsetQueryBean
+{
+	optional bytes unitCim  	= 1;
+    optional bytes unitCimName = 2;
+	optional bytes stationCim	= 3;
+    optional bytes stationName  = 4;
+	optional bytes unitType 	= 5;		// 元件设备类型
+}
+
 // 元件状态信息
 message StateBean
 { 

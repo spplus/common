@@ -101,6 +101,45 @@ enum eDeviceType
 //厂站类型添加操作
 #define				CMD_STATION_TYPE_LIST		1103
 
+//规则编辑管理
+#define				CMD_COM_RULE_LIST			1200
+
+//规则编辑管理
+#define				CMD_RULE_LIST				1201
+
+// 规则添加操作
+#define				CMD_RULE_ADD				1202
+
+// 规则删除操作
+#define				CMD_RULE_DEL				1203
+
+// 规则修改操作
+#define				CMD_RULE_MODIFY				1204
+
+//厂站规则关联关系
+#define				CMD_STATION_RULE_LIST		1300
+
+//厂站规则关联关系管理
+#define				CMD_STATION_RULE_MANAGER	1301
+
+//规则编辑时厂站规则关联关系管理
+#define				CMD_STATION_RULE_MGR		1302
+
+//环路查询列表CircleQuery
+#define				CMD_QUERY_CIRCLE_LIST		1320
+
+//挂牌查询列表
+#define				CMD_QUERY_SIGN_LIST			1321
+
+//接地查询列表
+#define				CMD_QUERY_GSWITCH_LIST		1322
+
+//人工设置查询列表
+#define				CMD_QUERY_MSET_LIST			1323
+
+//事件查询列表
+#define				CMD_QUERY_EVENT_LIST		1324
+
 //厂站配置管理
 #define				CMD_STATION_MANAGER			2000
 
