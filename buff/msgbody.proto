@@ -171,6 +171,23 @@ message StationRuleMgrMsg
   
 }
 
+//环路查询列表
+message CircleListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional uint32	saveId		= 1;		// 存档ID					
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		repeated CircleQueryBean	circlelist	= 2;	// 环路列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
 //挂牌列表
 message SignListMsg
 { 
@@ -205,7 +222,7 @@ message GswitchListMsg
   	optional Response 	response 	= 2;
 }
 
-//接地列表
+//人工设置列表
 message MsetListMsg
 { 
 	//请求体定义
@@ -217,6 +234,23 @@ message MsetListMsg
 		
 		optional uint32			rescode		= 1;	// 0 成功，其他失败
 		repeated MsetQueryBean	msetlist	= 2;	// 人工设置列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+//事件查询列表
+message EventListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	reqdate	= 1;		// 请求日期，可以不填					
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		repeated EventQueryBean	eventlist	= 2;	// 事件查询列表
   	}
 	optional Request 	request 	= 1;
   	optional Response 	response 	= 2;
@@ -404,3 +438,60 @@ message WriteSavingMsg
 	optional Request 	request 	= 1;
   	optional Response 	response 	= 2;
 }
+
+
+//操作票任务列表
+message TicketMsionListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional uint32	userid		= 1;		// 当前用户ID					
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		repeated TicketMsionBean	tktMsionlist	= 2;	// 操作票任务列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+//操作票操作管理
+message TicketMgrMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	mgrsql	= 1;		//操作票任务增加删除修改组合的sql语句		
+  	}
+  	//响应体定义
+	message Response {
+		optional uint32	rescode		= 1;	// 0 成功，其他失败
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+//操作票列表
+message TicketListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional bytes	reqdate	= 1;		// 请求日期，可以不填					
+  	}
+  	//响应体定义
+	message Response {
+		
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		repeated TicketBean	    ticketlist	= 2;	// 操作票列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
+
+
+
+
+
+
+

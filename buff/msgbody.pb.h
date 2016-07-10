@@ -66,6 +66,9 @@ class StationRuleListMsg_Response;
 class StationRuleMgrMsg;
 class StationRuleMgrMsg_Request;
 class StationRuleMgrMsg_Response;
+class CircleListMsg;
+class CircleListMsg_Request;
+class CircleListMsg_Response;
 class SignListMsg;
 class SignListMsg_Request;
 class SignListMsg_Response;
@@ -75,6 +78,9 @@ class GswitchListMsg_Response;
 class MsetListMsg;
 class MsetListMsg_Request;
 class MsetListMsg_Response;
+class EventListMsg;
+class EventListMsg_Request;
+class EventListMsg_Response;
 class DevStateMsg;
 class DevStateMsg_Request;
 class DevStateMsg_Response;
@@ -102,6 +108,15 @@ class SavingListMsg_Response;
 class WriteSavingMsg;
 class WriteSavingMsg_Request;
 class WriteSavingMsg_Response;
+class TicketMsionListMsg;
+class TicketMsionListMsg_Request;
+class TicketMsionListMsg_Response;
+class TicketMgrMsg;
+class TicketMgrMsg_Request;
+class TicketMgrMsg_Response;
+class TicketListMsg;
+class TicketListMsg_Request;
+class TicketListMsg_Response;
 
 // ===================================================================
 
@@ -2901,6 +2916,282 @@ class StationRuleMgrMsg : public ::google::protobuf::Message {
 };
 // -------------------------------------------------------------------
 
+class CircleListMsg_Request : public ::google::protobuf::Message {
+ public:
+  CircleListMsg_Request();
+  virtual ~CircleListMsg_Request();
+
+  CircleListMsg_Request(const CircleListMsg_Request& from);
+
+  inline CircleListMsg_Request& operator=(const CircleListMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const CircleListMsg_Request& default_instance();
+
+  void Swap(CircleListMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  CircleListMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const CircleListMsg_Request& from);
+  void MergeFrom(const CircleListMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 saveId = 1;
+  inline bool has_saveid() const;
+  inline void clear_saveid();
+  static const int kSaveIdFieldNumber = 1;
+  inline ::google::protobuf::uint32 saveid() const;
+  inline void set_saveid(::google::protobuf::uint32 value);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.CircleListMsg.Request)
+ private:
+  inline void set_has_saveid();
+  inline void clear_has_saveid();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 saveid_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static CircleListMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class CircleListMsg_Response : public ::google::protobuf::Message {
+ public:
+  CircleListMsg_Response();
+  virtual ~CircleListMsg_Response();
+
+  CircleListMsg_Response(const CircleListMsg_Response& from);
+
+  inline CircleListMsg_Response& operator=(const CircleListMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const CircleListMsg_Response& default_instance();
+
+  void Swap(CircleListMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  CircleListMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const CircleListMsg_Response& from);
+  void MergeFrom(const CircleListMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 rescode = 1;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 1;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // repeated .com.spplus.buff.CircleQueryBean circlelist = 2;
+  inline int circlelist_size() const;
+  inline void clear_circlelist();
+  static const int kCirclelistFieldNumber = 2;
+  inline const ::com::spplus::buff::CircleQueryBean& circlelist(int index) const;
+  inline ::com::spplus::buff::CircleQueryBean* mutable_circlelist(int index);
+  inline ::com::spplus::buff::CircleQueryBean* add_circlelist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::CircleQueryBean >&
+      circlelist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::CircleQueryBean >*
+      mutable_circlelist();
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.CircleListMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::CircleQueryBean > circlelist_;
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static CircleListMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class CircleListMsg : public ::google::protobuf::Message {
+ public:
+  CircleListMsg();
+  virtual ~CircleListMsg();
+
+  CircleListMsg(const CircleListMsg& from);
+
+  inline CircleListMsg& operator=(const CircleListMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const CircleListMsg& default_instance();
+
+  void Swap(CircleListMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  CircleListMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const CircleListMsg& from);
+  void MergeFrom(const CircleListMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef CircleListMsg_Request Request;
+  typedef CircleListMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.CircleListMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::CircleListMsg_Request& request() const;
+  inline ::com::spplus::buff::CircleListMsg_Request* mutable_request();
+  inline ::com::spplus::buff::CircleListMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::CircleListMsg_Request* request);
+
+  // optional .com.spplus.buff.CircleListMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::CircleListMsg_Response& response() const;
+  inline ::com::spplus::buff::CircleListMsg_Response* mutable_response();
+  inline ::com::spplus::buff::CircleListMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::CircleListMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.CircleListMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::CircleListMsg_Request* request_;
+  ::com::spplus::buff::CircleListMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static CircleListMsg* default_instance_;
+};
+// -------------------------------------------------------------------
+
 class SignListMsg_Request : public ::google::protobuf::Message {
  public:
   SignListMsg_Request();
@@ -3741,6 +4032,287 @@ class MsetListMsg : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static MsetListMsg* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class EventListMsg_Request : public ::google::protobuf::Message {
+ public:
+  EventListMsg_Request();
+  virtual ~EventListMsg_Request();
+
+  EventListMsg_Request(const EventListMsg_Request& from);
+
+  inline EventListMsg_Request& operator=(const EventListMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const EventListMsg_Request& default_instance();
+
+  void Swap(EventListMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  EventListMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const EventListMsg_Request& from);
+  void MergeFrom(const EventListMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes reqdate = 1;
+  inline bool has_reqdate() const;
+  inline void clear_reqdate();
+  static const int kReqdateFieldNumber = 1;
+  inline const ::std::string& reqdate() const;
+  inline void set_reqdate(const ::std::string& value);
+  inline void set_reqdate(const char* value);
+  inline void set_reqdate(const void* value, size_t size);
+  inline ::std::string* mutable_reqdate();
+  inline ::std::string* release_reqdate();
+  inline void set_allocated_reqdate(::std::string* reqdate);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.EventListMsg.Request)
+ private:
+  inline void set_has_reqdate();
+  inline void clear_has_reqdate();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* reqdate_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static EventListMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class EventListMsg_Response : public ::google::protobuf::Message {
+ public:
+  EventListMsg_Response();
+  virtual ~EventListMsg_Response();
+
+  EventListMsg_Response(const EventListMsg_Response& from);
+
+  inline EventListMsg_Response& operator=(const EventListMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const EventListMsg_Response& default_instance();
+
+  void Swap(EventListMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  EventListMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const EventListMsg_Response& from);
+  void MergeFrom(const EventListMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 rescode = 1;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 1;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // repeated .com.spplus.buff.EventQueryBean eventlist = 2;
+  inline int eventlist_size() const;
+  inline void clear_eventlist();
+  static const int kEventlistFieldNumber = 2;
+  inline const ::com::spplus::buff::EventQueryBean& eventlist(int index) const;
+  inline ::com::spplus::buff::EventQueryBean* mutable_eventlist(int index);
+  inline ::com::spplus::buff::EventQueryBean* add_eventlist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::EventQueryBean >&
+      eventlist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::EventQueryBean >*
+      mutable_eventlist();
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.EventListMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::EventQueryBean > eventlist_;
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static EventListMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class EventListMsg : public ::google::protobuf::Message {
+ public:
+  EventListMsg();
+  virtual ~EventListMsg();
+
+  EventListMsg(const EventListMsg& from);
+
+  inline EventListMsg& operator=(const EventListMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const EventListMsg& default_instance();
+
+  void Swap(EventListMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  EventListMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const EventListMsg& from);
+  void MergeFrom(const EventListMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef EventListMsg_Request Request;
+  typedef EventListMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.EventListMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::EventListMsg_Request& request() const;
+  inline ::com::spplus::buff::EventListMsg_Request* mutable_request();
+  inline ::com::spplus::buff::EventListMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::EventListMsg_Request* request);
+
+  // optional .com.spplus.buff.EventListMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::EventListMsg_Response& response() const;
+  inline ::com::spplus::buff::EventListMsg_Response* mutable_response();
+  inline ::com::spplus::buff::EventListMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::EventListMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.EventListMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::EventListMsg_Request* request_;
+  ::com::spplus::buff::EventListMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static EventListMsg* default_instance_;
 };
 // -------------------------------------------------------------------
 
@@ -6445,6 +7017,831 @@ class WriteSavingMsg : public ::google::protobuf::Message {
   void InitAsDefaultInstance();
   static WriteSavingMsg* default_instance_;
 };
+// -------------------------------------------------------------------
+
+class TicketMsionListMsg_Request : public ::google::protobuf::Message {
+ public:
+  TicketMsionListMsg_Request();
+  virtual ~TicketMsionListMsg_Request();
+
+  TicketMsionListMsg_Request(const TicketMsionListMsg_Request& from);
+
+  inline TicketMsionListMsg_Request& operator=(const TicketMsionListMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketMsionListMsg_Request& default_instance();
+
+  void Swap(TicketMsionListMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketMsionListMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketMsionListMsg_Request& from);
+  void MergeFrom(const TicketMsionListMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 userid = 1;
+  inline bool has_userid() const;
+  inline void clear_userid();
+  static const int kUseridFieldNumber = 1;
+  inline ::google::protobuf::uint32 userid() const;
+  inline void set_userid(::google::protobuf::uint32 value);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketMsionListMsg.Request)
+ private:
+  inline void set_has_userid();
+  inline void clear_has_userid();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 userid_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketMsionListMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketMsionListMsg_Response : public ::google::protobuf::Message {
+ public:
+  TicketMsionListMsg_Response();
+  virtual ~TicketMsionListMsg_Response();
+
+  TicketMsionListMsg_Response(const TicketMsionListMsg_Response& from);
+
+  inline TicketMsionListMsg_Response& operator=(const TicketMsionListMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketMsionListMsg_Response& default_instance();
+
+  void Swap(TicketMsionListMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketMsionListMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketMsionListMsg_Response& from);
+  void MergeFrom(const TicketMsionListMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 rescode = 1;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 1;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // repeated .com.spplus.buff.TicketMsionBean tktMsionlist = 2;
+  inline int tktmsionlist_size() const;
+  inline void clear_tktmsionlist();
+  static const int kTktMsionlistFieldNumber = 2;
+  inline const ::com::spplus::buff::TicketMsionBean& tktmsionlist(int index) const;
+  inline ::com::spplus::buff::TicketMsionBean* mutable_tktmsionlist(int index);
+  inline ::com::spplus::buff::TicketMsionBean* add_tktmsionlist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketMsionBean >&
+      tktmsionlist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketMsionBean >*
+      mutable_tktmsionlist();
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketMsionListMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketMsionBean > tktmsionlist_;
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketMsionListMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketMsionListMsg : public ::google::protobuf::Message {
+ public:
+  TicketMsionListMsg();
+  virtual ~TicketMsionListMsg();
+
+  TicketMsionListMsg(const TicketMsionListMsg& from);
+
+  inline TicketMsionListMsg& operator=(const TicketMsionListMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketMsionListMsg& default_instance();
+
+  void Swap(TicketMsionListMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketMsionListMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketMsionListMsg& from);
+  void MergeFrom(const TicketMsionListMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef TicketMsionListMsg_Request Request;
+  typedef TicketMsionListMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.TicketMsionListMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::TicketMsionListMsg_Request& request() const;
+  inline ::com::spplus::buff::TicketMsionListMsg_Request* mutable_request();
+  inline ::com::spplus::buff::TicketMsionListMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::TicketMsionListMsg_Request* request);
+
+  // optional .com.spplus.buff.TicketMsionListMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::TicketMsionListMsg_Response& response() const;
+  inline ::com::spplus::buff::TicketMsionListMsg_Response* mutable_response();
+  inline ::com::spplus::buff::TicketMsionListMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::TicketMsionListMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketMsionListMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::TicketMsionListMsg_Request* request_;
+  ::com::spplus::buff::TicketMsionListMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketMsionListMsg* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketMgrMsg_Request : public ::google::protobuf::Message {
+ public:
+  TicketMgrMsg_Request();
+  virtual ~TicketMgrMsg_Request();
+
+  TicketMgrMsg_Request(const TicketMgrMsg_Request& from);
+
+  inline TicketMgrMsg_Request& operator=(const TicketMgrMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketMgrMsg_Request& default_instance();
+
+  void Swap(TicketMgrMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketMgrMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketMgrMsg_Request& from);
+  void MergeFrom(const TicketMgrMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes mgrsql = 1;
+  inline bool has_mgrsql() const;
+  inline void clear_mgrsql();
+  static const int kMgrsqlFieldNumber = 1;
+  inline const ::std::string& mgrsql() const;
+  inline void set_mgrsql(const ::std::string& value);
+  inline void set_mgrsql(const char* value);
+  inline void set_mgrsql(const void* value, size_t size);
+  inline ::std::string* mutable_mgrsql();
+  inline ::std::string* release_mgrsql();
+  inline void set_allocated_mgrsql(::std::string* mgrsql);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketMgrMsg.Request)
+ private:
+  inline void set_has_mgrsql();
+  inline void clear_has_mgrsql();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* mgrsql_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketMgrMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketMgrMsg_Response : public ::google::protobuf::Message {
+ public:
+  TicketMgrMsg_Response();
+  virtual ~TicketMgrMsg_Response();
+
+  TicketMgrMsg_Response(const TicketMgrMsg_Response& from);
+
+  inline TicketMgrMsg_Response& operator=(const TicketMgrMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketMgrMsg_Response& default_instance();
+
+  void Swap(TicketMgrMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketMgrMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketMgrMsg_Response& from);
+  void MergeFrom(const TicketMgrMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 rescode = 1;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 1;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketMgrMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketMgrMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketMgrMsg : public ::google::protobuf::Message {
+ public:
+  TicketMgrMsg();
+  virtual ~TicketMgrMsg();
+
+  TicketMgrMsg(const TicketMgrMsg& from);
+
+  inline TicketMgrMsg& operator=(const TicketMgrMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketMgrMsg& default_instance();
+
+  void Swap(TicketMgrMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketMgrMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketMgrMsg& from);
+  void MergeFrom(const TicketMgrMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef TicketMgrMsg_Request Request;
+  typedef TicketMgrMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.TicketMgrMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::TicketMgrMsg_Request& request() const;
+  inline ::com::spplus::buff::TicketMgrMsg_Request* mutable_request();
+  inline ::com::spplus::buff::TicketMgrMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::TicketMgrMsg_Request* request);
+
+  // optional .com.spplus.buff.TicketMgrMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::TicketMgrMsg_Response& response() const;
+  inline ::com::spplus::buff::TicketMgrMsg_Response* mutable_response();
+  inline ::com::spplus::buff::TicketMgrMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::TicketMgrMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketMgrMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::TicketMgrMsg_Request* request_;
+  ::com::spplus::buff::TicketMgrMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketMgrMsg* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketListMsg_Request : public ::google::protobuf::Message {
+ public:
+  TicketListMsg_Request();
+  virtual ~TicketListMsg_Request();
+
+  TicketListMsg_Request(const TicketListMsg_Request& from);
+
+  inline TicketListMsg_Request& operator=(const TicketListMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketListMsg_Request& default_instance();
+
+  void Swap(TicketListMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketListMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketListMsg_Request& from);
+  void MergeFrom(const TicketListMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes reqdate = 1;
+  inline bool has_reqdate() const;
+  inline void clear_reqdate();
+  static const int kReqdateFieldNumber = 1;
+  inline const ::std::string& reqdate() const;
+  inline void set_reqdate(const ::std::string& value);
+  inline void set_reqdate(const char* value);
+  inline void set_reqdate(const void* value, size_t size);
+  inline ::std::string* mutable_reqdate();
+  inline ::std::string* release_reqdate();
+  inline void set_allocated_reqdate(::std::string* reqdate);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketListMsg.Request)
+ private:
+  inline void set_has_reqdate();
+  inline void clear_has_reqdate();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* reqdate_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketListMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketListMsg_Response : public ::google::protobuf::Message {
+ public:
+  TicketListMsg_Response();
+  virtual ~TicketListMsg_Response();
+
+  TicketListMsg_Response(const TicketListMsg_Response& from);
+
+  inline TicketListMsg_Response& operator=(const TicketListMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketListMsg_Response& default_instance();
+
+  void Swap(TicketListMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketListMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketListMsg_Response& from);
+  void MergeFrom(const TicketListMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 rescode = 1;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 1;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // repeated .com.spplus.buff.TicketBean ticketlist = 2;
+  inline int ticketlist_size() const;
+  inline void clear_ticketlist();
+  static const int kTicketlistFieldNumber = 2;
+  inline const ::com::spplus::buff::TicketBean& ticketlist(int index) const;
+  inline ::com::spplus::buff::TicketBean* mutable_ticketlist(int index);
+  inline ::com::spplus::buff::TicketBean* add_ticketlist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketBean >&
+      ticketlist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketBean >*
+      mutable_ticketlist();
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketListMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketBean > ticketlist_;
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketListMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketListMsg : public ::google::protobuf::Message {
+ public:
+  TicketListMsg();
+  virtual ~TicketListMsg();
+
+  TicketListMsg(const TicketListMsg& from);
+
+  inline TicketListMsg& operator=(const TicketListMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketListMsg& default_instance();
+
+  void Swap(TicketListMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketListMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketListMsg& from);
+  void MergeFrom(const TicketListMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef TicketListMsg_Request Request;
+  typedef TicketListMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.TicketListMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::TicketListMsg_Request& request() const;
+  inline ::com::spplus::buff::TicketListMsg_Request* mutable_request();
+  inline ::com::spplus::buff::TicketListMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::TicketListMsg_Request* request);
+
+  // optional .com.spplus.buff.TicketListMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::TicketListMsg_Response& response() const;
+  inline ::com::spplus::buff::TicketListMsg_Response* mutable_response();
+  inline ::com::spplus::buff::TicketListMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::TicketListMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketListMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::TicketListMsg_Request* request_;
+  ::com::spplus::buff::TicketListMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketListMsg* default_instance_;
+};
 // ===================================================================
 
 
@@ -8517,6 +9914,163 @@ inline void StationRuleMgrMsg::set_allocated_response(::com::spplus::buff::Stati
 
 // -------------------------------------------------------------------
 
+// CircleListMsg_Request
+
+// optional uint32 saveId = 1;
+inline bool CircleListMsg_Request::has_saveid() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void CircleListMsg_Request::set_has_saveid() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void CircleListMsg_Request::clear_has_saveid() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void CircleListMsg_Request::clear_saveid() {
+  saveid_ = 0u;
+  clear_has_saveid();
+}
+inline ::google::protobuf::uint32 CircleListMsg_Request::saveid() const {
+  return saveid_;
+}
+inline void CircleListMsg_Request::set_saveid(::google::protobuf::uint32 value) {
+  set_has_saveid();
+  saveid_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// CircleListMsg_Response
+
+// optional uint32 rescode = 1;
+inline bool CircleListMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void CircleListMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void CircleListMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void CircleListMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 CircleListMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void CircleListMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// repeated .com.spplus.buff.CircleQueryBean circlelist = 2;
+inline int CircleListMsg_Response::circlelist_size() const {
+  return circlelist_.size();
+}
+inline void CircleListMsg_Response::clear_circlelist() {
+  circlelist_.Clear();
+}
+inline const ::com::spplus::buff::CircleQueryBean& CircleListMsg_Response::circlelist(int index) const {
+  return circlelist_.Get(index);
+}
+inline ::com::spplus::buff::CircleQueryBean* CircleListMsg_Response::mutable_circlelist(int index) {
+  return circlelist_.Mutable(index);
+}
+inline ::com::spplus::buff::CircleQueryBean* CircleListMsg_Response::add_circlelist() {
+  return circlelist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::CircleQueryBean >&
+CircleListMsg_Response::circlelist() const {
+  return circlelist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::CircleQueryBean >*
+CircleListMsg_Response::mutable_circlelist() {
+  return &circlelist_;
+}
+
+// -------------------------------------------------------------------
+
+// CircleListMsg
+
+// optional .com.spplus.buff.CircleListMsg.Request request = 1;
+inline bool CircleListMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void CircleListMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void CircleListMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void CircleListMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::CircleListMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::CircleListMsg_Request& CircleListMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::CircleListMsg_Request* CircleListMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::CircleListMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::CircleListMsg_Request* CircleListMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::CircleListMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void CircleListMsg::set_allocated_request(::com::spplus::buff::CircleListMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.CircleListMsg.Response response = 2;
+inline bool CircleListMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void CircleListMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void CircleListMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void CircleListMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::CircleListMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::CircleListMsg_Response& CircleListMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::CircleListMsg_Response* CircleListMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::CircleListMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::CircleListMsg_Response* CircleListMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::CircleListMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void CircleListMsg::set_allocated_response(::com::spplus::buff::CircleListMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
 // SignListMsg_Request
 
 // optional bytes reqdate = 1;
@@ -9121,6 +10675,211 @@ inline ::com::spplus::buff::MsetListMsg_Response* MsetListMsg::release_response(
   return temp;
 }
 inline void MsetListMsg::set_allocated_response(::com::spplus::buff::MsetListMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
+// EventListMsg_Request
+
+// optional bytes reqdate = 1;
+inline bool EventListMsg_Request::has_reqdate() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void EventListMsg_Request::set_has_reqdate() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void EventListMsg_Request::clear_has_reqdate() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void EventListMsg_Request::clear_reqdate() {
+  if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
+    reqdate_->clear();
+  }
+  clear_has_reqdate();
+}
+inline const ::std::string& EventListMsg_Request::reqdate() const {
+  return *reqdate_;
+}
+inline void EventListMsg_Request::set_reqdate(const ::std::string& value) {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  reqdate_->assign(value);
+}
+inline void EventListMsg_Request::set_reqdate(const char* value) {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  reqdate_->assign(value);
+}
+inline void EventListMsg_Request::set_reqdate(const void* value, size_t size) {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  reqdate_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* EventListMsg_Request::mutable_reqdate() {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  return reqdate_;
+}
+inline ::std::string* EventListMsg_Request::release_reqdate() {
+  clear_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = reqdate_;
+    reqdate_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void EventListMsg_Request::set_allocated_reqdate(::std::string* reqdate) {
+  if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
+    delete reqdate_;
+  }
+  if (reqdate) {
+    set_has_reqdate();
+    reqdate_ = reqdate;
+  } else {
+    clear_has_reqdate();
+    reqdate_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// EventListMsg_Response
+
+// optional uint32 rescode = 1;
+inline bool EventListMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void EventListMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void EventListMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void EventListMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 EventListMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void EventListMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// repeated .com.spplus.buff.EventQueryBean eventlist = 2;
+inline int EventListMsg_Response::eventlist_size() const {
+  return eventlist_.size();
+}
+inline void EventListMsg_Response::clear_eventlist() {
+  eventlist_.Clear();
+}
+inline const ::com::spplus::buff::EventQueryBean& EventListMsg_Response::eventlist(int index) const {
+  return eventlist_.Get(index);
+}
+inline ::com::spplus::buff::EventQueryBean* EventListMsg_Response::mutable_eventlist(int index) {
+  return eventlist_.Mutable(index);
+}
+inline ::com::spplus::buff::EventQueryBean* EventListMsg_Response::add_eventlist() {
+  return eventlist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::EventQueryBean >&
+EventListMsg_Response::eventlist() const {
+  return eventlist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::EventQueryBean >*
+EventListMsg_Response::mutable_eventlist() {
+  return &eventlist_;
+}
+
+// -------------------------------------------------------------------
+
+// EventListMsg
+
+// optional .com.spplus.buff.EventListMsg.Request request = 1;
+inline bool EventListMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void EventListMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void EventListMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void EventListMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::EventListMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::EventListMsg_Request& EventListMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::EventListMsg_Request* EventListMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::EventListMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::EventListMsg_Request* EventListMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::EventListMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void EventListMsg::set_allocated_request(::com::spplus::buff::EventListMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.EventListMsg.Response response = 2;
+inline bool EventListMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void EventListMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void EventListMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void EventListMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::EventListMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::EventListMsg_Response& EventListMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::EventListMsg_Response* EventListMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::EventListMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::EventListMsg_Response* EventListMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::EventListMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void EventListMsg::set_allocated_response(::com::spplus::buff::EventListMsg_Response* response) {
   delete response_;
   response_ = response;
   if (response) {
@@ -11578,6 +13337,548 @@ inline ::com::spplus::buff::WriteSavingMsg_Response* WriteSavingMsg::release_res
   return temp;
 }
 inline void WriteSavingMsg::set_allocated_response(::com::spplus::buff::WriteSavingMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
+// TicketMsionListMsg_Request
+
+// optional uint32 userid = 1;
+inline bool TicketMsionListMsg_Request::has_userid() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketMsionListMsg_Request::set_has_userid() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketMsionListMsg_Request::clear_has_userid() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketMsionListMsg_Request::clear_userid() {
+  userid_ = 0u;
+  clear_has_userid();
+}
+inline ::google::protobuf::uint32 TicketMsionListMsg_Request::userid() const {
+  return userid_;
+}
+inline void TicketMsionListMsg_Request::set_userid(::google::protobuf::uint32 value) {
+  set_has_userid();
+  userid_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// TicketMsionListMsg_Response
+
+// optional uint32 rescode = 1;
+inline bool TicketMsionListMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketMsionListMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketMsionListMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketMsionListMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 TicketMsionListMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void TicketMsionListMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// repeated .com.spplus.buff.TicketMsionBean tktMsionlist = 2;
+inline int TicketMsionListMsg_Response::tktmsionlist_size() const {
+  return tktmsionlist_.size();
+}
+inline void TicketMsionListMsg_Response::clear_tktmsionlist() {
+  tktmsionlist_.Clear();
+}
+inline const ::com::spplus::buff::TicketMsionBean& TicketMsionListMsg_Response::tktmsionlist(int index) const {
+  return tktmsionlist_.Get(index);
+}
+inline ::com::spplus::buff::TicketMsionBean* TicketMsionListMsg_Response::mutable_tktmsionlist(int index) {
+  return tktmsionlist_.Mutable(index);
+}
+inline ::com::spplus::buff::TicketMsionBean* TicketMsionListMsg_Response::add_tktmsionlist() {
+  return tktmsionlist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketMsionBean >&
+TicketMsionListMsg_Response::tktmsionlist() const {
+  return tktmsionlist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketMsionBean >*
+TicketMsionListMsg_Response::mutable_tktmsionlist() {
+  return &tktmsionlist_;
+}
+
+// -------------------------------------------------------------------
+
+// TicketMsionListMsg
+
+// optional .com.spplus.buff.TicketMsionListMsg.Request request = 1;
+inline bool TicketMsionListMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketMsionListMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketMsionListMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketMsionListMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::TicketMsionListMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::TicketMsionListMsg_Request& TicketMsionListMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::TicketMsionListMsg_Request* TicketMsionListMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::TicketMsionListMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::TicketMsionListMsg_Request* TicketMsionListMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::TicketMsionListMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void TicketMsionListMsg::set_allocated_request(::com::spplus::buff::TicketMsionListMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.TicketMsionListMsg.Response response = 2;
+inline bool TicketMsionListMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TicketMsionListMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void TicketMsionListMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void TicketMsionListMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::TicketMsionListMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::TicketMsionListMsg_Response& TicketMsionListMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::TicketMsionListMsg_Response* TicketMsionListMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::TicketMsionListMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::TicketMsionListMsg_Response* TicketMsionListMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::TicketMsionListMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void TicketMsionListMsg::set_allocated_response(::com::spplus::buff::TicketMsionListMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
+// TicketMgrMsg_Request
+
+// optional bytes mgrsql = 1;
+inline bool TicketMgrMsg_Request::has_mgrsql() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketMgrMsg_Request::set_has_mgrsql() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketMgrMsg_Request::clear_has_mgrsql() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketMgrMsg_Request::clear_mgrsql() {
+  if (mgrsql_ != &::google::protobuf::internal::kEmptyString) {
+    mgrsql_->clear();
+  }
+  clear_has_mgrsql();
+}
+inline const ::std::string& TicketMgrMsg_Request::mgrsql() const {
+  return *mgrsql_;
+}
+inline void TicketMgrMsg_Request::set_mgrsql(const ::std::string& value) {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  mgrsql_->assign(value);
+}
+inline void TicketMgrMsg_Request::set_mgrsql(const char* value) {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  mgrsql_->assign(value);
+}
+inline void TicketMgrMsg_Request::set_mgrsql(const void* value, size_t size) {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  mgrsql_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketMgrMsg_Request::mutable_mgrsql() {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  return mgrsql_;
+}
+inline ::std::string* TicketMgrMsg_Request::release_mgrsql() {
+  clear_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = mgrsql_;
+    mgrsql_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketMgrMsg_Request::set_allocated_mgrsql(::std::string* mgrsql) {
+  if (mgrsql_ != &::google::protobuf::internal::kEmptyString) {
+    delete mgrsql_;
+  }
+  if (mgrsql) {
+    set_has_mgrsql();
+    mgrsql_ = mgrsql;
+  } else {
+    clear_has_mgrsql();
+    mgrsql_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// TicketMgrMsg_Response
+
+// optional uint32 rescode = 1;
+inline bool TicketMgrMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketMgrMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketMgrMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketMgrMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 TicketMgrMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void TicketMgrMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// TicketMgrMsg
+
+// optional .com.spplus.buff.TicketMgrMsg.Request request = 1;
+inline bool TicketMgrMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketMgrMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketMgrMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketMgrMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::TicketMgrMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::TicketMgrMsg_Request& TicketMgrMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::TicketMgrMsg_Request* TicketMgrMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::TicketMgrMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::TicketMgrMsg_Request* TicketMgrMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::TicketMgrMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void TicketMgrMsg::set_allocated_request(::com::spplus::buff::TicketMgrMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.TicketMgrMsg.Response response = 2;
+inline bool TicketMgrMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TicketMgrMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void TicketMgrMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void TicketMgrMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::TicketMgrMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::TicketMgrMsg_Response& TicketMgrMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::TicketMgrMsg_Response* TicketMgrMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::TicketMgrMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::TicketMgrMsg_Response* TicketMgrMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::TicketMgrMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void TicketMgrMsg::set_allocated_response(::com::spplus::buff::TicketMgrMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
+// TicketListMsg_Request
+
+// optional bytes reqdate = 1;
+inline bool TicketListMsg_Request::has_reqdate() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketListMsg_Request::set_has_reqdate() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketListMsg_Request::clear_has_reqdate() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketListMsg_Request::clear_reqdate() {
+  if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
+    reqdate_->clear();
+  }
+  clear_has_reqdate();
+}
+inline const ::std::string& TicketListMsg_Request::reqdate() const {
+  return *reqdate_;
+}
+inline void TicketListMsg_Request::set_reqdate(const ::std::string& value) {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  reqdate_->assign(value);
+}
+inline void TicketListMsg_Request::set_reqdate(const char* value) {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  reqdate_->assign(value);
+}
+inline void TicketListMsg_Request::set_reqdate(const void* value, size_t size) {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  reqdate_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketListMsg_Request::mutable_reqdate() {
+  set_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    reqdate_ = new ::std::string;
+  }
+  return reqdate_;
+}
+inline ::std::string* TicketListMsg_Request::release_reqdate() {
+  clear_has_reqdate();
+  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = reqdate_;
+    reqdate_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketListMsg_Request::set_allocated_reqdate(::std::string* reqdate) {
+  if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
+    delete reqdate_;
+  }
+  if (reqdate) {
+    set_has_reqdate();
+    reqdate_ = reqdate;
+  } else {
+    clear_has_reqdate();
+    reqdate_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// TicketListMsg_Response
+
+// optional uint32 rescode = 1;
+inline bool TicketListMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketListMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketListMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketListMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 TicketListMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void TicketListMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// repeated .com.spplus.buff.TicketBean ticketlist = 2;
+inline int TicketListMsg_Response::ticketlist_size() const {
+  return ticketlist_.size();
+}
+inline void TicketListMsg_Response::clear_ticketlist() {
+  ticketlist_.Clear();
+}
+inline const ::com::spplus::buff::TicketBean& TicketListMsg_Response::ticketlist(int index) const {
+  return ticketlist_.Get(index);
+}
+inline ::com::spplus::buff::TicketBean* TicketListMsg_Response::mutable_ticketlist(int index) {
+  return ticketlist_.Mutable(index);
+}
+inline ::com::spplus::buff::TicketBean* TicketListMsg_Response::add_ticketlist() {
+  return ticketlist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketBean >&
+TicketListMsg_Response::ticketlist() const {
+  return ticketlist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketBean >*
+TicketListMsg_Response::mutable_ticketlist() {
+  return &ticketlist_;
+}
+
+// -------------------------------------------------------------------
+
+// TicketListMsg
+
+// optional .com.spplus.buff.TicketListMsg.Request request = 1;
+inline bool TicketListMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketListMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketListMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketListMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::TicketListMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::TicketListMsg_Request& TicketListMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::TicketListMsg_Request* TicketListMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::TicketListMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::TicketListMsg_Request* TicketListMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::TicketListMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void TicketListMsg::set_allocated_request(::com::spplus::buff::TicketListMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.TicketListMsg.Response response = 2;
+inline bool TicketListMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TicketListMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void TicketListMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void TicketListMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::TicketListMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::TicketListMsg_Response& TicketListMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::TicketListMsg_Response* TicketListMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::TicketListMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::TicketListMsg_Response* TicketListMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::TicketListMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void TicketListMsg::set_allocated_response(::com::spplus::buff::TicketListMsg_Response* response) {
   delete response_;
   response_ = response;
   if (response) {

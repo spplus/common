@@ -13,7 +13,11 @@ border-image: url(:/images/title.png);
 	font-family:微软雅黑,宋体;
 	font-weight:bold;
 }
-
+/*
+QToolBar {
+	background-color: #004c4c;
+}
+*/
 QListWidget {
     alternate-background-color: yellow;
 	background-color: #EEF8F9;

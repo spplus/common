@@ -112,6 +112,15 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* StationRuleMgrMsg_Response_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   StationRuleMgrMsg_Response_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CircleListMsg_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CircleListMsg_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CircleListMsg_Request_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CircleListMsg_Request_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CircleListMsg_Response_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CircleListMsg_Response_reflection_ = NULL;
 const ::google::protobuf::Descriptor* SignListMsg_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   SignListMsg_reflection_ = NULL;
@@ -139,6 +148,15 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* MsetListMsg_Response_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   MsetListMsg_Response_reflection_ = NULL;
+const ::google::protobuf::Descriptor* EventListMsg_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  EventListMsg_reflection_ = NULL;
+const ::google::protobuf::Descriptor* EventListMsg_Request_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  EventListMsg_Request_reflection_ = NULL;
+const ::google::protobuf::Descriptor* EventListMsg_Response_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  EventListMsg_Response_reflection_ = NULL;
 const ::google::protobuf::Descriptor* DevStateMsg_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   DevStateMsg_reflection_ = NULL;
@@ -220,6 +238,33 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* WriteSavingMsg_Response_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   WriteSavingMsg_Response_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TicketMsionListMsg_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TicketMsionListMsg_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TicketMsionListMsg_Request_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TicketMsionListMsg_Request_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TicketMsionListMsg_Response_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TicketMsionListMsg_Response_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TicketMgrMsg_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TicketMgrMsg_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TicketMgrMsg_Request_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TicketMgrMsg_Request_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TicketMgrMsg_Response_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TicketMgrMsg_Response_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TicketListMsg_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TicketListMsg_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TicketListMsg_Request_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TicketListMsg_Request_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TicketListMsg_Response_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TicketListMsg_Response_reflection_ = NULL;
 
 }  // namespace
 
@@ -699,7 +744,54 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(StationRuleMgrMsg_Response));
-  SignListMsg_descriptor_ = file->message_type(10);
+  CircleListMsg_descriptor_ = file->message_type(10);
+  static const int CircleListMsg_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CircleListMsg, request_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CircleListMsg, response_),
+  };
+  CircleListMsg_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      CircleListMsg_descriptor_,
+      CircleListMsg::default_instance_,
+      CircleListMsg_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CircleListMsg, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CircleListMsg, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(CircleListMsg));
+  CircleListMsg_Request_descriptor_ = CircleListMsg_descriptor_->nested_type(0);
+  static const int CircleListMsg_Request_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CircleListMsg_Request, saveid_),
+  };
+  CircleListMsg_Request_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      CircleListMsg_Request_descriptor_,
+      CircleListMsg_Request::default_instance_,
+      CircleListMsg_Request_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CircleListMsg_Request, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CircleListMsg_Request, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(CircleListMsg_Request));
+  CircleListMsg_Response_descriptor_ = CircleListMsg_descriptor_->nested_type(1);
+  static const int CircleListMsg_Response_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CircleListMsg_Response, rescode_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CircleListMsg_Response, circlelist_),
+  };
+  CircleListMsg_Response_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      CircleListMsg_Response_descriptor_,
+      CircleListMsg_Response::default_instance_,
+      CircleListMsg_Response_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CircleListMsg_Response, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CircleListMsg_Response, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(CircleListMsg_Response));
+  SignListMsg_descriptor_ = file->message_type(11);
   static const int SignListMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SignListMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SignListMsg, response_),
@@ -746,7 +838,7 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(SignListMsg_Response));
-  GswitchListMsg_descriptor_ = file->message_type(11);
+  GswitchListMsg_descriptor_ = file->message_type(12);
   static const int GswitchListMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GswitchListMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GswitchListMsg, response_),
@@ -793,7 +885,7 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(GswitchListMsg_Response));
-  MsetListMsg_descriptor_ = file->message_type(12);
+  MsetListMsg_descriptor_ = file->message_type(13);
   static const int MsetListMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MsetListMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MsetListMsg, response_),
@@ -840,7 +932,54 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(MsetListMsg_Response));
-  DevStateMsg_descriptor_ = file->message_type(13);
+  EventListMsg_descriptor_ = file->message_type(14);
+  static const int EventListMsg_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventListMsg, request_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventListMsg, response_),
+  };
+  EventListMsg_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      EventListMsg_descriptor_,
+      EventListMsg::default_instance_,
+      EventListMsg_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventListMsg, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventListMsg, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(EventListMsg));
+  EventListMsg_Request_descriptor_ = EventListMsg_descriptor_->nested_type(0);
+  static const int EventListMsg_Request_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventListMsg_Request, reqdate_),
+  };
+  EventListMsg_Request_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      EventListMsg_Request_descriptor_,
+      EventListMsg_Request::default_instance_,
+      EventListMsg_Request_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventListMsg_Request, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventListMsg_Request, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(EventListMsg_Request));
+  EventListMsg_Response_descriptor_ = EventListMsg_descriptor_->nested_type(1);
+  static const int EventListMsg_Response_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventListMsg_Response, rescode_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventListMsg_Response, eventlist_),
+  };
+  EventListMsg_Response_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      EventListMsg_Response_descriptor_,
+      EventListMsg_Response::default_instance_,
+      EventListMsg_Response_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventListMsg_Response, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventListMsg_Response, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(EventListMsg_Response));
+  DevStateMsg_descriptor_ = file->message_type(15);
   static const int DevStateMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DevStateMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DevStateMsg, response_),
@@ -889,7 +1028,7 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(DevStateMsg_Response));
-  StationTypeMsg_descriptor_ = file->message_type(14);
+  StationTypeMsg_descriptor_ = file->message_type(16);
   static const int StationTypeMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationTypeMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationTypeMsg, response_),
@@ -936,7 +1075,7 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(StationTypeMsg_Response));
-  StationListMsg_descriptor_ = file->message_type(15);
+  StationListMsg_descriptor_ = file->message_type(17);
   static const int StationListMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationListMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StationListMsg, response_),
@@ -983,7 +1122,7 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(StationListMsg_Response));
-  TagMsg_descriptor_ = file->message_type(16);
+  TagMsg_descriptor_ = file->message_type(18);
   static const int TagMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TagMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TagMsg, response_),
@@ -1032,7 +1171,7 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(TagMsg_Response));
-  OprationMsg_descriptor_ = file->message_type(17);
+  OprationMsg_descriptor_ = file->message_type(19);
   static const int OprationMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg, response_),
@@ -1086,7 +1225,7 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(OprationMsg_Response));
-  PowerSetMsg_descriptor_ = file->message_type(18);
+  PowerSetMsg_descriptor_ = file->message_type(20);
   static const int PowerSetMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PowerSetMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PowerSetMsg, response_),
@@ -1134,7 +1273,7 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(PowerSetMsg_Response));
-  LineSetMsg_descriptor_ = file->message_type(19);
+  LineSetMsg_descriptor_ = file->message_type(21);
   static const int LineSetMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LineSetMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LineSetMsg, response_),
@@ -1183,7 +1322,7 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(LineSetMsg_Response));
-  SavingListMsg_descriptor_ = file->message_type(20);
+  SavingListMsg_descriptor_ = file->message_type(22);
   static const int SavingListMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SavingListMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SavingListMsg, response_),
@@ -1230,7 +1369,7 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(SavingListMsg_Response));
-  WriteSavingMsg_descriptor_ = file->message_type(21);
+  WriteSavingMsg_descriptor_ = file->message_type(23);
   static const int WriteSavingMsg_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteSavingMsg, request_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteSavingMsg, response_),
@@ -1278,6 +1417,146 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(WriteSavingMsg_Response));
+  TicketMsionListMsg_descriptor_ = file->message_type(24);
+  static const int TicketMsionListMsg_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMsionListMsg, request_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMsionListMsg, response_),
+  };
+  TicketMsionListMsg_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      TicketMsionListMsg_descriptor_,
+      TicketMsionListMsg::default_instance_,
+      TicketMsionListMsg_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMsionListMsg, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMsionListMsg, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(TicketMsionListMsg));
+  TicketMsionListMsg_Request_descriptor_ = TicketMsionListMsg_descriptor_->nested_type(0);
+  static const int TicketMsionListMsg_Request_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMsionListMsg_Request, userid_),
+  };
+  TicketMsionListMsg_Request_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      TicketMsionListMsg_Request_descriptor_,
+      TicketMsionListMsg_Request::default_instance_,
+      TicketMsionListMsg_Request_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMsionListMsg_Request, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMsionListMsg_Request, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(TicketMsionListMsg_Request));
+  TicketMsionListMsg_Response_descriptor_ = TicketMsionListMsg_descriptor_->nested_type(1);
+  static const int TicketMsionListMsg_Response_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMsionListMsg_Response, rescode_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMsionListMsg_Response, tktmsionlist_),
+  };
+  TicketMsionListMsg_Response_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      TicketMsionListMsg_Response_descriptor_,
+      TicketMsionListMsg_Response::default_instance_,
+      TicketMsionListMsg_Response_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMsionListMsg_Response, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMsionListMsg_Response, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(TicketMsionListMsg_Response));
+  TicketMgrMsg_descriptor_ = file->message_type(25);
+  static const int TicketMgrMsg_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMgrMsg, request_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMgrMsg, response_),
+  };
+  TicketMgrMsg_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      TicketMgrMsg_descriptor_,
+      TicketMgrMsg::default_instance_,
+      TicketMgrMsg_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMgrMsg, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMgrMsg, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(TicketMgrMsg));
+  TicketMgrMsg_Request_descriptor_ = TicketMgrMsg_descriptor_->nested_type(0);
+  static const int TicketMgrMsg_Request_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMgrMsg_Request, mgrsql_),
+  };
+  TicketMgrMsg_Request_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      TicketMgrMsg_Request_descriptor_,
+      TicketMgrMsg_Request::default_instance_,
+      TicketMgrMsg_Request_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMgrMsg_Request, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMgrMsg_Request, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(TicketMgrMsg_Request));
+  TicketMgrMsg_Response_descriptor_ = TicketMgrMsg_descriptor_->nested_type(1);
+  static const int TicketMgrMsg_Response_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMgrMsg_Response, rescode_),
+  };
+  TicketMgrMsg_Response_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      TicketMgrMsg_Response_descriptor_,
+      TicketMgrMsg_Response::default_instance_,
+      TicketMgrMsg_Response_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMgrMsg_Response, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketMgrMsg_Response, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(TicketMgrMsg_Response));
+  TicketListMsg_descriptor_ = file->message_type(26);
+  static const int TicketListMsg_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketListMsg, request_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketListMsg, response_),
+  };
+  TicketListMsg_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      TicketListMsg_descriptor_,
+      TicketListMsg::default_instance_,
+      TicketListMsg_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketListMsg, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketListMsg, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(TicketListMsg));
+  TicketListMsg_Request_descriptor_ = TicketListMsg_descriptor_->nested_type(0);
+  static const int TicketListMsg_Request_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketListMsg_Request, reqdate_),
+  };
+  TicketListMsg_Request_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      TicketListMsg_Request_descriptor_,
+      TicketListMsg_Request::default_instance_,
+      TicketListMsg_Request_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketListMsg_Request, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketListMsg_Request, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(TicketListMsg_Request));
+  TicketListMsg_Response_descriptor_ = TicketListMsg_descriptor_->nested_type(1);
+  static const int TicketListMsg_Response_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketListMsg_Response, rescode_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketListMsg_Response, ticketlist_),
+  };
+  TicketListMsg_Response_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      TicketListMsg_Response_descriptor_,
+      TicketListMsg_Response::default_instance_,
+      TicketListMsg_Response_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketListMsg_Response, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketListMsg_Response, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(TicketListMsg_Response));
 }
 
 namespace {
@@ -1351,6 +1630,12 @@ void protobuf_RegisterTypes(const ::std::string&) {
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     StationRuleMgrMsg_Response_descriptor_, &StationRuleMgrMsg_Response::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    CircleListMsg_descriptor_, &CircleListMsg::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    CircleListMsg_Request_descriptor_, &CircleListMsg_Request::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    CircleListMsg_Response_descriptor_, &CircleListMsg_Response::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     SignListMsg_descriptor_, &SignListMsg::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     SignListMsg_Request_descriptor_, &SignListMsg_Request::default_instance());
@@ -1368,6 +1653,12 @@ void protobuf_RegisterTypes(const ::std::string&) {
     MsetListMsg_Request_descriptor_, &MsetListMsg_Request::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     MsetListMsg_Response_descriptor_, &MsetListMsg_Response::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    EventListMsg_descriptor_, &EventListMsg::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    EventListMsg_Request_descriptor_, &EventListMsg_Request::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    EventListMsg_Response_descriptor_, &EventListMsg_Response::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     DevStateMsg_descriptor_, &DevStateMsg::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
@@ -1422,6 +1713,24 @@ void protobuf_RegisterTypes(const ::std::string&) {
     WriteSavingMsg_Request_descriptor_, &WriteSavingMsg_Request::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     WriteSavingMsg_Response_descriptor_, &WriteSavingMsg_Response::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    TicketMsionListMsg_descriptor_, &TicketMsionListMsg::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    TicketMsionListMsg_Request_descriptor_, &TicketMsionListMsg_Request::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    TicketMsionListMsg_Response_descriptor_, &TicketMsionListMsg_Response::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    TicketMgrMsg_descriptor_, &TicketMgrMsg::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    TicketMgrMsg_Request_descriptor_, &TicketMgrMsg_Request::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    TicketMgrMsg_Response_descriptor_, &TicketMgrMsg_Response::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    TicketListMsg_descriptor_, &TicketListMsg::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    TicketListMsg_Request_descriptor_, &TicketListMsg_Request::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    TicketListMsg_Response_descriptor_, &TicketListMsg_Response::default_instance());
 }
 
 }  // namespace
@@ -1487,6 +1796,12 @@ void protobuf_ShutdownFile_msgbody_2eproto() {
   delete StationRuleMgrMsg_Request_reflection_;
   delete StationRuleMgrMsg_Response::default_instance_;
   delete StationRuleMgrMsg_Response_reflection_;
+  delete CircleListMsg::default_instance_;
+  delete CircleListMsg_reflection_;
+  delete CircleListMsg_Request::default_instance_;
+  delete CircleListMsg_Request_reflection_;
+  delete CircleListMsg_Response::default_instance_;
+  delete CircleListMsg_Response_reflection_;
   delete SignListMsg::default_instance_;
   delete SignListMsg_reflection_;
   delete SignListMsg_Request::default_instance_;
@@ -1505,6 +1820,12 @@ void protobuf_ShutdownFile_msgbody_2eproto() {
   delete MsetListMsg_Request_reflection_;
   delete MsetListMsg_Response::default_instance_;
   delete MsetListMsg_Response_reflection_;
+  delete EventListMsg::default_instance_;
+  delete EventListMsg_reflection_;
+  delete EventListMsg_Request::default_instance_;
+  delete EventListMsg_Request_reflection_;
+  delete EventListMsg_Response::default_instance_;
+  delete EventListMsg_Response_reflection_;
   delete DevStateMsg::default_instance_;
   delete DevStateMsg_reflection_;
   delete DevStateMsg_Request::default_instance_;
@@ -1559,6 +1880,24 @@ void protobuf_ShutdownFile_msgbody_2eproto() {
   delete WriteSavingMsg_Request_reflection_;
   delete WriteSavingMsg_Response::default_instance_;
   delete WriteSavingMsg_Response_reflection_;
+  delete TicketMsionListMsg::default_instance_;
+  delete TicketMsionListMsg_reflection_;
+  delete TicketMsionListMsg_Request::default_instance_;
+  delete TicketMsionListMsg_Request_reflection_;
+  delete TicketMsionListMsg_Response::default_instance_;
+  delete TicketMsionListMsg_Response_reflection_;
+  delete TicketMgrMsg::default_instance_;
+  delete TicketMgrMsg_reflection_;
+  delete TicketMgrMsg_Request::default_instance_;
+  delete TicketMgrMsg_Request_reflection_;
+  delete TicketMgrMsg_Response::default_instance_;
+  delete TicketMgrMsg_Response_reflection_;
+  delete TicketListMsg::default_instance_;
+  delete TicketListMsg_reflection_;
+  delete TicketListMsg_Request::default_instance_;
+  delete TicketListMsg_Request_reflection_;
+  delete TicketListMsg_Response::default_instance_;
+  delete TicketListMsg_Response_reflection_;
 }
 
 void protobuf_AddDesc_msgbody_2eproto() {
@@ -1627,83 +1966,112 @@ void protobuf_AddDesc_msgbody_2eproto() {
     "onRuleMgrMsg.Response\032c\n\007Request\022\017\n\007reqt"
     "ype\030\001 \001(\r\022\016\n\006mgrsql\030\002 \001(\014\0227\n\rstationrlli"
     "st\030\003 \003(\0132 .com.spplus.buff.StationRuleBe"
-    "an\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r\"\350\001\n\013Sign"
-    "ListMsg\0225\n\007request\030\001 \001(\0132$.com.spplus.bu"
-    "ff.SignListMsg.Request\0227\n\010response\030\002 \001(\013"
-    "2%.com.spplus.buff.SignListMsg.Response\032"
-    "\032\n\007Request\022\017\n\007reqdate\030\001 \001(\014\032M\n\010Response\022"
-    "\017\n\007rescode\030\001 \001(\r\0220\n\010signlist\030\002 \003(\0132\036.com"
-    ".spplus.buff.SignQueryBean\"\367\001\n\016GswitchLi"
-    "stMsg\0228\n\007request\030\001 \001(\0132\'.com.spplus.buff"
-    ".GswitchListMsg.Request\022:\n\010response\030\002 \001("
-    "\0132(.com.spplus.buff.GswitchListMsg.Respo"
-    "nse\032\032\n\007Request\022\017\n\007reqdate\030\001 \001(\014\032S\n\010Respo"
-    "nse\022\017\n\007rescode\030\001 \001(\r\0226\n\013gswitchlist\030\002 \003("
-    "\0132!.com.spplus.buff.GswitchQueryBean\"\350\001\n"
-    "\013MsetListMsg\0225\n\007request\030\001 \001(\0132$.com.sppl"
-    "us.buff.MsetListMsg.Request\0227\n\010response\030"
-    "\002 \001(\0132%.com.spplus.buff.MsetListMsg.Resp"
-    "onse\032\032\n\007Request\022\017\n\007reqdate\030\001 \001(\014\032M\n\010Resp"
-    "onse\022\017\n\007rescode\030\001 \001(\r\0220\n\010msetlist\030\002 \003(\0132"
-    "\036.com.spplus.buff.MsetQueryBean\"\210\002\n\013DevS"
-    "tateMsg\0225\n\007request\030\001 \001(\0132$.com.spplus.bu"
-    "ff.DevStateMsg.Request\0227\n\010response\030\002 \001(\013"
-    "2%.com.spplus.buff.DevStateMsg.Response\032"
-    ">\n\007Request\022\016\n\006saveId\030\001 \001(\r\022\022\n\nstationCim"
-    "\030\002 \001(\014\022\017\n\007unitCim\030\003 \001(\014\032I\n\010Response\022\017\n\007r"
-    "escode\030\001 \001(\r\022,\n\010devState\030\002 \003(\0132\032.com.spp"
-    "lus.buff.StateBean\"\362\001\n\016StationTypeMsg\0228\n"
-    "\007request\030\001 \001(\0132\'.com.spplus.buff.Station"
-    "TypeMsg.Request\022:\n\010response\030\002 \001(\0132(.com."
-    "spplus.buff.StationTypeMsg.Response\032\031\n\007R"
-    "equest\022\016\n\006saveId\030\001 \001(\r\032O\n\010Response\022\017\n\007re"
-    "scode\030\001 \001(\r\0222\n\010typeList\030\002 \003(\0132 .com.sppl"
-    "us.buff.StationTypeBean\"\364\001\n\016StationListM"
-    "sg\0228\n\007request\030\001 \001(\0132\'.com.spplus.buff.St"
-    "ationListMsg.Request\022:\n\010response\030\002 \001(\0132("
-    ".com.spplus.buff.StationListMsg.Response"
-    "\032\034\n\007Request\022\021\n\tstationId\030\001 \001(\r\032N\n\010Respon"
-    "se\022\017\n\007rescode\030\001 \001(\r\0221\n\013stationList\030\002 \003(\013"
-    "2\034.com.spplus.buff.StationBean\"\325\001\n\006TagMs"
-    "g\0220\n\007request\030\001 \001(\0132\037.com.spplus.buff.Tag"
-    "Msg.Request\0222\n\010response\030\002 \001(\0132 .com.sppl"
-    "us.buff.TagMsg.Response\0328\n\007Request\022\016\n\006sa"
-    "veId\030\001 \001(\r\022\014\n\004type\030\002 \001(\r\022\017\n\007unitCim\030\003 \001("
-    "\014\032+\n\010Response\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resmsg"
-    "\030\002 \001(\014\"\363\002\n\013OprationMsg\0225\n\007request\030\001 \001(\0132"
-    "$.com.spplus.buff.OprationMsg.Request\0227\n"
-    "\010response\030\002 \001(\0132%.com.spplus.buff.Oprati"
-    "onMsg.Response\032[\n\007Request\022\016\n\006saveId\030\001 \001("
-    "\r\022\014\n\004type\030\002 \001(\r\022\017\n\007unitCim\030\003 \001(\014\022\017\n\007isch"
-    "eck\030\004 \001(\010\022\020\n\010unittype\030\005 \001(\r\032\226\001\n\010Response"
-    "\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resmsg\030\002 \001(\014\022,\n\010dev"
-    "State\030\003 \003(\0132\032.com.spplus.buff.StateBean\022"
-    "+\n\010ruleList\030\004 \003(\0132\031.com.spplus.buff.Rule"
-    "Bean\022\016\n\006optype\030\005 \001(\r\"\332\001\n\013PowerSetMsg\0225\n\007"
-    "request\030\001 \001(\0132$.com.spplus.buff.PowerSet"
-    "Msg.Request\0227\n\010response\030\002 \001(\0132%.com.sppl"
-    "us.buff.PowerSetMsg.Response\032.\n\007Request\022"
-    "\022\n\nstationCim\030\001 \001(\014\022\017\n\007unitCim\030\002 \001(\014\032+\n\010"
-    "Response\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resmsg\030\002 \001("
-    "\014\"\363\001\n\nLineSetMsg\0224\n\007request\030\001 \001(\0132#.com."
-    "spplus.buff.LineSetMsg.Request\0226\n\010respon"
-    "se\030\002 \001(\0132$.com.spplus.buff.LineSetMsg.Re"
-    "sponse\032J\n\007Request\022\017\n\007unitCim\030\001 \001(\014\022\025\n\rst"
-    "ationOneCim\030\002 \001(\014\022\027\n\017stationOtherCim\030\003 \001"
-    "(\014\032+\n\010Response\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resms"
-    "g\030\002 \001(\014\"\346\001\n\rSavingListMsg\0227\n\007request\030\001 \001"
-    "(\0132&.com.spplus.buff.SavingListMsg.Reque"
-    "st\0229\n\010response\030\002 \001(\0132\'.com.spplus.buff.S"
-    "avingListMsg.Response\032\025\n\007Request\022\n\n\002id\030\001"
-    " \001(\014\032J\n\010Response\022-\n\010saveList\030\001 \003(\0132\033.com"
-    ".spplus.buff.SavingBean\022\017\n\007rescode\030\002 \001(\r"
-    "\"\377\001\n\016WriteSavingMsg\0228\n\007request\030\001 \001(\0132\'.c"
-    "om.spplus.buff.WriteSavingMsg.Request\022:\n"
-    "\010response\030\002 \001(\0132(.com.spplus.buff.WriteS"
-    "avingMsg.Response\032Z\n\007Request\022\020\n\010saveName"
-    "\030\001 \001(\014\022\016\n\006saveId\030\002 \001(\r\022-\n\tstateList\030\003 \003("
-    "\0132\032.com.spplus.buff.StateBean\032\033\n\010Respons"
-    "e\022\017\n\007rescode\030\001 \001(\r", 5378);
+    "an\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r\"\361\001\n\rCirc"
+    "leListMsg\0227\n\007request\030\001 \001(\0132&.com.spplus."
+    "buff.CircleListMsg.Request\0229\n\010response\030\002"
+    " \001(\0132\'.com.spplus.buff.CircleListMsg.Res"
+    "ponse\032\031\n\007Request\022\016\n\006saveId\030\001 \001(\r\032Q\n\010Resp"
+    "onse\022\017\n\007rescode\030\001 \001(\r\0224\n\ncirclelist\030\002 \003("
+    "\0132 .com.spplus.buff.CircleQueryBean\"\350\001\n\013"
+    "SignListMsg\0225\n\007request\030\001 \001(\0132$.com.spplu"
+    "s.buff.SignListMsg.Request\0227\n\010response\030\002"
+    " \001(\0132%.com.spplus.buff.SignListMsg.Respo"
+    "nse\032\032\n\007Request\022\017\n\007reqdate\030\001 \001(\014\032M\n\010Respo"
+    "nse\022\017\n\007rescode\030\001 \001(\r\0220\n\010signlist\030\002 \003(\0132\036"
+    ".com.spplus.buff.SignQueryBean\"\367\001\n\016Gswit"
+    "chListMsg\0228\n\007request\030\001 \001(\0132\'.com.spplus."
+    "buff.GswitchListMsg.Request\022:\n\010response\030"
+    "\002 \001(\0132(.com.spplus.buff.GswitchListMsg.R"
+    "esponse\032\032\n\007Request\022\017\n\007reqdate\030\001 \001(\014\032S\n\010R"
+    "esponse\022\017\n\007rescode\030\001 \001(\r\0226\n\013gswitchlist\030"
+    "\002 \003(\0132!.com.spplus.buff.GswitchQueryBean"
+    "\"\350\001\n\013MsetListMsg\0225\n\007request\030\001 \001(\0132$.com."
+    "spplus.buff.MsetListMsg.Request\0227\n\010respo"
+    "nse\030\002 \001(\0132%.com.spplus.buff.MsetListMsg."
+    "Response\032\032\n\007Request\022\017\n\007reqdate\030\001 \001(\014\032M\n\010"
+    "Response\022\017\n\007rescode\030\001 \001(\r\0220\n\010msetlist\030\002 "
+    "\003(\0132\036.com.spplus.buff.MsetQueryBean\"\355\001\n\014"
+    "EventListMsg\0226\n\007request\030\001 \001(\0132%.com.sppl"
+    "us.buff.EventListMsg.Request\0228\n\010response"
+    "\030\002 \001(\0132&.com.spplus.buff.EventListMsg.Re"
+    "sponse\032\032\n\007Request\022\017\n\007reqdate\030\001 \001(\014\032O\n\010Re"
+    "sponse\022\017\n\007rescode\030\001 \001(\r\0222\n\teventlist\030\002 \003"
+    "(\0132\037.com.spplus.buff.EventQueryBean\"\210\002\n\013"
+    "DevStateMsg\0225\n\007request\030\001 \001(\0132$.com.spplu"
+    "s.buff.DevStateMsg.Request\0227\n\010response\030\002"
+    " \001(\0132%.com.spplus.buff.DevStateMsg.Respo"
+    "nse\032>\n\007Request\022\016\n\006saveId\030\001 \001(\r\022\022\n\nstatio"
+    "nCim\030\002 \001(\014\022\017\n\007unitCim\030\003 \001(\014\032I\n\010Response\022"
+    "\017\n\007rescode\030\001 \001(\r\022,\n\010devState\030\002 \003(\0132\032.com"
+    ".spplus.buff.StateBean\"\362\001\n\016StationTypeMs"
+    "g\0228\n\007request\030\001 \001(\0132\'.com.spplus.buff.Sta"
+    "tionTypeMsg.Request\022:\n\010response\030\002 \001(\0132(."
+    "com.spplus.buff.StationTypeMsg.Response\032"
+    "\031\n\007Request\022\016\n\006saveId\030\001 \001(\r\032O\n\010Response\022\017"
+    "\n\007rescode\030\001 \001(\r\0222\n\010typeList\030\002 \003(\0132 .com."
+    "spplus.buff.StationTypeBean\"\364\001\n\016StationL"
+    "istMsg\0228\n\007request\030\001 \001(\0132\'.com.spplus.buf"
+    "f.StationListMsg.Request\022:\n\010response\030\002 \001"
+    "(\0132(.com.spplus.buff.StationListMsg.Resp"
+    "onse\032\034\n\007Request\022\021\n\tstationId\030\001 \001(\r\032N\n\010Re"
+    "sponse\022\017\n\007rescode\030\001 \001(\r\0221\n\013stationList\030\002"
+    " \003(\0132\034.com.spplus.buff.StationBean\"\325\001\n\006T"
+    "agMsg\0220\n\007request\030\001 \001(\0132\037.com.spplus.buff"
+    ".TagMsg.Request\0222\n\010response\030\002 \001(\0132 .com."
+    "spplus.buff.TagMsg.Response\0328\n\007Request\022\016"
+    "\n\006saveId\030\001 \001(\r\022\014\n\004type\030\002 \001(\r\022\017\n\007unitCim\030"
+    "\003 \001(\014\032+\n\010Response\022\017\n\007rescode\030\001 \001(\r\022\016\n\006re"
+    "smsg\030\002 \001(\014\"\363\002\n\013OprationMsg\0225\n\007request\030\001 "
+    "\001(\0132$.com.spplus.buff.OprationMsg.Reques"
+    "t\0227\n\010response\030\002 \001(\0132%.com.spplus.buff.Op"
+    "rationMsg.Response\032[\n\007Request\022\016\n\006saveId\030"
+    "\001 \001(\r\022\014\n\004type\030\002 \001(\r\022\017\n\007unitCim\030\003 \001(\014\022\017\n\007"
+    "ischeck\030\004 \001(\010\022\020\n\010unittype\030\005 \001(\r\032\226\001\n\010Resp"
+    "onse\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resmsg\030\002 \001(\014\022,\n"
+    "\010devState\030\003 \003(\0132\032.com.spplus.buff.StateB"
+    "ean\022+\n\010ruleList\030\004 \003(\0132\031.com.spplus.buff."
+    "RuleBean\022\016\n\006optype\030\005 \001(\r\"\332\001\n\013PowerSetMsg"
+    "\0225\n\007request\030\001 \001(\0132$.com.spplus.buff.Powe"
+    "rSetMsg.Request\0227\n\010response\030\002 \001(\0132%.com."
+    "spplus.buff.PowerSetMsg.Response\032.\n\007Requ"
+    "est\022\022\n\nstationCim\030\001 \001(\014\022\017\n\007unitCim\030\002 \001(\014"
+    "\032+\n\010Response\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resmsg\030"
+    "\002 \001(\014\"\363\001\n\nLineSetMsg\0224\n\007request\030\001 \001(\0132#."
+    "com.spplus.buff.LineSetMsg.Request\0226\n\010re"
+    "sponse\030\002 \001(\0132$.com.spplus.buff.LineSetMs"
+    "g.Response\032J\n\007Request\022\017\n\007unitCim\030\001 \001(\014\022\025"
+    "\n\rstationOneCim\030\002 \001(\014\022\027\n\017stationOtherCim"
+    "\030\003 \001(\014\032+\n\010Response\022\017\n\007rescode\030\001 \001(\r\022\016\n\006r"
+    "esmsg\030\002 \001(\014\"\346\001\n\rSavingListMsg\0227\n\007request"
+    "\030\001 \001(\0132&.com.spplus.buff.SavingListMsg.R"
+    "equest\0229\n\010response\030\002 \001(\0132\'.com.spplus.bu"
+    "ff.SavingListMsg.Response\032\025\n\007Request\022\n\n\002"
+    "id\030\001 \001(\014\032J\n\010Response\022-\n\010saveList\030\001 \003(\0132\033"
+    ".com.spplus.buff.SavingBean\022\017\n\007rescode\030\002"
+    " \001(\r\"\377\001\n\016WriteSavingMsg\0228\n\007request\030\001 \001(\013"
+    "2\'.com.spplus.buff.WriteSavingMsg.Reques"
+    "t\022:\n\010response\030\002 \001(\0132(.com.spplus.buff.Wr"
+    "iteSavingMsg.Response\032Z\n\007Request\022\020\n\010save"
+    "Name\030\001 \001(\014\022\016\n\006saveId\030\002 \001(\r\022-\n\tstateList\030"
+    "\003 \003(\0132\032.com.spplus.buff.StateBean\032\033\n\010Res"
+    "ponse\022\017\n\007rescode\030\001 \001(\r\"\202\002\n\022TicketMsionLi"
+    "stMsg\022<\n\007request\030\001 \001(\0132+.com.spplus.buff"
+    ".TicketMsionListMsg.Request\022>\n\010response\030"
+    "\002 \001(\0132,.com.spplus.buff.TicketMsionListM"
+    "sg.Response\032\031\n\007Request\022\016\n\006userid\030\001 \001(\r\032S"
+    "\n\010Response\022\017\n\007rescode\030\001 \001(\r\0226\n\014tktMsionl"
+    "ist\030\002 \003(\0132 .com.spplus.buff.TicketMsionB"
+    "ean\"\270\001\n\014TicketMgrMsg\0226\n\007request\030\001 \001(\0132%."
+    "com.spplus.buff.TicketMgrMsg.Request\0228\n\010"
+    "response\030\002 \001(\0132&.com.spplus.buff.TicketM"
+    "grMsg.Response\032\031\n\007Request\022\016\n\006mgrsql\030\001 \001("
+    "\014\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r\"\355\001\n\rTicke"
+    "tListMsg\0227\n\007request\030\001 \001(\0132&.com.spplus.b"
+    "uff.TicketListMsg.Request\0229\n\010response\030\002 "
+    "\001(\0132\'.com.spplus.buff.TicketListMsg.Resp"
+    "onse\032\032\n\007Request\022\017\n\007reqdate\030\001 \001(\014\032L\n\010Resp"
+    "onse\022\017\n\007rescode\030\001 \001(\r\022/\n\nticketlist\030\002 \003("
+    "\0132\033.com.spplus.buff.TicketBean", 6550);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbody.proto", &protobuf_RegisterTypes);
   UserLoginMsg::default_instance_ = new UserLoginMsg();
@@ -1736,6 +2104,9 @@ void protobuf_AddDesc_msgbody_2eproto() {
   StationRuleMgrMsg::default_instance_ = new StationRuleMgrMsg();
   StationRuleMgrMsg_Request::default_instance_ = new StationRuleMgrMsg_Request();
   StationRuleMgrMsg_Response::default_instance_ = new StationRuleMgrMsg_Response();
+  CircleListMsg::default_instance_ = new CircleListMsg();
+  CircleListMsg_Request::default_instance_ = new CircleListMsg_Request();
+  CircleListMsg_Response::default_instance_ = new CircleListMsg_Response();
   SignListMsg::default_instance_ = new SignListMsg();
   SignListMsg_Request::default_instance_ = new SignListMsg_Request();
   SignListMsg_Response::default_instance_ = new SignListMsg_Response();
@@ -1745,6 +2116,9 @@ void protobuf_AddDesc_msgbody_2eproto() {
   MsetListMsg::default_instance_ = new MsetListMsg();
   MsetListMsg_Request::default_instance_ = new MsetListMsg_Request();
   MsetListMsg_Response::default_instance_ = new MsetListMsg_Response();
+  EventListMsg::default_instance_ = new EventListMsg();
+  EventListMsg_Request::default_instance_ = new EventListMsg_Request();
+  EventListMsg_Response::default_instance_ = new EventListMsg_Response();
   DevStateMsg::default_instance_ = new DevStateMsg();
   DevStateMsg_Request::default_instance_ = new DevStateMsg_Request();
   DevStateMsg_Response::default_instance_ = new DevStateMsg_Response();
@@ -1772,6 +2146,15 @@ void protobuf_AddDesc_msgbody_2eproto() {
   WriteSavingMsg::default_instance_ = new WriteSavingMsg();
   WriteSavingMsg_Request::default_instance_ = new WriteSavingMsg_Request();
   WriteSavingMsg_Response::default_instance_ = new WriteSavingMsg_Response();
+  TicketMsionListMsg::default_instance_ = new TicketMsionListMsg();
+  TicketMsionListMsg_Request::default_instance_ = new TicketMsionListMsg_Request();
+  TicketMsionListMsg_Response::default_instance_ = new TicketMsionListMsg_Response();
+  TicketMgrMsg::default_instance_ = new TicketMgrMsg();
+  TicketMgrMsg_Request::default_instance_ = new TicketMgrMsg_Request();
+  TicketMgrMsg_Response::default_instance_ = new TicketMgrMsg_Response();
+  TicketListMsg::default_instance_ = new TicketListMsg();
+  TicketListMsg_Request::default_instance_ = new TicketListMsg_Request();
+  TicketListMsg_Response::default_instance_ = new TicketListMsg_Response();
   UserLoginMsg::default_instance_->InitAsDefaultInstance();
   UserLoginMsg_Request::default_instance_->InitAsDefaultInstance();
   UserLoginMsg_Response::default_instance_->InitAsDefaultInstance();
@@ -1802,6 +2185,9 @@ void protobuf_AddDesc_msgbody_2eproto() {
   StationRuleMgrMsg::default_instance_->InitAsDefaultInstance();
   StationRuleMgrMsg_Request::default_instance_->InitAsDefaultInstance();
   StationRuleMgrMsg_Response::default_instance_->InitAsDefaultInstance();
+  CircleListMsg::default_instance_->InitAsDefaultInstance();
+  CircleListMsg_Request::default_instance_->InitAsDefaultInstance();
+  CircleListMsg_Response::default_instance_->InitAsDefaultInstance();
   SignListMsg::default_instance_->InitAsDefaultInstance();
   SignListMsg_Request::default_instance_->InitAsDefaultInstance();
   SignListMsg_Response::default_instance_->InitAsDefaultInstance();
@@ -1811,6 +2197,9 @@ void protobuf_AddDesc_msgbody_2eproto() {
   MsetListMsg::default_instance_->InitAsDefaultInstance();
   MsetListMsg_Request::default_instance_->InitAsDefaultInstance();
   MsetListMsg_Response::default_instance_->InitAsDefaultInstance();
+  EventListMsg::default_instance_->InitAsDefaultInstance();
+  EventListMsg_Request::default_instance_->InitAsDefaultInstance();
+  EventListMsg_Response::default_instance_->InitAsDefaultInstance();
   DevStateMsg::default_instance_->InitAsDefaultInstance();
   DevStateMsg_Request::default_instance_->InitAsDefaultInstance();
   DevStateMsg_Response::default_instance_->InitAsDefaultInstance();
@@ -1838,6 +2227,15 @@ void protobuf_AddDesc_msgbody_2eproto() {
   WriteSavingMsg::default_instance_->InitAsDefaultInstance();
   WriteSavingMsg_Request::default_instance_->InitAsDefaultInstance();
   WriteSavingMsg_Response::default_instance_->InitAsDefaultInstance();
+  TicketMsionListMsg::default_instance_->InitAsDefaultInstance();
+  TicketMsionListMsg_Request::default_instance_->InitAsDefaultInstance();
+  TicketMsionListMsg_Response::default_instance_->InitAsDefaultInstance();
+  TicketMgrMsg::default_instance_->InitAsDefaultInstance();
+  TicketMgrMsg_Request::default_instance_->InitAsDefaultInstance();
+  TicketMgrMsg_Response::default_instance_->InitAsDefaultInstance();
+  TicketListMsg::default_instance_->InitAsDefaultInstance();
+  TicketListMsg_Request::default_instance_->InitAsDefaultInstance();
+  TicketListMsg_Response::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_msgbody_2eproto);
 }
 
@@ -9039,6 +9437,720 @@ void StationRuleMgrMsg::Swap(StationRuleMgrMsg* other) {
 // ===================================================================
 
 #ifndef _MSC_VER
+const int CircleListMsg_Request::kSaveIdFieldNumber;
+#endif  // !_MSC_VER
+
+CircleListMsg_Request::CircleListMsg_Request()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void CircleListMsg_Request::InitAsDefaultInstance() {
+}
+
+CircleListMsg_Request::CircleListMsg_Request(const CircleListMsg_Request& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void CircleListMsg_Request::SharedCtor() {
+  _cached_size_ = 0;
+  saveid_ = 0u;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+CircleListMsg_Request::~CircleListMsg_Request() {
+  SharedDtor();
+}
+
+void CircleListMsg_Request::SharedDtor() {
+  if (this != default_instance_) {
+  }
+}
+
+void CircleListMsg_Request::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* CircleListMsg_Request::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return CircleListMsg_Request_descriptor_;
+}
+
+const CircleListMsg_Request& CircleListMsg_Request::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+CircleListMsg_Request* CircleListMsg_Request::default_instance_ = NULL;
+
+CircleListMsg_Request* CircleListMsg_Request::New() const {
+  return new CircleListMsg_Request;
+}
+
+void CircleListMsg_Request::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    saveid_ = 0u;
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool CircleListMsg_Request::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 saveId = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &saveid_)));
+          set_has_saveid();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void CircleListMsg_Request::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional uint32 saveId = 1;
+  if (has_saveid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->saveid(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* CircleListMsg_Request::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional uint32 saveId = 1;
+  if (has_saveid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->saveid(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int CircleListMsg_Request::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 saveId = 1;
+    if (has_saveid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->saveid());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void CircleListMsg_Request::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const CircleListMsg_Request* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const CircleListMsg_Request*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void CircleListMsg_Request::MergeFrom(const CircleListMsg_Request& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_saveid()) {
+      set_saveid(from.saveid());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void CircleListMsg_Request::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void CircleListMsg_Request::CopyFrom(const CircleListMsg_Request& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CircleListMsg_Request::IsInitialized() const {
+
+  return true;
+}
+
+void CircleListMsg_Request::Swap(CircleListMsg_Request* other) {
+  if (other != this) {
+    std::swap(saveid_, other->saveid_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata CircleListMsg_Request::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CircleListMsg_Request_descriptor_;
+  metadata.reflection = CircleListMsg_Request_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#ifndef _MSC_VER
+const int CircleListMsg_Response::kRescodeFieldNumber;
+const int CircleListMsg_Response::kCirclelistFieldNumber;
+#endif  // !_MSC_VER
+
+CircleListMsg_Response::CircleListMsg_Response()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void CircleListMsg_Response::InitAsDefaultInstance() {
+}
+
+CircleListMsg_Response::CircleListMsg_Response(const CircleListMsg_Response& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void CircleListMsg_Response::SharedCtor() {
+  _cached_size_ = 0;
+  rescode_ = 0u;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+CircleListMsg_Response::~CircleListMsg_Response() {
+  SharedDtor();
+}
+
+void CircleListMsg_Response::SharedDtor() {
+  if (this != default_instance_) {
+  }
+}
+
+void CircleListMsg_Response::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* CircleListMsg_Response::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return CircleListMsg_Response_descriptor_;
+}
+
+const CircleListMsg_Response& CircleListMsg_Response::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+CircleListMsg_Response* CircleListMsg_Response::default_instance_ = NULL;
+
+CircleListMsg_Response* CircleListMsg_Response::New() const {
+  return new CircleListMsg_Response;
+}
+
+void CircleListMsg_Response::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    rescode_ = 0u;
+  }
+  circlelist_.Clear();
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool CircleListMsg_Response::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 rescode = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &rescode_)));
+          set_has_rescode();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_circlelist;
+        break;
+      }
+
+      // repeated .com.spplus.buff.CircleQueryBean circlelist = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_circlelist:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+                input, add_circlelist()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_circlelist;
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void CircleListMsg_Response::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional uint32 rescode = 1;
+  if (has_rescode()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->rescode(), output);
+  }
+
+  // repeated .com.spplus.buff.CircleQueryBean circlelist = 2;
+  for (int i = 0; i < this->circlelist_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->circlelist(i), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* CircleListMsg_Response::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional uint32 rescode = 1;
+  if (has_rescode()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->rescode(), target);
+  }
+
+  // repeated .com.spplus.buff.CircleQueryBean circlelist = 2;
+  for (int i = 0; i < this->circlelist_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        2, this->circlelist(i), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int CircleListMsg_Response::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 rescode = 1;
+    if (has_rescode()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->rescode());
+    }
+
+  }
+  // repeated .com.spplus.buff.CircleQueryBean circlelist = 2;
+  total_size += 1 * this->circlelist_size();
+  for (int i = 0; i < this->circlelist_size(); i++) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        this->circlelist(i));
+  }
+
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void CircleListMsg_Response::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const CircleListMsg_Response* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const CircleListMsg_Response*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void CircleListMsg_Response::MergeFrom(const CircleListMsg_Response& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  circlelist_.MergeFrom(from.circlelist_);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_rescode()) {
+      set_rescode(from.rescode());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void CircleListMsg_Response::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void CircleListMsg_Response::CopyFrom(const CircleListMsg_Response& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CircleListMsg_Response::IsInitialized() const {
+
+  return true;
+}
+
+void CircleListMsg_Response::Swap(CircleListMsg_Response* other) {
+  if (other != this) {
+    std::swap(rescode_, other->rescode_);
+    circlelist_.Swap(&other->circlelist_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata CircleListMsg_Response::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CircleListMsg_Response_descriptor_;
+  metadata.reflection = CircleListMsg_Response_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#ifndef _MSC_VER
+const int CircleListMsg::kRequestFieldNumber;
+const int CircleListMsg::kResponseFieldNumber;
+#endif  // !_MSC_VER
+
+CircleListMsg::CircleListMsg()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void CircleListMsg::InitAsDefaultInstance() {
+  request_ = const_cast< ::com::spplus::buff::CircleListMsg_Request*>(&::com::spplus::buff::CircleListMsg_Request::default_instance());
+  response_ = const_cast< ::com::spplus::buff::CircleListMsg_Response*>(&::com::spplus::buff::CircleListMsg_Response::default_instance());
+}
+
+CircleListMsg::CircleListMsg(const CircleListMsg& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void CircleListMsg::SharedCtor() {
+  _cached_size_ = 0;
+  request_ = NULL;
+  response_ = NULL;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+CircleListMsg::~CircleListMsg() {
+  SharedDtor();
+}
+
+void CircleListMsg::SharedDtor() {
+  if (this != default_instance_) {
+    delete request_;
+    delete response_;
+  }
+}
+
+void CircleListMsg::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* CircleListMsg::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return CircleListMsg_descriptor_;
+}
+
+const CircleListMsg& CircleListMsg::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+CircleListMsg* CircleListMsg::default_instance_ = NULL;
+
+CircleListMsg* CircleListMsg::New() const {
+  return new CircleListMsg;
+}
+
+void CircleListMsg::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (has_request()) {
+      if (request_ != NULL) request_->::com::spplus::buff::CircleListMsg_Request::Clear();
+    }
+    if (has_response()) {
+      if (response_ != NULL) response_->::com::spplus::buff::CircleListMsg_Response::Clear();
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool CircleListMsg::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .com.spplus.buff.CircleListMsg.Request request = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_request()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_response;
+        break;
+      }
+
+      // optional .com.spplus.buff.CircleListMsg.Response response = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_response:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_response()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void CircleListMsg::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional .com.spplus.buff.CircleListMsg.Request request = 1;
+  if (has_request()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->request(), output);
+  }
+
+  // optional .com.spplus.buff.CircleListMsg.Response response = 2;
+  if (has_response()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->response(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* CircleListMsg::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional .com.spplus.buff.CircleListMsg.Request request = 1;
+  if (has_request()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        1, this->request(), target);
+  }
+
+  // optional .com.spplus.buff.CircleListMsg.Response response = 2;
+  if (has_response()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        2, this->response(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int CircleListMsg::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional .com.spplus.buff.CircleListMsg.Request request = 1;
+    if (has_request()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->request());
+    }
+
+    // optional .com.spplus.buff.CircleListMsg.Response response = 2;
+    if (has_response()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->response());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void CircleListMsg::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const CircleListMsg* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const CircleListMsg*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void CircleListMsg::MergeFrom(const CircleListMsg& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_request()) {
+      mutable_request()->::com::spplus::buff::CircleListMsg_Request::MergeFrom(from.request());
+    }
+    if (from.has_response()) {
+      mutable_response()->::com::spplus::buff::CircleListMsg_Response::MergeFrom(from.response());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void CircleListMsg::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void CircleListMsg::CopyFrom(const CircleListMsg& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CircleListMsg::IsInitialized() const {
+
+  return true;
+}
+
+void CircleListMsg::Swap(CircleListMsg* other) {
+  if (other != this) {
+    std::swap(request_, other->request_);
+    std::swap(response_, other->response_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata CircleListMsg::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CircleListMsg_descriptor_;
+  metadata.reflection = CircleListMsg_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
 const int SignListMsg_Request::kReqdateFieldNumber;
 #endif  // !_MSC_VER
 
@@ -11198,6 +12310,728 @@ void MsetListMsg::Swap(MsetListMsg* other) {
   ::google::protobuf::Metadata metadata;
   metadata.descriptor = MsetListMsg_descriptor_;
   metadata.reflection = MsetListMsg_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int EventListMsg_Request::kReqdateFieldNumber;
+#endif  // !_MSC_VER
+
+EventListMsg_Request::EventListMsg_Request()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void EventListMsg_Request::InitAsDefaultInstance() {
+}
+
+EventListMsg_Request::EventListMsg_Request(const EventListMsg_Request& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void EventListMsg_Request::SharedCtor() {
+  _cached_size_ = 0;
+  reqdate_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+EventListMsg_Request::~EventListMsg_Request() {
+  SharedDtor();
+}
+
+void EventListMsg_Request::SharedDtor() {
+  if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
+    delete reqdate_;
+  }
+  if (this != default_instance_) {
+  }
+}
+
+void EventListMsg_Request::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* EventListMsg_Request::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return EventListMsg_Request_descriptor_;
+}
+
+const EventListMsg_Request& EventListMsg_Request::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+EventListMsg_Request* EventListMsg_Request::default_instance_ = NULL;
+
+EventListMsg_Request* EventListMsg_Request::New() const {
+  return new EventListMsg_Request;
+}
+
+void EventListMsg_Request::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (has_reqdate()) {
+      if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
+        reqdate_->clear();
+      }
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool EventListMsg_Request::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional bytes reqdate = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_reqdate()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void EventListMsg_Request::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional bytes reqdate = 1;
+  if (has_reqdate()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      1, this->reqdate(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* EventListMsg_Request::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional bytes reqdate = 1;
+  if (has_reqdate()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        1, this->reqdate(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int EventListMsg_Request::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional bytes reqdate = 1;
+    if (has_reqdate()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->reqdate());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void EventListMsg_Request::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const EventListMsg_Request* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const EventListMsg_Request*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void EventListMsg_Request::MergeFrom(const EventListMsg_Request& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_reqdate()) {
+      set_reqdate(from.reqdate());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void EventListMsg_Request::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void EventListMsg_Request::CopyFrom(const EventListMsg_Request& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool EventListMsg_Request::IsInitialized() const {
+
+  return true;
+}
+
+void EventListMsg_Request::Swap(EventListMsg_Request* other) {
+  if (other != this) {
+    std::swap(reqdate_, other->reqdate_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata EventListMsg_Request::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = EventListMsg_Request_descriptor_;
+  metadata.reflection = EventListMsg_Request_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#ifndef _MSC_VER
+const int EventListMsg_Response::kRescodeFieldNumber;
+const int EventListMsg_Response::kEventlistFieldNumber;
+#endif  // !_MSC_VER
+
+EventListMsg_Response::EventListMsg_Response()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void EventListMsg_Response::InitAsDefaultInstance() {
+}
+
+EventListMsg_Response::EventListMsg_Response(const EventListMsg_Response& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void EventListMsg_Response::SharedCtor() {
+  _cached_size_ = 0;
+  rescode_ = 0u;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+EventListMsg_Response::~EventListMsg_Response() {
+  SharedDtor();
+}
+
+void EventListMsg_Response::SharedDtor() {
+  if (this != default_instance_) {
+  }
+}
+
+void EventListMsg_Response::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* EventListMsg_Response::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return EventListMsg_Response_descriptor_;
+}
+
+const EventListMsg_Response& EventListMsg_Response::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+EventListMsg_Response* EventListMsg_Response::default_instance_ = NULL;
+
+EventListMsg_Response* EventListMsg_Response::New() const {
+  return new EventListMsg_Response;
+}
+
+void EventListMsg_Response::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    rescode_ = 0u;
+  }
+  eventlist_.Clear();
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool EventListMsg_Response::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 rescode = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &rescode_)));
+          set_has_rescode();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_eventlist;
+        break;
+      }
+
+      // repeated .com.spplus.buff.EventQueryBean eventlist = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_eventlist:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+                input, add_eventlist()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_eventlist;
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void EventListMsg_Response::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional uint32 rescode = 1;
+  if (has_rescode()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->rescode(), output);
+  }
+
+  // repeated .com.spplus.buff.EventQueryBean eventlist = 2;
+  for (int i = 0; i < this->eventlist_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->eventlist(i), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* EventListMsg_Response::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional uint32 rescode = 1;
+  if (has_rescode()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->rescode(), target);
+  }
+
+  // repeated .com.spplus.buff.EventQueryBean eventlist = 2;
+  for (int i = 0; i < this->eventlist_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        2, this->eventlist(i), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int EventListMsg_Response::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 rescode = 1;
+    if (has_rescode()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->rescode());
+    }
+
+  }
+  // repeated .com.spplus.buff.EventQueryBean eventlist = 2;
+  total_size += 1 * this->eventlist_size();
+  for (int i = 0; i < this->eventlist_size(); i++) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        this->eventlist(i));
+  }
+
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void EventListMsg_Response::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const EventListMsg_Response* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const EventListMsg_Response*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void EventListMsg_Response::MergeFrom(const EventListMsg_Response& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  eventlist_.MergeFrom(from.eventlist_);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_rescode()) {
+      set_rescode(from.rescode());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void EventListMsg_Response::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void EventListMsg_Response::CopyFrom(const EventListMsg_Response& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool EventListMsg_Response::IsInitialized() const {
+
+  return true;
+}
+
+void EventListMsg_Response::Swap(EventListMsg_Response* other) {
+  if (other != this) {
+    std::swap(rescode_, other->rescode_);
+    eventlist_.Swap(&other->eventlist_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata EventListMsg_Response::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = EventListMsg_Response_descriptor_;
+  metadata.reflection = EventListMsg_Response_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#ifndef _MSC_VER
+const int EventListMsg::kRequestFieldNumber;
+const int EventListMsg::kResponseFieldNumber;
+#endif  // !_MSC_VER
+
+EventListMsg::EventListMsg()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void EventListMsg::InitAsDefaultInstance() {
+  request_ = const_cast< ::com::spplus::buff::EventListMsg_Request*>(&::com::spplus::buff::EventListMsg_Request::default_instance());
+  response_ = const_cast< ::com::spplus::buff::EventListMsg_Response*>(&::com::spplus::buff::EventListMsg_Response::default_instance());
+}
+
+EventListMsg::EventListMsg(const EventListMsg& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void EventListMsg::SharedCtor() {
+  _cached_size_ = 0;
+  request_ = NULL;
+  response_ = NULL;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+EventListMsg::~EventListMsg() {
+  SharedDtor();
+}
+
+void EventListMsg::SharedDtor() {
+  if (this != default_instance_) {
+    delete request_;
+    delete response_;
+  }
+}
+
+void EventListMsg::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* EventListMsg::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return EventListMsg_descriptor_;
+}
+
+const EventListMsg& EventListMsg::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+EventListMsg* EventListMsg::default_instance_ = NULL;
+
+EventListMsg* EventListMsg::New() const {
+  return new EventListMsg;
+}
+
+void EventListMsg::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (has_request()) {
+      if (request_ != NULL) request_->::com::spplus::buff::EventListMsg_Request::Clear();
+    }
+    if (has_response()) {
+      if (response_ != NULL) response_->::com::spplus::buff::EventListMsg_Response::Clear();
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool EventListMsg::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .com.spplus.buff.EventListMsg.Request request = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_request()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_response;
+        break;
+      }
+
+      // optional .com.spplus.buff.EventListMsg.Response response = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_response:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_response()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void EventListMsg::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional .com.spplus.buff.EventListMsg.Request request = 1;
+  if (has_request()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->request(), output);
+  }
+
+  // optional .com.spplus.buff.EventListMsg.Response response = 2;
+  if (has_response()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->response(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* EventListMsg::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional .com.spplus.buff.EventListMsg.Request request = 1;
+  if (has_request()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        1, this->request(), target);
+  }
+
+  // optional .com.spplus.buff.EventListMsg.Response response = 2;
+  if (has_response()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        2, this->response(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int EventListMsg::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional .com.spplus.buff.EventListMsg.Request request = 1;
+    if (has_request()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->request());
+    }
+
+    // optional .com.spplus.buff.EventListMsg.Response response = 2;
+    if (has_response()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->response());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void EventListMsg::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const EventListMsg* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const EventListMsg*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void EventListMsg::MergeFrom(const EventListMsg& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_request()) {
+      mutable_request()->::com::spplus::buff::EventListMsg_Request::MergeFrom(from.request());
+    }
+    if (from.has_response()) {
+      mutable_response()->::com::spplus::buff::EventListMsg_Response::MergeFrom(from.response());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void EventListMsg::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void EventListMsg::CopyFrom(const EventListMsg& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool EventListMsg::IsInitialized() const {
+
+  return true;
+}
+
+void EventListMsg::Swap(EventListMsg* other) {
+  if (other != this) {
+    std::swap(request_, other->request_);
+    std::swap(response_, other->response_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata EventListMsg::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = EventListMsg_descriptor_;
+  metadata.reflection = EventListMsg_reflection_;
   return metadata;
 }
 
@@ -18343,6 +20177,2124 @@ void WriteSavingMsg::Swap(WriteSavingMsg* other) {
   ::google::protobuf::Metadata metadata;
   metadata.descriptor = WriteSavingMsg_descriptor_;
   metadata.reflection = WriteSavingMsg_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int TicketMsionListMsg_Request::kUseridFieldNumber;
+#endif  // !_MSC_VER
+
+TicketMsionListMsg_Request::TicketMsionListMsg_Request()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void TicketMsionListMsg_Request::InitAsDefaultInstance() {
+}
+
+TicketMsionListMsg_Request::TicketMsionListMsg_Request(const TicketMsionListMsg_Request& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void TicketMsionListMsg_Request::SharedCtor() {
+  _cached_size_ = 0;
+  userid_ = 0u;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+TicketMsionListMsg_Request::~TicketMsionListMsg_Request() {
+  SharedDtor();
+}
+
+void TicketMsionListMsg_Request::SharedDtor() {
+  if (this != default_instance_) {
+  }
+}
+
+void TicketMsionListMsg_Request::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* TicketMsionListMsg_Request::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return TicketMsionListMsg_Request_descriptor_;
+}
+
+const TicketMsionListMsg_Request& TicketMsionListMsg_Request::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+TicketMsionListMsg_Request* TicketMsionListMsg_Request::default_instance_ = NULL;
+
+TicketMsionListMsg_Request* TicketMsionListMsg_Request::New() const {
+  return new TicketMsionListMsg_Request;
+}
+
+void TicketMsionListMsg_Request::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    userid_ = 0u;
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool TicketMsionListMsg_Request::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 userid = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &userid_)));
+          set_has_userid();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void TicketMsionListMsg_Request::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional uint32 userid = 1;
+  if (has_userid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->userid(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* TicketMsionListMsg_Request::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional uint32 userid = 1;
+  if (has_userid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->userid(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int TicketMsionListMsg_Request::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 userid = 1;
+    if (has_userid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->userid());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void TicketMsionListMsg_Request::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const TicketMsionListMsg_Request* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const TicketMsionListMsg_Request*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void TicketMsionListMsg_Request::MergeFrom(const TicketMsionListMsg_Request& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_userid()) {
+      set_userid(from.userid());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void TicketMsionListMsg_Request::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TicketMsionListMsg_Request::CopyFrom(const TicketMsionListMsg_Request& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TicketMsionListMsg_Request::IsInitialized() const {
+
+  return true;
+}
+
+void TicketMsionListMsg_Request::Swap(TicketMsionListMsg_Request* other) {
+  if (other != this) {
+    std::swap(userid_, other->userid_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata TicketMsionListMsg_Request::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TicketMsionListMsg_Request_descriptor_;
+  metadata.reflection = TicketMsionListMsg_Request_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#ifndef _MSC_VER
+const int TicketMsionListMsg_Response::kRescodeFieldNumber;
+const int TicketMsionListMsg_Response::kTktMsionlistFieldNumber;
+#endif  // !_MSC_VER
+
+TicketMsionListMsg_Response::TicketMsionListMsg_Response()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void TicketMsionListMsg_Response::InitAsDefaultInstance() {
+}
+
+TicketMsionListMsg_Response::TicketMsionListMsg_Response(const TicketMsionListMsg_Response& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void TicketMsionListMsg_Response::SharedCtor() {
+  _cached_size_ = 0;
+  rescode_ = 0u;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+TicketMsionListMsg_Response::~TicketMsionListMsg_Response() {
+  SharedDtor();
+}
+
+void TicketMsionListMsg_Response::SharedDtor() {
+  if (this != default_instance_) {
+  }
+}
+
+void TicketMsionListMsg_Response::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* TicketMsionListMsg_Response::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return TicketMsionListMsg_Response_descriptor_;
+}
+
+const TicketMsionListMsg_Response& TicketMsionListMsg_Response::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+TicketMsionListMsg_Response* TicketMsionListMsg_Response::default_instance_ = NULL;
+
+TicketMsionListMsg_Response* TicketMsionListMsg_Response::New() const {
+  return new TicketMsionListMsg_Response;
+}
+
+void TicketMsionListMsg_Response::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    rescode_ = 0u;
+  }
+  tktmsionlist_.Clear();
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool TicketMsionListMsg_Response::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 rescode = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &rescode_)));
+          set_has_rescode();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_tktMsionlist;
+        break;
+      }
+
+      // repeated .com.spplus.buff.TicketMsionBean tktMsionlist = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_tktMsionlist:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+                input, add_tktmsionlist()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_tktMsionlist;
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void TicketMsionListMsg_Response::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional uint32 rescode = 1;
+  if (has_rescode()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->rescode(), output);
+  }
+
+  // repeated .com.spplus.buff.TicketMsionBean tktMsionlist = 2;
+  for (int i = 0; i < this->tktmsionlist_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->tktmsionlist(i), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* TicketMsionListMsg_Response::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional uint32 rescode = 1;
+  if (has_rescode()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->rescode(), target);
+  }
+
+  // repeated .com.spplus.buff.TicketMsionBean tktMsionlist = 2;
+  for (int i = 0; i < this->tktmsionlist_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        2, this->tktmsionlist(i), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int TicketMsionListMsg_Response::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 rescode = 1;
+    if (has_rescode()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->rescode());
+    }
+
+  }
+  // repeated .com.spplus.buff.TicketMsionBean tktMsionlist = 2;
+  total_size += 1 * this->tktmsionlist_size();
+  for (int i = 0; i < this->tktmsionlist_size(); i++) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        this->tktmsionlist(i));
+  }
+
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void TicketMsionListMsg_Response::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const TicketMsionListMsg_Response* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const TicketMsionListMsg_Response*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void TicketMsionListMsg_Response::MergeFrom(const TicketMsionListMsg_Response& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  tktmsionlist_.MergeFrom(from.tktmsionlist_);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_rescode()) {
+      set_rescode(from.rescode());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void TicketMsionListMsg_Response::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TicketMsionListMsg_Response::CopyFrom(const TicketMsionListMsg_Response& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TicketMsionListMsg_Response::IsInitialized() const {
+
+  return true;
+}
+
+void TicketMsionListMsg_Response::Swap(TicketMsionListMsg_Response* other) {
+  if (other != this) {
+    std::swap(rescode_, other->rescode_);
+    tktmsionlist_.Swap(&other->tktmsionlist_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata TicketMsionListMsg_Response::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TicketMsionListMsg_Response_descriptor_;
+  metadata.reflection = TicketMsionListMsg_Response_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#ifndef _MSC_VER
+const int TicketMsionListMsg::kRequestFieldNumber;
+const int TicketMsionListMsg::kResponseFieldNumber;
+#endif  // !_MSC_VER
+
+TicketMsionListMsg::TicketMsionListMsg()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void TicketMsionListMsg::InitAsDefaultInstance() {
+  request_ = const_cast< ::com::spplus::buff::TicketMsionListMsg_Request*>(&::com::spplus::buff::TicketMsionListMsg_Request::default_instance());
+  response_ = const_cast< ::com::spplus::buff::TicketMsionListMsg_Response*>(&::com::spplus::buff::TicketMsionListMsg_Response::default_instance());
+}
+
+TicketMsionListMsg::TicketMsionListMsg(const TicketMsionListMsg& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void TicketMsionListMsg::SharedCtor() {
+  _cached_size_ = 0;
+  request_ = NULL;
+  response_ = NULL;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+TicketMsionListMsg::~TicketMsionListMsg() {
+  SharedDtor();
+}
+
+void TicketMsionListMsg::SharedDtor() {
+  if (this != default_instance_) {
+    delete request_;
+    delete response_;
+  }
+}
+
+void TicketMsionListMsg::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* TicketMsionListMsg::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return TicketMsionListMsg_descriptor_;
+}
+
+const TicketMsionListMsg& TicketMsionListMsg::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+TicketMsionListMsg* TicketMsionListMsg::default_instance_ = NULL;
+
+TicketMsionListMsg* TicketMsionListMsg::New() const {
+  return new TicketMsionListMsg;
+}
+
+void TicketMsionListMsg::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (has_request()) {
+      if (request_ != NULL) request_->::com::spplus::buff::TicketMsionListMsg_Request::Clear();
+    }
+    if (has_response()) {
+      if (response_ != NULL) response_->::com::spplus::buff::TicketMsionListMsg_Response::Clear();
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool TicketMsionListMsg::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .com.spplus.buff.TicketMsionListMsg.Request request = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_request()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_response;
+        break;
+      }
+
+      // optional .com.spplus.buff.TicketMsionListMsg.Response response = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_response:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_response()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void TicketMsionListMsg::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional .com.spplus.buff.TicketMsionListMsg.Request request = 1;
+  if (has_request()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->request(), output);
+  }
+
+  // optional .com.spplus.buff.TicketMsionListMsg.Response response = 2;
+  if (has_response()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->response(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* TicketMsionListMsg::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional .com.spplus.buff.TicketMsionListMsg.Request request = 1;
+  if (has_request()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        1, this->request(), target);
+  }
+
+  // optional .com.spplus.buff.TicketMsionListMsg.Response response = 2;
+  if (has_response()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        2, this->response(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int TicketMsionListMsg::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional .com.spplus.buff.TicketMsionListMsg.Request request = 1;
+    if (has_request()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->request());
+    }
+
+    // optional .com.spplus.buff.TicketMsionListMsg.Response response = 2;
+    if (has_response()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->response());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void TicketMsionListMsg::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const TicketMsionListMsg* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const TicketMsionListMsg*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void TicketMsionListMsg::MergeFrom(const TicketMsionListMsg& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_request()) {
+      mutable_request()->::com::spplus::buff::TicketMsionListMsg_Request::MergeFrom(from.request());
+    }
+    if (from.has_response()) {
+      mutable_response()->::com::spplus::buff::TicketMsionListMsg_Response::MergeFrom(from.response());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void TicketMsionListMsg::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TicketMsionListMsg::CopyFrom(const TicketMsionListMsg& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TicketMsionListMsg::IsInitialized() const {
+
+  return true;
+}
+
+void TicketMsionListMsg::Swap(TicketMsionListMsg* other) {
+  if (other != this) {
+    std::swap(request_, other->request_);
+    std::swap(response_, other->response_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata TicketMsionListMsg::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TicketMsionListMsg_descriptor_;
+  metadata.reflection = TicketMsionListMsg_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int TicketMgrMsg_Request::kMgrsqlFieldNumber;
+#endif  // !_MSC_VER
+
+TicketMgrMsg_Request::TicketMgrMsg_Request()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void TicketMgrMsg_Request::InitAsDefaultInstance() {
+}
+
+TicketMgrMsg_Request::TicketMgrMsg_Request(const TicketMgrMsg_Request& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void TicketMgrMsg_Request::SharedCtor() {
+  _cached_size_ = 0;
+  mgrsql_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+TicketMgrMsg_Request::~TicketMgrMsg_Request() {
+  SharedDtor();
+}
+
+void TicketMgrMsg_Request::SharedDtor() {
+  if (mgrsql_ != &::google::protobuf::internal::kEmptyString) {
+    delete mgrsql_;
+  }
+  if (this != default_instance_) {
+  }
+}
+
+void TicketMgrMsg_Request::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* TicketMgrMsg_Request::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return TicketMgrMsg_Request_descriptor_;
+}
+
+const TicketMgrMsg_Request& TicketMgrMsg_Request::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+TicketMgrMsg_Request* TicketMgrMsg_Request::default_instance_ = NULL;
+
+TicketMgrMsg_Request* TicketMgrMsg_Request::New() const {
+  return new TicketMgrMsg_Request;
+}
+
+void TicketMgrMsg_Request::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (has_mgrsql()) {
+      if (mgrsql_ != &::google::protobuf::internal::kEmptyString) {
+        mgrsql_->clear();
+      }
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool TicketMgrMsg_Request::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional bytes mgrsql = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_mgrsql()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void TicketMgrMsg_Request::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional bytes mgrsql = 1;
+  if (has_mgrsql()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      1, this->mgrsql(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* TicketMgrMsg_Request::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional bytes mgrsql = 1;
+  if (has_mgrsql()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        1, this->mgrsql(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int TicketMgrMsg_Request::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional bytes mgrsql = 1;
+    if (has_mgrsql()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->mgrsql());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void TicketMgrMsg_Request::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const TicketMgrMsg_Request* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const TicketMgrMsg_Request*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void TicketMgrMsg_Request::MergeFrom(const TicketMgrMsg_Request& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_mgrsql()) {
+      set_mgrsql(from.mgrsql());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void TicketMgrMsg_Request::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TicketMgrMsg_Request::CopyFrom(const TicketMgrMsg_Request& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TicketMgrMsg_Request::IsInitialized() const {
+
+  return true;
+}
+
+void TicketMgrMsg_Request::Swap(TicketMgrMsg_Request* other) {
+  if (other != this) {
+    std::swap(mgrsql_, other->mgrsql_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata TicketMgrMsg_Request::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TicketMgrMsg_Request_descriptor_;
+  metadata.reflection = TicketMgrMsg_Request_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#ifndef _MSC_VER
+const int TicketMgrMsg_Response::kRescodeFieldNumber;
+#endif  // !_MSC_VER
+
+TicketMgrMsg_Response::TicketMgrMsg_Response()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void TicketMgrMsg_Response::InitAsDefaultInstance() {
+}
+
+TicketMgrMsg_Response::TicketMgrMsg_Response(const TicketMgrMsg_Response& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void TicketMgrMsg_Response::SharedCtor() {
+  _cached_size_ = 0;
+  rescode_ = 0u;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+TicketMgrMsg_Response::~TicketMgrMsg_Response() {
+  SharedDtor();
+}
+
+void TicketMgrMsg_Response::SharedDtor() {
+  if (this != default_instance_) {
+  }
+}
+
+void TicketMgrMsg_Response::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* TicketMgrMsg_Response::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return TicketMgrMsg_Response_descriptor_;
+}
+
+const TicketMgrMsg_Response& TicketMgrMsg_Response::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+TicketMgrMsg_Response* TicketMgrMsg_Response::default_instance_ = NULL;
+
+TicketMgrMsg_Response* TicketMgrMsg_Response::New() const {
+  return new TicketMgrMsg_Response;
+}
+
+void TicketMgrMsg_Response::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    rescode_ = 0u;
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool TicketMgrMsg_Response::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 rescode = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &rescode_)));
+          set_has_rescode();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void TicketMgrMsg_Response::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional uint32 rescode = 1;
+  if (has_rescode()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->rescode(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* TicketMgrMsg_Response::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional uint32 rescode = 1;
+  if (has_rescode()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->rescode(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int TicketMgrMsg_Response::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 rescode = 1;
+    if (has_rescode()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->rescode());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void TicketMgrMsg_Response::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const TicketMgrMsg_Response* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const TicketMgrMsg_Response*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void TicketMgrMsg_Response::MergeFrom(const TicketMgrMsg_Response& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_rescode()) {
+      set_rescode(from.rescode());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void TicketMgrMsg_Response::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TicketMgrMsg_Response::CopyFrom(const TicketMgrMsg_Response& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TicketMgrMsg_Response::IsInitialized() const {
+
+  return true;
+}
+
+void TicketMgrMsg_Response::Swap(TicketMgrMsg_Response* other) {
+  if (other != this) {
+    std::swap(rescode_, other->rescode_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata TicketMgrMsg_Response::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TicketMgrMsg_Response_descriptor_;
+  metadata.reflection = TicketMgrMsg_Response_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#ifndef _MSC_VER
+const int TicketMgrMsg::kRequestFieldNumber;
+const int TicketMgrMsg::kResponseFieldNumber;
+#endif  // !_MSC_VER
+
+TicketMgrMsg::TicketMgrMsg()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void TicketMgrMsg::InitAsDefaultInstance() {
+  request_ = const_cast< ::com::spplus::buff::TicketMgrMsg_Request*>(&::com::spplus::buff::TicketMgrMsg_Request::default_instance());
+  response_ = const_cast< ::com::spplus::buff::TicketMgrMsg_Response*>(&::com::spplus::buff::TicketMgrMsg_Response::default_instance());
+}
+
+TicketMgrMsg::TicketMgrMsg(const TicketMgrMsg& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void TicketMgrMsg::SharedCtor() {
+  _cached_size_ = 0;
+  request_ = NULL;
+  response_ = NULL;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+TicketMgrMsg::~TicketMgrMsg() {
+  SharedDtor();
+}
+
+void TicketMgrMsg::SharedDtor() {
+  if (this != default_instance_) {
+    delete request_;
+    delete response_;
+  }
+}
+
+void TicketMgrMsg::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* TicketMgrMsg::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return TicketMgrMsg_descriptor_;
+}
+
+const TicketMgrMsg& TicketMgrMsg::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+TicketMgrMsg* TicketMgrMsg::default_instance_ = NULL;
+
+TicketMgrMsg* TicketMgrMsg::New() const {
+  return new TicketMgrMsg;
+}
+
+void TicketMgrMsg::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (has_request()) {
+      if (request_ != NULL) request_->::com::spplus::buff::TicketMgrMsg_Request::Clear();
+    }
+    if (has_response()) {
+      if (response_ != NULL) response_->::com::spplus::buff::TicketMgrMsg_Response::Clear();
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool TicketMgrMsg::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .com.spplus.buff.TicketMgrMsg.Request request = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_request()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_response;
+        break;
+      }
+
+      // optional .com.spplus.buff.TicketMgrMsg.Response response = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_response:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_response()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void TicketMgrMsg::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional .com.spplus.buff.TicketMgrMsg.Request request = 1;
+  if (has_request()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->request(), output);
+  }
+
+  // optional .com.spplus.buff.TicketMgrMsg.Response response = 2;
+  if (has_response()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->response(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* TicketMgrMsg::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional .com.spplus.buff.TicketMgrMsg.Request request = 1;
+  if (has_request()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        1, this->request(), target);
+  }
+
+  // optional .com.spplus.buff.TicketMgrMsg.Response response = 2;
+  if (has_response()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        2, this->response(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int TicketMgrMsg::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional .com.spplus.buff.TicketMgrMsg.Request request = 1;
+    if (has_request()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->request());
+    }
+
+    // optional .com.spplus.buff.TicketMgrMsg.Response response = 2;
+    if (has_response()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->response());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void TicketMgrMsg::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const TicketMgrMsg* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const TicketMgrMsg*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void TicketMgrMsg::MergeFrom(const TicketMgrMsg& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_request()) {
+      mutable_request()->::com::spplus::buff::TicketMgrMsg_Request::MergeFrom(from.request());
+    }
+    if (from.has_response()) {
+      mutable_response()->::com::spplus::buff::TicketMgrMsg_Response::MergeFrom(from.response());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void TicketMgrMsg::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TicketMgrMsg::CopyFrom(const TicketMgrMsg& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TicketMgrMsg::IsInitialized() const {
+
+  return true;
+}
+
+void TicketMgrMsg::Swap(TicketMgrMsg* other) {
+  if (other != this) {
+    std::swap(request_, other->request_);
+    std::swap(response_, other->response_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata TicketMgrMsg::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TicketMgrMsg_descriptor_;
+  metadata.reflection = TicketMgrMsg_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int TicketListMsg_Request::kReqdateFieldNumber;
+#endif  // !_MSC_VER
+
+TicketListMsg_Request::TicketListMsg_Request()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void TicketListMsg_Request::InitAsDefaultInstance() {
+}
+
+TicketListMsg_Request::TicketListMsg_Request(const TicketListMsg_Request& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void TicketListMsg_Request::SharedCtor() {
+  _cached_size_ = 0;
+  reqdate_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+TicketListMsg_Request::~TicketListMsg_Request() {
+  SharedDtor();
+}
+
+void TicketListMsg_Request::SharedDtor() {
+  if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
+    delete reqdate_;
+  }
+  if (this != default_instance_) {
+  }
+}
+
+void TicketListMsg_Request::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* TicketListMsg_Request::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return TicketListMsg_Request_descriptor_;
+}
+
+const TicketListMsg_Request& TicketListMsg_Request::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+TicketListMsg_Request* TicketListMsg_Request::default_instance_ = NULL;
+
+TicketListMsg_Request* TicketListMsg_Request::New() const {
+  return new TicketListMsg_Request;
+}
+
+void TicketListMsg_Request::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (has_reqdate()) {
+      if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
+        reqdate_->clear();
+      }
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool TicketListMsg_Request::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional bytes reqdate = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_reqdate()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void TicketListMsg_Request::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional bytes reqdate = 1;
+  if (has_reqdate()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      1, this->reqdate(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* TicketListMsg_Request::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional bytes reqdate = 1;
+  if (has_reqdate()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        1, this->reqdate(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int TicketListMsg_Request::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional bytes reqdate = 1;
+    if (has_reqdate()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->reqdate());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void TicketListMsg_Request::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const TicketListMsg_Request* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const TicketListMsg_Request*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void TicketListMsg_Request::MergeFrom(const TicketListMsg_Request& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_reqdate()) {
+      set_reqdate(from.reqdate());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void TicketListMsg_Request::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TicketListMsg_Request::CopyFrom(const TicketListMsg_Request& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TicketListMsg_Request::IsInitialized() const {
+
+  return true;
+}
+
+void TicketListMsg_Request::Swap(TicketListMsg_Request* other) {
+  if (other != this) {
+    std::swap(reqdate_, other->reqdate_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata TicketListMsg_Request::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TicketListMsg_Request_descriptor_;
+  metadata.reflection = TicketListMsg_Request_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#ifndef _MSC_VER
+const int TicketListMsg_Response::kRescodeFieldNumber;
+const int TicketListMsg_Response::kTicketlistFieldNumber;
+#endif  // !_MSC_VER
+
+TicketListMsg_Response::TicketListMsg_Response()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void TicketListMsg_Response::InitAsDefaultInstance() {
+}
+
+TicketListMsg_Response::TicketListMsg_Response(const TicketListMsg_Response& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void TicketListMsg_Response::SharedCtor() {
+  _cached_size_ = 0;
+  rescode_ = 0u;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+TicketListMsg_Response::~TicketListMsg_Response() {
+  SharedDtor();
+}
+
+void TicketListMsg_Response::SharedDtor() {
+  if (this != default_instance_) {
+  }
+}
+
+void TicketListMsg_Response::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* TicketListMsg_Response::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return TicketListMsg_Response_descriptor_;
+}
+
+const TicketListMsg_Response& TicketListMsg_Response::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+TicketListMsg_Response* TicketListMsg_Response::default_instance_ = NULL;
+
+TicketListMsg_Response* TicketListMsg_Response::New() const {
+  return new TicketListMsg_Response;
+}
+
+void TicketListMsg_Response::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    rescode_ = 0u;
+  }
+  ticketlist_.Clear();
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool TicketListMsg_Response::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 rescode = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &rescode_)));
+          set_has_rescode();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_ticketlist;
+        break;
+      }
+
+      // repeated .com.spplus.buff.TicketBean ticketlist = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_ticketlist:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+                input, add_ticketlist()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_ticketlist;
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void TicketListMsg_Response::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional uint32 rescode = 1;
+  if (has_rescode()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->rescode(), output);
+  }
+
+  // repeated .com.spplus.buff.TicketBean ticketlist = 2;
+  for (int i = 0; i < this->ticketlist_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->ticketlist(i), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* TicketListMsg_Response::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional uint32 rescode = 1;
+  if (has_rescode()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->rescode(), target);
+  }
+
+  // repeated .com.spplus.buff.TicketBean ticketlist = 2;
+  for (int i = 0; i < this->ticketlist_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        2, this->ticketlist(i), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int TicketListMsg_Response::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 rescode = 1;
+    if (has_rescode()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->rescode());
+    }
+
+  }
+  // repeated .com.spplus.buff.TicketBean ticketlist = 2;
+  total_size += 1 * this->ticketlist_size();
+  for (int i = 0; i < this->ticketlist_size(); i++) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        this->ticketlist(i));
+  }
+
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void TicketListMsg_Response::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const TicketListMsg_Response* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const TicketListMsg_Response*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void TicketListMsg_Response::MergeFrom(const TicketListMsg_Response& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  ticketlist_.MergeFrom(from.ticketlist_);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_rescode()) {
+      set_rescode(from.rescode());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void TicketListMsg_Response::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TicketListMsg_Response::CopyFrom(const TicketListMsg_Response& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TicketListMsg_Response::IsInitialized() const {
+
+  return true;
+}
+
+void TicketListMsg_Response::Swap(TicketListMsg_Response* other) {
+  if (other != this) {
+    std::swap(rescode_, other->rescode_);
+    ticketlist_.Swap(&other->ticketlist_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata TicketListMsg_Response::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TicketListMsg_Response_descriptor_;
+  metadata.reflection = TicketListMsg_Response_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#ifndef _MSC_VER
+const int TicketListMsg::kRequestFieldNumber;
+const int TicketListMsg::kResponseFieldNumber;
+#endif  // !_MSC_VER
+
+TicketListMsg::TicketListMsg()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void TicketListMsg::InitAsDefaultInstance() {
+  request_ = const_cast< ::com::spplus::buff::TicketListMsg_Request*>(&::com::spplus::buff::TicketListMsg_Request::default_instance());
+  response_ = const_cast< ::com::spplus::buff::TicketListMsg_Response*>(&::com::spplus::buff::TicketListMsg_Response::default_instance());
+}
+
+TicketListMsg::TicketListMsg(const TicketListMsg& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void TicketListMsg::SharedCtor() {
+  _cached_size_ = 0;
+  request_ = NULL;
+  response_ = NULL;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+TicketListMsg::~TicketListMsg() {
+  SharedDtor();
+}
+
+void TicketListMsg::SharedDtor() {
+  if (this != default_instance_) {
+    delete request_;
+    delete response_;
+  }
+}
+
+void TicketListMsg::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* TicketListMsg::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return TicketListMsg_descriptor_;
+}
+
+const TicketListMsg& TicketListMsg::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbody_2eproto();
+  return *default_instance_;
+}
+
+TicketListMsg* TicketListMsg::default_instance_ = NULL;
+
+TicketListMsg* TicketListMsg::New() const {
+  return new TicketListMsg;
+}
+
+void TicketListMsg::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (has_request()) {
+      if (request_ != NULL) request_->::com::spplus::buff::TicketListMsg_Request::Clear();
+    }
+    if (has_response()) {
+      if (response_ != NULL) response_->::com::spplus::buff::TicketListMsg_Response::Clear();
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool TicketListMsg::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .com.spplus.buff.TicketListMsg.Request request = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_request()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(18)) goto parse_response;
+        break;
+      }
+
+      // optional .com.spplus.buff.TicketListMsg.Response response = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_response:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_response()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void TicketListMsg::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional .com.spplus.buff.TicketListMsg.Request request = 1;
+  if (has_request()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->request(), output);
+  }
+
+  // optional .com.spplus.buff.TicketListMsg.Response response = 2;
+  if (has_response()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->response(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* TicketListMsg::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional .com.spplus.buff.TicketListMsg.Request request = 1;
+  if (has_request()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        1, this->request(), target);
+  }
+
+  // optional .com.spplus.buff.TicketListMsg.Response response = 2;
+  if (has_response()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        2, this->response(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int TicketListMsg::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional .com.spplus.buff.TicketListMsg.Request request = 1;
+    if (has_request()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->request());
+    }
+
+    // optional .com.spplus.buff.TicketListMsg.Response response = 2;
+    if (has_response()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->response());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void TicketListMsg::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const TicketListMsg* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const TicketListMsg*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void TicketListMsg::MergeFrom(const TicketListMsg& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_request()) {
+      mutable_request()->::com::spplus::buff::TicketListMsg_Request::MergeFrom(from.request());
+    }
+    if (from.has_response()) {
+      mutable_response()->::com::spplus::buff::TicketListMsg_Response::MergeFrom(from.response());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void TicketListMsg::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TicketListMsg::CopyFrom(const TicketListMsg& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TicketListMsg::IsInitialized() const {
+
+  return true;
+}
+
+void TicketListMsg::Swap(TicketListMsg* other) {
+  if (other != this) {
+    std::swap(request_, other->request_);
+    std::swap(response_, other->response_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata TicketListMsg::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TicketListMsg_descriptor_;
+  metadata.reflection = TicketListMsg_reflection_;
   return metadata;
 }
 

@@ -38,15 +38,19 @@ void protobuf_ShutdownFile_msgbean_2eproto();
 class UserBean;
 class UserRoleBean;
 class StationRuleBean;
+class CircleQueryBean;
 class SignQueryBean;
 class GswitchQueryBean;
 class MsetQueryBean;
+class EventQueryBean;
 class StateBean;
 class StationTypeBean;
 class StationBean;
 class UnitsBean;
 class SavingBean;
 class RuleBean;
+class TicketMsionBean;
+class TicketBean;
 
 // ===================================================================
 
@@ -468,6 +472,138 @@ class StationRuleBean : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static StationRuleBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class CircleQueryBean : public ::google::protobuf::Message {
+ public:
+  CircleQueryBean();
+  virtual ~CircleQueryBean();
+
+  CircleQueryBean(const CircleQueryBean& from);
+
+  inline CircleQueryBean& operator=(const CircleQueryBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const CircleQueryBean& default_instance();
+
+  void Swap(CircleQueryBean* other);
+
+  // implements Message ----------------------------------------------
+
+  CircleQueryBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const CircleQueryBean& from);
+  void MergeFrom(const CircleQueryBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes unitCim = 1;
+  inline bool has_unitcim() const;
+  inline void clear_unitcim();
+  static const int kUnitCimFieldNumber = 1;
+  inline const ::std::string& unitcim() const;
+  inline void set_unitcim(const ::std::string& value);
+  inline void set_unitcim(const char* value);
+  inline void set_unitcim(const void* value, size_t size);
+  inline ::std::string* mutable_unitcim();
+  inline ::std::string* release_unitcim();
+  inline void set_allocated_unitcim(::std::string* unitcim);
+
+  // optional bytes Name = 2;
+  inline bool has_name() const;
+  inline void clear_name();
+  static const int kNameFieldNumber = 2;
+  inline const ::std::string& name() const;
+  inline void set_name(const ::std::string& value);
+  inline void set_name(const char* value);
+  inline void set_name(const void* value, size_t size);
+  inline ::std::string* mutable_name();
+  inline ::std::string* release_name();
+  inline void set_allocated_name(::std::string* name);
+
+  // optional bytes stationCim = 3;
+  inline bool has_stationcim() const;
+  inline void clear_stationcim();
+  static const int kStationCimFieldNumber = 3;
+  inline const ::std::string& stationcim() const;
+  inline void set_stationcim(const ::std::string& value);
+  inline void set_stationcim(const char* value);
+  inline void set_stationcim(const void* value, size_t size);
+  inline ::std::string* mutable_stationcim();
+  inline ::std::string* release_stationcim();
+  inline void set_allocated_stationcim(::std::string* stationcim);
+
+  // optional bytes stationName = 4;
+  inline bool has_stationname() const;
+  inline void clear_stationname();
+  static const int kStationNameFieldNumber = 4;
+  inline const ::std::string& stationname() const;
+  inline void set_stationname(const ::std::string& value);
+  inline void set_stationname(const char* value);
+  inline void set_stationname(const void* value, size_t size);
+  inline ::std::string* mutable_stationname();
+  inline ::std::string* release_stationname();
+  inline void set_allocated_stationname(::std::string* stationname);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.CircleQueryBean)
+ private:
+  inline void set_has_unitcim();
+  inline void clear_has_unitcim();
+  inline void set_has_name();
+  inline void clear_has_name();
+  inline void set_has_stationcim();
+  inline void clear_has_stationcim();
+  inline void set_has_stationname();
+  inline void clear_has_stationname();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* unitcim_;
+  ::std::string* name_;
+  ::std::string* stationcim_;
+  ::std::string* stationname_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static CircleQueryBean* default_instance_;
 };
 // -------------------------------------------------------------------
 
@@ -909,6 +1045,153 @@ class MsetQueryBean : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static MsetQueryBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class EventQueryBean : public ::google::protobuf::Message {
+ public:
+  EventQueryBean();
+  virtual ~EventQueryBean();
+
+  EventQueryBean(const EventQueryBean& from);
+
+  inline EventQueryBean& operator=(const EventQueryBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const EventQueryBean& default_instance();
+
+  void Swap(EventQueryBean* other);
+
+  // implements Message ----------------------------------------------
+
+  EventQueryBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const EventQueryBean& from);
+  void MergeFrom(const EventQueryBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes unitCim = 1;
+  inline bool has_unitcim() const;
+  inline void clear_unitcim();
+  static const int kUnitCimFieldNumber = 1;
+  inline const ::std::string& unitcim() const;
+  inline void set_unitcim(const ::std::string& value);
+  inline void set_unitcim(const char* value);
+  inline void set_unitcim(const void* value, size_t size);
+  inline ::std::string* mutable_unitcim();
+  inline ::std::string* release_unitcim();
+  inline void set_allocated_unitcim(::std::string* unitcim);
+
+  // optional bytes unitCimName = 2;
+  inline bool has_unitcimname() const;
+  inline void clear_unitcimname();
+  static const int kUnitCimNameFieldNumber = 2;
+  inline const ::std::string& unitcimname() const;
+  inline void set_unitcimname(const ::std::string& value);
+  inline void set_unitcimname(const char* value);
+  inline void set_unitcimname(const void* value, size_t size);
+  inline ::std::string* mutable_unitcimname();
+  inline ::std::string* release_unitcimname();
+  inline void set_allocated_unitcimname(::std::string* unitcimname);
+
+  // optional bytes stationCim = 3;
+  inline bool has_stationcim() const;
+  inline void clear_stationcim();
+  static const int kStationCimFieldNumber = 3;
+  inline const ::std::string& stationcim() const;
+  inline void set_stationcim(const ::std::string& value);
+  inline void set_stationcim(const char* value);
+  inline void set_stationcim(const void* value, size_t size);
+  inline ::std::string* mutable_stationcim();
+  inline ::std::string* release_stationcim();
+  inline void set_allocated_stationcim(::std::string* stationcim);
+
+  // optional bytes stationName = 4;
+  inline bool has_stationname() const;
+  inline void clear_stationname();
+  static const int kStationNameFieldNumber = 4;
+  inline const ::std::string& stationname() const;
+  inline void set_stationname(const ::std::string& value);
+  inline void set_stationname(const char* value);
+  inline void set_stationname(const void* value, size_t size);
+  inline ::std::string* mutable_stationname();
+  inline ::std::string* release_stationname();
+  inline void set_allocated_stationname(::std::string* stationname);
+
+  // optional bytes unitType = 5;
+  inline bool has_unittype() const;
+  inline void clear_unittype();
+  static const int kUnitTypeFieldNumber = 5;
+  inline const ::std::string& unittype() const;
+  inline void set_unittype(const ::std::string& value);
+  inline void set_unittype(const char* value);
+  inline void set_unittype(const void* value, size_t size);
+  inline ::std::string* mutable_unittype();
+  inline ::std::string* release_unittype();
+  inline void set_allocated_unittype(::std::string* unittype);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.EventQueryBean)
+ private:
+  inline void set_has_unitcim();
+  inline void clear_has_unitcim();
+  inline void set_has_unitcimname();
+  inline void clear_has_unitcimname();
+  inline void set_has_stationcim();
+  inline void clear_has_stationcim();
+  inline void set_has_stationname();
+  inline void clear_has_stationname();
+  inline void set_has_unittype();
+  inline void clear_has_unittype();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::std::string* unitcim_;
+  ::std::string* unitcimname_;
+  ::std::string* stationcim_;
+  ::std::string* stationname_;
+  ::std::string* unittype_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static EventQueryBean* default_instance_;
 };
 // -------------------------------------------------------------------
 
@@ -1754,6 +2037,390 @@ class RuleBean : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static RuleBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketMsionBean : public ::google::protobuf::Message {
+ public:
+  TicketMsionBean();
+  virtual ~TicketMsionBean();
+
+  TicketMsionBean(const TicketMsionBean& from);
+
+  inline TicketMsionBean& operator=(const TicketMsionBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketMsionBean& default_instance();
+
+  void Swap(TicketMsionBean* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketMsionBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketMsionBean& from);
+  void MergeFrom(const TicketMsionBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 Id = 1;
+  inline bool has_id() const;
+  inline void clear_id();
+  static const int kIdFieldNumber = 1;
+  inline ::google::protobuf::uint32 id() const;
+  inline void set_id(::google::protobuf::uint32 value);
+
+  // optional uint32 UserId = 2;
+  inline bool has_userid() const;
+  inline void clear_userid();
+  static const int kUserIdFieldNumber = 2;
+  inline ::google::protobuf::uint32 userid() const;
+  inline void set_userid(::google::protobuf::uint32 value);
+
+  // optional bytes UserName = 3;
+  inline bool has_username() const;
+  inline void clear_username();
+  static const int kUserNameFieldNumber = 3;
+  inline const ::std::string& username() const;
+  inline void set_username(const ::std::string& value);
+  inline void set_username(const char* value);
+  inline void set_username(const void* value, size_t size);
+  inline ::std::string* mutable_username();
+  inline ::std::string* release_username();
+  inline void set_allocated_username(::std::string* username);
+
+  // optional uint32 ActUserId = 4;
+  inline bool has_actuserid() const;
+  inline void clear_actuserid();
+  static const int kActUserIdFieldNumber = 4;
+  inline ::google::protobuf::uint32 actuserid() const;
+  inline void set_actuserid(::google::protobuf::uint32 value);
+
+  // optional bytes ActUserName = 5;
+  inline bool has_actusername() const;
+  inline void clear_actusername();
+  static const int kActUserNameFieldNumber = 5;
+  inline const ::std::string& actusername() const;
+  inline void set_actusername(const ::std::string& value);
+  inline void set_actusername(const char* value);
+  inline void set_actusername(const void* value, size_t size);
+  inline ::std::string* mutable_actusername();
+  inline ::std::string* release_actusername();
+  inline void set_allocated_actusername(::std::string* actusername);
+
+  // optional bytes Name = 6;
+  inline bool has_name() const;
+  inline void clear_name();
+  static const int kNameFieldNumber = 6;
+  inline const ::std::string& name() const;
+  inline void set_name(const ::std::string& value);
+  inline void set_name(const char* value);
+  inline void set_name(const void* value, size_t size);
+  inline ::std::string* mutable_name();
+  inline ::std::string* release_name();
+  inline void set_allocated_name(::std::string* name);
+
+  // optional bytes PublishTime = 7;
+  inline bool has_publishtime() const;
+  inline void clear_publishtime();
+  static const int kPublishTimeFieldNumber = 7;
+  inline const ::std::string& publishtime() const;
+  inline void set_publishtime(const ::std::string& value);
+  inline void set_publishtime(const char* value);
+  inline void set_publishtime(const void* value, size_t size);
+  inline ::std::string* mutable_publishtime();
+  inline ::std::string* release_publishtime();
+  inline void set_allocated_publishtime(::std::string* publishtime);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketMsionBean)
+ private:
+  inline void set_has_id();
+  inline void clear_has_id();
+  inline void set_has_userid();
+  inline void clear_has_userid();
+  inline void set_has_username();
+  inline void clear_has_username();
+  inline void set_has_actuserid();
+  inline void clear_has_actuserid();
+  inline void set_has_actusername();
+  inline void clear_has_actusername();
+  inline void set_has_name();
+  inline void clear_has_name();
+  inline void set_has_publishtime();
+  inline void clear_has_publishtime();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 id_;
+  ::google::protobuf::uint32 userid_;
+  ::std::string* username_;
+  ::std::string* actusername_;
+  ::std::string* name_;
+  ::std::string* publishtime_;
+  ::google::protobuf::uint32 actuserid_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(7 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketMsionBean* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketBean : public ::google::protobuf::Message {
+ public:
+  TicketBean();
+  virtual ~TicketBean();
+
+  TicketBean(const TicketBean& from);
+
+  inline TicketBean& operator=(const TicketBean& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketBean& default_instance();
+
+  void Swap(TicketBean* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketBean* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketBean& from);
+  void MergeFrom(const TicketBean& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 Id = 1;
+  inline bool has_id() const;
+  inline void clear_id();
+  static const int kIdFieldNumber = 1;
+  inline ::google::protobuf::uint32 id() const;
+  inline void set_id(::google::protobuf::uint32 value);
+
+  // optional uint32 UserId = 2;
+  inline bool has_userid() const;
+  inline void clear_userid();
+  static const int kUserIdFieldNumber = 2;
+  inline ::google::protobuf::uint32 userid() const;
+  inline void set_userid(::google::protobuf::uint32 value);
+
+  // optional uint32 MissionId = 3;
+  inline bool has_missionid() const;
+  inline void clear_missionid();
+  static const int kMissionIdFieldNumber = 3;
+  inline ::google::protobuf::uint32 missionid() const;
+  inline void set_missionid(::google::protobuf::uint32 value);
+
+  // optional bytes No = 4;
+  inline bool has_no() const;
+  inline void clear_no();
+  static const int kNoFieldNumber = 4;
+  inline const ::std::string& no() const;
+  inline void set_no(const ::std::string& value);
+  inline void set_no(const char* value);
+  inline void set_no(const void* value, size_t size);
+  inline ::std::string* mutable_no();
+  inline ::std::string* release_no();
+  inline void set_allocated_no(::std::string* no);
+
+  // optional bytes ActionType = 5;
+  inline bool has_actiontype() const;
+  inline void clear_actiontype();
+  static const int kActionTypeFieldNumber = 5;
+  inline const ::std::string& actiontype() const;
+  inline void set_actiontype(const ::std::string& value);
+  inline void set_actiontype(const char* value);
+  inline void set_actiontype(const void* value, size_t size);
+  inline ::std::string* mutable_actiontype();
+  inline ::std::string* release_actiontype();
+  inline void set_allocated_actiontype(::std::string* actiontype);
+
+  // optional bytes info = 6;
+  inline bool has_info() const;
+  inline void clear_info();
+  static const int kInfoFieldNumber = 6;
+  inline const ::std::string& info() const;
+  inline void set_info(const ::std::string& value);
+  inline void set_info(const char* value);
+  inline void set_info(const void* value, size_t size);
+  inline ::std::string* mutable_info();
+  inline ::std::string* release_info();
+  inline void set_allocated_info(::std::string* info);
+
+  // optional bytes ActionPerson = 7;
+  inline bool has_actionperson() const;
+  inline void clear_actionperson();
+  static const int kActionPersonFieldNumber = 7;
+  inline const ::std::string& actionperson() const;
+  inline void set_actionperson(const ::std::string& value);
+  inline void set_actionperson(const char* value);
+  inline void set_actionperson(const void* value, size_t size);
+  inline ::std::string* mutable_actionperson();
+  inline ::std::string* release_actionperson();
+  inline void set_allocated_actionperson(::std::string* actionperson);
+
+  // optional bytes ProtectPerson = 8;
+  inline bool has_protectperson() const;
+  inline void clear_protectperson();
+  static const int kProtectPersonFieldNumber = 8;
+  inline const ::std::string& protectperson() const;
+  inline void set_protectperson(const ::std::string& value);
+  inline void set_protectperson(const char* value);
+  inline void set_protectperson(const void* value, size_t size);
+  inline ::std::string* mutable_protectperson();
+  inline ::std::string* release_protectperson();
+  inline void set_allocated_protectperson(::std::string* protectperson);
+
+  // optional bytes ChargePerson = 9;
+  inline bool has_chargeperson() const;
+  inline void clear_chargeperson();
+  static const int kChargePersonFieldNumber = 9;
+  inline const ::std::string& chargeperson() const;
+  inline void set_chargeperson(const ::std::string& value);
+  inline void set_chargeperson(const char* value);
+  inline void set_chargeperson(const void* value, size_t size);
+  inline ::std::string* mutable_chargeperson();
+  inline ::std::string* release_chargeperson();
+  inline void set_allocated_chargeperson(::std::string* chargeperson);
+
+  // optional bytes StartTime = 10;
+  inline bool has_starttime() const;
+  inline void clear_starttime();
+  static const int kStartTimeFieldNumber = 10;
+  inline const ::std::string& starttime() const;
+  inline void set_starttime(const ::std::string& value);
+  inline void set_starttime(const char* value);
+  inline void set_starttime(const void* value, size_t size);
+  inline ::std::string* mutable_starttime();
+  inline ::std::string* release_starttime();
+  inline void set_allocated_starttime(::std::string* starttime);
+
+  // optional bytes EndTime = 11;
+  inline bool has_endtime() const;
+  inline void clear_endtime();
+  static const int kEndTimeFieldNumber = 11;
+  inline const ::std::string& endtime() const;
+  inline void set_endtime(const ::std::string& value);
+  inline void set_endtime(const char* value);
+  inline void set_endtime(const void* value, size_t size);
+  inline ::std::string* mutable_endtime();
+  inline ::std::string* release_endtime();
+  inline void set_allocated_endtime(::std::string* endtime);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketBean)
+ private:
+  inline void set_has_id();
+  inline void clear_has_id();
+  inline void set_has_userid();
+  inline void clear_has_userid();
+  inline void set_has_missionid();
+  inline void clear_has_missionid();
+  inline void set_has_no();
+  inline void clear_has_no();
+  inline void set_has_actiontype();
+  inline void clear_has_actiontype();
+  inline void set_has_info();
+  inline void clear_has_info();
+  inline void set_has_actionperson();
+  inline void clear_has_actionperson();
+  inline void set_has_protectperson();
+  inline void clear_has_protectperson();
+  inline void set_has_chargeperson();
+  inline void clear_has_chargeperson();
+  inline void set_has_starttime();
+  inline void clear_has_starttime();
+  inline void set_has_endtime();
+  inline void clear_has_endtime();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 id_;
+  ::google::protobuf::uint32 userid_;
+  ::std::string* no_;
+  ::std::string* actiontype_;
+  ::std::string* info_;
+  ::std::string* actionperson_;
+  ::std::string* protectperson_;
+  ::std::string* chargeperson_;
+  ::std::string* starttime_;
+  ::std::string* endtime_;
+  ::google::protobuf::uint32 missionid_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(11 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbean_2eproto();
+  friend void protobuf_AssignDesc_msgbean_2eproto();
+  friend void protobuf_ShutdownFile_msgbean_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketBean* default_instance_;
 };
 // ===================================================================
 
@@ -2699,6 +3366,290 @@ inline void StationRuleBean::set_allocated_isusename(::std::string* isusename) {
   } else {
     clear_has_isusename();
     isusename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// CircleQueryBean
+
+// optional bytes unitCim = 1;
+inline bool CircleQueryBean::has_unitcim() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void CircleQueryBean::set_has_unitcim() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void CircleQueryBean::clear_has_unitcim() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void CircleQueryBean::clear_unitcim() {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    unitcim_->clear();
+  }
+  clear_has_unitcim();
+}
+inline const ::std::string& CircleQueryBean::unitcim() const {
+  return *unitcim_;
+}
+inline void CircleQueryBean::set_unitcim(const ::std::string& value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void CircleQueryBean::set_unitcim(const char* value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void CircleQueryBean::set_unitcim(const void* value, size_t size) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* CircleQueryBean::mutable_unitcim() {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  return unitcim_;
+}
+inline ::std::string* CircleQueryBean::release_unitcim() {
+  clear_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unitcim_;
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void CircleQueryBean::set_allocated_unitcim(::std::string* unitcim) {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete unitcim_;
+  }
+  if (unitcim) {
+    set_has_unitcim();
+    unitcim_ = unitcim;
+  } else {
+    clear_has_unitcim();
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes Name = 2;
+inline bool CircleQueryBean::has_name() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void CircleQueryBean::set_has_name() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void CircleQueryBean::clear_has_name() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void CircleQueryBean::clear_name() {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    name_->clear();
+  }
+  clear_has_name();
+}
+inline const ::std::string& CircleQueryBean::name() const {
+  return *name_;
+}
+inline void CircleQueryBean::set_name(const ::std::string& value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void CircleQueryBean::set_name(const char* value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void CircleQueryBean::set_name(const void* value, size_t size) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* CircleQueryBean::mutable_name() {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  return name_;
+}
+inline ::std::string* CircleQueryBean::release_name() {
+  clear_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = name_;
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void CircleQueryBean::set_allocated_name(::std::string* name) {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    delete name_;
+  }
+  if (name) {
+    set_has_name();
+    name_ = name;
+  } else {
+    clear_has_name();
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes stationCim = 3;
+inline bool CircleQueryBean::has_stationcim() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void CircleQueryBean::set_has_stationcim() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void CircleQueryBean::clear_has_stationcim() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void CircleQueryBean::clear_stationcim() {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    stationcim_->clear();
+  }
+  clear_has_stationcim();
+}
+inline const ::std::string& CircleQueryBean::stationcim() const {
+  return *stationcim_;
+}
+inline void CircleQueryBean::set_stationcim(const ::std::string& value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void CircleQueryBean::set_stationcim(const char* value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void CircleQueryBean::set_stationcim(const void* value, size_t size) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* CircleQueryBean::mutable_stationcim() {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  return stationcim_;
+}
+inline ::std::string* CircleQueryBean::release_stationcim() {
+  clear_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationcim_;
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void CircleQueryBean::set_allocated_stationcim(::std::string* stationcim) {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationcim_;
+  }
+  if (stationcim) {
+    set_has_stationcim();
+    stationcim_ = stationcim;
+  } else {
+    clear_has_stationcim();
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes stationName = 4;
+inline bool CircleQueryBean::has_stationname() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void CircleQueryBean::set_has_stationname() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void CircleQueryBean::clear_has_stationname() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void CircleQueryBean::clear_stationname() {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    stationname_->clear();
+  }
+  clear_has_stationname();
+}
+inline const ::std::string& CircleQueryBean::stationname() const {
+  return *stationname_;
+}
+inline void CircleQueryBean::set_stationname(const ::std::string& value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void CircleQueryBean::set_stationname(const char* value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void CircleQueryBean::set_stationname(const void* value, size_t size) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* CircleQueryBean::mutable_stationname() {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  return stationname_;
+}
+inline ::std::string* CircleQueryBean::release_stationname() {
+  clear_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationname_;
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void CircleQueryBean::set_allocated_stationname(::std::string* stationname) {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationname_;
+  }
+  if (stationname) {
+    set_has_stationname();
+    stationname_ = stationname;
+  } else {
+    clear_has_stationname();
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
 }
 
@@ -3752,6 +4703,360 @@ inline ::std::string* MsetQueryBean::release_unittype() {
   }
 }
 inline void MsetQueryBean::set_allocated_unittype(::std::string* unittype) {
+  if (unittype_ != &::google::protobuf::internal::kEmptyString) {
+    delete unittype_;
+  }
+  if (unittype) {
+    set_has_unittype();
+    unittype_ = unittype;
+  } else {
+    clear_has_unittype();
+    unittype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// EventQueryBean
+
+// optional bytes unitCim = 1;
+inline bool EventQueryBean::has_unitcim() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void EventQueryBean::set_has_unitcim() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void EventQueryBean::clear_has_unitcim() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void EventQueryBean::clear_unitcim() {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    unitcim_->clear();
+  }
+  clear_has_unitcim();
+}
+inline const ::std::string& EventQueryBean::unitcim() const {
+  return *unitcim_;
+}
+inline void EventQueryBean::set_unitcim(const ::std::string& value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void EventQueryBean::set_unitcim(const char* value) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(value);
+}
+inline void EventQueryBean::set_unitcim(const void* value, size_t size) {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  unitcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* EventQueryBean::mutable_unitcim() {
+  set_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    unitcim_ = new ::std::string;
+  }
+  return unitcim_;
+}
+inline ::std::string* EventQueryBean::release_unitcim() {
+  clear_has_unitcim();
+  if (unitcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unitcim_;
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void EventQueryBean::set_allocated_unitcim(::std::string* unitcim) {
+  if (unitcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete unitcim_;
+  }
+  if (unitcim) {
+    set_has_unitcim();
+    unitcim_ = unitcim;
+  } else {
+    clear_has_unitcim();
+    unitcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes unitCimName = 2;
+inline bool EventQueryBean::has_unitcimname() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void EventQueryBean::set_has_unitcimname() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void EventQueryBean::clear_has_unitcimname() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void EventQueryBean::clear_unitcimname() {
+  if (unitcimname_ != &::google::protobuf::internal::kEmptyString) {
+    unitcimname_->clear();
+  }
+  clear_has_unitcimname();
+}
+inline const ::std::string& EventQueryBean::unitcimname() const {
+  return *unitcimname_;
+}
+inline void EventQueryBean::set_unitcimname(const ::std::string& value) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(value);
+}
+inline void EventQueryBean::set_unitcimname(const char* value) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(value);
+}
+inline void EventQueryBean::set_unitcimname(const void* value, size_t size) {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  unitcimname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* EventQueryBean::mutable_unitcimname() {
+  set_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    unitcimname_ = new ::std::string;
+  }
+  return unitcimname_;
+}
+inline ::std::string* EventQueryBean::release_unitcimname() {
+  clear_has_unitcimname();
+  if (unitcimname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unitcimname_;
+    unitcimname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void EventQueryBean::set_allocated_unitcimname(::std::string* unitcimname) {
+  if (unitcimname_ != &::google::protobuf::internal::kEmptyString) {
+    delete unitcimname_;
+  }
+  if (unitcimname) {
+    set_has_unitcimname();
+    unitcimname_ = unitcimname;
+  } else {
+    clear_has_unitcimname();
+    unitcimname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes stationCim = 3;
+inline bool EventQueryBean::has_stationcim() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void EventQueryBean::set_has_stationcim() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void EventQueryBean::clear_has_stationcim() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void EventQueryBean::clear_stationcim() {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    stationcim_->clear();
+  }
+  clear_has_stationcim();
+}
+inline const ::std::string& EventQueryBean::stationcim() const {
+  return *stationcim_;
+}
+inline void EventQueryBean::set_stationcim(const ::std::string& value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void EventQueryBean::set_stationcim(const char* value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void EventQueryBean::set_stationcim(const void* value, size_t size) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* EventQueryBean::mutable_stationcim() {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  return stationcim_;
+}
+inline ::std::string* EventQueryBean::release_stationcim() {
+  clear_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationcim_;
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void EventQueryBean::set_allocated_stationcim(::std::string* stationcim) {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationcim_;
+  }
+  if (stationcim) {
+    set_has_stationcim();
+    stationcim_ = stationcim;
+  } else {
+    clear_has_stationcim();
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes stationName = 4;
+inline bool EventQueryBean::has_stationname() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void EventQueryBean::set_has_stationname() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void EventQueryBean::clear_has_stationname() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void EventQueryBean::clear_stationname() {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    stationname_->clear();
+  }
+  clear_has_stationname();
+}
+inline const ::std::string& EventQueryBean::stationname() const {
+  return *stationname_;
+}
+inline void EventQueryBean::set_stationname(const ::std::string& value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void EventQueryBean::set_stationname(const char* value) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(value);
+}
+inline void EventQueryBean::set_stationname(const void* value, size_t size) {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  stationname_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* EventQueryBean::mutable_stationname() {
+  set_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    stationname_ = new ::std::string;
+  }
+  return stationname_;
+}
+inline ::std::string* EventQueryBean::release_stationname() {
+  clear_has_stationname();
+  if (stationname_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationname_;
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void EventQueryBean::set_allocated_stationname(::std::string* stationname) {
+  if (stationname_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationname_;
+  }
+  if (stationname) {
+    set_has_stationname();
+    stationname_ = stationname;
+  } else {
+    clear_has_stationname();
+    stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes unitType = 5;
+inline bool EventQueryBean::has_unittype() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void EventQueryBean::set_has_unittype() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void EventQueryBean::clear_has_unittype() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void EventQueryBean::clear_unittype() {
+  if (unittype_ != &::google::protobuf::internal::kEmptyString) {
+    unittype_->clear();
+  }
+  clear_has_unittype();
+}
+inline const ::std::string& EventQueryBean::unittype() const {
+  return *unittype_;
+}
+inline void EventQueryBean::set_unittype(const ::std::string& value) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(value);
+}
+inline void EventQueryBean::set_unittype(const char* value) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(value);
+}
+inline void EventQueryBean::set_unittype(const void* value, size_t size) {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  unittype_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* EventQueryBean::mutable_unittype() {
+  set_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    unittype_ = new ::std::string;
+  }
+  return unittype_;
+}
+inline ::std::string* EventQueryBean::release_unittype() {
+  clear_has_unittype();
+  if (unittype_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = unittype_;
+    unittype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void EventQueryBean::set_allocated_unittype(::std::string* unittype) {
   if (unittype_ != &::google::protobuf::internal::kEmptyString) {
     delete unittype_;
   }
@@ -5356,6 +6661,986 @@ inline void RuleBean::set_allocated_description(::std::string* description) {
   } else {
     clear_has_description();
     description_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// TicketMsionBean
+
+// optional uint32 Id = 1;
+inline bool TicketMsionBean::has_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketMsionBean::set_has_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketMsionBean::clear_has_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketMsionBean::clear_id() {
+  id_ = 0u;
+  clear_has_id();
+}
+inline ::google::protobuf::uint32 TicketMsionBean::id() const {
+  return id_;
+}
+inline void TicketMsionBean::set_id(::google::protobuf::uint32 value) {
+  set_has_id();
+  id_ = value;
+}
+
+// optional uint32 UserId = 2;
+inline bool TicketMsionBean::has_userid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TicketMsionBean::set_has_userid() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void TicketMsionBean::clear_has_userid() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void TicketMsionBean::clear_userid() {
+  userid_ = 0u;
+  clear_has_userid();
+}
+inline ::google::protobuf::uint32 TicketMsionBean::userid() const {
+  return userid_;
+}
+inline void TicketMsionBean::set_userid(::google::protobuf::uint32 value) {
+  set_has_userid();
+  userid_ = value;
+}
+
+// optional bytes UserName = 3;
+inline bool TicketMsionBean::has_username() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void TicketMsionBean::set_has_username() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void TicketMsionBean::clear_has_username() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void TicketMsionBean::clear_username() {
+  if (username_ != &::google::protobuf::internal::kEmptyString) {
+    username_->clear();
+  }
+  clear_has_username();
+}
+inline const ::std::string& TicketMsionBean::username() const {
+  return *username_;
+}
+inline void TicketMsionBean::set_username(const ::std::string& value) {
+  set_has_username();
+  if (username_ == &::google::protobuf::internal::kEmptyString) {
+    username_ = new ::std::string;
+  }
+  username_->assign(value);
+}
+inline void TicketMsionBean::set_username(const char* value) {
+  set_has_username();
+  if (username_ == &::google::protobuf::internal::kEmptyString) {
+    username_ = new ::std::string;
+  }
+  username_->assign(value);
+}
+inline void TicketMsionBean::set_username(const void* value, size_t size) {
+  set_has_username();
+  if (username_ == &::google::protobuf::internal::kEmptyString) {
+    username_ = new ::std::string;
+  }
+  username_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketMsionBean::mutable_username() {
+  set_has_username();
+  if (username_ == &::google::protobuf::internal::kEmptyString) {
+    username_ = new ::std::string;
+  }
+  return username_;
+}
+inline ::std::string* TicketMsionBean::release_username() {
+  clear_has_username();
+  if (username_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = username_;
+    username_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketMsionBean::set_allocated_username(::std::string* username) {
+  if (username_ != &::google::protobuf::internal::kEmptyString) {
+    delete username_;
+  }
+  if (username) {
+    set_has_username();
+    username_ = username;
+  } else {
+    clear_has_username();
+    username_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional uint32 ActUserId = 4;
+inline bool TicketMsionBean::has_actuserid() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void TicketMsionBean::set_has_actuserid() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void TicketMsionBean::clear_has_actuserid() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void TicketMsionBean::clear_actuserid() {
+  actuserid_ = 0u;
+  clear_has_actuserid();
+}
+inline ::google::protobuf::uint32 TicketMsionBean::actuserid() const {
+  return actuserid_;
+}
+inline void TicketMsionBean::set_actuserid(::google::protobuf::uint32 value) {
+  set_has_actuserid();
+  actuserid_ = value;
+}
+
+// optional bytes ActUserName = 5;
+inline bool TicketMsionBean::has_actusername() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void TicketMsionBean::set_has_actusername() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void TicketMsionBean::clear_has_actusername() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void TicketMsionBean::clear_actusername() {
+  if (actusername_ != &::google::protobuf::internal::kEmptyString) {
+    actusername_->clear();
+  }
+  clear_has_actusername();
+}
+inline const ::std::string& TicketMsionBean::actusername() const {
+  return *actusername_;
+}
+inline void TicketMsionBean::set_actusername(const ::std::string& value) {
+  set_has_actusername();
+  if (actusername_ == &::google::protobuf::internal::kEmptyString) {
+    actusername_ = new ::std::string;
+  }
+  actusername_->assign(value);
+}
+inline void TicketMsionBean::set_actusername(const char* value) {
+  set_has_actusername();
+  if (actusername_ == &::google::protobuf::internal::kEmptyString) {
+    actusername_ = new ::std::string;
+  }
+  actusername_->assign(value);
+}
+inline void TicketMsionBean::set_actusername(const void* value, size_t size) {
+  set_has_actusername();
+  if (actusername_ == &::google::protobuf::internal::kEmptyString) {
+    actusername_ = new ::std::string;
+  }
+  actusername_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketMsionBean::mutable_actusername() {
+  set_has_actusername();
+  if (actusername_ == &::google::protobuf::internal::kEmptyString) {
+    actusername_ = new ::std::string;
+  }
+  return actusername_;
+}
+inline ::std::string* TicketMsionBean::release_actusername() {
+  clear_has_actusername();
+  if (actusername_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = actusername_;
+    actusername_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketMsionBean::set_allocated_actusername(::std::string* actusername) {
+  if (actusername_ != &::google::protobuf::internal::kEmptyString) {
+    delete actusername_;
+  }
+  if (actusername) {
+    set_has_actusername();
+    actusername_ = actusername;
+  } else {
+    clear_has_actusername();
+    actusername_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes Name = 6;
+inline bool TicketMsionBean::has_name() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void TicketMsionBean::set_has_name() {
+  _has_bits_[0] |= 0x00000020u;
+}
+inline void TicketMsionBean::clear_has_name() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline void TicketMsionBean::clear_name() {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    name_->clear();
+  }
+  clear_has_name();
+}
+inline const ::std::string& TicketMsionBean::name() const {
+  return *name_;
+}
+inline void TicketMsionBean::set_name(const ::std::string& value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void TicketMsionBean::set_name(const char* value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void TicketMsionBean::set_name(const void* value, size_t size) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketMsionBean::mutable_name() {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  return name_;
+}
+inline ::std::string* TicketMsionBean::release_name() {
+  clear_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = name_;
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketMsionBean::set_allocated_name(::std::string* name) {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    delete name_;
+  }
+  if (name) {
+    set_has_name();
+    name_ = name;
+  } else {
+    clear_has_name();
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes PublishTime = 7;
+inline bool TicketMsionBean::has_publishtime() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void TicketMsionBean::set_has_publishtime() {
+  _has_bits_[0] |= 0x00000040u;
+}
+inline void TicketMsionBean::clear_has_publishtime() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+inline void TicketMsionBean::clear_publishtime() {
+  if (publishtime_ != &::google::protobuf::internal::kEmptyString) {
+    publishtime_->clear();
+  }
+  clear_has_publishtime();
+}
+inline const ::std::string& TicketMsionBean::publishtime() const {
+  return *publishtime_;
+}
+inline void TicketMsionBean::set_publishtime(const ::std::string& value) {
+  set_has_publishtime();
+  if (publishtime_ == &::google::protobuf::internal::kEmptyString) {
+    publishtime_ = new ::std::string;
+  }
+  publishtime_->assign(value);
+}
+inline void TicketMsionBean::set_publishtime(const char* value) {
+  set_has_publishtime();
+  if (publishtime_ == &::google::protobuf::internal::kEmptyString) {
+    publishtime_ = new ::std::string;
+  }
+  publishtime_->assign(value);
+}
+inline void TicketMsionBean::set_publishtime(const void* value, size_t size) {
+  set_has_publishtime();
+  if (publishtime_ == &::google::protobuf::internal::kEmptyString) {
+    publishtime_ = new ::std::string;
+  }
+  publishtime_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketMsionBean::mutable_publishtime() {
+  set_has_publishtime();
+  if (publishtime_ == &::google::protobuf::internal::kEmptyString) {
+    publishtime_ = new ::std::string;
+  }
+  return publishtime_;
+}
+inline ::std::string* TicketMsionBean::release_publishtime() {
+  clear_has_publishtime();
+  if (publishtime_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = publishtime_;
+    publishtime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketMsionBean::set_allocated_publishtime(::std::string* publishtime) {
+  if (publishtime_ != &::google::protobuf::internal::kEmptyString) {
+    delete publishtime_;
+  }
+  if (publishtime) {
+    set_has_publishtime();
+    publishtime_ = publishtime;
+  } else {
+    clear_has_publishtime();
+    publishtime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// -------------------------------------------------------------------
+
+// TicketBean
+
+// optional uint32 Id = 1;
+inline bool TicketBean::has_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketBean::set_has_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketBean::clear_has_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketBean::clear_id() {
+  id_ = 0u;
+  clear_has_id();
+}
+inline ::google::protobuf::uint32 TicketBean::id() const {
+  return id_;
+}
+inline void TicketBean::set_id(::google::protobuf::uint32 value) {
+  set_has_id();
+  id_ = value;
+}
+
+// optional uint32 UserId = 2;
+inline bool TicketBean::has_userid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TicketBean::set_has_userid() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void TicketBean::clear_has_userid() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void TicketBean::clear_userid() {
+  userid_ = 0u;
+  clear_has_userid();
+}
+inline ::google::protobuf::uint32 TicketBean::userid() const {
+  return userid_;
+}
+inline void TicketBean::set_userid(::google::protobuf::uint32 value) {
+  set_has_userid();
+  userid_ = value;
+}
+
+// optional uint32 MissionId = 3;
+inline bool TicketBean::has_missionid() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void TicketBean::set_has_missionid() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void TicketBean::clear_has_missionid() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void TicketBean::clear_missionid() {
+  missionid_ = 0u;
+  clear_has_missionid();
+}
+inline ::google::protobuf::uint32 TicketBean::missionid() const {
+  return missionid_;
+}
+inline void TicketBean::set_missionid(::google::protobuf::uint32 value) {
+  set_has_missionid();
+  missionid_ = value;
+}
+
+// optional bytes No = 4;
+inline bool TicketBean::has_no() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void TicketBean::set_has_no() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void TicketBean::clear_has_no() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void TicketBean::clear_no() {
+  if (no_ != &::google::protobuf::internal::kEmptyString) {
+    no_->clear();
+  }
+  clear_has_no();
+}
+inline const ::std::string& TicketBean::no() const {
+  return *no_;
+}
+inline void TicketBean::set_no(const ::std::string& value) {
+  set_has_no();
+  if (no_ == &::google::protobuf::internal::kEmptyString) {
+    no_ = new ::std::string;
+  }
+  no_->assign(value);
+}
+inline void TicketBean::set_no(const char* value) {
+  set_has_no();
+  if (no_ == &::google::protobuf::internal::kEmptyString) {
+    no_ = new ::std::string;
+  }
+  no_->assign(value);
+}
+inline void TicketBean::set_no(const void* value, size_t size) {
+  set_has_no();
+  if (no_ == &::google::protobuf::internal::kEmptyString) {
+    no_ = new ::std::string;
+  }
+  no_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketBean::mutable_no() {
+  set_has_no();
+  if (no_ == &::google::protobuf::internal::kEmptyString) {
+    no_ = new ::std::string;
+  }
+  return no_;
+}
+inline ::std::string* TicketBean::release_no() {
+  clear_has_no();
+  if (no_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = no_;
+    no_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketBean::set_allocated_no(::std::string* no) {
+  if (no_ != &::google::protobuf::internal::kEmptyString) {
+    delete no_;
+  }
+  if (no) {
+    set_has_no();
+    no_ = no;
+  } else {
+    clear_has_no();
+    no_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes ActionType = 5;
+inline bool TicketBean::has_actiontype() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void TicketBean::set_has_actiontype() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void TicketBean::clear_has_actiontype() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void TicketBean::clear_actiontype() {
+  if (actiontype_ != &::google::protobuf::internal::kEmptyString) {
+    actiontype_->clear();
+  }
+  clear_has_actiontype();
+}
+inline const ::std::string& TicketBean::actiontype() const {
+  return *actiontype_;
+}
+inline void TicketBean::set_actiontype(const ::std::string& value) {
+  set_has_actiontype();
+  if (actiontype_ == &::google::protobuf::internal::kEmptyString) {
+    actiontype_ = new ::std::string;
+  }
+  actiontype_->assign(value);
+}
+inline void TicketBean::set_actiontype(const char* value) {
+  set_has_actiontype();
+  if (actiontype_ == &::google::protobuf::internal::kEmptyString) {
+    actiontype_ = new ::std::string;
+  }
+  actiontype_->assign(value);
+}
+inline void TicketBean::set_actiontype(const void* value, size_t size) {
+  set_has_actiontype();
+  if (actiontype_ == &::google::protobuf::internal::kEmptyString) {
+    actiontype_ = new ::std::string;
+  }
+  actiontype_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketBean::mutable_actiontype() {
+  set_has_actiontype();
+  if (actiontype_ == &::google::protobuf::internal::kEmptyString) {
+    actiontype_ = new ::std::string;
+  }
+  return actiontype_;
+}
+inline ::std::string* TicketBean::release_actiontype() {
+  clear_has_actiontype();
+  if (actiontype_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = actiontype_;
+    actiontype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketBean::set_allocated_actiontype(::std::string* actiontype) {
+  if (actiontype_ != &::google::protobuf::internal::kEmptyString) {
+    delete actiontype_;
+  }
+  if (actiontype) {
+    set_has_actiontype();
+    actiontype_ = actiontype;
+  } else {
+    clear_has_actiontype();
+    actiontype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes info = 6;
+inline bool TicketBean::has_info() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void TicketBean::set_has_info() {
+  _has_bits_[0] |= 0x00000020u;
+}
+inline void TicketBean::clear_has_info() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline void TicketBean::clear_info() {
+  if (info_ != &::google::protobuf::internal::kEmptyString) {
+    info_->clear();
+  }
+  clear_has_info();
+}
+inline const ::std::string& TicketBean::info() const {
+  return *info_;
+}
+inline void TicketBean::set_info(const ::std::string& value) {
+  set_has_info();
+  if (info_ == &::google::protobuf::internal::kEmptyString) {
+    info_ = new ::std::string;
+  }
+  info_->assign(value);
+}
+inline void TicketBean::set_info(const char* value) {
+  set_has_info();
+  if (info_ == &::google::protobuf::internal::kEmptyString) {
+    info_ = new ::std::string;
+  }
+  info_->assign(value);
+}
+inline void TicketBean::set_info(const void* value, size_t size) {
+  set_has_info();
+  if (info_ == &::google::protobuf::internal::kEmptyString) {
+    info_ = new ::std::string;
+  }
+  info_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketBean::mutable_info() {
+  set_has_info();
+  if (info_ == &::google::protobuf::internal::kEmptyString) {
+    info_ = new ::std::string;
+  }
+  return info_;
+}
+inline ::std::string* TicketBean::release_info() {
+  clear_has_info();
+  if (info_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = info_;
+    info_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketBean::set_allocated_info(::std::string* info) {
+  if (info_ != &::google::protobuf::internal::kEmptyString) {
+    delete info_;
+  }
+  if (info) {
+    set_has_info();
+    info_ = info;
+  } else {
+    clear_has_info();
+    info_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes ActionPerson = 7;
+inline bool TicketBean::has_actionperson() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void TicketBean::set_has_actionperson() {
+  _has_bits_[0] |= 0x00000040u;
+}
+inline void TicketBean::clear_has_actionperson() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+inline void TicketBean::clear_actionperson() {
+  if (actionperson_ != &::google::protobuf::internal::kEmptyString) {
+    actionperson_->clear();
+  }
+  clear_has_actionperson();
+}
+inline const ::std::string& TicketBean::actionperson() const {
+  return *actionperson_;
+}
+inline void TicketBean::set_actionperson(const ::std::string& value) {
+  set_has_actionperson();
+  if (actionperson_ == &::google::protobuf::internal::kEmptyString) {
+    actionperson_ = new ::std::string;
+  }
+  actionperson_->assign(value);
+}
+inline void TicketBean::set_actionperson(const char* value) {
+  set_has_actionperson();
+  if (actionperson_ == &::google::protobuf::internal::kEmptyString) {
+    actionperson_ = new ::std::string;
+  }
+  actionperson_->assign(value);
+}
+inline void TicketBean::set_actionperson(const void* value, size_t size) {
+  set_has_actionperson();
+  if (actionperson_ == &::google::protobuf::internal::kEmptyString) {
+    actionperson_ = new ::std::string;
+  }
+  actionperson_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketBean::mutable_actionperson() {
+  set_has_actionperson();
+  if (actionperson_ == &::google::protobuf::internal::kEmptyString) {
+    actionperson_ = new ::std::string;
+  }
+  return actionperson_;
+}
+inline ::std::string* TicketBean::release_actionperson() {
+  clear_has_actionperson();
+  if (actionperson_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = actionperson_;
+    actionperson_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketBean::set_allocated_actionperson(::std::string* actionperson) {
+  if (actionperson_ != &::google::protobuf::internal::kEmptyString) {
+    delete actionperson_;
+  }
+  if (actionperson) {
+    set_has_actionperson();
+    actionperson_ = actionperson;
+  } else {
+    clear_has_actionperson();
+    actionperson_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes ProtectPerson = 8;
+inline bool TicketBean::has_protectperson() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+inline void TicketBean::set_has_protectperson() {
+  _has_bits_[0] |= 0x00000080u;
+}
+inline void TicketBean::clear_has_protectperson() {
+  _has_bits_[0] &= ~0x00000080u;
+}
+inline void TicketBean::clear_protectperson() {
+  if (protectperson_ != &::google::protobuf::internal::kEmptyString) {
+    protectperson_->clear();
+  }
+  clear_has_protectperson();
+}
+inline const ::std::string& TicketBean::protectperson() const {
+  return *protectperson_;
+}
+inline void TicketBean::set_protectperson(const ::std::string& value) {
+  set_has_protectperson();
+  if (protectperson_ == &::google::protobuf::internal::kEmptyString) {
+    protectperson_ = new ::std::string;
+  }
+  protectperson_->assign(value);
+}
+inline void TicketBean::set_protectperson(const char* value) {
+  set_has_protectperson();
+  if (protectperson_ == &::google::protobuf::internal::kEmptyString) {
+    protectperson_ = new ::std::string;
+  }
+  protectperson_->assign(value);
+}
+inline void TicketBean::set_protectperson(const void* value, size_t size) {
+  set_has_protectperson();
+  if (protectperson_ == &::google::protobuf::internal::kEmptyString) {
+    protectperson_ = new ::std::string;
+  }
+  protectperson_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketBean::mutable_protectperson() {
+  set_has_protectperson();
+  if (protectperson_ == &::google::protobuf::internal::kEmptyString) {
+    protectperson_ = new ::std::string;
+  }
+  return protectperson_;
+}
+inline ::std::string* TicketBean::release_protectperson() {
+  clear_has_protectperson();
+  if (protectperson_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = protectperson_;
+    protectperson_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketBean::set_allocated_protectperson(::std::string* protectperson) {
+  if (protectperson_ != &::google::protobuf::internal::kEmptyString) {
+    delete protectperson_;
+  }
+  if (protectperson) {
+    set_has_protectperson();
+    protectperson_ = protectperson;
+  } else {
+    clear_has_protectperson();
+    protectperson_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes ChargePerson = 9;
+inline bool TicketBean::has_chargeperson() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+inline void TicketBean::set_has_chargeperson() {
+  _has_bits_[0] |= 0x00000100u;
+}
+inline void TicketBean::clear_has_chargeperson() {
+  _has_bits_[0] &= ~0x00000100u;
+}
+inline void TicketBean::clear_chargeperson() {
+  if (chargeperson_ != &::google::protobuf::internal::kEmptyString) {
+    chargeperson_->clear();
+  }
+  clear_has_chargeperson();
+}
+inline const ::std::string& TicketBean::chargeperson() const {
+  return *chargeperson_;
+}
+inline void TicketBean::set_chargeperson(const ::std::string& value) {
+  set_has_chargeperson();
+  if (chargeperson_ == &::google::protobuf::internal::kEmptyString) {
+    chargeperson_ = new ::std::string;
+  }
+  chargeperson_->assign(value);
+}
+inline void TicketBean::set_chargeperson(const char* value) {
+  set_has_chargeperson();
+  if (chargeperson_ == &::google::protobuf::internal::kEmptyString) {
+    chargeperson_ = new ::std::string;
+  }
+  chargeperson_->assign(value);
+}
+inline void TicketBean::set_chargeperson(const void* value, size_t size) {
+  set_has_chargeperson();
+  if (chargeperson_ == &::google::protobuf::internal::kEmptyString) {
+    chargeperson_ = new ::std::string;
+  }
+  chargeperson_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketBean::mutable_chargeperson() {
+  set_has_chargeperson();
+  if (chargeperson_ == &::google::protobuf::internal::kEmptyString) {
+    chargeperson_ = new ::std::string;
+  }
+  return chargeperson_;
+}
+inline ::std::string* TicketBean::release_chargeperson() {
+  clear_has_chargeperson();
+  if (chargeperson_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = chargeperson_;
+    chargeperson_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketBean::set_allocated_chargeperson(::std::string* chargeperson) {
+  if (chargeperson_ != &::google::protobuf::internal::kEmptyString) {
+    delete chargeperson_;
+  }
+  if (chargeperson) {
+    set_has_chargeperson();
+    chargeperson_ = chargeperson;
+  } else {
+    clear_has_chargeperson();
+    chargeperson_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes StartTime = 10;
+inline bool TicketBean::has_starttime() const {
+  return (_has_bits_[0] & 0x00000200u) != 0;
+}
+inline void TicketBean::set_has_starttime() {
+  _has_bits_[0] |= 0x00000200u;
+}
+inline void TicketBean::clear_has_starttime() {
+  _has_bits_[0] &= ~0x00000200u;
+}
+inline void TicketBean::clear_starttime() {
+  if (starttime_ != &::google::protobuf::internal::kEmptyString) {
+    starttime_->clear();
+  }
+  clear_has_starttime();
+}
+inline const ::std::string& TicketBean::starttime() const {
+  return *starttime_;
+}
+inline void TicketBean::set_starttime(const ::std::string& value) {
+  set_has_starttime();
+  if (starttime_ == &::google::protobuf::internal::kEmptyString) {
+    starttime_ = new ::std::string;
+  }
+  starttime_->assign(value);
+}
+inline void TicketBean::set_starttime(const char* value) {
+  set_has_starttime();
+  if (starttime_ == &::google::protobuf::internal::kEmptyString) {
+    starttime_ = new ::std::string;
+  }
+  starttime_->assign(value);
+}
+inline void TicketBean::set_starttime(const void* value, size_t size) {
+  set_has_starttime();
+  if (starttime_ == &::google::protobuf::internal::kEmptyString) {
+    starttime_ = new ::std::string;
+  }
+  starttime_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketBean::mutable_starttime() {
+  set_has_starttime();
+  if (starttime_ == &::google::protobuf::internal::kEmptyString) {
+    starttime_ = new ::std::string;
+  }
+  return starttime_;
+}
+inline ::std::string* TicketBean::release_starttime() {
+  clear_has_starttime();
+  if (starttime_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = starttime_;
+    starttime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketBean::set_allocated_starttime(::std::string* starttime) {
+  if (starttime_ != &::google::protobuf::internal::kEmptyString) {
+    delete starttime_;
+  }
+  if (starttime) {
+    set_has_starttime();
+    starttime_ = starttime;
+  } else {
+    clear_has_starttime();
+    starttime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes EndTime = 11;
+inline bool TicketBean::has_endtime() const {
+  return (_has_bits_[0] & 0x00000400u) != 0;
+}
+inline void TicketBean::set_has_endtime() {
+  _has_bits_[0] |= 0x00000400u;
+}
+inline void TicketBean::clear_has_endtime() {
+  _has_bits_[0] &= ~0x00000400u;
+}
+inline void TicketBean::clear_endtime() {
+  if (endtime_ != &::google::protobuf::internal::kEmptyString) {
+    endtime_->clear();
+  }
+  clear_has_endtime();
+}
+inline const ::std::string& TicketBean::endtime() const {
+  return *endtime_;
+}
+inline void TicketBean::set_endtime(const ::std::string& value) {
+  set_has_endtime();
+  if (endtime_ == &::google::protobuf::internal::kEmptyString) {
+    endtime_ = new ::std::string;
+  }
+  endtime_->assign(value);
+}
+inline void TicketBean::set_endtime(const char* value) {
+  set_has_endtime();
+  if (endtime_ == &::google::protobuf::internal::kEmptyString) {
+    endtime_ = new ::std::string;
+  }
+  endtime_->assign(value);
+}
+inline void TicketBean::set_endtime(const void* value, size_t size) {
+  set_has_endtime();
+  if (endtime_ == &::google::protobuf::internal::kEmptyString) {
+    endtime_ = new ::std::string;
+  }
+  endtime_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketBean::mutable_endtime() {
+  set_has_endtime();
+  if (endtime_ == &::google::protobuf::internal::kEmptyString) {
+    endtime_ = new ::std::string;
+  }
+  return endtime_;
+}
+inline ::std::string* TicketBean::release_endtime() {
+  clear_has_endtime();
+  if (endtime_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = endtime_;
+    endtime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketBean::set_allocated_endtime(::std::string* endtime) {
+  if (endtime_ != &::google::protobuf::internal::kEmptyString) {
+    delete endtime_;
+  }
+  if (endtime) {
+    set_has_endtime();
+    endtime_ = endtime;
+  } else {
+    clear_has_endtime();
+    endtime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   }
 }
 
