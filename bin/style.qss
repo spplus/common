@@ -18,6 +18,7 @@ QListWidget {
     alternate-background-color: yellow;
 	background-color: #EEF8F9;
 	border-image: url(:/images/leftbk.png);	
+	font-size:20px;
 }
 
 QListWidget {
@@ -67,7 +68,8 @@ QPushButton#station{
     min-width: 200px;
 	height:40px;
 	color:#006A6A;
-	font-family:微软雅黑,宋体;
+	font-size:20px;
+	font-family:微软雅黑;
 	
 }
 
