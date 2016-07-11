@@ -86,8 +86,11 @@ enum eDeviceType
 // 用户修改操作
 #define				CMD_USER_MODIFY				1007
 
+// 用户列表
+#define				CMD_USER_LIST				1008
+
 // 密码修改操作
-#define				CMD_PWD_MODIFY				1008
+#define				CMD_PWD_MODIFY				1009
 
 //厂站类型添加操作
 #define				CMD_STATION_TYPE_ADD		1100
@@ -139,6 +142,26 @@ enum eDeviceType
 
 //事件查询列表
 #define				CMD_QUERY_EVENT_LIST		1324
+
+
+//操作票任务编辑管理
+#define				CMD_TICKETMS_MANAGER		1400
+
+//操作票任务列表
+#define				CMD_TICKETMS_LIST			1401
+
+// 操作票任务添加操作
+#define				CMD_TICKETMS_ADD			1402
+
+// 操作票任务删除操作
+#define				CMD_TICKETMS_DEL			1403
+
+// 操作票任务修改操作
+#define				CMD_TICKETMS_MODIFY			1404
+
+// 具体角色用户列表
+#define				CMD_ROLE_USER_LIST			1405
+
 
 //厂站配置管理
 #define				CMD_STATION_MANAGER			2000
