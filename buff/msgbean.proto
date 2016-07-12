@@ -96,10 +96,12 @@ message StateBean
     optional uint32 state		= 2;
     optional uint32	isBoard 	= 3;
     optional uint32	isElectric 	= 4;	  
-    optional bytes 	volValue 	= 5;		// 电压等级 如：110kv
+    optional bytes 	volColor 	= 5;		// 电压等级颜色RGB值
     optional uint32	unitType 	= 6;		// 设备类型
 	optional bytes 	stationCim	= 7;		// 站点cim
-	optional uint32	isPower 	= 8;
+	optional uint32	isPower 	= 8;		// 是否是电源点
+	optional uint32 isGround	= 9;		// 是否接地
+	
 }
 
 // 站点分类
