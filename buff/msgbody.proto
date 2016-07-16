@@ -348,6 +348,7 @@ message OprationMsg
 		optional bytes	unitCim		= 3;		// 元件cim
 		optional bool	ischeck		= 4;		// 是否允许校验	
 		optional uint32	unittype	= 5;		// 元件类型
+		repeated StateBean	opdevlist= 6;		// 客户端变位设备列表
 						
   	}
   	//响应体定义

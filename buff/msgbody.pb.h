@@ -5571,6 +5571,18 @@ class OprationMsg_Request : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 unittype() const;
   inline void set_unittype(::google::protobuf::uint32 value);
 
+  // repeated .com.spplus.buff.StateBean opdevlist = 6;
+  inline int opdevlist_size() const;
+  inline void clear_opdevlist();
+  static const int kOpdevlistFieldNumber = 6;
+  inline const ::com::spplus::buff::StateBean& opdevlist(int index) const;
+  inline ::com::spplus::buff::StateBean* mutable_opdevlist(int index);
+  inline ::com::spplus::buff::StateBean* add_opdevlist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+      opdevlist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+      mutable_opdevlist();
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.OprationMsg.Request)
  private:
   inline void set_has_saveid();
@@ -5591,9 +5603,10 @@ class OprationMsg_Request : public ::google::protobuf::Message {
   ::std::string* unitcim_;
   bool ischeck_;
   ::google::protobuf::uint32 unittype_;
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean > opdevlist_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -11954,6 +11967,31 @@ inline ::google::protobuf::uint32 OprationMsg_Request::unittype() const {
 inline void OprationMsg_Request::set_unittype(::google::protobuf::uint32 value) {
   set_has_unittype();
   unittype_ = value;
+}
+
+// repeated .com.spplus.buff.StateBean opdevlist = 6;
+inline int OprationMsg_Request::opdevlist_size() const {
+  return opdevlist_.size();
+}
+inline void OprationMsg_Request::clear_opdevlist() {
+  opdevlist_.Clear();
+}
+inline const ::com::spplus::buff::StateBean& OprationMsg_Request::opdevlist(int index) const {
+  return opdevlist_.Get(index);
+}
+inline ::com::spplus::buff::StateBean* OprationMsg_Request::mutable_opdevlist(int index) {
+  return opdevlist_.Mutable(index);
+}
+inline ::com::spplus::buff::StateBean* OprationMsg_Request::add_opdevlist() {
+  return opdevlist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+OprationMsg_Request::opdevlist() const {
+  return opdevlist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+OprationMsg_Request::mutable_opdevlist() {
+  return &opdevlist_;
 }
 
 // -------------------------------------------------------------------
