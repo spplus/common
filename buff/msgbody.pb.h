@@ -117,6 +117,12 @@ class TicketMgrMsg_Response;
 class TicketListMsg;
 class TicketListMsg_Request;
 class TicketListMsg_Response;
+class TicketActMgrMsg;
+class TicketActMgrMsg_Request;
+class TicketActMgrMsg_Response;
+class TicketActListMsg;
+class TicketActListMsg_Request;
+class TicketActListMsg_Response;
 
 // ===================================================================
 
@@ -5927,20 +5933,30 @@ class PowerSetMsg_Request : public ::google::protobuf::Message {
   inline ::std::string* release_unitcim();
   inline void set_allocated_unitcim(::std::string* unitcim);
 
+  // optional uint32 saveid = 3;
+  inline bool has_saveid() const;
+  inline void clear_saveid();
+  static const int kSaveidFieldNumber = 3;
+  inline ::google::protobuf::uint32 saveid() const;
+  inline void set_saveid(::google::protobuf::uint32 value);
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.PowerSetMsg.Request)
  private:
   inline void set_has_stationcim();
   inline void clear_has_stationcim();
   inline void set_has_unitcim();
   inline void clear_has_unitcim();
+  inline void set_has_saveid();
+  inline void clear_has_saveid();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
   ::std::string* stationcim_;
   ::std::string* unitcim_;
+  ::google::protobuf::uint32 saveid_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -7093,17 +7109,27 @@ class TicketMsionListMsg_Request : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 userid() const;
   inline void set_userid(::google::protobuf::uint32 value);
 
+  // optional uint32 roleid = 2;
+  inline bool has_roleid() const;
+  inline void clear_roleid();
+  static const int kRoleidFieldNumber = 2;
+  inline ::google::protobuf::uint32 roleid() const;
+  inline void set_roleid(::google::protobuf::uint32 value);
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketMsionListMsg.Request)
  private:
   inline void set_has_userid();
   inline void clear_has_userid();
+  inline void set_has_roleid();
+  inline void clear_has_roleid();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
   ::google::protobuf::uint32 userid_;
+  ::google::protobuf::uint32 roleid_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -7630,29 +7656,34 @@ class TicketListMsg_Request : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // optional bytes reqdate = 1;
-  inline bool has_reqdate() const;
-  inline void clear_reqdate();
-  static const int kReqdateFieldNumber = 1;
-  inline const ::std::string& reqdate() const;
-  inline void set_reqdate(const ::std::string& value);
-  inline void set_reqdate(const char* value);
-  inline void set_reqdate(const void* value, size_t size);
-  inline ::std::string* mutable_reqdate();
-  inline ::std::string* release_reqdate();
-  inline void set_allocated_reqdate(::std::string* reqdate);
+  // optional uint32 reqtype = 1;
+  inline bool has_reqtype() const;
+  inline void clear_reqtype();
+  static const int kReqtypeFieldNumber = 1;
+  inline ::google::protobuf::uint32 reqtype() const;
+  inline void set_reqtype(::google::protobuf::uint32 value);
+
+  // optional uint32 reqid = 2;
+  inline bool has_reqid() const;
+  inline void clear_reqid();
+  static const int kReqidFieldNumber = 2;
+  inline ::google::protobuf::uint32 reqid() const;
+  inline void set_reqid(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketListMsg.Request)
  private:
-  inline void set_has_reqdate();
-  inline void clear_has_reqdate();
+  inline void set_has_reqtype();
+  inline void clear_has_reqtype();
+  inline void set_has_reqid();
+  inline void clear_has_reqid();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
-  ::std::string* reqdate_;
+  ::google::protobuf::uint32 reqtype_;
+  ::google::protobuf::uint32 reqid_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -7854,6 +7885,558 @@ class TicketListMsg : public ::google::protobuf::Message {
 
   void InitAsDefaultInstance();
   static TicketListMsg* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketActMgrMsg_Request : public ::google::protobuf::Message {
+ public:
+  TicketActMgrMsg_Request();
+  virtual ~TicketActMgrMsg_Request();
+
+  TicketActMgrMsg_Request(const TicketActMgrMsg_Request& from);
+
+  inline TicketActMgrMsg_Request& operator=(const TicketActMgrMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketActMgrMsg_Request& default_instance();
+
+  void Swap(TicketActMgrMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketActMgrMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketActMgrMsg_Request& from);
+  void MergeFrom(const TicketActMgrMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 reqtype = 1;
+  inline bool has_reqtype() const;
+  inline void clear_reqtype();
+  static const int kReqtypeFieldNumber = 1;
+  inline ::google::protobuf::uint32 reqtype() const;
+  inline void set_reqtype(::google::protobuf::uint32 value);
+
+  // repeated .com.spplus.buff.TicketActBean ticketactlist = 2;
+  inline int ticketactlist_size() const;
+  inline void clear_ticketactlist();
+  static const int kTicketactlistFieldNumber = 2;
+  inline const ::com::spplus::buff::TicketActBean& ticketactlist(int index) const;
+  inline ::com::spplus::buff::TicketActBean* mutable_ticketactlist(int index);
+  inline ::com::spplus::buff::TicketActBean* add_ticketactlist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketActBean >&
+      ticketactlist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketActBean >*
+      mutable_ticketactlist();
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketActMgrMsg.Request)
+ private:
+  inline void set_has_reqtype();
+  inline void clear_has_reqtype();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketActBean > ticketactlist_;
+  ::google::protobuf::uint32 reqtype_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketActMgrMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketActMgrMsg_Response : public ::google::protobuf::Message {
+ public:
+  TicketActMgrMsg_Response();
+  virtual ~TicketActMgrMsg_Response();
+
+  TicketActMgrMsg_Response(const TicketActMgrMsg_Response& from);
+
+  inline TicketActMgrMsg_Response& operator=(const TicketActMgrMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketActMgrMsg_Response& default_instance();
+
+  void Swap(TicketActMgrMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketActMgrMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketActMgrMsg_Response& from);
+  void MergeFrom(const TicketActMgrMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 rescode = 1;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 1;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketActMgrMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketActMgrMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketActMgrMsg : public ::google::protobuf::Message {
+ public:
+  TicketActMgrMsg();
+  virtual ~TicketActMgrMsg();
+
+  TicketActMgrMsg(const TicketActMgrMsg& from);
+
+  inline TicketActMgrMsg& operator=(const TicketActMgrMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketActMgrMsg& default_instance();
+
+  void Swap(TicketActMgrMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketActMgrMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketActMgrMsg& from);
+  void MergeFrom(const TicketActMgrMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef TicketActMgrMsg_Request Request;
+  typedef TicketActMgrMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.TicketActMgrMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::TicketActMgrMsg_Request& request() const;
+  inline ::com::spplus::buff::TicketActMgrMsg_Request* mutable_request();
+  inline ::com::spplus::buff::TicketActMgrMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::TicketActMgrMsg_Request* request);
+
+  // optional .com.spplus.buff.TicketActMgrMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::TicketActMgrMsg_Response& response() const;
+  inline ::com::spplus::buff::TicketActMgrMsg_Response* mutable_response();
+  inline ::com::spplus::buff::TicketActMgrMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::TicketActMgrMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketActMgrMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::TicketActMgrMsg_Request* request_;
+  ::com::spplus::buff::TicketActMgrMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketActMgrMsg* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketActListMsg_Request : public ::google::protobuf::Message {
+ public:
+  TicketActListMsg_Request();
+  virtual ~TicketActListMsg_Request();
+
+  TicketActListMsg_Request(const TicketActListMsg_Request& from);
+
+  inline TicketActListMsg_Request& operator=(const TicketActListMsg_Request& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketActListMsg_Request& default_instance();
+
+  void Swap(TicketActListMsg_Request* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketActListMsg_Request* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketActListMsg_Request& from);
+  void MergeFrom(const TicketActListMsg_Request& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 reqid = 1;
+  inline bool has_reqid() const;
+  inline void clear_reqid();
+  static const int kReqidFieldNumber = 1;
+  inline ::google::protobuf::uint32 reqid() const;
+  inline void set_reqid(::google::protobuf::uint32 value);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketActListMsg.Request)
+ private:
+  inline void set_has_reqid();
+  inline void clear_has_reqid();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 reqid_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketActListMsg_Request* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketActListMsg_Response : public ::google::protobuf::Message {
+ public:
+  TicketActListMsg_Response();
+  virtual ~TicketActListMsg_Response();
+
+  TicketActListMsg_Response(const TicketActListMsg_Response& from);
+
+  inline TicketActListMsg_Response& operator=(const TicketActListMsg_Response& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketActListMsg_Response& default_instance();
+
+  void Swap(TicketActListMsg_Response* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketActListMsg_Response* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketActListMsg_Response& from);
+  void MergeFrom(const TicketActListMsg_Response& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 rescode = 1;
+  inline bool has_rescode() const;
+  inline void clear_rescode();
+  static const int kRescodeFieldNumber = 1;
+  inline ::google::protobuf::uint32 rescode() const;
+  inline void set_rescode(::google::protobuf::uint32 value);
+
+  // repeated .com.spplus.buff.TicketActBean ticketactlist = 2;
+  inline int ticketactlist_size() const;
+  inline void clear_ticketactlist();
+  static const int kTicketactlistFieldNumber = 2;
+  inline const ::com::spplus::buff::TicketActBean& ticketactlist(int index) const;
+  inline ::com::spplus::buff::TicketActBean* mutable_ticketactlist(int index);
+  inline ::com::spplus::buff::TicketActBean* add_ticketactlist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketActBean >&
+      ticketactlist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketActBean >*
+      mutable_ticketactlist();
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketActListMsg.Response)
+ private:
+  inline void set_has_rescode();
+  inline void clear_has_rescode();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketActBean > ticketactlist_;
+  ::google::protobuf::uint32 rescode_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketActListMsg_Response* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class TicketActListMsg : public ::google::protobuf::Message {
+ public:
+  TicketActListMsg();
+  virtual ~TicketActListMsg();
+
+  TicketActListMsg(const TicketActListMsg& from);
+
+  inline TicketActListMsg& operator=(const TicketActListMsg& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TicketActListMsg& default_instance();
+
+  void Swap(TicketActListMsg* other);
+
+  // implements Message ----------------------------------------------
+
+  TicketActListMsg* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const TicketActListMsg& from);
+  void MergeFrom(const TicketActListMsg& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef TicketActListMsg_Request Request;
+  typedef TicketActListMsg_Response Response;
+
+  // accessors -------------------------------------------------------
+
+  // optional .com.spplus.buff.TicketActListMsg.Request request = 1;
+  inline bool has_request() const;
+  inline void clear_request();
+  static const int kRequestFieldNumber = 1;
+  inline const ::com::spplus::buff::TicketActListMsg_Request& request() const;
+  inline ::com::spplus::buff::TicketActListMsg_Request* mutable_request();
+  inline ::com::spplus::buff::TicketActListMsg_Request* release_request();
+  inline void set_allocated_request(::com::spplus::buff::TicketActListMsg_Request* request);
+
+  // optional .com.spplus.buff.TicketActListMsg.Response response = 2;
+  inline bool has_response() const;
+  inline void clear_response();
+  static const int kResponseFieldNumber = 2;
+  inline const ::com::spplus::buff::TicketActListMsg_Response& response() const;
+  inline ::com::spplus::buff::TicketActListMsg_Response* mutable_response();
+  inline ::com::spplus::buff::TicketActListMsg_Response* release_response();
+  inline void set_allocated_response(::com::spplus::buff::TicketActListMsg_Response* response);
+
+  // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketActListMsg)
+ private:
+  inline void set_has_request();
+  inline void clear_has_request();
+  inline void set_has_response();
+  inline void clear_has_response();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::com::spplus::buff::TicketActListMsg_Request* request_;
+  ::com::spplus::buff::TicketActListMsg_Response* response_;
+
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+
+  friend void  protobuf_AddDesc_msgbody_2eproto();
+  friend void protobuf_AssignDesc_msgbody_2eproto();
+  friend void protobuf_ShutdownFile_msgbody_2eproto();
+
+  void InitAsDefaultInstance();
+  static TicketActListMsg* default_instance_;
 };
 // ===================================================================
 
@@ -12386,6 +12969,28 @@ inline void PowerSetMsg_Request::set_allocated_unitcim(::std::string* unitcim) {
   }
 }
 
+// optional uint32 saveid = 3;
+inline bool PowerSetMsg_Request::has_saveid() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void PowerSetMsg_Request::set_has_saveid() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void PowerSetMsg_Request::clear_has_saveid() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void PowerSetMsg_Request::clear_saveid() {
+  saveid_ = 0u;
+  clear_has_saveid();
+}
+inline ::google::protobuf::uint32 PowerSetMsg_Request::saveid() const {
+  return saveid_;
+}
+inline void PowerSetMsg_Request::set_saveid(::google::protobuf::uint32 value) {
+  set_has_saveid();
+  saveid_ = value;
+}
+
 // -------------------------------------------------------------------
 
 // PowerSetMsg_Response
@@ -13410,6 +14015,28 @@ inline void TicketMsionListMsg_Request::set_userid(::google::protobuf::uint32 va
   userid_ = value;
 }
 
+// optional uint32 roleid = 2;
+inline bool TicketMsionListMsg_Request::has_roleid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TicketMsionListMsg_Request::set_has_roleid() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void TicketMsionListMsg_Request::clear_has_roleid() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void TicketMsionListMsg_Request::clear_roleid() {
+  roleid_ = 0u;
+  clear_has_roleid();
+}
+inline ::google::protobuf::uint32 TicketMsionListMsg_Request::roleid() const {
+  return roleid_;
+}
+inline void TicketMsionListMsg_Request::set_roleid(::google::protobuf::uint32 value) {
+  set_has_roleid();
+  roleid_ = value;
+}
+
 // -------------------------------------------------------------------
 
 // TicketMsionListMsg_Response
@@ -13725,74 +14352,48 @@ inline void TicketMgrMsg::set_allocated_response(::com::spplus::buff::TicketMgrM
 
 // TicketListMsg_Request
 
-// optional bytes reqdate = 1;
-inline bool TicketListMsg_Request::has_reqdate() const {
+// optional uint32 reqtype = 1;
+inline bool TicketListMsg_Request::has_reqtype() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
-inline void TicketListMsg_Request::set_has_reqdate() {
+inline void TicketListMsg_Request::set_has_reqtype() {
   _has_bits_[0] |= 0x00000001u;
 }
-inline void TicketListMsg_Request::clear_has_reqdate() {
+inline void TicketListMsg_Request::clear_has_reqtype() {
   _has_bits_[0] &= ~0x00000001u;
 }
-inline void TicketListMsg_Request::clear_reqdate() {
-  if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
-    reqdate_->clear();
-  }
-  clear_has_reqdate();
+inline void TicketListMsg_Request::clear_reqtype() {
+  reqtype_ = 0u;
+  clear_has_reqtype();
 }
-inline const ::std::string& TicketListMsg_Request::reqdate() const {
-  return *reqdate_;
+inline ::google::protobuf::uint32 TicketListMsg_Request::reqtype() const {
+  return reqtype_;
 }
-inline void TicketListMsg_Request::set_reqdate(const ::std::string& value) {
-  set_has_reqdate();
-  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
-    reqdate_ = new ::std::string;
-  }
-  reqdate_->assign(value);
+inline void TicketListMsg_Request::set_reqtype(::google::protobuf::uint32 value) {
+  set_has_reqtype();
+  reqtype_ = value;
 }
-inline void TicketListMsg_Request::set_reqdate(const char* value) {
-  set_has_reqdate();
-  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
-    reqdate_ = new ::std::string;
-  }
-  reqdate_->assign(value);
+
+// optional uint32 reqid = 2;
+inline bool TicketListMsg_Request::has_reqid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
 }
-inline void TicketListMsg_Request::set_reqdate(const void* value, size_t size) {
-  set_has_reqdate();
-  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
-    reqdate_ = new ::std::string;
-  }
-  reqdate_->assign(reinterpret_cast<const char*>(value), size);
+inline void TicketListMsg_Request::set_has_reqid() {
+  _has_bits_[0] |= 0x00000002u;
 }
-inline ::std::string* TicketListMsg_Request::mutable_reqdate() {
-  set_has_reqdate();
-  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
-    reqdate_ = new ::std::string;
-  }
-  return reqdate_;
+inline void TicketListMsg_Request::clear_has_reqid() {
+  _has_bits_[0] &= ~0x00000002u;
 }
-inline ::std::string* TicketListMsg_Request::release_reqdate() {
-  clear_has_reqdate();
-  if (reqdate_ == &::google::protobuf::internal::kEmptyString) {
-    return NULL;
-  } else {
-    ::std::string* temp = reqdate_;
-    reqdate_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-    return temp;
-  }
+inline void TicketListMsg_Request::clear_reqid() {
+  reqid_ = 0u;
+  clear_has_reqid();
 }
-inline void TicketListMsg_Request::set_allocated_reqdate(::std::string* reqdate) {
-  if (reqdate_ != &::google::protobuf::internal::kEmptyString) {
-    delete reqdate_;
-  }
-  if (reqdate) {
-    set_has_reqdate();
-    reqdate_ = reqdate;
-  } else {
-    clear_has_reqdate();
-    reqdate_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  }
+inline ::google::protobuf::uint32 TicketListMsg_Request::reqid() const {
+  return reqid_;
+}
+inline void TicketListMsg_Request::set_reqid(::google::protobuf::uint32 value) {
+  set_has_reqid();
+  reqid_ = value;
 }
 
 // -------------------------------------------------------------------
@@ -13917,6 +14518,320 @@ inline ::com::spplus::buff::TicketListMsg_Response* TicketListMsg::release_respo
   return temp;
 }
 inline void TicketListMsg::set_allocated_response(::com::spplus::buff::TicketListMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
+// TicketActMgrMsg_Request
+
+// optional uint32 reqtype = 1;
+inline bool TicketActMgrMsg_Request::has_reqtype() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketActMgrMsg_Request::set_has_reqtype() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketActMgrMsg_Request::clear_has_reqtype() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketActMgrMsg_Request::clear_reqtype() {
+  reqtype_ = 0u;
+  clear_has_reqtype();
+}
+inline ::google::protobuf::uint32 TicketActMgrMsg_Request::reqtype() const {
+  return reqtype_;
+}
+inline void TicketActMgrMsg_Request::set_reqtype(::google::protobuf::uint32 value) {
+  set_has_reqtype();
+  reqtype_ = value;
+}
+
+// repeated .com.spplus.buff.TicketActBean ticketactlist = 2;
+inline int TicketActMgrMsg_Request::ticketactlist_size() const {
+  return ticketactlist_.size();
+}
+inline void TicketActMgrMsg_Request::clear_ticketactlist() {
+  ticketactlist_.Clear();
+}
+inline const ::com::spplus::buff::TicketActBean& TicketActMgrMsg_Request::ticketactlist(int index) const {
+  return ticketactlist_.Get(index);
+}
+inline ::com::spplus::buff::TicketActBean* TicketActMgrMsg_Request::mutable_ticketactlist(int index) {
+  return ticketactlist_.Mutable(index);
+}
+inline ::com::spplus::buff::TicketActBean* TicketActMgrMsg_Request::add_ticketactlist() {
+  return ticketactlist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketActBean >&
+TicketActMgrMsg_Request::ticketactlist() const {
+  return ticketactlist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketActBean >*
+TicketActMgrMsg_Request::mutable_ticketactlist() {
+  return &ticketactlist_;
+}
+
+// -------------------------------------------------------------------
+
+// TicketActMgrMsg_Response
+
+// optional uint32 rescode = 1;
+inline bool TicketActMgrMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketActMgrMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketActMgrMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketActMgrMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 TicketActMgrMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void TicketActMgrMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// TicketActMgrMsg
+
+// optional .com.spplus.buff.TicketActMgrMsg.Request request = 1;
+inline bool TicketActMgrMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketActMgrMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketActMgrMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketActMgrMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::TicketActMgrMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::TicketActMgrMsg_Request& TicketActMgrMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::TicketActMgrMsg_Request* TicketActMgrMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::TicketActMgrMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::TicketActMgrMsg_Request* TicketActMgrMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::TicketActMgrMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void TicketActMgrMsg::set_allocated_request(::com::spplus::buff::TicketActMgrMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.TicketActMgrMsg.Response response = 2;
+inline bool TicketActMgrMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TicketActMgrMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void TicketActMgrMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void TicketActMgrMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::TicketActMgrMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::TicketActMgrMsg_Response& TicketActMgrMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::TicketActMgrMsg_Response* TicketActMgrMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::TicketActMgrMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::TicketActMgrMsg_Response* TicketActMgrMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::TicketActMgrMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void TicketActMgrMsg::set_allocated_response(::com::spplus::buff::TicketActMgrMsg_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+}
+
+// -------------------------------------------------------------------
+
+// TicketActListMsg_Request
+
+// optional uint32 reqid = 1;
+inline bool TicketActListMsg_Request::has_reqid() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketActListMsg_Request::set_has_reqid() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketActListMsg_Request::clear_has_reqid() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketActListMsg_Request::clear_reqid() {
+  reqid_ = 0u;
+  clear_has_reqid();
+}
+inline ::google::protobuf::uint32 TicketActListMsg_Request::reqid() const {
+  return reqid_;
+}
+inline void TicketActListMsg_Request::set_reqid(::google::protobuf::uint32 value) {
+  set_has_reqid();
+  reqid_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// TicketActListMsg_Response
+
+// optional uint32 rescode = 1;
+inline bool TicketActListMsg_Response::has_rescode() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketActListMsg_Response::set_has_rescode() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketActListMsg_Response::clear_has_rescode() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketActListMsg_Response::clear_rescode() {
+  rescode_ = 0u;
+  clear_has_rescode();
+}
+inline ::google::protobuf::uint32 TicketActListMsg_Response::rescode() const {
+  return rescode_;
+}
+inline void TicketActListMsg_Response::set_rescode(::google::protobuf::uint32 value) {
+  set_has_rescode();
+  rescode_ = value;
+}
+
+// repeated .com.spplus.buff.TicketActBean ticketactlist = 2;
+inline int TicketActListMsg_Response::ticketactlist_size() const {
+  return ticketactlist_.size();
+}
+inline void TicketActListMsg_Response::clear_ticketactlist() {
+  ticketactlist_.Clear();
+}
+inline const ::com::spplus::buff::TicketActBean& TicketActListMsg_Response::ticketactlist(int index) const {
+  return ticketactlist_.Get(index);
+}
+inline ::com::spplus::buff::TicketActBean* TicketActListMsg_Response::mutable_ticketactlist(int index) {
+  return ticketactlist_.Mutable(index);
+}
+inline ::com::spplus::buff::TicketActBean* TicketActListMsg_Response::add_ticketactlist() {
+  return ticketactlist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketActBean >&
+TicketActListMsg_Response::ticketactlist() const {
+  return ticketactlist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketActBean >*
+TicketActListMsg_Response::mutable_ticketactlist() {
+  return &ticketactlist_;
+}
+
+// -------------------------------------------------------------------
+
+// TicketActListMsg
+
+// optional .com.spplus.buff.TicketActListMsg.Request request = 1;
+inline bool TicketActListMsg::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TicketActListMsg::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TicketActListMsg::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TicketActListMsg::clear_request() {
+  if (request_ != NULL) request_->::com::spplus::buff::TicketActListMsg_Request::Clear();
+  clear_has_request();
+}
+inline const ::com::spplus::buff::TicketActListMsg_Request& TicketActListMsg::request() const {
+  return request_ != NULL ? *request_ : *default_instance_->request_;
+}
+inline ::com::spplus::buff::TicketActListMsg_Request* TicketActListMsg::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) request_ = new ::com::spplus::buff::TicketActListMsg_Request;
+  return request_;
+}
+inline ::com::spplus::buff::TicketActListMsg_Request* TicketActListMsg::release_request() {
+  clear_has_request();
+  ::com::spplus::buff::TicketActListMsg_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+inline void TicketActListMsg::set_allocated_request(::com::spplus::buff::TicketActListMsg_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+}
+
+// optional .com.spplus.buff.TicketActListMsg.Response response = 2;
+inline bool TicketActListMsg::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TicketActListMsg::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void TicketActListMsg::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void TicketActListMsg::clear_response() {
+  if (response_ != NULL) response_->::com::spplus::buff::TicketActListMsg_Response::Clear();
+  clear_has_response();
+}
+inline const ::com::spplus::buff::TicketActListMsg_Response& TicketActListMsg::response() const {
+  return response_ != NULL ? *response_ : *default_instance_->response_;
+}
+inline ::com::spplus::buff::TicketActListMsg_Response* TicketActListMsg::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) response_ = new ::com::spplus::buff::TicketActListMsg_Response;
+  return response_;
+}
+inline ::com::spplus::buff::TicketActListMsg_Response* TicketActListMsg::release_response() {
+  clear_has_response();
+  ::com::spplus::buff::TicketActListMsg_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+inline void TicketActListMsg::set_allocated_response(::com::spplus::buff::TicketActListMsg_Response* response) {
   delete response_;
   response_ = response;
   if (response) {

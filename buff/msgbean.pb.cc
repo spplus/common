@@ -70,6 +70,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* TicketBean_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   TicketBean_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TicketActBean_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TicketActBean_reflection_ = NULL;
 
 }  // namespace
 
@@ -212,12 +215,14 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(MsetQueryBean));
   EventQueryBean_descriptor_ = file->message_type(7);
-  static const int EventQueryBean_offsets_[5] = {
+  static const int EventQueryBean_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventQueryBean, unitcim_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventQueryBean, unitcimname_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventQueryBean, stationcim_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventQueryBean, stationname_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventQueryBean, unittype_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventQueryBean, eventvalue_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventQueryBean, eventtime_),
   };
   EventQueryBean_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -369,10 +374,14 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(TicketMsionBean));
   TicketBean_descriptor_ = file->message_type(15);
-  static const int TicketBean_offsets_[11] = {
+  static const int TicketBean_offsets_[16] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, id_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, userid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, cuserid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, cusername_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, auserid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, ausername_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, missionid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, missionname_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, no_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, actiontype_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, info_),
@@ -381,6 +390,7 @@ void protobuf_AssignDesc_msgbean_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, chargeperson_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, starttime_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, endtime_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketBean, publishtime_),
   };
   TicketBean_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -393,6 +403,24 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(TicketBean));
+  TicketActBean_descriptor_ = file->message_type(16);
+  static const int TicketActBean_offsets_[4] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActBean, ticketid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActBean, ordernum_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActBean, systemcontent_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActBean, content_),
+  };
+  TicketActBean_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      TicketActBean_descriptor_,
+      TicketActBean::default_instance_,
+      TicketActBean_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActBean, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActBean, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(TicketActBean));
 }
 
 namespace {
@@ -437,6 +465,8 @@ void protobuf_RegisterTypes(const ::std::string&) {
     TicketMsionBean_descriptor_, &TicketMsionBean::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     TicketBean_descriptor_, &TicketBean::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    TicketActBean_descriptor_, &TicketActBean::default_instance());
 }
 
 }  // namespace
@@ -474,6 +504,8 @@ void protobuf_ShutdownFile_msgbean_2eproto() {
   delete TicketMsionBean_reflection_;
   delete TicketBean::default_instance_;
   delete TicketBean_reflection_;
+  delete TicketActBean::default_instance_;
+  delete TicketActBean_reflection_;
 }
 
 void protobuf_AddDesc_msgbean_2eproto() {
@@ -502,10 +534,11 @@ void protobuf_AddDesc_msgbean_2eproto() {
     "\020\n\010unitType\030\005 \001(\014\"p\n\rMsetQueryBean\022\017\n\007un"
     "itCim\030\001 \001(\014\022\023\n\013unitCimName\030\002 \001(\014\022\022\n\nstat"
     "ionCim\030\003 \001(\014\022\023\n\013stationName\030\004 \001(\014\022\020\n\010uni"
-    "tType\030\005 \001(\014\"q\n\016EventQueryBean\022\017\n\007unitCim"
-    "\030\001 \001(\014\022\023\n\013unitCimName\030\002 \001(\014\022\022\n\nstationCi"
-    "m\030\003 \001(\014\022\023\n\013stationName\030\004 \001(\014\022\020\n\010unitType"
-    "\030\005 \001(\014\"\251\001\n\tStateBean\022\r\n\005cimId\030\001 \001(\014\022\r\n\005s"
+    "tType\030\005 \001(\014\"\230\001\n\016EventQueryBean\022\017\n\007unitCi"
+    "m\030\001 \001(\014\022\023\n\013unitCimName\030\002 \001(\014\022\022\n\nstationC"
+    "im\030\003 \001(\014\022\023\n\013stationName\030\004 \001(\014\022\020\n\010unitTyp"
+    "e\030\005 \001(\014\022\022\n\neventvalue\030\006 \001(\014\022\021\n\teventtime"
+    "\030\007 \001(\014\"\251\001\n\tStateBean\022\r\n\005cimId\030\001 \001(\014\022\r\n\005s"
     "tate\030\002 \001(\r\022\017\n\007isBoard\030\003 \001(\r\022\022\n\nisElectri"
     "c\030\004 \001(\r\022\020\n\010volColor\030\005 \001(\014\022\020\n\010unitType\030\006 "
     "\001(\r\022\022\n\nstationCim\030\007 \001(\014\022\017\n\007isPower\030\010 \001(\r"
@@ -525,12 +558,17 @@ void protobuf_AddDesc_msgbean_2eproto() {
     "Bean\022\n\n\002Id\030\001 \001(\r\022\016\n\006UserId\030\002 \001(\r\022\020\n\010User"
     "Name\030\003 \001(\014\022\021\n\tActUserId\030\004 \001(\r\022\023\n\013ActUser"
     "Name\030\005 \001(\014\022\014\n\004Name\030\006 \001(\014\022\023\n\013PublishTime\030"
-    "\007 \001(\014\"\320\001\n\nTicketBean\022\n\n\002Id\030\001 \001(\r\022\016\n\006User"
-    "Id\030\002 \001(\r\022\021\n\tMissionId\030\003 \001(\r\022\n\n\002No\030\004 \001(\014\022"
-    "\022\n\nActionType\030\005 \001(\014\022\014\n\004info\030\006 \001(\014\022\024\n\014Act"
-    "ionPerson\030\007 \001(\014\022\025\n\rProtectPerson\030\010 \001(\014\022\024"
-    "\n\014ChargePerson\030\t \001(\014\022\021\n\tStartTime\030\n \001(\014\022"
-    "\017\n\007EndTime\030\013 \001(\014", 1896);
+    "\007 \001(\014\"\262\002\n\nTicketBean\022\n\n\002Id\030\001 \001(\r\022\017\n\007Cuse"
+    "rId\030\002 \001(\r\022\021\n\tCuserName\030\003 \001(\014\022\017\n\007AuserId\030"
+    "\004 \001(\r\022\021\n\tAuserName\030\005 \001(\014\022\021\n\tMissionId\030\006 "
+    "\001(\r\022\023\n\013MissionName\030\007 \001(\014\022\n\n\002No\030\010 \001(\014\022\022\n\n"
+    "ActionType\030\t \001(\014\022\014\n\004info\030\n \001(\014\022\024\n\014Action"
+    "Person\030\013 \001(\014\022\025\n\rProtectPerson\030\014 \001(\014\022\024\n\014C"
+    "hargePerson\030\r \001(\014\022\021\n\tStartTime\030\016 \001(\014\022\017\n\007"
+    "EndTime\030\017 \001(\014\022\023\n\013PublishTime\030\020 \001(\014\"[\n\rTi"
+    "cketActBean\022\020\n\010Ticketid\030\001 \001(\r\022\020\n\010OrderNu"
+    "m\030\002 \001(\r\022\025\n\rSystemContent\030\003 \001(\014\022\017\n\007Conten"
+    "t\030\004 \001(\014", 2127);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbean.proto", &protobuf_RegisterTypes);
   UserBean::default_instance_ = new UserBean();
@@ -549,6 +587,7 @@ void protobuf_AddDesc_msgbean_2eproto() {
   RuleBean::default_instance_ = new RuleBean();
   TicketMsionBean::default_instance_ = new TicketMsionBean();
   TicketBean::default_instance_ = new TicketBean();
+  TicketActBean::default_instance_ = new TicketActBean();
   UserBean::default_instance_->InitAsDefaultInstance();
   UserRoleBean::default_instance_->InitAsDefaultInstance();
   StationRuleBean::default_instance_->InitAsDefaultInstance();
@@ -565,6 +604,7 @@ void protobuf_AddDesc_msgbean_2eproto() {
   RuleBean::default_instance_->InitAsDefaultInstance();
   TicketMsionBean::default_instance_->InitAsDefaultInstance();
   TicketBean::default_instance_->InitAsDefaultInstance();
+  TicketActBean::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_msgbean_2eproto);
 }
 
@@ -3335,6 +3375,8 @@ const int EventQueryBean::kUnitCimNameFieldNumber;
 const int EventQueryBean::kStationCimFieldNumber;
 const int EventQueryBean::kStationNameFieldNumber;
 const int EventQueryBean::kUnitTypeFieldNumber;
+const int EventQueryBean::kEventvalueFieldNumber;
+const int EventQueryBean::kEventtimeFieldNumber;
 #endif  // !_MSC_VER
 
 EventQueryBean::EventQueryBean()
@@ -3358,6 +3400,8 @@ void EventQueryBean::SharedCtor() {
   stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   stationname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   unittype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  eventvalue_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  eventtime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -3380,6 +3424,12 @@ void EventQueryBean::SharedDtor() {
   }
   if (unittype_ != &::google::protobuf::internal::kEmptyString) {
     delete unittype_;
+  }
+  if (eventvalue_ != &::google::protobuf::internal::kEmptyString) {
+    delete eventvalue_;
+  }
+  if (eventtime_ != &::google::protobuf::internal::kEmptyString) {
+    delete eventtime_;
   }
   if (this != default_instance_) {
   }
@@ -3431,6 +3481,16 @@ void EventQueryBean::Clear() {
     if (has_unittype()) {
       if (unittype_ != &::google::protobuf::internal::kEmptyString) {
         unittype_->clear();
+      }
+    }
+    if (has_eventvalue()) {
+      if (eventvalue_ != &::google::protobuf::internal::kEmptyString) {
+        eventvalue_->clear();
+      }
+    }
+    if (has_eventtime()) {
+      if (eventtime_ != &::google::protobuf::internal::kEmptyString) {
+        eventtime_->clear();
       }
     }
   }
@@ -3509,6 +3569,34 @@ bool EventQueryBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
+        if (input->ExpectTag(50)) goto parse_eventvalue;
+        break;
+      }
+
+      // optional bytes eventvalue = 6;
+      case 6: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_eventvalue:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_eventvalue()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(58)) goto parse_eventtime;
+        break;
+      }
+
+      // optional bytes eventtime = 7;
+      case 7: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_eventtime:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_eventtime()));
+        } else {
+          goto handle_uninterpreted;
+        }
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -3561,6 +3649,18 @@ void EventQueryBean::SerializeWithCachedSizes(
       5, this->unittype(), output);
   }
 
+  // optional bytes eventvalue = 6;
+  if (has_eventvalue()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      6, this->eventvalue(), output);
+  }
+
+  // optional bytes eventtime = 7;
+  if (has_eventtime()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      7, this->eventtime(), output);
+  }
+
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -3602,6 +3702,20 @@ void EventQueryBean::SerializeWithCachedSizes(
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         5, this->unittype(), target);
+  }
+
+  // optional bytes eventvalue = 6;
+  if (has_eventvalue()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        6, this->eventvalue(), target);
+  }
+
+  // optional bytes eventtime = 7;
+  if (has_eventtime()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        7, this->eventtime(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -3650,6 +3764,20 @@ int EventQueryBean::ByteSize() const {
           this->unittype());
     }
 
+    // optional bytes eventvalue = 6;
+    if (has_eventvalue()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->eventvalue());
+    }
+
+    // optional bytes eventtime = 7;
+    if (has_eventtime()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->eventtime());
+    }
+
   }
   if (!unknown_fields().empty()) {
     total_size +=
@@ -3692,6 +3820,12 @@ void EventQueryBean::MergeFrom(const EventQueryBean& from) {
     if (from.has_unittype()) {
       set_unittype(from.unittype());
     }
+    if (from.has_eventvalue()) {
+      set_eventvalue(from.eventvalue());
+    }
+    if (from.has_eventtime()) {
+      set_eventtime(from.eventtime());
+    }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
@@ -3720,6 +3854,8 @@ void EventQueryBean::Swap(EventQueryBean* other) {
     std::swap(stationcim_, other->stationcim_);
     std::swap(stationname_, other->stationname_);
     std::swap(unittype_, other->unittype_);
+    std::swap(eventvalue_, other->eventvalue_);
+    std::swap(eventtime_, other->eventtime_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);
@@ -6697,8 +6833,12 @@ void TicketMsionBean::Swap(TicketMsionBean* other) {
 
 #ifndef _MSC_VER
 const int TicketBean::kIdFieldNumber;
-const int TicketBean::kUserIdFieldNumber;
+const int TicketBean::kCuserIdFieldNumber;
+const int TicketBean::kCuserNameFieldNumber;
+const int TicketBean::kAuserIdFieldNumber;
+const int TicketBean::kAuserNameFieldNumber;
 const int TicketBean::kMissionIdFieldNumber;
+const int TicketBean::kMissionNameFieldNumber;
 const int TicketBean::kNoFieldNumber;
 const int TicketBean::kActionTypeFieldNumber;
 const int TicketBean::kInfoFieldNumber;
@@ -6707,6 +6847,7 @@ const int TicketBean::kProtectPersonFieldNumber;
 const int TicketBean::kChargePersonFieldNumber;
 const int TicketBean::kStartTimeFieldNumber;
 const int TicketBean::kEndTimeFieldNumber;
+const int TicketBean::kPublishTimeFieldNumber;
 #endif  // !_MSC_VER
 
 TicketBean::TicketBean()
@@ -6726,8 +6867,12 @@ TicketBean::TicketBean(const TicketBean& from)
 void TicketBean::SharedCtor() {
   _cached_size_ = 0;
   id_ = 0u;
-  userid_ = 0u;
+  cuserid_ = 0u;
+  cusername_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  auserid_ = 0u;
+  ausername_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   missionid_ = 0u;
+  missionname_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   no_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   actiontype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   info_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
@@ -6736,6 +6881,7 @@ void TicketBean::SharedCtor() {
   chargeperson_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   starttime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   endtime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  publishtime_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -6744,6 +6890,15 @@ TicketBean::~TicketBean() {
 }
 
 void TicketBean::SharedDtor() {
+  if (cusername_ != &::google::protobuf::internal::kEmptyString) {
+    delete cusername_;
+  }
+  if (ausername_ != &::google::protobuf::internal::kEmptyString) {
+    delete ausername_;
+  }
+  if (missionname_ != &::google::protobuf::internal::kEmptyString) {
+    delete missionname_;
+  }
   if (no_ != &::google::protobuf::internal::kEmptyString) {
     delete no_;
   }
@@ -6767,6 +6922,9 @@ void TicketBean::SharedDtor() {
   }
   if (endtime_ != &::google::protobuf::internal::kEmptyString) {
     delete endtime_;
+  }
+  if (publishtime_ != &::google::protobuf::internal::kEmptyString) {
+    delete publishtime_;
   }
   if (this != default_instance_) {
   }
@@ -6796,13 +6954,31 @@ TicketBean* TicketBean::New() const {
 void TicketBean::Clear() {
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     id_ = 0u;
-    userid_ = 0u;
+    cuserid_ = 0u;
+    if (has_cusername()) {
+      if (cusername_ != &::google::protobuf::internal::kEmptyString) {
+        cusername_->clear();
+      }
+    }
+    auserid_ = 0u;
+    if (has_ausername()) {
+      if (ausername_ != &::google::protobuf::internal::kEmptyString) {
+        ausername_->clear();
+      }
+    }
     missionid_ = 0u;
+    if (has_missionname()) {
+      if (missionname_ != &::google::protobuf::internal::kEmptyString) {
+        missionname_->clear();
+      }
+    }
     if (has_no()) {
       if (no_ != &::google::protobuf::internal::kEmptyString) {
         no_->clear();
       }
     }
+  }
+  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
     if (has_actiontype()) {
       if (actiontype_ != &::google::protobuf::internal::kEmptyString) {
         actiontype_->clear();
@@ -6823,8 +6999,6 @@ void TicketBean::Clear() {
         protectperson_->clear();
       }
     }
-  }
-  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
     if (has_chargeperson()) {
       if (chargeperson_ != &::google::protobuf::internal::kEmptyString) {
         chargeperson_->clear();
@@ -6838,6 +7012,11 @@ void TicketBean::Clear() {
     if (has_endtime()) {
       if (endtime_ != &::google::protobuf::internal::kEmptyString) {
         endtime_->clear();
+      }
+    }
+    if (has_publishtime()) {
+      if (publishtime_ != &::google::protobuf::internal::kEmptyString) {
+        publishtime_->clear();
       }
     }
   }
@@ -6862,28 +7041,72 @@ bool TicketBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(16)) goto parse_UserId;
+        if (input->ExpectTag(16)) goto parse_CuserId;
         break;
       }
 
-      // optional uint32 UserId = 2;
+      // optional uint32 CuserId = 2;
       case 2: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_UserId:
+         parse_CuserId:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &userid_)));
-          set_has_userid();
+                 input, &cuserid_)));
+          set_has_cuserid();
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(24)) goto parse_MissionId;
+        if (input->ExpectTag(26)) goto parse_CuserName;
         break;
       }
 
-      // optional uint32 MissionId = 3;
+      // optional bytes CuserName = 3;
       case 3: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_CuserName:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_cusername()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(32)) goto parse_AuserId;
+        break;
+      }
+
+      // optional uint32 AuserId = 4;
+      case 4: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_AuserId:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &auserid_)));
+          set_has_auserid();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(42)) goto parse_AuserName;
+        break;
+      }
+
+      // optional bytes AuserName = 5;
+      case 5: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_AuserName:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_ausername()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(48)) goto parse_MissionId;
+        break;
+      }
+
+      // optional uint32 MissionId = 6;
+      case 6: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
          parse_MissionId:
@@ -6894,12 +7117,26 @@ bool TicketBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(34)) goto parse_No;
+        if (input->ExpectTag(58)) goto parse_MissionName;
         break;
       }
 
-      // optional bytes No = 4;
-      case 4: {
+      // optional bytes MissionName = 7;
+      case 7: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_MissionName:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_missionname()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(66)) goto parse_No;
+        break;
+      }
+
+      // optional bytes No = 8;
+      case 8: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_No:
@@ -6908,12 +7145,12 @@ bool TicketBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(42)) goto parse_ActionType;
+        if (input->ExpectTag(74)) goto parse_ActionType;
         break;
       }
 
-      // optional bytes ActionType = 5;
-      case 5: {
+      // optional bytes ActionType = 9;
+      case 9: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_ActionType:
@@ -6922,12 +7159,12 @@ bool TicketBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(50)) goto parse_info;
+        if (input->ExpectTag(82)) goto parse_info;
         break;
       }
 
-      // optional bytes info = 6;
-      case 6: {
+      // optional bytes info = 10;
+      case 10: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_info:
@@ -6936,12 +7173,12 @@ bool TicketBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(58)) goto parse_ActionPerson;
+        if (input->ExpectTag(90)) goto parse_ActionPerson;
         break;
       }
 
-      // optional bytes ActionPerson = 7;
-      case 7: {
+      // optional bytes ActionPerson = 11;
+      case 11: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_ActionPerson:
@@ -6950,12 +7187,12 @@ bool TicketBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(66)) goto parse_ProtectPerson;
+        if (input->ExpectTag(98)) goto parse_ProtectPerson;
         break;
       }
 
-      // optional bytes ProtectPerson = 8;
-      case 8: {
+      // optional bytes ProtectPerson = 12;
+      case 12: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_ProtectPerson:
@@ -6964,12 +7201,12 @@ bool TicketBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(74)) goto parse_ChargePerson;
+        if (input->ExpectTag(106)) goto parse_ChargePerson;
         break;
       }
 
-      // optional bytes ChargePerson = 9;
-      case 9: {
+      // optional bytes ChargePerson = 13;
+      case 13: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_ChargePerson:
@@ -6978,12 +7215,12 @@ bool TicketBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(82)) goto parse_StartTime;
+        if (input->ExpectTag(114)) goto parse_StartTime;
         break;
       }
 
-      // optional bytes StartTime = 10;
-      case 10: {
+      // optional bytes StartTime = 14;
+      case 14: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_StartTime:
@@ -6992,17 +7229,31 @@ bool TicketBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(90)) goto parse_EndTime;
+        if (input->ExpectTag(122)) goto parse_EndTime;
         break;
       }
 
-      // optional bytes EndTime = 11;
-      case 11: {
+      // optional bytes EndTime = 15;
+      case 15: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_EndTime:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_endtime()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(130)) goto parse_PublishTime;
+        break;
+      }
+
+      // optional bytes PublishTime = 16;
+      case 16: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_PublishTime:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_publishtime()));
         } else {
           goto handle_uninterpreted;
         }
@@ -7033,62 +7284,91 @@ void TicketBean::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->id(), output);
   }
 
-  // optional uint32 UserId = 2;
-  if (has_userid()) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->userid(), output);
+  // optional uint32 CuserId = 2;
+  if (has_cuserid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->cuserid(), output);
   }
 
-  // optional uint32 MissionId = 3;
+  // optional bytes CuserName = 3;
+  if (has_cusername()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      3, this->cusername(), output);
+  }
+
+  // optional uint32 AuserId = 4;
+  if (has_auserid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->auserid(), output);
+  }
+
+  // optional bytes AuserName = 5;
+  if (has_ausername()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      5, this->ausername(), output);
+  }
+
+  // optional uint32 MissionId = 6;
   if (has_missionid()) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->missionid(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(6, this->missionid(), output);
   }
 
-  // optional bytes No = 4;
+  // optional bytes MissionName = 7;
+  if (has_missionname()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      7, this->missionname(), output);
+  }
+
+  // optional bytes No = 8;
   if (has_no()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytes(
-      4, this->no(), output);
+      8, this->no(), output);
   }
 
-  // optional bytes ActionType = 5;
+  // optional bytes ActionType = 9;
   if (has_actiontype()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytes(
-      5, this->actiontype(), output);
+      9, this->actiontype(), output);
   }
 
-  // optional bytes info = 6;
+  // optional bytes info = 10;
   if (has_info()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytes(
-      6, this->info(), output);
+      10, this->info(), output);
   }
 
-  // optional bytes ActionPerson = 7;
+  // optional bytes ActionPerson = 11;
   if (has_actionperson()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytes(
-      7, this->actionperson(), output);
+      11, this->actionperson(), output);
   }
 
-  // optional bytes ProtectPerson = 8;
+  // optional bytes ProtectPerson = 12;
   if (has_protectperson()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytes(
-      8, this->protectperson(), output);
+      12, this->protectperson(), output);
   }
 
-  // optional bytes ChargePerson = 9;
+  // optional bytes ChargePerson = 13;
   if (has_chargeperson()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytes(
-      9, this->chargeperson(), output);
+      13, this->chargeperson(), output);
   }
 
-  // optional bytes StartTime = 10;
+  // optional bytes StartTime = 14;
   if (has_starttime()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytes(
-      10, this->starttime(), output);
+      14, this->starttime(), output);
   }
 
-  // optional bytes EndTime = 11;
+  // optional bytes EndTime = 15;
   if (has_endtime()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytes(
-      11, this->endtime(), output);
+      15, this->endtime(), output);
+  }
+
+  // optional bytes PublishTime = 16;
+  if (has_publishtime()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      16, this->publishtime(), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -7104,70 +7384,103 @@ void TicketBean::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->id(), target);
   }
 
-  // optional uint32 UserId = 2;
-  if (has_userid()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->userid(), target);
+  // optional uint32 CuserId = 2;
+  if (has_cuserid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->cuserid(), target);
   }
 
-  // optional uint32 MissionId = 3;
+  // optional bytes CuserName = 3;
+  if (has_cusername()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        3, this->cusername(), target);
+  }
+
+  // optional uint32 AuserId = 4;
+  if (has_auserid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->auserid(), target);
+  }
+
+  // optional bytes AuserName = 5;
+  if (has_ausername()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        5, this->ausername(), target);
+  }
+
+  // optional uint32 MissionId = 6;
   if (has_missionid()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->missionid(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(6, this->missionid(), target);
   }
 
-  // optional bytes No = 4;
+  // optional bytes MissionName = 7;
+  if (has_missionname()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        7, this->missionname(), target);
+  }
+
+  // optional bytes No = 8;
   if (has_no()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        4, this->no(), target);
+        8, this->no(), target);
   }
 
-  // optional bytes ActionType = 5;
+  // optional bytes ActionType = 9;
   if (has_actiontype()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        5, this->actiontype(), target);
+        9, this->actiontype(), target);
   }
 
-  // optional bytes info = 6;
+  // optional bytes info = 10;
   if (has_info()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        6, this->info(), target);
+        10, this->info(), target);
   }
 
-  // optional bytes ActionPerson = 7;
+  // optional bytes ActionPerson = 11;
   if (has_actionperson()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        7, this->actionperson(), target);
+        11, this->actionperson(), target);
   }
 
-  // optional bytes ProtectPerson = 8;
+  // optional bytes ProtectPerson = 12;
   if (has_protectperson()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        8, this->protectperson(), target);
+        12, this->protectperson(), target);
   }
 
-  // optional bytes ChargePerson = 9;
+  // optional bytes ChargePerson = 13;
   if (has_chargeperson()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        9, this->chargeperson(), target);
+        13, this->chargeperson(), target);
   }
 
-  // optional bytes StartTime = 10;
+  // optional bytes StartTime = 14;
   if (has_starttime()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        10, this->starttime(), target);
+        14, this->starttime(), target);
   }
 
-  // optional bytes EndTime = 11;
+  // optional bytes EndTime = 15;
   if (has_endtime()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        11, this->endtime(), target);
+        15, this->endtime(), target);
+  }
+
+  // optional bytes PublishTime = 16;
+  if (has_publishtime()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        16, this->publishtime(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -7188,76 +7501,111 @@ int TicketBean::ByteSize() const {
           this->id());
     }
 
-    // optional uint32 UserId = 2;
-    if (has_userid()) {
+    // optional uint32 CuserId = 2;
+    if (has_cuserid()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
-          this->userid());
+          this->cuserid());
     }
 
-    // optional uint32 MissionId = 3;
+    // optional bytes CuserName = 3;
+    if (has_cusername()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->cusername());
+    }
+
+    // optional uint32 AuserId = 4;
+    if (has_auserid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->auserid());
+    }
+
+    // optional bytes AuserName = 5;
+    if (has_ausername()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->ausername());
+    }
+
+    // optional uint32 MissionId = 6;
     if (has_missionid()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->missionid());
     }
 
-    // optional bytes No = 4;
+    // optional bytes MissionName = 7;
+    if (has_missionname()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->missionname());
+    }
+
+    // optional bytes No = 8;
     if (has_no()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->no());
     }
 
-    // optional bytes ActionType = 5;
+  }
+  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
+    // optional bytes ActionType = 9;
     if (has_actiontype()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->actiontype());
     }
 
-    // optional bytes info = 6;
+    // optional bytes info = 10;
     if (has_info()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->info());
     }
 
-    // optional bytes ActionPerson = 7;
+    // optional bytes ActionPerson = 11;
     if (has_actionperson()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->actionperson());
     }
 
-    // optional bytes ProtectPerson = 8;
+    // optional bytes ProtectPerson = 12;
     if (has_protectperson()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->protectperson());
     }
 
-  }
-  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
-    // optional bytes ChargePerson = 9;
+    // optional bytes ChargePerson = 13;
     if (has_chargeperson()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->chargeperson());
     }
 
-    // optional bytes StartTime = 10;
+    // optional bytes StartTime = 14;
     if (has_starttime()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->starttime());
     }
 
-    // optional bytes EndTime = 11;
+    // optional bytes EndTime = 15;
     if (has_endtime()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->endtime());
+    }
+
+    // optional bytes PublishTime = 16;
+    if (has_publishtime()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->publishtime());
     }
 
   }
@@ -7290,15 +7638,29 @@ void TicketBean::MergeFrom(const TicketBean& from) {
     if (from.has_id()) {
       set_id(from.id());
     }
-    if (from.has_userid()) {
-      set_userid(from.userid());
+    if (from.has_cuserid()) {
+      set_cuserid(from.cuserid());
+    }
+    if (from.has_cusername()) {
+      set_cusername(from.cusername());
+    }
+    if (from.has_auserid()) {
+      set_auserid(from.auserid());
+    }
+    if (from.has_ausername()) {
+      set_ausername(from.ausername());
     }
     if (from.has_missionid()) {
       set_missionid(from.missionid());
     }
+    if (from.has_missionname()) {
+      set_missionname(from.missionname());
+    }
     if (from.has_no()) {
       set_no(from.no());
     }
+  }
+  if (from._has_bits_[8 / 32] & (0xffu << (8 % 32))) {
     if (from.has_actiontype()) {
       set_actiontype(from.actiontype());
     }
@@ -7311,8 +7673,6 @@ void TicketBean::MergeFrom(const TicketBean& from) {
     if (from.has_protectperson()) {
       set_protectperson(from.protectperson());
     }
-  }
-  if (from._has_bits_[8 / 32] & (0xffu << (8 % 32))) {
     if (from.has_chargeperson()) {
       set_chargeperson(from.chargeperson());
     }
@@ -7321,6 +7681,9 @@ void TicketBean::MergeFrom(const TicketBean& from) {
     }
     if (from.has_endtime()) {
       set_endtime(from.endtime());
+    }
+    if (from.has_publishtime()) {
+      set_publishtime(from.publishtime());
     }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
@@ -7346,8 +7709,12 @@ bool TicketBean::IsInitialized() const {
 void TicketBean::Swap(TicketBean* other) {
   if (other != this) {
     std::swap(id_, other->id_);
-    std::swap(userid_, other->userid_);
+    std::swap(cuserid_, other->cuserid_);
+    std::swap(cusername_, other->cusername_);
+    std::swap(auserid_, other->auserid_);
+    std::swap(ausername_, other->ausername_);
     std::swap(missionid_, other->missionid_);
+    std::swap(missionname_, other->missionname_);
     std::swap(no_, other->no_);
     std::swap(actiontype_, other->actiontype_);
     std::swap(info_, other->info_);
@@ -7356,6 +7723,7 @@ void TicketBean::Swap(TicketBean* other) {
     std::swap(chargeperson_, other->chargeperson_);
     std::swap(starttime_, other->starttime_);
     std::swap(endtime_, other->endtime_);
+    std::swap(publishtime_, other->publishtime_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);
@@ -7367,6 +7735,350 @@ void TicketBean::Swap(TicketBean* other) {
   ::google::protobuf::Metadata metadata;
   metadata.descriptor = TicketBean_descriptor_;
   metadata.reflection = TicketBean_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int TicketActBean::kTicketidFieldNumber;
+const int TicketActBean::kOrderNumFieldNumber;
+const int TicketActBean::kSystemContentFieldNumber;
+const int TicketActBean::kContentFieldNumber;
+#endif  // !_MSC_VER
+
+TicketActBean::TicketActBean()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void TicketActBean::InitAsDefaultInstance() {
+}
+
+TicketActBean::TicketActBean(const TicketActBean& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void TicketActBean::SharedCtor() {
+  _cached_size_ = 0;
+  ticketid_ = 0u;
+  ordernum_ = 0u;
+  systemcontent_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  content_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+TicketActBean::~TicketActBean() {
+  SharedDtor();
+}
+
+void TicketActBean::SharedDtor() {
+  if (systemcontent_ != &::google::protobuf::internal::kEmptyString) {
+    delete systemcontent_;
+  }
+  if (content_ != &::google::protobuf::internal::kEmptyString) {
+    delete content_;
+  }
+  if (this != default_instance_) {
+  }
+}
+
+void TicketActBean::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* TicketActBean::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return TicketActBean_descriptor_;
+}
+
+const TicketActBean& TicketActBean::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_msgbean_2eproto();
+  return *default_instance_;
+}
+
+TicketActBean* TicketActBean::default_instance_ = NULL;
+
+TicketActBean* TicketActBean::New() const {
+  return new TicketActBean;
+}
+
+void TicketActBean::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    ticketid_ = 0u;
+    ordernum_ = 0u;
+    if (has_systemcontent()) {
+      if (systemcontent_ != &::google::protobuf::internal::kEmptyString) {
+        systemcontent_->clear();
+      }
+    }
+    if (has_content()) {
+      if (content_ != &::google::protobuf::internal::kEmptyString) {
+        content_->clear();
+      }
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool TicketActBean::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional uint32 Ticketid = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &ticketid_)));
+          set_has_ticketid();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(16)) goto parse_OrderNum;
+        break;
+      }
+
+      // optional uint32 OrderNum = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_OrderNum:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &ordernum_)));
+          set_has_ordernum();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(26)) goto parse_SystemContent;
+        break;
+      }
+
+      // optional bytes SystemContent = 3;
+      case 3: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_SystemContent:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_systemcontent()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(34)) goto parse_Content;
+        break;
+      }
+
+      // optional bytes Content = 4;
+      case 4: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_Content:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_content()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void TicketActBean::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional uint32 Ticketid = 1;
+  if (has_ticketid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->ticketid(), output);
+  }
+
+  // optional uint32 OrderNum = 2;
+  if (has_ordernum()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->ordernum(), output);
+  }
+
+  // optional bytes SystemContent = 3;
+  if (has_systemcontent()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      3, this->systemcontent(), output);
+  }
+
+  // optional bytes Content = 4;
+  if (has_content()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      4, this->content(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* TicketActBean::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional uint32 Ticketid = 1;
+  if (has_ticketid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->ticketid(), target);
+  }
+
+  // optional uint32 OrderNum = 2;
+  if (has_ordernum()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->ordernum(), target);
+  }
+
+  // optional bytes SystemContent = 3;
+  if (has_systemcontent()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        3, this->systemcontent(), target);
+  }
+
+  // optional bytes Content = 4;
+  if (has_content()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        4, this->content(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int TicketActBean::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional uint32 Ticketid = 1;
+    if (has_ticketid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->ticketid());
+    }
+
+    // optional uint32 OrderNum = 2;
+    if (has_ordernum()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->ordernum());
+    }
+
+    // optional bytes SystemContent = 3;
+    if (has_systemcontent()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->systemcontent());
+    }
+
+    // optional bytes Content = 4;
+    if (has_content()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->content());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void TicketActBean::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const TicketActBean* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const TicketActBean*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void TicketActBean::MergeFrom(const TicketActBean& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_ticketid()) {
+      set_ticketid(from.ticketid());
+    }
+    if (from.has_ordernum()) {
+      set_ordernum(from.ordernum());
+    }
+    if (from.has_systemcontent()) {
+      set_systemcontent(from.systemcontent());
+    }
+    if (from.has_content()) {
+      set_content(from.content());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void TicketActBean::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TicketActBean::CopyFrom(const TicketActBean& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TicketActBean::IsInitialized() const {
+
+  return true;
+}
+
+void TicketActBean::Swap(TicketActBean* other) {
+  if (other != this) {
+    std::swap(ticketid_, other->ticketid_);
+    std::swap(ordernum_, other->ordernum_);
+    std::swap(systemcontent_, other->systemcontent_);
+    std::swap(content_, other->content_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata TicketActBean::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TicketActBean_descriptor_;
+  metadata.reflection = TicketActBean_reflection_;
   return metadata;
 }
 

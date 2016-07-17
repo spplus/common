@@ -86,6 +86,8 @@ message EventQueryBean
 	optional bytes stationCim	= 3;
     optional bytes stationName  = 4;
 	optional bytes unitType 	= 5;		// 元件设备类型
+	optional bytes eventvalue	= 6;
+    optional bytes eventtime    = 7;
 }
 
 // 元件状态信息
@@ -173,18 +175,30 @@ message TicketMsionBean
 message TicketBean
 { 
     optional 	uint32 	Id  		= 1;
-    optional 	uint32 	UserId		= 2;
-    optional 	uint32 	MissionId	= 3;
-    optional 	bytes 	No			= 4;
-    optional	bytes	ActionType	= 5;
-    optional	bytes	info		= 6;
-    optional	bytes	ActionPerson	= 7;
-    optional	bytes	ProtectPerson	= 8;
-    optional	bytes	ChargePerson	= 9;
-    optional	bytes	StartTime	= 10;
-    optional	bytes	EndTime		= 11;
+	optional 	uint32 	CuserId		= 2;
+	optional 	bytes 	CuserName	= 3;
+    optional 	uint32 	AuserId		= 4;
+	optional 	bytes 	AuserName	= 5;
+    optional 	uint32 	MissionId	= 6;
+	optional 	bytes 	MissionName	= 7;
+    optional 	bytes 	No			= 8;
+    optional	bytes	ActionType	= 9;
+    optional	bytes	info		= 10;
+    optional	bytes	ActionPerson	= 11;
+    optional	bytes	ProtectPerson	= 12;
+    optional	bytes	ChargePerson	= 13;
+    optional	bytes	StartTime	= 14;
+    optional	bytes	EndTime		= 15;
+	optional	bytes	PublishTime	= 16;
 }
 
-
+// 操作票明细
+message TicketActBean
+{ 
+    optional 	uint32 	Ticketid  		= 1;
+    optional 	uint32 	OrderNum		= 2;
+	optional 	bytes 	SystemContent	= 3;
+	optional 	bytes 	Content			= 4;
+}
 
 

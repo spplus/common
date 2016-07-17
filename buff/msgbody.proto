@@ -373,6 +373,7 @@ message PowerSetMsg
 		
 		optional bytes	stationCim	= 1;		// 站点cim
 		optional bytes	unitCim		= 2;		// 元件cim
+		optional uint32	saveid		= 3;		// 存档ID
 						
   	}
   	//响应体定义
@@ -446,7 +447,8 @@ message TicketMsionListMsg
 { 
 	//请求体定义
 	message Request {
-		optional uint32	userid		= 1;		// 当前用户ID					
+		optional uint32	userid		= 1;		// 当前用户ID	
+		optional uint32	roleid		= 2;		// 当前用户角色ID
   	}
   	//响应体定义
 	message Response {
@@ -478,7 +480,8 @@ message TicketListMsg
 { 
 	//请求体定义
 	message Request {
-		optional bytes	reqdate	= 1;		// 请求日期，可以不填					
+		optional uint32	reqtype	= 1;		//请求类型
+		optional uint32	reqid	= 2;		//请求查询需要的ID					
   	}
   	//响应体定义
 	message Response {
@@ -490,9 +493,38 @@ message TicketListMsg
   	optional Response 	response 	= 2;
 }
 
+//操作票明细列表管理
+message TicketActMgrMsg
+{ 
+	//请求体定义
+	message Request {
+		optional uint32	reqtype	= 1;					//请求类型	
+		repeated TicketActBean	ticketactlist	= 2;	//请求写入的操作票明细列表
+  	}
+  	//响应体定义
+	message Response {
+		optional uint32	rescode		= 1;	// 0 成功，其他失败
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+  
+}
 
-
-
+//操作票明细列表
+message TicketActListMsg
+{ 
+	//请求体定义
+	message Request {
+		optional uint32	reqid	= 1;		//请求的操作票ID					
+  	}
+  	//响应体定义
+	message Response {
+		optional uint32			rescode		= 1;	// 0 成功，其他失败
+		repeated TicketActBean	ticketactlist	= 2;	// 操作票列表
+  	}
+	optional Request 	request 	= 1;
+  	optional Response 	response 	= 2;
+}
 
 
 

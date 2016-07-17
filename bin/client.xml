@@ -1,6 +1,7 @@
 <config>
  <server addr="127.0.0.1" port="45211"/>
- <ftp addr="192.168.0.3" port="21" username="" pwd="" dir="pub"/>
+ <ftp addr="127.0.0.1" port="21" username="" pwd="" dir="pub"/>
  <title name="调控一体化系统" />
- <svgroot path="F:/work/Am/common/Svg" />
+ <company name="XXX供电公司" />
+ <svgroot path="F:\work\AM\common\kedong" />
 </config>

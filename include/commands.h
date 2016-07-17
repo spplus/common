@@ -159,8 +159,20 @@ enum eDeviceType
 // 操作票任务修改操作
 #define				CMD_TICKETMS_MODIFY			1404
 
+// 操作票操作
+#define				CMD_TICKET_LIST				1405
+
+// 操作票创建
+#define				CMD_TICKET_CREATE			1406
+
+// 操作票查询
+#define				CMD_TICKET_QUERY			1407
+
+// 操作票提交
+#define				CMD_TICKET_COMMIT			1408
+
 // 具体角色用户列表
-#define				CMD_ROLE_USER_LIST			1405
+#define				CMD_ROLE_USER_LIST			1409
 
 
 //厂站配置管理
