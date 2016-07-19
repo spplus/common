@@ -33,6 +33,15 @@ enum eDeviceType
 	eDEFAULT				// 缺省类型
 };
 
+enum eCheckResult
+{
+	eRuleNotRecursion,		// 不进行递归	
+	eRuleRecursion,			// 递归遍历
+	eRuleExit,						// 退出逻辑
+	eRuleBreak,						// 跳过该集合剩余的节点
+	eRuleTriggered		// 规则被触发
+};
+
 // 规则定义
 #define				R_CHECK_1					1
 #define				R_CHECK_2					2
