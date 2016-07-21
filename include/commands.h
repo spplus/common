@@ -39,7 +39,8 @@ enum eCheckResult
 	eRuleRecursion,			// 递归遍历
 	eRuleExit,						// 退出逻辑
 	eRuleBreak,						// 跳过该集合剩余的节点
-	eRuleTriggered		// 规则被触发
+	eRuleTriggered,		// 规则被触发
+	eRuleUser				// 自定义返回值，根据业务需要实现逻辑
 };
 
 // 规则定义
