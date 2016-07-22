@@ -498,8 +498,12 @@ message TicketActMgrMsg
 { 
 	//请求体定义
 	message Request {
-		optional uint32	reqtype	= 1;					//请求类型	
-		repeated TicketActBean	ticketactlist	= 2;	//请求写入的操作票明细列表
+		optional uint32	reqUid	= 1;					//请求用户id	
+		optional uint32	reqMid	= 2;					//请求任务ID
+		optional bytes	startT	= 3;					//操作开始时间
+		optional bytes	endT	= 4;					//操作结束数据
+		optional bytes	mgrsql	= 5;					//操作票任务增加sql语句
+		repeated TicketActBean	ticketactlist	= 6;	//请求写入的操作票明细列表
   	}
   	//响应体定义
 	message Response {

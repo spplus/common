@@ -1596,8 +1596,12 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(TicketActMgrMsg));
   TicketActMgrMsg_Request_descriptor_ = TicketActMgrMsg_descriptor_->nested_type(0);
-  static const int TicketActMgrMsg_Request_offsets_[2] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActMgrMsg_Request, reqtype_),
+  static const int TicketActMgrMsg_Request_offsets_[6] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActMgrMsg_Request, requid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActMgrMsg_Request, reqmid_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActMgrMsg_Request, startt_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActMgrMsg_Request, endt_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActMgrMsg_Request, mgrsql_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TicketActMgrMsg_Request, ticketactlist_),
   };
   TicketActMgrMsg_Request_reflection_ =
@@ -2214,19 +2218,21 @@ void protobuf_AddDesc_msgbody_2eproto() {
     "onse\032)\n\007Request\022\017\n\007reqtype\030\001 \001(\r\022\r\n\005reqi"
     "d\030\002 \001(\r\032L\n\010Response\022\017\n\007rescode\030\001 \001(\r\022/\n\n"
     "ticketlist\030\002 \003(\0132\033.com.spplus.buff.Ticke"
-    "tBean\"\371\001\n\017TicketActMgrMsg\0229\n\007request\030\001 \001"
+    "tBean\"\267\002\n\017TicketActMgrMsg\0229\n\007request\030\001 \001"
     "(\0132(.com.spplus.buff.TicketActMgrMsg.Req"
     "uest\022;\n\010response\030\002 \001(\0132).com.spplus.buff"
-    ".TicketActMgrMsg.Response\032Q\n\007Request\022\017\n\007"
-    "reqtype\030\001 \001(\r\0225\n\rticketactlist\030\002 \003(\0132\036.c"
-    "om.spplus.buff.TicketActBean\032\033\n\010Response"
-    "\022\017\n\007rescode\030\001 \001(\r\"\372\001\n\020TicketActListMsg\022:"
-    "\n\007request\030\001 \001(\0132).com.spplus.buff.Ticket"
-    "ActListMsg.Request\022<\n\010response\030\002 \001(\0132*.c"
-    "om.spplus.buff.TicketActListMsg.Response"
-    "\032\030\n\007Request\022\r\n\005reqid\030\001 \001(\r\032R\n\010Response\022\017"
-    "\n\007rescode\030\001 \001(\r\0225\n\rticketactlist\030\002 \003(\0132\036"
-    ".com.spplus.buff.TicketActBean", 7150);
+    ".TicketActMgrMsg.Response\032\216\001\n\007Request\022\016\n"
+    "\006reqUid\030\001 \001(\r\022\016\n\006reqMid\030\002 \001(\r\022\016\n\006startT\030"
+    "\003 \001(\014\022\014\n\004endT\030\004 \001(\014\022\016\n\006mgrsql\030\005 \001(\014\0225\n\rt"
+    "icketactlist\030\006 \003(\0132\036.com.spplus.buff.Tic"
+    "ketActBean\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r\""
+    "\372\001\n\020TicketActListMsg\022:\n\007request\030\001 \001(\0132)."
+    "com.spplus.buff.TicketActListMsg.Request"
+    "\022<\n\010response\030\002 \001(\0132*.com.spplus.buff.Tic"
+    "ketActListMsg.Response\032\030\n\007Request\022\r\n\005req"
+    "id\030\001 \001(\r\032R\n\010Response\022\017\n\007rescode\030\001 \001(\r\0225\n"
+    "\rticketactlist\030\002 \003(\0132\036.com.spplus.buff.T"
+    "icketActBean", 7212);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbody.proto", &protobuf_RegisterTypes);
   UserLoginMsg::default_instance_ = new UserLoginMsg();
@@ -22621,7 +22627,11 @@ void TicketListMsg::Swap(TicketListMsg* other) {
 // ===================================================================
 
 #ifndef _MSC_VER
-const int TicketActMgrMsg_Request::kReqtypeFieldNumber;
+const int TicketActMgrMsg_Request::kReqUidFieldNumber;
+const int TicketActMgrMsg_Request::kReqMidFieldNumber;
+const int TicketActMgrMsg_Request::kStartTFieldNumber;
+const int TicketActMgrMsg_Request::kEndTFieldNumber;
+const int TicketActMgrMsg_Request::kMgrsqlFieldNumber;
 const int TicketActMgrMsg_Request::kTicketactlistFieldNumber;
 #endif  // !_MSC_VER
 
@@ -22641,7 +22651,11 @@ TicketActMgrMsg_Request::TicketActMgrMsg_Request(const TicketActMgrMsg_Request& 
 
 void TicketActMgrMsg_Request::SharedCtor() {
   _cached_size_ = 0;
-  reqtype_ = 0u;
+  requid_ = 0u;
+  reqmid_ = 0u;
+  startt_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  endt_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  mgrsql_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -22650,6 +22664,15 @@ TicketActMgrMsg_Request::~TicketActMgrMsg_Request() {
 }
 
 void TicketActMgrMsg_Request::SharedDtor() {
+  if (startt_ != &::google::protobuf::internal::kEmptyString) {
+    delete startt_;
+  }
+  if (endt_ != &::google::protobuf::internal::kEmptyString) {
+    delete endt_;
+  }
+  if (mgrsql_ != &::google::protobuf::internal::kEmptyString) {
+    delete mgrsql_;
+  }
   if (this != default_instance_) {
   }
 }
@@ -22677,7 +22700,23 @@ TicketActMgrMsg_Request* TicketActMgrMsg_Request::New() const {
 
 void TicketActMgrMsg_Request::Clear() {
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    reqtype_ = 0u;
+    requid_ = 0u;
+    reqmid_ = 0u;
+    if (has_startt()) {
+      if (startt_ != &::google::protobuf::internal::kEmptyString) {
+        startt_->clear();
+      }
+    }
+    if (has_endt()) {
+      if (endt_ != &::google::protobuf::internal::kEmptyString) {
+        endt_->clear();
+      }
+    }
+    if (has_mgrsql()) {
+      if (mgrsql_ != &::google::protobuf::internal::kEmptyString) {
+        mgrsql_->clear();
+      }
+    }
   }
   ticketactlist_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -22690,23 +22729,81 @@ bool TicketActMgrMsg_Request::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   while ((tag = input->ReadTag()) != 0) {
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional uint32 reqtype = 1;
+      // optional uint32 reqUid = 1;
       case 1: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &reqtype_)));
-          set_has_reqtype();
+                 input, &requid_)));
+          set_has_requid();
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(18)) goto parse_ticketactlist;
+        if (input->ExpectTag(16)) goto parse_reqMid;
         break;
       }
 
-      // repeated .com.spplus.buff.TicketActBean ticketactlist = 2;
+      // optional uint32 reqMid = 2;
       case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_reqMid:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &reqmid_)));
+          set_has_reqmid();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(26)) goto parse_startT;
+        break;
+      }
+
+      // optional bytes startT = 3;
+      case 3: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_startT:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_startt()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(34)) goto parse_endT;
+        break;
+      }
+
+      // optional bytes endT = 4;
+      case 4: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_endT:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_endt()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(42)) goto parse_mgrsql;
+        break;
+      }
+
+      // optional bytes mgrsql = 5;
+      case 5: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_mgrsql:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_mgrsql()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(50)) goto parse_ticketactlist;
+        break;
+      }
+
+      // repeated .com.spplus.buff.TicketActBean ticketactlist = 6;
+      case 6: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_ticketactlist:
@@ -22715,7 +22812,7 @@ bool TicketActMgrMsg_Request::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(18)) goto parse_ticketactlist;
+        if (input->ExpectTag(50)) goto parse_ticketactlist;
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -22738,15 +22835,38 @@ bool TicketActMgrMsg_Request::MergePartialFromCodedStream(
 
 void TicketActMgrMsg_Request::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // optional uint32 reqtype = 1;
-  if (has_reqtype()) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->reqtype(), output);
+  // optional uint32 reqUid = 1;
+  if (has_requid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->requid(), output);
   }
 
-  // repeated .com.spplus.buff.TicketActBean ticketactlist = 2;
+  // optional uint32 reqMid = 2;
+  if (has_reqmid()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->reqmid(), output);
+  }
+
+  // optional bytes startT = 3;
+  if (has_startt()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      3, this->startt(), output);
+  }
+
+  // optional bytes endT = 4;
+  if (has_endt()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      4, this->endt(), output);
+  }
+
+  // optional bytes mgrsql = 5;
+  if (has_mgrsql()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      5, this->mgrsql(), output);
+  }
+
+  // repeated .com.spplus.buff.TicketActBean ticketactlist = 6;
   for (int i = 0; i < this->ticketactlist_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->ticketactlist(i), output);
+      6, this->ticketactlist(i), output);
   }
 
   if (!unknown_fields().empty()) {
@@ -22757,16 +22877,42 @@ void TicketActMgrMsg_Request::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* TicketActMgrMsg_Request::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // optional uint32 reqtype = 1;
-  if (has_reqtype()) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->reqtype(), target);
+  // optional uint32 reqUid = 1;
+  if (has_requid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->requid(), target);
   }
 
-  // repeated .com.spplus.buff.TicketActBean ticketactlist = 2;
+  // optional uint32 reqMid = 2;
+  if (has_reqmid()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->reqmid(), target);
+  }
+
+  // optional bytes startT = 3;
+  if (has_startt()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        3, this->startt(), target);
+  }
+
+  // optional bytes endT = 4;
+  if (has_endt()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        4, this->endt(), target);
+  }
+
+  // optional bytes mgrsql = 5;
+  if (has_mgrsql()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        5, this->mgrsql(), target);
+  }
+
+  // repeated .com.spplus.buff.TicketActBean ticketactlist = 6;
   for (int i = 0; i < this->ticketactlist_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        2, this->ticketactlist(i), target);
+        6, this->ticketactlist(i), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -22780,15 +22926,43 @@ int TicketActMgrMsg_Request::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional uint32 reqtype = 1;
-    if (has_reqtype()) {
+    // optional uint32 reqUid = 1;
+    if (has_requid()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
-          this->reqtype());
+          this->requid());
+    }
+
+    // optional uint32 reqMid = 2;
+    if (has_reqmid()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->reqmid());
+    }
+
+    // optional bytes startT = 3;
+    if (has_startt()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->startt());
+    }
+
+    // optional bytes endT = 4;
+    if (has_endt()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->endt());
+    }
+
+    // optional bytes mgrsql = 5;
+    if (has_mgrsql()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->mgrsql());
     }
 
   }
-  // repeated .com.spplus.buff.TicketActBean ticketactlist = 2;
+  // repeated .com.spplus.buff.TicketActBean ticketactlist = 6;
   total_size += 1 * this->ticketactlist_size();
   for (int i = 0; i < this->ticketactlist_size(); i++) {
     total_size +=
@@ -22823,8 +22997,20 @@ void TicketActMgrMsg_Request::MergeFrom(const TicketActMgrMsg_Request& from) {
   GOOGLE_CHECK_NE(&from, this);
   ticketactlist_.MergeFrom(from.ticketactlist_);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_reqtype()) {
-      set_reqtype(from.reqtype());
+    if (from.has_requid()) {
+      set_requid(from.requid());
+    }
+    if (from.has_reqmid()) {
+      set_reqmid(from.reqmid());
+    }
+    if (from.has_startt()) {
+      set_startt(from.startt());
+    }
+    if (from.has_endt()) {
+      set_endt(from.endt());
+    }
+    if (from.has_mgrsql()) {
+      set_mgrsql(from.mgrsql());
     }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
@@ -22849,7 +23035,11 @@ bool TicketActMgrMsg_Request::IsInitialized() const {
 
 void TicketActMgrMsg_Request::Swap(TicketActMgrMsg_Request* other) {
   if (other != this) {
-    std::swap(reqtype_, other->reqtype_);
+    std::swap(requid_, other->requid_);
+    std::swap(reqmid_, other->reqmid_);
+    std::swap(startt_, other->startt_);
+    std::swap(endt_, other->endt_);
+    std::swap(mgrsql_, other->mgrsql_);
     ticketactlist_.Swap(&other->ticketactlist_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);

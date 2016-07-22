@@ -7942,17 +7942,60 @@ class TicketActMgrMsg_Request : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // optional uint32 reqtype = 1;
-  inline bool has_reqtype() const;
-  inline void clear_reqtype();
-  static const int kReqtypeFieldNumber = 1;
-  inline ::google::protobuf::uint32 reqtype() const;
-  inline void set_reqtype(::google::protobuf::uint32 value);
+  // optional uint32 reqUid = 1;
+  inline bool has_requid() const;
+  inline void clear_requid();
+  static const int kReqUidFieldNumber = 1;
+  inline ::google::protobuf::uint32 requid() const;
+  inline void set_requid(::google::protobuf::uint32 value);
 
-  // repeated .com.spplus.buff.TicketActBean ticketactlist = 2;
+  // optional uint32 reqMid = 2;
+  inline bool has_reqmid() const;
+  inline void clear_reqmid();
+  static const int kReqMidFieldNumber = 2;
+  inline ::google::protobuf::uint32 reqmid() const;
+  inline void set_reqmid(::google::protobuf::uint32 value);
+
+  // optional bytes startT = 3;
+  inline bool has_startt() const;
+  inline void clear_startt();
+  static const int kStartTFieldNumber = 3;
+  inline const ::std::string& startt() const;
+  inline void set_startt(const ::std::string& value);
+  inline void set_startt(const char* value);
+  inline void set_startt(const void* value, size_t size);
+  inline ::std::string* mutable_startt();
+  inline ::std::string* release_startt();
+  inline void set_allocated_startt(::std::string* startt);
+
+  // optional bytes endT = 4;
+  inline bool has_endt() const;
+  inline void clear_endt();
+  static const int kEndTFieldNumber = 4;
+  inline const ::std::string& endt() const;
+  inline void set_endt(const ::std::string& value);
+  inline void set_endt(const char* value);
+  inline void set_endt(const void* value, size_t size);
+  inline ::std::string* mutable_endt();
+  inline ::std::string* release_endt();
+  inline void set_allocated_endt(::std::string* endt);
+
+  // optional bytes mgrsql = 5;
+  inline bool has_mgrsql() const;
+  inline void clear_mgrsql();
+  static const int kMgrsqlFieldNumber = 5;
+  inline const ::std::string& mgrsql() const;
+  inline void set_mgrsql(const ::std::string& value);
+  inline void set_mgrsql(const char* value);
+  inline void set_mgrsql(const void* value, size_t size);
+  inline ::std::string* mutable_mgrsql();
+  inline ::std::string* release_mgrsql();
+  inline void set_allocated_mgrsql(::std::string* mgrsql);
+
+  // repeated .com.spplus.buff.TicketActBean ticketactlist = 6;
   inline int ticketactlist_size() const;
   inline void clear_ticketactlist();
-  static const int kTicketactlistFieldNumber = 2;
+  static const int kTicketactlistFieldNumber = 6;
   inline const ::com::spplus::buff::TicketActBean& ticketactlist(int index) const;
   inline ::com::spplus::buff::TicketActBean* mutable_ticketactlist(int index);
   inline ::com::spplus::buff::TicketActBean* add_ticketactlist();
@@ -7963,16 +8006,28 @@ class TicketActMgrMsg_Request : public ::google::protobuf::Message {
 
   // @@protoc_insertion_point(class_scope:com.spplus.buff.TicketActMgrMsg.Request)
  private:
-  inline void set_has_reqtype();
-  inline void clear_has_reqtype();
+  inline void set_has_requid();
+  inline void clear_has_requid();
+  inline void set_has_reqmid();
+  inline void clear_has_reqmid();
+  inline void set_has_startt();
+  inline void clear_has_startt();
+  inline void set_has_endt();
+  inline void clear_has_endt();
+  inline void set_has_mgrsql();
+  inline void clear_has_mgrsql();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
+  ::google::protobuf::uint32 requid_;
+  ::google::protobuf::uint32 reqmid_;
+  ::std::string* startt_;
+  ::std::string* endt_;
+  ::std::string* mgrsql_;
   ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::TicketActBean > ticketactlist_;
-  ::google::protobuf::uint32 reqtype_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -14531,29 +14586,261 @@ inline void TicketListMsg::set_allocated_response(::com::spplus::buff::TicketLis
 
 // TicketActMgrMsg_Request
 
-// optional uint32 reqtype = 1;
-inline bool TicketActMgrMsg_Request::has_reqtype() const {
+// optional uint32 reqUid = 1;
+inline bool TicketActMgrMsg_Request::has_requid() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
-inline void TicketActMgrMsg_Request::set_has_reqtype() {
+inline void TicketActMgrMsg_Request::set_has_requid() {
   _has_bits_[0] |= 0x00000001u;
 }
-inline void TicketActMgrMsg_Request::clear_has_reqtype() {
+inline void TicketActMgrMsg_Request::clear_has_requid() {
   _has_bits_[0] &= ~0x00000001u;
 }
-inline void TicketActMgrMsg_Request::clear_reqtype() {
-  reqtype_ = 0u;
-  clear_has_reqtype();
+inline void TicketActMgrMsg_Request::clear_requid() {
+  requid_ = 0u;
+  clear_has_requid();
 }
-inline ::google::protobuf::uint32 TicketActMgrMsg_Request::reqtype() const {
-  return reqtype_;
+inline ::google::protobuf::uint32 TicketActMgrMsg_Request::requid() const {
+  return requid_;
 }
-inline void TicketActMgrMsg_Request::set_reqtype(::google::protobuf::uint32 value) {
-  set_has_reqtype();
-  reqtype_ = value;
+inline void TicketActMgrMsg_Request::set_requid(::google::protobuf::uint32 value) {
+  set_has_requid();
+  requid_ = value;
 }
 
-// repeated .com.spplus.buff.TicketActBean ticketactlist = 2;
+// optional uint32 reqMid = 2;
+inline bool TicketActMgrMsg_Request::has_reqmid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TicketActMgrMsg_Request::set_has_reqmid() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void TicketActMgrMsg_Request::clear_has_reqmid() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void TicketActMgrMsg_Request::clear_reqmid() {
+  reqmid_ = 0u;
+  clear_has_reqmid();
+}
+inline ::google::protobuf::uint32 TicketActMgrMsg_Request::reqmid() const {
+  return reqmid_;
+}
+inline void TicketActMgrMsg_Request::set_reqmid(::google::protobuf::uint32 value) {
+  set_has_reqmid();
+  reqmid_ = value;
+}
+
+// optional bytes startT = 3;
+inline bool TicketActMgrMsg_Request::has_startt() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void TicketActMgrMsg_Request::set_has_startt() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void TicketActMgrMsg_Request::clear_has_startt() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void TicketActMgrMsg_Request::clear_startt() {
+  if (startt_ != &::google::protobuf::internal::kEmptyString) {
+    startt_->clear();
+  }
+  clear_has_startt();
+}
+inline const ::std::string& TicketActMgrMsg_Request::startt() const {
+  return *startt_;
+}
+inline void TicketActMgrMsg_Request::set_startt(const ::std::string& value) {
+  set_has_startt();
+  if (startt_ == &::google::protobuf::internal::kEmptyString) {
+    startt_ = new ::std::string;
+  }
+  startt_->assign(value);
+}
+inline void TicketActMgrMsg_Request::set_startt(const char* value) {
+  set_has_startt();
+  if (startt_ == &::google::protobuf::internal::kEmptyString) {
+    startt_ = new ::std::string;
+  }
+  startt_->assign(value);
+}
+inline void TicketActMgrMsg_Request::set_startt(const void* value, size_t size) {
+  set_has_startt();
+  if (startt_ == &::google::protobuf::internal::kEmptyString) {
+    startt_ = new ::std::string;
+  }
+  startt_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketActMgrMsg_Request::mutable_startt() {
+  set_has_startt();
+  if (startt_ == &::google::protobuf::internal::kEmptyString) {
+    startt_ = new ::std::string;
+  }
+  return startt_;
+}
+inline ::std::string* TicketActMgrMsg_Request::release_startt() {
+  clear_has_startt();
+  if (startt_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = startt_;
+    startt_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketActMgrMsg_Request::set_allocated_startt(::std::string* startt) {
+  if (startt_ != &::google::protobuf::internal::kEmptyString) {
+    delete startt_;
+  }
+  if (startt) {
+    set_has_startt();
+    startt_ = startt;
+  } else {
+    clear_has_startt();
+    startt_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes endT = 4;
+inline bool TicketActMgrMsg_Request::has_endt() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void TicketActMgrMsg_Request::set_has_endt() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void TicketActMgrMsg_Request::clear_has_endt() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void TicketActMgrMsg_Request::clear_endt() {
+  if (endt_ != &::google::protobuf::internal::kEmptyString) {
+    endt_->clear();
+  }
+  clear_has_endt();
+}
+inline const ::std::string& TicketActMgrMsg_Request::endt() const {
+  return *endt_;
+}
+inline void TicketActMgrMsg_Request::set_endt(const ::std::string& value) {
+  set_has_endt();
+  if (endt_ == &::google::protobuf::internal::kEmptyString) {
+    endt_ = new ::std::string;
+  }
+  endt_->assign(value);
+}
+inline void TicketActMgrMsg_Request::set_endt(const char* value) {
+  set_has_endt();
+  if (endt_ == &::google::protobuf::internal::kEmptyString) {
+    endt_ = new ::std::string;
+  }
+  endt_->assign(value);
+}
+inline void TicketActMgrMsg_Request::set_endt(const void* value, size_t size) {
+  set_has_endt();
+  if (endt_ == &::google::protobuf::internal::kEmptyString) {
+    endt_ = new ::std::string;
+  }
+  endt_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketActMgrMsg_Request::mutable_endt() {
+  set_has_endt();
+  if (endt_ == &::google::protobuf::internal::kEmptyString) {
+    endt_ = new ::std::string;
+  }
+  return endt_;
+}
+inline ::std::string* TicketActMgrMsg_Request::release_endt() {
+  clear_has_endt();
+  if (endt_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = endt_;
+    endt_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketActMgrMsg_Request::set_allocated_endt(::std::string* endt) {
+  if (endt_ != &::google::protobuf::internal::kEmptyString) {
+    delete endt_;
+  }
+  if (endt) {
+    set_has_endt();
+    endt_ = endt;
+  } else {
+    clear_has_endt();
+    endt_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// optional bytes mgrsql = 5;
+inline bool TicketActMgrMsg_Request::has_mgrsql() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void TicketActMgrMsg_Request::set_has_mgrsql() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void TicketActMgrMsg_Request::clear_has_mgrsql() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void TicketActMgrMsg_Request::clear_mgrsql() {
+  if (mgrsql_ != &::google::protobuf::internal::kEmptyString) {
+    mgrsql_->clear();
+  }
+  clear_has_mgrsql();
+}
+inline const ::std::string& TicketActMgrMsg_Request::mgrsql() const {
+  return *mgrsql_;
+}
+inline void TicketActMgrMsg_Request::set_mgrsql(const ::std::string& value) {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  mgrsql_->assign(value);
+}
+inline void TicketActMgrMsg_Request::set_mgrsql(const char* value) {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  mgrsql_->assign(value);
+}
+inline void TicketActMgrMsg_Request::set_mgrsql(const void* value, size_t size) {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  mgrsql_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* TicketActMgrMsg_Request::mutable_mgrsql() {
+  set_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    mgrsql_ = new ::std::string;
+  }
+  return mgrsql_;
+}
+inline ::std::string* TicketActMgrMsg_Request::release_mgrsql() {
+  clear_has_mgrsql();
+  if (mgrsql_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = mgrsql_;
+    mgrsql_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void TicketActMgrMsg_Request::set_allocated_mgrsql(::std::string* mgrsql) {
+  if (mgrsql_ != &::google::protobuf::internal::kEmptyString) {
+    delete mgrsql_;
+  }
+  if (mgrsql) {
+    set_has_mgrsql();
+    mgrsql_ = mgrsql;
+  } else {
+    clear_has_mgrsql();
+    mgrsql_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// repeated .com.spplus.buff.TicketActBean ticketactlist = 6;
 inline int TicketActMgrMsg_Request::ticketactlist_size() const {
   return ticketactlist_.size();
 }
