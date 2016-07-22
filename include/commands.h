@@ -225,5 +225,8 @@ enum eCheckResult
 // 触发规则
 #define				CMD_TRIGGER_RULES				2012
 
+// 服务器繁忙
+#define				CMD_SERVER_BUSY					2013
+
 #endif
 
