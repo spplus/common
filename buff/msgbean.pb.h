@@ -1358,6 +1358,13 @@ class StateBean : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 isground() const;
   inline void set_isground(::google::protobuf::uint32 value);
 
+  // optional uint32 isOp = 10;
+  inline bool has_isop() const;
+  inline void clear_isop();
+  static const int kIsOpFieldNumber = 10;
+  inline ::google::protobuf::uint32 isop() const;
+  inline void set_isop(::google::protobuf::uint32 value);
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.StateBean)
  private:
   inline void set_has_cimid();
@@ -1378,6 +1385,8 @@ class StateBean : public ::google::protobuf::Message {
   inline void clear_has_ispower();
   inline void set_has_isground();
   inline void clear_has_isground();
+  inline void set_has_isop();
+  inline void clear_has_isop();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
@@ -1390,9 +1399,10 @@ class StateBean : public ::google::protobuf::Message {
   ::std::string* stationcim_;
   ::google::protobuf::uint32 ispower_;
   ::google::protobuf::uint32 isground_;
+  ::google::protobuf::uint32 isop_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(9 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(10 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbean_2eproto();
   friend void protobuf_AssignDesc_msgbean_2eproto();
@@ -5786,6 +5796,28 @@ inline ::google::protobuf::uint32 StateBean::isground() const {
 inline void StateBean::set_isground(::google::protobuf::uint32 value) {
   set_has_isground();
   isground_ = value;
+}
+
+// optional uint32 isOp = 10;
+inline bool StateBean::has_isop() const {
+  return (_has_bits_[0] & 0x00000200u) != 0;
+}
+inline void StateBean::set_has_isop() {
+  _has_bits_[0] |= 0x00000200u;
+}
+inline void StateBean::clear_has_isop() {
+  _has_bits_[0] &= ~0x00000200u;
+}
+inline void StateBean::clear_isop() {
+  isop_ = 0u;
+  clear_has_isop();
+}
+inline ::google::protobuf::uint32 StateBean::isop() const {
+  return isop_;
+}
+inline void StateBean::set_isop(::google::protobuf::uint32 value) {
+  set_has_isop();
+  isop_ = value;
 }
 
 // -------------------------------------------------------------------

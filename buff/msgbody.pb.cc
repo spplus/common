@@ -1226,12 +1226,13 @@ void protobuf_AssignDesc_msgbody_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(OprationMsg_Request));
   OprationMsg_Response_descriptor_ = OprationMsg_descriptor_->nested_type(1);
-  static const int OprationMsg_Response_offsets_[5] = {
+  static const int OprationMsg_Response_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Response, rescode_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Response, resmsg_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Response, devstate_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Response, rulelist_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Response, optype_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OprationMsg_Response, oplist_),
   };
   OprationMsg_Response_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -2165,74 +2166,75 @@ void protobuf_AddDesc_msgbody_2eproto() {
     "spplus.buff.TagMsg.Response\0328\n\007Request\022\016"
     "\n\006saveId\030\001 \001(\r\022\014\n\004type\030\002 \001(\r\022\017\n\007unitCim\030"
     "\003 \001(\014\032+\n\010Response\022\017\n\007rescode\030\001 \001(\r\022\016\n\006re"
-    "smsg\030\002 \001(\014\"\243\003\n\013OprationMsg\0225\n\007request\030\001 "
+    "smsg\030\002 \001(\014\"\317\003\n\013OprationMsg\0225\n\007request\030\001 "
     "\001(\0132$.com.spplus.buff.OprationMsg.Reques"
     "t\0227\n\010response\030\002 \001(\0132%.com.spplus.buff.Op"
     "rationMsg.Response\032\212\001\n\007Request\022\016\n\006saveId"
     "\030\001 \001(\r\022\014\n\004type\030\002 \001(\r\022\017\n\007unitCim\030\003 \001(\014\022\017\n"
     "\007ischeck\030\004 \001(\010\022\020\n\010unittype\030\005 \001(\r\022-\n\topde"
     "vlist\030\006 \003(\0132\032.com.spplus.buff.StateBean\032"
-    "\226\001\n\010Response\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resmsg\030"
+    "\302\001\n\010Response\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resmsg\030"
     "\002 \001(\014\022,\n\010devState\030\003 \003(\0132\032.com.spplus.buf"
     "f.StateBean\022+\n\010ruleList\030\004 \003(\0132\031.com.sppl"
-    "us.buff.RuleBean\022\016\n\006optype\030\005 \001(\r\"\352\001\n\013Pow"
-    "erSetMsg\0225\n\007request\030\001 \001(\0132$.com.spplus.b"
-    "uff.PowerSetMsg.Request\0227\n\010response\030\002 \001("
-    "\0132%.com.spplus.buff.PowerSetMsg.Response"
-    "\032>\n\007Request\022\022\n\nstationCim\030\001 \001(\014\022\017\n\007unitC"
-    "im\030\002 \001(\014\022\016\n\006saveid\030\003 \001(\r\032+\n\010Response\022\017\n\007"
-    "rescode\030\001 \001(\r\022\016\n\006resmsg\030\002 \001(\014\"\363\001\n\nLineSe"
-    "tMsg\0224\n\007request\030\001 \001(\0132#.com.spplus.buff."
-    "LineSetMsg.Request\0226\n\010response\030\002 \001(\0132$.c"
-    "om.spplus.buff.LineSetMsg.Response\032J\n\007Re"
-    "quest\022\017\n\007unitCim\030\001 \001(\014\022\025\n\rstationOneCim\030"
-    "\002 \001(\014\022\027\n\017stationOtherCim\030\003 \001(\014\032+\n\010Respon"
-    "se\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resmsg\030\002 \001(\014\"\346\001\n\r"
-    "SavingListMsg\0227\n\007request\030\001 \001(\0132&.com.spp"
-    "lus.buff.SavingListMsg.Request\0229\n\010respon"
-    "se\030\002 \001(\0132\'.com.spplus.buff.SavingListMsg"
-    ".Response\032\025\n\007Request\022\n\n\002id\030\001 \001(\014\032J\n\010Resp"
-    "onse\022-\n\010saveList\030\001 \003(\0132\033.com.spplus.buff"
-    ".SavingBean\022\017\n\007rescode\030\002 \001(\r\"\377\001\n\016WriteSa"
-    "vingMsg\0228\n\007request\030\001 \001(\0132\'.com.spplus.bu"
-    "ff.WriteSavingMsg.Request\022:\n\010response\030\002 "
-    "\001(\0132(.com.spplus.buff.WriteSavingMsg.Res"
-    "ponse\032Z\n\007Request\022\020\n\010saveName\030\001 \001(\014\022\016\n\006sa"
-    "veId\030\002 \001(\r\022-\n\tstateList\030\003 \003(\0132\032.com.sppl"
-    "us.buff.StateBean\032\033\n\010Response\022\017\n\007rescode"
-    "\030\001 \001(\r\"\222\002\n\022TicketMsionListMsg\022<\n\007request"
-    "\030\001 \001(\0132+.com.spplus.buff.TicketMsionList"
-    "Msg.Request\022>\n\010response\030\002 \001(\0132,.com.sppl"
-    "us.buff.TicketMsionListMsg.Response\032)\n\007R"
-    "equest\022\016\n\006userid\030\001 \001(\r\022\016\n\006roleid\030\002 \001(\r\032S"
-    "\n\010Response\022\017\n\007rescode\030\001 \001(\r\0226\n\014tktMsionl"
-    "ist\030\002 \003(\0132 .com.spplus.buff.TicketMsionB"
-    "ean\"\270\001\n\014TicketMgrMsg\0226\n\007request\030\001 \001(\0132%."
-    "com.spplus.buff.TicketMgrMsg.Request\0228\n\010"
-    "response\030\002 \001(\0132&.com.spplus.buff.TicketM"
-    "grMsg.Response\032\031\n\007Request\022\016\n\006mgrsql\030\001 \001("
-    "\014\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r\"\374\001\n\rTicke"
-    "tListMsg\0227\n\007request\030\001 \001(\0132&.com.spplus.b"
-    "uff.TicketListMsg.Request\0229\n\010response\030\002 "
-    "\001(\0132\'.com.spplus.buff.TicketListMsg.Resp"
-    "onse\032)\n\007Request\022\017\n\007reqtype\030\001 \001(\r\022\r\n\005reqi"
-    "d\030\002 \001(\r\032L\n\010Response\022\017\n\007rescode\030\001 \001(\r\022/\n\n"
-    "ticketlist\030\002 \003(\0132\033.com.spplus.buff.Ticke"
-    "tBean\"\267\002\n\017TicketActMgrMsg\0229\n\007request\030\001 \001"
-    "(\0132(.com.spplus.buff.TicketActMgrMsg.Req"
-    "uest\022;\n\010response\030\002 \001(\0132).com.spplus.buff"
-    ".TicketActMgrMsg.Response\032\216\001\n\007Request\022\016\n"
-    "\006reqUid\030\001 \001(\r\022\016\n\006reqMid\030\002 \001(\r\022\016\n\006startT\030"
-    "\003 \001(\014\022\014\n\004endT\030\004 \001(\014\022\016\n\006mgrsql\030\005 \001(\014\0225\n\rt"
-    "icketactlist\030\006 \003(\0132\036.com.spplus.buff.Tic"
-    "ketActBean\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r\""
-    "\372\001\n\020TicketActListMsg\022:\n\007request\030\001 \001(\0132)."
-    "com.spplus.buff.TicketActListMsg.Request"
-    "\022<\n\010response\030\002 \001(\0132*.com.spplus.buff.Tic"
-    "ketActListMsg.Response\032\030\n\007Request\022\r\n\005req"
-    "id\030\001 \001(\r\032R\n\010Response\022\017\n\007rescode\030\001 \001(\r\0225\n"
-    "\rticketactlist\030\002 \003(\0132\036.com.spplus.buff.T"
-    "icketActBean", 7212);
+    "us.buff.RuleBean\022\016\n\006optype\030\005 \001(\r\022*\n\006opLi"
+    "st\030\006 \003(\0132\032.com.spplus.buff.StateBean\"\352\001\n"
+    "\013PowerSetMsg\0225\n\007request\030\001 \001(\0132$.com.sppl"
+    "us.buff.PowerSetMsg.Request\0227\n\010response\030"
+    "\002 \001(\0132%.com.spplus.buff.PowerSetMsg.Resp"
+    "onse\032>\n\007Request\022\022\n\nstationCim\030\001 \001(\014\022\017\n\007u"
+    "nitCim\030\002 \001(\014\022\016\n\006saveid\030\003 \001(\r\032+\n\010Response"
+    "\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resmsg\030\002 \001(\014\"\363\001\n\nLi"
+    "neSetMsg\0224\n\007request\030\001 \001(\0132#.com.spplus.b"
+    "uff.LineSetMsg.Request\0226\n\010response\030\002 \001(\013"
+    "2$.com.spplus.buff.LineSetMsg.Response\032J"
+    "\n\007Request\022\017\n\007unitCim\030\001 \001(\014\022\025\n\rstationOne"
+    "Cim\030\002 \001(\014\022\027\n\017stationOtherCim\030\003 \001(\014\032+\n\010Re"
+    "sponse\022\017\n\007rescode\030\001 \001(\r\022\016\n\006resmsg\030\002 \001(\014\""
+    "\346\001\n\rSavingListMsg\0227\n\007request\030\001 \001(\0132&.com"
+    ".spplus.buff.SavingListMsg.Request\0229\n\010re"
+    "sponse\030\002 \001(\0132\'.com.spplus.buff.SavingLis"
+    "tMsg.Response\032\025\n\007Request\022\n\n\002id\030\001 \001(\014\032J\n\010"
+    "Response\022-\n\010saveList\030\001 \003(\0132\033.com.spplus."
+    "buff.SavingBean\022\017\n\007rescode\030\002 \001(\r\"\377\001\n\016Wri"
+    "teSavingMsg\0228\n\007request\030\001 \001(\0132\'.com.spplu"
+    "s.buff.WriteSavingMsg.Request\022:\n\010respons"
+    "e\030\002 \001(\0132(.com.spplus.buff.WriteSavingMsg"
+    ".Response\032Z\n\007Request\022\020\n\010saveName\030\001 \001(\014\022\016"
+    "\n\006saveId\030\002 \001(\r\022-\n\tstateList\030\003 \003(\0132\032.com."
+    "spplus.buff.StateBean\032\033\n\010Response\022\017\n\007res"
+    "code\030\001 \001(\r\"\222\002\n\022TicketMsionListMsg\022<\n\007req"
+    "uest\030\001 \001(\0132+.com.spplus.buff.TicketMsion"
+    "ListMsg.Request\022>\n\010response\030\002 \001(\0132,.com."
+    "spplus.buff.TicketMsionListMsg.Response\032"
+    ")\n\007Request\022\016\n\006userid\030\001 \001(\r\022\016\n\006roleid\030\002 \001"
+    "(\r\032S\n\010Response\022\017\n\007rescode\030\001 \001(\r\0226\n\014tktMs"
+    "ionlist\030\002 \003(\0132 .com.spplus.buff.TicketMs"
+    "ionBean\"\270\001\n\014TicketMgrMsg\0226\n\007request\030\001 \001("
+    "\0132%.com.spplus.buff.TicketMgrMsg.Request"
+    "\0228\n\010response\030\002 \001(\0132&.com.spplus.buff.Tic"
+    "ketMgrMsg.Response\032\031\n\007Request\022\016\n\006mgrsql\030"
+    "\001 \001(\014\032\033\n\010Response\022\017\n\007rescode\030\001 \001(\r\"\374\001\n\rT"
+    "icketListMsg\0227\n\007request\030\001 \001(\0132&.com.sppl"
+    "us.buff.TicketListMsg.Request\0229\n\010respons"
+    "e\030\002 \001(\0132\'.com.spplus.buff.TicketListMsg."
+    "Response\032)\n\007Request\022\017\n\007reqtype\030\001 \001(\r\022\r\n\005"
+    "reqid\030\002 \001(\r\032L\n\010Response\022\017\n\007rescode\030\001 \001(\r"
+    "\022/\n\nticketlist\030\002 \003(\0132\033.com.spplus.buff.T"
+    "icketBean\"\267\002\n\017TicketActMgrMsg\0229\n\007request"
+    "\030\001 \001(\0132(.com.spplus.buff.TicketActMgrMsg"
+    ".Request\022;\n\010response\030\002 \001(\0132).com.spplus."
+    "buff.TicketActMgrMsg.Response\032\216\001\n\007Reques"
+    "t\022\016\n\006reqUid\030\001 \001(\r\022\016\n\006reqMid\030\002 \001(\r\022\016\n\006sta"
+    "rtT\030\003 \001(\014\022\014\n\004endT\030\004 \001(\014\022\016\n\006mgrsql\030\005 \001(\014\022"
+    "5\n\rticketactlist\030\006 \003(\0132\036.com.spplus.buff"
+    ".TicketActBean\032\033\n\010Response\022\017\n\007rescode\030\001 "
+    "\001(\r\"\372\001\n\020TicketActListMsg\022:\n\007request\030\001 \001("
+    "\0132).com.spplus.buff.TicketActListMsg.Req"
+    "uest\022<\n\010response\030\002 \001(\0132*.com.spplus.buff"
+    ".TicketActListMsg.Response\032\030\n\007Request\022\r\n"
+    "\005reqid\030\001 \001(\r\032R\n\010Response\022\017\n\007rescode\030\001 \001("
+    "\r\0225\n\rticketactlist\030\002 \003(\0132\036.com.spplus.bu"
+    "ff.TicketActBean", 7256);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbody.proto", &protobuf_RegisterTypes);
   UserLoginMsg::default_instance_ = new UserLoginMsg();
@@ -16679,6 +16681,7 @@ const int OprationMsg_Response::kResmsgFieldNumber;
 const int OprationMsg_Response::kDevStateFieldNumber;
 const int OprationMsg_Response::kRuleListFieldNumber;
 const int OprationMsg_Response::kOptypeFieldNumber;
+const int OprationMsg_Response::kOpListFieldNumber;
 #endif  // !_MSC_VER
 
 OprationMsg_Response::OprationMsg_Response()
@@ -16748,6 +16751,7 @@ void OprationMsg_Response::Clear() {
   }
   devstate_.Clear();
   rulelist_.Clear();
+  oplist_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -16829,6 +16833,21 @@ bool OprationMsg_Response::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
+        if (input->ExpectTag(50)) goto parse_opList;
+        break;
+      }
+
+      // repeated .com.spplus.buff.StateBean opList = 6;
+      case 6: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_opList:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+                input, add_oplist()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(50)) goto parse_opList;
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -16879,6 +16898,12 @@ void OprationMsg_Response::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->optype(), output);
   }
 
+  // repeated .com.spplus.buff.StateBean opList = 6;
+  for (int i = 0; i < this->oplist_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, this->oplist(i), output);
+  }
+
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -16916,6 +16941,13 @@ void OprationMsg_Response::SerializeWithCachedSizes(
   // optional uint32 optype = 5;
   if (has_optype()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->optype(), target);
+  }
+
+  // repeated .com.spplus.buff.StateBean opList = 6;
+  for (int i = 0; i < this->oplist_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        6, this->oplist(i), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -16967,6 +16999,14 @@ int OprationMsg_Response::ByteSize() const {
         this->rulelist(i));
   }
 
+  // repeated .com.spplus.buff.StateBean opList = 6;
+  total_size += 1 * this->oplist_size();
+  for (int i = 0; i < this->oplist_size(); i++) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        this->oplist(i));
+  }
+
   if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
@@ -16994,6 +17034,7 @@ void OprationMsg_Response::MergeFrom(const OprationMsg_Response& from) {
   GOOGLE_CHECK_NE(&from, this);
   devstate_.MergeFrom(from.devstate_);
   rulelist_.MergeFrom(from.rulelist_);
+  oplist_.MergeFrom(from.oplist_);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_rescode()) {
       set_rescode(from.rescode());
@@ -17032,6 +17073,7 @@ void OprationMsg_Response::Swap(OprationMsg_Response* other) {
     devstate_.Swap(&other->devstate_);
     rulelist_.Swap(&other->rulelist_);
     std::swap(optype_, other->optype_);
+    oplist_.Swap(&other->oplist_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);

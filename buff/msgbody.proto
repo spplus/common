@@ -359,6 +359,7 @@ message OprationMsg
 		repeated StateBean		devState	= 3;	// 返回设备列表
 		repeated RuleBean		ruleList	= 4;	// 规则列表
 		optional uint32			optype		= 5;	// 操作类型
+		repeated StateBean		opList		= 6;	// 服务器设置设备列表，返回加入到客户端操作设备列表中
   	}
 	optional Request 	request 	= 1;
   	optional Response 	response 	= 2;

@@ -5727,6 +5727,18 @@ class OprationMsg_Response : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 optype() const;
   inline void set_optype(::google::protobuf::uint32 value);
 
+  // repeated .com.spplus.buff.StateBean opList = 6;
+  inline int oplist_size() const;
+  inline void clear_oplist();
+  static const int kOpListFieldNumber = 6;
+  inline const ::com::spplus::buff::StateBean& oplist(int index) const;
+  inline ::com::spplus::buff::StateBean* mutable_oplist(int index);
+  inline ::com::spplus::buff::StateBean* add_oplist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+      oplist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+      mutable_oplist();
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.OprationMsg.Response)
  private:
   inline void set_has_rescode();
@@ -5743,9 +5755,10 @@ class OprationMsg_Response : public ::google::protobuf::Message {
   ::google::protobuf::uint32 rescode_;
   ::google::protobuf::uint32 optype_;
   ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::RuleBean > rulelist_;
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean > oplist_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -12798,6 +12811,31 @@ inline ::google::protobuf::uint32 OprationMsg_Response::optype() const {
 inline void OprationMsg_Response::set_optype(::google::protobuf::uint32 value) {
   set_has_optype();
   optype_ = value;
+}
+
+// repeated .com.spplus.buff.StateBean opList = 6;
+inline int OprationMsg_Response::oplist_size() const {
+  return oplist_.size();
+}
+inline void OprationMsg_Response::clear_oplist() {
+  oplist_.Clear();
+}
+inline const ::com::spplus::buff::StateBean& OprationMsg_Response::oplist(int index) const {
+  return oplist_.Get(index);
+}
+inline ::com::spplus::buff::StateBean* OprationMsg_Response::mutable_oplist(int index) {
+  return oplist_.Mutable(index);
+}
+inline ::com::spplus::buff::StateBean* OprationMsg_Response::add_oplist() {
+  return oplist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+OprationMsg_Response::oplist() const {
+  return oplist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+OprationMsg_Response::mutable_oplist() {
+  return &oplist_;
 }
 
 // -------------------------------------------------------------------

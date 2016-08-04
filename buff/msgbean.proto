@@ -103,6 +103,7 @@ message StateBean
 	optional bytes 	stationCim	= 7;		// 站点cim
 	optional uint32	isPower 	= 8;		// 是否是电源点
 	optional uint32 isGround	= 9;		// 是否接地
+	optional uint32 isOp		= 10;		// 是否是人工设置
 	
 }
 

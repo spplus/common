@@ -236,7 +236,7 @@ void protobuf_AssignDesc_msgbean_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(EventQueryBean));
   StateBean_descriptor_ = file->message_type(8);
-  static const int StateBean_offsets_[9] = {
+  static const int StateBean_offsets_[10] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, cimid_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, state_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, isboard_),
@@ -246,6 +246,7 @@ void protobuf_AssignDesc_msgbean_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, stationcim_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, ispower_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, isground_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StateBean, isop_),
   };
   StateBean_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -538,37 +539,37 @@ void protobuf_AddDesc_msgbean_2eproto() {
     "m\030\001 \001(\014\022\023\n\013unitCimName\030\002 \001(\014\022\022\n\nstationC"
     "im\030\003 \001(\014\022\023\n\013stationName\030\004 \001(\014\022\020\n\010unitTyp"
     "e\030\005 \001(\014\022\022\n\neventvalue\030\006 \001(\014\022\021\n\teventtime"
-    "\030\007 \001(\014\"\251\001\n\tStateBean\022\r\n\005cimId\030\001 \001(\014\022\r\n\005s"
+    "\030\007 \001(\014\"\267\001\n\tStateBean\022\r\n\005cimId\030\001 \001(\014\022\r\n\005s"
     "tate\030\002 \001(\r\022\017\n\007isBoard\030\003 \001(\r\022\022\n\nisElectri"
     "c\030\004 \001(\r\022\020\n\010volColor\030\005 \001(\014\022\020\n\010unitType\030\006 "
     "\001(\r\022\022\n\nstationCim\030\007 \001(\014\022\017\n\007isPower\030\010 \001(\r"
-    "\022\020\n\010isGround\030\t \001(\r\"p\n\017StationTypeBean\022\n\n"
-    "\002Id\030\001 \001(\r\022\020\n\010ordernum\030\002 \001(\r\022\014\n\004Name\030\003 \001("
-    "\014\0221\n\013StationList\030\004 \003(\0132\034.com.spplus.buff"
-    ".StationBean\"m\n\013StationBean\022\n\n\002Id\030\001 \001(\r\022"
-    "\022\n\nCategoryId\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014\022\r\n\005Cim"
-    "Id\030\004 \001(\014\022\023\n\013CurrentName\030\005 \001(\014\022\014\n\004Path\030\006 "
-    "\001(\014\"z\n\tUnitsBean\022\n\n\002Id\030\001 \001(\r\022\021\n\tStationI"
-    "d\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014\022\r\n\005CimId\030\004 \001(\014\022\r\n\005"
-    "VolId\030\005 \001(\014\022\020\n\010UnitType\030\006 \001(\014\022\020\n\010SelfTyp"
-    "e\030\007 \001(\014\"8\n\nSavingBean\022\n\n\002Id\030\001 \001(\r\022\014\n\004Nam"
-    "e\030\002 \001(\014\022\020\n\010SaveTime\030\003 \001(\014\"M\n\010RuleBean\022\n\n"
-    "\002Id\030\001 \001(\r\022\014\n\004Name\030\002 \001(\014\022\022\n\nAlarmLevel\030\003 "
-    "\001(\014\022\023\n\013Description\030\004 \001(\014\"\212\001\n\017TicketMsion"
-    "Bean\022\n\n\002Id\030\001 \001(\r\022\016\n\006UserId\030\002 \001(\r\022\020\n\010User"
-    "Name\030\003 \001(\014\022\021\n\tActUserId\030\004 \001(\r\022\023\n\013ActUser"
-    "Name\030\005 \001(\014\022\014\n\004Name\030\006 \001(\014\022\023\n\013PublishTime\030"
-    "\007 \001(\014\"\262\002\n\nTicketBean\022\n\n\002Id\030\001 \001(\r\022\017\n\007Cuse"
-    "rId\030\002 \001(\r\022\021\n\tCuserName\030\003 \001(\014\022\017\n\007AuserId\030"
-    "\004 \001(\r\022\021\n\tAuserName\030\005 \001(\014\022\021\n\tMissionId\030\006 "
-    "\001(\r\022\023\n\013MissionName\030\007 \001(\014\022\n\n\002No\030\010 \001(\014\022\022\n\n"
-    "ActionType\030\t \001(\014\022\014\n\004info\030\n \001(\014\022\024\n\014Action"
-    "Person\030\013 \001(\014\022\025\n\rProtectPerson\030\014 \001(\014\022\024\n\014C"
-    "hargePerson\030\r \001(\014\022\021\n\tStartTime\030\016 \001(\014\022\017\n\007"
-    "EndTime\030\017 \001(\014\022\023\n\013PublishTime\030\020 \001(\014\"[\n\rTi"
-    "cketActBean\022\020\n\010Ticketid\030\001 \001(\r\022\020\n\010OrderNu"
-    "m\030\002 \001(\r\022\025\n\rSystemContent\030\003 \001(\014\022\017\n\007Conten"
-    "t\030\004 \001(\014", 2127);
+    "\022\020\n\010isGround\030\t \001(\r\022\014\n\004isOp\030\n \001(\r\"p\n\017Stat"
+    "ionTypeBean\022\n\n\002Id\030\001 \001(\r\022\020\n\010ordernum\030\002 \001("
+    "\r\022\014\n\004Name\030\003 \001(\014\0221\n\013StationList\030\004 \003(\0132\034.c"
+    "om.spplus.buff.StationBean\"m\n\013StationBea"
+    "n\022\n\n\002Id\030\001 \001(\r\022\022\n\nCategoryId\030\002 \001(\r\022\014\n\004Nam"
+    "e\030\003 \001(\014\022\r\n\005CimId\030\004 \001(\014\022\023\n\013CurrentName\030\005 "
+    "\001(\014\022\014\n\004Path\030\006 \001(\014\"z\n\tUnitsBean\022\n\n\002Id\030\001 \001"
+    "(\r\022\021\n\tStationId\030\002 \001(\r\022\014\n\004Name\030\003 \001(\014\022\r\n\005C"
+    "imId\030\004 \001(\014\022\r\n\005VolId\030\005 \001(\014\022\020\n\010UnitType\030\006 "
+    "\001(\014\022\020\n\010SelfType\030\007 \001(\014\"8\n\nSavingBean\022\n\n\002I"
+    "d\030\001 \001(\r\022\014\n\004Name\030\002 \001(\014\022\020\n\010SaveTime\030\003 \001(\014\""
+    "M\n\010RuleBean\022\n\n\002Id\030\001 \001(\r\022\014\n\004Name\030\002 \001(\014\022\022\n"
+    "\nAlarmLevel\030\003 \001(\014\022\023\n\013Description\030\004 \001(\014\"\212"
+    "\001\n\017TicketMsionBean\022\n\n\002Id\030\001 \001(\r\022\016\n\006UserId"
+    "\030\002 \001(\r\022\020\n\010UserName\030\003 \001(\014\022\021\n\tActUserId\030\004 "
+    "\001(\r\022\023\n\013ActUserName\030\005 \001(\014\022\014\n\004Name\030\006 \001(\014\022\023"
+    "\n\013PublishTime\030\007 \001(\014\"\262\002\n\nTicketBean\022\n\n\002Id"
+    "\030\001 \001(\r\022\017\n\007CuserId\030\002 \001(\r\022\021\n\tCuserName\030\003 \001"
+    "(\014\022\017\n\007AuserId\030\004 \001(\r\022\021\n\tAuserName\030\005 \001(\014\022\021"
+    "\n\tMissionId\030\006 \001(\r\022\023\n\013MissionName\030\007 \001(\014\022\n"
+    "\n\002No\030\010 \001(\014\022\022\n\nActionType\030\t \001(\014\022\014\n\004info\030\n"
+    " \001(\014\022\024\n\014ActionPerson\030\013 \001(\014\022\025\n\rProtectPer"
+    "son\030\014 \001(\014\022\024\n\014ChargePerson\030\r \001(\014\022\021\n\tStart"
+    "Time\030\016 \001(\014\022\017\n\007EndTime\030\017 \001(\014\022\023\n\013PublishTi"
+    "me\030\020 \001(\014\"[\n\rTicketActBean\022\020\n\010Ticketid\030\001 "
+    "\001(\r\022\020\n\010OrderNum\030\002 \001(\r\022\025\n\rSystemContent\030\003"
+    " \001(\014\022\017\n\007Content\030\004 \001(\014", 2141);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "msgbean.proto", &protobuf_RegisterTypes);
   UserBean::default_instance_ = new UserBean();
@@ -3883,6 +3884,7 @@ const int StateBean::kUnitTypeFieldNumber;
 const int StateBean::kStationCimFieldNumber;
 const int StateBean::kIsPowerFieldNumber;
 const int StateBean::kIsGroundFieldNumber;
+const int StateBean::kIsOpFieldNumber;
 #endif  // !_MSC_VER
 
 StateBean::StateBean()
@@ -3910,6 +3912,7 @@ void StateBean::SharedCtor() {
   stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ispower_ = 0u;
   isground_ = 0u;
+  isop_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -3977,6 +3980,7 @@ void StateBean::Clear() {
   }
   if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
     isground_ = 0u;
+    isop_ = 0u;
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -4121,6 +4125,22 @@ bool StateBean::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
+        if (input->ExpectTag(80)) goto parse_isOp;
+        break;
+      }
+
+      // optional uint32 isOp = 10;
+      case 10: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_isOp:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &isop_)));
+          set_has_isop();
+        } else {
+          goto handle_uninterpreted;
+        }
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -4191,6 +4211,11 @@ void StateBean::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(9, this->isground(), output);
   }
 
+  // optional uint32 isOp = 10;
+  if (has_isop()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(10, this->isop(), output);
+  }
+
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -4248,6 +4273,11 @@ void StateBean::SerializeWithCachedSizes(
   // optional uint32 isGround = 9;
   if (has_isground()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(9, this->isground(), target);
+  }
+
+  // optional uint32 isOp = 10;
+  if (has_isop()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(10, this->isop(), target);
   }
 
   if (!unknown_fields().empty()) {
@@ -4326,6 +4356,13 @@ int StateBean::ByteSize() const {
           this->isground());
     }
 
+    // optional uint32 isOp = 10;
+    if (has_isop()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->isop());
+    }
+
   }
   if (!unknown_fields().empty()) {
     total_size +=
@@ -4382,6 +4419,9 @@ void StateBean::MergeFrom(const StateBean& from) {
     if (from.has_isground()) {
       set_isground(from.isground());
     }
+    if (from.has_isop()) {
+      set_isop(from.isop());
+    }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
@@ -4414,6 +4454,7 @@ void StateBean::Swap(StateBean* other) {
     std::swap(stationcim_, other->stationcim_);
     std::swap(ispower_, other->ispower_);
     std::swap(isground_, other->isground_);
+    std::swap(isop_, other->isop_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);
