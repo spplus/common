@@ -348,7 +348,9 @@ message OprationMsg
 		optional bytes	unitCim		= 3;		// 元件cim
 		optional bool	ischeck		= 4;		// 是否允许校验	
 		optional uint32	unittype	= 5;		// 元件类型
-		repeated StateBean	opdevlist= 6;		// 客户端变位设备列表
+		optional bytes	stationCim	= 6;		// 站点CIM
+		repeated StateBean	opdevlist= 7;		// 客户端变位设备列表
+		repeated StateBean	linelist = 8;		// 进出线列表，state =1 表示要添加，state=0 表示要剔除
 						
   	}
   	//响应体定义
@@ -360,6 +362,7 @@ message OprationMsg
 		repeated RuleBean		ruleList	= 4;	// 规则列表
 		optional uint32			optype		= 5;	// 操作类型
 		repeated StateBean		opList		= 6;	// 服务器设置设备列表，返回加入到客户端操作设备列表中
+		repeated StateBean		linelist 	= 7;
   	}
 	optional Request 	request 	= 1;
   	optional Response 	response 	= 2;

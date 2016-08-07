@@ -228,5 +228,8 @@ enum eCheckResult
 // 服务器繁忙
 #define				CMD_SERVER_BUSY					2013
 
+// scada请求校验
+#define				CMD_SCADA_QUESTION					5000
+
 #endif
 

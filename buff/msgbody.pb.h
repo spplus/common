@@ -5577,10 +5577,22 @@ class OprationMsg_Request : public ::google::protobuf::Message {
   inline ::google::protobuf::uint32 unittype() const;
   inline void set_unittype(::google::protobuf::uint32 value);
 
-  // repeated .com.spplus.buff.StateBean opdevlist = 6;
+  // optional bytes stationCim = 6;
+  inline bool has_stationcim() const;
+  inline void clear_stationcim();
+  static const int kStationCimFieldNumber = 6;
+  inline const ::std::string& stationcim() const;
+  inline void set_stationcim(const ::std::string& value);
+  inline void set_stationcim(const char* value);
+  inline void set_stationcim(const void* value, size_t size);
+  inline ::std::string* mutable_stationcim();
+  inline ::std::string* release_stationcim();
+  inline void set_allocated_stationcim(::std::string* stationcim);
+
+  // repeated .com.spplus.buff.StateBean opdevlist = 7;
   inline int opdevlist_size() const;
   inline void clear_opdevlist();
-  static const int kOpdevlistFieldNumber = 6;
+  static const int kOpdevlistFieldNumber = 7;
   inline const ::com::spplus::buff::StateBean& opdevlist(int index) const;
   inline ::com::spplus::buff::StateBean* mutable_opdevlist(int index);
   inline ::com::spplus::buff::StateBean* add_opdevlist();
@@ -5588,6 +5600,18 @@ class OprationMsg_Request : public ::google::protobuf::Message {
       opdevlist() const;
   inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
       mutable_opdevlist();
+
+  // repeated .com.spplus.buff.StateBean linelist = 8;
+  inline int linelist_size() const;
+  inline void clear_linelist();
+  static const int kLinelistFieldNumber = 8;
+  inline const ::com::spplus::buff::StateBean& linelist(int index) const;
+  inline ::com::spplus::buff::StateBean* mutable_linelist(int index);
+  inline ::com::spplus::buff::StateBean* add_linelist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+      linelist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+      mutable_linelist();
 
   // @@protoc_insertion_point(class_scope:com.spplus.buff.OprationMsg.Request)
  private:
@@ -5601,6 +5625,8 @@ class OprationMsg_Request : public ::google::protobuf::Message {
   inline void clear_has_ischeck();
   inline void set_has_unittype();
   inline void clear_has_unittype();
+  inline void set_has_stationcim();
+  inline void clear_has_stationcim();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
@@ -5609,10 +5635,12 @@ class OprationMsg_Request : public ::google::protobuf::Message {
   ::std::string* unitcim_;
   bool ischeck_;
   ::google::protobuf::uint32 unittype_;
+  ::std::string* stationcim_;
   ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean > opdevlist_;
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean > linelist_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(8 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -5739,6 +5767,18 @@ class OprationMsg_Response : public ::google::protobuf::Message {
   inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
       mutable_oplist();
 
+  // repeated .com.spplus.buff.StateBean linelist = 7;
+  inline int linelist_size() const;
+  inline void clear_linelist();
+  static const int kLinelistFieldNumber = 7;
+  inline const ::com::spplus::buff::StateBean& linelist(int index) const;
+  inline ::com::spplus::buff::StateBean* mutable_linelist(int index);
+  inline ::com::spplus::buff::StateBean* add_linelist();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+      linelist() const;
+  inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+      mutable_linelist();
+
   // @@protoc_insertion_point(class_scope:com.spplus.buff.OprationMsg.Response)
  private:
   inline void set_has_rescode();
@@ -5756,9 +5796,10 @@ class OprationMsg_Response : public ::google::protobuf::Message {
   ::google::protobuf::uint32 optype_;
   ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::RuleBean > rulelist_;
   ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean > oplist_;
+  ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean > linelist_;
 
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(6 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(7 + 31) / 32];
 
   friend void  protobuf_AddDesc_msgbody_2eproto();
   friend void protobuf_AssignDesc_msgbody_2eproto();
@@ -12620,7 +12661,77 @@ inline void OprationMsg_Request::set_unittype(::google::protobuf::uint32 value) 
   unittype_ = value;
 }
 
-// repeated .com.spplus.buff.StateBean opdevlist = 6;
+// optional bytes stationCim = 6;
+inline bool OprationMsg_Request::has_stationcim() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void OprationMsg_Request::set_has_stationcim() {
+  _has_bits_[0] |= 0x00000020u;
+}
+inline void OprationMsg_Request::clear_has_stationcim() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline void OprationMsg_Request::clear_stationcim() {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    stationcim_->clear();
+  }
+  clear_has_stationcim();
+}
+inline const ::std::string& OprationMsg_Request::stationcim() const {
+  return *stationcim_;
+}
+inline void OprationMsg_Request::set_stationcim(const ::std::string& value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void OprationMsg_Request::set_stationcim(const char* value) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(value);
+}
+inline void OprationMsg_Request::set_stationcim(const void* value, size_t size) {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  stationcim_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* OprationMsg_Request::mutable_stationcim() {
+  set_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    stationcim_ = new ::std::string;
+  }
+  return stationcim_;
+}
+inline ::std::string* OprationMsg_Request::release_stationcim() {
+  clear_has_stationcim();
+  if (stationcim_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = stationcim_;
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+inline void OprationMsg_Request::set_allocated_stationcim(::std::string* stationcim) {
+  if (stationcim_ != &::google::protobuf::internal::kEmptyString) {
+    delete stationcim_;
+  }
+  if (stationcim) {
+    set_has_stationcim();
+    stationcim_ = stationcim;
+  } else {
+    clear_has_stationcim();
+    stationcim_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  }
+}
+
+// repeated .com.spplus.buff.StateBean opdevlist = 7;
 inline int OprationMsg_Request::opdevlist_size() const {
   return opdevlist_.size();
 }
@@ -12643,6 +12754,31 @@ OprationMsg_Request::opdevlist() const {
 inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
 OprationMsg_Request::mutable_opdevlist() {
   return &opdevlist_;
+}
+
+// repeated .com.spplus.buff.StateBean linelist = 8;
+inline int OprationMsg_Request::linelist_size() const {
+  return linelist_.size();
+}
+inline void OprationMsg_Request::clear_linelist() {
+  linelist_.Clear();
+}
+inline const ::com::spplus::buff::StateBean& OprationMsg_Request::linelist(int index) const {
+  return linelist_.Get(index);
+}
+inline ::com::spplus::buff::StateBean* OprationMsg_Request::mutable_linelist(int index) {
+  return linelist_.Mutable(index);
+}
+inline ::com::spplus::buff::StateBean* OprationMsg_Request::add_linelist() {
+  return linelist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+OprationMsg_Request::linelist() const {
+  return linelist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+OprationMsg_Request::mutable_linelist() {
+  return &linelist_;
 }
 
 // -------------------------------------------------------------------
@@ -12836,6 +12972,31 @@ OprationMsg_Response::oplist() const {
 inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
 OprationMsg_Response::mutable_oplist() {
   return &oplist_;
+}
+
+// repeated .com.spplus.buff.StateBean linelist = 7;
+inline int OprationMsg_Response::linelist_size() const {
+  return linelist_.size();
+}
+inline void OprationMsg_Response::clear_linelist() {
+  linelist_.Clear();
+}
+inline const ::com::spplus::buff::StateBean& OprationMsg_Response::linelist(int index) const {
+  return linelist_.Get(index);
+}
+inline ::com::spplus::buff::StateBean* OprationMsg_Response::mutable_linelist(int index) {
+  return linelist_.Mutable(index);
+}
+inline ::com::spplus::buff::StateBean* OprationMsg_Response::add_linelist() {
+  return linelist_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >&
+OprationMsg_Response::linelist() const {
+  return linelist_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::com::spplus::buff::StateBean >*
+OprationMsg_Response::mutable_linelist() {
+  return &linelist_;
 }
 
 // -------------------------------------------------------------------
